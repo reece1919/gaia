@@ -236,7 +236,7 @@
     return new Promise((resolve, reject) => {
       if (window.supabase?.createClient) {resolve();return;}
       const script = document.createElement("script");
-      script.src = "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js";
+      script.src = "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2";
       script.async = true;
       script.onload = () => window.supabase?.createClient ? resolve() : reject(new Error("Supabase library unavailable"));
       script.onerror = () => reject(new Error("Supabase library could not load"));
