@@ -26,7 +26,7 @@
   }
   let client = null, user = null, plants = [];
   let photos = [], signed = new Map(), pending = new Set();
-  let sequence = 0;
+  let sequence = 0, lastRefresh = 0;
   let message = "", messageIsError = false;
   const covers = new Map();
 
@@ -53,6 +53,7 @@
       '</div><button type="submit" class="photo-upload-button">Upload photo</button>' +
       '<small class="photo-upload-hint">Photos are resized automatically. The newest upload becomes the card image on signed-in devices.</small>' +
       '</form></div>' +
+      '<p class="photo-local-status" role="status" aria-live="polite" hidden></p>' +
       '<div class="photo-gallery" data-photo-gallery aria-live="polite"></div>' +
       '</section>';
   }
@@ -66,6 +67,15 @@
       section.insertAdjacentHTML("afterbegin",panel(p));
     });
     render();
+  }
+  function localStatus(plantId, msg, isError = false) {
+    const panel = [...document.querySelectorAll(".plant-photo-journal")]
+      .find(e => e.dataset.plantPhoto === String(plantId));
+    const node=panel?.querySelector(".photo-local-status");
+    if (node) {
+      node.hidden=!msg; node.textContent=msg;
+      node.classList.toggle("photo-error",isError);
+    }
   }
   function sortedPhotos(p) {
     return photos.filter(x => x.plant_id === p).sort((a,b) =>
@@ -152,6 +162,7 @@
       if(request!==sequence||user?.id!==owner) return;
       photos=rows;
       signed=urlMap;
+      lastRefresh=Date.now();
       render();
       if(rows.length && urlMap.size===0) report("Photo details loaded, but previews could not be accessed. Try syncing again.",true);
     } catch(error) {
@@ -213,10 +224,12 @@
     const path=owner+"/"+id+"/"+uuid+".jpg";
     const button=form.querySelector('button[type="submit"]');
     pending.add(id);button.disabled=true;button.textContent="Uploading…";
+    localStatus(id,"Preparing photo…");
     let objectUploaded=false;
     try {
       report("Preparing and uploading "+file.name+"…");
       const blob=await compress(file);
+      localStatus(id,"Uploading compressed photo…");
       if(owner!==user?.id) throw new Error("Account changed. Please retry while signed in.");
       const result=await client.storage.from(BUCKET)
         .upload(path,blob,{contentType:"image/jpeg",upsert:false,cacheControl:"3600"});
@@ -229,12 +242,14 @@
       form.reset();
       form.elements.taken_on.value=today();
       await refresh();
+      localStatus(id,"Photo saved. It will appear on your other signed-in devices after syncing.");
       report("Photo saved to your private GAIA collection and available on your signed-in devices.");
     } catch(error) {
       if(objectUploaded) {
         try{await client.storage.from(BUCKET).remove([path]);}
         catch(cleanupError){console.warn("GAIA photo upload cleanup failed",cleanupError);}
       }
+      localStatus(id,"Upload failed: "+safeError(error),true);
       report("Photo wasn't saved: "+safeError(error),true);
     } finally {
       pending.delete(id);
@@ -259,6 +274,10 @@
   document.addEventListener("gaia:auth",ev=>updateLogin(ev.detail.client,ev.detail.user));
   document.addEventListener("gaia:care-synced",()=>{
     if(user) void refresh();
+  });
+  document.addEventListener("visibilitychange",()=>{
+    if(document.visibilityState==="visible" && user && Date.now()-lastRefresh > 5*60*1000)
+      void refresh();
   });
   document.addEventListener("submit",event=>{
     if(!event.target.matches(".plant-photo-form")) return;
