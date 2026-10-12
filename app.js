@@ -120,6 +120,7 @@
       cards.forEach(card => fragment.appendChild(card));
       grid.appendChild(fragment);
       renderSummary(data);
+      window.GAIA_DATA = data;
       document.dispatchEvent(new CustomEvent("gaia:ready", { detail: { plants: data.plants } }));
       if (loading) loading.remove();
       filter();
