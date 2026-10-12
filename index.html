@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport">
-<meta content="light" name="color-scheme">
-<meta name="theme-color" content="#356a45">
+<meta content="dark" name="color-scheme">
+<meta name="theme-color" content="#111f23">
 <meta name="description" content="GAIA — personal plant collection dashboard, care and history">
-<title>GAIA — Plant Collection Dashboard</title>
+<title>GAIA — The Midnight Herbarium</title>
 <style>
 :root{--bg:#f4f6f2;--card:#fff;--text:#1c241d;--muted:#667168;--line:#d8ded7;--accent:#356a45;--accent-soft:#edf5ef;--soft:#e9f1eb;--watch:#8a5a12;--watch-soft:#fff7e8;--concern:#8a3434;--concern-soft:#fff0f0}
 *{box-sizing:border-box}
@@ -258,13 +258,288 @@ input:focus,select:focus{border-color:#8eae96;box-shadow:0 0 0 3px rgba(53,106,6
  #recent-care{margin-top:15px}
 }
 
+
+/* MIDNIGHT HERBARIUM v1
+   A storm-coast conservatory: weathered slate, pressed leaves, warm vellum,
+   antique brass. This is presentation-only: care, auth, photo and task hooks
+   retain their original DOM IDs and behavior.
+*/
+:root{
+ --bg:#111f23;--card:#20302e;--text:#e9dfc8;--muted:#b3c2bc;
+ --line:#4b5a50;--accent:#d4ba85;--accent-soft:#2a3b35;--soft:#1b302e;
+ --watch:#efd195;--watch-soft:#383125;--concern:#e9aaa2;--concern-soft:#402c30;
+ --brass:#b69a68;--slate:#16272a;--vellum:#e9dfc8;--fern:#90ad99;
+ --serif:"Palatino Linotype","Book Antiqua",Palatino,Georgia,serif;
+}
+html{color-scheme:dark;background:var(--bg);scroll-behavior:smooth}
+body{
+ color:var(--text);
+ background:
+ radial-gradient(ellipse at 85% 2%,rgba(71,91,81,.3),transparent 45rem),
+ radial-gradient(ellipse at 1% 55%,rgba(23,69,65,.19),transparent 44rem),
+ repeating-linear-gradient(110deg,transparent 0 42px,rgba(201,187,148,.009) 43px 44px),
+ var(--bg);
+ min-height:100vh;
+}
+.wrap{width:min(100%,1240px);padding:25px 24px 44px}
+h1,h2,h3,.name,.history>summary,.care-tracker-heading strong,.photo-journal-head strong{font-family:var(--serif)}
+/* Coverplate / logbook masthead */
+.gaia-hero{
+ position:relative;isolation:isolate;display:block;overflow:hidden;
+ border:1px solid #756e52;border-radius:8px;
+ margin:0 0 18px;padding:28px 35px 25px;min-height:265px;
+ background:
+  radial-gradient(ellipse at 75% 8%,rgba(140,157,142,.12),transparent 55%),
+  repeating-linear-gradient(95deg,transparent 0 45px,rgba(225,212,174,.015) 46px 47px),
+  linear-gradient(120deg,#1b312e 2%,#17292b 60%,#101e23);
+ box-shadow:0 22px 50px rgba(0,0,0,.21), inset 0 0 0 5px rgba(13,24,25,.54);
+}
+.gaia-hero::before{content:"";pointer-events:none;position:absolute;inset:9px;border:1px solid rgba(199,166,103,.29);z-index:-1}
+.gaia-hero::after{content:"";pointer-events:none;position:absolute;top:-110px;right:15%;width:270px;height:250px;
+ border-radius:100%;background:rgba(198,191,151,.045);filter:blur(12px);z-index:-1}
+.hero-copy{position:relative;z-index:2;max-width:680px}
+.hero-brand{display:flex;gap:21px;align-items:center}
+.hero-crest{flex:0 0 73px;width:73px;color:#c6b183;filter:drop-shadow(0 1px 3px rgba(0,0,0,.4))}
+.hero-crest svg{width:100%;display:block;height:auto}
+.hero-eyebrow{color:#c2b38e;font-size:10px;font-weight:750;letter-spacing:.26em;line-height:1.4;margin-bottom:5px}
+.gaia-hero h1{font-family:var(--serif);font-size:clamp(52px,7vw,82px);font-weight:500;letter-spacing:.155em;line-height:.99;color:#eee2c8;
+ text-shadow:0 3px 16px rgba(0,0,0,.25)}
+.hero-tagline{font-family:var(--serif);font-size:18px;letter-spacing:.09em;font-style:italic;color:#c6b68e;margin-top:9px}
+.hero-divider{height:16px;display:flex;align-items:center;max-width:390px;color:var(--brass);font-size:16px;margin:12px 0 8px}
+.hero-divider::before,.hero-divider::after{content:"";height:1px;flex:1;background:linear-gradient(90deg,rgba(183,159,107,.8),rgba(183,159,107,.15))}
+.hero-divider::after{background:linear-gradient(90deg,rgba(183,159,107,.15),rgba(183,159,107,.8))}
+.hero-divider span{padding:0 12px}
+.hero-description{font-family:var(--serif);font-style:italic;font-size:15px;letter-spacing:.02em;color:#cbd0bc;margin:7px 0 12px}
+.gaia-hero .sub{font-size:11px;letter-spacing:.055em;color:#b4c6bc;line-height:1.5;margin:0}
+.hero-botanical{position:absolute;width:280px;height:auto;right:4%;top:-3px;bottom:0;color:#b4b895;opacity:.22;z-index:1}
+.stats{margin:13px 0 18px;gap:12px}
+.stat{position:relative;overflow:hidden;background:linear-gradient(145deg,#233632,#1b2b2b);border:1px solid #526156;border-radius:6px;
+ box-shadow:inset 0 1px rgba(255,255,255,.03);padding:15px 17px}
+.stat::before{content:"";position:absolute;top:11px;bottom:11px;left:0;width:2px;background:#ad9565;opacity:.7}
+.stat small{font-size:9.5px;letter-spacing:.11em;color:#b0c0b5;font-weight:650}
+.stat b{font-family:var(--serif);font-size:32px;font-weight:500;color:#e7d6b2;margin-top:5px}
+.controls{gap:10px}
+input,select,textarea{color:var(--text);background:#182a29;border:1px solid #607064;border-radius:6px}
+input:focus,select:focus,textarea:focus{border-color:var(--brass);outline:2px solid rgba(212,186,133,.35);box-shadow:none}
+input::placeholder,textarea::placeholder{color:#9baca5}
+select option{background:#182a29;color:var(--text)}
+/* Collection plates */
+.grid{gap:16px}
+.card{background:#1c2b2b;border:1px solid #5e6656;border-radius:7px;box-shadow:0 6px 22px rgba(0,0,0,.13);overflow:hidden}
+.card>summary{background:linear-gradient(180deg,#223331,#1b2b2a);color:var(--text)}
+.card>summary:focus-visible,.gaia-task-panel>summary:focus-visible,
+.card-icon-guide>summary:focus-visible,.care-settings>summary:focus-visible{
+ outline:2px solid var(--brass);outline-offset:-3px;
+}
+.photo{position:relative;background:#162523}
+.photo::after{content:"";position:absolute;pointer-events:none;inset:7px;border:1px solid rgba(222,202,151,.22)}
+.photo img{filter:saturate(.88) contrast(1.04)}
+.summary-body{padding:16px 15px 15px}
+.name{font-family:var(--serif);font-size:24px;font-weight:500;line-height:1.13;letter-spacing:.015em;color:#ecdfbf;font-style:normal}
+.name::before{content:"✧";color:#b69a68;font-family:var(--serif);font-size:.72em}
+.species{color:#a7b8ae;font-weight:500;text-transform:none;letter-spacing:.035em;font-style:italic;font-size:11px}
+.meta-tags{gap:5px;margin-top:9px}
+.meta-tag{border-color:#657064;background:#2c3a36;color:#d8d4bf;letter-spacing:.06em;font-size:9px}
+.badge{border-color:#6b7162;color:#dfd2b7;background:rgba(233,223,200,.065);
+ text-transform:uppercase;letter-spacing:.09em;font-size:9px;font-weight:700}
+.card[data-status="Good"] .badge,.card[data-status="Excellent"] .badge{color:#bee0c6;background:#24453b;border-color:#557766}
+.card[data-status="Fair"] .badge,.card[data-status="Watch"] .badge{color:#f3d39b;background:#463b2b;border-color:#8b7452}
+.card[data-status="Concern"] .badge{color:#eab7b1;background:#4a3032;border-color:#8e6865}
+.tap-hint{font-family:var(--serif);font-style:italic;font-size:12px;color:#cfbb8c;font-weight:500;margin-top:11px}
+.card[open]{border-color:#917c58;box-shadow:0 8px 26px rgba(0,0,0,.25)}
+.card[open]>summary{border-bottom:1px solid #796d52}
+.card[open] .tap-hint::after{content:"  ↑"}
+/* Engraved care medallions */
+.card-quick-facts{padding-top:10px;border-top:1px solid rgba(193,171,122,.21);margin-top:12px}
+.card-fact{border-radius:5px;background:#233332;border-color:#69705d;min-height:33px}
+.card-fact.fact-light{color:#e1bf79;background:#423b2b;border-color:#84734d}
+.card-fact.fact-type{color:#b6d5ba;background:#2b443a;border-color:#5a826b}
+.card-fact.fact-water{color:#b0d5df;background:#253d48;border-color:#587e8a}
+.card-fact.fact-soil{color:#d9ba91;background:#42382e;border-color:#866b50}
+.card-fact[aria-pressed="true"]{outline:2px solid currentColor}
+.card-fact:focus-visible{outline:2px solid var(--vellum)}
+.card-fact-explanation{background:#152525;border-color:#617060;color:#d9ddcc;border-radius:5px;font-size:12px}
+.card-icon-guide{background:#1d302d;border:1px solid #526c59;border-radius:6px;color:#d9decf;margin:0 0 16px;padding:10px 13px}
+.card-icon-guide>summary{font-family:var(--serif);font-size:14px;font-weight:500;color:#e5d7b6}
+.card-icon-guide>summary span,.card-icon-guide-items p{color:#afc3b5}
+.card-icon-guide-items{font-size:12px}
+.card-icon-guide>summary::before{color:#d4ba85}
+/* Inside a botanical specimen entry */
+.care{background:linear-gradient(180deg,#192927,#152421);border-color:#5c654e;padding:15px}
+.care-grid{gap:10px}
+.box,.history,.care-tracker,.plant-photo-journal{
+ background:#263531;border:1px solid #536254;border-radius:6px;color:var(--text);
+ box-shadow:inset 0 1px rgba(233,223,200,.025);
+}
+.box{padding:13px}
+.box.full{grid-column:1/-1}
+.box .label,.label{font-family:var(--serif);font-size:12px;letter-spacing:.1em;color:#d3b987}
+.box p{font-size:13px;line-height:1.6;color:#e1e0d0}
+.next-action{background:#273b31;border-color:#756e50;position:relative}
+.next-action .label{color:#e5c58b}
+.next-action p{font-weight:500}
+.unknown{color:#bbc0ae!important}
+.history{overflow:hidden}
+.history>summary{color:#e2c997;background:#23332e;font-size:14px;font-weight:500;letter-spacing:.03em}
+.history-grid{border-color:#536254}
+.history-item,.history-item:nth-child(odd){border-color:#49584e}
+.history-label{color:#adc0ae}
+.history-value,.history-note{color:#e5dfc8}
+.history-note a{color:#e2c58e}
+.care-tracker{padding:13px;background:#213831;border-color:#58765d}
+.care-tracker-heading strong{color:#ecdbb7;font-weight:500;font-size:17px}
+.care-latest,.care-count-label,.care-entry-row time{color:#b7c8b8}
+.care-tracker button,.care-overview button{border:1px solid #7a795f;background:#273c35;color:#e6d8bb;border-radius:5px;transition:background .15s}
+.care-tracker button:hover,.care-overview button:hover{background:#365449}
+.care-tracker .care-submit,.plant-photo-form .photo-upload-button{background:#637754;color:#faf2da;border:1px solid #aa9e74}
+.care-tracker .care-submit:hover,.plant-photo-form .photo-upload-button:hover{background:#758864}
+.care-more>summary,.care-list-heading,.care-settings>summary,.care-email-option>summary{color:#e1c894}
+.care-log-form label,.plant-photo-form label{color:#d1d7c7}
+.care-log-form input,.care-log-form select,.care-log-form textarea,.plant-photo-form input{
+ background:#182a29;color:#ece3ce;border-color:#6b7868;border-radius:5px;
+}
+.care-list-heading,.care-email-option{border-color:#506353}
+.care-entry-row{background:#2b3c35;border:1px solid #40594b;color:#e9dfc8}
+.care-entry-note{color:#e1e0d0}
+.care-tracker .care-undo{color:#f0bcb3;border-color:#6e6658}
+.care-no-entries{color:#c0c9b9}
+.care-pending{color:#f0d19b}
+/* Dark journal + gallery */
+.plant-photo-journal{background:#223431;color:var(--text);padding:14px}
+.photo-journal-head strong{font-family:var(--serif);font-size:18px;font-weight:500;color:#ebd6aa}
+.photo-count,.photo-hint,.photo-upload-hint,.photo-signed-out,.photo-upload-hint{
+ color:#b8c6ba}
+.plant-photo-form input[type="file"]::file-selector-button{background:#3a4d40;color:#f0debb;border:1px solid #887d5d}
+.photo-gallery-item{background:#1c2e2b;border:1px solid #5f6656;border-radius:5px}
+.photo-gallery-item a{background:#162623;border-radius:4px}
+.photo-gallery-meta,.photo-caption,.photo-awaiting{color:#c1ccbd}
+.photo-cover-label{background:#385243;color:#e8d5a7}
+.photo-gallery-item button{color:#f1b6ac}
+.photo-local-status,#gaia-photo-message{background:#294234;border-color:#62755c;color:#e0ebd8}
+.photo-local-status.photo-error,#gaia-photo-message.photo-error{background:#4a2e31;border-color:#936a64;color:#ffd1c6}
+/* Conservatory steward's folio */
+.gaia-task-panel{background:linear-gradient(145deg,#263b35,#1c2d2c);
+ border:1px solid #8c805c;border-radius:7px;box-shadow:inset 0 0 0 3px #26382f;
+ overflow:hidden}
+.gaia-task-panel>summary{color:#e8d8b9;padding:15px 17px}
+.gaia-task-summary-title{font-family:var(--serif);font-weight:500;font-size:19px;letter-spacing:.025em}
+.gaia-task-summary-icon{background:#394a3c;border:1px solid #8c805c;color:#e4c995;border-radius:50%;font-family:var(--serif)}
+.gaia-task-progress{background:#1a2c29;border-color:#758069;color:#dfd5b5;font-weight:600}
+.gaia-task-panel>summary::after{color:#d6bf90}
+.gaia-task-content{border-color:#566652}
+.gaia-task-intro,.gaia-task-status{color:#c1cbbb}
+.gaia-task-item{background:#1b2d2b;border:1px solid #56665a;border-radius:5px}
+.gaia-task-item input[type=checkbox]{accent-color:#b9a376}
+.gaia-task-category{color:#d4bb89}
+.gaia-task-text strong{font-family:var(--serif);font-weight:600;font-size:15px;color:#e9dfc8}
+.gaia-task-description{font-size:12px;color:#bfcac0}
+.gaia-task-item.is-done{background:#22332d;border-color:#45594a;opacity:.8}
+.gaia-task-item.is-done .gaia-task-text strong{color:#bec5b6}
+.gaia-task-status.gaia-task-error{color:#f0b1a8}
+.gaia-task-empty{color:#c3cbbc}
+/* Ledger of prior work, and discreet account controls */
+.activity{background:#1e302c;border:1px solid #606853;border-radius:7px;padding:17px}
+.activity h2,.care-overview h2{font-family:var(--serif);font-weight:500;font-size:21px;color:#e8d6b0}
+.activity-date{color:#c4cabc}
+.activity-tile{background:#273834;border:1px solid #536657;border-radius:5px}
+.activity h3{font-family:var(--serif);font-size:15px;font-weight:500;color:#e2c695}
+.activity p,.activity-note{color:#d0d7c8}
+#care-overview{background:#192b29;border:1px solid #526154;border-radius:7px}
+.care-overview p{color:#b8c6bb}
+.care-sync-status{background:#314538;border-color:#60795f;color:#daeccf}
+.care-settings{border-color:#526355}
+.care-settings small{color:#b2c2b6}
+#care-message{background:#2b4439;border-color:#5e7e66;color:#e7f0da}
+#care-message.care-error{background:#422e31;border-color:#936a64;color:#ffd1c6}
+.care-overview .care-signin-form input{background:#182a29;color:var(--text);border-color:#6b7868}
+.care-overview .care-signin-form label{color:#d3d6c8}
+.photo-upload-hint,#gaia-photo-sync-state{color:#b1c6b7}
+/* Focus clarity, accessibility, and small-screen geometry */
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,
+.gaia-task-item:focus-within{outline:2px solid #d4ba85;outline-offset:2px}
+@media(hover:hover) and (pointer:fine){
+ .card:hover{border-color:#9b8a69;box-shadow:0 12px 32px rgba(0,0,0,.28)}
+ .card-fact:hover,.gaia-task-item:hover{filter:brightness(1.12)}
+}
+@media(max-width:850px){.wrap{padding:16px 15px 32px}.hero-botanical{opacity:.15;right:-5%}.gaia-hero{min-height:230px}}
+@media(max-width:600px){
+ .wrap{padding:11px 10px calc(25px + env(safe-area-inset-bottom))}
+ .gaia-hero{margin-bottom:11px;padding:18px 19px 17px;border-radius:6px;min-height:auto}
+ .gaia-hero::before{inset:6px}
+ .hero-brand{gap:10px}
+ .hero-crest{flex:0 0 48px;width:48px}
+ .hero-eyebrow{font-size:8px;letter-spacing:.2em}
+ .gaia-hero h1{font-size:49px;letter-spacing:.09em}
+ .hero-tagline{font-size:13px;margin-top:5px}
+ .hero-divider{margin:9px 0 7px;height:10px;max-width:245px}
+ .hero-description{font-size:12px;line-height:1.35;margin:6px 0}
+ .gaia-hero .sub{font-size:10px;line-height:1.4}
+ .hero-botanical{width:140px;right:-23px;top:0;opacity:.11}
+ .stats{margin:9px 0 12px;gap:7px}
+ .stat{padding:9px 11px}
+ .stat small{font-size:9px;letter-spacing:.055em}
+ .stat b{font-size:23px;margin:0}
+ .grid{gap:10px}
+ .card{border-radius:5px}
+ .card>summary{min-height:133px}
+ .card>summary>.photo{min-height:133px}
+ .card>summary .summary-body{padding:10px 9px}
+ .name{font-size:21px;line-height:1.05}
+ .species{font-size:10px;line-height:1.3}
+ .badge{font-size:8.5px}
+ .card-quick-facts{padding-top:7px;margin-top:8px}
+ .card-fact{min-height:29px;border-radius:4px}
+ .tap-hint{font-size:11px}
+ .care{padding:10px}
+ .box{padding:10px}
+ .box .label{font-size:11px}
+ .box p{font-size:12.5px}
+ .gaia-task-panel>summary{padding:11px 12px}
+ .gaia-task-summary-title{font-size:17px}
+ .gaia-task-item{padding:11px}
+ .gaia-task-text strong{font-size:15px}
+ .care-tracker-heading strong{font-size:15px}
+ .care-quick-actions button{min-height:42px}
+ .activity h2,.care-overview h2{font-size:19px}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
 </style>
 <script>document.documentElement.classList.add('js-enabled');</script>
 </head>
 <body>
 <div class="wrap">
-<header>
-<div><h1>GAIA</h1><div class="sub">45 plants · updated Oct 12, 2026 · tap for care, priorities &amp; history</div></div>
+<header class="gaia-hero">
+  <div class="hero-copy">
+    <div class="hero-brand">
+      <div class="hero-crest" aria-hidden="true">
+        <svg viewBox="0 0 92 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M46 4 84 19v39c0 24-16 39-38 50C24 97 8 82 8 58V19L46 4Z" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M46 11 77 24v33c0 20-12 33-31 43C27 90 15 77 15 57V24L46 11Z" stroke="currentColor" stroke-width=".6" opacity=".5"/>
+          <path d="M46 89V27m0 46c-18-4-22-16-24-23 15 1 23 9 24 23Zm0-19c14-2 21-11 25-22-14 0-22 8-25 22Zm0-10C34 41 31 30 32 22c9 3 14 10 14 22Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+          <path d="M26 83h40" stroke="currentColor" opacity=".5"/>
+          <circle cx="46" cy="18" r="1.5" fill="currentColor"/>
+        </svg>
+      </div>
+      <div class="hero-titles">
+        <div class="hero-eyebrow">THE LIVING COLLECTION</div>
+        <h1>GAIA</h1>
+        <div class="hero-tagline">The Midnight Herbarium</div>
+      </div>
+    </div>
+    <div class="hero-divider" aria-hidden="true"><span>✧</span></div>
+    <p class="hero-description">A record of rooted things, under glass and gathering weather.</p>
+    <div class="sub">45 plants · updated Oct 12, 2026 · tap for care, priorities &amp; history</div>
+  </div>
+  <svg class="hero-botanical" aria-hidden="true" viewBox="0 0 270 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M155 300C153 244 150 177 141 116S122 34 98 7" stroke="currentColor" stroke-width="1.5"/>
+    <path d="M148 247c-37-6-67-32-83-64 41 2 68 19 83 64Zm-3-37c34-6 60-31 74-66-42 6-63 29-74 66Zm-7-49c-40-14-57-39-65-77 34 11 58 36 65 77Zm-8-41c37-10 51-33 58-62-34 7-53 29-58 62Zm-14-52c-26-9-42-24-48-50 29 5 45 22 48 50Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+    <path d="M126 300c-30-41-68-62-117-74M89 263c-2-23-18-39-40-51 1 23 16 41 40 51Zm-32-18c-21 0-36 9-48 26 23 0 37-10 48-26Zm142 55c7-44 25-75 56-103m-38 56c-21-12-29-30-30-53 20 13 29 30 30 53Zm17-30c4-23 18-40 36-48-3 22-15 38-36 48Z" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/>
+    <circle cx="231" cy="38" r="23" stroke="currentColor" stroke-width=".9" opacity=".6"/>
+    <path d="M234 17c-17 12-15 32 2 42" stroke="currentColor" stroke-width=".8"/>
+    <path d="M31 44l3 9 9 3-9 3-3 9-3-9-9-3 9-3 3-9Z" stroke="currentColor"/>
+    <circle cx="233" cy="99" r="1.5" fill="currentColor"/><circle cx="31" cy="126" r="1.4" fill="currentColor"/>
+  </svg>
 </header>
 <div class="stats">
 <div class="stat"><small>TOTAL COLLECTION</small><b>45</b></div>
