@@ -76,9 +76,9 @@ While signed in, open **Tasks to complete → Add a task** to create personal ca
 
 **Recent care** appears after the plant cards, followed by **Sync, account & backup** at the very bottom.
 
-## Plant Steward: private AI briefings and ChatGPT project
+## GAIA Insights: private AI briefings and ChatGPT project
 
-The Midnight Herbarium now includes a read-only **Steward's Briefing** panel between the task checklist and the plant filters. It reads the latest record from `public.gaia_ai_reviews` for the **signed-in GAIA user only**. The report consists of its saved review date, summary, up to five priorities and rationale, and an expandable evidence/uncertainties section. Saved report text is escaped when rendered.
+The Midnight Herbarium now includes a read-only **GAIA Insights** panel between the task checklist and the plant filters. It reads the latest record from `public.gaia_ai_reviews` for the **signed-in GAIA user only**. The report consists of its saved review date, summary, up to five priorities and rationale, and an expandable evidence/uncertainties section. Saved report text is escaped when rendered.
 
 - **No OpenAI API calls happen in GAIA.** The page only reads its authenticated owner's existing Supabase review records; any ChatGPT automated analysis happens separately using the user's ChatGPT scheduled task.
 - The panel fetches reviews on sign-in, optionally refreshes when returning to the browser tab or syncing care, and has a manual **Refresh notes** button. It does not offer AI chat within the website.
@@ -86,7 +86,7 @@ The Midnight Herbarium now includes a read-only **Steward's Briefing** panel bet
 - A baseline `manual_review` was saved for October 12, 2026, using only the known static care notes. It reports mite follow-up concerns and plant-specific needs. It is **not** an independent diagnosis, private photo analysis, moisture reading, or care event.
 - The scheduled **GAIA Hourly Plant Watch** is intended to monitor meaningful changes and update the private review table when supported. Scheduled executions and future database writes are independent from the browser panel and are not guaranteed by the existence of the panel.
 - Reports are **recommendations, not confirmed care history**. They do not automatically complete tasks or modify `plants.json`.
-- The header's **Open Plant Steward in ChatGPT** link opens the user's [Plant Steward project](https://chatgpt.com/g/g-p-6a68d01f4a088191820e9381dd3d14c8/project) in a new tab. This URL is present in the **public** GitHub Pages HTML; only a properly signed-in ChatGPT account with access to that private project can open its content.
+- The header's **Ask GAIA** link opens the user's [ChatGPT plant-care project](https://chatgpt.com/g/g-p-6a68d01f4a088191820e9381dd3d14c8/project) in a new tab. This URL is present in the **public** GitHub Pages HTML; only a properly signed-in ChatGPT account with access to that private project can open its content.
 
 The implementation is in `insights.js`; the page reads from the existing private `gaia_ai_reviews` table protected by Row Level Security. Avoid adding OpenAI API credentials to `index.html`, `gaia-config.js`, or other public files.
 
