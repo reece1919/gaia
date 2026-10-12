@@ -557,6 +557,109 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
  .gaia-task-add{margin:10px 0 12px}
 }
 
+
+/* GAIA Midnight Herbarium · Steward's private, read-only field report */
+.hero-steward-link{
+ display:inline-flex;align-items:center;gap:10px;max-width:100%;min-height:42px;
+ margin-top:18px;padding:9px 15px;
+ text-decoration:none;font-size:12px;line-height:1.3;font-weight:700;letter-spacing:.035em;
+ background:linear-gradient(105deg,#304438,#273932);color:#f1e1bf;
+ border:1px solid #af9769;border-radius:5px;
+ box-shadow:inset 0 1px 0 rgba(244,223,175,.12),0 3px 10px rgba(0,0,0,.18);
+}
+.hero-steward-link:hover{background:#3a5444;color:#fff1d1;border-color:#d7ba7d}
+.hero-steward-link:focus-visible{outline:3px solid #e6cb95;outline-offset:3px}
+.steward-link-star{font-family:var(--serif);font-size:19px;line-height:1;color:#d6bd83}
+.steward-link-arrow{font-size:15px;line-height:1;color:#d6bd83}
+.gaia-insights{
+ border:1px solid #718078;border-radius:7px;
+ background:linear-gradient(130deg,#1c3030,#1b292b);
+ box-shadow:inset 0 0 0 3px rgba(210,191,146,.025);margin:0 0 16px;overflow:hidden;
+}
+.gaia-insights>summary{
+ list-style:none;cursor:pointer;display:flex;align-items:center;
+ flex-wrap:wrap;justify-content:space-between;gap:9px;padding:13px 17px;
+ color:#ebdbb7;min-height:51px;
+}
+.gaia-insights>summary::-webkit-details-marker{display:none}
+.gaia-insights>summary::after{content:"▾";color:#c2ad80;font-size:16px;margin-left:3px}
+.gaia-insights[open]>summary::after{content:"▴"}
+.gaia-insights>summary:focus-visible{outline:2px solid #d4ba85;outline-offset:-3px}
+.gaia-insights-heading{
+ display:inline-flex;align-items:center;gap:10px;
+ font-family:var(--serif);font-weight:500;letter-spacing:.02em;font-size:19px;
+}
+.gaia-insights-mark{font-size:20px;color:#d3bb82}
+.gaia-insights-stamp{
+ color:#c1cebf;font-size:10.5px;font-weight:650;letter-spacing:.03em;
+ margin-left:auto;padding:5px 9px;border:1px solid #65766a;
+ background:#233833;border-radius:999px;
+}
+.gaia-insights-content{padding:15px 17px 14px;border-top:1px solid #52665e}
+.gaia-insights-meta{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:11px}
+.gaia-insights-seal{
+ display:inline-flex;color:#e0c995;border:1px solid #857a58;background:#343b31;
+ padding:4px 7px;letter-spacing:.13em;font-size:9px;font-weight:750;border-radius:3px;
+}
+.gaia-insights-meta time{font-size:11px;color:#bdcabe}
+.gaia-insights-summary{
+ font-family:var(--serif);font-size:16px;line-height:1.62;font-weight:400;
+ white-space:pre-line;color:#eee1c9;margin:0 0 16px;overflow-wrap:anywhere;
+}
+.gaia-insights-empty{color:#c9d2c6;font-size:12px;line-height:1.6;margin:0 0 11px}
+.gaia-insights-priorities{margin:11px 0 14px;border-top:1px solid #59675d;padding-top:12px}
+.gaia-insights-priorities h3{font-family:var(--serif);font-weight:500;color:#e8cf9a;font-size:16px;
+ letter-spacing:.025em;margin:0 0 12px}
+.gaia-insights-priorities ol{
+ list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;
+ counter-reset:gaia-priority;
+}
+.gaia-insights-priorities li{
+ counter-increment:gaia-priority;position:relative;background:#223733;
+ border:1px solid #5f705e;border-radius:5px;min-width:0;padding:11px 12px 11px 37px;
+}
+.gaia-insights-priorities li::before{
+ content:counter(gaia-priority,decimal-leading-zero);position:absolute;left:10px;top:12px;
+ font-family:var(--serif);color:#ddbd7e;font-size:13px;
+}
+.gaia-insights-priorities li strong{
+ color:#e7dfc9;font-size:12px;line-height:1.4;font-weight:700;display:block;overflow-wrap:anywhere;
+}
+.gaia-insights-priorities li p{color:#bac9bd;line-height:1.5;font-size:11.5px;margin:5px 0 0;
+ white-space:pre-line;overflow-wrap:anywhere}
+.gaia-insights-plant{display:block;color:#dfc68e;font-size:11px;line-height:1.5;margin-top:3px}
+.gaia-insights-evidence{margin:9px 0 12px;padding:9px 11px;
+ background:#192b2b;border:1px solid #526559;border-radius:4px}
+.gaia-insights-evidence>summary{cursor:pointer;color:#dcc799;font-size:12px;font-weight:700}
+.gaia-insights-evidence p{font-size:11.5px;line-height:1.58;color:#bac8ba;
+ margin:9px 0 0;white-space:pre-line;overflow-wrap:anywhere}
+.gaia-insights-disclaimer{font-size:10.5px;line-height:1.55;font-style:italic;
+ color:#aebfad;margin:10px 0}
+.gaia-insights-actions{display:flex;justify-content:space-between;
+ flex-wrap:wrap;align-items:center;gap:10px;border-top:1px solid #536357;padding-top:11px}
+.gaia-insights-actions button{
+ font:inherit;font-size:11px;font-weight:700;min-height:35px;padding:7px 11px;
+ cursor:pointer;border:1px solid #a08f68;border-radius:4px;
+ background:#354d3f;color:#efddb8;
+}
+.gaia-insights-actions button:hover:not(:disabled){background:#47634e}
+.gaia-insights-actions button:disabled{opacity:.55;cursor:default}
+.gaia-insights-actions button:focus-visible{outline:2px solid #d4ba85;outline-offset:2px}
+.gaia-insights-actions p{font-size:10.5px;line-height:1.5;color:#bccdbd;margin:0;flex:1;text-align:right}
+.gaia-insights-actions p.gaia-insights-error{color:#f4b8ae}
+@media(max-width:600px){
+ .hero-steward-link{font-size:11.5px;min-height:40px;margin-top:12px;padding:8px 11px;gap:7px}
+ .gaia-insights{margin:0 0 11px}
+ .gaia-insights>summary{padding:11px 12px;gap:6px}
+ .gaia-insights-heading{font-size:16px;gap:7px}
+ .gaia-insights-mark{font-size:17px}
+ .gaia-insights-stamp{font-size:10px;padding:4px 7px}
+ .gaia-insights-content{padding:12px 11px}
+ .gaia-insights-priorities ol{grid-template-columns:1fr;gap:7px}
+ .gaia-insights-summary{font-size:14px}
+ .gaia-insights-actions p{text-align:left;flex-basis:100%}
+}
+
 </style>
 <script>document.documentElement.classList.add('js-enabled');</script>
 </head>
@@ -583,6 +686,11 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
     <div class="hero-divider" aria-hidden="true"><span>✧</span></div>
     <p class="hero-description">A record of rooted things, under glass and gathering weather.</p>
     <div class="sub">45 plants · updated Oct 12, 2026 · tap for care, priorities &amp; history</div>
+    <a class="hero-steward-link" href="https://chatgpt.com/g/g-p-6a68d01f4a088191820e9381dd3d14c8/project" target="_blank" rel="noopener noreferrer" aria-label="Open Plant Steward project in ChatGPT (opens in a new tab)">
+      <span class="steward-link-star" aria-hidden="true">✦</span>
+      <span>Open Plant Steward in ChatGPT</span>
+      <span class="steward-link-arrow" aria-hidden="true">↗</span>
+    </a>
   </div>
   <svg class="hero-botanical" aria-hidden="true" viewBox="0 0 270 300" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M155 300C153 244 150 177 141 116S122 34 98 7" stroke="currentColor" stroke-width="1.5"/>
@@ -630,6 +738,22 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
     </details>
     <div id="gaia-task-list" class="gaia-task-list" role="group" aria-label="Plant care follow-up checklist"></div>
     <p id="gaia-task-status" class="gaia-task-status" role="status" aria-live="polite"></p>
+  </div>
+
+</details>
+<details id="gaia-insights" class="gaia-insights" open aria-label="Plant Steward AI insights">
+  <summary>
+    <span class="gaia-insights-heading"><span class="gaia-insights-mark" aria-hidden="true">✧</span> Steward’s Briefing</span>
+    <span id="gaia-insights-stamp" class="gaia-insights-stamp">Private AI notes</span>
+  </summary>
+  <div class="gaia-insights-content">
+    <div id="gaia-insights-body" class="gaia-insights-body" aria-live="polite">
+      <p class="gaia-insights-empty">Checking for saved Plant Steward notes…</p>
+    </div>
+    <div class="gaia-insights-actions">
+      <button type="button" id="gaia-insights-refresh" disabled>Refresh notes</button>
+      <p id="gaia-insights-status" role="status" aria-live="polite">Requires your GAIA sign-in to read private reviews.</p>
+    </div>
   </div>
 </details>
 <div class="controls" id="controls">
@@ -709,5 +833,6 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 <script src="care.js?v=20261012-photos1" defer></script>
 <script src="photos.js?v=20261012-photos2" defer></script>
 <script src="tasks.js?v=20261012-customtasks1" defer></script>
+<script src="insights.js?v=20261012-steward1" defer></script>
 </body>
 </html>
