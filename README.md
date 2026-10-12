@@ -72,6 +72,8 @@ The expandable **Tasks to complete** checklist appears near the top. Its six sta
 
 Task checkboxes are private and cross-device: checking or unchecking saves an owner-only row in `public.gaia_task_completions` (see [`supabase/gaia_task_completions.sql`](supabase/gaia_task_completions.sql)). They do not create a care event or imply watering actually occurred; log real work in the matching plant's care journal.
 
+While signed in, open **Tasks to complete → Add a task** to create personal care follow-ups. You can choose a plant or the whole collection, set an optional due date, and add notes. Personal tasks can be marked complete, edited, or removed without changing the curated follow-ups. Overdue and due-today dates are highlighted whenever GAIA is opened. This is **in-app due-date tracking, not phone notifications**. Personal tasks live in the private owner-only `public.gaia_custom_tasks` table (see [`supabase/gaia_custom_tasks.sql`](supabase/gaia_custom_tasks.sql)). Watering must still be based on real soil and plant conditions, not rigid recurring dates.
+
 **Recent care** appears after the plant cards, followed by **Sync, account & backup** at the very bottom.
 
 ## Uploading plant photos directly from GAIA
