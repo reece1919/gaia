@@ -133,6 +133,36 @@ input:focus,select:focus{border-color:#8eae96;box-shadow:0 0 0 3px rgba(53,106,6
 .care-signin-form{align-items:end;gap:8px}
 .care-signin-form label{min-width:min(100%,180px)}
 
+
+/* GAIA private photo journal */
+.plant-photo-journal{margin-bottom:12px;background:#f2f6f0;border:1px solid #d4e2d5;border-radius:11px;padding:12px;color:var(--text)}
+.photo-journal-head{display:flex;justify-content:space-between;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:9px}
+.photo-journal-head strong{font-size:14px;color:#285737}
+.photo-count,.photo-hint,.photo-upload-hint{font-size:11px;color:var(--muted)}
+.photo-signed-out{font-size:12px;color:var(--muted);line-height:1.4}
+.photo-signed-in[hidden],.photo-signed-out[hidden],#gaia-photo-message[hidden]{display:none!important}
+.plant-photo-form{display:grid;gap:9px;margin:2px 0 12px}
+.plant-photo-form label{display:grid;gap:4px;color:#485b4a;font-size:11px;font-weight:750}
+.plant-photo-form input{font:inherit;font-size:13px;width:100%;border:1px solid #cdddcf;background:#fff;border-radius:8px;padding:9px;color:var(--text)}
+.plant-photo-form input[type="file"]{font-size:12px;min-width:0;max-width:100%;cursor:pointer}
+.plant-photo-form input[type="file"]::file-selector-button{border:1px solid #a6c8ac;border-radius:8px;background:#eaf5ec;padding:6px 10px;color:#285737;font-weight:750;margin-right:8px;cursor:pointer}
+.photo-input-row{display:grid;grid-template-columns:minmax(125px,.7fr) minmax(0,1.3fr);gap:8px}
+.plant-photo-form .photo-upload-button{padding:10px 13px;border:0;border-radius:9px;background:#356a45;color:#fff;font:inherit;font-size:13px;font-weight:800;cursor:pointer;justify-self:start;min-height:40px}
+.plant-photo-form .photo-upload-button:disabled{opacity:.6;cursor:wait}
+.photo-upload-hint{line-height:1.4;display:block}
+.photo-gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(135px,1fr));gap:9px;margin:8px 0}
+.photo-gallery-item{border:1px solid #dce6db;background:#fff;border-radius:10px;padding:7px;min-width:0}
+.photo-gallery-item a{display:block;border-radius:6px;overflow:hidden;background:#e9f1eb;aspect-ratio:4/3}
+.photo-gallery-item img{width:100%;height:100%;object-fit:cover}
+.photo-gallery-meta{display:flex;gap:4px;flex-wrap:wrap;justify-content:space-between;align-items:center;margin:5px 0;font-size:10px;color:#6a786c}
+.photo-cover-label{background:#edf5ef;border-radius:100px;padding:2px 5px;color:#356a45;font-weight:800}
+.photo-caption{font-size:11px;line-height:1.4;overflow-wrap:anywhere;color:#435347}
+.photo-gallery-item button{background:transparent;border:0;color:#8a3434;text-decoration:underline;padding:6px 0 0;font:inherit;font-size:11px;cursor:pointer}
+.photo-awaiting{min-height:90px;display:flex;justify-content:center;align-items:center;color:#667168;font-size:11px;text-align:center}
+#gaia-photo-message{margin-top:10px!important;padding:8px 10px;background:#fff;border:1px solid #d2dfd3;border-radius:8px;color:#285737}
+#gaia-photo-message.photo-error{border-color:#e5c0b8;background:#fff7f5;color:#893737}
+@media(max-width:600px){.plant-photo-journal{padding:10px;margin-bottom:9px}.photo-gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.photo-input-row{grid-template-columns:1fr}}
+
 </style>
 <script>document.documentElement.classList.add('js-enabled');</script>
 </head>
@@ -193,6 +223,8 @@ input:focus,select:focus{border-color:#8eae96;box-shadow:0 0 0 3px rgba(53,106,6
   </div>
  </details>
  <p id="care-message" role="status" aria-live="polite" hidden></p>
+<p class="photo-upload-hint" id="gaia-photo-sync-state">Sign in to upload photos</p>
+<p id="gaia-photo-message" role="status" aria-live="polite" hidden></p>
 </section>
 
 <section aria-label="Recent care and follow-up" class="activity" id="recent-care"><div class="activity-heading"><h2>Recent care &amp; follow-up</h2></div></section><div class="controls" id="controls">
@@ -206,6 +238,7 @@ input:focus,select:focus{border-color:#8eae96;box-shadow:0 0 0 3px rgba(53,106,6
 </div>
 <script src="gaia-config.js?v=20261012-sync3"></script>
 <script src="app.js?v=20261012-sync3" defer></script>
-<script src="care.js?v=20261012-journal-sync2" defer></script>
+<script src="care.js?v=20261012-photos1" defer></script>
+<script src="photos.js?v=20261012-photos1" defer></script>
 </body>
 </html>
