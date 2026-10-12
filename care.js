@@ -330,5 +330,6 @@
   document.addEventListener("gaia:ready", event => mount(event.detail.plants || []));
   local = readKey(key());
   renderJournal();
+  if (window.GAIA_DATA?.plants) mount(window.GAIA_DATA.plants);
   void setupCloud();
 })();
