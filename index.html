@@ -504,6 +504,59 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
 
+
+/* The Midnight Herbarium: personal task notebook */
+.gaia-task-add{margin:12px 0 13px;background:linear-gradient(110deg,#283d34,#1d302b);
+ border:1px solid #777456;border-radius:5px;overflow:hidden}
+.gaia-task-add[hidden]{display:none!important}
+.gaia-task-add>summary{list-style:none;cursor:pointer;color:#e4cb98;font-family:var(--serif);
+ font-size:16px;padding:10px 14px;font-weight:500;letter-spacing:.03em}
+.gaia-task-add>summary::-webkit-details-marker{display:none}
+.gaia-task-add>summary span{font-family:system-ui,sans-serif;font-size:19px;color:#d0ad70;
+ margin-right:7px;vertical-align:-1px}
+.gaia-task-add>summary:focus-visible{outline:2px solid #d4ba85;outline-offset:-3px}
+.gaia-task-add[open]>summary{border-bottom:1px solid #5f705e}
+.gaia-task-create-form,.gaia-task-edit-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;
+ padding:12px 13px}
+.gaia-task-create-form label,.gaia-task-edit-form label{display:grid;gap:4px;
+ color:#d7d8c6;font-size:11px;font-weight:700;letter-spacing:.015em}
+.gaia-task-create-form .task-field-wide,.gaia-task-edit-form label:first-child,
+.gaia-task-edit-form label:nth-child(4){grid-column:1/-1}
+.task-field-optional{color:#a4b5a9;font-weight:400}
+.gaia-task-create-form input,.gaia-task-create-form select,.gaia-task-create-form textarea,
+.gaia-task-edit-form input,.gaia-task-edit-form select,.gaia-task-edit-form textarea{
+ background:#152925;color:#ecdfc8;border:1px solid #72806b;border-radius:5px;
+ padding:10px;font:inherit;font-size:13px;min-width:0;width:100%}
+.gaia-task-create-form textarea,.gaia-task-edit-form textarea{resize:vertical}
+.gaia-task-form-actions{grid-column:1/-1;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.gaia-task-form-actions button,.gaia-task-edit-actions button{font:inherit;font-size:12px;font-weight:700;
+ padding:10px 13px;border:1px solid #a89b72;background:#52654b;color:#f3e6c8;
+ border-radius:5px;cursor:pointer}
+.gaia-task-form-actions button:disabled{opacity:.5;cursor:wait}
+.gaia-task-form-actions span{font-size:11px;color:#b6c6b9;line-height:1.35}
+.gaia-task-item{flex-direction:column;gap:8px}
+.gaia-task-check{display:flex;align-items:flex-start;gap:10px;cursor:pointer;width:100%;min-width:0}
+.gaia-task-check .gaia-task-text{flex:1}
+.gaia-task-due{display:inline-flex;align-self:flex-start;font-size:10px;line-height:1.2;
+ color:#d5c89f;background:#304235;border:1px solid #637453;border-radius:4px;
+ margin-top:2px;padding:4px 7px;font-weight:700}
+.gaia-task-due.is-today{color:#eed19c;background:#51432f;border-color:#947954}
+.gaia-task-due.is-overdue{color:#ffbcb3;background:#493034;border-color:#95645f}
+.gaia-task-controls{display:flex;gap:9px;align-self:flex-end}
+.gaia-task-controls button{background:transparent;border:0;color:#d8c394;font-size:11px;
+ cursor:pointer;padding:4px 2px;text-decoration:underline;text-underline-offset:2px}
+.gaia-task-controls button:last-child{color:#efb4a9}
+.gaia-task-controls button:disabled{opacity:.5;cursor:default}
+.gaia-task-edit-form{width:100%;padding:9px 0 0;border-top:1px solid #526253;margin-top:4px}
+.gaia-task-edit-actions{grid-column:1/-1;display:flex;gap:9px;flex-wrap:wrap}
+.gaia-task-edit-actions button:last-child{background:transparent;color:#e8d6b0}
+@media(max-width:600px){
+ .gaia-task-create-form,.gaia-task-edit-form{grid-template-columns:1fr}
+ .gaia-task-create-form .task-field-wide,.gaia-task-edit-form label:first-child,
+ .gaia-task-edit-form label:nth-child(4){grid-column:auto}
+ .gaia-task-add{margin:10px 0 12px}
+}
+
 </style>
 <script>document.documentElement.classList.add('js-enabled');</script>
 </head>
@@ -554,6 +607,27 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
   </summary>
   <div class="gaia-task-content">
     <p class="gaia-task-intro">Follow-ups from your recorded plant care notes. Check a task only after you have actually done it.</p>
+    <details id="gaia-task-add" class="gaia-task-add" hidden>
+      <summary><span aria-hidden="true">＋</span> Add a task</summary>
+      <form id="gaia-task-create" class="gaia-task-create-form">
+        <label class="task-field-wide">Task
+          <input name="title" maxlength="120" placeholder="e.g. Check Morgana for mites" required>
+        </label>
+        <label>Plant
+          <select id="gaia-task-plant" name="plant_id"><option value="">Whole collection</option></select>
+        </label>
+        <label>Due date <span class="task-field-optional">(optional)</span>
+          <input name="due_on" type="date">
+        </label>
+        <label class="task-field-wide">Notes <span class="task-field-optional">(optional)</span>
+          <textarea name="detail" maxlength="500" rows="2" placeholder="What needs checking?"></textarea>
+        </label>
+        <div class="gaia-task-form-actions">
+          <button type="submit">Add task</button>
+          <span>No automatic watering schedule — check the soil first.</span>
+        </div>
+      </form>
+    </details>
     <div id="gaia-task-list" class="gaia-task-list" role="group" aria-label="Plant care follow-up checklist"></div>
     <p id="gaia-task-status" class="gaia-task-status" role="status" aria-live="polite"></p>
   </div>
@@ -634,6 +708,6 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 <script src="app.js?v=20261012-card-icons1" defer></script>
 <script src="care.js?v=20261012-photos1" defer></script>
 <script src="photos.js?v=20261012-photos2" defer></script>
-<script src="tasks.js?v=20261012-tasks1" defer></script>
+<script src="tasks.js?v=20261012-customtasks1" defer></script>
 </body>
 </html>
