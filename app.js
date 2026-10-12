@@ -18,6 +18,7 @@
     const card = document.createElement("details");
     card.className = "card";
     card.dataset.name = p.searchName || p.name || "";
+    card.dataset.plantId = p.id;
     card.dataset.species = p.searchSpecies || p.species || "";
     card.dataset.status = p.status || "";
     card.dataset.photo = p.photo ? "yes" : "no";
@@ -119,6 +120,7 @@
       cards.forEach(card => fragment.appendChild(card));
       grid.appendChild(fragment);
       renderSummary(data);
+      document.dispatchEvent(new CustomEvent("gaia:ready", { detail: { plants: data.plants } }));
       if (loading) loading.remove();
       filter();
     } catch (error) {
