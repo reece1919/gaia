@@ -227,7 +227,11 @@
       console.error("GAIA care sync", e);
       alertNotice("Cloud sync did not complete: " + (e.message || "Check your connection.") +
         " Your pending entries remain saved on this device.", true);
-    } finally {busy = false; renderJournal();}
+    } finally {
+      busy = false;
+      renderJournal();
+      document.dispatchEvent(new Event("gaia:care-synced"));
+    }
   }
   async function handleAuth(session) {
     const next = session?.user || null;
@@ -238,6 +242,7 @@
     alertNotice(user ? "Signed in. Loading your private care journal…" :
       "Signed out. Showing this device's local care journal.");
     renderJournal();
+    document.dispatchEvent(new CustomEvent("gaia:auth", {detail:{client:db, user}}));
     if (user) await sync();
   }
   function loadSdk() {
@@ -268,6 +273,7 @@
       const {data, error} = await db.auth.getSession();
       if (error) throw error;
       await handleAuth(data.session);
+      document.dispatchEvent(new CustomEvent("gaia:auth", {detail:{client:db, user}}));
       db.auth.onAuthStateChange((_event, session) => {
         window.setTimeout(() => { void handleAuth(session); }, 0);
       });
