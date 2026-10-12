@@ -117,7 +117,7 @@
       const fragment = document.createDocumentFragment();
       cards = data.plants.map(makeCard);
       cards.forEach(card => fragment.appendChild(card));
-      grid.insertBefore(fragment, empty);
+      grid.appendChild(fragment);
       renderSummary(data);
       if (loading) loading.remove();
       filter();
