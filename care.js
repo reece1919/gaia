@@ -214,7 +214,13 @@
       if (error) throw error;
       remote = (data || []).filter(e => ACTIONS[e.action_type]).map(e => ({...e, synced:true}));
       const cloudIds = new Set(remote.map(e => e.id));
+      // Cloud data is authoritative for previously synced records. Otherwise a
+      // record deleted on another device stays visible in the local cache.
+      // Keep unsynced work, and avoid pruning if the server result hit its cap.
       local.forEach(e => { if (cloudIds.has(e.id)) e.synced = true; });
+      if (remote.length < 5000) {
+        local = local.filter(e => !e.synced || cloudIds.has(e.id));
+      }
       saveLocal();
       alertNotice("Care journal synced across your signed-in devices.");
     } catch (e) {
