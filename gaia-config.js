@@ -5,6 +5,6 @@
  * NEVER put the service_role or secret API key in a public website.
  */
 window.GAIA_SUPABASE = {
-  url: "",
-  anonKey: ""
+  url: "https://zdurujqwhxqrwbhwzzxg.supabase.co",
+  anonKey: "sb_publishable_Xa0DTx_PbvtynbiQN6_xNQ_l1D55vzK",
 };
