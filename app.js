@@ -14,6 +14,98 @@
   const cleanClass = value => String(value ?? "").split(/\s+/).filter(x => /^[a-z0-9-]+$/i.test(x)).join(" ");
   const htmlValue = value => String(value ?? "");
 
+  // Card-level care metadata is sourced from plants.json (not guessed from species).
+  // The full original care instructions remain available when the card is opened.
+  const LIGHT = {
+    "full-sun": ["Full sun", "sun"],
+    "very-bright": ["Very bright light, often some direct sun", "sun"],
+    "bright": ["Bright light", "sun-partial"],
+    "bright-indirect": ["Bright indirect light", "sun-cloud"],
+    "medium": ["Medium to bright indirect light", "sun-cloud"],
+    "flexible": ["Low to bright light", "sun-dim"]
+  };
+  const SOIL = {
+    "well-drained": ["Well-draining potting mix with perlite or pumice", "layers"],
+    "gritty": ["Gritty cactus / succulent mix", "mountain"],
+    "chunky": ["Chunky aroid mix with orchid bark", "blocks"],
+    "moisture": ["Moisture-retentive airy mix", "droplets"],
+    "airy": ["Airy potting mix with fine bark", "wind"],
+    "bromeliad": ["Airy bromeliad mix", "wind"],
+    "orchid": ["Orchid bark mix", "blocks"],
+    "carnivorous": ["Unfertilized carnivorous-plant moss / peat mix", "sprout"],
+    "water-grown": ["Grown in water, no potting soil", "waves"],
+    "no-soil": ["No soil — air plant", "wind"]
+  };
+  const TYPES = {
+    "croton": ["Croton", "leaf"],
+    "succulent": ["Succulent", "succulent"],
+    "cactus": ["Cactus", "cactus"],
+    "carnivorous": ["Carnivorous plant", "sprout"],
+    "palm": ["Palm", "palm"],
+    "bromeliad": ["Bromeliad", "flower"],
+    "dracaena": ["Dracaena", "palm"],
+    "flowering": ["Flowering / bedding plant", "flower"],
+    "tropical": ["Tropical foliage plant", "leaf"],
+    "aroid": ["Aroid", "split-leaf"],
+    "orchid": ["Orchid", "flower"],
+    "prayer": ["Prayer plant", "leaf"],
+    "pilea": ["Pilea", "sprout"],
+    "tradescantia": ["Tradescantia", "vine"],
+    "air-plant": ["Air plant", "wind"],
+    "fern": ["Fern", "fern"],
+    "vine": ["Vine", "vine"],
+    "zz": ["ZZ plant", "sprout"]
+  };
+  const ICONS = {
+    "sun": '<circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>',
+    "sun-partial": '<path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2"/><path d="M16 12a4 4 0 0 0-8 0"/>',
+    "sun-cloud": '<path d="M12 2v2m5 1-1.4 1.4M4 12H2m5-7 1.4 1.4"/><path d="M9 15a4.5 4.5 0 0 1 7-5.4"/><path d="M7.5 20h11a3.5 3.5 0 0 0 0-7 5.3 5.3 0 0 0-9.9.8 3.1 3.1 0 0 0-1.1 6.2Z"/>',
+    "sun-dim": '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M2 12h2m16 0h2M12 20v2"/>',
+    "droplet": '<path d="M12 22a8 8 0 0 0 8-8c0-5-8-12-8-12S4 9 4 14a8 8 0 0 0 8 8Z"/>',
+    "droplets": '<path d="M12 22a6 6 0 0 0 6-6c0-3.5-6-9-6-9s-6 5.5-6 9a6 6 0 0 0 6 6Z"/><path d="M19 11c1.5-1.7 2-3.6 0-7M5 11C3.5 9.3 3 7.4 5 4"/>',
+    "leaf": '<path d="M20 4c-9 0-16 4-16 12a4 4 0 0 0 4 4c8 0 12-7 12-16Z"/><path d="M4 20c4-6 8-9 13-12"/>',
+    "split-leaf": '<path d="M20 3C9 4 4 10 4 16a4 4 0 0 0 4 4C17 20 21 12 20 3Z"/><path d="M5 21c4-7 8-11 14-15M9 13l-4-1m9-3-1-5m-1 12 5 1"/>',
+    "sprout": '<path d="M12 22v-9M12 13C6 13 4 10 4 5c6 0 8 3 8 8ZM12 17c0-6 3-9 9-9 0 6-3 9-9 9Z"/>',
+    "succulent": '<path d="M12 21V11M12 15C6 15 4 12 4 7c5 0 8 3 8 8Zm0 0c0-6 3-9 8-9 0 5-2 9-8 9Z"/><path d="M7 21h10M9 21l-2-4m8 4 2-4"/>',
+    "cactus": '<path d="M12 22V5a3 3 0 0 1 6 0v9M12 14H9a3 3 0 0 1-3-3V9a2 2 0 0 0-4 0v3a6 6 0 0 0 6 6h4M18 13h1a3 3 0 0 0 3-3V8"/><path d="M9 22h12"/>',
+    "palm": '<path d="M12 22c2-6 2-12 1-15M12 7C10 4 6 3 2 5c4 0 7 1 10 5M13 7c2-4 6-5 9-3-4 1-6 3-9 6M13 7c-3-5-2-6 0-7 2 2 3 4 0 7ZM13 7c3-1 7 0 9 3-4-1-7-1-9 0"/><path d="M8 22h9"/>',
+    "fern": '<path d="M6 22c3-8 7-14 12-19M12 13l-7-1 3 5M15 9l-6-2 2 5M17 5l4 3-7 2M10 17l7 3-3-7"/>',
+    "vine": '<path d="M6 21c0-8 12-5 12-13 0-3-2-5-5-5"/><path d="M13 8c-5 0-8-2-8-5 5 0 8 2 8 5Zm2 6c4-4 7-4 8-2-1 4-4 6-8 6M9 18c-4 1-6-1-6-4 4 0 6 1 6 4Z"/>',
+    "flower": '<circle cx="12" cy="12" r="2"/><path d="M12 10C8 7 10 3 12 3s4 4 2 7M14 12c3-4 7-2 7 0s-4 4-7 2M12 14c4 3 2 7 0 7s-4-4-2-7M10 12c-3 4-7 2-7 0s4-4 7-2"/>',
+    "wind": '<path d="M2 8h12a3 3 0 1 0-3-3M2 12h17a3 3 0 1 1-3 3M2 16h8a3 3 0 1 1-3 3"/>',
+    "layers": '<path d="m12 3 9 5-9 5-9-5 9-5Zm-9 9 9 5 9-5M3 16l9 5 9-5"/>',
+    "blocks": '<rect x="3" y="5" width="7" height="6" rx="1"/><rect x="14" y="5" width="7" height="6" rx="1"/><rect x="7" y="13" width="10" height="7" rx="1"/>',
+    "mountain": '<path d="m2 20 7-13 4 6 3-4 6 11H2Zm7-13 1.8 3M16 9l1.5 3"/>',
+    "waves": '<path d="M2 8c3-3 5 3 9 0s6-3 11 0M2 14c3-3 5 3 9 0s6-3 11 0M2 20c3-3 5 3 9 0s6-3 11 0"/>'
+  };
+  function svgIcon(key) {
+    return '<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">' +
+      (ICONS[key] || ICONS.leaf) + '</svg>';
+  }
+  function factButton(kind, icon, aria, valueHtml) {
+    return '<button type="button" class="card-fact fact-' + kind + '" title="' + esc(aria) +
+      '" aria-label="' + esc(aria) + '" data-fact-detail="' + esc(aria) + '">' +
+      svgIcon(icon) + (valueHtml ? '<span>' + valueHtml + '</span>' : '') + '</button>';
+  }
+  function quickFacts(p) {
+    const info=p.cardCare || {};
+    const light=LIGHT[info.light];
+    const type=TYPES[info.type];
+    const soil=SOIL[info.soil];
+    const water=p.sections?.find(s=>s.label==="WATER")?.bodyHtml || "";
+    const soilDetail=p.sections?.find(s=>s.label==="SOIL")?.bodyHtml || "";
+    const pieces=[];
+    if(light) pieces.push(factButton("light",light[1],"Light: "+light[0]));
+    if(type) pieces.push(factButton("type",type[1],"Plant type: "+type[0]));
+    if(info.waterLabel) pieces.push(factButton("water","droplet",
+      "Watering cue: "+info.waterLabel+". "+water,esc(info.waterLabel)));
+    if(soil) pieces.push(factButton("soil",soil[1],"Preferred soil: "+soil[0]+". "+soilDetail));
+    return '<div class="card-quick-facts" role="group" aria-label="Quick care icons">' +
+      pieces.join("") + '</div>' +
+      '<div class="card-fact-explanation" aria-live="polite" hidden></div>';
+  }
+  const UTILITY_TAGS = /^(?:NEW ADDITION|NEW · CARING FOR AMBER|BRIGHT LIGHT|VERY BRIGHT|VERY BRIGHT LIGHT|BRIGHT INDIRECT|MEDIUM–BRIGHT|MEDIUM–BRIGHT INDIRECT|LOW–BRIGHT|SUN \/ STRONG LIGHT|FULL SUN|STRONG LIGHT|CROTON|SUCCULENT|CACTUS|PALM|BROMELIAD|DRACAENA|BEDDING PLANT|TROPICAL|AROID|PEACE LILY|ORCHID|PRAYER PLANT|PILEA|TRADESCANTIA|VINE|PLECTRANTHUS|FOLIAGE|EPIPHYTE|FERN|ZZ PLANT|AGLAONEMA|SCENTED GERANIUM)$/;
+
   function makeCard(p) {
     const card = document.createElement("details");
     card.className = "card";
@@ -26,7 +118,7 @@
     card.dataset.pest = p.pest || "";
     if (p.added) card.dataset.added = p.added;
 
-    const tags = (p.tags || []).map(tag =>
+    const tags = (p.tags || []).filter(tag => !UTILITY_TAGS.test(tag.label)).map(tag =>
       '<span class="meta-tag' + (tag.style ? ' ' + cleanClass(tag.style) : "") + '">' + esc(tag.label) + '</span>'
     ).join("");
     const photo = p.photo
@@ -53,8 +145,9 @@
       '<summary><div class="photo">' + photo + '</div><div class="summary-body">' +
       '<div class="row"><div class="title-block"><div class="name">' + esc(p.name) + '</div>' +
       '<div class="species">' + esc(p.species) + '</div>' +
-      '<div class="meta-tags">' + tags + '</div></div>' +
+      (tags ? '<div class="meta-tags">' + tags + '</div>' : '') + '</div>' +
       '<span class="badge">' + esc(p.status) + '</span></div>' +
+      quickFacts(p) +
       '<div class="tap-hint">Tap for care details</div></div></summary>' +
       '<div class="care"><div class="care-grid">' + sections +
       '<div class="history-wrap"><details class="history"><summary>History &amp; records</summary>' +
@@ -72,8 +165,7 @@
       const haystack = (card.dataset.name + " " + card.dataset.species).toLowerCase();
       const show = (!q || haystack.includes(q)) &&
         (h === "all" || card.dataset.status === h) &&
-        (f === "all" || (f === "new" && card.dataset.new === "yes") ||
-          (f === "mites" && card.dataset.pest === "reported"));
+        (f === "all" || (f === "mites" && card.dataset.pest === "reported"));
       card.hidden = !show;
       if (show) count++;
     }
@@ -92,9 +184,7 @@
     document.querySelector(".sub").textContent =
       plants.length + " plants · updated " + (data.updatedAt || "recently") +
       " · " + (data.summaryNote || "tap for care, priorities & history");
-    const newCount = plants.filter(p => p.newAddition).length;
     const miteCount = plants.filter(p => p.pest === "reported").length;
-    focus.querySelector('[value="new"]').textContent = "New additions (" + newCount + ")";
     focus.querySelector('[value="mites"]').textContent = "Mites reported (" + miteCount + ")";
     const care = data.recentCare || {};
     const activity = document.getElementById("recent-care");
@@ -131,6 +221,21 @@
     }
   }
 
+  // Tapping an icon explains the source care rule without opening the profile.
+  grid.addEventListener("click", event => {
+    const fact = event.target.closest(".card-fact");
+    if (!fact) return;
+    event.preventDefault();
+    event.stopPropagation();
+    const summary = fact.closest("summary");
+    const output = summary?.querySelector(".card-fact-explanation");
+    if (!output) return;
+    const isSame = !output.hidden && output.textContent === fact.dataset.factDetail;
+    output.hidden = isSame;
+    output.textContent = isSame ? "" : fact.dataset.factDetail;
+    summary.querySelectorAll(".card-fact").forEach(button =>
+      button.setAttribute("aria-pressed", String(button===fact&&!isSame)));
+  });
   search.addEventListener("input", filter);
   health.addEventListener("change", filter);
   focus.addEventListener("change", filter);
