@@ -74,6 +74,57 @@ input:focus,select:focus{border-color:#8eae96;box-shadow:0 0 0 3px rgba(53,106,6
 .controls{grid-template-columns:minmax(0,1fr) 155px 175px}
 @media(max-width:850px){.controls{grid-template-columns:minmax(0,1fr) 145px 165px}.activity-grid{grid-template-columns:1fr}}
 @media(max-width:600px){.controls{grid-template-columns:1fr}.activity{padding:11px;margin-bottom:11px}.activity-heading{align-items:flex-start}.activity-date{font-size:9px;white-space:nowrap}.activity h2{font-size:14px}.activity-grid{gap:7px}.activity-tile{padding:9px}.activity p{font-size:12px}.activity-note{margin-top:9px!important}}
+
+/* GAIA interactive care journal */
+.care-overview{border:1px solid #cfe0d3;background:#f1f7f0;border-radius:14px;padding:14px;margin-bottom:16px}
+.care-overview-head{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;flex-wrap:wrap}
+.care-overview h2{font-size:17px;color:#285737;margin:0 0 3px}
+.care-overview p{font-size:12px;color:var(--muted);line-height:1.5;margin:4px 0}
+.care-sync-status{font-size:11px;font-weight:650;color:#356a45;background:#fff;border:1px solid #cfe0d3;border-radius:20px;padding:6px 10px}
+.care-settings{margin-top:10px;border-top:1px solid #d2dfd3;padding-top:9px}
+.care-settings>summary{cursor:pointer;font-size:12px;color:#356a45;font-weight:750}
+.care-settings-inner{padding-top:11px;display:grid;gap:9px}
+.care-settings small{font-size:11px;color:var(--muted)}
+.care-overview button,.care-tracker button{font:inherit;border:1px solid #b8d1be;background:#fff;color:#285737;font-size:12px;font-weight:750;border-radius:9px;padding:9px 11px;cursor:pointer}
+.care-overview button:hover,.care-tracker button:hover{background:#e9f4e9}
+.care-overview button:focus-visible,.care-tracker button:focus-visible{outline:3px solid #8eae96;outline-offset:2px}
+.care-overview button:disabled{opacity:.5;cursor:wait}
+.care-settings-actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.care-signin-form{display:flex;align-items:end;gap:8px;flex-wrap:wrap}
+.care-signin-form label{flex:1;min-width:180px;font-size:11px;font-weight:750}
+.care-signin-form input{margin-top:4px;background:#fff}
+#care-message{margin-top:11px!important;padding:8px 10px;background:#fff;border:1px solid #d2dfd3;border-radius:8px;color:#285737}
+#care-message.care-error{border-color:#e5c0b8;background:#fff7f5;color:#893737}
+#care-login-area[hidden],#care-account-area[hidden],#care-import[hidden],#care-message[hidden]{display:none!important}
+.care-tracker{grid-column:1/-1;background:#eef6ee;border:1px solid #cfe0d3;border-radius:11px;padding:12px}
+.care-tracker-heading{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-bottom:9px}
+.care-tracker-heading strong{font-size:14px;color:#285737}
+.care-latest{font-size:11px;color:#546b59}
+.care-quick-actions{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+.care-quick-actions button{min-height:38px;padding:8px 4px;background:#fff;font-size:11px}
+.care-more{margin-top:10px}
+.care-more>summary{cursor:pointer;color:#356a45;font-size:12px;font-weight:750}
+.care-log-form{display:grid;gap:10px;padding:10px 0 3px}
+.care-fields{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.care-log-form label{font-size:11px;font-weight:700;color:#4b6050;display:grid;gap:4px}
+.care-log-form input,.care-log-form select,.care-log-form textarea{width:100%;background:#fff;border:1px solid #cfe0d3;border-radius:8px;padding:8px;font-size:13px;color:#1c241d;font-family:inherit}
+.care-log-form textarea{resize:vertical}
+.care-tracker .care-submit{background:#356a45;color:#fff;justify-self:start}
+.care-list-heading{display:flex;gap:10px;justify-content:space-between;margin:12px 0 6px;font-size:11px;font-weight:750;color:#356a45;border-top:1px solid #d2dfd3;padding-top:9px}
+.care-count-label{font-weight:500;color:#64766a}
+.care-event-list{list-style:none;margin:0;padding:0;display:grid;gap:5px}
+.care-entry-row{display:flex;justify-content:space-between;align-items:flex-start;gap:6px;border-radius:7px;background:#fff;padding:8px;font-size:11px;line-height:1.5}
+.care-entry-row time{color:#667168}
+.care-entry-note{white-space:pre-wrap;overflow-wrap:anywhere;color:#435347;margin-top:3px}
+.care-tracker .care-undo{font-size:10px;padding:5px 7px;flex-shrink:0;color:#667168;border-color:#e0e5df}
+.care-no-entries{font-size:11px;color:#617266;font-style:italic}
+.care-pending{color:#8a5a12}
+@media(max-width:600px){.care-overview{padding:11px;margin-bottom:11px}.care-overview h2{font-size:15px}
+.care-quick-actions{grid-template-columns:repeat(2,minmax(0,1fr))}
+.care-quick-actions button{min-height:44px;font-size:12px}
+.care-tracker{padding:10px}.care-fields{grid-template-columns:1fr 1fr}
+}
+
 </style>
 <script>document.documentElement.classList.add('js-enabled');</script>
 </head>
@@ -87,6 +138,36 @@ input:focus,select:focus{border-color:#8eae96;box-shadow:0 0 0 3px rgba(53,106,6
 <div class="stat"><small>GOOD / EXCELLENT</small><b>26</b></div>
 <div class="stat"><small>NEEDS ATTENTION</small><b>19</b></div>
 </div>
+
+<section id="care-overview" class="care-overview" aria-label="Care journal overview">
+ <div class="care-overview-head">
+  <div><h2>Care journal</h2><p id="care-action-count">0 actions logged</p></div>
+  <div class="care-sync-status" id="care-sync-status">Stored on this device only</div>
+ </div>
+ <details class="care-settings">
+  <summary>Sync, account &amp; backup</summary>
+  <div class="care-settings-inner">
+   <p>Quick care buttons save an entry immediately. Entries stay on this device unless you sign in to configured cloud sync. Use Export for a backup.</p>
+   <div class="care-settings-actions"><button id="care-export" type="button">Export journal backup</button></div>
+   <div id="care-login-area" hidden>
+    <form id="care-email-form" class="care-signin-form">
+     <label>Sign-in email <input name="email" type="email" autocomplete="email" placeholder="you@example.com" required></label>
+     <button type="submit">Email me a sign-in link</button>
+    </form>
+   </div>
+   <div id="care-account-area" hidden>
+    <p>Signed in as <strong id="care-user-email"></strong></p>
+    <div class="care-settings-actions">
+     <button id="care-sync" type="button">Sync journal</button>
+     <button id="care-import" type="button" hidden>Import earlier device entries</button>
+     <button id="care-signout" type="button">Sign out</button>
+    </div>
+   </div>
+  </div>
+ </details>
+ <p id="care-message" role="status" aria-live="polite" hidden></p>
+</section>
+
 <section aria-label="Recent care and follow-up" class="activity" id="recent-care"><div class="activity-heading"><h2>Recent care &amp; follow-up</h2></div></section><div class="controls" id="controls">
 <input autocomplete="off" id="search" placeholder="Search name or species…" type="search" aria-label="Search plant name or species">
 <select id="health" aria-label="Filter by health"><option value="all">All health</option><option>Excellent</option><option>Good</option><option>Fair</option><option>Watch</option><option>Concern</option></select>
@@ -96,6 +177,8 @@ input:focus,select:focus{border-color:#8eae96;box-shadow:0 0 0 3px rgba(53,106,6
 </div>
 <div class="empty" id="empty">No plants match those filters.</div>
 </div>
+<script src="gaia-config.js"></script>
 <script src="app.js" defer></script>
+<script src="care.js" defer></script>
 </body>
 </html>
