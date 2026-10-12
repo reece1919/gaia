@@ -16,6 +16,7 @@
   if (!root) return;
   const config = window.GAIA_SUPABASE || {};
   let cloudReady = false;
+  let connecting = true;
   let db = null;
   let user = null;
   let plants = [];
@@ -131,7 +132,8 @@
       items.length + (items.length === 1 ? " action" : " actions") + " logged · " + recent + " in 7 days";
     document.getElementById("care-sync-status").textContent = user
       ? busy ? "Syncing…" : "Signed in · sync available"
-      : cloudReady ? "Sign in to sync devices" : "Stored on this device only";
+      : cloudReady ? "Sign in to sync devices"
+      : connecting ? "Connecting to cloud…" : "Stored on this device only";
     document.getElementById("care-login-area").hidden = !cloudReady || !!user;
     document.getElementById("care-account-area").hidden = !user;
     document.getElementById("care-import").hidden = !user || !readKey(BASE_KEY + "-device").length;
@@ -244,13 +246,19 @@
     });
   }
   async function setupCloud() {
-    if (!config.url || !config.anonKey) { renderJournal(); return; }
+    if (!config.url || !config.anonKey) {
+      connecting = false;
+      alertNotice("The GAIA cloud settings have not loaded. Refresh this page to activate email sign-in.", true);
+      renderJournal();
+      return;
+    }
     try {
       await loadSdk();
       db = window.supabase.createClient(config.url, config.anonKey, {
         auth: {persistSession: true, autoRefreshToken: true, detectSessionInUrl: true, flowType: "pkce"}
       });
       cloudReady = true;
+      connecting = false;
       const {data, error} = await db.auth.getSession();
       if (error) throw error;
       await handleAuth(data.session);
@@ -260,7 +268,8 @@
       renderJournal();
     } catch (e) {
       cloudReady = false;
-      alertNotice("Cloud connection unavailable; care logging still works on this device.", true);
+      connecting = false;
+      alertNotice("Cloud connection unavailable. Refresh this page, or check whether the browser blocked the Supabase script. Device-only care logging still works.", true);
       renderJournal();
     }
   }
