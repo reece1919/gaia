@@ -125,6 +125,14 @@ input:focus,select:focus{border-color:#8eae96;box-shadow:0 0 0 3px rgba(53,106,6
 .care-tracker{padding:10px}.care-fields{grid-template-columns:1fr 1fr}
 }
 
+
+.care-email-option{margin-top:12px;padding-top:10px;border-top:1px solid #d2dfd3}
+.care-email-option>summary{cursor:pointer;color:#356a45;font-weight:750;font-size:12px}
+.care-email-option .care-signin-form{margin-top:10px}
+.care-email-option small{display:block;margin-top:6px}
+.care-signin-form{align-items:end;gap:8px}
+.care-signin-form label{min-width:min(100%,180px)}
+
 </style>
 <script>document.documentElement.classList.add('js-enabled');</script>
 </head>
@@ -150,10 +158,20 @@ input:focus,select:focus{border-color:#8eae96;box-shadow:0 0 0 3px rgba(53,106,6
    <p>Quick care buttons save an entry immediately. Entries stay on this device unless you sign in to configured cloud sync. Use Export for a backup.</p>
    <div class="care-settings-actions"><button id="care-export" type="button">Export journal backup</button></div>
    <div id="care-login-area" hidden>
-    <form id="care-email-form" class="care-signin-form">
-     <label>Sign-in email <input name="email" type="email" autocomplete="email" placeholder="you@example.com" required></label>
-     <button type="submit">Email me a sign-in link</button>
+    <p><strong>Sign in with your GAIA password</strong></p>
+    <form id="care-password-login" class="care-signin-form">
+     <label>Email <input name="email" type="email" autocomplete="email" placeholder="you@example.com" required></label>
+     <label>Password <input name="password" type="password" autocomplete="current-password" required></label>
+     <button type="submit">Sign in</button>
     </form>
+    <details class="care-email-option">
+     <summary>Or sign in by email link</summary>
+     <form id="care-email-form" class="care-signin-form">
+      <label>Email <input name="email" type="email" autocomplete="email" placeholder="you@example.com" required></label>
+      <button type="submit">Email me a sign-in link</button>
+     </form>
+     <small>Supabase limits how many sign-in emails can be sent.</small>
+    </details>
    </div>
    <div id="care-account-area" hidden>
     <p>Signed in as <strong id="care-user-email"></strong></p>
@@ -162,6 +180,15 @@ input:focus,select:focus{border-color:#8eae96;box-shadow:0 0 0 3px rgba(53,106,6
      <button id="care-import" type="button" hidden>Import earlier device entries</button>
      <button id="care-signout" type="button">Sign out</button>
     </div>
+    <details class="care-email-option">
+     <summary>Set or change your GAIA password</summary>
+     <p>Use a password to sign in on other devices without waiting for another email link. Do not use your Supabase database password.</p>
+     <form id="care-password-set" class="care-signin-form">
+      <label>New password <input name="newPassword" type="password" minlength="12" autocomplete="new-password" required></label>
+      <label>Confirm password <input name="confirmPassword" type="password" minlength="12" autocomplete="new-password" required></label>
+      <button type="submit">Save GAIA password</button>
+     </form>
+    </details>
    </div>
   </div>
  </details>
@@ -179,6 +206,6 @@ input:focus,select:focus{border-color:#8eae96;box-shadow:0 0 0 3px rgba(53,106,6
 </div>
 <script src="gaia-config.js?v=20261012-sync3"></script>
 <script src="app.js?v=20261012-sync3" defer></script>
-<script src="care.js?v=20261012-sync3" defer></script>
+<script src="care.js?v=20261012-password1" defer></script>
 </body>
 </html>
