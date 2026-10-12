@@ -64,6 +64,18 @@ The dashboard now supports **Watered, Fertilized, Repotted, Pest treatment**, pl
 
 The **Export journal backup** button downloads the current visible journal in JSON. Keep backups if you're using device-only storage or before clearing browser/site data. Device-only entries may be lost if the browser storage is cleared or you use a private browsing window.
 
+## Uploading plant photos directly from GAIA
+
+Open any plant profile and find **Photo journal**. While signed in, tap **Take or choose a photo** (Safari offers camera or photo library), optionally set the date and add a note, then choose **Upload photo**. The browser resizes the picture to a JPEG with a maximum dimension of 1,800 pixels. An original image larger than 35 MB or processed image larger than 8 MB is rejected.
+
+- Uploaded photos live in a **private Supabase Storage bucket** (`gaia-plant-photos`), with metadata in `public.plant_photos`. Both use per-user Row Level Security. The authenticated client's public publishable API key is safe for the browser; do not commit secret credentials.
+- The newest upload automatically becomes the plant's cover photo **for signed-in viewers**. Older uploads remain in the plant's photo gallery with dates and optional notes, and each can be deleted.
+- The original GitHub-hosted photo remains unchanged and serves as a fallback for visitors who are not signed in.
+- After uploading on one device, open GAIA on the other and tap **Sync journal**, refresh, or return to its browser tab to load the new gallery. Photo URLs expire after one hour and are refreshed when reloading/syncing.
+- To inspect the backend schema and security rules, see [`supabase/gaia_plant_photos.sql`](supabase/gaia_plant_photos.sql).
+
+The site is hosted publicly, but new uploaded photos are **not** published to GitHub or to unsigned visitors. For public photo publishing, use a separate deliberate publishing workflow.
+
 ## Editing the site
 
 ## Recovery
