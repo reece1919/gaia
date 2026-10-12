@@ -417,7 +417,7 @@ select option{background:#182a29;color:var(--text)}
 .photo-gallery-item button{color:#f1b6ac}
 .photo-local-status,#gaia-photo-message{background:#294234;border-color:#62755c;color:#e0ebd8}
 .photo-local-status.photo-error,#gaia-photo-message.photo-error{background:#4a2e31;border-color:#936a64;color:#ffd1c6}
-/* Conservatory steward's folio */
+/* Conservatory care folio */
 .gaia-task-panel{background:linear-gradient(145deg,#263b35,#1c2d2c);
  border:1px solid #8c805c;border-radius:7px;box-shadow:inset 0 0 0 3px #26382f;
  overflow:hidden}
@@ -558,8 +558,8 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 }
 
 
-/* GAIA Midnight Herbarium · Steward's private, read-only field report */
-.hero-steward-link{
+/* GAIA Midnight Herbarium · private AI field report */
+.hero-ask-link{
  display:inline-flex;align-items:center;gap:10px;max-width:100%;min-height:42px;
  margin-top:18px;padding:9px 15px;
  text-decoration:none;font-size:12px;line-height:1.3;font-weight:700;letter-spacing:.035em;
@@ -567,10 +567,10 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
  border:1px solid #af9769;border-radius:5px;
  box-shadow:inset 0 1px 0 rgba(244,223,175,.12),0 3px 10px rgba(0,0,0,.18);
 }
-.hero-steward-link:hover{background:#3a5444;color:#fff1d1;border-color:#d7ba7d}
-.hero-steward-link:focus-visible{outline:3px solid #e6cb95;outline-offset:3px}
-.steward-link-star{font-family:var(--serif);font-size:19px;line-height:1;color:#d6bd83}
-.steward-link-arrow{font-size:15px;line-height:1;color:#d6bd83}
+.hero-ask-link:hover{background:#3a5444;color:#fff1d1;border-color:#d7ba7d}
+.hero-ask-link:focus-visible{outline:3px solid #e6cb95;outline-offset:3px}
+.gaia-link-star{font-family:var(--serif);font-size:19px;line-height:1;color:#d6bd83}
+.gaia-link-arrow{font-size:15px;line-height:1;color:#d6bd83}
 .gaia-insights{
  border:1px solid #718078;border-radius:7px;
  background:linear-gradient(130deg,#1c3030,#1b292b);
@@ -648,7 +648,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 .gaia-insights-actions p{font-size:10.5px;line-height:1.5;color:#bccdbd;margin:0;flex:1;text-align:right}
 .gaia-insights-actions p.gaia-insights-error{color:#f4b8ae}
 @media(max-width:600px){
- .hero-steward-link{font-size:11.5px;min-height:40px;margin-top:12px;padding:8px 11px;gap:7px}
+ .hero-ask-link{font-size:11.5px;min-height:40px;margin-top:12px;padding:8px 11px;gap:7px}
  .gaia-insights{margin:0 0 11px}
  .gaia-insights>summary{padding:11px 12px;gap:6px}
  .gaia-insights-heading{font-size:16px;gap:7px}
@@ -686,10 +686,10 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
     <div class="hero-divider" aria-hidden="true"><span>✧</span></div>
     <p class="hero-description">A record of rooted things, under glass and gathering weather.</p>
     <div class="sub">45 plants · updated Oct 12, 2026 · tap for care, priorities &amp; history</div>
-    <a class="hero-steward-link" href="https://chatgpt.com/g/g-p-6a68d01f4a088191820e9381dd3d14c8/project" target="_blank" rel="noopener noreferrer" aria-label="Ask GAIA in the Plant Steward ChatGPT project (opens in a new tab)">
-      <span class="steward-link-star" aria-hidden="true">✦</span>
+    <a class="hero-ask-link" href="https://chatgpt.com/g/g-p-6a68d01f4a088191820e9381dd3d14c8/project" target="_blank" rel="noopener noreferrer" aria-label="Ask GAIA in ChatGPT (opens in a new tab)">
+      <span class="gaia-link-star" aria-hidden="true">✦</span>
       <span>Ask GAIA</span>
-      <span class="steward-link-arrow" aria-hidden="true">↗</span>
+      <span class="gaia-link-arrow" aria-hidden="true">↗</span>
     </a>
   </div>
   <svg class="hero-botanical" aria-hidden="true" viewBox="0 0 270 300" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -741,14 +741,14 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
   </div>
 
 </details>
-<details id="gaia-insights" class="gaia-insights" open aria-label="Plant Steward AI insights">
+<details id="gaia-insights" class="gaia-insights" open aria-label="GAIA AI insights">
   <summary>
-    <span class="gaia-insights-heading"><span class="gaia-insights-mark" aria-hidden="true">✧</span> Steward’s Briefing</span>
+    <span class="gaia-insights-heading"><span class="gaia-insights-mark" aria-hidden="true">✧</span> GAIA Insights</span>
     <span id="gaia-insights-stamp" class="gaia-insights-stamp">Private AI notes</span>
   </summary>
   <div class="gaia-insights-content">
     <div id="gaia-insights-body" class="gaia-insights-body" aria-live="polite">
-      <p class="gaia-insights-empty">Checking for saved Plant Steward notes…</p>
+      <p class="gaia-insights-empty">Checking for saved GAIA notes…</p>
     </div>
     <div class="gaia-insights-actions">
       <button type="button" id="gaia-insights-refresh" disabled>Refresh notes</button>
@@ -833,6 +833,6 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 <script src="care.js?v=20261012-photos1" defer></script>
 <script src="photos.js?v=20261012-photos2" defer></script>
 <script src="tasks.js?v=20261012-customtasks1" defer></script>
-<script src="insights.js?v=20261012-steward1" defer></script>
+<script src="insights.js?v=20261012-gaia2" defer></script>
 </body>
 </html>
