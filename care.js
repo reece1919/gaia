@@ -325,15 +325,69 @@
     }
   });
   root.addEventListener("submit", async event => {
-    if (event.target.id !== "care-email-form") return;
+    const form = event.target;
+    if (!["care-email-form", "care-password-login", "care-password-set"].includes(form.id)) return;
     event.preventDefault();
-    if (!cloudReady) return;
-    const email = event.target.elements.email.value.trim();
-    if (!email) return;
-    const redirectTo = window.location.origin + window.location.pathname;
-    const {error} = await db.auth.signInWithOtp({email, options: {emailRedirectTo: redirectTo}});
-    alertNotice(error ? "Could not send sign-in email: " + error.message :
-      "Check your email for a GAIA sign-in link.", !!error);
+    if (!cloudReady || !db) {
+      alertNotice("Cloud authentication isn't ready; refresh the page.", true);
+      return;
+    }
+    const submit = form.querySelector('button[type="submit"]');
+    if (submit) submit.disabled = true;
+    try {
+      if (form.id === "care-email-form") {
+        const email = form.elements.email.value.trim();
+        if (!email) return;
+        const redirectTo = window.location.origin + window.location.pathname;
+        const {error} = await db.auth.signInWithOtp({
+          email, options: {emailRedirectTo: redirectTo, shouldCreateUser: false}
+        });
+        if (error) {
+          const rateLimited = /rate limit|too many|429/i.test(error.message || "");
+          alertNotice(rateLimited
+            ? "Supabase email limit reached. Wait before requesting another link, or sign in using a GAIA password."
+            : "Could not send sign-in email: " + error.message, true);
+        } else alertNotice("Check your email for a GAIA sign-in link.");
+      } else if (form.id === "care-password-login") {
+        const email = form.elements.email.value.trim();
+        const password = form.elements.password.value;
+        if (!email || !password) return;
+        const {data, error} = await db.auth.signInWithPassword({email, password});
+        if (error) {
+          alertNotice("Password sign-in failed: " + error.message, true);
+        } else {
+          form.reset();
+          await handleAuth(data.session);
+          alertNotice("Signed in. Your care journal is linked to this account.");
+        }
+      } else if (form.id === "care-password-set") {
+        if (!user) {
+          alertNotice("You must first be signed in to set a GAIA password.", true);
+          return;
+        }
+        const password = form.elements.newPassword.value;
+        const confirmation = form.elements.confirmPassword.value;
+        if (password.length < 12) {
+          alertNotice("Choose a password of at least 12 characters.", true);
+          return;
+        }
+        if (password !== confirmation) {
+          alertNotice("The two passwords didn't match.", true);
+          return;
+        }
+        const {error} = await db.auth.updateUser({password});
+        if (error) {
+          alertNotice("Could not set password: " + error.message, true);
+        } else {
+          form.reset();
+          alertNotice("GAIA password set. You can now sign in on your iPhone with your email and this password.");
+        }
+      }
+    } catch (error) {
+      alertNotice("Authentication couldn't complete: " + (error?.message || "Please try again."), true);
+    } finally {
+      if (submit) submit.disabled = false;
+    }
   });
 
   document.addEventListener("gaia:ready", event => mount(event.detail.plants || []));
