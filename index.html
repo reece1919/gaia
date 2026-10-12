@@ -166,6 +166,54 @@ input:focus,select:focus{border-color:#8eae96;box-shadow:0 0 0 3px rgba(53,106,6
 .photo-local-status{margin:8px 0!important;padding:7px 9px;background:#fff;border:1px solid #cfe0d3;border-radius:8px;color:#285737;font-size:12px;line-height:1.35}
 .photo-local-status[hidden]{display:none!important}
 .photo-local-status.photo-error{background:#fff7f5;border-color:#e5c0b8;color:#893737}
+
+/* GAIA compact card-care icons: light, plant family, watering threshold & preferred soil */
+.card-quick-facts{display:flex;align-items:center;flex-wrap:wrap;gap:5px;margin-top:10px}
+.card-fact{appearance:none;display:inline-flex;justify-content:center;align-items:center;gap:5px;
+ min-height:31px;min-width:32px;padding:5px 7px;background:#f7faf7;border:1px solid #d8e6da;
+ border-radius:9px;cursor:pointer;line-height:1;box-shadow:none;transition:background .15s,border-color .15s}
+.card-fact svg{width:17px;height:17px;display:block;flex:none;stroke-width:1.9}
+.card-fact span{font-size:10.5px;font-weight:800;white-space:nowrap;letter-spacing:0}
+.card-fact.fact-light{color:#a16e18;background:#fff8e7;border-color:#eee0bc}
+.card-fact.fact-type{color:#356a45;background:#eef7ef;border-color:#d2e6d4}
+.card-fact.fact-water{color:#236c91;background:#eaf5fa;border-color:#cfe4ef}
+.card-fact.fact-soil{color:#876641;background:#f9f3e9;border-color:#e7dac6}
+.card-fact[aria-pressed="true"]{outline:2px solid currentColor;outline-offset:1px}
+.card-fact:focus-visible{outline:3px solid #729f81;outline-offset:2px}
+.card-fact-explanation{margin-top:8px;background:#f6faf6;border:1px solid #d7e5d8;border-radius:8px;
+ padding:7px 9px;color:#475f4c;font-size:11px;line-height:1.4;overflow-wrap:break-word}
+.card-fact-explanation[hidden]{display:none!important}
+.card-fact-explanation + .tap-hint{margin-top:7px}
+.card-icon-guide{border:1px solid #d5e1d5;border-radius:10px;background:#f8fbf7;padding:8px 11px;margin:-4px 0 13px;color:#48604e}
+.card-icon-guide>summary{cursor:pointer;font-size:11px;font-weight:800;color:#356a45;list-style:none}
+.card-icon-guide>summary::-webkit-details-marker{display:none}
+.card-icon-guide>summary::before{content:"ⓘ";display:inline-block;font-size:14px;margin-right:6px;vertical-align:-1px}
+.card-icon-guide>summary span{font-weight:500;color:#6a786c;margin-left:4px}
+.card-icon-guide-items{margin:9px 0 1px;display:flex;flex-wrap:wrap;column-gap:18px;row-gap:8px;
+ font-size:11px;line-height:1.5}
+.card-icon-guide-items div{display:flex;align-items:center;gap:7px}
+.card-icon-guide-items .example-icon{font-size:17px;line-height:1}
+.card-icon-guide-items p{width:100%;margin:4px 0 0;color:#6a786c}
+@media(max-width:600px){
+ .card>summary{grid-template-columns:104px minmax(0,1fr);min-height:136px}
+ .card>summary>.photo{width:104px;height:100%;min-height:136px}
+ .card>summary>.photo img{width:100%;height:100%}
+ .card>summary .summary-body{justify-content:center;padding:9px 10px}
+ .card-quick-facts{gap:4px;margin-top:8px}
+ .card-fact{min-height:29px;min-width:29px;padding:5px 6px;border-radius:8px}
+ .card-fact svg{width:16px;height:16px}
+ .card-fact span{font-size:10px}
+ .card-fact-explanation{font-size:10.5px}
+ .card>summary .tap-hint{margin-top:6px;font-size:10.5px}
+ .card-icon-guide{margin:-1px 0 10px}
+}
+@media(max-width:380px){
+ .card>summary{grid-template-columns:96px minmax(0,1fr);min-height:132px}
+ .card>summary>.photo{width:96px;height:100%;min-height:132px}
+ .card-fact{padding:4px 5px;min-height:27px;min-width:27px}
+ .card-fact svg{width:15px;height:15px}
+}
+
 </style>
 <script>document.documentElement.classList.add('js-enabled');</script>
 </head>
@@ -233,14 +281,24 @@ input:focus,select:focus{border-color:#8eae96;box-shadow:0 0 0 3px rgba(53,106,6
 <section aria-label="Recent care and follow-up" class="activity" id="recent-care"><div class="activity-heading"><h2>Recent care &amp; follow-up</h2></div></section><div class="controls" id="controls">
 <input autocomplete="off" id="search" placeholder="Search name or species…" type="search" aria-label="Search plant name or species">
 <select id="health" aria-label="Filter by health"><option value="all">All health</option><option>Excellent</option><option>Good</option><option>Fair</option><option>Watch</option><option>Concern</option></select>
-<select id="focus" aria-label="Collection view"><option value="all">All plants</option><option value="new">New additions (9)</option><option value="mites">Mites reported (6)</option></select></div>
+<select id="focus" aria-label="Collection view"><option value="all">All plants</option><option value="mites">Mites reported (6)</option></select></div>
+<details class="card-icon-guide">
+ <summary>Card icon guide <span>Tap an icon on a plant for details</span></summary>
+ <div class="card-icon-guide-items">
+  <div><span class="example-icon" aria-hidden="true">☀</span> Light conditions</div>
+  <div><span class="example-icon" aria-hidden="true">🌿</span> Plant type</div>
+  <div><span class="example-icon" aria-hidden="true">💧</span> When to water (e.g. 1–2″ dry)</div>
+  <div><span class="example-icon" aria-hidden="true">▤</span> Preferred soil mix</div>
+  <p>These are care guidelines, not live soil-moisture readings. An icon tells you the preferred conditions; check the plant before watering.</p>
+ </div>
+</details>
 <div class="grid" id="grid">
 <div id="loading" role="status" style="grid-column:1/-1;padding:24px;text-align:center;color:var(--muted)">Loading GAIA plant records…</div>
 </div>
 <div class="empty" id="empty">No plants match those filters.</div>
 </div>
 <script src="gaia-config.js?v=20261012-sync3"></script>
-<script src="app.js?v=20261012-sync3" defer></script>
+<script src="app.js?v=20261012-card-icons1" defer></script>
 <script src="care.js?v=20261012-photos1" defer></script>
 <script src="photos.js?v=20261012-photos2" defer></script>
 </body>
