@@ -172,6 +172,13 @@
             "bodyHtml": "<a href=\"https://costafarms.com/blogs/plant-finder/croton\" target=\"_blank\" rel=\"noopener noreferrer\">Care reference · Costa Farms</a>"
           }
         ]
+      },
+      "cardCare": {
+        "type": "croton",
+        "light": "bright",
+        "water": "one-two",
+        "waterLabel": "1–2″ dry",
+        "soil": "well-drained"
       }
     },
     {
@@ -326,6 +333,13 @@
             "bodyHtml": "<a href=\"https://hort.extension.wisc.edu/articles/ponytail-palm-beaucarnea-recurvata/\" target=\"_blank\" rel=\"noopener noreferrer\">Care reference · University of Wisconsin Extension</a>"
           }
         ]
+      },
+      "cardCare": {
+        "type": "succulent",
+        "light": "very-bright",
+        "water": "fully-dry",
+        "waterLabel": "Fully dry",
+        "soil": "gritty"
       }
     },
     {
@@ -484,6 +498,13 @@
             "bodyHtml": "<strong>Oct 12, 2026 · </strong>Named Bowser by Reece; spelling recorded as supplied."
           }
         ]
+      },
+      "cardCare": {
+        "type": "cactus",
+        "light": "very-bright",
+        "water": "fully-dry",
+        "waterLabel": "Fully dry",
+        "soil": "gritty"
       }
     },
     {
@@ -661,6 +682,13 @@
             "bodyHtml": "<strong>Oct 12, 2026 · </strong>Named Audrey II by Reece; spelling recorded as supplied."
           }
         ]
+      },
+      "cardCare": {
+        "type": "carnivorous",
+        "light": "very-bright",
+        "water": "moist",
+        "waterLabel": "Keep moist",
+        "soil": "carnivorous"
       }
     },
     {
@@ -814,6 +842,13 @@
             "bodyHtml": "<strong>Oct 12, 2026 · </strong>Named Treebeard by Reece; spelling recorded as supplied."
           }
         ]
+      },
+      "cardCare": {
+        "type": "palm",
+        "light": "bright-indirect",
+        "water": "one",
+        "waterLabel": "1″ dry",
+        "soil": "well-drained"
       }
     },
     {
@@ -983,6 +1018,13 @@
             "bodyHtml": "<strong>Oct 12, 2026 · </strong>Reece supplied the name Malefecent and clarified that he is caring for the plant for Amber."
           }
         ]
+      },
+      "cardCare": {
+        "type": "bromeliad",
+        "light": "bright-indirect",
+        "water": "cup",
+        "waterLabel": "Cup + surface",
+        "soil": "bromeliad"
       }
     },
     {
@@ -1136,6 +1178,13 @@
             "bodyHtml": "<strong>Oct 12, 2026 · </strong>Named Samwise by Reece; spelling recorded as supplied."
           }
         ]
+      },
+      "cardCare": {
+        "type": "succulent",
+        "light": "very-bright",
+        "water": "fully-dry",
+        "waterLabel": "Fully dry",
+        "soil": "gritty"
       }
     },
     {
@@ -1289,6 +1338,13 @@
             "bodyHtml": "<strong>Oct 12, 2026 · </strong>Named Drogo by Reece; spelling recorded as supplied."
           }
         ]
+      },
+      "cardCare": {
+        "type": "dracaena",
+        "light": "bright-indirect",
+        "water": "one-two",
+        "waterLabel": "1–2″ dry",
+        "soil": "well-drained"
       }
     },
     {
@@ -1442,6 +1498,13 @@
             "bodyHtml": "<strong>Oct 12, 2026 · </strong>Named Gandalf by Reece; spelling recorded as supplied."
           }
         ]
+      },
+      "cardCare": {
+        "type": "flowering",
+        "light": "full-sun",
+        "water": "one-two",
+        "waterLabel": "1–2″ dry",
+        "soil": "well-drained"
       }
     },
     {
@@ -1560,6 +1623,13 @@
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Roots reported emerging from the bottom of the pot; degree of crowding not yet assessed."
           }
         ]
+      },
+      "cardCare": {
+        "type": "tropical",
+        "light": "bright-indirect",
+        "water": "two-three",
+        "waterLabel": "2–3″ dry",
+        "soil": "airy"
       }
     },
     {
@@ -1687,6 +1757,13 @@
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Spider mites identified by owner. Bath recorded; no chemical treatment or pest clearance recorded."
           }
         ]
+      },
+      "cardCare": {
+        "type": "aroid",
+        "light": "bright-indirect",
+        "water": "one-two",
+        "waterLabel": "1–2″ dry",
+        "soil": "chunky"
       }
     },
     {
@@ -1801,6 +1878,13 @@
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
           }
         ]
+      },
+      "cardCare": {
+        "type": "tropical",
+        "light": "medium",
+        "water": "half-one",
+        "waterLabel": "½–1″ dry",
+        "soil": "moisture"
       }
     },
     {
@@ -1919,6 +2003,13 @@
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
           }
         ]
+      },
+      "cardCare": {
+        "type": "aroid",
+        "light": "bright-indirect",
+        "water": "one-two",
+        "waterLabel": "1–2″ dry",
+        "soil": "chunky"
       }
     },
     {
@@ -2037,6 +2128,13 @@
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
           }
         ]
+      },
+      "cardCare": {
+        "type": "flowering",
+        "light": "medium",
+        "water": "one",
+        "waterLabel": "1″ dry",
+        "soil": "moisture"
       }
     },
     {
@@ -2164,6 +2262,13 @@
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Spider mites identified by owner. Bath recorded; no chemical treatment or pest clearance recorded."
           }
         ]
+      },
+      "cardCare": {
+        "type": "tropical",
+        "light": "bright-indirect",
+        "water": "two-three",
+        "waterLabel": "2–3″ dry",
+        "soil": "airy"
       }
     },
     {
@@ -2291,6 +2396,13 @@
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Spider mites identified by owner. Bath recorded; no chemical treatment or pest clearance recorded."
           }
         ]
+      },
+      "cardCare": {
+        "type": "aroid",
+        "light": "medium",
+        "water": "one-two",
+        "waterLabel": "1–2″ dry",
+        "soil": "chunky"
       }
     },
     {
@@ -2418,6 +2530,13 @@
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Spider mites identified by owner. Bath recorded; no chemical treatment or pest clearance recorded."
           }
         ]
+      },
+      "cardCare": {
+        "type": "croton",
+        "light": "very-bright",
+        "water": "one-two",
+        "waterLabel": "1–2″ dry",
+        "soil": "airy"
       }
     },
     {
@@ -2532,6 +2651,13 @@
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
           }
         ]
+      },
+      "cardCare": {
+        "type": "orchid",
+        "light": "bright-indirect",
+        "water": "silver-roots",
+        "waterLabel": "Silver roots",
+        "soil": "orchid"
       }
     },
     {
@@ -2646,6 +2772,13 @@
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
           }
         ]
+      },
+      "cardCare": {
+        "type": "prayer",
+        "light": "medium",
+        "water": "half-one",
+        "waterLabel": "½–1″ dry",
+        "soil": "moisture"
       }
     },
     {
@@ -2764,6 +2897,13 @@
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
           }
         ]
+      },
+      "cardCare": {
+        "type": "pilea",
+        "light": "bright-indirect",
+        "water": "one",
+        "waterLabel": "1″ dry",
+        "soil": "well-drained"
       }
     },
     {
@@ -2878,6 +3018,13 @@
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
           }
         ]
+      },
+      "cardCare": {
+        "type": "tradescantia",
+        "light": "very-bright",
+        "water": "one-two",
+        "waterLabel": "1–2″ dry",
+        "soil": "well-drained"
       }
     },
     {
@@ -2992,6 +3139,13 @@
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
           }
         ]
+      },
+      "cardCare": {
+        "type": "succulent",
+        "light": "full-sun",
+        "water": "fully-dry",
+        "waterLabel": "Fully dry",
+        "soil": "gritty"
       }
     },
     {
@@ -3123,6 +3277,13 @@
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Spider mites identified by owner. Bath recorded; no chemical treatment or pest clearance recorded."
           }
         ]
+      },
+      "cardCare": {
+        "type": "bromeliad",
+        "light": "bright-indirect",
+        "water": "cup",
+        "waterLabel": "Cup + surface",
+        "soil": "bromeliad"
       }
     },
     {
@@ -3254,6 +3415,13 @@
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Spider mites identified by owner. Bath recorded; no chemical treatment or pest clearance recorded."
           }
         ]
+      },
+      "cardCare": {
+        "type": "aroid",
+        "light": "bright-indirect",
+        "water": "one-two",
+        "waterLabel": "1–2″ dry",
+        "soil": "chunky"
       }
     },
     {
@@ -3368,6 +3536,13 @@
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
           }
         ]
+      },
+      "cardCare": {
+        "type": "succulent",
+        "light": "very-bright",
+        "water": "almost-dry",
+        "waterLabel": "Almost dry",
+        "soil": "gritty"
       }
     },
     {
@@ -3482,6 +3657,13 @@
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
           }
         ]
+      },
+      "cardCare": {
+        "type": "tropical",
+        "light": "bright-indirect",
+        "water": "one",
+        "waterLabel": "1″ dry",
+        "soil": "well-drained"
       }
     },
     {
@@ -3596,6 +3778,13 @@
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
           }
         ]
+      },
+      "cardCare": {
+        "type": "tropical",
+        "light": "very-bright",
+        "water": "one",
+        "waterLabel": "1″ dry",
+        "soil": "well-drained"
       }
     },
     {
@@ -3710,6 +3899,13 @@
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
           }
         ]
+      },
+      "cardCare": {
+        "type": "succulent",
+        "light": "bright",
+        "water": "almost-dry",
+        "waterLabel": "Almost dry",
+        "soil": "gritty"
       }
     },
     {
@@ -3824,6 +4020,13 @@
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
           }
         ]
+      },
+      "cardCare": {
+        "type": "dracaena",
+        "light": "medium",
+        "water": "water-grown",
+        "waterLabel": "Refresh weekly",
+        "soil": "water-grown"
       }
     },
     {
@@ -3942,6 +4145,13 @@
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Roots reported emerging from the bottom of the pot; degree of crowding not yet assessed."
           }
         ]
+      },
+      "cardCare": {
+        "type": "aroid",
+        "light": "medium",
+        "water": "one-two",
+        "waterLabel": "1–2″ dry",
+        "soil": "chunky"
       }
     },
     {
@@ -4060,6 +4270,13 @@
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
           }
         ]
+      },
+      "cardCare": {
+        "type": "air-plant",
+        "light": "bright-indirect",
+        "water": "soak",
+        "waterLabel": "Weekly soak",
+        "soil": "no-soil"
       }
     },
     {
@@ -4178,6 +4395,13 @@
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
           }
         ]
+      },
+      "cardCare": {
+        "type": "fern",
+        "light": "medium",
+        "water": "half-one",
+        "waterLabel": "½–1″ dry",
+        "soil": "moisture"
       }
     },
     {
@@ -4292,6 +4516,13 @@
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
           }
         ]
+      },
+      "cardCare": {
+        "type": "tropical",
+        "light": "bright-indirect",
+        "water": "one",
+        "waterLabel": "1″ dry",
+        "soil": "well-drained"
       }
     },
     {
@@ -4410,6 +4641,13 @@
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
           }
         ]
+      },
+      "cardCare": {
+        "type": "tropical",
+        "light": "bright-indirect",
+        "water": "one",
+        "waterLabel": "1″ dry",
+        "soil": "well-drained"
       }
     },
     {
@@ -4524,6 +4762,13 @@
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
           }
         ]
+      },
+      "cardCare": {
+        "type": "pilea",
+        "light": "medium",
+        "water": "one",
+        "waterLabel": "1″ dry",
+        "soil": "moisture"
       }
     },
     {
@@ -4642,6 +4887,13 @@
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
           }
         ]
+      },
+      "cardCare": {
+        "type": "aroid",
+        "light": "bright-indirect",
+        "water": "two-three",
+        "waterLabel": "2–3″ dry",
+        "soil": "chunky"
       }
     },
     {
@@ -4756,6 +5008,13 @@
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
           }
         ]
+      },
+      "cardCare": {
+        "type": "aroid",
+        "light": "bright-indirect",
+        "water": "one-two",
+        "waterLabel": "1–2″ dry",
+        "soil": "chunky"
       }
     },
     {
@@ -4870,6 +5129,13 @@
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
           }
         ]
+      },
+      "cardCare": {
+        "type": "aroid",
+        "light": "bright-indirect",
+        "water": "one-two",
+        "waterLabel": "1–2″ dry",
+        "soil": "chunky"
       }
     },
     {
@@ -4984,6 +5250,13 @@
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
           }
         ]
+      },
+      "cardCare": {
+        "type": "zz",
+        "light": "flexible",
+        "water": "almost-dry",
+        "waterLabel": "Almost dry",
+        "soil": "airy"
       }
     },
     {
@@ -5098,6 +5371,13 @@
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
           }
         ]
+      },
+      "cardCare": {
+        "type": "tropical",
+        "light": "bright-indirect",
+        "water": "one",
+        "waterLabel": "1″ dry",
+        "soil": "airy"
       }
     },
     {
@@ -5212,6 +5492,13 @@
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
           }
         ]
+      },
+      "cardCare": {
+        "type": "succulent",
+        "light": "very-bright",
+        "water": "almost-dry",
+        "waterLabel": "Almost dry",
+        "soil": "gritty"
       }
     },
     {
@@ -5326,6 +5613,13 @@
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
           }
         ]
+      },
+      "cardCare": {
+        "type": "tradescantia",
+        "light": "very-bright",
+        "water": "one",
+        "waterLabel": "1″ dry",
+        "soil": "well-drained"
       }
     },
     {
@@ -5440,6 +5734,13 @@
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
           }
         ]
+      },
+      "cardCare": {
+        "type": "tropical",
+        "light": "medium",
+        "water": "one-two",
+        "waterLabel": "1–2″ dry",
+        "soil": "airy"
       }
     },
     {
@@ -5554,6 +5855,13 @@
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
           }
         ]
+      },
+      "cardCare": {
+        "type": "vine",
+        "light": "bright-indirect",
+        "water": "one-two",
+        "waterLabel": "1–2″ dry",
+        "soil": "airy"
       }
     },
     {
@@ -5672,6 +5980,13 @@
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
           }
         ]
+      },
+      "cardCare": {
+        "type": "flowering",
+        "light": "very-bright",
+        "water": "one-two",
+        "waterLabel": "1–2″ dry",
+        "soil": "well-drained"
       }
     }
   ]
