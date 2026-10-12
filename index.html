@@ -214,6 +214,50 @@ input:focus,select:focus{border-color:#8eae96;box-shadow:0 0 0 3px rgba(53,106,6
  .card-fact svg{width:15px;height:15px}
 }
 
+
+/* Top-of-dashboard follow-up checklist */
+.gaia-task-panel{border:1px solid #cfe0d3;border-radius:14px;background:#f0f7ef;margin:0 0 14px;overflow:hidden}
+.gaia-task-panel>summary{cursor:pointer;display:flex;align-items:center;justify-content:space-between;
+ flex-wrap:wrap;gap:8px;list-style:none;padding:13px 15px;font-weight:800;color:#285737}
+.gaia-task-panel>summary::-webkit-details-marker{display:none}
+.gaia-task-summary-title{display:flex;align-items:center;gap:10px;font-size:15px}
+.gaia-task-summary-icon{display:inline-flex;width:26px;height:26px;align-items:center;justify-content:center;
+ background:#dcefe0;color:#356a45;border-radius:9px;font-size:17px}
+.gaia-task-progress{display:inline-flex;align-items:center;gap:4px;background:#fff;border:1px solid #d1e0d3;
+ padding:5px 9px;border-radius:999px;color:#47664c;font-size:11px;font-weight:750;letter-spacing:0}
+.gaia-task-panel>summary::after{content:"▾";font-size:16px;margin-left:2px;color:#557c5c}
+.gaia-task-panel[open]>summary::after{content:"▴"}
+.gaia-task-content{padding:0 14px 13px;border-top:1px solid #dce8dd}
+.gaia-task-intro{font-size:12px;line-height:1.45;color:#566d5a;margin:11px 0}
+.gaia-task-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.gaia-task-item{display:flex;align-items:flex-start;gap:10px;background:#fff;border:1px solid #d6e2d7;
+ border-radius:10px;padding:11px;min-width:0;cursor:pointer}
+.gaia-task-item input[type=checkbox]{appearance:auto;width:18px;height:18px;min-width:18px;margin:2px 0 0;
+ padding:0;border:0;border-radius:4px;box-shadow:none;accent-color:#356a45;cursor:pointer}
+.gaia-task-item input[type=checkbox]:disabled{cursor:default}
+.gaia-task-text{display:flex;flex-direction:column;gap:4px;min-width:0}
+.gaia-task-category{font-size:10px;text-transform:uppercase;letter-spacing:.055em;font-weight:800;color:#63806a}
+.gaia-task-text strong{font-size:12.5px;line-height:1.3;color:#273c2c}
+.gaia-task-description{font-size:11px;line-height:1.4;color:#617365;overflow-wrap:anywhere}
+.gaia-task-item.is-done{background:#f7f9f7;border-color:#e1e7e0}
+.gaia-task-item.is-done .gaia-task-text strong{text-decoration:line-through;color:#708273}
+.gaia-task-status{font-size:11px;line-height:1.45;color:#617365;margin:11px 1px 0}
+.gaia-task-status.gaia-task-error{color:#a33b34}
+.gaia-task-empty{padding:10px;font-size:12px;color:#617365}
+#recent-care{margin-top:20px}
+#care-overview{margin-top:10px;margin-bottom:0}
+@media(max-width:600px){
+ .gaia-task-panel{border-radius:12px;margin-bottom:11px}
+ .gaia-task-panel>summary{padding:11px 12px}
+ .gaia-task-summary-title{font-size:14px;gap:7px}
+ .gaia-task-summary-icon{width:24px;height:24px}
+ .gaia-task-progress{padding:4px 7px;font-size:10px}
+ .gaia-task-content{padding:0 10px 11px}
+ .gaia-task-list{grid-template-columns:1fr;gap:7px}
+ .gaia-task-item{padding:10px}
+ #recent-care{margin-top:15px}
+}
+
 </style>
 <script>document.documentElement.classList.add('js-enabled');</script>
 </head>
@@ -227,6 +271,39 @@ input:focus,select:focus{border-color:#8eae96;box-shadow:0 0 0 3px rgba(53,106,6
 <div class="stat"><small>GOOD / EXCELLENT</small><b>26</b></div>
 <div class="stat"><small>NEEDS ATTENTION</small><b>19</b></div>
 </div>
+
+<details id="gaia-tasks" class="gaia-task-panel" aria-label="Tasks to complete">
+  <summary>
+    <span class="gaia-task-summary-title"><span aria-hidden="true" class="gaia-task-summary-icon">✓</span> Tasks to complete</span>
+    <span id="gaia-task-progress" class="gaia-task-progress" aria-live="polite">Loading tasks…</span>
+  </summary>
+  <div class="gaia-task-content">
+    <p class="gaia-task-intro">Follow-ups from your recorded plant care notes. Check a task only after you have actually done it.</p>
+    <div id="gaia-task-list" class="gaia-task-list" role="group" aria-label="Plant care follow-up checklist"></div>
+    <p id="gaia-task-status" class="gaia-task-status" role="status" aria-live="polite"></p>
+  </div>
+</details>
+<div class="controls" id="controls">
+<input autocomplete="off" id="search" placeholder="Search name or species…" type="search" aria-label="Search plant name or species">
+<select id="health" aria-label="Filter by health"><option value="all">All health</option><option>Excellent</option><option>Good</option><option>Fair</option><option>Watch</option><option>Concern</option></select>
+<select id="focus" aria-label="Collection view"><option value="all">All plants</option><option value="mites">Mites reported (6)</option></select></div>
+<details class="card-icon-guide">
+ <summary>Card icon guide <span>Tap an icon on a plant for details</span></summary>
+ <div class="card-icon-guide-items">
+  <div><span class="example-icon" aria-hidden="true">☀</span> Light conditions</div>
+  <div><span class="example-icon" aria-hidden="true">🌿</span> Plant type</div>
+  <div><span class="example-icon" aria-hidden="true">💧</span> When to water (e.g. 1–2″ dry)</div>
+  <div><span class="example-icon" aria-hidden="true">▤</span> Preferred soil mix</div>
+  <p>These are care guidelines, not live soil-moisture readings. An icon tells you the preferred conditions; check the plant before watering.</p>
+ </div>
+</details>
+<div class="grid" id="grid">
+<div id="loading" role="status" style="grid-column:1/-1;padding:24px;text-align:center;color:var(--muted)">Loading GAIA plant records…</div>
+</div>
+<div class="empty" id="empty">No plants match those filters.</div>
+
+<!-- Older activity and account settings stay below the plant collection. -->
+<section aria-label="Recent care and follow-up" class="activity" id="recent-care"><div class="activity-heading"><h2>Recent care &amp; follow-up</h2></div></section>
 
 <section id="care-overview" class="care-overview" aria-label="Care journal overview">
  <div class="care-overview-head">
@@ -277,29 +354,11 @@ input:focus,select:focus{border-color:#8eae96;box-shadow:0 0 0 3px rgba(53,106,6
 <p class="photo-upload-hint" id="gaia-photo-sync-state">Sign in to upload photos</p>
 <p id="gaia-photo-message" role="status" aria-live="polite" hidden></p>
 </section>
-
-<section aria-label="Recent care and follow-up" class="activity" id="recent-care"><div class="activity-heading"><h2>Recent care &amp; follow-up</h2></div></section><div class="controls" id="controls">
-<input autocomplete="off" id="search" placeholder="Search name or species…" type="search" aria-label="Search plant name or species">
-<select id="health" aria-label="Filter by health"><option value="all">All health</option><option>Excellent</option><option>Good</option><option>Fair</option><option>Watch</option><option>Concern</option></select>
-<select id="focus" aria-label="Collection view"><option value="all">All plants</option><option value="mites">Mites reported (6)</option></select></div>
-<details class="card-icon-guide">
- <summary>Card icon guide <span>Tap an icon on a plant for details</span></summary>
- <div class="card-icon-guide-items">
-  <div><span class="example-icon" aria-hidden="true">☀</span> Light conditions</div>
-  <div><span class="example-icon" aria-hidden="true">🌿</span> Plant type</div>
-  <div><span class="example-icon" aria-hidden="true">💧</span> When to water (e.g. 1–2″ dry)</div>
-  <div><span class="example-icon" aria-hidden="true">▤</span> Preferred soil mix</div>
-  <p>These are care guidelines, not live soil-moisture readings. An icon tells you the preferred conditions; check the plant before watering.</p>
- </div>
-</details>
-<div class="grid" id="grid">
-<div id="loading" role="status" style="grid-column:1/-1;padding:24px;text-align:center;color:var(--muted)">Loading GAIA plant records…</div>
-</div>
-<div class="empty" id="empty">No plants match those filters.</div>
 </div>
 <script src="gaia-config.js?v=20261012-sync3"></script>
 <script src="app.js?v=20261012-card-icons1" defer></script>
 <script src="care.js?v=20261012-photos1" defer></script>
 <script src="photos.js?v=20261012-photos2" defer></script>
+<script src="tasks.js?v=20261012-tasks1" defer></script>
 </body>
 </html>
