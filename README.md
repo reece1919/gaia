@@ -42,15 +42,23 @@ The dashboard now supports **Watered, Fertilized, Repotted, Pest treatment**, pl
 - The cloud table holds **care events only**; plant profiles continue to be edited in `plants.json` via GitHub. Existing static care history remains available.
 - The public GitHub repository includes a safe template `gaia-config.js` with blank values. Do **not** put a Supabase service-role, secret key, or database password in public files.
 
-### Enable private cross-device sync with Supabase
+### Supabase connection and setup status
 
-1. Create/select a Supabase project under your account.
-2. Run the SQL in [`supabase/gaia_care_events.sql`](supabase/gaia_care_events.sql) in the **Supabase SQL Editor**. This creates `plant_care_events`, enables Row Level Security, and allows authenticated users to read/write **only their own entries**. Never disable RLS for this table.
-3. In Supabase Authentication URL Configuration, use `https://reece1919.github.io/gaia/` as the Site URL and add `https://reece1919.github.io/gaia/**` as an allowed Redirect URL. Enable email OTP/magic-link authentication. You can restrict account registration once your account is established.
-4. In Supabase Project Settings → API, copy the **project URL** and the **publishable key / legacy anon key** (public, browser-safe key only). Put these in `gaia-config.js` under `url` and `anonKey`. Never use service-role or secret keys.
-5. Commit the change, allow GitHub Pages to deploy, open GAIA on your device, then use **Sync, account & backup → Email me a sign-in link** and sign in with your email.
-6. Test by recording a care activity on one device and signing into the same account on a different device. Tap **Sync journal** if it doesn't appear immediately. This is refresh/manual synchronization, not realtime push.
-7. If you logged entries before cloud setup, select **Import earlier device entries** after signing in. It copies existing device-only entries into your account; it doesn't delete the local backup.
+- Supabase project **GAIA** (US West) exists and is healthy.
+- Private table `public.plant_care_events` created with Row Level Security and four owner-only policies.
+- Browser-facing project URL and **publishable** key configured in `gaia-config.js`. No service-role key or database password is in the site.
+- Security advisor reports zero security warnings after restricting the automatic-RLS event-trigger function.
+- **Still required:** configure authentication redirect URLs in the Supabase Dashboard, then complete email sign-in and test from two devices.
+
+### Complete the remaining sign-in setup
+
+1. Open [Supabase Authentication URL Configuration](https://supabase.com/dashboard/project/zdurujqwhxqrwbhwzzxg/auth/url-configuration).
+2. Set the **Site URL** to `https://reece1919.github.io/gaia/`.
+3. Add `https://reece1919.github.io/gaia/` to **Redirect URLs**, and save. You can use `https://reece1919.github.io/gaia/**` for additional routes in the future.
+4. Verify Email authentication is enabled under **Authentication → Providers → Email**.
+5. On [GAIA](https://reece1919.github.io/gaia/), open **Sync, account & backup → Email me a sign-in link** and sign in.
+6. Add a care entry on one device; open GAIA on another, sign into the same account and tap **Sync journal** to verify it appears. Synchronization occurs when you load/reload the app, save entries, or tap Sync; it is not realtime push.
+7. If you recorded entries before signing in, choose **Import earlier device entries** on each relevant device. It copies them to your private account without deleting the device-only backup.
 
 ### Recovering care entries
 
