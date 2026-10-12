@@ -1,4 +1,4 @@
-/* GAIA — read-only Plant Steward briefings.
+/* GAIA — read-only GAIA insights.
    Reads private GAIA AI review records from the owner's Supabase session.
    No OpenAI API calls and no writes. AI suggestions never become care history. */
 (() => {
@@ -57,7 +57,7 @@
       stamp.textContent = "Private notes · sign in";
       body.innerHTML =
         '<p class="gaia-insights-empty">Sign in using <strong>Sync, account &amp; backup</strong> ' +
-        'at the bottom of GAIA to read your private Plant Steward briefings.</p>';
+        'at the bottom of GAIA to read your private GAIA insights.</p>';
       status.textContent = "Reviews are stored privately. This website does not contact an AI service.";
       return;
     }
@@ -66,7 +66,7 @@
       stamp.textContent = "Last saved · " + dateText(latest.review_date);
       const priorities = validPriorities(latest.priorities);
       body.innerHTML =
-        '<div class="gaia-insights-meta"><span class="gaia-insights-seal">STEWARD’S NOTES</span>' +
+        '<div class="gaia-insights-meta"><span class="gaia-insights-seal">GAIA’S NOTES</span>' +
           '<time datetime="' + esc(latest.review_date || "") + '">' +
           esc(dateText(latest.review_date)) + '</time></div>' +
         '<p class="gaia-insights-summary">' + esc(latest.summary || "") + '</p>' +
@@ -86,7 +86,7 @@
     } else {
       stamp.textContent = busy ? "Checking saved reviews…" : "Awaiting first review";
       body.innerHTML =
-        '<p class="gaia-insights-empty">No Plant Steward briefing has been saved to this account yet. ' +
+        '<p class="gaia-insights-empty">No GAIA review has been saved to this account yet. ' +
           'The hourly ChatGPT watch is scheduled, but a review appears here only after ' +
           'it successfully verifies your account and saves findings.</p>' +
         '<p class="gaia-insights-disclaimer">Nothing is invented to fill this space; ' +
