@@ -1,0 +1,5678 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "Oct 12, 2026",
+  "summaryNote": "tap for care, priorities & history",
+  "recentCare": {
+    "dateLabel": "OCT 10–12, 2026",
+    "tiles": [
+      {
+        "title": "Oct 10 · existing crew",
+        "descriptionHtml": "Existing collection bathed. Spider mites reported on Morgana, Phil, C-3PO, Tywin, Karlach, and Calcifer."
+      },
+      {
+        "title": "Oct 11–12 · nine additions",
+        "descriptionHtml": "Five arrivals photographed and bathed Oct 11. Cactus, flytrap, ponytail palm, and Red Banana croton first recorded here Oct 12. Cactus, ponytail, and croton bath dates unconfirmed; flytrap not bathed or watered by Reece. Seven named; ponytail palm and croton names pending. Malefecent is in care for Amber."
+      },
+      {
+        "title": "Next check · Oct 13",
+        "descriptionHtml": "Inspect undersides and stems; repeat the white-paper test on affected plants and the palm. Continue any spray treatment at its label interval."
+      }
+    ],
+    "noteHtml": "Baths are logged as foliage cleaning. Check soil moisture before watering; pest clearance still needs follow-up. Keep new arrivals separate while the existing outbreak is active."
+  },
+  "plants": [
+    {
+      "id": "01",
+      "name": "Red Banana croton · name pending",
+      "species": "Codiaeum variegatum ‘Red Banana’",
+      "searchName": "red banana croton name pending",
+      "searchSpecies": "codiaeum variegatum red banana",
+      "status": "Good",
+      "photo": "01-red-banana-croton-name-pending.jpg",
+      "photoAlt": "Red Banana croton · name pending · photo review Oct 12, 2026",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-10-12",
+      "tags": [
+        {
+          "style": "",
+          "label": "NEW ADDITION"
+        },
+        {
+          "style": "",
+          "label": "BRIGHT LIGHT"
+        },
+        {
+          "style": "",
+          "label": "CROTON"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Place in bright light and inspect leaf undersides and stem joints for mites. Keep apart from affected plants while the collection’s outbreak is active. Check soil moisture before watering.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Full foliage with strong red, dark purple, orange, and green coloring. The green growth at the top appears newer. No obvious widespread yellowing or collapse in the Oct 12 photo; roots and pest status have not been assessed.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Water when the top 1–2 inches of mix feel dry. Water thoroughly, drain, and empty the saucer. Avoid prolonged soggy soil or letting the whole pot dry out.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Bright window or strong grow light. Introduce stronger direct sun gradually; insufficient light can reduce color and cause leaf loss.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "No immediate feeding while settling in. Fertilize once or twice in spring–summer, following the product’s label rate. Skip while stressed or resting.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Home confirmed Oct 12; metal plant shelf shown in the photo. Final placement and window direction not recorded.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Keep in the nursery pot while settling in if drainage is good. Repot if roots are crowded or the mix stays wet too long; use a slightly larger pot with drainage.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Recommended: 2 parts indoor potting mix + 1 part perlite/pumice. Current nursery mix composition is unconfirmed.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Check for live mites, fine webbing, pale stippling, and damaged new growth. Watch for sustained leaf drop, soggy soil, or persistent wilting. Keep conditions stable and avoid cold drafts.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PEST CHECK",
+          "bodyHtml": "No infestation confirmed from this photo. Inspect the leaf undersides and stem joints before placing beside other plants. No treatment or pest clearance recorded.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 12, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Oct 12, 2026",
+            "style": ""
+          },
+          {
+            "label": "Added to collection",
+            "valueHtml": "Confirmed home Oct 12, 2026",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Pending",
+            "style": ""
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Original plastic nursery pot on a saucer; pot size not recorded",
+            "style": ""
+          },
+          {
+            "label": "Identification",
+            "valueHtml": "Red Banana croton, as printed on the Costa Farms label",
+            "style": ""
+          },
+          {
+            "label": "Pest status",
+            "valueHtml": "Unconfirmed; inspect during acclimation",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 12, 2026 · </strong>Reece confirmed this plant is home. Photo and care added; name, watering, bath, and treatment dates remain unrecorded."
+          },
+          {
+            "style": "",
+            "bodyHtml": "<a href=\"https://costafarms.com/blogs/plant-finder/croton\" target=\"_blank\" rel=\"noopener noreferrer\">Care reference · Costa Farms</a>"
+          }
+        ]
+      }
+    },
+    {
+      "id": "02",
+      "name": "Ponytail palm · name pending",
+      "species": "Beaucarnea recurvata",
+      "searchName": "ponytail palm name pending elephant foot tree",
+      "searchSpecies": "beaucarnea recurvata",
+      "status": "Watch",
+      "photo": "02-ponytail-palm-name-pending-elephant-foot-tree.jpg",
+      "photoAlt": "Ponytail palm · name pending · photo review Oct 12, 2026",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-10-12",
+      "tags": [
+        {
+          "style": "",
+          "label": "NEW ADDITION"
+        },
+        {
+          "style": "",
+          "label": "VERY BRIGHT"
+        },
+        {
+          "style": "",
+          "label": "SUCCULENT"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Check that the trunk is firm and the pot has drainage. Feel the mix deeper in the pot; wait until it is dry throughout before watering. Inspect the leaf bases and undersides for moving mites or fine webbing.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Green foliage with several bent or creased leaves and pale scuffed areas in the Oct 12 photo. Curving, arching leaves are typical. The cause of the damaged areas is unconfirmed; pests, trunk firmness, and roots have not been assessed.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Let the mix dry throughout before watering thoroughly and draining. Water less often in winter. Check moisture rather than using the tropical plants’ watering schedule.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Brightest available window with direct sun; increase stronger sunlight gradually to prevent scorching.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "No immediate feeding. Fertilize once or twice during active spring–summer growth at the product’s label rate; skip while stressed or resting.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Table beside the window shown in the photo; window direction and final placement not recorded.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "No immediate repot indicated by this photo. Confirm drainage; change the mix if it stays wet for prolonged periods. Otherwise repot only when crowded, using a slightly larger pot.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Fast-draining cactus/succulent mix with added perlite or pumice; a 1:1 mix is a practical starting point. Use a pot with drainage and keep the swollen trunk above the mix.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Watch for a soft trunk or base, spreading yellowing, prolonged wet soil, fine webbing, or moving mites. Existing creases and dead leaf tips will not recover; monitor new growth. Leaf damage alone does not confirm an infestation.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PROPAGATION",
+          "bodyHtml": "Usually grown from seed. Leaf cuttings will not make a new plant; leave attached shoots in place.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PEST CHECK",
+          "bodyHtml": "No infestation confirmed from the photo. Keep apart from affected plants while the collection’s mite outbreak is active and check leaf bases and undersides.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 12, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Oct 12, 2026",
+            "style": ""
+          },
+          {
+            "label": "Added to collection",
+            "valueHtml": "First photographed here Oct 12, 2026; acquisition date unconfirmed",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Pending",
+            "style": ""
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Gray fluted pot; drainage arrangement and size unconfirmed",
+            "style": ""
+          },
+          {
+            "label": "Pest status",
+            "valueHtml": "Unconfirmed; inspect during acclimation",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 12, 2026 · </strong>Photo identifies the previously described bulbous-trunk plant as a ponytail palm. No watering, bath, or treatment recorded from this image."
+          },
+          {
+            "style": "",
+            "bodyHtml": "<a href=\"https://hort.extension.wisc.edu/articles/ponytail-palm-beaucarnea-recurvata/\" target=\"_blank\" rel=\"noopener noreferrer\">Care reference · University of Wisconsin Extension</a>"
+          }
+        ]
+      }
+    },
+    {
+      "id": "03",
+      "name": "Bowser",
+      "species": "Mammillaria sp. · likely; species unconfirmed",
+      "searchName": "bowser pincushion cactus",
+      "searchSpecies": "mammillaria sp. · likely; species unconfirmed",
+      "status": "Good",
+      "photo": "03-bowser-pincushion-cactus.jpg",
+      "photoAlt": "Bowser · Pincushion cactus · photo review Oct 12, 2026",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-10-12",
+      "tags": [
+        {
+          "style": "",
+          "label": "NEW ADDITION"
+        },
+        {
+          "style": "",
+          "label": "VERY BRIGHT"
+        },
+        {
+          "style": "",
+          "label": "CACTUS"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Use the sunniest available window; acclimate gradually to stronger direct sun. Check the mix deeper in the pot before watering and let it dry throughout.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Compact, rounded cactus with dense orange-red and pale spines. No obvious collapse in this photo. Mammillaria is a tentative ID; roots and firmness have not been assessed.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Let the entire mix dry before watering thoroughly and draining. Keep nearly dry if cool and resting in winter; do not give it the tropical plants’ watering schedule.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Very bright light with direct window sun; introduce stronger sunlight gradually. Avoid prolonged shade or obstruction by other plants.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "No immediate feeding. Use a cactus fertilizer at its label rate only during active growth; skip while resting or stressed.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Window shelf shown in the photo; window direction and final placement not recorded.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "No immediate repot indicated by the photo. Change the mix if it remains wet for prolonged periods or drainage is poor; otherwise wait for clear crowding.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "1 part cactus/succulent mix + 1 part pumice/perlite; use a pot with drainage.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Watch for spreading dark or soft areas, a shrinking or collapsed base, prolonged wet soil, and narrow stretched new growth. Some crown wool may be natural; inspect separate cottony clusters for mealybugs.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PROPAGATION",
+          "bodyHtml": "Offsets, if the plant produces them, or seed. Exact growth habit and flower color depend on the species.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PEST CHECK",
+          "bodyHtml": "No infestation confirmed from this photo. Inspect between spine clusters and around the pot; bath and spray history are not recorded.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 12, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Oct 12, 2026",
+            "style": ""
+          },
+          {
+            "label": "Added to collection",
+            "valueHtml": "First recorded Oct 12, 2026; acquisition date unconfirmed",
+            "style": ""
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Black nursery pot; size and drainage-hole condition not recorded.",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Bowser",
+            "style": ""
+          },
+          {
+            "label": "Pest status",
+            "valueHtml": "Unconfirmed; inspect during acclimation",
+            "style": ""
+          },
+          {
+            "label": "Water source",
+            "valueHtml": "Not recorded",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 12, 2026 · </strong>First photo review added to the dashboard. Acquisition date, bath history, and any spray treatment have not been confirmed."
+          },
+          {
+            "style": "",
+            "bodyHtml": "<a href=\"https://plants.ces.ncsu.edu/plants/mammillaria/\" target=\"_blank\" rel=\"noopener noreferrer\">Care reference</a>"
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 12, 2026 · </strong>Named Bowser by Reece; spelling recorded as supplied."
+          }
+        ]
+      }
+    },
+    {
+      "id": "04",
+      "name": "Audrey II",
+      "species": "Dionaea muscipula",
+      "searchName": "audrey ii venus flytrap",
+      "searchSpecies": "dionaea muscipula",
+      "status": "Watch",
+      "photo": "04-audrey-ii-venus-flytrap.jpg",
+      "photoAlt": "Audrey II · Venus flytrap · photo review Oct 12, 2026",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-10-12",
+      "tags": [
+        {
+          "style": "",
+          "label": "NEW ADDITION"
+        },
+        {
+          "style": "",
+          "label": "STRONG LIGHT"
+        },
+        {
+          "style": "",
+          "label": "PURE WATER"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Check the medium’s moisture. Reece has not watered it since receiving it; do not assume earlier care or that the medium is dry. Use distilled, reverse-osmosis, or clean rainwater for its first watering. Keep the medium moist and provide strong light; avoid repeated trap testing while it settles.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Alive: several green traps and smaller central leaves are visible, with blackening and yellowing on some older traps. Age, acclimation, water quality, light, and seasonal changes need checking before assigning a cause.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Keep the medium moist with distilled, reverse-osmosis, or clean rainwater. While actively growing, use a shallow tray about 1–2 cm deep, below the crown; never let the root ball dry out. Reduce standing water during a cool winter rest.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Aim for at least 6 hours of direct sun after gradual acclimation, or a strong grow light about 12–16 hours daily while actively growing. A typical winter windowsill may be insufficient.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "No standard fertilizer in the soil or water. Do not force-feed while it is stressed or traps are unresponsive; later, healthy growing traps can receive suitable small insects.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Window shelf shown in the photo; window direction, direct-sun hours, and supplemental light not recorded.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Avoid an immediate repot just for old black traps. Repot if the medium contains fertilizer or standard potting mix, or salts have accumulated. Otherwise allow acclimation and reassess in spring.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Unfertilized long-fiber sphagnum, or a carnivorous-plant mix such as unfertilized sphagnum peat with washed silica sand. No standard potting mix or fertilizer-enriched ingredients.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Track healthy new traps rather than the oldest ones. Trim only fully black dead material. Check light, water quality, medium, and seasonal conditions if traps do not close; appearance alone does not prove dormancy or root rot.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PROPAGATION",
+          "bodyHtml": "Divide established plants during a suitable repot; leaf pullings and seed are also possible. Wait until this plant is stable.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PEST CHECK",
+          "bodyHtml": "No infestation confirmed from this photo. Keep separate during the collection’s mite follow-up. Reece confirms no bath and no watering since receiving it; previous water quality remains unknown.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WINTER PLAN",
+          "bodyHtml": "Plan a cool, bright winter rest for a seasonally grown plant; keep the medium moist and protect this small pot from prolonged hard freezing. Do not assume old black traps alone mean dormancy. Year-round indoor growth needs strong supplemental light and a consistent routine.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 12, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Oct 12, 2026",
+            "style": ""
+          },
+          {
+            "label": "Added to collection",
+            "valueHtml": "First recorded Oct 12, 2026; acquisition date unconfirmed",
+            "style": ""
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Not bathed — confirmed Oct 12, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Brown nursery pot with moss visible on the surface; the underlying medium and pot size are unconfirmed.",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Audrey II",
+            "style": ""
+          },
+          {
+            "label": "Pest status",
+            "valueHtml": "Unconfirmed; inspect during acclimation",
+            "style": ""
+          },
+          {
+            "label": "Water source",
+            "valueHtml": "Not yet watered by Reece; previous water source unknown",
+            "style": ""
+          },
+          {
+            "label": "Watering since received",
+            "valueHtml": "None — confirmed Oct 12, 2026",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 12, 2026 · </strong>First photo review added to the dashboard. Acquisition date, bath history, and any spray treatment have not been confirmed."
+          },
+          {
+            "style": "",
+            "bodyHtml": "<a href=\"https://www.carnivorousplants.org/grow/guides/DionaeaChecklist\" target=\"_blank\" rel=\"noopener noreferrer\">Care reference</a>"
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 12, 2026 · </strong>Owner confirms the Venus flytrap did not receive a bath. Water source for routine care remains unconfirmed."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 12, 2026 · </strong>Reece has not watered the flytrap since receiving it. Earlier watering and the current moisture level are unknown."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 12, 2026 · </strong>Named Audrey II by Reece; spelling recorded as supplied."
+          }
+        ]
+      }
+    },
+    {
+      "id": "05",
+      "name": "Treebeard",
+      "species": "Chamaedorea elegans · likely",
+      "searchName": "treebeard parlor palm",
+      "searchSpecies": "chamaedorea elegans · likely",
+      "status": "Good",
+      "photo": "05-treebeard-parlor-palm.jpg",
+      "photoAlt": "Treebeard · Parlor palm · photo review Oct 11, 2026",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "",
+      "tags": [
+        {
+          "style": "",
+          "label": "NEW ADDITION"
+        },
+        {
+          "style": "",
+          "label": "BRIGHT INDIRECT"
+        },
+        {
+          "style": "",
+          "label": "PALM"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Let it acclimate in bright indirect light. Keep separate from the established collection during the mite follow-up; inspect the leaflets and repeat the white-paper test.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Mostly green, upright foliage with no obvious major decline in the arrival photo. Identification is likely; pests cannot be ruled out from a photo.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Water when the top 1 in is dry; water thoroughly and drain. Avoid letting the whole root ball stay dry for long.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Bright indirect light; tolerates lower light but grows more slowly. Avoid harsh direct sun.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Wait while acclimating. During active growth, use a houseplant fertilizer at the label rate; avoid feeding stressed plants.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Permanent location not recorded; keep separate during acclimation and pest follow-up.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Leave in its current pot while acclimating unless drainage is poor. Repot only when clearly crowded; avoid separating the clustered seedlings.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "2 parts indoor potting mix + 1 part perlite/pumice; use a pot with drainage.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Check especially for spider mites: fine webbing, pale stippling, or moving dots under the leaflets. Watch for persistent yellowing or crispy tips.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PROPAGATION",
+          "bodyHtml": "Usually grown from seed; do not divide or cut off the growing tips to propagate.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PEST CHECK",
+          "bodyHtml": "Bathed Oct 11, 2026. No pest-free inspection or chemical treatment recorded. Inspect leaf undersides and stems before moving into the main collection.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 12, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Added to collection",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Nursery pot inside a decorative cover; drainage arrangement and size unconfirmed.",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Treebeard",
+            "style": ""
+          },
+          {
+            "label": "Pest status",
+            "valueHtml": "Unconfirmed; monitor during acclimation",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 11, 2026 · </strong>New arrival photographed and bathed by owner. Soil watering and any spray product were not confirmed."
+          },
+          {
+            "style": "",
+            "bodyHtml": "<a href=\"https://plants.ces.ncsu.edu/plants/chamaedorea-elegans/\" target=\"_blank\" rel=\"noopener noreferrer\">Care reference</a>"
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 12, 2026 · </strong>Named Treebeard by Reece; spelling recorded as supplied."
+          }
+        ]
+      }
+    },
+    {
+      "id": "06",
+      "name": "Malefecent",
+      "species": "Guzmania hybrid · likely",
+      "searchName": "malefecent bromeliad guzmania amber",
+      "searchSpecies": "guzmania hybrid · likely",
+      "status": "Watch",
+      "photo": "06-malefecent-bromeliad-guzmania-amber.jpg",
+      "photoAlt": "Malefecent · Guzmania bromeliad · arrival photo, Oct 11, 2026",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "",
+      "tags": [
+        {
+          "style": "",
+          "label": "NEW · CARING FOR AMBER"
+        },
+        {
+          "style": "",
+          "label": "BRIGHT INDIRECT"
+        },
+        {
+          "style": "",
+          "label": "BROMELIAD"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Remove only fully dead lower leaves. Check that the center is firm and monitor whether brown patches spread; let the pot drain after its bath.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Green foliage and upright burgundy bracts, with dead lower leaves and several brown patches. Cause of the damage is not established from the photo.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "OWNERSHIP / CARE",
+          "bodyHtml": "Named Malefecent. Reece is caring for this plant for Amber.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Keep a little clean water in the cup where the green leaves meet; empty and refresh about weekly. Water the mix sparingly after its surface dries; do not keep the roots soggy.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Bright indirect light; avoid harsh direct sun.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Skip while assessing the damage. If actively growing, use a dilute bromeliad fertilizer according to its label; avoid fertilizer collecting in the cup.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Permanent location not recorded; keep separate during acclimation and pest follow-up.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Keep snug. Repot only if unstable, drainage is poor, or the mix has broken down.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Airy bromeliad mix, or fine orchid bark blended with some indoor mix and perlite.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Watch for spreading brown patches, a soft or foul-smelling center, and pups at the base. The flowering rosette eventually declines naturally after blooming.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PROPAGATION",
+          "bodyHtml": "Allow pups to reach roughly one-third to one-half of the mother plant’s size before separating; roots are helpful.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PEST CHECK",
+          "bodyHtml": "Bathed Oct 11, 2026. No pest-free inspection or chemical treatment recorded. Inspect leaf undersides and stems before moving into the main collection.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 12, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Added to collection",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Nursery pot inside a white decorative cover; size and drainage arrangement unconfirmed.",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Malefecent",
+            "style": ""
+          },
+          {
+            "label": "Pest status",
+            "valueHtml": "Unconfirmed; monitor during acclimation",
+            "style": ""
+          },
+          {
+            "label": "Caring for",
+            "valueHtml": "Amber",
+            "style": ""
+          },
+          {
+            "label": "Caretaker",
+            "valueHtml": "Reece",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 11, 2026 · </strong>New arrival photographed and bathed by owner. Soil watering and any spray product were not confirmed."
+          },
+          {
+            "style": "",
+            "bodyHtml": "<a href=\"https://plants.ces.ncsu.edu/plants/guzmania-lingulata/\" target=\"_blank\" rel=\"noopener noreferrer\">Care reference</a>"
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 12, 2026 · </strong>Reece supplied the name Malefecent and clarified that he is caring for the plant for Amber."
+          }
+        ]
+      }
+    },
+    {
+      "id": "07",
+      "name": "Samwise",
+      "species": "Aloe vera · likely",
+      "searchName": "samwise aloe",
+      "searchSpecies": "aloe vera · likely",
+      "status": "Good",
+      "photo": "07-samwise-aloe.jpg",
+      "photoAlt": "Samwise · Aloe · photo review Oct 11, 2026",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "",
+      "tags": [
+        {
+          "style": "",
+          "label": "NEW ADDITION"
+        },
+        {
+          "style": "",
+          "label": "VERY BRIGHT"
+        },
+        {
+          "style": "",
+          "label": "SUCCULENT"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Use a very bright window and increase direct sun gradually. Check moisture deeper in the pot before watering; a foliage bath is not a reason to water again.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Upright green leaves with no obvious collapse. Some leaves are slender; watch the fullness and shape of new growth. Exact identification is tentative.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Let the mix dry throughout; then water thoroughly and drain completely. Water less often when light and growth decline.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Very bright light with some direct window sun; acclimate gradually to stronger sunlight.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Skip during acclimation. Feed lightly with a succulent fertilizer only during active growth, following its label.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Permanent location not recorded; keep separate during acclimation and pest follow-up.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "No immediate repot from this photo. Change the mix if it stays wet for prolonged periods; otherwise repot when clearly crowded.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "1 part cactus/succulent mix + 1 part pumice/perlite; use a pot with drainage.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Watch for soft or translucent leaves, a soft base, prolonged wet soil, and stretched new growth. Some juvenile spotting is normal.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PROPAGATION",
+          "bodyHtml": "Separate rooted pups when large enough to handle. Individual leaf pieces are not a reliable propagation method.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PEST CHECK",
+          "bodyHtml": "Bathed Oct 11, 2026. No pest-free inspection or chemical treatment recorded. Inspect leaf undersides and stems before moving into the main collection.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 12, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Added to collection",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Black nursery pot with drainage; size not recorded.",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Samwise",
+            "style": ""
+          },
+          {
+            "label": "Pest status",
+            "valueHtml": "Unconfirmed; monitor during acclimation",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 11, 2026 · </strong>New arrival photographed and bathed by owner. Soil watering and any spray product were not confirmed."
+          },
+          {
+            "style": "",
+            "bodyHtml": "<a href=\"https://hort.extension.wisc.edu/articles/small-aloes-interesting-colorful-and-easy-succulents/\" target=\"_blank\" rel=\"noopener noreferrer\">Care reference</a>"
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 12, 2026 · </strong>Named Samwise by Reece; spelling recorded as supplied."
+          }
+        ]
+      }
+    },
+    {
+      "id": "08",
+      "name": "Drogo",
+      "species": "Dracaena marginata ‘Magenta’",
+      "searchName": "drogo magenta dragon tree",
+      "searchSpecies": "dracaena marginata ‘magenta’",
+      "status": "Good",
+      "photo": "08-drogo-magenta-dragon-tree.jpg",
+      "photoAlt": "Drogo · Magenta dragon tree · photo review Oct 11, 2026",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "",
+      "tags": [
+        {
+          "style": "",
+          "label": "NEW ADDITION"
+        },
+        {
+          "style": "",
+          "label": "BRIGHT INDIRECT"
+        },
+        {
+          "style": "",
+          "label": "DRACAENA"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Keep in bright indirect light and let it settle. Check root crowding before deciding to repot; keep it apart from plants with active mites.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Tag confirms Magenta Madagascar Dragon Tree. Burgundy foliage appears reasonably healthy. A root is visible below the pot; this alone does not establish that it is rootbound.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Water when the top 1–2 in are dry; water thoroughly and drain. Allow more drying time in lower light.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Bright indirect light for strong color; tolerates lower light with slower growth.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Wait during acclimation. Feed lightly during active growth using a houseplant fertilizer at the label rate.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Permanent location not recorded; keep separate during acclimation and pest follow-up.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Check the root ball if the pot dries unusually fast or roots are densely crowded. If needed, move up one pot size; do not repot just for one protruding root.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "2 parts indoor potting mix + 1 part perlite/pumice; drainage holes required.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Watch for soft stems, persistent lower-leaf yellowing, worsening brown tips, or spider mites. Burgundy coloration is normal for this cultivar.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PROPAGATION",
+          "bodyHtml": "Healthy stem or top cuttings can root; the remaining cane can form new shoots.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PEST CHECK",
+          "bodyHtml": "Bathed Oct 11, 2026. No pest-free inspection or chemical treatment recorded. Inspect leaf undersides and stems before moving into the main collection.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 12, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Added to collection",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Brown nursery pot with drainage; size not recorded.",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Drogo",
+            "style": ""
+          },
+          {
+            "label": "Pest status",
+            "valueHtml": "Unconfirmed; monitor during acclimation",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 11, 2026 · </strong>New arrival photographed and bathed by owner. Soil watering and any spray product were not confirmed."
+          },
+          {
+            "style": "",
+            "bodyHtml": "<a href=\"https://costafarms.com/blogs/plant-finder/madagascar-dragon-tree\" target=\"_blank\" rel=\"noopener noreferrer\">Care reference</a>"
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 12, 2026 · </strong>Named Drogo by Reece; spelling recorded as supplied."
+          }
+        ]
+      }
+    },
+    {
+      "id": "09",
+      "name": "Gandalf",
+      "species": "Jacobaea maritima · syn. Senecio cineraria",
+      "searchName": "gandalf dusty miller",
+      "searchSpecies": "jacobaea maritima · syn. senecio cineraria",
+      "status": "Watch",
+      "photo": "09-gandalf-dusty-miller.jpg",
+      "photoAlt": "Gandalf · Dusty miller · photo review Oct 11, 2026",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "",
+      "tags": [
+        {
+          "style": "",
+          "label": "NEW ADDITION"
+        },
+        {
+          "style": "",
+          "label": "SUN / STRONG LIGHT"
+        },
+        {
+          "style": "",
+          "label": "BEDDING PLANT"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Give it the sunniest window or a strong grow light. Let the foliage dry after bathing and empty the saucer; monitor whether new growth stays compact.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Upright growth with naturally silver, fuzzy foliage and some older lower-leaf wear. Indoor light is the main ongoing concern; pests are not excluded by this photo.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Water when the top 1–2 in are dry; water thoroughly and drain. Avoid a constantly wet root ball.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Full sun outdoors; indoors, use several hours of direct window sun or a strong grow light. Acclimate gradually.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "No immediate feeding needed. Feed lightly only during active growth, following the fertilizer label.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Permanent location not recorded; keep separate during acclimation and pest follow-up.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Allow it to acclimate first. Repot if roots are densely crowded or drainage is poor; use only a slightly larger pot.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "2 parts potting mix + 1 part perlite/pumice; free drainage is essential.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Watch for long, weak stems and widening gaps between new leaves. Silver fuzz is normal. Monitor soft stems, yellowing, and persistent wet soil.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PROPAGATION",
+          "bodyHtml": "Healthy stem-tip cuttings can be rooted. This is usually an outdoor bedding plant; winter survival indoors depends on sufficient light.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PEST CHECK",
+          "bodyHtml": "Bathed Oct 11, 2026. No pest-free inspection or chemical treatment recorded. Inspect leaf undersides and stems before moving into the main collection.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 12, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Added to collection",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Black nursery pot with drainage and a saucer; size not recorded.",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Gandalf",
+            "style": ""
+          },
+          {
+            "label": "Pest status",
+            "valueHtml": "Unconfirmed; monitor during acclimation",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 11, 2026 · </strong>New arrival photographed and bathed by owner. Soil watering and any spray product were not confirmed."
+          },
+          {
+            "style": "",
+            "bodyHtml": "<a href=\"https://hort.extension.wisc.edu/articles/dusty-miller-senecio-cineraria/\" target=\"_blank\" rel=\"noopener noreferrer\">Care reference</a>"
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 12, 2026 · </strong>Named Gandalf by Reece; spelling recorded as supplied."
+          }
+        ]
+      }
+    },
+    {
+      "id": "10",
+      "name": "Maester",
+      "species": "Bird of Paradise",
+      "searchName": "maester",
+      "searchSpecies": "bird of paradise",
+      "status": "Good",
+      "photo": "10-maester.jpg",
+      "photoAlt": "Maester",
+      "newAddition": false,
+      "pest": "",
+      "added": "",
+      "tags": [
+        {
+          "style": "",
+          "label": "BRIGHT INDIRECT"
+        },
+        {
+          "style": "",
+          "label": "TROPICAL"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "No urgent action. Keep bright light, rotate occasionally for even growth, and track the newest central leaf as it develops.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Large, established plant with active central growth and only minor older-leaf wear.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Water when the top 2–3 in is dry; water thoroughly.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Bright indirect light; a few hours of gentle direct sun is beneficial.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Balanced houseplant fertilizer at 1/2 strength about monthly in spring–summer; reduce or pause in low-light winter.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Not recorded",
+          "pClass": "unknown",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Roots at the drainage holes reported Oct 10. Check whether the root ball is densely crowded or dries unusually fast before sizing up; visible roots alone do not require an immediate repot.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "2 parts indoor mix + 1 part perlite/pumice + 1 part fine bark/coco.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Track new central growth, leaning toward the light, and any increase in older tip or edge browning.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Oct 5, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Oct 10, 2026",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 10, 2026 · </strong>Roots reported emerging from the bottom of the pot; degree of crowding not yet assessed."
+          }
+        ]
+      }
+    },
+    {
+      "id": "11",
+      "name": "Karlach",
+      "species": "Anthurium",
+      "searchName": "karlach",
+      "searchSpecies": "anthurium",
+      "status": "Watch",
+      "photo": "11-karlach.jpg",
+      "photoAlt": "Karlach",
+      "newAddition": false,
+      "pest": "reported",
+      "added": "",
+      "tags": [
+        {
+          "style": "",
+          "label": "BRIGHT INDIRECT"
+        },
+        {
+          "style": "",
+          "label": "AROID"
+        },
+        {
+          "style": "pest-tag",
+          "label": "MITES · FOLLOW-UP"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Inspect leaf undersides and stems every few days; repeat the white-paper test. Keep apart from clean plants where practical. If using a mite treatment, follow its label for coverage and repeat applications.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Spider mites reported Oct 10; bath completed Oct 10. Clearance has not been confirmed. Earlier photo assessment: Healthy, flowering, and producing fresh growth; one older spathe is spent.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Water when the top 1–2 in is dry; water thoroughly.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Bright indirect light; avoid harsh midday sun on the leaves.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Balanced houseplant fertilizer at 1/2 strength about monthly during active growth.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Not recorded",
+          "pClass": "unknown",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Recently repotted—leave it alone for now.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "2 parts indoor mix + 1 part orchid bark + 1 part perlite/pumice.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Watch for live mites, fine webbing, pale stippling, and damaged new growth. Watch new leaves for clean growth and older flowers as they age; monitor any worsening edge scorch.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Oct 5, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Oct 10, 2026",
+            "style": ""
+          },
+          {
+            "label": "Pest follow-up",
+            "valueHtml": "Spider mites reported; clearance pending",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 10, 2026 · </strong>Spider mites identified by owner. Bath recorded; no chemical treatment or pest clearance recorded."
+          }
+        ]
+      }
+    },
+    {
+      "id": "12",
+      "name": "GLaDOS",
+      "species": "Fittonia",
+      "searchName": "glados",
+      "searchSpecies": "fittonia",
+      "status": "Good",
+      "photo": "12-glados.jpg",
+      "photoAlt": "GLaDOS",
+      "newAddition": false,
+      "pest": "",
+      "added": "",
+      "tags": [
+        {
+          "style": "",
+          "label": "MEDIUM–BRIGHT"
+        },
+        {
+          "style": "",
+          "label": "TROPICAL"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "No urgent action. Keep moisture consistent without leaving the larger pot soggy; judge watering by the soil rather than dramatic leaf droop alone.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Full, colorful, and actively growing after repotting; minor uneven posture remains.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Water when the top ½–1 in is dry; water thoroughly.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Medium to bright indirect light; avoid hot direct sun.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Balanced fertilizer at 1/4–1/2 strength about monthly in spring–summer; avoid heavy feeding.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Not recorded",
+          "pClass": "unknown",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Recently repotted—leave it alone for now.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "2 parts indoor mix/coco + 1 part perlite/pumice; airy but moisture-retentive.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Watch leaf firmness, new tip growth, and whether the larger pot stays wet too long.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Oct 5, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Oct 10, 2026",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
+          }
+        ]
+      }
+    },
+    {
+      "id": "13",
+      "name": "Sauron",
+      "species": "Ring of Fire Philodendron",
+      "searchName": "sauron",
+      "searchSpecies": "ring of fire philodendron",
+      "status": "Excellent",
+      "photo": "13-sauron.jpg",
+      "photoAlt": "Sauron",
+      "newAddition": false,
+      "pest": "",
+      "added": "",
+      "tags": [
+        {
+          "style": "",
+          "label": "BRIGHT INDIRECT"
+        },
+        {
+          "style": "",
+          "label": "AROID"
+        },
+        {
+          "style": "",
+          "label": "NEW LEAF"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "No urgent action. Continue current care and let the new pink/red leaf harden off before making any changes.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Excellent — strong, upright growth with good variegation and a fresh colored leaf emerging from the center.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Water when the top 1–2 in is dry; water thoroughly.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Bright indirect light for strongest growth and variegation; gentle morning sun is fine.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Balanced houseplant fertilizer at 1/2 strength about monthly during active growth.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Not recorded",
+          "pClass": "unknown",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Recently repotted—leave it alone for now.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "2 parts indoor mix + 1 part orchid bark + 1 part perlite/pumice.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Track the new leaf as it unfurls and hardens. Some browning on highly variegated older tissue is cosmetic unless it begins spreading into new growth.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Oct 5, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Oct 10, 2026",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
+          }
+        ]
+      }
+    },
+    {
+      "id": "14",
+      "name": "Galadriel",
+      "species": "Spathiphyllum",
+      "searchName": "galadriel peace lily",
+      "searchSpecies": "spathiphyllum",
+      "status": "Good",
+      "photo": "14-galadriel-peace-lily.jpg",
+      "photoAlt": "Galadriel",
+      "newAddition": false,
+      "pest": "",
+      "added": "",
+      "tags": [
+        {
+          "style": "",
+          "label": "MEDIUM–BRIGHT"
+        },
+        {
+          "style": "",
+          "label": "PEACE LILY"
+        },
+        {
+          "style": "",
+          "label": "LEAF WATCH"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Remove fully yellow leaves and the badly damaged leaf once you are ready; otherwise keep care steady and check soil moisture before watering.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Good overall — very full and vigorous, with some older-leaf yellowing and one large leaf with a substantial dead patch.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Water when the top 1 in is dry; water thoroughly.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Medium to bright indirect light; tolerates lower light but flowers better with brighter exposure.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Balanced fertilizer at 1/2 strength every 6–8 weeks in spring–summer.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Not recorded",
+          "pClass": "unknown",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Repot when rootbound or the mix/drainage deteriorates.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "2 parts indoor mix/coco + 1 part perlite/pumice; airy but moisture-retentive.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Watch the newest leaves. If yellowing or brown lesions begin appearing on fresh growth, reassess watering, drainage, light, and roots; isolated older-leaf damage is less concerning.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Oct 5, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Oct 10, 2026",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
+          }
+        ]
+      }
+    },
+    {
+      "id": "15",
+      "name": "Tywin",
+      "species": "Money Tree",
+      "searchName": "tywin",
+      "searchSpecies": "money tree",
+      "status": "Watch",
+      "photo": "15-tywin.jpg",
+      "photoAlt": "Tywin",
+      "newAddition": false,
+      "pest": "reported",
+      "added": "",
+      "tags": [
+        {
+          "style": "",
+          "label": "BRIGHT INDIRECT"
+        },
+        {
+          "style": "",
+          "label": "TROPICAL"
+        },
+        {
+          "style": "pest-tag",
+          "label": "MITES · FOLLOW-UP"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Inspect leaf undersides and stems every few days; repeat the white-paper test. Keep apart from clean plants where practical. If using a mite treatment, follow its label for coverage and repeat applications.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Spider mites reported Oct 10; bath completed Oct 10. Clearance has not been confirmed. Earlier photo assessment: Strong recovery with a large flush of healthy bright-green new growth.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Water when the top 2–3 in is dry; water thoroughly.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Bright indirect light; a little gentle morning or late-day sun is fine.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Balanced houseplant fertilizer at 1/2 strength about monthly in spring–summer.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Not recorded",
+          "pClass": "unknown",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Repot when rootbound or the mix/drainage deteriorates.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "2 parts indoor mix + 1 part perlite/pumice + 1 part fine bark/coco.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Watch for live mites, fine webbing, pale stippling, and damaged new growth. Track the new flush as it darkens and expands; remove older yellow leaves only after they are mostly spent.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Oct 5, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Oct 10, 2026",
+            "style": ""
+          },
+          {
+            "label": "Pest follow-up",
+            "valueHtml": "Spider mites reported; clearance pending",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 10, 2026 · </strong>Spider mites identified by owner. Bath recorded; no chemical treatment or pest clearance recorded."
+          }
+        ]
+      }
+    },
+    {
+      "id": "16",
+      "name": "Morgana",
+      "species": "Marble Queen Pothos",
+      "searchName": "morgana",
+      "searchSpecies": "marble queen pothos",
+      "status": "Watch",
+      "photo": "16-morgana.jpg",
+      "photoAlt": "Morgana",
+      "newAddition": false,
+      "pest": "reported",
+      "added": "",
+      "tags": [
+        {
+          "style": "",
+          "label": "MEDIUM–BRIGHT"
+        },
+        {
+          "style": "",
+          "label": "AROID"
+        },
+        {
+          "style": "pest-tag",
+          "label": "MITES · FOLLOW-UP"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Inspect leaf undersides and stems every few days; repeat the white-paper test. Keep apart from clean plants where practical. If using a mite treatment, follow its label for coverage and repeat applications.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Spider mites reported Oct 10; bath completed Oct 10. Clearance has not been confirmed. Earlier photo assessment: Full, strongly variegated growth with only minor cosmetic leaf tears/browning.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Water when the top 1–2 in is dry; water thoroughly.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Medium to bright indirect light; brighter light helps maintain variegation.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Balanced houseplant fertilizer at 1/2 strength about monthly during active growth.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Not recorded",
+          "pClass": "unknown",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Recently repotted—leave it alone for now.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "2 parts indoor mix + 1 part orchid bark + 1 part perlite/pumice.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Watch for live mites, fine webbing, pale stippling, and damaged new growth. Track whether new leaves stay clean; older tears and brown patches do not need treatment if they remain isolated.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Oct 5, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Terracotta pot with saucer",
+            "style": ""
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Oct 10, 2026",
+            "style": ""
+          },
+          {
+            "label": "Pest follow-up",
+            "valueHtml": "Spider mites reported; clearance pending",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 10, 2026 · </strong>Spider mites identified by owner. Bath recorded; no chemical treatment or pest clearance recorded."
+          }
+        ]
+      }
+    },
+    {
+      "id": "17",
+      "name": "C-3PO",
+      "species": "Gold Dust Croton",
+      "searchName": "c-3po",
+      "searchSpecies": "gold dust croton",
+      "status": "Watch",
+      "photo": "17-c-3po.jpg",
+      "photoAlt": "C-3PO",
+      "newAddition": false,
+      "pest": "reported",
+      "added": "",
+      "tags": [
+        {
+          "style": "",
+          "label": "VERY BRIGHT"
+        },
+        {
+          "style": "",
+          "label": "TROPICAL"
+        },
+        {
+          "style": "pest-tag",
+          "label": "MITES · FOLLOW-UP"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Inspect leaf undersides and stems every few days; repeat the white-paper test. Keep apart from clean plants where practical. If using a mite treatment, follow its label for coverage and repeat applications.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Spider mites reported Oct 10; bath completed Oct 10. Clearance has not been confirmed. Earlier photo assessment: Improving with upright growth and several fresh leaves; color is strong.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Water when the top 1–2 in is dry; water thoroughly.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Very bright light with some direct sun; stronger light helps retain color.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Balanced fertilizer at 1/2 strength about monthly in spring–summer; wait until clearly recovering from stress.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Not recorded",
+          "pClass": "unknown",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Recently repotted—leave it alone for now.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "2 parts indoor mix + 1 part perlite/pumice + 1 part fine bark/coco.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Watch for live mites, fine webbing, pale stippling, and damaged new growth. Track new leaf size and continued leaf retention; watch for sudden leaf drop, crispy tips, or spider mites.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Oct 5, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Oct 10, 2026",
+            "style": ""
+          },
+          {
+            "label": "Pest follow-up",
+            "valueHtml": "Spider mites reported; clearance pending",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 10, 2026 · </strong>Spider mites identified by owner. Bath recorded; no chemical treatment or pest clearance recorded."
+          }
+        ]
+      }
+    },
+    {
+      "id": "18",
+      "name": "Geoffrey",
+      "species": "Moth Orchid",
+      "searchName": "geoffrey",
+      "searchSpecies": "moth orchid",
+      "status": "Good",
+      "photo": "18-geoffrey.jpg",
+      "photoAlt": "Geoffrey",
+      "newAddition": false,
+      "pest": "",
+      "added": "",
+      "tags": [
+        {
+          "style": "",
+          "label": "BRIGHT INDIRECT"
+        },
+        {
+          "style": "",
+          "label": "ORCHID"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Blooming is finished. Cut the spent spike near the base with clean snips, then focus on root and leaf growth.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Post-bloom; foliage remains green and the spent flower spike is drying back.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Water when visible roots are mostly silver-gray and bark is nearly dry; drain completely.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Bright indirect light; an east window or filtered south/west exposure works well.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Orchid fertilizer at about 1/4 strength every 2–4 waterings while actively growing; periodically flush with plain water.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Not recorded",
+          "pClass": "unknown",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Repotted 8/22/26; repot for root problems or broken-down media.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Mostly orchid bark with perlite/pumice.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Track firm green leaves, plump green/silver roots, fresh root tips, and the next new leaf.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Oct 5, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Aug 22, 2026",
+            "style": ""
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Clear orchid pot with bark; drainage/ventilation visible",
+            "style": ""
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Oct 10, 2026",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
+          }
+        ]
+      }
+    },
+    {
+      "id": "19",
+      "name": "Arya",
+      "species": "Calathea / Goeppertia",
+      "searchName": "arya",
+      "searchSpecies": "calathea / goeppertia",
+      "status": "Fair",
+      "photo": "19-arya.jpg",
+      "photoAlt": "Arya",
+      "newAddition": false,
+      "pest": "",
+      "added": "",
+      "tags": [
+        {
+          "style": "",
+          "label": "MEDIUM–BRIGHT"
+        },
+        {
+          "style": "",
+          "label": "PRAYER PLANT"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Keep conditions steady. Maintain lightly even moisture and avoid another repot or major move; remove the damaged leaf only once it is mostly dead.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Stable but still sparse; the remaining leaves hold good color, with one damaged/declining leaf.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Water when the top ½–1 in is dry; water thoroughly.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Medium to bright indirect light; avoid direct sun and sudden exposure changes.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Balanced fertilizer at 1/4–1/2 strength about monthly in spring–summer; avoid excess salts.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Not recorded",
+          "pClass": "unknown",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Recently repotted—leave it alone for now.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "2 parts indoor mix/coco + 1 part perlite/pumice; airy but moisture-retentive.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Watch for a fresh central shoot, curling, edge crisping, and further leaf loss.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Oct 5, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Oct 10, 2026",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
+          }
+        ]
+      }
+    },
+    {
+      "id": "20",
+      "name": "David",
+      "species": "Aluminum Plant",
+      "searchName": "david",
+      "searchSpecies": "aluminum plant",
+      "status": "Excellent",
+      "photo": "20-david.jpg",
+      "photoAlt": "David",
+      "newAddition": false,
+      "pest": "",
+      "added": "",
+      "tags": [
+        {
+          "style": "",
+          "label": "BRIGHT INDIRECT"
+        },
+        {
+          "style": "",
+          "label": "PILEA"
+        },
+        {
+          "style": "",
+          "label": "ACTIVE GROWTH"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "No urgent action. David is filling in well; pinch the tallest tips only if you want a denser, bushier shape.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Excellent — compact, upright, and actively growing with strong silver markings and several healthy stems.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Water when the top 1 in is dry; water thoroughly.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Bright indirect light; some gentle morning sun is acceptable.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Balanced fertilizer at 1/2 strength about monthly during active growth.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Not recorded",
+          "pClass": "unknown",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Repot when rootbound or the mix/drainage deteriorates.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "2 parts indoor mix + 1 part perlite/pumice.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Watch for excessive stretching toward the light or prolonged wet soil; otherwise growth is moving in the right direction.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Oct 5, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Oct 10, 2026",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
+          }
+        ]
+      }
+    },
+    {
+      "id": "21",
+      "name": "Violet",
+      "species": "Tradescantia pallida-type",
+      "searchName": "violet purple heart",
+      "searchSpecies": "tradescantia pallida-type",
+      "status": "Excellent",
+      "photo": "21-violet-purple-heart.jpg",
+      "photoAlt": "Violet",
+      "newAddition": false,
+      "pest": "",
+      "added": "",
+      "tags": [
+        {
+          "style": "",
+          "label": "VERY BRIGHT"
+        },
+        {
+          "style": "",
+          "label": "TRADESCANTIA"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "No urgent action. Pinch or trim the longest stems only if you want a fuller, less trailing shape; cuttings can be rooted back into the pot.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Very vigorous, dense trailing growth with strong purple coloration.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Water when the top 1–2 in is dry; water thoroughly.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Very bright light with several hours of direct sun for compact, deeply purple growth.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Balanced fertilizer at 1/2 strength about monthly in spring–summer.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Not recorded",
+          "pClass": "unknown",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Repot when rootbound or the mix/drainage deteriorates.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "2 parts indoor mix + 1 part perlite/pumice.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Watch lower-stem bareness and stem spacing; strong purple color and tight growth indicate adequate light.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Oct 5, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Oct 10, 2026",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
+          }
+        ]
+      }
+    },
+    {
+      "id": "22",
+      "name": "Molly",
+      "species": "Sempervivum",
+      "searchName": "molly hens & chicks",
+      "searchSpecies": "sempervivum",
+      "status": "Watch",
+      "photo": "22-molly-hens-chicks.jpg",
+      "photoAlt": "Molly",
+      "newAddition": false,
+      "pest": "",
+      "added": "",
+      "tags": [
+        {
+          "style": "",
+          "label": "FULL SUN"
+        },
+        {
+          "style": "",
+          "label": "SUCCULENT"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Let the pot dry completely before watering. If this is still regular potting mix, move to a gritty succulent mix rather than upsizing.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Center rosette is firm with an attached offset; outer leaves show some age/stress.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Let the mix dry completely; then water thoroughly.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Full sun or the brightest window available; indoor light is often the limiting factor.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Minimal feeding: cactus/succulent fertilizer at 1/4 strength once or twice during active growth; skip in winter.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Not recorded",
+          "pClass": "unknown",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Prefers a snug pot; repot only when clearly crowded.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "1 part cactus/succulent mix + 1 part pumice/perlite.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Watch for stretching, soft/translucent leaves, and whether the offset stays firm. The mix should not stay damp for long.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Oct 5, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Oct 10, 2026",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
+          }
+        ]
+      }
+    },
+    {
+      "id": "23",
+      "name": "Calcifer",
+      "species": "Guzmania hybrid",
+      "searchName": "calcifer bromeliad",
+      "searchSpecies": "guzmania hybrid",
+      "status": "Watch",
+      "photo": "23-calcifer-bromeliad.jpg",
+      "photoAlt": "Calcifer",
+      "newAddition": false,
+      "pest": "reported",
+      "added": "",
+      "tags": [
+        {
+          "style": "",
+          "label": "BRIGHT INDIRECT"
+        },
+        {
+          "style": "",
+          "label": "BROMELIAD"
+        },
+        {
+          "style": "",
+          "label": "FLOWERING"
+        },
+        {
+          "style": "pest-tag",
+          "label": "MITES · FOLLOW-UP"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Inspect leaf undersides and stems every few days; repeat the white-paper test. Keep apart from clean plants where practical. If using a mite treatment, follow its label for coverage and repeat applications.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Spider mites reported Oct 10; bath completed Oct 10. Clearance has not been confirmed. Earlier photo assessment: Excellent — the foliage is firm and green and the red-orange flower bracts remain vivid and upright.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Keep a little clean water in the central cup and flush weekly; water the mix when the surface starts drying.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Bright indirect light; avoid prolonged harsh midday sun.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Bromeliad or balanced fertilizer at about 1/4 strength monthly in spring–summer; keep fertilizer out of the central cup.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Not recorded",
+          "pClass": "unknown",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Keep fairly snug; repot only if unstable or the mix breaks down.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "1 part indoor mix + 1 part fine bark + 1 part perlite/pumice.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Watch for live mites, fine webbing, pale stippling, and damaged new growth. Watch for the normal gradual fading of the bracts and for pups developing near the base; neither signals a problem.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Oct 5, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Oct 10, 2026",
+            "style": ""
+          },
+          {
+            "label": "Pest follow-up",
+            "valueHtml": "Spider mites reported; clearance pending",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 10, 2026 · </strong>Spider mites identified by owner. Bath recorded; no chemical treatment or pest clearance recorded."
+          }
+        ]
+      }
+    },
+    {
+      "id": "24",
+      "name": "Phil",
+      "species": "Philodendron hederaceum",
+      "searchName": "phil heartleaf philodendron",
+      "searchSpecies": "philodendron hederaceum",
+      "status": "Watch",
+      "photo": "24-phil-heartleaf-philodendron.jpg",
+      "photoAlt": "Phil",
+      "newAddition": false,
+      "pest": "reported",
+      "added": "",
+      "tags": [
+        {
+          "style": "",
+          "label": "BRIGHT INDIRECT"
+        },
+        {
+          "style": "",
+          "label": "VINE"
+        },
+        {
+          "style": "",
+          "label": "ACTIVE GROWTH"
+        },
+        {
+          "style": "pest-tag",
+          "label": "MITES · FOLLOW-UP"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Inspect leaf undersides and stems every few days; repeat the white-paper test. Keep apart from clean plants where practical. If using a mite treatment, follow its label for coverage and repeat applications.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Spider mites reported Oct 10; bath completed Oct 10. Clearance has not been confirmed. Earlier photo assessment: Excellent — dense, vigorous foliage with several fresh light-green leaves and long healthy vines.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Water when the top 1–2 in is dry; water thoroughly.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Medium to bright indirect light; tolerates lower light but grows fuller with brighter exposure.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Balanced houseplant fertilizer at 1/2 strength about monthly during active growth.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Not recorded",
+          "pClass": "unknown",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Repot when rootbound or the mix/drainage deteriorates.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "2 parts indoor mix + 1 part orchid bark + 1 part perlite/pumice.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Watch for live mites, fine webbing, pale stippling, and damaged new growth. Track the longest vines for increasing bare internodes; brighter indirect light and occasional tip-pruning will keep the pot fuller.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Oct 5, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Oct 10, 2026",
+            "style": ""
+          },
+          {
+            "label": "Pest follow-up",
+            "valueHtml": "Spider mites reported; clearance pending",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 10, 2026 · </strong>Spider mites identified by owner. Bath recorded; no chemical treatment or pest clearance recorded."
+          }
+        ]
+      }
+    },
+    {
+      "id": "25",
+      "name": "Ruby",
+      "species": "Crassothonna capensis",
+      "searchName": "ruby ruby necklace",
+      "searchSpecies": "crassothonna capensis",
+      "status": "Excellent",
+      "photo": "25-ruby-ruby-necklace.jpg",
+      "photoAlt": "Ruby",
+      "newAddition": false,
+      "pest": "",
+      "added": "",
+      "tags": [
+        {
+          "style": "",
+          "label": "VERY BRIGHT"
+        },
+        {
+          "style": "",
+          "label": "SUCCULENT"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "No urgent action. Keep the bright light and let the mix dry almost completely between waterings; watch for flowering and continued compact growth.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Dense, vigorous trailing growth; foliage looks firm and well hydrated.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Let the mix dry almost completely; then water thoroughly.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Very bright light with several hours of direct sun for compact growth and strong coloration.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Cactus/succulent fertilizer at 1/4–1/2 strength every 6–8 weeks in spring–summer; skip in winter.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Not recorded",
+          "pClass": "unknown",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Repot when rootbound or the mix/drainage deteriorates.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "1 part cactus/succulent mix + 1 part pumice/perlite.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Watch leaf plumpness, stem spacing, and color response to the grow light.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Oct 5, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Oct 10, 2026",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
+          }
+        ]
+      }
+    },
+    {
+      "id": "26",
+      "name": "Nayru",
+      "species": "Plectranthus ciliatus-type",
+      "searchName": "nayru plectranthus — white pot",
+      "searchSpecies": "plectranthus ciliatus-type",
+      "status": "Good",
+      "photo": "26-nayru-plectranthus-white-pot.jpg",
+      "photoAlt": "Nayru",
+      "newAddition": false,
+      "pest": "",
+      "added": "",
+      "tags": [
+        {
+          "style": "",
+          "label": "BRIGHT INDIRECT"
+        },
+        {
+          "style": "",
+          "label": "PLECTRANTHUS"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "No urgent action. Once growth is stronger, pinching the tip is optional if you want more branching.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Established upright growth with fresh tip growth and healthy textured foliage.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Water when the top 1 in is dry; water thoroughly.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Bright indirect light; a little gentle morning or late-day sun is fine.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Balanced fertilizer at 1/2 strength about monthly during active growth.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Not recorded",
+          "pClass": "unknown",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Repot when rootbound or the mix/drainage deteriorates.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "2 parts indoor mix + 1 part perlite/pumice.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Track branching, leaf size, and the green-to-purple coloration on new foliage.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Oct 5, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Oct 10, 2026",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
+          }
+        ]
+      }
+    },
+    {
+      "id": "27",
+      "name": "Yennefer",
+      "species": "Alternanthera",
+      "searchName": "yennefer purple joyweed",
+      "searchSpecies": "alternanthera",
+      "status": "Good",
+      "photo": "27-yennefer-purple-joyweed.jpg",
+      "photoAlt": "Yennefer",
+      "newAddition": false,
+      "pest": "",
+      "added": "",
+      "tags": [
+        {
+          "style": "",
+          "label": "VERY BRIGHT"
+        },
+        {
+          "style": "",
+          "label": "FOLIAGE"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "No urgent action. Keep the light bright enough to hold the dark coloration; water only after the surface begins to dry.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Compact and upright with healthy dark foliage and active new growth.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Water when the top 1 in is dry; water thoroughly.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Very bright light with some direct sun to maintain dense growth and strong burgundy color.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Balanced fertilizer at 1/2 strength every 3–4 weeks during active growth.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Not recorded",
+          "pClass": "unknown",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Recently repotted—leave it alone for now.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "2 parts indoor mix + 1 part perlite/pumice.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Watch new leaves for consistent color and any return of spotting, crisping, or collapse.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Oct 5, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Oct 10, 2026",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
+          }
+        ]
+      }
+    },
+    {
+      "id": "28",
+      "name": "Beetlejuice",
+      "species": "Haworthiopsis attenuata-type",
+      "searchName": "beetlejuice zebra haworthia",
+      "searchSpecies": "haworthiopsis attenuata-type",
+      "status": "Good",
+      "photo": "28-beetlejuice-zebra-haworthia.jpg",
+      "photoAlt": "Beetlejuice",
+      "newAddition": false,
+      "pest": "",
+      "added": "",
+      "tags": [
+        {
+          "style": "",
+          "label": "BRIGHT LIGHT"
+        },
+        {
+          "style": "",
+          "label": "SUCCULENT"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Let the mix dry completely before watering. If the metallic container is a cachepot/sleeve, empty all runoff so water cannot collect around the roots.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Firm, upright, compact growth with good striping; no obvious rot.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Let the mix dry almost completely; then water thoroughly.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Bright indirect light with some gentle direct sun; protect from intense afternoon heat.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Cactus/succulent fertilizer at 1/4–1/2 strength every 6–8 weeks in spring–summer; skip in winter.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Not recorded",
+          "pClass": "unknown",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Prefers a snug pot; repot only when clearly crowded.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "1 part cactus/succulent mix + 1 part pumice/perlite.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Watch for soft/translucent lower leaves, stretching, or a mix that stays damp for too long.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Oct 5, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Oct 10, 2026",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
+          }
+        ]
+      }
+    },
+    {
+      "id": "29",
+      "name": "Stanley",
+      "species": "Dracaena sanderiana",
+      "searchName": "stanley lucky bamboo",
+      "searchSpecies": "dracaena sanderiana",
+      "status": "Good",
+      "photo": "29-stanley-lucky-bamboo.jpg",
+      "photoAlt": "Stanley",
+      "newAddition": false,
+      "pest": "",
+      "added": "",
+      "tags": [
+        {
+          "style": "",
+          "label": "MEDIUM–BRIGHT"
+        },
+        {
+          "style": "",
+          "label": "DRACAENA"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Refresh the water and rinse the vessel/roots now. Keep only the roots and lower cane base submerged.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Foliage is green and upright; the water reservoir looks cloudy and is due for cleaning.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Keep roots/lower stem base in clean water; refresh about weekly.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Medium to bright indirect light; avoid strong direct sun.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "If grown in water, use a very dilute fertilizer only every 2–3 months; excess fertilizer can burn the roots.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Not recorded",
+          "pClass": "unknown",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "No soil repot while water-grown.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "No soil while water-grown.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Watch for yellow tips, soft/yellow cane tissue, algae, or recurring cloudy water.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Oct 5, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Water-grown display vessel",
+            "style": ""
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Oct 10, 2026",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
+          }
+        ]
+      }
+    },
+    {
+      "id": "30",
+      "name": "Aloy",
+      "species": "Syngonium",
+      "searchName": "aloy arrowhead plant",
+      "searchSpecies": "syngonium",
+      "status": "Watch",
+      "photo": "30-aloy-arrowhead-plant.jpg",
+      "photoAlt": "Aloy",
+      "newAddition": false,
+      "pest": "",
+      "added": "",
+      "tags": [
+        {
+          "style": "",
+          "label": "MEDIUM–BRIGHT"
+        },
+        {
+          "style": "",
+          "label": "AROID"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Monitor the new basal shoot and keep care steady while the plant rebuilds foliage.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Sparse and pale; new growth encouraging.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Water when the top 1–2 in is dry; water thoroughly.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Medium to bright indirect light; brighter light generally produces stronger, more compact growth.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Balanced fertilizer at 1/2 strength about monthly during active growth.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Not recorded",
+          "pClass": "unknown",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Roots at the drainage holes reported Oct 10. Check whether the root ball is densely crowded or dries unusually fast before sizing up; visible roots alone do not require an immediate repot.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "2 parts indoor mix + 1 part orchid bark + 1 part perlite/pumice.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Track the new basal shoot and whether new leaves emerge greener and larger.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Oct 2, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Oct 10, 2026",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 10, 2026 · </strong>Roots reported emerging from the bottom of the pot; degree of crowding not yet assessed."
+          }
+        ]
+      }
+    },
+    {
+      "id": "31",
+      "name": "Amelia",
+      "species": "Tillandsia",
+      "searchName": "amelia air plant",
+      "searchSpecies": "tillandsia",
+      "status": "Good",
+      "photo": "31-amelia-air-plant.jpg",
+      "photoAlt": "Amelia",
+      "newAddition": false,
+      "pest": "",
+      "added": "",
+      "tags": [
+        {
+          "style": "",
+          "label": "BRIGHT INDIRECT"
+        },
+        {
+          "style": "",
+          "label": "EPIPHYTE"
+        },
+        {
+          "style": "",
+          "label": "AIRFLOW"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Continue weekly soaking/rinsing, but remove Amelia from the mushroom holder and dry completely — ideally upside-down — before putting her back.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Good — foliage is intact and normally curled with no obvious base rot visible in this photo.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Soak or rinse about weekly, then dry completely with good airflow.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Bright indirect light with good airflow; gentle morning sun is fine.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Air-plant or bromeliad fertilizer at about 1/4 strength roughly monthly during active growth.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Not recorded",
+          "pClass": "unknown",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "No traditional repotting.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "No soil.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Because the decorative holder encloses the base, be especially alert for trapped moisture, a soft/dark base, or leaves pulling loose.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Oct 5, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Oct 10, 2026",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
+          }
+        ]
+      }
+    },
+    {
+      "id": "32",
+      "name": "Navi",
+      "species": "Phlebodium aureum",
+      "searchName": "navi blue star fern",
+      "searchSpecies": "phlebodium aureum",
+      "status": "Watch",
+      "photo": "32-navi-blue-star-fern.jpg",
+      "photoAlt": "Navi",
+      "newAddition": false,
+      "pest": "",
+      "added": "",
+      "tags": [
+        {
+          "style": "",
+          "label": "MEDIUM–BRIGHT"
+        },
+        {
+          "style": "",
+          "label": "FERN"
+        },
+        {
+          "style": "",
+          "label": "MOISTURE WATCH"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Keep moisture more even and remove only fully brown/crispy fronds. Do not repot while fresh green growth is still present.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Watch / stable — plenty of living green foliage, but several older fronds have substantial crispy brown margins from prior moisture or environmental stress.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Water when the top ½–1 in is dry; water thoroughly.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Medium to bright indirect light; avoid hot direct sun.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Balanced fertilizer at 1/4–1/2 strength about monthly in spring–summer.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Not recorded",
+          "pClass": "unknown",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Repot when rootbound or the mix/drainage deteriorates.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "2 parts indoor mix/coco + 1 part perlite/pumice + 1 part fine bark.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Judge progress by the newest fronds: clean new growth is more important than old damaged edges, which will not repair.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Oct 5, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Oct 10, 2026",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
+          }
+        ]
+      }
+    },
+    {
+      "id": "33",
+      "name": "Din",
+      "species": "Plectranthus ciliatus-type",
+      "searchName": "din plectranthus — maroon pot",
+      "searchSpecies": "plectranthus ciliatus-type",
+      "status": "Watch",
+      "photo": "33-din-plectranthus-maroon-pot.jpg",
+      "photoAlt": "Din",
+      "newAddition": false,
+      "pest": "",
+      "added": "",
+      "tags": [
+        {
+          "style": "",
+          "label": "BRIGHT INDIRECT"
+        },
+        {
+          "style": "",
+          "label": "PLECTRANTHUS"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Keep conditions stable and watch the newest leaves. Do not repot or heavily prune while it is rebuilding.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Sparse but actively producing fresh pale-green growth; older leaves still show stress spotting.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Water when the top 1 in is dry; water thoroughly.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Bright indirect light; a little gentle morning or late-day sun is fine.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Balanced fertilizer at 1/2 strength about monthly during active growth.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Not recorded",
+          "pClass": "unknown",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Repot when rootbound or the mix/drainage deteriorates.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "2 parts indoor mix + 1 part perlite/pumice.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Track whether new growth emerges clean and stronger-colored while the older spotted leaves age out.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Oct 5, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Plastic nursery pot with saucer",
+            "style": ""
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Oct 10, 2026",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
+          }
+        ]
+      }
+    },
+    {
+      "id": "34",
+      "name": "Farore",
+      "species": "Plectranthus ciliatus-type",
+      "searchName": "farore plectranthus — black square pot",
+      "searchSpecies": "plectranthus ciliatus-type",
+      "status": "Good",
+      "photo": "34-farore-plectranthus-black-square-pot.jpg",
+      "photoAlt": "Farore",
+      "newAddition": false,
+      "pest": "",
+      "added": "",
+      "tags": [
+        {
+          "style": "",
+          "label": "BRIGHT INDIRECT"
+        },
+        {
+          "style": "",
+          "label": "PLECTRANTHUS"
+        },
+        {
+          "style": "",
+          "label": "NEW GROWTH"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "No urgent action. Keep conditions steady and watch the fresh tip growth; pinch later if you want a bushier plant.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Good / establishing — multiple fresh shoots are developing. One older leaf still shows mottled damage, but the newest growth looks better.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Water when the top 1 in is dry; water thoroughly.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Bright indirect light; a little gentle morning or late-day sun is fine.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Balanced fertilizer at 1/2 strength about monthly during active growth.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Not recorded",
+          "pClass": "unknown",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Repot when rootbound or the mix/drainage deteriorates.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "2 parts indoor mix + 1 part perlite/pumice.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Watch whether new leaves emerge clean. If the dark mottling stays limited to older foliage, treat it as historical damage rather than an active problem.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Oct 5, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Oct 10, 2026",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
+          }
+        ]
+      }
+    },
+    {
+      "id": "35",
+      "name": "Chewie",
+      "species": "Pilea involucrata-type",
+      "searchName": "chewie friendship plant",
+      "searchSpecies": "pilea involucrata-type",
+      "status": "Good",
+      "photo": "35-chewie-friendship-plant.jpg",
+      "photoAlt": "Chewie",
+      "newAddition": false,
+      "pest": "",
+      "added": "",
+      "tags": [
+        {
+          "style": "",
+          "label": "MEDIUM–BRIGHT"
+        },
+        {
+          "style": "",
+          "label": "PILEA"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Continue steady moisture and bright indirect light; pinch only after stronger branching develops.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Small but stable with textured foliage and active growing tips.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Water when the top 1 in is dry; water thoroughly.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Medium to bright indirect light; avoid harsh direct sun.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Balanced fertilizer at 1/4–1/2 strength about monthly during active growth.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Not recorded",
+          "pClass": "unknown",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Recently repotted—leave it alone for now.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "2 parts indoor mix/coco + 1 part perlite/pumice.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Track new branching and leaf firmness; watch for crisp edges or prolonged wet soil.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Oct 5, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Oct 10, 2026",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
+          }
+        ]
+      }
+    },
+    {
+      "id": "36",
+      "name": "Orion",
+      "species": "Monstera deliciosa 'Thai Constellation'",
+      "searchName": "orion thai constellation #1 — round pot",
+      "searchSpecies": "monstera deliciosa 'thai constellation'",
+      "status": "Concern",
+      "photo": "36-orion-thai-constellation-1-round-pot.jpg",
+      "photoAlt": "Orion",
+      "newAddition": false,
+      "pest": "",
+      "added": "",
+      "tags": [
+        {
+          "style": "",
+          "label": "BRIGHT INDIRECT"
+        },
+        {
+          "style": "",
+          "label": "RECOVERY"
+        },
+        {
+          "style": "",
+          "label": "LOW FOLIAGE"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Leave Orion undisturbed. Keep warm in bright indirect light and let the upper 2–3 in of mix dry before watering; the main goal is protecting the surviving node/root system from rot.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Concern / alive — still nearly leafless, but the pale green shoot remains upright. Recovery is possible, but this division has very little foliage to support it.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Because Orion is nearly leafless, let the upper 2–3 in of mix dry and confirm the pot is getting lighter before watering thoroughly and draining.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Bright indirect light; protect highly variegated tissue from harsh direct sun.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Hold fertilizer while actively recovering from division; once stable, use balanced fertilizer at 1/2 strength about monthly during active growth.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Not recorded",
+          "pClass": "unknown",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Recently divided and repotted—leave undisturbed while roots recover.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "2 parts indoor mix + 1 part orchid bark + 1 part perlite/pumice.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Watch whether the green shoot stays firm and continues developing. Any softening, darkening at the base, or stalled/wilting growth would raise concern for root or stem rot.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Oct 5, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Oct 10, 2026",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
+          }
+        ]
+      }
+    },
+    {
+      "id": "37",
+      "name": "Cassie",
+      "species": "Monstera deliciosa 'Thai Constellation'",
+      "searchName": "cassie thai constellation #2 — hanging pot",
+      "searchSpecies": "monstera deliciosa 'thai constellation'",
+      "status": "Watch",
+      "photo": "37-cassie-thai-constellation-2-hanging-pot.jpg",
+      "photoAlt": "Cassie",
+      "newAddition": false,
+      "pest": "",
+      "added": "",
+      "tags": [
+        {
+          "style": "",
+          "label": "BRIGHT INDIRECT"
+        },
+        {
+          "style": "",
+          "label": "AROID"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Keep bright indirect/grow light and water sparingly—wait until the top ~2 in is dry, then drain fully. Do not repot.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Recovering with two small functional leaves; the newer leaf is open and the stem remains firm.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Water when the top 1–2 in is dry; water thoroughly.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Bright indirect light; protect highly variegated tissue from harsh direct sun.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Hold fertilizer while actively recovering from division; once stable, use balanced fertilizer at 1/2 strength about monthly during active growth.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Not recorded",
+          "pClass": "unknown",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Recently divided and repotted—leave undisturbed while roots recover.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "2 parts indoor mix + 1 part orchid bark + 1 part perlite/pumice.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Track the newest leaf, petiole firmness, and any new growth point; the main risk is rot from staying wet while foliage is sparse.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Oct 5, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Oct 10, 2026",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
+          }
+        ]
+      }
+    },
+    {
+      "id": "38",
+      "name": "Andromeda",
+      "species": "Monstera deliciosa 'Thai Constellation'",
+      "searchName": "andromeda thai constellation #3 — maroon pot",
+      "searchSpecies": "monstera deliciosa 'thai constellation'",
+      "status": "Good",
+      "photo": "38-andromeda-thai-constellation-3-maroon-pot.jpg",
+      "photoAlt": "Andromeda",
+      "newAddition": false,
+      "pest": "",
+      "added": "",
+      "tags": [
+        {
+          "style": "",
+          "label": "BRIGHT INDIRECT"
+        },
+        {
+          "style": "",
+          "label": "AROID"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Leave the new spear alone to unfurl; maintain bright indirect/grow light and let the top ~2 in dry between waterings.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Recovering well with multiple functional leaves and a new spear actively emerging.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Water when the top 1–2 in is dry; water thoroughly.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Bright indirect light; protect highly variegated tissue from harsh direct sun.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Once recovery is steady, use balanced fertilizer at 1/2 strength about monthly during active growth.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Not recorded",
+          "pClass": "unknown",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Recently divided and repotted—leave undisturbed while roots recover.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "2 parts indoor mix + 1 part orchid bark + 1 part perlite/pumice.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Track the new leaf for normal opening and useful green tissue; watch for prolonged wet soil.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Oct 5, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Oct 10, 2026",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
+          }
+        ]
+      }
+    },
+    {
+      "id": "39",
+      "name": "Raven",
+      "species": "Zamioculcas zamiifolia 'Raven'",
+      "searchName": "raven raven zz",
+      "searchSpecies": "zamioculcas zamiifolia 'raven'",
+      "status": "Excellent",
+      "photo": "39-raven-raven-zz.jpg",
+      "photoAlt": "Raven",
+      "newAddition": false,
+      "pest": "",
+      "added": "",
+      "tags": [
+        {
+          "style": "",
+          "label": "LOW–BRIGHT"
+        },
+        {
+          "style": "",
+          "label": "ZZ PLANT"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "No urgent action. Keep the current routine and let the mix dry almost completely between waterings.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Excellent; multiple fresh lime-green shoots are actively expanding.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Let the mix dry almost completely; then water thoroughly.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Low to bright indirect light; moderate-bright indirect light gives the best growth without needing direct sun.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Balanced fertilizer at 1/2 strength every 6–8 weeks in spring–summer; little or none in winter.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Not recorded",
+          "pClass": "unknown",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Prefers a snug pot; repot only when clearly crowded.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "2 parts indoor mix + 1 part perlite/pumice + 1 part fine bark/coco.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Track the new lime-green shoots as they mature and darken; the isolated older brown patch is cosmetic unless it spreads.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Oct 5, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Oct 10, 2026",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
+          }
+        ]
+      }
+    },
+    {
+      "id": "40",
+      "name": "Loki",
+      "species": "Plerandra elegantissima",
+      "searchName": "loki false aralia",
+      "searchSpecies": "plerandra elegantissima",
+      "status": "Good",
+      "photo": "40-loki-false-aralia.jpg",
+      "photoAlt": "Loki",
+      "newAddition": false,
+      "pest": "",
+      "added": "",
+      "tags": [
+        {
+          "style": "",
+          "label": "BRIGHT INDIRECT"
+        },
+        {
+          "style": "",
+          "label": "TROPICAL"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "No urgent action. Keep conditions stable and avoid unnecessary repotting while Loki continues acclimating.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Compact, healthy foliage with no obvious new acclimation stress.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Water when the top 1 in is dry; water thoroughly.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Bright indirect light; stable light is important and harsh midday sun can scorch foliage.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Balanced fertilizer at 1/2 strength about monthly in spring–summer; wait if the plant is stressed after a move.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Not recorded",
+          "pClass": "unknown",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Repot when rootbound or the mix/drainage deteriorates.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "2 parts indoor mix + 1 part perlite/pumice + 1 part fine bark/coco.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Watch for sudden leaf drop, crispy tips, or spider mites on the narrow leaflets.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Oct 5, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Oct 10, 2026",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
+          }
+        ]
+      }
+    },
+    {
+      "id": "41",
+      "name": "Paarthurnax",
+      "species": "Curio barbertonicus-type",
+      "searchName": "paarthurnax himalaya senecio",
+      "searchSpecies": "curio barbertonicus-type",
+      "status": "Good",
+      "photo": "41-paarthurnax-himalaya-senecio.jpg",
+      "photoAlt": "Paarthurnax",
+      "newAddition": false,
+      "pest": "",
+      "added": "",
+      "tags": [
+        {
+          "style": "",
+          "label": "VERY BRIGHT"
+        },
+        {
+          "style": "",
+          "label": "SUCCULENT"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "No urgent action. Keep in very bright light and allow the mix to dry almost completely before watering again.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Upright and actively growing with firm, narrow foliage and no obvious rot.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Let the mix dry almost completely; then water thoroughly.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Very bright light with direct sun; use the brightest window available.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Cactus/succulent fertilizer at 1/4–1/2 strength every 6–8 weeks in spring–summer; skip in winter.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Not recorded",
+          "pClass": "unknown",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Prefers a snug pot; repot only when clearly crowded.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "1 part cactus/succulent mix + 1 part pumice/perlite.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Watch for stretching, soft/translucent foliage, or stem collapse; compact new growth is the goal.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Oct 5, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Oct 10, 2026",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
+          }
+        ]
+      }
+    },
+    {
+      "id": "42",
+      "name": "Zelda",
+      "species": "Tradescantia zebrina",
+      "searchName": "zelda tradescantia zebrina",
+      "searchSpecies": "tradescantia zebrina",
+      "status": "Excellent",
+      "photo": "42-zelda-tradescantia-zebrina.jpg",
+      "photoAlt": "Zelda",
+      "newAddition": false,
+      "pest": "",
+      "added": "",
+      "tags": [
+        {
+          "style": "",
+          "label": "VERY BRIGHT"
+        },
+        {
+          "style": "",
+          "label": "TRADESCANTIA"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "No urgent action. Pinch or trim the longest stems only if you want a denser, bushier pot.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Vigorous, colorful growth with multiple healthy stems.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Water when the top 1 in is dry; water thoroughly.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Very bright indirect light with some direct sun for compact growth and strong purple/silver color.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Balanced fertilizer at 1/2 strength about monthly during active growth.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Not recorded",
+          "pClass": "unknown",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Repot when rootbound or the mix/drainage deteriorates.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "2 parts indoor mix + 1 part perlite/pumice.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Track branching and color; root trimmed tips back into the pot if you want to thicken the planting.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Oct 5, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Oct 10, 2026",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
+          }
+        ]
+      }
+    },
+    {
+      "id": "43",
+      "name": "Triss",
+      "species": "Aglaonema 'Siam Aurora'",
+      "searchName": "triss red chinese evergreen siam aurora aglaonema",
+      "searchSpecies": "aglaonema 'siam aurora'",
+      "status": "Good",
+      "photo": "43-triss-red-chinese-evergreen-siam-aurora-aglao.jpg",
+      "photoAlt": "Triss",
+      "newAddition": false,
+      "pest": "",
+      "added": "",
+      "tags": [
+        {
+          "style": "",
+          "label": "MEDIUM–BRIGHT INDIRECT"
+        },
+        {
+          "style": "",
+          "label": "AGLAONEMA"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Remove only fully yellow/brown lower leaves. Otherwise keep conditions stable and avoid overwatering.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Good overall; upright, colorful foliage with a few aging or damaged lower leaves.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Water when the top 1–2 in are dry; water thoroughly and drain completely.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Medium to bright indirect light; avoid prolonged harsh direct sun.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Balanced houseplant fertilizer at 1/2 strength about monthly during active growth.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Not recorded",
+          "pClass": "unknown",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Repot only when clearly rootbound or the mix has degraded; usually every 1–2 years.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "2 parts indoor mix + 1 part perlite/pumice; optional fine bark for extra aeration.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Track lower-leaf yellowing/browning and whether new leaves emerge upright and strongly colored.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Oct 5, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "White pot; drainage not confirmed",
+            "style": ""
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Oct 10, 2026",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
+          }
+        ]
+      }
+    },
+    {
+      "id": "44",
+      "name": "Ciri",
+      "species": "Grape Ivy / Oak Leaf Ivy · Cissus alata 'Ellen Danica'",
+      "searchName": "ciri grape ivy oak leaf ivy cissus alata ellen danica",
+      "searchSpecies": "grape ivy oak leaf ivy cissus alata 'ellen danica'",
+      "status": "Watch",
+      "photo": "44-ciri-grape-ivy-oak-leaf-ivy-cissus-alata-elle.jpg",
+      "photoAlt": "Ciri",
+      "newAddition": false,
+      "pest": "",
+      "added": "",
+      "tags": [
+        {
+          "style": "",
+          "label": "BRIGHT INDIRECT"
+        },
+        {
+          "style": "",
+          "label": "VINE"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Check soil moisture now. If the top 1–2 in are dry, water thoroughly; continue training new growth onto the trellis.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Alive and established on its trellis; foliage is somewhat droopy and sparse in places.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Water when the top 1–2 in are dry; soak thoroughly and drain. Terracotta can dry quickly.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Medium to bright indirect light; gentle morning sun is fine.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Balanced fertilizer at 1/2 strength about monthly during active growth.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Not recorded",
+          "pClass": "unknown",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Repot when clearly rootbound, drainage slows, or the pot begins drying unusually fast.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "2 parts indoor mix + 1 part perlite/pumice; fine bark can be added for extra air space.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Track droop, leaf drop, bare stems, and new tendrils/growth reaching the trellis.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Oct 5, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Terracotta pot with drainage; bamboo trellis",
+            "style": ""
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Oct 10, 2026",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
+          }
+        ]
+      }
+    },
+    {
+      "id": "45",
+      "name": "Jango",
+      "species": "Scented geranium · Pelargonium 'Citrosum'-type",
+      "searchName": "jango citronella plant scented geranium mosquito plant",
+      "searchSpecies": "pelargonium 'citrosum'-type",
+      "status": "Watch",
+      "photo": "45-jango-citronella-plant-scented-geranium-mosqu.jpg",
+      "photoAlt": "Jango",
+      "newAddition": false,
+      "pest": "",
+      "added": "",
+      "tags": [
+        {
+          "style": "",
+          "label": "VERY BRIGHT LIGHT"
+        },
+        {
+          "style": "",
+          "label": "SCENTED GERANIUM"
+        },
+        {
+          "style": "",
+          "label": "PRUNE"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Prune the longest stems back by about one-third to one-half to encourage branching, and root healthy tip cuttings if you want backups. Give it the brightest indoor light you can.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Watch / vigorous but very leggy — the plant has a large amount of healthy green foliage, but the long, widely spaced stems show it is stretching and becoming difficult to manage indoors.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Water thoroughly when the top 1–2 in of soil are dry, then drain completely. Avoid keeping the root ball constantly wet.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Very bright light; several hours of direct window sun or a strong grow light is ideal indoors. Acclimate gradually to stronger sun.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Balanced fertilizer at about 1/2 strength monthly during active growth; reduce or pause if winter growth slows.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Not recorded",
+          "pClass": "unknown",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Do not repot just because the top is large. Repot only if roots are crowded, drainage is poor, or the pot dries abnormally fast; move up one size.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "2 parts indoor potting mix + 1 part perlite/pumice. Good drainage matters more than a specialty mix.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Watch spacing between new leaves after pruning. Tighter, sturdier regrowth indicates enough light; continued long bare internodes mean it needs more light.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 11, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Oct 5, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Oct 10, 2026",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
+          }
+        ]
+      }
+    }
+  ]
+}
