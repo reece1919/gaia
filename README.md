@@ -7,8 +7,9 @@ GAIA tracks a collection of 45 plants with photos, current health, care instruct
 ## How the website works
 
 - **`index.html`** holds the page layout and styles.
-- **`plants.json`** is the source of truth for plant records and the recent-care summary. It contains all 45 plant profiles, their care sections, health labels, tags, and history.
-- **`app.js`** loads `plants.json`, builds the plant cards, updates the collection counts, and powers the search and filters.
+- **`plants.json`** is the source of truth for plant records, quick-care icon metadata, dashboard tasks, and the recent-care summary. It contains all 45 plant profiles, their care sections, health labels, tags, and history.
+- **`app.js`** builds the plant cards and quick-care icons, updates counts, and powers the search and filters.
+- **`tasks.js`** powers the private cross-device task checklist.
 - **`01-...jpg` through `45-...jpg`** are the plant photos, currently stored in the repository root.
 
 The plant records were migrated from the October 12, 2026 dashboard without dropping its 424 care sections, 266 history fields, or 71 history notes.
@@ -28,7 +29,7 @@ To update a plant, edit the matching object in the `plants` array in `plants.jso
 
 ## Important limitations
 
-GAIA currently reads static data from GitHub. It does **not** yet write watering checkoffs made in the browser back to the repository or synchronize them across devices. Any such write/sync feature will need additional development. The GitHub Pages site and the repository are **public**; avoid storing sensitive personal information.
+Plant profiles and task definitions are static GitHub data; interactive care journals, private photos and completed tasks sync across signed-in devices via Supabase. Cloud actions do not automatically edit the GitHub plant files. The GitHub Pages site and repository are public; never commit sensitive information.
 
 
 ## Interactive care journal
@@ -38,31 +39,40 @@ The dashboard now supports **Watered, Fertilized, Repotted, Pest treatment**, pl
 ### Data storage and synchronization
 
 - By default, entries are saved in **this browser's localStorage**, not in GitHub. They persist across reloads on that device, but **do not synchronize** across devices or browsers.
-- **Supabase sync is optional and not enabled until the following setup is completed.** Do not claim cloud sync is working before completing and testing it.
+- **Supabase sync is configured and tested across the computer and iPhone.** Device-only journal entries remain local unless imported into the account.
 - The cloud table holds **care events only**; plant profiles continue to be edited in `plants.json` via GitHub. Existing static care history remains available.
-- The public GitHub repository includes a safe template `gaia-config.js` with blank values. Do **not** put a Supabase service-role, secret key, or database password in public files.
+- The public GitHub repository contains only browser-safe Supabase URL and publishable key values in `gaia-config.js`. Never commit a service-role key, secret key, or database password.
 
 ### Supabase connection and setup status
 
 - Supabase project **GAIA** (US West) exists and is healthy.
 - Private table `public.plant_care_events` created with Row Level Security and four owner-only policies.
 - Browser-facing project URL and **publishable** key configured in `gaia-config.js`. No service-role key or database password is in the site.
-- Security advisor reports zero security warnings after restricting the automatic-RLS event-trigger function.
-- **Still required:** configure authentication redirect URLs in the Supabase Dashboard, then complete email sign-in and test from two devices.
+- The care, photo and task tables use owner-only Row Level Security. Authentication settings are configured and sign-in has been tested on desktop and iPhone.
 
-### Complete the remaining sign-in setup
+### Authentication configuration (already completed)
 
 1. Open [Supabase Authentication URL Configuration](https://supabase.com/dashboard/project/zdurujqwhxqrwbhwzzxg/auth/url-configuration).
 2. Set the **Site URL** to `https://reece1919.github.io/gaia/`.
 3. Add `https://reece1919.github.io/gaia/` to **Redirect URLs**, and save. You can use `https://reece1919.github.io/gaia/**` for additional routes in the future.
 4. Verify Email authentication is enabled under **Authentication → Providers → Email**.
-5. On [GAIA](https://reece1919.github.io/gaia/), open **Sync, account & backup → Email me a sign-in link** and sign in.
+5. On [GAIA](https://reece1919.github.io/gaia/), use **Sync, account & backup** at the bottom of the page to sign in with your GAIA email and password. Email links are available as a fallback.
 6. Add a care entry on one device; open GAIA on another, sign into the same account and tap **Sync journal** to verify it appears. Synchronization occurs when you load/reload the app, save entries, or tap Sync; it is not realtime push.
 7. If you recorded entries before signing in, choose **Import earlier device entries** on each relevant device. It copies them to your private account without deleting the device-only backup.
 
 ### Recovering care entries
 
 The **Export journal backup** button downloads the current visible journal in JSON. Keep backups if you're using device-only storage or before clearing browser/site data. Device-only entries may be lost if the browser storage is cleared or you use a private browsing window.
+
+## Dashboard task checklist
+
+The collection dashboard displays quick care icons for light, plant type, watering threshold, and preferred soil. Their metadata lives in each plant's `cardCare` entry in `plants.json`, and the full care guidance remains in the plant profile. These are care guidelines, not live moisture readings.
+
+The expandable **Tasks to complete** checklist appears near the top. Its six starter tasks come from the Oct 12 care notes; edit `dashboardTasks` in `plants.json` to change them. Keep stable task IDs when updating the wording, so previous completions remain valid.
+
+Task checkboxes are private and cross-device: checking or unchecking saves an owner-only row in `public.gaia_task_completions` (see [`supabase/gaia_task_completions.sql`](supabase/gaia_task_completions.sql)). They do not create a care event or imply watering actually occurred; log real work in the matching plant's care journal.
+
+**Recent care** appears after the plant cards, followed by **Sync, account & backup** at the very bottom.
 
 ## Uploading plant photos directly from GAIA
 
