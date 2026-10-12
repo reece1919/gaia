@@ -5989,5 +5989,43 @@
         "soil": "well-drained"
       }
     }
+  ],
+  "dashboardTasks": [
+    {
+      "id": "mites-six-inspection-20261012",
+      "category": "Pest follow-up",
+      "title": "Inspect the six plants with reported mites",
+      "detail": "Check leaf undersides and stem joints on Morgana, Phil, C-3PO, Tywin, Karlach and Calcifer for webbing or moving mites."
+    },
+    {
+      "id": "mites-paper-test-20261012",
+      "category": "Pest follow-up",
+      "title": "Repeat the white-paper mite test",
+      "detail": "Recheck affected plants and the palm; look for tiny moving specks."
+    },
+    {
+      "id": "new-arrivals-check-20261012",
+      "category": "New arrivals",
+      "title": "Inspect new arrivals and maintain separation",
+      "detail": "Look for mite activity before placing newcomers beside plants from the affected group."
+    },
+    {
+      "id": "audrey-moisture-20261012",
+      "category": "Special care",
+      "title": "Check Audrey II’s medium and water supply",
+      "detail": "Keep the flytrap medium moist; use distilled, reverse-osmosis or clean rainwater rather than ordinary tap water."
+    },
+    {
+      "id": "dry-mix-check-20261012",
+      "category": "Special care",
+      "title": "Check Bowser and the ponytail palm before watering",
+      "detail": "Confirm drainage and wait until the mix is dry throughout; don’t water them on the tropical-plant schedule."
+    },
+    {
+      "id": "mite-spray-label-20261012",
+      "category": "Pest follow-up",
+      "title": "Review any repeat mite treatment",
+      "detail": "If you are using a spray treatment, repeat only at the product label’s specified interval."
+    }
   ]
 }
