@@ -163,6 +163,9 @@ input:focus,select:focus{border-color:#8eae96;box-shadow:0 0 0 3px rgba(53,106,6
 #gaia-photo-message.photo-error{border-color:#e5c0b8;background:#fff7f5;color:#893737}
 @media(max-width:600px){.plant-photo-journal{padding:10px;margin-bottom:9px}.photo-gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.photo-input-row{grid-template-columns:1fr}}
 
+.photo-local-status{margin:8px 0!important;padding:7px 9px;background:#fff;border:1px solid #cfe0d3;border-radius:8px;color:#285737;font-size:12px;line-height:1.35}
+.photo-local-status[hidden]{display:none!important}
+.photo-local-status.photo-error{background:#fff7f5;border-color:#e5c0b8;color:#893737}
 </style>
 <script>document.documentElement.classList.add('js-enabled');</script>
 </head>
@@ -239,6 +242,6 @@ input:focus,select:focus{border-color:#8eae96;box-shadow:0 0 0 3px rgba(53,106,6
 <script src="gaia-config.js?v=20261012-sync3"></script>
 <script src="app.js?v=20261012-sync3" defer></script>
 <script src="care.js?v=20261012-photos1" defer></script>
-<script src="photos.js?v=20261012-photos1" defer></script>
+<script src="photos.js?v=20261012-photos2" defer></script>
 </body>
 </html>
