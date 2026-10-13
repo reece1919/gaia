@@ -660,6 +660,128 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
  .gaia-insights-actions p{text-align:left;flex-basis:100%}
 }
 
+
+/* GAIA tablet field desk v1
+   iPad/tablet portrait and landscape: wider care workspace and touch targets.
+   The ordinary phone (<700px) and wide-desktop (>1280px) layouts are unchanged. */
+.gaia-tablet-desk{display:none}
+@media(min-width:700px) and (max-width:1280px){
+  .wrap{max-width:1200px;padding:20px 20px 44px}
+  .gaia-hero{padding:25px 29px 23px;min-height:245px}
+  .stats{margin:13px 0}
+  .gaia-tablet-desk{
+    position:sticky;top:calc(7px + env(safe-area-inset-top));z-index:30;
+    display:flex;align-items:center;gap:7px;padding:8px;margin:0 0 17px;
+    border:1px solid #7a7b5e;border-radius:7px;
+    background:rgba(21,37,35,.96);color:#e8dbbb;
+    box-shadow:0 5px 20px rgba(0,0,0,.26);
+    backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  }
+  .tablet-desk-label{
+    display:inline-flex;align-items:center;gap:5px;
+    flex:0 0 auto;padding:0 9px 0 5px;
+    color:#c9b588;font-family:var(--serif);
+    font-size:11px;white-space:nowrap;letter-spacing:.065em
+  }
+  .tablet-desk-label span{font-size:17px}
+  .gaia-tablet-desk a{
+    display:flex;flex:1 1 0;min-width:0;min-height:47px;
+    align-items:center;justify-content:center;gap:4px;text-align:center;
+    background:#273d36;border:1px solid #627360;border-radius:5px;
+    padding:9px 7px;color:#f0e2c7;text-decoration:none;
+    font-weight:700;font-size:12px;line-height:1.2;
+    -webkit-tap-highlight-color:rgba(206,182,128,.15)
+  }
+  .gaia-tablet-desk a:last-child{background:#463f31;border-color:#9a885e;color:#f2dcac}
+  .gaia-tablet-desk a:focus-visible{outline:3px solid #ddbe80;outline-offset:2px}
+  .gaia-tablet-desk a:active{background:#4b604c}
+  #gaia-tasks,#gaia-insights,#controls,#search,#care-overview,#grid,.card{
+    scroll-margin-top:95px;
+  }
+  /* Keep enough space for writing field notes, not three narrow specimen cards. */
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:start}
+  .card{border-radius:7px}
+  .card>summary{min-height:0}
+  .summary-body{padding:15px 15px 16px}
+  .name{font-size:25px}
+  .species{font-size:12px}
+  .card-quick-facts{gap:8px}
+  .card-fact{min-width:44px;min-height:44px;padding:10px 12px}
+  .card-fact svg{width:19px;height:19px}
+  .card-fact span{font-size:12px}
+  .tap-hint{font-size:14px}
+  /* When a plant opens, give notes, camera, history and care journal full width. */
+  .grid>.card[open]{grid-column:1/-1}
+  .grid>.card[open]>summary{
+    display:grid;grid-template-columns:clamp(180px,26vw,255px) minmax(0,1fr);
+    align-items:stretch;min-height:205px;
+  }
+  .grid>.card[open]>summary .photo{
+    width:100%;height:100%;min-height:205px;aspect-ratio:auto;
+    border-right:1px solid #657463
+  }
+  .grid>.card[open]>summary .summary-body{
+    display:flex;flex-direction:column;justify-content:center;
+    min-width:0;padding:16px 22px
+  }
+  .grid>.card[open] .care{padding:18px}
+  .grid>.card[open] .care-grid{gap:13px}
+  .grid>.card[open] .box{padding:14px}
+  .grid>.card[open] .box p{font-size:14px;line-height:1.55}
+  .grid>.card[open] .care-tracker,
+  .grid>.card[open] .plant-photo-journal{padding:17px}
+  .grid>.card[open] .care-quick-actions{grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}
+  .grid>.card[open] .care-quick-actions button{
+    min-height:50px;padding:10px;font-size:13px
+  }
+  .grid>.card[open] .care-more>summary,
+  .grid>.card[open] .history>summary,
+  .grid>.card[open] .plant-photo-form .photo-upload-button{min-height:46px}
+  .grid>.card[open] .care-log-form input,
+  .grid>.card[open] .care-log-form select,
+  .grid>.card[open] .care-log-form textarea,
+  .grid>.card[open] .plant-photo-form input,
+  .grid>.card[open] .plant-photo-form textarea{
+    font-size:16px;min-height:47px
+  }
+  .grid>.card[open] .photo-input-row{grid-template-columns:1fr 1.4fr}
+  .grid>.card[open] .photo-gallery-grid{
+    grid-template-columns:repeat(auto-fill,minmax(185px,1fr));gap:12px
+  }
+  .gaia-task-panel>summary,
+  .gaia-insights>summary{min-height:60px}
+  .gaia-task-list{gap:12px}
+  .gaia-task-item{padding:15px}
+  .gaia-task-item input[type=checkbox]{width:24px;height:24px;min-width:24px}
+  .gaia-task-text strong{font-size:17px}
+  .gaia-task-description{font-size:13px;line-height:1.5}
+  .gaia-task-controls button{min-height:44px;min-width:60px;font-size:13px;padding:10px}
+  .gaia-task-add>summary{min-height:48px;display:flex;align-items:center}
+  .gaia-task-create-form input,
+  .gaia-task-create-form select,
+  .gaia-task-create-form textarea,
+  .gaia-task-edit-form input,
+  .gaia-task-edit-form select,
+  .gaia-task-edit-form textarea{
+    min-height:45px;font-size:16px
+  }
+  .gaia-task-form-actions button,
+  .gaia-task-edit-actions button,
+  #gaia-insights-refresh{min-height:46px;font-size:13px}
+  .controls{grid-template-columns:minmax(0,1fr) 150px 180px;gap:12px}
+  .controls input,.controls select{min-height:50px;font-size:16px}
+  .card-icon-guide>summary{padding:8px 2px;min-height:40px}
+  .care-overview button{min-height:45px}
+}
+@media(min-width:700px) and (max-width:840px){
+  .gaia-tablet-desk{gap:5px;padding:7px}
+  .tablet-desk-label{font-size:10px;gap:4px;padding:0 4px}
+  .gaia-tablet-desk a{font-size:11.5px;padding:9px 5px}
+  .controls{grid-template-columns:minmax(0,1fr) 132px 160px;gap:9px}
+  .grid>.card[open]>summary{grid-template-columns:185px minmax(0,1fr)}
+  .grid>.card[open]>summary .summary-body{padding:12px 16px}
+}
+
 </style>
 <script>document.documentElement.classList.add('js-enabled');</script>
 </head>
@@ -707,6 +829,16 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 <div class="stat"><small>GOOD / EXCELLENT</small><b>26</b></div>
 <div class="stat"><small>NEEDS ATTENTION</small><b>19</b></div>
 </div>
+
+<!-- Tablet field desk: viewport-aware navigation, no separate application or data store. -->
+<nav class="gaia-tablet-desk" aria-label="Tablet care shortcuts">
+  <span class="tablet-desk-label"><span aria-hidden="true">✦</span> FIELD DESK</span>
+  <a href="#gaia-tasks">Tasks</a>
+  <a href="#gaia-insights">Insights</a>
+  <a href="#search">Find a plant</a>
+  <a href="#care-overview">Care journal</a>
+  <a href="https://chatgpt.com/g/g-p-6a68d01f4a088191820e9381dd3d14c8/project" target="_blank" rel="noopener noreferrer" aria-label="Ask GAIA in ChatGPT (opens in a new tab)">Ask GAIA <span aria-hidden="true">↗</span></a>
+</nav>
 
 <details id="gaia-tasks" class="gaia-task-panel" aria-label="Tasks to complete">
   <summary>
@@ -834,5 +966,6 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 <script src="photos.js?v=20261012-photos2" defer></script>
 <script src="tasks.js?v=20261012-customtasks1" defer></script>
 <script src="insights.js?v=20261012-gaia2" defer></script>
+<script src="tablet.js?v=20261012-fielddesk1" defer></script>
 </body>
 </html>
