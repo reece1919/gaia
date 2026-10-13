@@ -783,7 +783,8 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 }
 
 </style>
-<script>document.documentElement.classList.add('js-enabled');</script>
+<link rel="stylesheet" href="security-mfa.css?v=1.2.0">
+<script src="early-init.js"></script>
 </head>
 <body>
 <div class="wrap">
@@ -938,6 +939,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
    </div>
    <div id="care-account-area" hidden>
     <p>Signed in as <strong id="care-user-email"></strong></p>
+    <div class="mfa-settings-widget"><strong>Account security</strong><p id="mfa-settings-status">Checking authenticators…</p><button type="button" id="gaia-mfa-open">Manage authenticators</button><p>Optional until backup-device recovery is confirmed.</p></div>
     <div class="care-settings-actions">
      <button id="care-sync" type="button">Sync journal</button>
      <button id="care-import" type="button" hidden>Import earlier device entries</button>
@@ -963,6 +965,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 <script src="gaia-config.js?v=20261012-sync3"></script>
 <script src="app.js?v=20261012-card-icons1" defer></script>
 <script src="care.js?v=20261012-photos1" defer></script>
+<script src="security-mfa.js?v=1.2.0" defer></script>
 <script src="photos.js?v=20261012-photos2" defer></script>
 <script src="tasks.js?v=20261012-customtasks1" defer></script>
 <script src="insights.js?v=20261012-gaia2" defer></script>
