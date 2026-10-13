@@ -11,7 +11,7 @@
       },
       {
         "title": "Oct 11–12 · nine additions",
-        "descriptionHtml": "Five arrivals photographed and bathed Oct 11. Cactus, flytrap, ponytail palm, and Red Banana croton first recorded here Oct 12. Cactus, ponytail, and croton bath dates unconfirmed; flytrap not bathed or watered by Reece. Seven named; ponytail palm and croton names pending. Malefecent is in care for Amber."
+        "descriptionHtml": "Five arrivals photographed and bathed Oct 11. Cactus, flytrap, ponytail palm, and Red Banana croton first recorded here Oct 12. Cactus, ponytail, and croton bath dates unconfirmed; flytrap not bathed or watered by Reece. All nine arrivals are now named, including Groot the ponytail palm and Mushu the Red Banana croton. Malefecent is in care for Amber."
       },
       {
         "title": "Next check · Oct 13",
@@ -23,13 +23,13 @@
   "plants": [
     {
       "id": "01",
-      "name": "Red Banana croton · name pending",
+      "name": "Mushu",
       "species": "Codiaeum variegatum ‘Red Banana’",
-      "searchName": "red banana croton name pending",
+      "searchName": "mushu red banana croton",
       "searchSpecies": "codiaeum variegatum red banana",
       "status": "Good",
       "photo": "01-red-banana-croton-name-pending.jpg",
-      "photoAlt": "Red Banana croton · name pending · photo review Oct 12, 2026",
+      "photoAlt": "Mushu · Red Banana croton · photo review Oct 12, 2026",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-10-12",
@@ -128,7 +128,7 @@
           },
           {
             "label": "Name",
-            "valueHtml": "Pending",
+            "valueHtml": "Mushu",
             "style": ""
           },
           {
@@ -164,6 +164,10 @@
         ],
         "notes": [
           {
+            "style": "",
+            "bodyHtml": "<strong>Oct 12, 2026 · </strong>Name confirmed: Mushu (Red Banana croton)."
+          },
+          {
             "style": "care-entry",
             "bodyHtml": "<strong>Oct 12, 2026 · </strong>Reece confirmed this plant is home. Photo and care added; name, watering, bath, and treatment dates remain unrecorded."
           },
@@ -183,13 +187,13 @@
     },
     {
       "id": "02",
-      "name": "Ponytail palm · name pending",
+      "name": "Groot",
       "species": "Beaucarnea recurvata",
-      "searchName": "ponytail palm name pending elephant foot tree",
+      "searchName": "groot ponytail palm elephant foot tree",
       "searchSpecies": "beaucarnea recurvata",
       "status": "Watch",
       "photo": "02-ponytail-palm-name-pending-elephant-foot-tree.jpg",
-      "photoAlt": "Ponytail palm · name pending · photo review Oct 12, 2026",
+      "photoAlt": "Groot · Ponytail palm · photo review Oct 12, 2026",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-10-12",
@@ -294,7 +298,7 @@
           },
           {
             "label": "Name",
-            "valueHtml": "Pending",
+            "valueHtml": "Groot",
             "style": ""
           },
           {
@@ -324,6 +328,10 @@
           }
         ],
         "notes": [
+          {
+            "style": "",
+            "bodyHtml": "<strong>Oct 12, 2026 · </strong>Name confirmed: Groot (ponytail palm)."
+          },
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Oct 12, 2026 · </strong>Photo identifies the previously described bulbous-trunk plant as a ponytail palm. No watering, bath, or treatment recorded from this image."
