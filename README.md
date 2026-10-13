@@ -95,11 +95,20 @@ The Midnight Herbarium now includes a read-only **GAIA Insights** panel between 
 - The panel fetches reviews on sign-in, optionally refreshes when returning to the browser tab or syncing care, and has a manual **Refresh notes** button. It does not offer AI chat within the website.
 - If no review is saved for that user, or private record access is unavailable, the panel states this plainly. It does not generate or invent suggestions to fill the space.
 - A baseline `manual_review` was saved for October 12, 2026, using only the known static care notes. It reports mite follow-up concerns and plant-specific needs. It is **not** an independent diagnosis, private photo analysis, moisture reading, or care event.
-- The scheduled **GAIA Hourly Plant Watch** is intended to monitor meaningful changes and update the private review table when supported. Scheduled executions and future database writes are independent from the browser panel and are not guaranteed by the existence of the panel.
+- The scheduled **GAIA Daily Plant Review** checks once daily, normally in the morning, for meaningful changes and updates the private review table when supported. Scheduled executions and future database writes are independent from the browser panel and are not guaranteed by the existence of the panel.
 - Reports are **recommendations, not confirmed care history**. They do not automatically complete tasks or modify `plants.json`.
 - The header's **Ask GAIA** link opens the user's [ChatGPT plant-care project](https://chatgpt.com/g/g-p-6a68d01f4a088191820e9381dd3d14c8/project) in a new tab. This URL is present in the **public** GitHub Pages HTML; only a properly signed-in ChatGPT account with access to that private project can open its content.
 
 The implementation is in `insights.js`; the page reads from the existing private `gaia_ai_reviews` table protected by Row Level Security. Avoid adding OpenAI API credentials to `index.html`, `gaia-config.js`, or other public files.
+
+## Todoist: recommended plant follow-ups
+
+The connected **GAIA Daily Plant Review** ChatGPT automation has an additional one-way Todoist integration. Its saved actionable GAIA Insights recommendations can become tasks in the existing Todoist **Home → GAIA Recommendations** section (Home project `6hhpRVXF5cQv89rr`, section `6hjxVjvF3fP5gRwJ`).
+
+- Four October 12 baseline recommendations were added: spider-mite checks on the six affected plants, new-arrival inspection, Audrey II's medium and water source, and Malefecent's center/leaf monitoring. These were old-record-based follow-ups; the automation should not recreate them.
+- On each daily review, the ChatGPT automation checks existing active/completed Todoist work for overlapping actions before creating **up to three** new, evidence-supported recommendations. Todoist task descriptions include a persistent `GAIA-SYNC-ID`, rationale, and a link back to GAIA. A date is provided only if GAIA's evidence genuinely supports one.
+- This is **scheduled one-way coordination**, not a continuous API integration or bidirectional task synchronization. Completing a Todoist task will **not** change GAIA's checklist or record watering, pest treatments, or other physical care. Record confirmed care in the GAIA journal separately.
+- The GAIA static website does not call Todoist's API, store Todoist credentials, or incur additional OpenAI API billing. The daily task depends on having access to the connected Todoist and Supabase apps at run time; future sync success should be checked, not assumed.
 
 ## Uploading plant photos directly from GAIA
 
