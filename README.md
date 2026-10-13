@@ -76,6 +76,17 @@ While signed in, open **Tasks to complete → Add a task** to create personal ca
 
 **Recent care** appears after the plant cards, followed by **Sync, account & backup** at the very bottom.
 
+## Tablet field desk (iPad and other tablets)
+
+GAIA is still a single responsive website — not a separate iPad app or duplicate database — but it now has a dedicated tablet layout for viewport widths of **700–1280 CSS pixels**, covering common portrait/landscape tablet widths. The existing mobile and wide desktop interfaces are retained.
+
+- A **sticky Field Desk** shortcut bar appears after the collection statistics, providing quick navigation to Tasks, Insights, Find a plant, Care journal, and **Ask GAIA** (the existing ChatGPT project). Tapping Tasks or Insights opens its panel; Find a plant focuses search.
+- Plant browsing uses **two wider columns** rather than three cramped cards in tablet landscape. Opening a plant expands the specimen across **the full grid width** with a compact, side-by-side cover photo and title. `tablet.js` brings the expanded card into view after reflow.
+- Larger touch targets are supplied for care actions, care fact icons, task checkboxes, task editing, upload buttons, search, and other form fields. The same cloud account, private photos, task completion and care journal remain in use.
+- No app installation, additional account, separate data store or paid AI API is needed. Visit [GAIA](https://reece1919.github.io/gaia/) using a tablet browser. On iPad, Safari's **Share → Add to Home Screen** can provide a convenient launcher.
+
+This is responsive behavior based on available screen width, so split-screen or Stage Manager may change which layout is used. The browser's rendered appearance should still be checked on physical iPads of the intended sizes.
+
 ## GAIA Insights: private AI briefings and ChatGPT project
 
 The Midnight Herbarium now includes a read-only **GAIA Insights** panel between the task checklist and the plant filters. It reads the latest record from `public.gaia_ai_reviews` for the **signed-in GAIA user only**. The report consists of its saved review date, summary, up to five priorities and rationale, and an expandable evidence/uncertainties section. Saved report text is escaped when rendered.
