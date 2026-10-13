@@ -1,5 +1,9 @@
 # GAIA — Plant Collection Dashboard
 
+## Todoist / GAIA tasks (October 2026)
+
+A small optional, collapsible Todoist list is available below the collection totals. It filters open Todoist tasks with the personal `gaia` label, using ORBIT's existing secure OAuth bridge and the shared account's MFA session. No Todoist token is stored in GAIA; the herbarium appearance and plant records were not redesigned.
+
 **Live site:** https://reece1919.github.io/gaia/
 
 GAIA tracks a collection of 45 plants with photos, current health, care instructions, follow-up priorities, and care history. The site is published with GitHub Pages from the `main` branch.
