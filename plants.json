@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "Oct 12, 2026",
+  "updatedAt": "Oct 13, 2026",
   "summaryNote": "tap for care, priorities & history",
   "recentCare": {
     "dateLabel": "OCT 10–12, 2026",
@@ -544,25 +544,25 @@
       "sections": [
         {
           "label": "NEXT ACTION",
-          "bodyHtml": "Check the medium’s moisture. Reece has not watered it since receiving it; do not assume earlier care or that the medium is dry. Use distilled, reverse-osmosis, or clean rainwater for its first watering. Keep the medium moist and provide strong light; avoid repeated trap testing while it settles.",
+          "bodyHtml": "Oct 13: Reece reported the medium was very dry and began a bottom-soak in the original nursery pot (drainage holes confirmed). Verify that the center of the medium is rehydrated; do not mark the soak finished until Reece confirms. Switch to distilled, reverse-osmosis, or clean rainwater as soon as available, and keep moist. Leave Audrey II by the bright window and grow light with the succulents while recovering. Check the bedroom east-window sill temperature before planning a cool winter rest.",
           "pClass": "",
           "style": "full next-action"
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "Alive: several green traps and smaller central leaves are visible, with blackening and yellowing on some older traps. Age, acclimation, water quality, light, and seasonal changes need checking before assigning a cause.",
+          "bodyHtml": "Oct 13 photo: several green traps and green central growth remain, alongside older blackening traps and dry surface material. Reece confirmed severe dryness and began rehydration. Dehydration is a concern; the cause of blackening and lack of trap response is not established. Monitor new traps and recovery rather than repeatedly triggering traps.",
           "pClass": "",
           "style": "full"
         },
         {
           "label": "WATER",
-          "bodyHtml": "Keep the medium moist with distilled, reverse-osmosis, or clean rainwater. While actively growing, use a shallow tray about 1–2 cm deep, below the crown; never let the root ball dry out. Reduce standing water during a cool winter rest.",
+          "bodyHtml": "Keep the low-nutrient medium consistently moist using distilled, reverse-osmosis, or clean rainwater (ideally very low dissolved minerals). A single emergency tap-water soaking is generally less risky than leaving it severely dry, but tap water should not become the routine; whether tap water was actually used Oct 13 is unconfirmed. While actively growing, a shallow tray of about 1–2 cm water is suitable; ensure the pot drains. During a truly cool winter rest, keep the medium just moist rather than waterlogged.",
           "pClass": "",
           "style": ""
         },
         {
           "label": "LIGHT",
-          "bodyHtml": "Aim for at least 6 hours of direct sun after gradual acclimation, or a strong grow light about 12–16 hours daily while actively growing. A typical winter windowsill may be insufficient.",
+          "bodyHtml": "Usual position: a bright window with a grow light, next to the succulents. Strong light is appropriate while growing and recovering (roughly 6+ hours direct sun after acclimation, or a sufficiently strong grow light for about 12–16 hours daily). The alternate bedroom window faces east and gets morning sun; this reduced light is only an option for a genuinely cool dormant plant, not reliable active growth at room temperature.",
           "pClass": "",
           "style": ""
         },
@@ -574,13 +574,13 @@
         },
         {
           "label": "LOCATION",
-          "bodyHtml": "Window shelf shown in the photo; window direction, direct-sun hours, and supplemental light not recorded.",
+          "bodyHtml": "Usual home: window with supplemental grow light alongside succulents (window direction not confirmed). Possible winter home: directly on the east-facing bedroom windowsill, with morning sun. Bedroom sill temperatures have not been measured; user reports the current growing location stays near room temperature.",
           "pClass": "",
           "style": ""
         },
         {
           "label": "REPOT",
-          "bodyHtml": "Avoid an immediate repot just for old black traps. Repot if the medium contains fertilizer or standard potting mix, or salts have accumulated. Otherwise allow acclimation and reassess in spring.",
+          "bodyHtml": "Currently in the small original nursery pot, which has drainage holes. Do not repot immediately while dehydrated; first allow the medium to rehydrate and the plant to stabilize. Nursery medium composition is unverified. Consider a spring repot only if needed; use unfertilized carnivorous-plant medium, not standard potting soil.",
           "pClass": "",
           "style": ""
         },
@@ -592,7 +592,7 @@
         },
         {
           "label": "WATCH",
-          "bodyHtml": "Track healthy new traps rather than the oldest ones. Trim only fully black dead material. Check light, water quality, medium, and seasonal conditions if traps do not close; appearance alone does not prove dormancy or root rot.",
+          "bodyHtml": "After the Oct 13 rehydration, check for renewed growth and adequate moisture through the center of the pot. Older traps may blacken naturally; trim only fully dead, easy-to-remove material. Do not manually trigger traps to test them. Verify actual water source and window temperatures. Keep apart from plants with confirmed spider mites; no mites established on Audrey II.",
           "pClass": "",
           "style": "full"
         },
@@ -610,7 +610,7 @@
         },
         {
           "label": "WINTER PLAN",
-          "bodyHtml": "Plan a cool, bright winter rest for a seasonally grown plant; keep the medium moist and protect this small pot from prolonged hard freezing. Do not assume old black traps alone mean dormancy. Year-round indoor growth needs strong supplemental light and a consistent routine.",
+          "bodyHtml": "Oct 13 plan: prioritize recovery under the existing strong window/grow light. Measure overnight temperatures on the east-facing bedroom windowsill before any move. A cool, bright winter rest is typically best (approximately 35–55°F / 2–13°C, with no hard freezing of this small pot). If the sill stays at ordinary room temperature, morning-only sun is insufficient for active growth; keep the strong grow light and reassess winter options rather than forcing dormancy. While genuinely dormant, use less water but never allow the medium to dry completely.",
           "pClass": "",
           "style": "full"
         }
@@ -619,12 +619,12 @@
         "facts": [
           {
             "label": "Last updated",
-            "valueHtml": "Oct 12, 2026",
+            "valueHtml": "Oct 13, 2026",
             "style": ""
           },
           {
             "label": "Last photo review",
-            "valueHtml": "Oct 12, 2026",
+            "valueHtml": "Oct 13, 2026 (chat photo reviewed; dashboard image remains Oct 12)",
             "style": ""
           },
           {
@@ -644,7 +644,7 @@
           },
           {
             "label": "Pot / container",
-            "valueHtml": "Brown nursery pot with moss visible on the surface; the underlying medium and pot size are unconfirmed.",
+            "valueHtml": "Original brown nursery pot, with drainage holes confirmed Oct 13. Moss-like surface material visible; underlying mix and pot dimensions unverified.",
             "style": ""
           },
           {
@@ -659,16 +659,25 @@
           },
           {
             "label": "Water source",
-            "valueHtml": "Not yet watered by Reece; previous water source unknown",
+            "valueHtml": "Distilled water not yet available Oct 13. Emergency tap water discussed; actual soak water source not confirmed.",
             "style": ""
           },
           {
             "label": "Watering since received",
-            "valueHtml": "None — confirmed Oct 12, 2026",
+            "valueHtml": "Oct 13: bottom-soak started to rehydrate very dry medium; completion and water source not confirmed.",
+            "style": ""
+          },
+          {
+            "label": "Winter location",
+            "valueHtml": "Possible east-facing bedroom windowsill with morning sun; temperature unmeasured.",
             "style": ""
           }
         ],
         "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 13, 2026 · </strong>Reece reported Audrey II was very dry and began soaking the original nursery pot; drainage holes confirmed. Chat photograph showed surviving green traps with some older blackening. Water source and completion of soak not confirmed. Usual home is a window with grow light among the succulents; east-facing bedroom sill is a possible dormancy spot if measured temperatures support it."
+          },
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Oct 12, 2026 · </strong>First photo review added to the dashboard. Acquisition date, bath history, and any spray treatment have not been confirmed."
@@ -6020,8 +6029,8 @@
     {
       "id": "audrey-moisture-20261012",
       "category": "Special care",
-      "title": "Check Audrey II’s medium and water supply",
-      "detail": "Keep the flytrap medium moist; use distilled, reverse-osmosis or clean rainwater rather than ordinary tap water."
+      "title": "Check Audrey II’s rehydration and distilled water",
+      "detail": "Soak began Oct 13 after very dry medium. Confirm the pot has rehydrated and soaking is finished, then maintain moist medium using distilled, reverse-osmosis, or clean rainwater. Do not mark watering complete without confirmation."
     },
     {
       "id": "dry-mix-check-20261012",
@@ -6034,6 +6043,12 @@
       "category": "Pest follow-up",
       "title": "Review any repeat mite treatment",
       "detail": "If you are using a spray treatment, repeat only at the product label’s specified interval."
+    },
+    {
+      "id": "audrey-winter-window-temp-20261013",
+      "category": "Seasonal care",
+      "title": "Measure Audrey II’s bedroom windowsill temperature",
+      "detail": "Check the east-facing bedroom sill overnight before relocating Audrey II for winter. A cool spot (~35–55°F) may support dormancy; if it stays near room temperature, continue strong supplemental lighting and reassess. Protect the pot from freezing."
     }
   ]
 }
