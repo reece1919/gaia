@@ -180,6 +180,56 @@
   }
 
   document.getElementById("gaia-unified-priority-list")?.addEventListener("click",async event=>{
+    const dismiss=event.target.closest("[data-gaia-dismiss]");
+    const todo=event.target.closest("[data-gaia-todoist]");
+    if(!dismiss&&!todo)return;
+    if(addingPriority!==-1||!client||!user||!latest)return;
+    const index=Number(dismiss?dismiss.dataset.gaiaDismiss:todo.dataset.gaiaTodoist);
+    const priority=validPriorities(latest.priorities)[index];
+    if(!priority)return;
+    const owner=user.id,key=decisionKey(priority);
+    if(todo&&(matchingTask(priority.title)||decisions.get(key)==="todoist"))return;
+    addingPriority=index;priorityMessage="";renderUnifiedPriorities();
+    try{
+      if(dismiss){
+        const {error}=await client.from("gaia_priority_decisions").upsert({user_id:owner,priority_key:key,decision:"dismissed",todoist_task_id:null},{onConflict:"user_id,priority_key"});
+        if(error)throw error;
+        decisions.set(key,"dismissed");priorityMessage="Suggestion dismissed.";
+      }else{
+        const {data:sessionData,error:sessionError}=await client.auth.getSession();
+        if(sessionError||sessionData.session?.user?.id!==owner)throw Error("Please sign in again.");
+        const {data:assurance,error:mfaError}=await client.auth.mfa.getAuthenticatorAssuranceLevel();
+        if(mfaError)throw mfaError;
+        if(assurance?.currentLevel!=="aal2")throw Error("Verify your authenticator in the Todoist panel first.");
+        const endpoint="https://zdurujqwhxqrwbhwzzxg.supabase.co/functions/v1/orbit-todoist";
+        const api=async payload=>{
+          const res=await fetch(endpoint,{method:"POST",headers:{"Content-Type":"application/json",Authorization:"Bearer "+sessionData.session.access_token},body:JSON.stringify(payload)});
+          const data=await res.json().catch(()=>({}));
+          if(!res.ok)throw Error(data.error||"Todoist request failed.");
+          return data;
+        };
+        let found=false,cursor="";
+        for(let page=0;page<10;page++){
+          const q="/tasks?limit=200"+(cursor?"&cursor="+encodeURIComponent(cursor):"");
+          const list=await api({action:"api",path:q,method:"GET"});
+          found=(list.results||[]).some(t=>canonical(t.content)===canonical(priority.title));
+          if(found||!list.next_cursor)break;
+          cursor=list.next_cursor;
+        }
+        if(found)throw Error("A matching Todoist task already exists. Refresh the task list.");
+        const payload={content:priority.title.slice(0,120),description:(priority.rationale+"\n\nSource: GAIA review "+latest.review_date+"\nhttps://reece1919.github.io/gaia/").slice(0,1000),labels:["gaia"]};
+        const created=await api({action:"api",path:"/tasks",method:"POST",body:JSON.stringify(payload)});
+        if(!created.id)throw Error("Todoist did not confirm creation. Check Todoist before retrying.");
+        const {error:saveError}=await client.from("gaia_priority_decisions").upsert({user_id:owner,priority_key:key,decision:"todoist",todoist_task_id:String(created.id)},{onConflict:"user_id,priority_key"});
+        decisions.set(key,"todoist");
+        activeTodoist.push(created);
+        priorityMessage=saveError?"Created in Todoist, but GAIA could not save the link.":"Added to Todoist.";
+        document.dispatchEvent(new Event("gaia:todoist-refresh"));
+      }
+    }catch(err){priorityMessage=err?.message||"Could not save decision.";}
+    finally{addingPriority=-1;renderUnifiedPriorities();}
+  });
+  document.getElementById("gaia-unified-priority-list")?.addEventListener("click",async event=>{
     const button=event.target.closest("[data-add-gaia-priority]");
     if(!button||addingPriority!==-1||!client||!user||!latest)return;
     const index=Number(button.dataset.addGaiaPriority);
