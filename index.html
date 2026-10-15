@@ -801,7 +801,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
   .grid>.card[open]>summary .summary-body{padding:12px 16px}
 }
 
- .gaia-unified-todoist,.gaia-unified-priorities{margin:0 0 14px;padding:0;border:0;border-radius:0} .gaia-unified-todoist h3,.gaia-unified-priorities h3,.gaia-task-content>h3{font-size:1rem;margin:0 0 9px;color:#e8cf9a} .gaia-unified-priorities small{font-weight:400;color:#b9c7bb} #gaia-checklist-section{margin:10px 0 16px} .gaia-checklist-heading{color:#e8cf9a;font-size:.9rem;font-weight:600;margin:8px 0} .gaia-unified-todoist .system-todoist{padding:0;border:0;background:transparent} .gaia-unified-todoist .system-todoist-head strong{display:none} .gaia-unified-priorities ol{padding-left:20px;margin:5px 0} .gaia-unified-priorities li{padding:6px 0} .gaia-unified-priorities p{margin:3px 0;color:#c9d2c6;font-size:.85rem} .gaia-unified-priorities .gaia-source{font-size:.75rem;color:#b9c7bb} 
+ .gaia-unified-todoist,.gaia-unified-priorities{margin:0 0 14px;padding:0;border:0;border-radius:0} .gaia-unified-todoist h3,.gaia-unified-priorities h3,.gaia-task-content>h3{font-size:1rem;margin:0 0 9px;color:#e8cf9a} .gaia-legacy-tasks{margin:12px 0;font-size:.85rem;color:#b9c7bb} .gaia-legacy-tasks>summary{cursor:pointer} .gaia-legacy-tasks #gaia-task-add{display:none} .gaia-unified-priorities input[type=date]{color:inherit;background:#20332f;border:1px solid #7b8d7e;border-radius:5px;padding:4px} .gaia-unified-priorities small{font-weight:400;color:#b9c7bb} #gaia-checklist-section{margin:10px 0 16px} .gaia-checklist-heading{color:#e8cf9a;font-size:.9rem;font-weight:600;margin:8px 0} .gaia-unified-todoist .system-todoist{padding:0;border:0;background:transparent} .gaia-unified-todoist .system-todoist-head strong{display:none} .gaia-unified-priorities ol{padding-left:20px;margin:5px 0} .gaia-unified-priorities li{padding:6px 0} .gaia-unified-priorities p{margin:3px 0;color:#c9d2c6;font-size:.85rem} .gaia-unified-priorities .gaia-source{font-size:.75rem;color:#b9c7bb} 
 </style>
 <link rel="stylesheet" href="security-mfa.css?v=1.2.1">
 <link rel="stylesheet" href="todoist-system.css?v=1.1.0">
@@ -861,7 +861,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
     <span id="gaia-task-progress" class="gaia-task-progress" aria-live="polite">Loading tasks…</span>
   </summary>
   <div class="gaia-task-content">
-    <div class="gaia-unified-todoist"><section class="system-todoist" data-system-todoist="gaia" aria-label="GAIA Todoist tasks"></section></div><div id="gaia-checklist-section"><div id="gaia-checklist-heading" class="gaia-checklist-heading" hidden>Additional GAIA tasks</div>
+    <div class="gaia-unified-todoist"><section class="system-todoist" data-system-todoist="gaia" aria-label="GAIA Todoist tasks"></section></div><details id="gaia-checklist-section" class="gaia-legacy-tasks"><summary>Previously saved GAIA-only tasks (legacy)</summary><p>These older tasks are retained for migration. New tasks are created in Todoist only.</p><div id="gaia-checklist-heading" class="gaia-checklist-heading" hidden>Previously saved GAIA tasks</div>
     <details id="gaia-task-add" class="gaia-task-add" hidden>
       <summary><span aria-hidden="true">＋</span> Add a task</summary>
       <form id="gaia-task-create" class="gaia-task-create-form">
@@ -884,7 +884,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
       </form>
     </details>
     <div id="gaia-task-list" class="gaia-task-list" role="group" aria-label="Plant care follow-up checklist"></div>
-    <p id="gaia-task-status" class="gaia-task-status" role="status" aria-live="polite"></p></div><div class="gaia-unified-priorities"><h3>Suggested priorities <small>· recommendations only</small></h3><div id="gaia-unified-priority-list" aria-live="polite">Loading latest GAIA review…</div></div>
+    <p id="gaia-task-status" class="gaia-task-status" role="status" aria-live="polite"></p></details><div class="gaia-unified-priorities"><h3>Suggested priorities <small>· recommendations only</small></h3><div id="gaia-unified-priority-list" aria-live="polite">Loading latest GAIA review…</div></div>
   </div>
 
 </details>
@@ -984,7 +984,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 <script src="security-mfa.js?v=1.3.1" defer></script>
 <script src="photos.js?v=20261014-access-test3" defer></script>
 <script src="tasks.js?v=20261015-priority-add1" defer></script>
-<script src="insights.js?v=20261015-priority-actions3" defer></script>
+<script src="insights.js?v=20261015-todoist-only1" defer></script>
 <script src="tablet.js?v=20261012-fielddesk1" defer></script>
 <script src="task-queue.js?v=20261015-2" defer></script>
 </body>
