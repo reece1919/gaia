@@ -192,7 +192,7 @@
     if(!priority)return;
     const owner=user.id,key=decisionKey(priority);
     const due=todo?document.querySelector(`[data-gaia-due="${index}"]`)?.value:"";
-    if(todo&&(!/^\d{4}-\d{2}-\d{2}$/.test(due)||due<new Date().toLocaleDateString("en-CA"))){priorityMessage="Choose today or a future due date before adding to Todoist.";renderUnifiedPriorities();return;}
+    if(todo&&(!/^\d{4}-\d{2}-\d{2}$/.test(due)||due<(()=>{const n=new Date();return [n.getFullYear(),String(n.getMonth()+1).padStart(2,"0"),String(n.getDate()).padStart(2,"0")].join("-");})())){priorityMessage="Choose today or a future due date before adding to Todoist.";renderUnifiedPriorities();return;}
     if(todo&&(matchingTask(priority.title)||decisions.get(key)==="todoist"))return;
     addingPriority=index;priorityMessage="";renderUnifiedPriorities();
     try{
