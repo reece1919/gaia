@@ -26,7 +26,8 @@
       pending: "Awaiting GAIA review",
       reviewed: "Reviewed",
       needs_attention: "Needs attention",
-      unavailable: "Review unavailable"
+      unavailable: "Review unavailable",
+      processing: "Review in progress"
     };
     const label = labels[status] || labels.pending;
     const summary = String(p.analysis_summary || "").trim();
@@ -38,10 +39,13 @@
       ? " · " + new Intl.DateTimeFormat(undefined,{month:"short",day:"numeric"})
           .format(new Date(p.analyzed_at))
       : "";
+    const findings=Array.isArray(p.analysis_findings)?p.analysis_findings:[];
+    const care=findings.filter(f=>f?.kind==="care").slice(0,2);
     return '<div class="photo-analysis photo-analysis-' + esc(status) + '">' +
       '<div class="photo-analysis-head"><span>' + esc(label) + '</span>' +
       '<small>' + esc(reviewedText + confidenceText) + '</small></div>' +
       (summary ? '<p>' + esc(summary) + '</p>' : '') +
+      (care.length ? '<ul class="gaia-photo-recommendations">' + care.map(f=>'<li>'+esc(f.text)+(f.reason?' — '+esc(f.reason):'')+'</li>').join('') + '</ul>' : '') +
       '</div>';
   }
   function safeError(error) {
@@ -331,6 +335,7 @@
   }
   document.addEventListener("gaia:ready",ev=>mount(ev.detail.plants||[]));
   document.addEventListener("gaia:auth",ev=>updateLogin(ev.detail.client,ev.detail.user));
+  document.addEventListener("gaia:photo-reviews-changed",()=>{ if(user) void refresh(); });
   document.addEventListener("gaia:care-synced",()=>{
     if(user) void refresh();
   });
