@@ -818,6 +818,24 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 #gaia-insights .gaia-insights-disclaimer{margin:0;font-size:.75rem;opacity:.65}
 #gaia-insights .gaia-insights-actions{margin-top:12px}
 </style>
+<style>
+/* Keep the collection search accessible on narrow screens without changing desktop controls. */
+@media (max-width: 720px) {
+  #controls {
+    position: sticky;
+    top: max(8px, env(safe-area-inset-top, 0px));
+    z-index: 80;
+    padding: 9px;
+    margin: 12px 0;
+    border: 1px solid var(--line, rgba(180,180,180,.4));
+    border-radius: 12px;
+    background: var(--card, #1c302d);
+    box-shadow: 0 7px 22px rgba(0,0,0,.2);
+  }
+  #controls #search { min-width: 0; width: 100%; }
+  #controls select { min-width: 0; }
+}
+</style>
 </head>
 <body>
 <div class="wrap">
