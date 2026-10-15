@@ -48,7 +48,22 @@
     }).filter(p => p && p.title);
   }
 
+  function renderUnifiedPriorities() {
+    const target=document.getElementById("gaia-unified-priority-list");
+    if(!target)return;
+    if(!client||!user){target.textContent="Sign in to see private recommendations.";return;}
+    if(!latest){target.textContent=busy?"Loading latest review…":"No suggested priorities saved yet.";return;}
+    const priorities=validPriorities(latest.priorities);
+    target.innerHTML=priorities.length?
+      '<p class="gaia-source">From GAIA review · '+esc(dateText(latest.review_date))+'</p><ol>'+
+      priorities.map(p=>'<li><strong>'+esc(p.title)+'</strong>'+
+        (p.plant?' <small>· '+esc(p.plant)+'</small>':'')+
+        (p.rationale?'<p>'+esc(p.rationale)+'</p>':'')+'</li>').join("")+
+      '</ol><p class="gaia-source">Recommendations only; check the task list above before acting.</p>':
+      '<p>No suggested priorities in the latest review.</p>';
+  }
   function render() {
+    renderUnifiedPriorities();
     button.disabled = busy || !client || !user;
     button.textContent = busy ? "Checking…" : "Refresh notes";
     status.classList.toggle("gaia-insights-error", Boolean(error));
@@ -70,14 +85,6 @@
           '<time datetime="' + esc(latest.review_date || "") + '">' +
           esc(dateText(latest.review_date)) + '</time></div>' +
         '<p class="gaia-insights-summary">' + esc(latest.summary || "") + '</p>' +
-        (priorities.length ?
-          '<div class="gaia-insights-priorities"><h3>Suggested priorities</h3><ol>' +
-          priorities.map(priority =>
-            '<li><strong>' + esc(priority.title) + '</strong>' +
-            (priority.plant ? '<span class="gaia-insights-plant">' +
-              esc(priority.plant) + '</span>' : '') +
-            (priority.rationale ? '<p>' + esc(priority.rationale) + '</p>' : '') +
-            '</li>').join("") + '</ol></div>' : '') +
         (latest.evidence ?
           '<details class="gaia-insights-evidence"><summary>Evidence &amp; uncertainties</summary>' +
           '<p>' + esc(latest.evidence) + '</p></details>' : '') +
