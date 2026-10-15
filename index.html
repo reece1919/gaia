@@ -801,7 +801,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
   .grid>.card[open]>summary .summary-body{padding:12px 16px}
 }
 
- .gaia-unified-todoist,.gaia-unified-priorities{margin:0 0 16px;padding:12px;border:1px solid rgba(195,176,126,.28);border-radius:10px} .gaia-unified-todoist h3,.gaia-unified-priorities h3,.gaia-task-content>h3{font-size:1rem;margin:0 0 9px;color:#e8cf9a} .gaia-unified-priorities small{font-weight:400;color:#b9c7bb} .gaia-unified-priorities ol{padding-left:20px;margin:5px 0} .gaia-unified-priorities li{padding:6px 0} .gaia-unified-priorities p{margin:3px 0;color:#c9d2c6;font-size:.85rem} .gaia-unified-priorities .gaia-source{font-size:.75rem;color:#b9c7bb} 
+ .gaia-unified-todoist,.gaia-unified-priorities{margin:0 0 14px;padding:0;border:0;border-radius:0} .gaia-unified-todoist h3,.gaia-unified-priorities h3,.gaia-task-content>h3{font-size:1rem;margin:0 0 9px;color:#e8cf9a} .gaia-unified-priorities small{font-weight:400;color:#b9c7bb} #gaia-checklist-section{margin:10px 0 16px} .gaia-checklist-heading{color:#e8cf9a;font-size:.9rem;font-weight:600;margin:8px 0} .gaia-unified-todoist .system-todoist{padding:0;border:0;background:transparent} .gaia-unified-todoist .system-todoist-head strong{display:none} .gaia-unified-priorities ol{padding-left:20px;margin:5px 0} .gaia-unified-priorities li{padding:6px 0} .gaia-unified-priorities p{margin:3px 0;color:#c9d2c6;font-size:.85rem} .gaia-unified-priorities .gaia-source{font-size:.75rem;color:#b9c7bb} 
 </style>
 <link rel="stylesheet" href="security-mfa.css?v=1.2.1">
 <link rel="stylesheet" href="todoist-system.css?v=1.1.0">
@@ -861,7 +861,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
     <span id="gaia-task-progress" class="gaia-task-progress" aria-live="polite">Loading tasks…</span>
   </summary>
   <div class="gaia-task-content">
-    <p class="gaia-task-intro">One place for your Todoist tasks, GAIA checklist and suggested priorities. Suggestions are not confirmed tasks until approved or scheduled.</p><div class="gaia-unified-todoist"><h3>Todoist tasks</h3><section class="system-todoist" data-system-todoist="gaia" aria-label="GAIA Todoist tasks"></section></div><div class="gaia-unified-priorities"><h3>Suggested priorities <small>· advisory, not tasks</small></h3><div id="gaia-unified-priority-list" aria-live="polite">Loading latest GAIA review…</div></div><h3>GAIA checklist</h3>
+    <div class="gaia-unified-todoist"><section class="system-todoist" data-system-todoist="gaia" aria-label="GAIA Todoist tasks"></section></div><div id="gaia-checklist-section"><div id="gaia-checklist-heading" class="gaia-checklist-heading" hidden>Additional GAIA tasks</div>
     <details id="gaia-task-add" class="gaia-task-add" hidden>
       <summary><span aria-hidden="true">＋</span> Add a task</summary>
       <form id="gaia-task-create" class="gaia-task-create-form">
@@ -884,7 +884,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
       </form>
     </details>
     <div id="gaia-task-list" class="gaia-task-list" role="group" aria-label="Plant care follow-up checklist"></div>
-    <p id="gaia-task-status" class="gaia-task-status" role="status" aria-live="polite"></p>
+    <p id="gaia-task-status" class="gaia-task-status" role="status" aria-live="polite"></p></div><div class="gaia-unified-priorities"><h3>Suggested priorities <small>· recommendations only</small></h3><div id="gaia-unified-priority-list" aria-live="polite">Loading latest GAIA review…</div></div>
   </div>
 
 </details>
