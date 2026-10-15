@@ -224,8 +224,25 @@ Deno.serve(async req=>{
   let body={};
   try{body=await req.json();}catch(_){/* empty body */}
   const apiKey=Deno.env.get("OPENAI_API_KEY");
-  if(body?.dry_run===true)return reply({status:apiKey?"ready":"vision_not_configured",
-    pending_accounts:owners.length,provider:apiKey?modelSource:null});
+  if(body?.dry_run===true){
+    let photo_access="no_saved_photos";
+    if(owners.length){
+      const {data:list,error:lookupError}=await admin.from("plant_photos")
+        .select("plant_id,object_path").eq("user_id",owners[0]).limit(1);
+      if(lookupError)photo_access="index_unavailable";
+      else if(list?.length){
+        const obj=list[0];
+        if(!obj.object_path.startsWith(owners[0]+"/"+obj.plant_id+"/"))
+          photo_access="owner_path_mismatch";
+        else {
+          const {data:blob,error:downloadError}=await admin.storage.from(bucket).download(obj.object_path);
+          photo_access=!downloadError&&blob?.size>0?"private_image_verified":"download_failed";
+        }
+      }
+    }
+    return reply({status:apiKey?"ready":"vision_not_configured",
+      pending_accounts:owners.length,provider:apiKey?modelSource:null,photo_access});
+  }
   if(!owners.length)return reply({status:"no_pending_photos",reviewed:0,inspected:0,comparisons:0,baselines:0});
   if(!apiKey) return reply({status:"vision_not_configured",
     error:"Automated visual comparison requires a configured vision service; stored photos remain pending."},
