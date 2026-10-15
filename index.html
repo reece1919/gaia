@@ -9,9 +9,9 @@
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="description" content="GAIA — personal plant collection dashboard, care and history">
 <title>GAIA — The Midnight Herbarium</title>
-<link rel="icon" type="image/svg+xml" href="favicon.svg?v=1.4.0">
-<link rel="apple-touch-icon" sizes="180x180" type="image/png" href="apple-touch-icon.png?v=20261014-1">
-<link rel="manifest" href="manifest.webmanifest?v=20261014-1">
+<link rel="icon" type="image/svg+xml" href="gaia-metal-crest.svg?v=2.0.0">
+<link rel="apple-touch-icon" sizes="180x180" type="image/png" href="apple-touch-icon.png?v=2.0.0">
+<link rel="manifest" href="manifest.webmanifest?v=2.0.0">
 <meta name="apple-mobile-web-app-title" content="GAIA">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <style>
@@ -314,7 +314,7 @@ h1,h2,h3,.name,.history>summary,.care-tracker-heading strong,.photo-journal-head
 .hero-copy{position:relative;z-index:2;max-width:680px}
 .hero-brand{display:flex;gap:21px;align-items:center}
 .hero-crest{flex:0 0 73px;width:73px;color:#c6b183;filter:drop-shadow(0 1px 3px rgba(0,0,0,.4))}
-.hero-crest svg{width:100%;display:block;height:auto}
+.hero-crest svg,.hero-crest img{width:100%;display:block;height:auto;object-fit:contain}
 .hero-eyebrow{color:#c2b38e;font-size:10px;font-weight:750;letter-spacing:.26em;line-height:1.4;margin-bottom:5px}
 .gaia-hero h1{font-family:var(--serif);font-size:clamp(52px,7vw,82px);font-weight:500;letter-spacing:.155em;line-height:.99;color:#eee2c8;
  text-shadow:0 3px 16px rgba(0,0,0,.25)}
@@ -811,15 +811,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 <header class="gaia-hero">
   <div class="hero-copy">
     <div class="hero-brand">
-      <div class="hero-crest" aria-hidden="true">
-        <svg viewBox="0 0 92 112" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M46 4 84 19v39c0 24-16 39-38 50C24 97 8 82 8 58V19L46 4Z" stroke="currentColor" stroke-width="1.5"/>
-          <path d="M46 11 77 24v33c0 20-12 33-31 43C27 90 15 77 15 57V24L46 11Z" stroke="currentColor" stroke-width=".6" opacity=".5"/>
-          <path d="M46 89V27m0 46c-18-4-22-16-24-23 15 1 23 9 24 23Zm0-19c14-2 21-11 25-22-14 0-22 8-25 22Zm0-10C34 41 31 30 32 22c9 3 14 10 14 22Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
-          <path d="M26 83h40" stroke="currentColor" opacity=".5"/>
-          <circle cx="46" cy="18" r="1.5" fill="currentColor"/>
-        </svg>
-      </div>
+      <div class="hero-crest" aria-hidden="true"><img src="gaia-metal-crest.svg?v=2.0.0" alt="" width="73" height="91"></div>
       <div class="hero-titles">
         <div class="hero-eyebrow">THE LIVING COLLECTION</div>
         <h1>GAIA</h1>
