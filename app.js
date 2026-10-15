@@ -178,8 +178,6 @@
     document.querySelector(".sub").textContent =
       plants.length + " plants · updated " + (data.updatedAt || "recently") +
       " · " + (data.summaryNote || "tap for care, priorities & history");
-    const miteCount = plants.filter(p => p.pest === "reported").length;
-    focus.querySelector('[value="mites"]').textContent = "Mites reported (" + miteCount + ")";
     const care = data.recentCare || {};
     const activity = document.getElementById("recent-care");
     activity.innerHTML = '<div class="activity-heading"><h2>Recent care &amp; follow-up</h2>' +
@@ -203,7 +201,7 @@
       cards = data.plants.map(makeCard);
       cards.forEach(card => fragment.appendChild(card));
       grid.appendChild(fragment);
-      renderSummary(data);
+      try { renderSummary(data); } catch (summaryError) { console.error("GAIA summary display error:", summaryError); }
       window.GAIA_DATA = data;
       document.dispatchEvent(new CustomEvent("gaia:ready", { detail: { plants: data.plants } }));
       if (loading) loading.remove();
