@@ -189,6 +189,7 @@
      if(i===9)partial=true;
     }
     render(tasks);
+    document.dispatchEvent(new CustomEvent("gaia:todoist-tasks",{detail:{owner,tasks:tasks.filter(t=>Array.isArray(t.labels)&&t.labels.some(l=>String(l).replace(/^@/,"").toLowerCase()==="gaia"))}}));
     last=Date.now();
     if(partial)for(const host of hosts)host.querySelector(".system-todoist-message").textContent="Showing first 2,000 open tasks";
    }catch(e){note(e.message||"Could not load Todoist tasks.")}
