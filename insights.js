@@ -52,6 +52,8 @@
   let activeGaia = [];
   let addingPriority = -1;
   let priorityMessage = "";
+  let decisions = new Map();
+  const decisionKey = p => canonical(p.title)+"|"+String(p.plant_id||"");
   const canonical = value => String(value || "").toLowerCase().replace(/[^a-z0-9 ]/g," ").replace(/\b(the|a|an|for|to|and|my|gaia)\b/g," ").replace(/\s+/g," ").trim();
   function matchingTask(title) {
     const target=canonical(title);
@@ -74,16 +76,17 @@
     target.innerHTML=priorities.length?
       '<p class="gaia-source">From GAIA review · '+esc(dateText(latest.review_date))+'</p><ol>'+
       priorities.map((p,i)=>{
+        if(decisions.get(decisionKey(p))==="dismissed")return "";
         const match=matchingTask(p.title);
         return '<li><strong>'+esc(p.title)+'</strong>'+
           (p.plant?' <small>· '+esc(p.plant)+'</small>':'')+
           (p.rationale?'<p>'+esc(p.rationale)+'</p>':'')+
           (match?'<p class="gaia-source">Already tracked in '+esc(match.source)+(match.id?' · <a href="https://app.todoist.com/app/task/'+encodeURIComponent(match.id)+'" target="_blank" rel="noopener noreferrer">Open task ↗</a>':'')+'</p>':
           '<button type="button" data-add-gaia-priority="'+i+'"'+(addingPriority!==-1?' disabled':'')+'>'
-            +(addingPriority===i?'Adding…':'＋ Add task')+'</button>')+'</li>';
+            +(addingPriority===i?'Adding…':'＋ Add to GAIA')+'</button>'+ '<button type="button" data-gaia-todoist="'+i+'"'+(addingPriority!==-1?' disabled':'')+'>Add to Todoist</button>')+'<button type="button" data-gaia-dismiss="'+i+'"'+(addingPriority!==-1?' disabled':'')+'>Dismiss</button></li>';
       }).join("")+'</ol>'+
       (priorityMessage?'<p role="status" class="gaia-source">'+esc(priorityMessage)+'</p>':'')+
-      '<p class="gaia-source">Adding creates a GAIA checklist task; it does not create a Todoist task.</p>':
+      '<p class="gaia-source">Choose GAIA or Todoist, or dismiss a suggestion.</p>':
       '<p>No suggested priorities in the latest review.</p>';
   }
   function render() {
@@ -145,6 +148,9 @@
       if (seq !== sequence || user?.id !== owner) return;
       latest = Array.isArray(data) && data.length ? data[0] : null;
       lastCheckedAt = Date.now();
+      const {data:rows,error:de}=await client.from("gaia_priority_decisions").select("priority_key,decision").eq("user_id",owner).limit(1000);
+      if(de)throw de;
+      if(user?.id===owner)decisions=new Map((rows||[]).map(r=>[r.priority_key,r.decision]));
     } catch (cause) {
       if (seq === sequence && user?.id === owner)
         error = cause?.message || "Please check your connection.";
@@ -163,7 +169,7 @@
     if (changed) {
       ++sequence;
       latest = null;
-      activeTodoist=[];activeGaia=[];
+      activeTodoist=[];activeGaia=[];decisions=new Map();
       error = "";
       lastCheckedAt = 0;
       busy = false;
