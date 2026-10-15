@@ -263,6 +263,28 @@ Deno.serve(async req=>{
   }
   let body={};
   try{body=await req.json();}catch(_){/* empty body */}
+  // Scheduled ChatGPT can request a single image through the database's
+  // Vault-authenticated invocation. No public bucket or lasting URL is created.
+  if(isCron && body?.action==="read_photo"){
+    const id=body.photo_id;
+    if(!validUuid(id))return reply({error:"Invalid photo ID"},400);
+    const {data:photo,error:readError}=await admin.from("plant_photos")
+      .select("id,user_id,plant_id,object_path,taken_on,caption")
+      .eq("id",id).maybeSingle();
+    if(readError||!photo)return reply({error:"Photo not found"},404);
+    const {data:identity,error:identityError}=await admin.auth.admin.getUserById(photo.user_id);
+    if(identityError||identity?.user?.email?.toLowerCase()!=="reece1919@gmail.com")
+      return reply({error:"Photo owner is not authorized for this review"},403);
+    if(!photo.object_path.startsWith(photo.user_id+"/"+photo.plant_id+"/"))
+      return reply({error:"Photo storage path mismatch"},403);
+    const {data:blob,error:downloadError}=await admin.storage.from(bucket).download(photo.object_path);
+    if(downloadError||!blob)return reply({error:"Private photo unavailable"},502);
+    if(!blob.size||blob.size>8_388_608)return reply({error:"Photo size unsupported"},413);
+    const imageBytes=new Uint8Array(await blob.arrayBuffer());
+    return reply({photo_id:photo.id,plant_id:photo.plant_id,taken_on:photo.taken_on,
+      caption:photo.caption,mime:"image/jpeg",
+      image_base64:toBase64(imageBytes)});
+  }
   const apiKey=Deno.env.get("OPENAI_API_KEY");
   if(body?.dry_run===true){
     let photo_access="no_saved_photos";
