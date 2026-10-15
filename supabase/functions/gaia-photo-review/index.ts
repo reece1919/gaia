@@ -206,7 +206,7 @@ Deno.serve(async req=>{
     if(error || data!==true)return reply({error:"Unauthorized"},401);
     isCron=true;
     const {data:pending,error:pendingError}=await admin.from("plant_photos")
-      .select("user_id").eq("analysis_status","pending").limit(1000);
+      .select("user_id").in("analysis_status",["pending","processing"]).limit(1000);
     if(pendingError)return reply({error:"Photo queue unavailable"},500);
     owners=[...new Set((pending||[]).map(v=>v.user_id))].slice(0,8);
   } else {
@@ -221,13 +221,16 @@ Deno.serve(async req=>{
     if(claims.aal!=="aal2")return reply({error:"Verify your authenticator to review private photos"},403);
     owners=[identity.user.id];
   }
-  if(!owners.length)return reply({status:"no_pending_photos",reviewed:0,inspected:0,comparisons:0,baselines:0});
+  let body={};
+  try{body=await req.json();}catch(_){/* empty body */}
   const apiKey=Deno.env.get("OPENAI_API_KEY");
+  if(body?.dry_run===true)return reply({status:apiKey?"ready":"vision_not_configured",
+    pending_accounts:owners.length,provider:apiKey?modelSource:null});
+  if(!owners.length)return reply({status:"no_pending_photos",reviewed:0,inspected:0,comparisons:0,baselines:0});
   if(!apiKey) return reply({status:"vision_not_configured",
     error:"Automated visual comparison requires a configured vision service; stored photos remain pending."},
     isCron?200:503);
-  let force=false;
-  if(!isCron){try{const body=await req.json();force=body?.force===true;}catch(_){/* empty body */}}
+  const force=!isCron && body?.force===true;
   const plants=await catalog(),results=[];
   for(const owner of owners){
     try {results.push(await reviewOwner(admin,owner,plants,apiKey,force));}
