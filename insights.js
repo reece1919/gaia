@@ -265,4 +265,5 @@
   button.addEventListener("click", () => void refresh());
   if (window.GAIA_CLOUD) onAuth(window.GAIA_CLOUD);
   render();
+  window.GAIA_INSIGHTS_INITIALIZED = true;
 })();
