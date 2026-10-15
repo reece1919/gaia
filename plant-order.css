@@ -1,0 +1,110 @@
+/* GAIA specimen shelf: editing affordances only; no care/status styling changes. */
+#controls {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 9px;
+}
+#controls #search {
+  display: block;
+  flex: 1 1 auto;
+  min-width: 0;
+  width: auto;
+}
+#gaia-order-toggle {
+  flex: 0 0 auto;
+  min-height: 43px;
+  padding: 9px 14px;
+  border-radius: 7px;
+  border: 1px solid #9c8a61;
+  background: #34453b;
+  color: #f1deb4;
+  font-size: 12px;
+  font-weight: 650;
+  letter-spacing: .035em;
+  cursor: pointer;
+}
+#gaia-order-toggle[aria-pressed="true"] {
+  background: #6b5537;
+  border-color: #c9ad75;
+  color: #fff1cf;
+}
+#gaia-order-toggle:disabled { opacity: .6; cursor: wait; }
+#gaia-order-toggle:focus-visible,
+.gaia-order-handle:focus-visible { outline: 3px solid #e1c17e; outline-offset: 2px; }
+#gaia-order-status {
+  margin: -2px 0 12px;
+  padding: 0 3px;
+  color: #c5cdbf;
+  font-size: 12px;
+  line-height: 1.45;
+}
+#gaia-order-status:empty { display: none; }
+.gaia-order-handle { display: none; }
+#gaia-reorder-hint { font-size: 12px; }
+#grid.gaia-reordering .card { transition: border-color .12s ease, opacity .12s ease; }
+#grid.gaia-reordering .card > summary { cursor: default; }
+#grid.gaia-reordering .card .photo { position: relative; }
+#grid.gaia-reordering .gaia-order-handle {
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  z-index: 5;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  min-width: 46px;
+  min-height: 46px;
+  padding: 0;
+  border: 1px solid #dcc28a;
+  border-radius: 8px;
+  background: rgba(22, 39, 36, .94);
+  color: #f4dbab;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, .4);
+  font-size: 32px;
+  line-height: 1;
+  font-weight: 700;
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+#grid.gaia-reordering .gaia-order-handle:active { cursor: grabbing; }
+#grid .gaia-order-moving { opacity: .42; }
+#grid .gaia-order-drop-target {
+  border-color: #d9be83;
+  outline: 3px solid #d9be83;
+  outline-offset: 1px;
+}
+.gaia-order-ghost {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 900;
+  max-width: 240px;
+  min-width: 120px;
+  padding: 12px 16px;
+  background: #263a32;
+  border: 1px solid #d5b677;
+  border-radius: 8px;
+  box-shadow: 0 10px 24px rgba(0,0,0,.38);
+  color: #f3e2c5;
+  font: 600 16px/1.3 Georgia,serif;
+  pointer-events: none;
+  user-select: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media (max-width: 720px) {
+  #controls { gap: 7px; }
+  #controls #search { min-height: 44px; }
+  #gaia-order-toggle {
+    min-height: 44px;
+    padding: 8px 10px;
+    font-size: 11px;
+  }
+  #gaia-order-status { font-size: 11px; }
+}
