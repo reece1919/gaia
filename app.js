@@ -170,10 +170,18 @@
     const plants = data.plants;
     const good = plants.filter(p => p.status === "Excellent" || p.status === "Good").length;
     const stats = document.querySelectorAll(".stat b");
-    if (stats.length >= 3) {
+    if (stats.length >= 2) {
       stats[0].textContent = String(plants.length);
       stats[1].textContent = String(good);
-      stats[2].textContent = String(plants.length - good);
+
+    }
+    const attentionCount=document.getElementById("gaia-attention-count");
+    if(attentionCount)attentionCount.textContent=String(plants.length-good);
+    const attentionCondition=document.getElementById("gaia-attention-condition");
+    if(attentionCondition){
+      const counts=new Map();
+      plants.filter(p=>p.status!=="Excellent"&&p.status!=="Good").forEach(p=>counts.set(p.status||"Needs review",(counts.get(p.status||"Needs review")||0)+1));
+      attentionCondition.textContent=[...counts].map(([status,n])=>n+" "+status.toLowerCase()).join(" · ")||"all plants in good condition";
     }
     document.querySelector(".sub").textContent =
       plants.length + " plants · updated " + (data.updatedAt || "recently") +
