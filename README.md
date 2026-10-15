@@ -114,6 +114,18 @@ The connected **GAIA Daily Plant Review** ChatGPT automation has an additional o
 - This is **scheduled one-way coordination**, not a continuous API integration or bidirectional task synchronization. Completing a Todoist task will **not** change GAIA's checklist or record watering, pest treatments, or other physical care. Record confirmed care in the GAIA journal separately.
 - The GAIA static website does not call Todoist's API, store Todoist credentials, or incur additional OpenAI API billing. The daily task depends on having access to the connected Todoist and Supabase apps at run time; future sync success should be checked, not assumed.
 
+## Photo-by-photo visual review queue
+
+Every private photo now has an owner-protected visual-review state stored with its `plant_photos` record. New and existing unreviewed images are `pending`. GAIA may later record `reviewed`, `needs_attention`, or `unavailable`, plus a short summary, structured findings, optional confidence, review timestamp, and source.
+
+- A photo must never be marked reviewed unless its actual image pixels were retrieved and inspected.
+- Photo dates, captions, filenames, or care history alone are not visual evidence.
+- Visual findings are observations, not confirmed diagnoses or care events.
+- The browser remains read-only for analysis fields; automated/admin review writes remain separate from ordinary photo uploads.
+- The photo journal displays the saved review state and summary but does not itself call an AI service.
+
+Schema: [`supabase/gaia_photo_analysis_queue.sql`](supabase/gaia_photo_analysis_queue.sql).
+
 ## Uploading plant photos directly from GAIA
 
 Open any plant profile and find **Photo journal**. While signed in, tap **Take or choose a photo** (Safari offers camera or photo library), optionally set the date and add a note, then choose **Upload photo**. The browser resizes the picture to a JPEG with a maximum dimension of 1,800 pixels. An original image larger than 35 MB or processed image larger than 8 MB is rejected.
