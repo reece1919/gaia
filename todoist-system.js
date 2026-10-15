@@ -197,6 +197,7 @@
   })();
   return pending;
  }
+ document.addEventListener("gaia:todoist-refresh",()=>{last=0;void refresh(true)});
  document.addEventListener("gaia:auth",()=>{last=0;void refresh(true)});
  document.addEventListener("orbit:auth-changed",()=>{last=0;void refresh(true)});
  document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible")void refresh()});
