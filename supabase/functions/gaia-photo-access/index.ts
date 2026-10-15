@@ -1,5 +1,7 @@
 import { createClient } from "npm:@supabase/supabase-js@2.57.0";
+const cors = { "Access-Control-Allow-Origin": "https://reece1919.github.io", "Access-Control-Allow-Headers": "authorization, apikey, content-type", "Access-Control-Allow-Methods": "POST, OPTIONS" };
 Deno.serve(async (req: Request) => {
+  if (req.method === "OPTIONS") return new Response(null, { status: 204, headers: cors });
   if (req.method !== "POST") return new Response("Method not allowed", { status: 405 });
   const auth = req.headers.get("authorization") || "";
   if (!/^Bearer\s+\S+$/.test(auth)) return new Response("Unauthorized", { status: 401 });
@@ -18,5 +20,5 @@ Deno.serve(async (req: Request) => {
   if (!photo || !photo.object_path.startsWith(identity.user.id + "/")) return new Response("Not found", { status: 404 });
   const { data, error: signedError } = await client.storage.from("gaia-plant-photos").createSignedUrl(photo.object_path, 60);
   if (signedError || !data?.signedUrl) return new Response("Photo access failed", { status: 502 });
-  return new Response(JSON.stringify({ photo_id: photo.id, signed_url: data.signedUrl, expires_in: 60 }), { headers: { "content-type": "application/json", "cache-control": "no-store" } });
+  return new Response(JSON.stringify({ photo_id: photo.id, signed_url: data.signedUrl, expires_in: 60 }), { headers: { ...cors, "content-type": "application/json", "cache-control": "no-store" } });
 });
