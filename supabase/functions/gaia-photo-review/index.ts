@@ -42,7 +42,10 @@ async function catalog() {
     return new Map((data.plants || []).map(p=>[String(p.id),{
       name:sliceText(p.name,90), species:sliceText(p.species,120),
       status:sliceText(p.status,70),
-      light:sliceText(p.cardCare?.light,70),soil:sliceText(p.cardCare?.soil,70)
+      light:sliceText(p.cardCare?.light,70),soil:sliceText(p.cardCare?.soil,70),
+      // Original GitHub card images are historical reference photos, not new uploads.
+      referenceFile:typeof p.photo==="string"&&
+        /^[a-z0-9][a-z0-9._-]{0,180}\.(jpg|jpeg|png|webp)$/i.test(p.photo)?p.photo:null
     }]));
   } catch (_) { return new Map(); }
 }
@@ -71,6 +74,26 @@ function cleanAnalysis(raw,mode) {
     needsAttention: condition==="declining" || actions.some(v=>v.urgency==="soon")
   };
 }
+const referenceBase = "https://reece1919.github.io/gaia/";
+async function downloadReference(filename) {
+  if(typeof filename!=="string" ||
+    !/^[a-z0-9][a-z0-9._-]{0,180}\.(jpg|jpeg|png|webp)$/i.test(filename))
+    throw Error("Invalid historical reference filename");
+  const url=referenceBase+encodeURIComponent(filename);
+  const response=await fetch(url,{signal:AbortSignal.timeout(15000)});
+  if(!response.ok)throw Error("Historical GAIA image unavailable ("+response.status+")");
+  const finalUrl=new URL(response.url);
+  if(finalUrl.origin!=="https://reece1919.github.io" ||
+    !finalUrl.pathname.startsWith("/gaia/"))
+    throw Error("Historical image redirected outside GAIA");
+  const type=(response.headers.get("content-type")||"").split(";")[0].trim().toLowerCase();
+  if(!["image/jpeg","image/png","image/webp"].includes(type))
+    throw Error("Historical GAIA reference is not a supported image");
+  const bytes=new Uint8Array(await response.arrayBuffer());
+  if(!bytes.length||bytes.length>8_388_608)
+    throw Error("Historical image empty or exceeds size limit");
+  return {bytes,mime:type};
+}
 async function performVision(admin, owner, latest, earlier, plantInfo, events, apiKey) {
   const photos = earlier ? [earlier,latest] : [latest];
   const content = [{
@@ -81,14 +104,21 @@ async function performVision(admin, owner, latest, earlier, plantInfo, events, a
       "Logged care actions, for context only: "+JSON.stringify(events.slice(0,8)) + "."
   }];
   for(const p of photos){
-    if(!validUuid(p.id) || !p.object_path.startsWith(owner+"/"+p.plant_id+"/"))
-      throw Error("Private photo owner or plant path mismatch");
-    const {data:blob,error} = await admin.storage.from(bucket).download(p.object_path);
-    if(error || !blob) throw Error("Stored photo could not be read");
-    if(blob.size > 8_388_608) throw Error("Stored photo exceeds allowed size");
-    const buffer = new Uint8Array(await blob.arrayBuffer());
+    let bytes,mime="image/jpeg";
+    if(p.source==="gaia_repository_reference"){
+      // Only allow image filenames listed in plants.json; no arbitrary URL fetching.
+      if(p.file!==plantInfo?.referenceFile)throw Error("Unrecognized historical reference");
+      ({bytes,mime}=await downloadReference(p.file));
+    } else {
+      if(!validUuid(p.id) || !p.object_path.startsWith(owner+"/"+p.plant_id+"/"))
+        throw Error("Private photo owner or plant path mismatch");
+      const {data:blob,error} = await admin.storage.from(bucket).download(p.object_path);
+      if(error || !blob) throw Error("Stored photo could not be read");
+      if(blob.size > 8_388_608) throw Error("Stored photo exceeds allowed size");
+      bytes=new Uint8Array(await blob.arrayBuffer());
+    }
     content.push({type:"image_url",image_url:{
-      url:"data:image/jpeg;base64,"+toBase64(buffer),detail:"low"
+      url:"data:"+mime+";base64,"+toBase64(bytes),detail:"low"
     }});
   }
   const system = "You are GAIA, a careful plant-care assistant analyzing real photo pixels. " +
@@ -145,7 +175,12 @@ async function reviewOwner(admin, owner, plantCatalog, apiKey, force=false) {
         .eq("id",latest.id).eq("user_id",owner).eq("analysis_status","processing");
       if(reset.error) continue;
     }
-    candidates.push({plantId,latest,earlier:history[1]||null});
+    const referenceFile=plantCatalog.get(plantId)?.referenceFile;
+    const earlier=history[1]|| (referenceFile ? {
+      source:"gaia_repository_reference",file:referenceFile,taken_on:null,
+      caption:"Original GAIA plant-card image (actual photo date unknown)"
+    }:null);
+    candidates.push({plantId,latest,earlier});
   }
   const picked=candidates.slice(0,runLimit);
   const successes=[],failures=[];
@@ -165,7 +200,12 @@ async function reviewOwner(admin, owner, plantCatalog, apiKey, force=false) {
         const {error:saveError}=await admin.from("plant_photos").update({
           analysis_status:result.needsAttention?"needs_attention":"reviewed",
           analysis_summary:result.summary,
-          analysis_findings:result.findings,analysis_confidence:result.confidence,
+          analysis_findings:[
+            ...result.findings,
+            ...(earlier?[{kind:"comparison_source",
+              text:earlier.source==="gaia_repository_reference"?
+                "Original GAIA reference: "+earlier.file:"Earlier private photo: "+earlier.id}]:[])
+          ],analysis_confidence:result.confidence,
           analysis_source:modelSource,analysis_started_at:null,
           analyzed_at:new Date().toISOString()
         }).eq("id",latest.id).eq("user_id",owner).eq("analysis_status","processing");
@@ -240,8 +280,30 @@ Deno.serve(async req=>{
         }
       }
     }
+    // Validate the OTHER source of history, not only private Supabase storage.
+    const known=await catalog();
+    let previous_private=0,previous_reference=0,missing_reference=0;
+    if(owners.length){
+      const {data:photos}=await admin.from("plant_photos")
+        .select("plant_id").eq("user_id",owners[0]).limit(1000);
+      const counts=new Map();
+      for(const p of photos||[])counts.set(p.plant_id,(counts.get(p.plant_id)||0)+1);
+      for(const [id,count] of counts){
+        if(count>=2)previous_private++;
+        else if(known.get(id)?.referenceFile)previous_reference++;
+        else missing_reference++;
+      }
+    }
+    const testFile=[...known.values()].find(p=>p.referenceFile)?.referenceFile;
+    let reference_access="no_reference";
+    if(testFile){
+      try{await downloadReference(testFile);reference_access="gaia_original_verified";}
+      catch(e){reference_access=e instanceof Error?e.message:"Reference download failed";}
+    }
     return reply({status:apiKey?"ready":"vision_not_configured",
-      pending_accounts:owners.length,provider:apiKey?modelSource:null,photo_access});
+      pending_accounts:owners.length,provider:apiKey?modelSource:null,photo_access,
+      historical_reference_access:reference_access,
+      history_mapping:{private_pairs:previous_private,github_reference_pairs:previous_reference,missing:missing_reference}});
   }
   if(!owners.length)return reply({status:"no_pending_photos",reviewed:0,inspected:0,comparisons:0,baselines:0});
   if(!apiKey) return reply({status:"vision_not_configured",
