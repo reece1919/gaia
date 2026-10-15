@@ -190,7 +190,7 @@
     if(!priority)return;
     const owner=user.id,key=decisionKey(priority);
     const due=todo?document.querySelector(`[data-gaia-due="${index}"]`)?.value:"";
-    if(todo&&!/^\\d{4}-\\d{2}-\\d{2}$/.test(due)){priorityMessage="Choose a due date before adding to Todoist.";renderUnifiedPriorities();return;}
+    if(todo&&!/^\d{4}-\d{2}-\d{2}$/.test(due)){priorityMessage="Choose a due date before adding to Todoist.";renderUnifiedPriorities();return;}
     if(todo&&(matchingTask(priority.title)||decisions.get(key)==="todoist"))return;
     addingPriority=index;priorityMessage="";renderUnifiedPriorities();
     try{
