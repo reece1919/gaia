@@ -127,7 +127,7 @@
             '</time>' + (i===0 ? '<span class="photo-cover-label">Current</span>' : '') + '</div>' +
             (p.caption ? '<div class="photo-caption">' + esc(p.caption) + '</div>' : '') +
             analysisMarkup(p) +
-            '<button type="button" data-photo-delete="' + esc(p.id) + '">Delete</button>' +
+            '<button type="button" data-photo-test="' + esc(p.id) + '">Test secure access</button><button type="button" data-photo-delete="' + esc(p.id) + '">Delete</button>' +
             '</div>';
         }).join("") + '</div>' +
         (items.length>30?'<p class="photo-hint">Showing the 30 most recently uploaded photos.</p>':'')
@@ -281,6 +281,40 @@
       button.disabled=false;button.textContent="Upload photo";
     }
   }
+  async function testPhotoAccess(id) {
+    if (!client || !user) return report("Sign in to test private photo access.", true);
+    const photo = photos.find(p => p.id === id);
+    if (!photo) return report("Photo not found.", true);
+    localStatus(photo.plant_id, "Testing secure photo retrieval…");
+    try {
+      const { data: sessionData, error: sessionError } = await client.auth.getSession();
+      if (sessionError || !sessionData?.session?.access_token) throw new Error("Please sign in again.");
+      const response = await fetch("https://zdurujqwhxqrwbhwzzxg.supabase.co/functions/v1/gaia-photo-access", {
+        method: "POST",
+        headers: {
+          "Authorization": "Bearer " + sessionData.session.access_token,
+          "apikey": client.supabaseKey,
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ photo_id: id })
+      });
+      if (!response.ok) throw new Error("Access endpoint returned HTTP " + response.status);
+      const payload = await response.json();
+      if (payload.photo_id !== id || !payload.signed_url) throw new Error("Invalid access response.");
+      const imageResponse = await fetch(payload.signed_url, { cache: "no-store" });
+      if (!imageResponse.ok) throw new Error("Photo download returned HTTP " + imageResponse.status);
+      const blob = await imageResponse.blob();
+      if (!blob.type.startsWith("image/") || !blob.size) throw new Error("Downloaded file is not an image.");
+      const bitmap = await createImageBitmap(blob);
+      const dimensions = bitmap.width + " × " + bitmap.height;
+      bitmap.close();
+      localStatus(photo.plant_id, "Secure photo access PASSED: " + dimensions + ", " + Math.round(blob.size / 1024) + " KB.");
+      report("Secure private photo retrieval passed. This does not yet verify nightly AI image analysis.");
+    } catch (error) {
+      localStatus(photo.plant_id, "Secure photo access FAILED: " + safeError(error), true);
+      report("Secure photo access test failed: " + safeError(error), true);
+    }
+  }
   async function removePhoto(id) {
     if(!client||!user) return;
     const target=photos.find(p=>p.id===id);
@@ -310,6 +344,8 @@
     void upload(event.target);
   });
   document.addEventListener("click",event=>{
+    const test=event.target.closest("[data-photo-test]");
+    if(test) void testPhotoAccess(test.dataset.photoTest);
     const button=event.target.closest("[data-photo-delete]");
     if(button) void removePhoto(button.dataset.photoDelete);
   });
