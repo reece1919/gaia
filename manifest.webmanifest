@@ -2,7 +2,7 @@
   "name": "GAIA — The Midnight Herbarium",
   "short_name": "GAIA",
   "description": "Personal plant collection, care journal, and tasks",
-  "start_url": "/gaia/",
+  "start_url": "/gaia/?v=20261015-search-only2",
   "scope": "/gaia/",
   "display": "standalone",
   "background_color": "#111f23",
