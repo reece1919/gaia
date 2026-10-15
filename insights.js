@@ -285,6 +285,7 @@
       if(!response.ok)throw new Error(result.error||"Photo review failed ("+response.status+").");
       status.textContent="Reviewed "+result.reviewed+" plants: "+result.comparisons+" comparisons, "+result.baselines+" baseline assessments. "+(result.failures?.length?result.failures.length+" need follow-up.":"");
       await refresh();
+      document.dispatchEvent(new CustomEvent("gaia:photo-reviews-changed"));
     }catch(cause){error=cause?.message||"Photo review could not run.";status.textContent=error;}
     finally{reviewing=false;render();if(error)status.textContent=error;}
   });
