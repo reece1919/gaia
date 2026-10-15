@@ -86,7 +86,7 @@
           (match?'<p class="gaia-source">Already tracked in '+esc(match.source)+(match.id?' · <a href="https://app.todoist.com/app/task/'+encodeURIComponent(match.id)+'" target="_blank" rel="noopener noreferrer">Open task ↗</a>':'')+'</p>':
           '<label style="display:inline-flex;align-items:center;gap:6px;margin-right:8px">Due <input type="date" data-gaia-due="'+i+'" min="'+today+'" value="'+today+'" required aria-label="Due date for '+esc(p.title)+'"></label>'+
           '<button type="button" data-gaia-todoist="'+i+'"'+(addingPriority!==-1?' disabled':'')+'>Add to Todoist</button>'+
-          '<button type="button" data-gaia-dismiss="'+i+'"'+(addingPriority!==-1?' disabled':'')+'>Dismiss</button></li>';
+          '<button type="button" data-gaia-dismiss="'+i+'"'+(addingPriority!==-1?' disabled':'')+'>Dismiss</button>')+'</li>';
       }).join("")+'</ol>'+
       (priorityMessage?'<p role="status" class="gaia-source">'+esc(priorityMessage)+'</p>':'')+
       '<p class="gaia-source">Choose a due date before adding to Todoist, or dismiss a suggestion.</p>':
