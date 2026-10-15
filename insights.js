@@ -37,19 +37,21 @@
       .map(plant => [String(plant.id), String(plant.name)]));
     return records.slice(0,MAX_PRIORITIES).map(priority => {
       if (typeof priority === "string")
-        return {title:priority.trim().slice(0,300), rationale:"", plant:""};
+        return {title:priority.trim().slice(0,300), rationale:"", plant:"", plant_id:null};
       if (!priority || typeof priority !== "object" || Array.isArray(priority))
         return null;
       const title = String(priority.title || priority.action || priority.task || "").trim().slice(0,300);
       const rationale = String(priority.rationale || priority.reason ||
         priority.detail || priority.description || "").trim().slice(0,1200);
       const id = priority.plant_id == null ? "" : String(priority.plant_id);
-      return {title,rationale,plant:names.get(id)||""};
+      return {title,rationale,plant:names.get(id)||"",plant_id:id||null};
     }).filter(p => p && p.title);
   }
 
   let activeTodoist = [];
   let activeGaia = [];
+  let addingPriority = -1;
+  let priorityMessage = "";
   const canonical = value => String(value || "").toLowerCase().replace(/[^a-z0-9 ]/g," ").replace(/\b(the|a|an|for|to|and|my|gaia)\b/g," ").replace(/\s+/g," ").trim();
   function matchingTask(title) {
     const target=canonical(title);
@@ -71,10 +73,17 @@
     const priorities=validPriorities(latest.priorities);
     target.innerHTML=priorities.length?
       '<p class="gaia-source">From GAIA review · '+esc(dateText(latest.review_date))+'</p><ol>'+
-      priorities.map(p=>{const match=matchingTask(p.title);return '<li><strong>'+esc(p.title)+'</strong>'+
-        (p.plant?' <small>· '+esc(p.plant)+'</small>':'')+
-        (match?'<p class="gaia-source">Already tracked in '+esc(match.source)+(match.id?' · <a href="https://app.todoist.com/app/task/'+encodeURIComponent(match.id)+'" target="_blank" rel="noopener noreferrer">Open task ↗</a>':'')+'</p>':(p.rationale?'<p>'+esc(p.rationale)+'</p>':''))+'</li>';}).join("")+
-      '</ol><p class="gaia-source">Recommendations only; check the task list above before acting.</p>':
+      priorities.map((p,i)=>{
+        const match=matchingTask(p.title);
+        return '<li><strong>'+esc(p.title)+'</strong>'+
+          (p.plant?' <small>· '+esc(p.plant)+'</small>':'')+
+          (p.rationale?'<p>'+esc(p.rationale)+'</p>':'')+
+          (match?'<p class="gaia-source">Already tracked in '+esc(match.source)+(match.id?' · <a href="https://app.todoist.com/app/task/'+encodeURIComponent(match.id)+'" target="_blank" rel="noopener noreferrer">Open task ↗</a>':'')+'</p>':
+          '<button type="button" data-add-gaia-priority="'+i+'"'+(addingPriority!==-1?' disabled':'')+'>'
+            +(addingPriority===i?'Adding…':'＋ Add task')+'</button>')+'</li>';
+      }).join("")+'</ol>'+
+      (priorityMessage?'<p role="status" class="gaia-source">'+esc(priorityMessage)+'</p>':'')+
+      '<p class="gaia-source">Adding creates a GAIA checklist task; it does not create a Todoist task.</p>':
       '<p>No suggested priorities in the latest review.</p>';
   }
   function render() {
@@ -164,6 +173,34 @@
       void refresh();
   }
 
+  document.getElementById("gaia-unified-priority-list")?.addEventListener("click",async event=>{
+    const button=event.target.closest("[data-add-gaia-priority]");
+    if(!button||addingPriority!==-1||!client||!user||!latest)return;
+    const index=Number(button.dataset.addGaiaPriority);
+    const priority=validPriorities(latest.priorities)[index];
+    if(!priority||matchingTask(priority.title))return;
+    const owner=user.id;
+    addingPriority=index;priorityMessage="";renderUnifiedPriorities();
+    try {
+      // Recheck server-side state before inserting to prevent stale duplicate suggestions.
+      const {data:existing,error:checkError}=await client.from("gaia_custom_tasks")
+        .select("id,title,completed_at").eq("user_id",owner).is("completed_at",null).limit(1000);
+      if(checkError)throw checkError;
+      const key=canonical(priority.title);
+      if((existing||[]).some(item=>canonical(item.title)===key)){
+        priorityMessage="This task is already on your GAIA checklist.";
+      }else{
+        const record={user_id:owner,title:priority.title.slice(0,120),
+          detail:(priority.rationale||"Suggested by GAIA review "+latest.review_date).slice(0,500),
+          plant_id:priority.plant_id||null,due_on:null};
+        const {error:insertError}=await client.from("gaia_custom_tasks").insert(record);
+        if(insertError)throw insertError;
+        priorityMessage="Added to your GAIA checklist.";
+        document.dispatchEvent(new CustomEvent("gaia:priority-added",{detail:{owner}}));
+      }
+    }catch(err){priorityMessage="Could not add task: "+(err?.message||"Please retry.");}
+    finally{addingPriority=-1;renderUnifiedPriorities();}
+  });
   document.addEventListener("gaia:todoist-tasks",event=>{
     if(event.detail?.owner===user?.id){activeTodoist=event.detail.tasks||[];renderUnifiedPriorities();}
   });
