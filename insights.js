@@ -71,7 +71,7 @@
     const target=document.getElementById("gaia-unified-priority-list");
     if(!target)return;
     if(!client||!user){target.textContent="Sign in to see private recommendations.";return;}
-    if(!latest){target.textContent=busy?"Loading latest review…":"No suggested priorities saved yet.";return;}
+    if(!latest){target.textContent=busy?"Loading latest review…":error?"Could not load suggestions: "+error:"No suggested priorities saved yet.";return;}
     const priorities=validPriorities(latest.priorities);
     const now=new Date();
     const today=[now.getFullYear(),String(now.getMonth()+1).padStart(2,"0"),String(now.getDate()).padStart(2,"0")].join("-");
@@ -152,8 +152,8 @@
       latest = Array.isArray(data) && data.length ? data[0] : null;
       lastCheckedAt = Date.now();
       const {data:rows,error:de}=await client.from("gaia_priority_decisions").select("priority_key,decision").eq("user_id",owner).limit(1000);
-      if(de)throw de;
-      if(user?.id===owner)decisions=new Map((rows||[]).map(r=>[r.priority_key,r.decision]));
+      if(de){console.warn("GAIA priority decisions unavailable",de.message);}
+      else if(user?.id===owner)decisions=new Map((rows||[]).map(r=>[r.priority_key,r.decision]));
     } catch (cause) {
       if (seq === sequence && user?.id === owner)
         error = cause?.message || "Please check your connection.";
