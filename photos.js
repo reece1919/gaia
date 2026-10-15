@@ -30,7 +30,7 @@
     };
     const label = labels[status] || labels.pending;
     const summary = String(p.analysis_summary || "").trim();
-    const confidence = Number(p.analysis_confidence);
+    const confidence = p.analysis_confidence == null ? NaN : Number(p.analysis_confidence);
     const confidenceText = Number.isFinite(confidence)
       ? " · " + Math.round(confidence * 100) + "% confidence"
       : "";
