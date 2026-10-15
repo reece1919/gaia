@@ -801,6 +801,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
   .grid>.card[open]>summary .summary-body{padding:12px 16px}
 }
 
+ .gaia-unified-todoist,.gaia-unified-priorities{margin:0 0 16px;padding:12px;border:1px solid rgba(195,176,126,.28);border-radius:10px} .gaia-unified-todoist h3,.gaia-unified-priorities h3,.gaia-task-content>h3{font-size:1rem;margin:0 0 9px;color:#e8cf9a} .gaia-unified-priorities small{font-weight:400;color:#b9c7bb} .gaia-unified-priorities ol{padding-left:20px;margin:5px 0} .gaia-unified-priorities li{padding:6px 0} .gaia-unified-priorities p{margin:3px 0;color:#c9d2c6;font-size:.85rem} .gaia-unified-priorities .gaia-source{font-size:.75rem;color:#b9c7bb} 
 </style>
 <link rel="stylesheet" href="security-mfa.css?v=1.2.1">
 <link rel="stylesheet" href="todoist-system.css?v=1.1.0">
@@ -842,7 +843,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 <div class="stat"><small>GOOD / EXCELLENT</small><b>26</b></div>
 <div class="stat"><small>NEEDS ATTENTION</small><b>19</b></div>
 </div>
-<details class="system-todoist-container"><summary>Todoist / GAIA tasks</summary><section class="system-todoist" data-system-todoist="gaia" aria-label="GAIA Todoist tasks"></section></details>
+
 
 <!-- Tablet field desk: viewport-aware navigation, no separate application or data store. -->
 <nav class="gaia-tablet-desk" aria-label="Tablet care shortcuts">
@@ -856,11 +857,11 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 
 <details id="gaia-tasks" class="gaia-task-panel" aria-label="Tasks to complete">
   <summary>
-    <span class="gaia-task-summary-title"><span aria-hidden="true" class="gaia-task-summary-icon">✓</span> GAIA checklist</span>
+    <span class="gaia-task-summary-title"><span aria-hidden="true" class="gaia-task-summary-icon">✓</span> Plant care &amp; tasks</span>
     <span id="gaia-task-progress" class="gaia-task-progress" aria-live="polite">Loading tasks…</span>
   </summary>
   <div class="gaia-task-content">
-    <p class="gaia-task-intro">GAIA-only checklist items. Todoist tasks and GAIA recommendations appear in their own sections. Check an item only after completing it.</p>
+    <p class="gaia-task-intro">One place for your Todoist tasks, GAIA checklist and suggested priorities. Suggestions are not confirmed tasks until approved or scheduled.</p><div class="gaia-unified-todoist"><h3>Todoist tasks</h3><section class="system-todoist" data-system-todoist="gaia" aria-label="GAIA Todoist tasks"></section></div><div class="gaia-unified-priorities"><h3>Suggested priorities <small>· advisory, not tasks</small></h3><div id="gaia-unified-priority-list" aria-live="polite">Loading latest GAIA review…</div></div><h3>GAIA checklist</h3>
     <details id="gaia-task-add" class="gaia-task-add" hidden>
       <summary><span aria-hidden="true">＋</span> Add a task</summary>
       <form id="gaia-task-create" class="gaia-task-create-form">
@@ -983,7 +984,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 <script src="security-mfa.js?v=1.3.1" defer></script>
 <script src="photos.js?v=20261014-access-test3" defer></script>
 <script src="tasks.js?v=20261015-clarity1" defer></script>
-<script src="insights.js?v=20261012-gaia2" defer></script>
+<script src="insights.js?v=20261015-unified1" defer></script>
 <script src="tablet.js?v=20261012-fielddesk1" defer></script>
 <script src="task-queue.js?v=20261015-2" defer></script>
 </body>
