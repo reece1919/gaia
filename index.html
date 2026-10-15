@@ -855,6 +855,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 .system-todoist-list .st-task-checkable .st-complete:focus-visible{outline:2px solid #e7d49e;outline-offset:2px}
 </style>
 <style>#gaia-checklist-section{display:none!important}.system-todoist-list .st-task-checkable{display:flex!important;gap:8px;align-items:center}.system-todoist-list .st-task-checkable .st-task-link{flex:1}</style>
+<style>#gaia-task-progress{display:none!important}</style>
 </head>
 <body>
 <div class="wrap">
@@ -907,7 +908,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 <details id="gaia-tasks" class="gaia-task-panel" aria-label="Tasks to complete">
   <summary>
     <span class="gaia-task-summary-title"><span aria-hidden="true" class="gaia-task-summary-icon">✓</span> Plant care &amp; tasks</span>
-    <span id="gaia-task-progress" class="gaia-task-progress" aria-live="polite">Loading tasks…</span>
+    <span id="gaia-task-progress" class="gaia-task-progress" aria-live="polite" hidden></span>
   </summary>
   <div class="gaia-task-content">
     <div class="gaia-unified-todoist"><section class="system-todoist" data-system-todoist="gaia" aria-label="GAIA Todoist tasks"></section></div><details id="gaia-checklist-section" class="gaia-legacy-tasks" hidden aria-hidden="true"><summary>Previously saved GAIA-only tasks (legacy)</summary><p>These older tasks are retained for migration. New tasks are created in Todoist only.</p><div id="gaia-checklist-heading" class="gaia-checklist-heading" hidden>Previously saved GAIA tasks</div>
