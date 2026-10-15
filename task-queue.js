@@ -38,6 +38,22 @@
    }
    const {data:rows,error}=await client.from("gaia_task_proposals").select("*").eq("status","suggested").order("created_at",{ascending:false}).limit(100);
    if(error)throw error;
+   const byPlant=new Map();
+   for(const item of rows||[]){
+    const id=String(item.plant_id);
+    if(!byPlant.has(id))byPlant.set(id,[]);
+    byPlant.get(id).push(item);
+   }
+   document.querySelectorAll("#grid .card[data-plant-id]").forEach(card=>{
+    const id=card.dataset.plantId,items=byPlant.get(id)||[];
+    let preview=card.querySelector(".gaia-card-todos");
+    if(!preview){preview=document.createElement("div");preview.className="gaia-card-todos";preview.style.cssText="margin:10px 0;padding:10px;border:1px solid rgba(180,190,150,.35);border-radius:10px;font-size:.88rem";card.querySelector(".summary-body")?.append(preview);}
+    if(!preview)return;
+    preview.innerHTML=items.length?'<strong>To-dos · '+items.length+'</strong>'+items.slice(0,3).map(item=>'<div style="padding-top:6px">'+esc(item.title)+(item.due_on?' <small>('+esc(item.due_on)+')</small>':'')+'</div>').join("")+(items.length>3?'<small>+'+(items.length-3)+' more inside</small>':''):'<small>No pending GAIA to-dos</small>';
+    let inside=card.querySelector(".gaia-plant-todos");
+    if(!inside){inside=document.createElement("section");inside.className="gaia-plant-todos";inside.style.cssText="padding:12px;margin:10px;border:1px solid rgba(180,190,150,.35);border-radius:10px";card.querySelector(".care")?.prepend(inside);}
+    if(inside)inside.innerHTML='<strong>Plant to-dos</strong>'+(items.length?items.map(item=>'<div style="padding:10px 0;border-bottom:1px solid rgba(180,190,150,.2)"><div>'+esc(item.title)+'</div><small>'+esc(item.rationale)+'</small><div style="display:flex;gap:8px;margin-top:6px"><button type="button" data-gaia-approve="'+esc(item.id)+'">Approve</button><button type="button" data-gaia-decline="'+esc(item.id)+'">Decline</button></div></div>').join(""):'<p>No pending tasks for this plant.</p>');
+   });
    root().innerHTML='<p>'+due.length+' new photo reminders queued · '+(rows||[]).length+' awaiting decisions</p>'+
     ((rows||[]).length?'<div style="display:grid;gap:12px">'+rows.map(r=>'<div style="border:1px solid var(--border,#768);border-radius:12px;padding:12px"><strong>'+esc(r.title)+'</strong><p>'+esc(r.rationale)+'</p><small>'+esc(name(r.plant_id))+(r.due_on?' · Due '+esc(r.due_on):'')+'</small><div style="display:flex;gap:12px;margin-top:8px"><button data-gaia-approve="'+esc(r.id)+'">Approve for task creation</button><button data-gaia-decline="'+esc(r.id)+'">Decline</button></div></div>').join("")+'</div>':'<p>No suggestions awaiting approval.</p>');
   }catch(e){root().textContent="Task queue unavailable: "+(e?.message||"Please retry.");}
