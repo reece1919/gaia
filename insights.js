@@ -121,18 +121,22 @@
     }
 
     if (latest) {
-      stamp.textContent = "Last saved · " + dateText(latest.review_date);
+      stamp.textContent = "Updated " + dateText(latest.review_date);
+      const summary = String(latest.summary || "").trim();
+      const sentences = summary.match(/[^.!?]+(?:[.!?]+|$)/g) || [];
+      const lead = sentences.slice(0,2).join(" ").trim() || "Your latest plant-care review is available.";
+      const rest = sentences.slice(2).join(" ").trim();
       const priorities = validPriorities(latest.priorities);
       body.innerHTML =
-        '<div class="gaia-insights-meta"><span class="gaia-insights-seal">GAIA’S NOTES</span>' +
-          '<time datetime="' + esc(latest.review_date || "") + '">' +
-          esc(dateText(latest.review_date)) + '</time></div>' +
-        '<p class="gaia-insights-summary">' + esc(latest.summary || "") + '</p>' +
-        (latest.evidence ?
-          '<details class="gaia-insights-evidence"><summary>Evidence &amp; uncertainties</summary>' +
-          '<p>' + esc(latest.evidence) + '</p></details>' : '') +
-        '<p class="gaia-insights-disclaimer">AI-generated suggestions, not confirmed care events. ' +
-          'Check actual plant and soil conditions before acting.</p>';
+        '<div class="gaia-brief-head"><span class="gaia-insights-seal">LATEST REVIEW</span>' +
+        '<time datetime="' + esc(latest.review_date || "") + '">' + esc(dateText(latest.review_date)) + '</time></div>' +
+        '<p class="gaia-brief-lead">' + esc(lead) + '</p>' +
+        '<div class="gaia-brief-next"><strong>' + priorities.length + ' suggested priorities</strong>' +
+        '<span>Review and add tasks in Plant care &amp; tasks above.</span></div>' +
+        (rest ? '<details class="gaia-brief-detail"><summary>Read full review</summary><p>' + esc(summary) + '</p></details>' : '') +
+        (latest.evidence ? '<details class="gaia-brief-detail"><summary>Evidence &amp; uncertainties</summary><p>' +
+          esc(latest.evidence) + '</p></details>' : '') +
+        '<p class="gaia-insights-disclaimer">Recommendations are AI-generated; confirm plant conditions before acting.</p>';
     } else {
       stamp.textContent = busy ? "Checking saved reviews…" : "Awaiting first review";
       body.innerHTML =
