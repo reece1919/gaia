@@ -108,6 +108,8 @@
   function render() {
     renderUnifiedPriorities();
     button.disabled = busy || !client || !user;
+    const reviewButton=document.getElementById("gaia-photo-review-now");
+    if(reviewButton){reviewButton.disabled=reviewing||busy||!client||!user;reviewButton.textContent=reviewing?"Analyzing photos…":"Review saved photos";}
     button.textContent = busy ? "Checking…" : "Refresh notes";
     status.classList.toggle("gaia-insights-error", Boolean(error));
 
@@ -265,6 +267,26 @@
   document.addEventListener("visibilitychange", () => {
     if (document.visibilityState === "visible" && client && user && !busy &&
         Date.now()-lastCheckedAt > 60*1000) void refresh();
+  });
+  document.getElementById("gaia-photo-review-now")?.addEventListener("click",async()=>{
+    if(reviewing||!client||!user)return;
+    reviewing=true;error="";status.textContent="Analyzing saved plant photos. This may take a minute…";render();
+    try{
+      const {data:sessionData,error:sessionError}=await client.auth.getSession();
+      if(sessionError)throw sessionError;
+      if(!sessionData?.session)throw new Error("Sign in to review photos.");
+      const {data:assurance,error:assuranceError}=await client.auth.mfa.getAuthenticatorAssuranceLevel();
+      if(assuranceError)throw assuranceError;
+      if(assurance?.currentLevel!=="aal2")throw new Error("Verify your authenticator to run the private review.");
+      const response=await fetch("https://zdurujqwhxqrwbhwzzxg.supabase.co/functions/v1/gaia-photo-review",{
+        method:"POST",headers:{"authorization":"Bearer "+sessionData.session.access_token,"apikey":client.supabaseKey||"","content-type":"application/json"},body:"{}"
+      });
+      const result=await response.json().catch(()=>({}));
+      if(!response.ok)throw new Error(result.error||"Photo review failed ("+response.status+").");
+      status.textContent="Reviewed "+result.reviewed+" plants: "+result.comparisons+" comparisons, "+result.baselines+" baseline assessments. "+(result.failures?.length?result.failures.length+" need follow-up.":"");
+      await refresh();
+    }catch(cause){error=cause?.message||"Photo review could not run.";status.textContent=error;}
+    finally{reviewing=false;render();if(error)status.textContent=error;}
   });
   button.addEventListener("click", () => void refresh());
   if (window.GAIA_CLOUD) onAuth(window.GAIA_CLOUD);
