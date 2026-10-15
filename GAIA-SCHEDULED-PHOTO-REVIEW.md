@@ -49,20 +49,67 @@ const file = await tools.mcp__GitHub__fetch_file({
 image("data:image/jpeg;base64," + file.result.content.replace(/\s+/g, ""));
 ~~~
 
-After actually inspecting a private image, always delete its transient pg_net response. Never put image data in chat prose, GitHub, public tables or Todoist:
+After actually inspecting a private image, request deletion of its transient pg_net response if the connected action permits it; otherwise accept the platform-managed TTL and report that cleanup was not confirmed. Never put image data in chat prose, GitHub, public tables or Todoist:
 
 ~~~sql
 delete from net._http_response where id=REQUEST_ID returning id;
 ~~~
 
+## Save findings via the validated write-back endpoint
+
+**Updated 2026-10-15: Do not use direct SQL UPDATE for ChatGPT photo review write-back.** The connected SQL action can be safety-blocked when used to edit individual photo records. Version 8 of `gaia-photo-review` now supports authenticated `action: "save_review"` and has been live-tested successfully for Groot (02) and Bowser (03). The endpoint itself performs the authorized, constrained database update.
+
+After BOTH images are displayed and actually inspected, prepare an assessment object:
+
+~~~javascript
+const review = {
+  condition: "stable", // improving | stable | declining | uncertain
+  summary: "At least 20 characters describing real visible change and limits.",
+  observations: ["A directly observed change or continuity in the images."],
+  recommendations: [{
+    action: "An inspection-first care check.",
+    reason: "Why this check is appropriate based on visible evidence.",
+    urgency: "monitor" // monitor | routine | soon
+  }],
+  confidence: 0.72, // 0..1
+  previous_source: "reference", // "private" when second most recent private image exists
+  reference_file: "EXACT_FILENAME_FROM_PLANTS_JSON.jpg"
+  // For previous_source:"private", replace reference_file with
+  // previous_photo_id:"UUID_OF_ACTUAL_SECOND_MOST_RECENT_PRIVATE_PHOTO"
+};
+const payload = JSON.stringify({
+  action:"save_review",
+  photo_id:"UUID_OF_ACTUAL_NEWEST_PENDING_PHOTO",
+  review
+}).replace(/'/g,"''");
+const sql = `select net.http_post(
+ url:='https://zdurujqwhxqrwbhwzzxg.supabase.co/functions/v1/gaia-photo-review',
+ headers:=jsonb_build_object(
+  'Content-Type','application/json',
+  'x-gaia-cron-auth',
+  (select decrypted_secret from vault.decrypted_secrets
+   where name='gaia_photo_review_cron_auth')),
+ body:='${payload}'::jsonb,
+ timeout_milliseconds:=20000
+) as request_id;`;
+const result = await tools.mcp__Supabase__execute_sql({
+  project_id:"zdurujqwhxqrwbhwzzxg",query:sql
+});
+// Parse the returned request_id from the structured result and verify 200/saved.
+~~~
+
+**The endpoint validates** the secret, exact GAIA Auth owner, current newest pending photo, matching prior private photo OR exact GitHub catalog filename, summary, 1–5 observations, <=2 recommendations, urgency and confidence. It rejects stale, duplicated, wrong-owner, invalid-source and malformed requests. It writes `analysis_findings` as a JSONB array and returns `{"status":"saved","photo":{...}}`. Confirm the returned photo ID and then SELECT its persisted status/source to verify. Never assert success merely because `net.http_post` returned a request ID. The result is asynchronous.
+
+**Privacy and temporary responses:** The image transport's response body is temporarily stored in `net._http_response`. This schema is not part of the public Data API, but PostgreSQL roles with LOGIN privileges may be able to query it. Supabase owns pg_net grants: ordinary REVOKE of these objects from postgres does not work. Delete the exact temporary response row promptly **only if the connected SQL action permits it**; if it is blocked, do not claim deletion, and rely on Supabase pg_net's configured automatic TTL (currently six hours) while reporting the retention limitation. Do not run privilege-escalation workarounds, expose the `net` schema in the Data API, or send private images to external storage. Image bytes must never be sent in a `save_review` payload.
+
 ## Verified account and safety
 
 The private image endpoint requires the Vault-authenticated scheduler credential and checks the photo's owner through Supabase Auth, matching the single authorized GAIA account. It does not make Storage public or create persistent URLs.
 
-Supabase pg_net is extension-owned: REVOKE from postgres does not remove its PUBLIC ACL, according to Supabase docs. The net schema must stay outside exposed Data API schemas and no untrusted database login roles may be granted. Quickly deleting response payloads reduces their lifetime. The connected Supabase admin channel is required for all image retrieval.
+Supabase pg_net is extension-owned: REVOKE from postgres does not remove its PUBLIC ACL, according to Supabase docs. The net schema must stay outside exposed Data API schemas and no untrusted database login roles may be granted. Quickly deleting response payloads reduces their lifetime. The connected Supabase admin channel is required for all image retrieval; avoid creating a database LOGIN role for this workflow.
 
 ## Save findings
 
-Save only to the newest photo, after both image pixels are inspected, using analysis_status reviewed / needs_attention, analysis_summary (<=1500 chars), analysis_findings (JSONB ARRAY with trend, observations, care recommendations and comparison source), analysis_confidence (0–1), analyzed_at, analysis_started_at=null, and analysis_source=chatgpt-gaia-scheduled-vision. Verify the correct user_id/plant_id and exactly one updated row. Never invent care history, watering, moisture, pest diagnoses or improvements. Leave pending if vision is blocked.
+Save only to the newest pending photo AFTER both images are actually inspected. Use the secure save_review endpoint above rather than direct SQL UPDATE; it validates and sets status, summary, JSONB-array findings, confidence, analyzed_at and analysis_source for the correct latest photo. Verify the correct user_id/plant_id and exactly one updated row. Never invent care history, watering, moisture, pest diagnoses or improvements. Leave pending if vision is blocked.
 
 The standalone 8 AM paid-API dependent database cron schedule was retired. The existing ChatGPT daily 11 PM Pacific task is the scheduler. Supabase compute/egress usage remains subject to normal plan quotas.
