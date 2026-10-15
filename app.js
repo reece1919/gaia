@@ -169,12 +169,10 @@
   function renderSummary(data) {
     const plants = data.plants;
     const good = plants.filter(p => p.status === "Excellent" || p.status === "Good").length;
-    const stats = document.querySelectorAll(".stat b");
-    if (stats.length >= 2) {
-      stats[0].textContent = String(plants.length);
-      stats[1].textContent = String(good);
-
-    }
+    const totalCount=document.getElementById("gaia-total-count");
+    const goodCount=document.getElementById("gaia-good-count");
+    if(totalCount)totalCount.textContent=String(plants.length);
+    if(goodCount)goodCount.textContent=String(good);
     const attentionCount=document.getElementById("gaia-attention-count");
     if(attentionCount)attentionCount.textContent=String(plants.length-good);
     const attentionCondition=document.getElementById("gaia-attention-condition");
