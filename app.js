@@ -5,8 +5,6 @@
   const empty = document.getElementById("empty");
   const loading = document.getElementById("loading");
   const search = document.getElementById("search");
-  const health = document.getElementById("health");
-  const focus = document.getElementById("focus");
   let cards = [];
 
   const esc = value => String(value ?? "").replace(/[&<>"']/g, c =>
@@ -158,14 +156,10 @@
 
   function filter() {
     const q = (search.value || "").trim().toLowerCase();
-    const h = health.value;
-    const f = focus.value;
     let count = 0;
     for (const card of cards) {
       const haystack = (card.dataset.name + " " + card.dataset.species).toLowerCase();
-      const show = (!q || haystack.includes(q)) &&
-        (h === "all" || card.dataset.status === h) &&
-        (f === "all" || (f === "mites" && card.dataset.pest === "reported"));
+      const show = !q || haystack.includes(q);
       card.hidden = !show;
       if (show) count++;
     }
@@ -237,7 +231,5 @@
       button.setAttribute("aria-pressed", String(button===fact&&!isSame)));
   });
   search.addEventListener("input", filter);
-  health.addEventListener("change", filter);
-  focus.addEventListener("change", filter);
   start();
 })();
