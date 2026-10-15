@@ -856,6 +856,14 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 </style>
 <style>#gaia-checklist-section{display:none!important}.system-todoist-list .st-task-checkable{display:flex!important;gap:8px;align-items:center}.system-todoist-list .st-task-checkable .st-task-link{flex:1}</style>
 <style>#gaia-task-progress{display:none!important}</style>
+<style>
+.stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+.gaia-hero-attention{display:flex;align-items:center;flex-wrap:wrap;gap:6px 10px;margin-top:11px;font-size:12px;color:var(--text,#e8d6b0)}
+.gaia-hero-attention-label{font-size:10px;letter-spacing:.09em;font-weight:750;color:var(--muted,#b9c7bb)}
+.gaia-hero-attention strong{font-size:21px;font-family:var(--serif,serif);color:#e8cf9a}
+.gaia-hero-attention #gaia-attention-condition{color:var(--muted,#b9c7bb)}
+@media(max-width:650px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.stats .stat:first-child{display:block}}
+</style>
 </head>
 <body>
 <div class="wrap">
@@ -867,6 +875,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
         <div class="hero-eyebrow">THE LIVING COLLECTION</div>
         <h1>GAIA</h1>
         <div class="hero-tagline">The Midnight Herbarium</div>
+        <div class="gaia-hero-attention" aria-live="polite"><span class="gaia-hero-attention-label">NEEDS ATTENTION</span><strong id="gaia-attention-count">19</strong><span id="gaia-attention-condition">plants requiring care or monitoring</span></div>
       </div>
     </div>
     <div class="hero-divider" aria-hidden="true"><span>✧</span></div>
@@ -891,7 +900,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 <div class="stats">
 <div class="stat"><small>TOTAL COLLECTION</small><b>45</b></div>
 <div class="stat"><small>GOOD / EXCELLENT</small><b>26</b></div>
-<div class="stat"><small>NEEDS ATTENTION</small><b>19</b></div>
+
 </div>
 
 
@@ -938,7 +947,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
   </div>
 
 </details>
-<details id="gaia-insights" class="gaia-insights" open aria-label="GAIA AI insights">
+<details id="gaia-insights" class="gaia-insights" aria-label="GAIA AI insights">
   <summary>
     <span class="gaia-insights-heading"><span class="gaia-insights-mark" aria-hidden="true">✧</span> GAIA Insights</span>
     <span id="gaia-insights-stamp" class="gaia-insights-stamp">Private AI notes</span>
