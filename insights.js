@@ -48,7 +48,22 @@
     }).filter(p => p && p.title);
   }
 
-  function renderUnifiedPriorities() {
+  let activeTodoist = [];
+  let activeGaia = [];
+  const canonical = value => String(value || "").toLowerCase().replace(/[^a-z0-9 ]/g," ").replace(/\b(the|a|an|for|to|and|my|gaia)\b/g," ").replace(/\s+/g," ").trim();
+  function matchingTask(title) {
+    const target=canonical(title);
+    if(!target)return null;
+    const options=activeTodoist.map(task=>({title:task.content||"",source:"Todoist",id:task.id})).concat(activeGaia.filter(task=>!task.completed).map(task=>({title:task.title,source:"GAIA checklist"})));
+    return options.find(task=>{
+      const other=canonical(task.title);
+      if(!other)return false;
+      if(other===target)return true;
+      const words=target.split(" ");
+      return words.length>=4 && (other.includes(target)||target.includes(other));
+    })||null;
+  }
+    function renderUnifiedPriorities() {
     const target=document.getElementById("gaia-unified-priority-list");
     if(!target)return;
     if(!client||!user){target.textContent="Sign in to see private recommendations.";return;}
@@ -56,9 +71,9 @@
     const priorities=validPriorities(latest.priorities);
     target.innerHTML=priorities.length?
       '<p class="gaia-source">From GAIA review · '+esc(dateText(latest.review_date))+'</p><ol>'+
-      priorities.map(p=>'<li><strong>'+esc(p.title)+'</strong>'+
+      priorities.map(p=>{const match=matchingTask(p.title);return '<li><strong>'+esc(p.title)+'</strong>'+
         (p.plant?' <small>· '+esc(p.plant)+'</small>':'')+
-        (p.rationale?'<p>'+esc(p.rationale)+'</p>':'')+'</li>').join("")+
+        (match?'<p class="gaia-source">Already tracked in '+esc(match.source)+(match.id?' · <a href="https://app.todoist.com/app/task/'+encodeURIComponent(match.id)+'" target="_blank" rel="noopener noreferrer">Open task ↗</a>':'')+'</p>':(p.rationale?'<p>'+esc(p.rationale)+'</p>':''))+'</li>';}).join("")+
       '</ol><p class="gaia-source">Recommendations only; check the task list above before acting.</p>':
       '<p>No suggested priorities in the latest review.</p>';
   }
@@ -139,6 +154,7 @@
     if (changed) {
       ++sequence;
       latest = null;
+      activeTodoist=[];activeGaia=[];
       error = "";
       lastCheckedAt = 0;
       busy = false;
@@ -148,6 +164,12 @@
       void refresh();
   }
 
+  document.addEventListener("gaia:todoist-tasks",event=>{
+    if(event.detail?.owner===user?.id){activeTodoist=event.detail.tasks||[];renderUnifiedPriorities();}
+  });
+  document.addEventListener("gaia:checklist-tasks",event=>{
+    if(event.detail?.owner===user?.id){activeGaia=event.detail.tasks||[];renderUnifiedPriorities();}
+  });
   document.addEventListener("gaia:auth", event => onAuth(event.detail));
   document.addEventListener("gaia:care-synced", () => {
     if (client && user && !busy && Date.now()-lastCheckedAt > 60*1000)
