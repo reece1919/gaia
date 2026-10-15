@@ -82,11 +82,12 @@
           (p.plant?' <small>· '+esc(p.plant)+'</small>':'')+
           (p.rationale?'<p>'+esc(p.rationale)+'</p>':'')+
           (match?'<p class="gaia-source">Already tracked in '+esc(match.source)+(match.id?' · <a href="https://app.todoist.com/app/task/'+encodeURIComponent(match.id)+'" target="_blank" rel="noopener noreferrer">Open task ↗</a>':'')+'</p>':
-          '<button type="button" data-add-gaia-priority="'+i+'"'+(addingPriority!==-1?' disabled':'')+'>'
-            +(addingPriority===i?'Adding…':'＋ Add to GAIA')+'</button>'+ '<button type="button" data-gaia-todoist="'+i+'"'+(addingPriority!==-1?' disabled':'')+'>Add to Todoist</button>')+'<button type="button" data-gaia-dismiss="'+i+'"'+(addingPriority!==-1?' disabled':'')+'>Dismiss</button></li>';
+          '<label style="display:inline-flex;align-items:center;gap:6px;margin-right:8px">Due <input type="date" data-gaia-due="'+i+'" required aria-label="Due date for '+esc(p.title)+'"></label>'+
+          '<button type="button" data-gaia-todoist="'+i+'"'+(addingPriority!==-1?' disabled':'')+'>Add to Todoist</button>'+
+          '<button type="button" data-gaia-dismiss="'+i+'"'+(addingPriority!==-1?' disabled':'')+'>Dismiss</button></li>';
       }).join("")+'</ol>'+
       (priorityMessage?'<p role="status" class="gaia-source">'+esc(priorityMessage)+'</p>':'')+
-      '<p class="gaia-source">Choose GAIA or Todoist, or dismiss a suggestion.</p>':
+      '<p class="gaia-source">Choose a due date before adding to Todoist, or dismiss a suggestion.</p>':
       '<p>No suggested priorities in the latest review.</p>';
   }
   function render() {
@@ -188,6 +189,8 @@
     const priority=validPriorities(latest.priorities)[index];
     if(!priority)return;
     const owner=user.id,key=decisionKey(priority);
+    const due=todo?document.querySelector(`[data-gaia-due="${index}"]`)?.value:"";
+    if(todo&&!/^\\d{4}-\\d{2}-\\d{2}$/.test(due)){priorityMessage="Choose a due date before adding to Todoist.";renderUnifiedPriorities();return;}
     if(todo&&(matchingTask(priority.title)||decisions.get(key)==="todoist"))return;
     addingPriority=index;priorityMessage="";renderUnifiedPriorities();
     try{
@@ -217,7 +220,7 @@
           cursor=list.next_cursor;
         }
         if(found)throw Error("A matching Todoist task already exists. Refresh the task list.");
-        const payload={content:priority.title.slice(0,120),description:(priority.rationale+"\n\nSource: GAIA review "+latest.review_date+"\nhttps://reece1919.github.io/gaia/").slice(0,1000),labels:["gaia"]};
+        const payload={content:priority.title.slice(0,120),description:(priority.rationale+"\n\nSource: GAIA review "+latest.review_date+"\nhttps://reece1919.github.io/gaia/").slice(0,1000),labels:["gaia"],due_date:due,project_id:"6hhpRVXF5cQv89rr",section_id:"6hjxVjvF3fP5gRwJ"};
         const created=await api({action:"api",path:"/tasks",method:"POST",body:JSON.stringify(payload)});
         if(!created.id)throw Error("Todoist did not confirm creation. Check Todoist before retrying.");
         const {error:saveError}=await client.from("gaia_priority_decisions").upsert({user_id:owner,priority_key:key,decision:"todoist",todoist_task_id:String(created.id)},{onConflict:"user_id,priority_key"});
@@ -227,34 +230,6 @@
         document.dispatchEvent(new Event("gaia:todoist-refresh"));
       }
     }catch(err){priorityMessage=err?.message||"Could not save decision.";}
-    finally{addingPriority=-1;renderUnifiedPriorities();}
-  });
-  document.getElementById("gaia-unified-priority-list")?.addEventListener("click",async event=>{
-    const button=event.target.closest("[data-add-gaia-priority]");
-    if(!button||addingPriority!==-1||!client||!user||!latest)return;
-    const index=Number(button.dataset.addGaiaPriority);
-    const priority=validPriorities(latest.priorities)[index];
-    if(!priority||matchingTask(priority.title))return;
-    const owner=user.id;
-    addingPriority=index;priorityMessage="";renderUnifiedPriorities();
-    try {
-      // Recheck server-side state before inserting to prevent stale duplicate suggestions.
-      const {data:existing,error:checkError}=await client.from("gaia_custom_tasks")
-        .select("id,title,completed_at").eq("user_id",owner).is("completed_at",null).limit(1000);
-      if(checkError)throw checkError;
-      const key=canonical(priority.title);
-      if((existing||[]).some(item=>canonical(item.title)===key)){
-        priorityMessage="This task is already on your GAIA checklist.";
-      }else{
-        const record={user_id:owner,title:priority.title.slice(0,120),
-          detail:(priority.rationale||"Suggested by GAIA review "+latest.review_date).slice(0,500),
-          plant_id:priority.plant_id||null,due_on:null};
-        const {error:insertError}=await client.from("gaia_custom_tasks").insert(record);
-        if(insertError)throw insertError;
-        priorityMessage="Added to your GAIA checklist.";
-        document.dispatchEvent(new CustomEvent("gaia:priority-added",{detail:{owner}}));
-      }
-    }catch(err){priorityMessage="Could not add task: "+(err?.message||"Please retry.");}
     finally{addingPriority=-1;renderUnifiedPriorities();}
   });
   document.addEventListener("gaia:todoist-tasks",event=>{
