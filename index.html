@@ -864,6 +864,16 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 .gaia-hero-attention #gaia-attention-condition{color:var(--muted,#b9c7bb)}
 @media(max-width:650px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.stats .stat:first-child{display:block}}
 </style>
+<style>
+.gaia-hero-stats{display:flex;flex-wrap:wrap;align-items:stretch;gap:9px;margin-top:14px;max-width:720px}
+.gaia-hero-stat{display:flex;flex-direction:column;gap:4px;min-width:120px;padding:10px 13px;border:1px solid var(--line,rgba(190,190,170,.3));border-radius:8px;background:rgba(255,255,255,.035)}
+.gaia-hero-stat small{font-size:10px;font-weight:750;letter-spacing:.075em;color:var(--muted,#b9c7bb)}
+.gaia-hero-stat strong{font-size:25px;line-height:1.1;font-family:var(--serif,serif);font-weight:500;color:var(--text,#e8d6b0)}
+.gaia-hero-stat-attention{flex:1;min-width:180px}
+.gaia-hero-stat-attention strong{color:#e8cf9a}
+.gaia-hero-stat-attention span{font-size:11px;line-height:1.4;color:var(--muted,#b9c7bb)}
+@media(max-width:600px){.gaia-hero-stats{gap:7px}.gaia-hero-stat{min-width:0;flex:1 1 calc(50% - 7px);padding:8px 10px}.gaia-hero-stat-attention{flex-basis:100%}}
+</style>
 </head>
 <body>
 <div class="wrap">
@@ -875,7 +885,11 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
         <div class="hero-eyebrow">THE LIVING COLLECTION</div>
         <h1>GAIA</h1>
         <div class="hero-tagline">The Midnight Herbarium</div>
-        <div class="gaia-hero-attention" aria-live="polite"><span class="gaia-hero-attention-label">NEEDS ATTENTION</span><strong id="gaia-attention-count">19</strong><span id="gaia-attention-condition">plants requiring care or monitoring</span></div>
+        <div class="gaia-hero-stats" aria-label="Plant collection health overview">
+          <div class="gaia-hero-stat"><small>TOTAL COLLECTION</small><strong id="gaia-total-count">45</strong></div>
+          <div class="gaia-hero-stat"><small>GOOD / EXCELLENT</small><strong id="gaia-good-count">26</strong></div>
+          <div class="gaia-hero-stat gaia-hero-stat-attention"><small>NEEDS ATTENTION</small><strong id="gaia-attention-count">19</strong><span id="gaia-attention-condition">plants requiring care or monitoring</span></div>
+        </div>
       </div>
     </div>
     <div class="hero-divider" aria-hidden="true"><span>✧</span></div>
@@ -897,11 +911,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
     <circle cx="233" cy="99" r="1.5" fill="currentColor"/><circle cx="31" cy="126" r="1.4" fill="currentColor"/>
   </svg>
 </header>
-<div class="stats">
-<div class="stat"><small>TOTAL COLLECTION</small><b>45</b></div>
-<div class="stat"><small>GOOD / EXCELLENT</small><b>26</b></div>
 
-</div>
 
 
 <!-- Tablet field desk: viewport-aware navigation, no separate application or data store. -->
