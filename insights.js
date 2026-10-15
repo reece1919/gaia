@@ -73,6 +73,8 @@
     if(!client||!user){target.textContent="Sign in to see private recommendations.";return;}
     if(!latest){target.textContent=busy?"Loading latest review…":"No suggested priorities saved yet.";return;}
     const priorities=validPriorities(latest.priorities);
+    const now=new Date();
+    const today=[now.getFullYear(),String(now.getMonth()+1).padStart(2,"0"),String(now.getDate()).padStart(2,"0")].join("-");
     target.innerHTML=priorities.length?
       '<p class="gaia-source">From GAIA review · '+esc(dateText(latest.review_date))+'</p><ol>'+
       priorities.map((p,i)=>{
@@ -82,7 +84,7 @@
           (p.plant?' <small>· '+esc(p.plant)+'</small>':'')+
           (p.rationale?'<p>'+esc(p.rationale)+'</p>':'')+
           (match?'<p class="gaia-source">Already tracked in '+esc(match.source)+(match.id?' · <a href="https://app.todoist.com/app/task/'+encodeURIComponent(match.id)+'" target="_blank" rel="noopener noreferrer">Open task ↗</a>':'')+'</p>':
-          '<label style="display:inline-flex;align-items:center;gap:6px;margin-right:8px">Due <input type="date" data-gaia-due="'+i+'" required aria-label="Due date for '+esc(p.title)+'"></label>'+
+          '<label style="display:inline-flex;align-items:center;gap:6px;margin-right:8px">Due <input type="date" data-gaia-due="'+i+'" min="'+today+'" value="'+today+'" required aria-label="Due date for '+esc(p.title)+'"></label>'+
           '<button type="button" data-gaia-todoist="'+i+'"'+(addingPriority!==-1?' disabled':'')+'>Add to Todoist</button>'+
           '<button type="button" data-gaia-dismiss="'+i+'"'+(addingPriority!==-1?' disabled':'')+'>Dismiss</button></li>';
       }).join("")+'</ol>'+
@@ -190,7 +192,7 @@
     if(!priority)return;
     const owner=user.id,key=decisionKey(priority);
     const due=todo?document.querySelector(`[data-gaia-due="${index}"]`)?.value:"";
-    if(todo&&!/^\d{4}-\d{2}-\d{2}$/.test(due)){priorityMessage="Choose a due date before adding to Todoist.";renderUnifiedPriorities();return;}
+    if(todo&&(!/^\d{4}-\d{2}-\d{2}$/.test(due)||due<new Date().toLocaleDateString("en-CA"))){priorityMessage="Choose today or a future due date before adding to Todoist.";renderUnifiedPriorities();return;}
     if(todo&&(matchingTask(priority.title)||decisions.get(key)==="todoist"))return;
     addingPriority=index;priorityMessage="";renderUnifiedPriorities();
     try{
