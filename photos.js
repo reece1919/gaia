@@ -20,6 +20,30 @@
     return new Intl.DateTimeFormat(undefined,{month:"short",day:"numeric",year:"numeric"})
       .format(new Date(y,m-1,d));
   }
+  function analysisMarkup(p) {
+    const status = p.analysis_status || "pending";
+    const labels = {
+      pending: "Awaiting GAIA review",
+      reviewed: "Reviewed",
+      needs_attention: "Needs attention",
+      unavailable: "Review unavailable"
+    };
+    const label = labels[status] || labels.pending;
+    const summary = String(p.analysis_summary || "").trim();
+    const confidence = Number(p.analysis_confidence);
+    const confidenceText = Number.isFinite(confidence)
+      ? " · " + Math.round(confidence * 100) + "% confidence"
+      : "";
+    const reviewedText = p.analyzed_at
+      ? " · " + new Intl.DateTimeFormat(undefined,{month:"short",day:"numeric"})
+          .format(new Date(p.analyzed_at))
+      : "";
+    return '<div class="photo-analysis photo-analysis-' + esc(status) + '">' +
+      '<div class="photo-analysis-head"><span>' + esc(label) + '</span>' +
+      '<small>' + esc(reviewedText + confidenceText) + '</small></div>' +
+      (summary ? '<p>' + esc(summary) + '</p>' : '') +
+      '</div>';
+  }
   function safeError(error) {
     console.error("GAIA photo journal:",error);
     return error?.message || "Please try again.";
@@ -102,6 +126,7 @@
             '<div class="photo-gallery-meta"><time>' + esc(displayDate(p.taken_on)) +
             '</time>' + (i===0 ? '<span class="photo-cover-label">Current</span>' : '') + '</div>' +
             (p.caption ? '<div class="photo-caption">' + esc(p.caption) + '</div>' : '') +
+            analysisMarkup(p) +
             '<button type="button" data-photo-delete="' + esc(p.id) + '">Delete</button>' +
             '</div>';
         }).join("") + '</div>' +
@@ -141,7 +166,7 @@
     const request=++sequence, owner=user.id;
     try {
       const {data,error}=await client.from("plant_photos")
-        .select("id,plant_id,object_path,caption,taken_on,created_at")
+        .select("id,plant_id,object_path,caption,taken_on,created_at,analysis_status,analysis_summary,analysis_findings,analysis_confidence,analyzed_at,analysis_source")
         .order("created_at",{ascending:false})
         .limit(1500);
       if (error) throw error;
@@ -242,8 +267,8 @@
       form.reset();
       form.elements.taken_on.value=today();
       await refresh();
-      localStatus(id,"Photo saved. It will appear on your other signed-in devices after syncing.");
-      report("Photo saved to your private GAIA collection and available on your signed-in devices.");
+      localStatus(id,"Photo saved and queued for GAIA visual review.");
+      report("Photo saved privately and queued for GAIA visual review.");
     } catch(error) {
       if(objectUploaded) {
         try{await client.storage.from(BUCKET).remove([path]);}
