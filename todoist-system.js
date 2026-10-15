@@ -7,7 +7,7 @@
  const BRIDGE=URL+"/functions/v1/orbit-todoist";
  const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
  const localDay=d=>[d.getFullYear(),String(d.getMonth()+1).padStart(2,"0"),String(d.getDate()).padStart(2,"0")].join("-");
- let db=null,busy=false,verifying=false,last=0,owner="",pending=null;
+ let db=null,busy=false,verifying=false,last=0,owner="",pending=null,completing=new Set();
  function getDB(){
   if(window.ORBITAuth?.client)return window.ORBITAuth.client;
   if(window.GAIA_CLOUD?.client)return window.GAIA_CLOUD.client;
@@ -41,6 +41,34 @@
    finally{verifying=false}
   });
  }
+ for(const host of hosts)host.addEventListener("click",async event=>{
+  const button=event.target.closest("[data-st-complete]");
+  if(!button||!host.contains(button))return;
+  const id=button.dataset.stComplete;
+  if(!id||completing.has(id))return;
+  completing.add(id);button.disabled=true;
+  const message=host.querySelector(".system-todoist-message");
+  const previous=message.textContent;
+  message.textContent="Completing task in Todoist…";
+  try{
+   const client=getDB();if(!client)throw Error("Sign in to complete tasks.");
+   const {data,error}=await client.auth.getSession();
+   if(error)throw error;
+   if(!data?.session)throw Error("Sign in to complete tasks.");
+   const assurance=await client.auth.mfa.getAuthenticatorAssuranceLevel();
+   if(assurance.error)throw assurance.error;
+   if(assurance.data?.currentLevel!=="aal2")throw Error("Verify your authenticator to complete tasks.");
+   await request("api",data.session,{path:"/tasks/"+encodeURIComponent(id)+"/close",method:"POST"});
+   last=0;
+   await refresh(true);
+  }catch(err){
+   message.textContent=err?.message||"Could not complete task.";
+   button.disabled=false;
+  }finally{
+   completing.delete(id);
+   if(message.textContent==="Completing task in Todoist…")message.textContent=previous;
+  }
+ });
  function note(text){
   for(const h of hosts){h.querySelector(".system-todoist-message").textContent=text;h.querySelector(".system-todoist-list").replaceChildren()}
  }
@@ -121,7 +149,7 @@
     const depth=Math.min(Number(task._treeDepth||0),5);
     const nested=depth>0;
     const marker=nested?'↳ ':'';
-    return '<a class="st-task" href="https://app.todoist.com/app/task/'+id+'" target="_blank" rel="noopener noreferrer"'+(nested?' style="padding-left:'+(0.5+depth*0.9)+'rem"':'')+'><span>'+marker+esc(task.content||"Untitled task")+'</span><span class="st-arrow" aria-hidden="true">↗</span></a>';
+    return '<div class="st-task st-task-checkable"'+(nested?' style="padding-left:'+(0.5+depth*0.9)+'rem"':'')+'><button type="button" class="st-complete" data-st-complete="'+id+'" aria-label="Complete '+esc(task.content||"task")+'" title="Complete in Todoist"'+(completing.has(String(task.id))?' disabled':'')+'><span aria-hidden="true">✓</span></button><a class="st-task-link" href="https://app.todoist.com/app/task/'+id+'" target="_blank" rel="noopener noreferrer"><span>'+marker+esc(task.content||"Untitled task")+'</span><span class="st-arrow" aria-hidden="true">↗</span></a></div>';
   }).join("")+'</div>';
  }
  function render(tasks){
