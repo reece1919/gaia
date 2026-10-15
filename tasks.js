@@ -316,6 +316,7 @@
   });
   document.addEventListener("gaia:ready",event=>ready(event.detail||{}));
   document.addEventListener("gaia:auth",event=>auth(event.detail||{}));
+  document.addEventListener("gaia:priority-added",event=>{if(event.detail?.owner===user?.id)void sync();});
   document.addEventListener("gaia:care-synced",()=>{
     if(isReady()&&!loading&&!saving.size&&!formBusy) void sync();
   });
