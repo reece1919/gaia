@@ -67,7 +67,19 @@
       return words.length>=4 && (other.includes(target)||target.includes(other));
     })||null;
   }
-    function renderUnifiedPriorities() {
+    function suggestedDue(priority) {
+    const text=(priority.title+" "+priority.rationale).toLowerCase();
+    const now=new Date();
+    const addDays=n=>{const d=new Date(now.getFullYear(),now.getMonth(),now.getDate()+n);return [d.getFullYear(),String(d.getMonth()+1).padStart(2,"0"),String(d.getDate()).padStart(2,"0")].join("-");};
+    // Urgent checks and active pest inspections should be performed promptly.
+    if(/post.soak|water quality|moisture|dry|wilting|current activity|mite|pest|quarantine|new arrivals/.test(text))return {date:addDays(0),reason:"Prompt inspection"};
+    // Overnight temperature needs a full overnight observation.
+    if(/overnight|temperature|thermometer|window|light level/.test(text))return {date:addDays(1),reason:"Next observation window"};
+    if(/follow.up|recheck|monitor|reassess/.test(text))return {date:addDays(2),reason:"Short follow-up"};
+    if(/repot|fertiliz|prun|propagat|soil mix/.test(text))return {date:addDays(7),reason:"Planned maintenance"};
+    return {date:addDays(2),reason:"Suggested care check"};
+  }
+  function renderUnifiedPriorities() {
     const target=document.getElementById("gaia-unified-priority-list");
     if(!target)return;
     if(!client||!user){target.textContent="Sign in to see private recommendations.";return;}
@@ -80,16 +92,17 @@
       priorities.map((p,i)=>{
         if(decisions.get(decisionKey(p))==="dismissed")return "";
         const match=matchingTask(p.title);
+        const suggested=suggestedDue(p);
         return '<li><strong>'+esc(p.title)+'</strong>'+
           (p.plant?' <small>· '+esc(p.plant)+'</small>':'')+
           (p.rationale?'<p>'+esc(p.rationale)+'</p>':'')+
           (match?'<p class="gaia-source">Already tracked in '+esc(match.source)+(match.id?' · <a href="https://app.todoist.com/app/task/'+encodeURIComponent(match.id)+'" target="_blank" rel="noopener noreferrer">Open task ↗</a>':'')+'</p>':
-          '<label style="display:inline-flex;align-items:center;gap:6px;margin-right:8px">Due <input type="date" data-gaia-due="'+i+'" min="'+today+'" value="'+today+'" required aria-label="Due date for '+esc(p.title)+'"></label>'+
+          '<label style="display:inline-flex;align-items:center;gap:6px;margin-right:8px">Suggested due <input type="date" data-gaia-due="'+i+'" min="'+today+'" value="'+suggested.date+'" required aria-label="Due date for '+esc(p.title)+'"></label><small style="margin-right:8px">'+esc(suggested.reason)+'</small>'+
           '<button type="button" data-gaia-todoist="'+i+'"'+(addingPriority!==-1?' disabled':'')+'>Add to Todoist</button>'+
           '<button type="button" data-gaia-dismiss="'+i+'"'+(addingPriority!==-1?' disabled':'')+'>Dismiss</button></li>';
       }).join("")+'</ol>'+
       (priorityMessage?'<p role="status" class="gaia-source">'+esc(priorityMessage)+'</p>':'')+
-      '<p class="gaia-source">Choose a due date before adding to Todoist, or dismiss a suggestion.</p>':
+      '<p class="gaia-source">GAIA suggests a due date based on the action. You can adjust it before adding to Todoist.</p>':
       '<p>No suggested priorities in the latest review.</p>';
   }
   function render() {
