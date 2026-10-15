@@ -124,8 +124,10 @@
     const finished = tasks.length-todo.length;
     progress.textContent = tasks.length ?
       todo.length+" to do · "+finished+" completed"+(urgent.length?" · "+urgent.length+" due":"") :
-      (loading?"Loading GAIA checklist…":"No GAIA checklist items");
+      (loading?"Loading GAIA checklist…":"");
     const ready = isReady();
+    const heading=document.getElementById("gaia-checklist-heading");
+    if(heading) heading.hidden=!tasks.length;
     createDetails.hidden=!ready;
     if(createForm) {
       const button=createForm.querySelector('button[type="submit"]');
@@ -134,12 +136,12 @@
     if(loading && !tasks.length) {
       list.innerHTML='<p class="gaia-task-empty">Loading your tasks…</p>';
     } else if(!tasks.length) {
-      list.innerHTML='<p class="gaia-task-empty">No GAIA checklist items here. Todoist tasks are shown in the section above; add a GAIA-only checklist item if needed.</p>';
+      list.innerHTML='<p class="gaia-task-empty"></p>';
     } else {
       list.innerHTML=tasks.map(taskHtml).join("");
     }
     status.textContent=issue || (loading ? "Syncing tasks…" : ready ?
-      "GAIA-only checklist items sync privately across your signed-in devices. Todoist tasks are shown separately above." :
+      "" :
       "Sign in under Account & backup at the bottom to add tasks and track completion.");
     status.classList.toggle("gaia-task-error",!!issue);
   }
