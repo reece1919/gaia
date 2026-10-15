@@ -285,6 +285,77 @@ Deno.serve(async req=>{
       caption:photo.caption,mime:"image/jpeg",
       image_base64:toBase64(imageBytes)});
   }
+  // Narrow write-back route for scheduled ChatGPT vision reviews. The request is
+  // authenticated by Vault and never accepts a target owner, storage URL, or SQL.
+  if(isCron && body?.action==="save_review"){
+    const photoId=body.photo_id;
+    const review=body.review;
+    if(!validUuid(photoId)||!review||typeof review!=="object"||Array.isArray(review))
+      return reply({error:"Invalid photo review"},400);
+    const {data:photo,error:photoError}=await admin.from("plant_photos")
+      .select("id,user_id,plant_id,analysis_status,taken_on,created_at")
+      .eq("id",photoId).maybeSingle();
+    if(photoError||!photo)return reply({error:"Photo not found"},404);
+    const {data:identity,error:identityError}=await admin.auth.admin.getUserById(photo.user_id);
+    if(identityError||identity?.user?.email?.toLowerCase()!=="reece1919@gmail.com")
+      return reply({error:"Photo owner not authorized"},403);
+    if(photo.analysis_status!=="pending")return reply({error:"Latest photo is no longer pending"},409);
+    const {data:history,error:historyError}=await admin.from("plant_photos")
+      .select("id,taken_on,created_at").eq("user_id",photo.user_id).eq("plant_id",photo.plant_id)
+      .order("taken_on",{ascending:false}).order("created_at",{ascending:false}).limit(3);
+    if(historyError||history?.[0]?.id!==photoId)
+      return reply({error:"Only the latest photo can receive the current review"},409);
+    const validCondition=["improving","stable","declining","uncertain"].includes(review.condition);
+    const summary=typeof review.summary==="string"?review.summary.trim():"";
+    const observations=review.observations;
+    const recommendations=review.recommendations;
+    const confidence=review.confidence;
+    if(!validCondition||summary.length<20||summary.length>1400||
+       !Array.isArray(observations)||observations.length<1||observations.length>5||
+       observations.some(x=>typeof x!=="string"||x.length<5||x.length>320)||
+       !Array.isArray(recommendations)||recommendations.length>2||
+       recommendations.some(x=>!x||typeof x.action!=="string"||x.action.length<5||
+         x.action.length>200||typeof x.reason!=="string"||x.reason.length>260||
+         !["soon","routine","monitor"].includes(x.urgency))||
+       typeof confidence!=="number"||!Number.isFinite(confidence)||confidence<0||confidence>1)
+      return reply({error:"Assessment failed validation"},400);
+    const previousId=history[1]?.id||null;
+    const previousSource=review.previous_source;
+    if(previousId){
+      if(previousSource!=="private"||review.previous_photo_id!==previousId)
+        return reply({error:"Incorrect earlier private photo"},409);
+    }else{
+      if(previousSource!=="reference")return reply({error:"Expected original GAIA reference"},409);
+      const plantCatalog=await catalog();
+      if(!plantCatalog.get(photo.plant_id)?.referenceFile||
+        review.reference_file!==plantCatalog.get(photo.plant_id)?.referenceFile)
+        return reply({error:"Reference photo does not match plant catalog"},409);
+    }
+    const findings=[
+      {kind:"trend",text:review.condition},
+      ...observations.map(text=>({kind:"observation",text:text.trim()})),
+      ...recommendations.map(x=>({kind:"care",text:x.action.trim(),
+        reason:x.reason.trim(),urgency:x.urgency})),
+      {kind:"comparison_source",text:previousId?
+        "Earlier private photo: "+previousId+" versus newer private photo: "+photoId:
+        "Original GAIA image: "+review.reference_file+" versus newer private photo: "+photoId}
+    ];
+    const needsAttention=review.condition==="declining"||
+      recommendations.some(x=>x.urgency==="soon");
+    const saved=await admin.from("plant_photos").update({
+      analysis_status:needsAttention?"needs_attention":"reviewed",
+      analysis_summary:summary,
+      analysis_findings:findings,
+      analysis_confidence:confidence,
+      analysis_source:"chatgpt-gaia-scheduled-vision",
+      analyzed_at:new Date().toISOString(),analysis_started_at:null
+    }).eq("id",photoId).eq("user_id",photo.user_id).eq("plant_id",photo.plant_id)
+      .eq("analysis_status","pending")
+      .select("id,plant_id,analysis_status,analysis_confidence,analyzed_at");
+    if(saved.error)return reply({error:"Could not save photo review"},500);
+    if(saved.data?.length!==1)return reply({error:"Review changed or not saved"},409);
+    return reply({status:"saved",photo:saved.data[0]});
+  }
   const apiKey=Deno.env.get("OPENAI_API_KEY");
   if(body?.dry_run===true){
     let photo_access="no_saved_photos";
