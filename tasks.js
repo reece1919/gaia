@@ -20,6 +20,20 @@
   let client = null, user = null, loading = false, issue = "";
   let generation = 0, lastSync = 0, editingId = null;
   let saving = new Set(), formBusy = false;
+  let todoistTasks = [];
+  const normalizeTitle = s => String(s||"").toLowerCase().replace(/[^a-z0-9 ]/g," ").replace(/\s+/g," ").trim();
+  function todoistMatch(title) {
+    const a=normalizeTitle(title);
+    if(!a)return null;
+    return todoistTasks.find(t=>{
+      const b=normalizeTitle(t.content);
+      if(!b)return false;
+      if(a===b)return true;
+      const short=a.length<b.length?a:b;
+      const long=a.length<b.length?b:a;
+      return short.split(" ").length>=4 && long.includes(short);
+    })||null;
+  }
   const isReady = () => Boolean(client && user);
   const today = () => {
     const d = new Date();
@@ -70,12 +84,14 @@
     const dateBadge = task.due_on ?
       '<span class="gaia-task-due'+(!complete && task.due_on<today()?' is-overdue':'')+
       (!complete && task.due_on===today()?' is-today':'')+'">'+esc(dueText(task.due_on))+'</span>' : "";
+    const match = !complete ? todoistMatch(task.title) : null;
+    const crossref = match ? '<span class="gaia-task-description">Already in Todoist · <a href="https://app.todoist.com/app/task/'+encodeURIComponent(String(match.id))+'" target="_blank" rel="noopener noreferrer">Open task ↗</a></span>' : "";
     const info = '<span class="gaia-task-text">'+
       '<span class="gaia-task-category">'+esc(task.category)+
         (plant?' · '+esc(plant):'')+'</span>'+
       '<strong>'+esc(task.title)+'</strong>'+
       (task.detail?'<span class="gaia-task-description">'+esc(task.detail)+'</span>':'')+
-      dateBadge+'</span>';
+      dateBadge+crossref+'</span>';
     const row =
       '<article class="gaia-task-item'+(complete?' is-done':'')+
       (isEditing?' is-editing':'')+'">'+
@@ -290,6 +306,11 @@
   });
   if(createForm) createForm.addEventListener("submit",event=>{
     event.preventDefault();void add(createForm);
+  });
+  document.addEventListener("gaia:todoist-tasks",event=>{
+    if(event.detail?.owner!==user?.id)return;
+    todoistTasks=event.detail.tasks||[];
+    render();
   });
   document.addEventListener("gaia:ready",event=>ready(event.detail||{}));
   document.addEventListener("gaia:auth",event=>auth(event.detail||{}));
