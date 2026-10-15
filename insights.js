@@ -109,7 +109,7 @@
     renderUnifiedPriorities();
     button.disabled = busy || !client || !user;
     const reviewButton=document.getElementById("gaia-photo-review-now");
-    if(reviewButton){reviewButton.disabled=reviewing||busy||!client||!user;reviewButton.textContent=reviewing?"Analyzing photos…":"Review saved photos";}
+    if(reviewButton){reviewButton.disabled=busy||!client||!user;reviewButton.textContent="Refresh photo comparisons";}
     button.textContent = busy ? "Checking…" : "Refresh notes";
     status.classList.toggle("gaia-insights-error", Boolean(error));
 
@@ -269,25 +269,10 @@
         Date.now()-lastCheckedAt > 60*1000) void refresh();
   });
   document.getElementById("gaia-photo-review-now")?.addEventListener("click",async()=>{
-    if(reviewing||!client||!user)return;
-    reviewing=true;error="";status.textContent="Analyzing saved plant photos. This may take a minute…";render();
-    try{
-      const {data:sessionData,error:sessionError}=await client.auth.getSession();
-      if(sessionError)throw sessionError;
-      if(!sessionData?.session)throw new Error("Sign in to review photos.");
-      const {data:assurance,error:assuranceError}=await client.auth.mfa.getAuthenticatorAssuranceLevel();
-      if(assuranceError)throw assuranceError;
-      if(assurance?.currentLevel!=="aal2")throw new Error("Verify your authenticator to run the private review.");
-      const response=await fetch("https://zdurujqwhxqrwbhwzzxg.supabase.co/functions/v1/gaia-photo-review",{
-        method:"POST",headers:{"authorization":"Bearer "+sessionData.session.access_token,"apikey":client.supabaseKey||"","content-type":"application/json"},body:"{}"
-      });
-      const result=await response.json().catch(()=>({}));
-      if(!response.ok)throw new Error(result.error||"Photo review failed ("+response.status+").");
-      status.textContent="Reviewed "+result.reviewed+" plants: "+result.comparisons+" comparisons, "+result.baselines+" baseline assessments. "+(result.failures?.length?result.failures.length+" need follow-up.":"");
-      await refresh();
-      document.dispatchEvent(new CustomEvent("gaia:photo-reviews-changed"));
-    }catch(cause){error=cause?.message||"Photo review could not run.";status.textContent=error;}
-    finally{reviewing=false;render();if(error)status.textContent=error;}
+    if(!client||!user||busy)return;
+    document.dispatchEvent(new CustomEvent("gaia:photo-reviews-changed"));
+    await refresh();
+    status.textContent="Photo comparisons refreshed. New visual analyses run in the nightly GAIA ChatGPT review.";
   });
   button.addEventListener("click", () => void refresh());
   if (window.GAIA_CLOUD) onAuth(window.GAIA_CLOUD);
