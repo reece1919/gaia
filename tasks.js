@@ -102,6 +102,7 @@
   }
   function render() {
     const tasks = allTasks();
+    if(user) document.dispatchEvent(new CustomEvent("gaia:checklist-tasks",{detail:{owner:user.id,tasks:tasks.map(t=>({title:t.title,completed:t.completed}))}}));
     const todo = tasks.filter(t=>!t.completed);
     const urgent = todo.filter(t=>t.due_on && t.due_on<=today());
     const finished = tasks.length-todo.length;
