@@ -291,7 +291,7 @@ Deno.serve(async req=>{
   }
   // Narrow write-back route for scheduled ChatGPT vision reviews. The request is
   // authenticated by Vault and never accepts a target owner, storage URL, or SQL.
-  if(isCron && body?.action==="save_review"){
+  if((isCron || owners.length===1) && body?.action==="save_review"){
     const photoId=body.photo_id;
     const review=body.review;
     if(!validUuid(photoId)||!review||typeof review!=="object"||Array.isArray(review))
@@ -303,6 +303,9 @@ Deno.serve(async req=>{
     const {data:identity,error:identityError}=await admin.auth.admin.getUserById(photo.user_id);
     if(identityError||identity?.user?.email?.toLowerCase()!=="reece1919@gmail.com")
       return reply({error:"Photo owner not authorized"},403);
+    // Interactive GAIA imports require an AAL2 verified session and exact owner match.
+    if(!isCron && photo.user_id!==owners[0])
+      return reply({error:"Photo is not owned by this signed-in account"},403);
     if(photo.analysis_status!=="pending")return reply({error:"Latest photo is no longer pending"},409);
     const {data:history,error:historyError}=await admin.from("plant_photos")
       .select("id,taken_on,created_at").eq("user_id",photo.user_id).eq("plant_id",photo.plant_id)
@@ -358,7 +361,7 @@ Deno.serve(async req=>{
       .select("id,plant_id,analysis_status,analysis_confidence,analyzed_at");
     if(saved.error)return reply({error:"Could not save photo review"},500);
     if(saved.data?.length!==1)return reply({error:"Review changed or not saved"},409);
-    console.info("gaia-scheduled-review save_complete",photo.plant_id);
+    console.info(isCron?"gaia-scheduled-review save_complete":"gaia-manual-review save_complete",photo.plant_id);
     return reply({status:"saved",photo:saved.data[0]});
   }
   const apiKey=Deno.env.get("OPENAI_API_KEY");
