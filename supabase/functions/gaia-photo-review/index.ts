@@ -361,9 +361,10 @@ Deno.serve(async req=>{
       .select("id,plant_id,analysis_status,analysis_confidence,analyzed_at");
     if(saved.error)return reply({error:"Could not save photo review"},500);
     if(saved.data?.length!==1)return reply({error:"Review changed or not saved"},409);
-    // Recommendations belong in the GAIA approval queue, NEVER completed care history.
-    // A normalized action already proposed for this owner+plant is not proposed again.
-    let taskProposals={created:0,skipped:0,failed:0};
+    // Low-risk observation/inspection checks become checkable GAIA tasks.
+    // Treatments and physical interventions stay in the user-approval queue.
+    // Never log care events, create Todoist tasks, or complete a task.
+    let taskProposals={created:0,skipped:0,failed:0,checklist_created:0,checklist_failed:0};
     if(recommendations.length){
       try{
         const old=await admin.from("gaia_task_proposals")
@@ -372,29 +373,48 @@ Deno.serve(async req=>{
         if(old.error)throw old.error;
         const canonical=t=>String(t||"").toLowerCase().replace(/[^a-z0-9]+/g," ").trim();
         const priorTitles=new Set((old.data||[]).map(t=>canonical(t.title)));
+        const safeCheck=text=>
+          /^(inspect|check|monitor|observe|watch|track|look for|photograph|take (?:a|another) photo|document)\b/i.test(text) &&
+          !/\b(apply|spray|pesticide|insecticide|fertiliz\w*|repot|prune|cut|water|flush|drain|treat|remove|discard|dispose)\b/i.test(text);
         for(let idx=0;idx<recommendations.length;idx++){
           const rec=recommendations[idx];
           const action=rec.action.trim();
-          const title=action.slice(0,160);
+          const title=action.slice(0,160),sourceKey="gaia-photo-review:"+photo.id+":"+idx;
           const key=canonical(title);
           if(!key||priorTitles.has(key)){taskProposals.skipped++;continue;}
+          const eligible=safeCheck(action);
           const rationale=(rec.reason.trim()+
             " · Photo review urgency: "+rec.urgency+
-            " · Visual assessment only; inspect the plant before acting.").slice(0,950);
+            " · Review observations only; verify conditions before acting.").slice(0,950);
           const insert=await admin.from("gaia_task_proposals").upsert({
             user_id:photo.user_id,plant_id:photo.plant_id,
-            kind:"routine_check",title,rationale,due_on:null,
-            confidence,status:"suggested",
-            source_key:"gaia-photo-review:"+photo.id+":"+idx
+            kind:eligible?"routine_check":"follow_up",title,rationale,due_on:null,
+            confidence,status:"suggested",source_key:sourceKey
           },{onConflict:"user_id,source_key",ignoreDuplicates:true})
             .select("id");
           if(insert.error){taskProposals.failed++;continue;}
-          taskProposals.created+=(insert.data||[]).length;
-          taskProposals.skipped+=insert.data?.length?0:1;
+          const proposal=insert.data?.[0];
+          taskProposals.created+=proposal?1:0;
+          taskProposals.skipped+=proposal?0:1;
           priorTitles.add(key);
+          if(!eligible||!proposal)continue;
+          const task=await admin.from("gaia_custom_tasks").upsert({
+            user_id:photo.user_id,plant_id:photo.plant_id,
+            title:action.slice(0,120),
+            detail:("GAIA photo review: "+rec.reason.trim()+
+              " (Urgency: "+rec.urgency+").").slice(0,500),
+            due_on:null,source_key:sourceKey
+          },{onConflict:"user_id,source_key",ignoreDuplicates:true})
+            .select("id");
+          if(task.error){taskProposals.checklist_failed++;continue;}
+          taskProposals.checklist_created+=(task.data||[]).length;
+          const promote=await admin.from("gaia_task_proposals").update({
+            status:"approved",decided_at:new Date().toISOString()
+          }).eq("id",proposal.id).eq("status","suggested");
+          if(promote.error)taskProposals.checklist_failed++;
         }
       }catch(e){
-        taskProposals.failed=recommendations.length;
+        taskProposals.failed+=recommendations.length;
         console.error("gaia-review recommendation queue unavailable");
       }
     }
