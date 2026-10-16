@@ -68,6 +68,10 @@
  document.addEventListener("gaia:ready",e=>{plants=e.detail.plants||[];void refresh();});
  document.addEventListener("gaia:auth",e=>{client=e.detail.client;user=e.detail.user;void refresh();});
  document.addEventListener("gaia:care-synced",()=>void refresh());
+ document.addEventListener("gaia:photo-reviews-changed",()=>void refresh());
+ document.addEventListener("visibilitychange",()=>{
+  if(document.visibilityState==="visible"&&user)void refresh();
+ });
  if(window.GAIA_DATA?.plants)plants=window.GAIA_DATA.plants;
  if(window.GAIA_CLOUD){client=window.GAIA_CLOUD.client;user=window.GAIA_CLOUD.user;}
  void refresh();
