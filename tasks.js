@@ -317,6 +317,12 @@
   document.addEventListener("gaia:ready",event=>ready(event.detail||{}));
   document.addEventListener("gaia:auth",event=>auth(event.detail||{}));
   document.addEventListener("gaia:priority-added",event=>{if(event.detail?.owner===user?.id)void sync();});
+  document.addEventListener("gaia:task-approval-changed",event=>{
+    if(event.detail?.owner===user?.id&&isReady())void sync();
+  });
+  document.addEventListener("gaia:photo-reviews-changed",()=>{
+    if(isReady()&&!loading&&!saving.size&&!formBusy)void sync();
+  });
   document.addEventListener("gaia:care-synced",()=>{
     if(isReady()&&!loading&&!saving.size&&!formBusy) void sync();
   });
