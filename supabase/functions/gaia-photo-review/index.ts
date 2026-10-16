@@ -361,8 +361,45 @@ Deno.serve(async req=>{
       .select("id,plant_id,analysis_status,analysis_confidence,analyzed_at");
     if(saved.error)return reply({error:"Could not save photo review"},500);
     if(saved.data?.length!==1)return reply({error:"Review changed or not saved"},409);
+    // Recommendations belong in the GAIA approval queue, NEVER completed care history.
+    // A normalized action already proposed for this owner+plant is not proposed again.
+    let taskProposals={created:0,skipped:0,failed:0};
+    if(recommendations.length){
+      try{
+        const old=await admin.from("gaia_task_proposals")
+          .select("title,status").eq("user_id",photo.user_id)
+          .eq("plant_id",photo.plant_id).limit(400);
+        if(old.error)throw old.error;
+        const canonical=t=>String(t||"").toLowerCase().replace(/[^a-z0-9]+/g," ").trim();
+        const priorTitles=new Set((old.data||[]).map(t=>canonical(t.title)));
+        for(let idx=0;idx<recommendations.length;idx++){
+          const rec=recommendations[idx];
+          const action=rec.action.trim();
+          const title=action.slice(0,160);
+          const key=canonical(title);
+          if(!key||priorTitles.has(key)){taskProposals.skipped++;continue;}
+          const rationale=(rec.reason.trim()+
+            " · Photo review urgency: "+rec.urgency+
+            " · Visual assessment only; inspect the plant before acting.").slice(0,950);
+          const insert=await admin.from("gaia_task_proposals").upsert({
+            user_id:photo.user_id,plant_id:photo.plant_id,
+            kind:"routine_check",title,rationale,due_on:null,
+            confidence,status:"suggested",
+            source_key:"gaia-photo-review:"+photo.id+":"+idx
+          },{onConflict:"user_id,source_key",ignoreDuplicates:true})
+            .select("id");
+          if(insert.error){taskProposals.failed++;continue;}
+          taskProposals.created+=(insert.data||[]).length;
+          taskProposals.skipped+=insert.data?.length?0:1;
+          priorTitles.add(key);
+        }
+      }catch(e){
+        taskProposals.failed=recommendations.length;
+        console.error("gaia-review recommendation queue unavailable");
+      }
+    }
     console.info(isCron?"gaia-scheduled-review save_complete":"gaia-manual-review save_complete",photo.plant_id);
-    return reply({status:"saved",photo:saved.data[0]});
+    return reply({status:"saved",photo:saved.data[0],task_proposals:taskProposals});
   }
   const apiKey=Deno.env.get("OPENAI_API_KEY");
   if(body?.dry_run===true){
