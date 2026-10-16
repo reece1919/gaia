@@ -119,7 +119,11 @@
         items.length ? items.length + (items.length===1 ? " private photo" : " private photos") :
         "Original photo only";
       const manualReview=section.querySelector("[data-gaia-review-plant]");
-      if(manualReview)manualReview.hidden=!active||items[0]?.analysis_status!=="pending";
+      if(manualReview) {
+        const reviewLatest=[...items].sort((a,b)=>(b.taken_on||"").localeCompare(a.taken_on||"") ||
+          (b.created_at||"").localeCompare(a.created_at||""))[0];
+        manualReview.hidden=!active||reviewLatest?.analysis_status!=="pending";
+      }
       const gallery=section.querySelector("[data-photo-gallery]");
       gallery.innerHTML=items.length
         ? '<div class="photo-gallery-grid">' + items.slice(0,30).map((p,i) => {
