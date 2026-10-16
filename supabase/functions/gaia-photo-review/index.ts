@@ -263,6 +263,9 @@ Deno.serve(async req=>{
   }
   let body={};
   try{body=await req.json();}catch(_){/* empty body */}
+  // Safe audit breadcrumbs: log action and completion, never credentials or photo bytes.
+  if(isCron && (body?.action==="read_photo" || body?.action==="save_review"))
+    console.info("gaia-scheduled-review requested",body.action);
   // Scheduled ChatGPT can request a single image through the database's
   // Vault-authenticated invocation. No public bucket or lasting URL is created.
   if(isCron && body?.action==="read_photo"){
@@ -281,6 +284,7 @@ Deno.serve(async req=>{
     if(downloadError||!blob)return reply({error:"Private photo unavailable"},502);
     if(!blob.size||blob.size>8_388_608)return reply({error:"Photo size unsupported"},413);
     const imageBytes=new Uint8Array(await blob.arrayBuffer());
+    console.info("gaia-scheduled-review read_complete",photo.plant_id,imageBytes.length);
     return reply({photo_id:photo.id,plant_id:photo.plant_id,taken_on:photo.taken_on,
       caption:photo.caption,mime:"image/jpeg",
       image_base64:toBase64(imageBytes)});
@@ -354,6 +358,7 @@ Deno.serve(async req=>{
       .select("id,plant_id,analysis_status,analysis_confidence,analyzed_at");
     if(saved.error)return reply({error:"Could not save photo review"},500);
     if(saved.data?.length!==1)return reply({error:"Review changed or not saved"},409);
+    console.info("gaia-scheduled-review save_complete",photo.plant_id);
     return reply({status:"saved",photo:saved.data[0]});
   }
   const apiKey=Deno.env.get("OPENAI_API_KEY");
