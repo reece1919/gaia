@@ -52,17 +52,47 @@
     preview.innerHTML=items.length?'<strong>To-dos · '+items.length+'</strong>'+items.slice(0,3).map(item=>'<div style="padding-top:6px">'+esc(item.title)+(item.due_on?' <small>('+esc(item.due_on)+')</small>':'')+'</div>').join("")+(items.length>3?'<small>+'+(items.length-3)+' more inside</small>':''):'<small>No pending GAIA to-dos</small>';
     let inside=card.querySelector(".gaia-plant-todos");
     if(!inside){inside=document.createElement("section");inside.className="gaia-plant-todos";inside.style.cssText="padding:12px;margin:10px;border:1px solid rgba(180,190,150,.35);border-radius:10px";card.querySelector(".care")?.prepend(inside);}
-    if(inside)inside.innerHTML='<strong>Plant to-dos</strong>'+(items.length?items.map(item=>'<div style="padding:10px 0;border-bottom:1px solid rgba(180,190,150,.2)"><div>'+esc(item.title)+'</div><small>'+esc(item.rationale)+'</small><div style="display:flex;gap:8px;margin-top:6px"><button type="button" data-gaia-approve="'+esc(item.id)+'">Approve</button><button type="button" data-gaia-decline="'+esc(item.id)+'">Decline</button></div></div>').join(""):'<p>No pending tasks for this plant.</p>');
+    if(inside)inside.innerHTML='<strong>Plant to-dos</strong>'+(items.length?items.map(item=>'<div style="padding:10px 0;border-bottom:1px solid rgba(180,190,150,.2)"><div>'+esc(item.title)+'</div><small>'+esc(item.rationale)+'</small><div style="display:flex;gap:8px;margin-top:6px"><button type="button" data-gaia-approve="'+esc(item.id)+'">Add to checklist</button><button type="button" data-gaia-decline="'+esc(item.id)+'">Decline</button></div></div>').join(""):'<p>No pending tasks for this plant.</p>');
    });
    root().innerHTML='<p>'+due.length+' new photo reminders queued · '+(rows||[]).length+' awaiting decisions</p>'+
-    ((rows||[]).length?'<div style="display:grid;gap:12px">'+rows.map(r=>'<div style="border:1px solid var(--border,#768);border-radius:12px;padding:12px"><strong>'+esc(r.title)+'</strong><p>'+esc(r.rationale)+'</p><small>'+esc(name(r.plant_id))+(r.due_on?' · Due '+esc(r.due_on):'')+'</small><div style="display:flex;gap:12px;margin-top:8px"><button data-gaia-approve="'+esc(r.id)+'">Approve for task creation</button><button data-gaia-decline="'+esc(r.id)+'">Decline</button></div></div>').join("")+'</div>':'<p>No suggestions awaiting approval.</p>');
+    ((rows||[]).length?'<div style="display:grid;gap:12px">'+rows.map(r=>'<div style="border:1px solid var(--border,#768);border-radius:12px;padding:12px"><strong>'+esc(r.title)+'</strong><p>'+esc(r.rationale)+'</p><small>'+esc(name(r.plant_id))+(r.due_on?' · Due '+esc(r.due_on):'')+'</small><div style="display:flex;gap:12px;margin-top:8px"><button data-gaia-approve="'+esc(r.id)+'">Add to checklist</button><button data-gaia-decline="'+esc(r.id)+'">Decline</button></div></div>').join("")+'</div>':'<p>No suggestions awaiting approval.</p>');
   }catch(e){root().textContent="Task queue unavailable: "+(e?.message||"Please retry.");}
  }
  async function decide(id,approved){
   if(!client||!user)return;
-  const {error}=await client.from("gaia_task_proposals").update({status:approved?"approved":"declined",decided_at:new Date().toISOString()}).eq("id",id).eq("status","suggested");
-  if(error){root().textContent="Could not save decision: "+error.message;return;}
-  await refresh();
+  const owner=user.id;
+  try{
+   if(approved){
+    const {data:proposal,error:readError}=await client.from("gaia_task_proposals")
+      .select("id,user_id,plant_id,title,rationale,source_key,status").eq("id",id)
+      .eq("user_id",owner).maybeSingle();
+    if(readError)throw readError;
+    if(!proposal||proposal.status!=="suggested")throw Error("This proposal is no longer pending.");
+    const sourceKey=proposal.source_key.startsWith("gaia-photo-review:")?
+      proposal.source_key:"gaia-proposal:"+proposal.id;
+    const title=proposal.title.slice(0,120);
+    const detail=proposal.rationale.slice(0,500);
+    const {data:existing,error:taskError}=await client.from("gaia_custom_tasks")
+      .select("id,title,source_key").eq("user_id",owner)
+      .eq("plant_id",proposal.plant_id).limit(500);
+    if(taskError)throw taskError;
+    const normalize=s=>String(s||"").trim().toLowerCase().replace(/[^a-z0-9]+/g," ");
+    if(!(existing||[]).some(t=>t.source_key===sourceKey||normalize(t.title)===normalize(title))){
+      const {error:insertError}=await client.from("gaia_custom_tasks").upsert({
+        user_id:owner,plant_id:proposal.plant_id,title,detail,
+        due_on:null,source_key:sourceKey
+      },{onConflict:"user_id,source_key",ignoreDuplicates:true});
+      if(insertError)throw insertError;
+    }
+   }
+   if(user?.id!==owner)throw Error("Account changed; please retry.");
+   const {error}=await client.from("gaia_task_proposals")
+     .update({status:approved?"approved":"declined",decided_at:new Date().toISOString()})
+     .eq("id",id).eq("user_id",owner).eq("status","suggested");
+   if(error)throw error;
+   document.dispatchEvent(new CustomEvent("gaia:task-approval-changed",{detail:{owner}}));
+   await refresh();
+  }catch(error){root().textContent="Could not "+(approved?"add the checklist task":"decline the recommendation")+": "+(error?.message||"Try again.");}
  }
  document.addEventListener("click",e=>{const a=e.target.closest("[data-gaia-approve]"),d=e.target.closest("[data-gaia-decline]");if(a)void decide(a.dataset.gaiaApprove,true);else if(d)void decide(d.dataset.gaiaDecline,false);});
  document.addEventListener("gaia:ready",e=>{plants=e.detail.plants||[];void refresh();});
