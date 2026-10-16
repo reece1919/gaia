@@ -13,11 +13,12 @@
   if(!client||!user||!plants.length){root().textContent="Sign in to load your private task queue.";return;}
   root().textContent="Checking photo schedules and pending approvals…";
   try{
-   const [{data:photos,error:pe},{data:existing,error:ee}]=await Promise.all([
+   const [{data:photos,error:pe},{data:existing,error:ee},{data:custom,error:ce}]=await Promise.all([
     client.from("plant_photos").select("plant_id,taken_on,created_at").order("created_at",{ascending:false}).limit(1500),
-    client.from("gaia_task_proposals").select("*").order("created_at",{ascending:false}).limit(500)
+    client.from("gaia_task_proposals").select("*").order("created_at",{ascending:false}).limit(500),
+    client.from("gaia_custom_tasks").select("id,plant_id,title,due_on,completed_at").eq("user_id",user.id).is("completed_at",null).limit(1000)
    ]);
-   if(pe||ee)throw pe||ee;
+   if(pe||ee||ce)throw pe||ee||ce;
    const latest=new Map();
    for(const p of photos||[])if(!latest.has(String(p.plant_id)))latest.set(String(p.plant_id),p.taken_on||String(p.created_at).slice(0,10));
    const keys=new Set((existing||[]).map(p=>p.source_key));
@@ -44,15 +45,47 @@
     if(!byPlant.has(id))byPlant.set(id,[]);
     byPlant.get(id).push(item);
    }
+   const openByPlant=new Map();
+   for(const task of custom||[]){
+    const id=String(task.plant_id||"");
+    if(!openByPlant.has(id))openByPlant.set(id,[]);
+    openByPlant.get(id).push(task);
+   }
    document.querySelectorAll("#grid .card[data-plant-id]").forEach(card=>{
-    const id=card.dataset.plantId,items=byPlant.get(id)||[];
+    const id=card.dataset.plantId,items=byPlant.get(id)||[],active=openByPlant.get(id)||[];
     let preview=card.querySelector(".gaia-card-todos");
-    if(!preview){preview=document.createElement("div");preview.className="gaia-card-todos";preview.style.cssText="margin:10px 0;padding:10px;border:1px solid rgba(180,190,150,.35);border-radius:10px;font-size:.88rem";card.querySelector(".summary-body")?.append(preview);}
+    if(!preview){
+      preview=document.createElement("div");preview.className="gaia-card-todos";
+      preview.style.cssText="margin:10px 0;padding:10px;border:1px solid rgba(180,190,150,.35);border-radius:10px;font-size:.88rem";
+      card.querySelector(".summary-body")?.append(preview);
+    }
     if(!preview)return;
-    preview.innerHTML=items.length?'<strong>To-dos · '+items.length+'</strong>'+items.slice(0,3).map(item=>'<div style="padding-top:6px">'+esc(item.title)+(item.due_on?' <small>('+esc(item.due_on)+')</small>':'')+'</div>').join("")+(items.length>3?'<small>+'+(items.length-3)+' more inside</small>':''):'<small>No pending GAIA to-dos</small>';
+    const visibleCount=active.length+items.length;
+    preview.innerHTML=visibleCount?
+      '<strong>To-dos · '+active.length+'</strong>'+
+      active.slice(0,3).map(t=>'<div style="padding-top:6px">'+esc(t.title)+'</div>').join("")+
+      (active.length>3?'<small>+'+(active.length-3)+' more in checklist</small>':'')+
+      (items.length?'<div><small>'+items.length+' awaiting approval</small></div>':''):
+      '<small>No pending GAIA to-dos</small>';
     let inside=card.querySelector(".gaia-plant-todos");
-    if(!inside){inside=document.createElement("section");inside.className="gaia-plant-todos";inside.style.cssText="padding:12px;margin:10px;border:1px solid rgba(180,190,150,.35);border-radius:10px";card.querySelector(".care")?.prepend(inside);}
-    if(inside)inside.innerHTML='<strong>Plant to-dos</strong>'+(items.length?items.map(item=>'<div style="padding:10px 0;border-bottom:1px solid rgba(180,190,150,.2)"><div>'+esc(item.title)+'</div><small>'+esc(item.rationale)+'</small><div style="display:flex;gap:8px;margin-top:6px"><button type="button" data-gaia-approve="'+esc(item.id)+'">Add to checklist</button><button type="button" data-gaia-decline="'+esc(item.id)+'">Decline</button></div></div>').join(""):'<p>No pending tasks for this plant.</p>');
+    if(!inside){
+      inside=document.createElement("section");inside.className="gaia-plant-todos";
+      inside.style.cssText="padding:12px;margin:10px;border:1px solid rgba(180,190,150,.35);border-radius:10px";
+      card.querySelector(".care")?.prepend(inside);
+    }
+    if(inside)inside.innerHTML='<strong>Plant to-dos · '+active.length+'</strong>'+
+      (active.length?active.map(t=>
+        '<label style="display:flex;gap:9px;align-items:start;padding:9px 0;border-bottom:1px solid rgba(180,190,150,.2)">'+
+        '<input type="checkbox" data-gaia-complete-custom="'+esc(t.id)+'" aria-label="Complete '+esc(t.title)+'" style="flex:none;width:17px;height:17px;margin-top:2px">'+
+        '<span>'+esc(t.title)+(t.due_on?' <small>('+esc(t.due_on)+')</small>':'')+'</span></label>'
+      ).join(""):'<p>No active checklist tasks for this plant.</p>')+
+      (items.length?'<strong style="display:block;margin-top:8px">Awaiting approval</strong>'+
+        items.map(item=>
+          '<div style="padding:10px 0;border-bottom:1px solid rgba(180,190,150,.2)"><div>'+esc(item.title)+
+          '</div><small>'+esc(item.rationale)+'</small><div style="display:flex;gap:8px;margin-top:6px">'+
+          '<button type="button" data-gaia-approve="'+esc(item.id)+'">Add to checklist</button>'+
+          '<button type="button" data-gaia-decline="'+esc(item.id)+'">Decline</button></div></div>'
+        ).join(""):'');
    });
    root().innerHTML='<p>'+due.length+' new photo reminders queued · '+(rows||[]).length+' awaiting decisions</p>'+
     ((rows||[]).length?'<div style="display:grid;gap:12px">'+rows.map(r=>'<div style="border:1px solid var(--border,#768);border-radius:12px;padding:12px"><strong>'+esc(r.title)+'</strong><p>'+esc(r.rationale)+'</p><small>'+esc(name(r.plant_id))+(r.due_on?' · Due '+esc(r.due_on):'')+'</small><div style="display:flex;gap:12px;margin-top:8px"><button data-gaia-approve="'+esc(r.id)+'">Add to checklist</button><button data-gaia-decline="'+esc(r.id)+'">Decline</button></div></div>').join("")+'</div>':'<p>No suggestions awaiting approval.</p>');
@@ -95,10 +128,29 @@
   }catch(error){root().textContent="Could not "+(approved?"add the checklist task":"decline the recommendation")+": "+(error?.message||"Try again.");}
  }
  document.addEventListener("click",e=>{const a=e.target.closest("[data-gaia-approve]"),d=e.target.closest("[data-gaia-decline]");if(a)void decide(a.dataset.gaiaApprove,true);else if(d)void decide(d.dataset.gaiaDecline,false);});
+ document.addEventListener("change",e=>{
+   const checkbox=e.target.closest("input[data-gaia-complete-custom]");
+   if(!checkbox||!checkbox.checked||!client||!user)return;
+   const owner=user.id,id=checkbox.dataset.gaiaCompleteCustom;
+   checkbox.disabled=true;
+   void (async()=>{
+     const {data,error}=await client.from("gaia_custom_tasks")
+       .update({completed_at:new Date().toISOString()})
+       .eq("id",id).eq("user_id",owner).is("completed_at",null).select("id");
+     if(error||!data?.length){
+       checkbox.checked=false;checkbox.disabled=false;
+       if(root())root().textContent="Could not complete GAIA to-do: "+(error?.message||"Refresh and try again.");
+       return;
+     }
+     document.dispatchEvent(new CustomEvent("gaia:task-approval-changed",{detail:{owner}}));
+     await refresh();
+   })();
+ });
  document.addEventListener("gaia:ready",e=>{plants=e.detail.plants||[];void refresh();});
  document.addEventListener("gaia:auth",e=>{client=e.detail.client;user=e.detail.user;void refresh();});
  document.addEventListener("gaia:care-synced",()=>void refresh());
  document.addEventListener("gaia:photo-reviews-changed",()=>void refresh());
+ document.addEventListener("gaia:task-approval-changed",()=>void refresh());
  document.addEventListener("visibilitychange",()=>{
   if(document.visibilityState==="visible"&&user)void refresh();
  });
