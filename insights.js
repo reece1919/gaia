@@ -272,7 +272,7 @@
     if(!client||!user||busy)return;
     document.dispatchEvent(new CustomEvent("gaia:photo-reviews-changed"));
     await refresh();
-    status.textContent="Photo comparisons refreshed. New visual analyses run in the nightly GAIA ChatGPT review.";
+    status.textContent="Saved photo comparisons refreshed. Use Review New Photos in the GAIA header to start a collection-wide interactive review.";
   });
   button.addEventListener("click", () => void refresh());
   if (window.GAIA_CLOUD) onAuth(window.GAIA_CLOUD);
