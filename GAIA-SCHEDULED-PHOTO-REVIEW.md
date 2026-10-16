@@ -55,6 +55,16 @@ After actually inspecting a private image, request deletion of its transient pg_
 delete from net._http_response where id=REQUEST_ID returning id;
 ~~~
 
+## Interactive manual review from GAIA
+
+The GAIA Photo Journal and GAIA Insights now include **Review with ChatGPT** and a **Review & Import** panel. This is not an external trigger for the ChatGPT scheduled task: it opens a new interactive ChatGPT conversation via the prefilled https://chatgpt.com/?q= URL. The user must send the prompt. It references the exact newest pending photo and prior image source, so images can be inspected via the connected tools without reuploading.
+
+The reviewer should return a copyable JSON object with one pending photo_id and a review containing condition, summary, observations, at most two care recommendations, confidence, and exact previous_source+reference_file OR previous_source+previous_photo_id. The user pastes **only the JSON** into GAIA, previews it, and confirms approval.
+
+For manual imports, GAIA uses the user's *authenticated, AAL2-verified* Supabase session to POST to the same owner-validated gaia-photo-review Edge Function with action="save_review". The function now permits either its Vault-authenticated cron identity OR that verified GAIA account; it does not expose service-role credentials to the browser. Both routes use the same strict latest-pending, single-owner, prior-image and field validation. The import panel verifies the persisted row before reporting success. A signed-out request is rejected with 401. An end-to-end import using the user's live AAL2 session still needs a browser test.
+
+This manual workflow does not invoke OpenAI's paid API and does not claim to automatically execute the scheduled task. The automatic nightly workflow remains enabled but its unattended writeback may still be subject to connector safety checks.
+
 ## Save findings via the validated write-back endpoint
 
 **Updated 2026-10-15: Do not use direct SQL UPDATE for ChatGPT photo review write-back.** The connected SQL action can be safety-blocked when used to edit individual photo records. Version 8 of `gaia-photo-review` now supports authenticated `action: "save_review"` and has been live-tested successfully for Groot (02) and Bowser (03). The endpoint itself performs the authorized, constrained database update.
