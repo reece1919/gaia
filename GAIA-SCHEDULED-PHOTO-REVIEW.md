@@ -55,15 +55,19 @@ After actually inspecting a private image, request deletion of its transient pg_
 delete from net._http_response where id=REQUEST_ID returning id;
 ~~~
 
-## Interactive manual review from GAIA
+## Collection-wide interactive review: one button, no copy/paste (Oct 16, 2026)
 
-The GAIA Photo Journal and GAIA Insights now include **Review with ChatGPT** and a **Review & Import** panel. This is not an external trigger for the ChatGPT scheduled task: it opens a new interactive ChatGPT conversation via the prefilled https://chatgpt.com/?q= URL. The user must send the prompt. It references the exact newest pending photo and prior image source, so images can be inspected via the connected tools without reuploading.
+GAIA's **Review New Photos** button in the header opens one new interactive ChatGPT conversation with an encoded prefilled request at `https://chatgpt.com/?q=...`. The user presses **Send** in ChatGPT. This does NOT trigger a ChatGPT scheduled task or call an OpenAI API. No photos, private tokens, or database credentials are included in that URL. The old individual-plant dropdown, per-plant review buttons, JSON copy/paste and import UI have been removed.
 
-The reviewer should return a copyable JSON object with one pending photo_id and a review containing condition, summary, observations, at most two care recommendations, confidence, and exact previous_source+reference_file OR previous_source+previous_photo_id. The user pastes **only the JSON** into GAIA, previews it, and confirms approval.
+The launch prompt explicitly requests ALL eligible newest-pending photos in that one interactive ChatGPT session. The actual photo records must be queried afresh from connected Supabase, grouped by plant, ordered by `taken_on DESC, created_at DESC`. **Only each plant's latest photo** gets reviewed when its status is `pending`; any older photo, even if `pending`, is a historical comparison. For each eligible plant, actually VISUALLY render newest versus second newest private image of that same plant, otherwise the correct original GitHub catalog image. Apply the photo handling and privacy rules in this document. If any source isn't visible, leave that photo unreviewed.
 
-For manual imports, GAIA uses the user's *authenticated, AAL2-verified* Supabase session to POST to the same owner-validated gaia-photo-review Edge Function with action="save_review". The function now permits either its Vault-authenticated cron identity OR that verified GAIA account; it does not expose service-role credentials to the browser. Both routes use the same strict latest-pending, single-owner, prior-image and field validation. The import panel verifies the persisted row before reporting success. A signed-out request is rejected with 401. An end-to-end import using the user's live AAL2 session still needs a browser test.
+**SAVE AUTONOMOUSLY after each genuine comparison** through the existing owner-verified `gaia-photo-review` action `save_review`. Do NOT print an assessment JSON for user copying, and do NOT ask the user to paste results into GAIA. The endpoint validates the exact newest pending photo and prior source, saves the condition/summary/observations/care advice, and **automatically queues at most two recommended care checks** in `public.gaia_task_proposals` as `suggested`, with stable photo-based source keys and cross-photo duplicate-title checks. Those tasks remain unapproved and uncompleted; no Todoist tasks or care events are created.
 
-This manual workflow does not invoke OpenAI's paid API and does not claim to automatically execute the scheduled task. The automatic nightly workflow remains enabled but its unattended writeback may still be subject to connector safety checks.
+Verify asynchronous save response `status: "saved"`, correct photo ID, and independently verify persisted `analysis_status`. Response also contains `task_proposals: {created, skipped, failed}`. Do not claim care suggestions were queued if `failed` is nonzero. The frontend `task-queue.js` refreshes on window focus when returning from ChatGPT, showing approval proposals in GAIA.
+
+**Connector limitation:** The ChatGPT interactive tool may independently reject a write on safety grounds. In that case STOP the blocked write, preserve the pending status, and explain the blocker without fabricating a saved review or switching to an unapproved route. No automatic fallback requires the user to copy/paste. Continue any independent read-only inspections permitted, and report which photos could/couldn't be inspected or saved. A full all-plants run is an *intent*, not a guarantee that every connector action will be permitted or complete within one ChatGPT session.
+
+The existing nightly schedule remains independent and active.
 
 ## Save findings via the validated write-back endpoint
 
