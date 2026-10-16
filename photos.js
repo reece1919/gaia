@@ -80,7 +80,7 @@
       '<label>Optional note <input type="text" name="caption" maxlength="350" placeholder="New leaf, repotting, growth…"></label>' +
       '</div><button type="submit" class="photo-upload-button">Upload photo</button>' +
       '<small class="photo-upload-hint">Photos are resized automatically. The newest upload becomes the card image on signed-in devices.</small>' +
-      '</form></div>' +
+      '</form><button type="button" class="gaia-photo-chatgpt-button" data-gaia-review-plant="' + esc(p.id) + '" hidden>Review this photo with ChatGPT ↗</button></div>' +
       '<p class="photo-local-status" role="status" aria-live="polite" hidden></p>' +
       '<div class="photo-gallery" data-photo-gallery aria-live="polite"></div>' +
       '</section>';
@@ -118,6 +118,8 @@
       section.querySelector("[data-photo-count]").textContent =
         items.length ? items.length + (items.length===1 ? " private photo" : " private photos") :
         "Original photo only";
+      const manualReview=section.querySelector("[data-gaia-review-plant]");
+      if(manualReview)manualReview.hidden=!active||items[0]?.analysis_status!=="pending";
       const gallery=section.querySelector("[data-photo-gallery]");
       gallery.innerHTML=items.length
         ? '<div class="photo-gallery-grid">' + items.slice(0,30).map((p,i) => {
