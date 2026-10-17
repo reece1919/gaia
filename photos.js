@@ -68,6 +68,9 @@
     }
   }
   function panel(p) {
+    const hint = /Android/i.test(navigator.userAgent || "") ?
+      "Photos resize automatically; newest becomes the card image. On Android, use JPG, PNG or WebP. Samsung HEIF/HEIC photos must first be converted to JPEG." :
+      "Photos are resized automatically. The newest upload becomes the card image on signed-in devices.";
     return '<section class="plant-photo-journal" data-plant-photo="' + esc(p.id) + '">' +
       '<div class="photo-journal-head"><strong>Photo journal</strong>' +
       '<span class="photo-count" data-photo-count>Original photo only</span></div>' +
@@ -79,7 +82,7 @@
       '<label>Photo date <input type="date" name="taken_on" value="' + today() + '" required></label>' +
       '<label>Optional note <input type="text" name="caption" maxlength="350" placeholder="New leaf, repotting, growth…"></label>' +
       '</div><button type="submit" class="photo-upload-button">Upload photo</button>' +
-      '<small class="photo-upload-hint">Photos are resized automatically. The newest upload becomes the card image on signed-in devices.</small>' +
+      '<small class="photo-upload-hint">' + esc(hint) + '</small>' +
       '</form></div>' +
       '<p class="photo-local-status" role="status" aria-live="polite" hidden></p>' +
       '<div class="photo-gallery" data-photo-gallery aria-live="polite"></div>' +
@@ -198,42 +201,68 @@
       if(request===sequence) report("Could not load cloud photos: "+safeError(error),true);
     }
   }
-  function loadImage(file) {
-    return new Promise((resolve,reject)=>{
-      const objectUrl=URL.createObjectURL(file),img=new Image();
-      img.onload=()=>{
-        URL.revokeObjectURL(objectUrl);
-        resolve(img);
+  async function loadImage(file) {
+    // Samsung browsers can decode some Gallery selections through
+    // createImageBitmap when an Image + object URL path fails.
+    if (typeof createImageBitmap === "function") {
+      try {
+        const bitmap = await createImageBitmap(file);
+        return {
+          source: bitmap, width: bitmap.width, height: bitmap.height,
+          release: () => bitmap.close()
+        };
+      } catch (error) {
+        console.warn("GAIA bitmap decode unavailable; trying image fallback", error);
+      }
+    }
+    return new Promise((resolve, reject) => {
+      const url = URL.createObjectURL(file);
+      const img = new Image();
+      // Keep the object URL alive until the canvas has finished drawing.
+      // Revoking it during onload can break image access in some WebViews.
+      const release = () => URL.revokeObjectURL(url);
+      img.onload = () => resolve({
+        source: img, width: img.naturalWidth, height: img.naturalHeight, release
+      });
+      img.onerror = () => {
+        release();
+        reject(new Error("This browser could not open the photo. Try a JPG or PNG image."));
       };
-      img.onerror=()=>{
-        URL.revokeObjectURL(objectUrl);
-        reject(new Error("This browser could not open the selected image. Try JPEG or PNG."));
-      };
-      img.src=objectUrl;
+      img.src = url;
     });
   }
   async function compress(file) {
     if(file.size>MAX_INPUT) throw new Error("Select an image smaller than 35 MB.");
     if(!/^image\//i.test(file.type||"") && !/\.(jpe?g|png|webp|heic|heif)$/i.test(file.name||""))
       throw new Error("Please choose a photo.");
-    const img=await loadImage(file);
-    const w=img.naturalWidth, h=img.naturalHeight;
-    if(!w||!h) throw new Error("The selected image has no readable dimensions.");
-    const ratio=Math.min(1,MAX_SIDE/Math.max(w,h));
-    const canvas=document.createElement("canvas");
-    canvas.width=Math.max(1,Math.round(w*ratio));
-    canvas.height=Math.max(1,Math.round(h*ratio));
-    const ctx=canvas.getContext("2d",{alpha:false});
-    if(!ctx) throw new Error("Your browser could not prepare the image.");
-    ctx.fillStyle="#ffffff";
-    ctx.fillRect(0,0,canvas.width,canvas.height);
-    ctx.drawImage(img,0,0,canvas.width,canvas.height);
-    const blob=await new Promise((resolve,reject)=>canvas.toBlob(
-      x=>x?resolve(x):reject(new Error("Photo conversion failed.")),"image/jpeg",0.84
-    ));
-    canvas.width=canvas.height=0;
-    if(blob.size>MAX_UPLOAD) throw new Error("Photo is too large after resizing. Try a smaller image.");
-    return blob;
+    if (/Android/i.test(navigator.userAgent || "") &&
+        (/^image\/hei[cf]$/i.test(file.type || "") || /\.hei[cf]$/i.test(file.name || ""))) {
+      throw new Error("Android browsers cannot open HEIF/HEIC photos. Choose a JPG or PNG copy, or turn off HEIF/High efficiency pictures in Samsung Camera settings.");
+    }
+    const canvas = document.createElement("canvas");
+    let decoded;
+    try {
+      decoded = await loadImage(file);
+      const w = decoded.width, h = decoded.height;
+      if(!w || !h) throw new Error("The selected image has no readable dimensions.");
+      const ratio = Math.min(1, MAX_SIDE / Math.max(w,h));
+      canvas.width = Math.max(1, Math.round(w*ratio));
+      canvas.height = Math.max(1, Math.round(h*ratio));
+      const ctx = canvas.getContext("2d", {alpha:false});
+      if(!ctx) throw new Error("Your browser could not prepare the image.");
+      ctx.fillStyle = "#ffffff";
+      ctx.fillRect(0,0,canvas.width,canvas.height);
+      ctx.drawImage(decoded.source,0,0,canvas.width,canvas.height);
+      const blob = await new Promise((resolve,reject) => canvas.toBlob(
+        x => x ? resolve(x) : reject(new Error("Photo conversion failed.")),
+        "image/jpeg",0.84
+      ));
+      if(blob.size>MAX_UPLOAD) throw new Error("Photo is too large after resizing. Try a smaller image.");
+      return blob;
+    } finally {
+      decoded?.release();
+      canvas.width=canvas.height=0;
+    }
   }
   async function upload(form) {
     if(!client||!user) {report("Sign in before uploading plant photos.",true);return;}
@@ -241,7 +270,7 @@
     const id=section?.dataset.plantPhoto;
     if(!plants.some(p=>String(p.id)===id)) {report("Plant was not found.",true);return;}
     if(pending.has(id)) return;
-    const file=form.elements.image.files?.[0];
+    const file=form.querySelector('input[name="image"]')?.files?.[0];
     if(!file){report("Choose a photo first.",true);return;}
     const taken=form.elements.taken_on.value,caption=form.elements.caption.value.trim().slice(0,350);
     if(!/^\d{4}-\d{2}-\d{2}$/.test(taken)||taken>today()) {
@@ -342,6 +371,19 @@
   document.addEventListener("visibilitychange",()=>{
     if(document.visibilityState==="visible" && user && Date.now()-lastRefresh > 5*60*1000)
       void refresh();
+  });
+  document.addEventListener("change",event=>{
+    const input=event.target.closest?.('.plant-photo-form input[type="file"]');
+    if (!input) return;
+    const id=input.closest(".plant-photo-journal")?.dataset.plantPhoto;
+    const file=input.files?.[0];
+    if (!file) return localStatus(id,"");
+    if (/Android/i.test(navigator.userAgent || "") &&
+        (/^image\/hei[cf]$/i.test(file.type || "") || /\.hei[cf]$/i.test(file.name || ""))) {
+      localStatus(id,"Samsung HEIF/HEIC cannot be read by this browser. Choose a JPG or PNG photo instead.",true);
+    } else {
+      localStatus(id,"Selected: "+file.name+". Tap Upload photo.");
+    }
   });
   document.addEventListener("submit",event=>{
     if(!event.target.matches(".plant-photo-form")) return;
