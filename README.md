@@ -6,7 +6,7 @@ A small optional, collapsible Todoist list is available below the collection tot
 
 **Live site:** https://reece1919.github.io/gaia/
 
-GAIA tracks a collection of 45 plants with photos, current health, care instructions, follow-up priorities, and care history. The site is published with GitHub Pages from the `main` branch.
+GAIA tracks a collection of 48 plants with care profiles, 45 original catalog photos, current health, care instructions, follow-up priorities, and care history. The site is published with GitHub Pages from the `main` branch.
 
 ## How the website works
 
