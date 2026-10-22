@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "Oct 13, 2026",
+  "updatedAt": "Oct 21, 2026",
   "summaryNote": "tap for care, priorities & history",
   "recentCare": {
     "dateLabel": "OCT 10–12, 2026",
@@ -6001,6 +6001,504 @@
       "cardCare": {
         "type": "flowering",
         "light": "very-bright",
+        "water": "one-two",
+        "waterLabel": "1–2″ dry",
+        "soil": "well-drained"
+      }
+    },
+    {
+      "id": "46",
+      "name": "Tali",
+      "species": "Tradescantia ‘Nanouk’",
+      "searchName": "tali nanouk tradescantia pink green trailing",
+      "searchSpecies": "tradescantia nanouk",
+      "status": "Good",
+      "photo": "",
+      "photoAlt": "Tali · pink variegated Tradescantia · photographed Oct 21, 2026",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-10-21",
+      "tags": [
+        {
+          "style": "",
+          "label": "BRIGHT INDIRECT"
+        },
+        {
+          "style": "",
+          "label": "TRADESCANTIA"
+        },
+        {
+          "style": "",
+          "label": "BIOWARE TRIBUTE"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Give bright indirect light under a window or grow light; let stems extend beyond a shelf or hanging pot rather than repeatedly pinching the tips. Check drainage, soil moisture, and pests before joining the main collection.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Established cluster of green, creamy-white, and pink striped leaves with purple undersides. Several growing points visible; a few localized brown spots on older leaves. No widespread collapse apparent in the Oct 21 photo. This is a visual assessment only.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Water when the upper 1–2 inches of mix feel dry; water thoroughly and let the nursery pot drain. Avoid standing water and prolonged saturation. Try not to leave water in the leaf axils.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Bright indirect light; gentle morning sun is usually beneficial, but introduce any stronger direct sun gradually. A grow light above the plant can keep growth compact and pink variegation vivid.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Feed lightly with balanced houseplant fertilizer at label strength during active growth in spring and summer; avoid feeding immediately after purchase or while stressed.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Arrival photo taken in a vehicle; final placement at home not yet recorded. Intended growth habit: trailing/cascading.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Keep in nursery pot if it drains and roots are not crowded. Repot one size larger into a pot with drainage if rootbound. Elevated shelf or hanging planter will let stems fall naturally.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Airy, well-draining indoor potting mix amended with perlite or pumice. Avoid soggy, compacted mixes.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Look for persistent dampness, soft stems, browning from strong sun or wet leaf axils, and spider mites at leaf bases and undersides. Keep growth evenly lit for balanced trailing.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PROPAGATION",
+          "bodyHtml": "Root 2–3-node stem cuttings in water or an airy, lightly moist medium. Replant rooted cuttings around the edges for fullness while leaving other stems to lengthen.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PEST CHECK",
+          "bodyHtml": "New arrival; pest status is unconfirmed. Inspect closely and keep separate from the known spider-mite-affected collection during acclimation.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 21, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Initial photo shared Oct 21, 2026; no formal GAIA photo-journal review recorded",
+            "style": ""
+          },
+          {
+            "label": "Added to collection",
+            "valueHtml": "Oct 21, 2026 · brought by Amber",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Tali",
+            "style": ""
+          },
+          {
+            "label": "Name inspiration",
+            "valueHtml": "Tali’Zorah · Mass Effect",
+            "style": ""
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Original nursery pot with label; drainage holes and diameter unconfirmed",
+            "style": ""
+          },
+          {
+            "label": "Pest status",
+            "valueHtml": "Unconfirmed; inspect during acclimation",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "",
+            "bodyHtml": "<strong>Oct 21, 2026 · </strong>Named Tali in tribute to BioWare characters."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 21, 2026 · </strong>Initial identification and care profile based on the shared arrival photo. Roots, soil moisture, drainage details, and previous care history not verified."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "tradescantia",
+        "light": "bright-indirect",
+        "water": "one-two",
+        "waterLabel": "1–2″ dry",
+        "soil": "well-drained"
+      }
+    },
+    {
+      "id": "47",
+      "name": "Wrex",
+      "species": "Haworthiopsis sp. · zebra-type; exact species unconfirmed",
+      "searchName": "wrex wrex zebra haworthia haworthiopsis skull succulent",
+      "searchSpecies": "haworthiopsis zebra haworthia succulent",
+      "status": "Good",
+      "photo": "",
+      "photoAlt": "Wrex · zebra-type Haworthiopsis · photographed Oct 21, 2026",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-10-21",
+      "tags": [
+        {
+          "style": "",
+          "label": "BRIGHT INDIRECT"
+        },
+        {
+          "style": "",
+          "label": "SUCCULENT"
+        },
+        {
+          "style": "",
+          "label": "BIOWARE TRIBUTE"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Verify that the inner planting pot has drainage and the skull cachepot never holds water. Put in bright indirect light and let the mix dry thoroughly between waterings. Do not water on a tropical-plant schedule.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Compact rosette with firm-looking deep green pointed leaves, raised pale transverse striping and a few small offsets or outer leaves. No obvious widespread yellowing or collapse in the Oct 21 photo. Exact species and roots unverified.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Let the potting mix dry out fully before watering thoroughly, then drain completely. Use much less water in cooler, darker months. Never leave water collected inside the skull planter.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Bright indirect light, ideally with a little gentle morning sun; protect against sudden intense afternoon sun. Stronger grow light is fine if introduced gradually and not too close.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Little fertilizer needed. If actively growing in spring or summer, use diluted cactus/succulent fertilizer infrequently at the product's recommended rate.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Red skull decorative planter in Amber’s arrival photo. Final shelf/window position unknown.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Confirm whether there is a removable nursery pot inside the decorative skull. If drainage is missing, use a draining inner pot with gritty mix; do not soak the outer planter.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Fast-draining succulent or cactus mix with added pumice/perlite. Ensure drainage holes and good airflow.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Watch for soft/translucent bases, persistent wet soil, scorched tips, stretched pale growth from too little light, and mealybugs tucked between leaves.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PROPAGATION",
+          "bodyHtml": "May form offsets that can be separated once adequately rooted. Do not pull apart the main rosette just to propagate.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PEST CHECK",
+          "bodyHtml": "New arrival; pest status is unconfirmed. Inspect closely and keep separate from the known spider-mite-affected collection during acclimation.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 21, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Initial photo shared Oct 21, 2026; no formal GAIA photo-journal review recorded",
+            "style": ""
+          },
+          {
+            "label": "Added to collection",
+            "valueHtml": "Oct 21, 2026 · brought by Amber",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Wrex",
+            "style": ""
+          },
+          {
+            "label": "Name inspiration",
+            "valueHtml": "Urdnot Wrex · Mass Effect",
+            "style": ""
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Red skull-shaped decorative planter; inner pot drainage unconfirmed",
+            "style": ""
+          },
+          {
+            "label": "Pest status",
+            "valueHtml": "Unconfirmed; inspect during acclimation",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "",
+            "bodyHtml": "<strong>Oct 21, 2026 · </strong>Named Wrex in tribute to BioWare characters."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 21, 2026 · </strong>Initial identification and care profile based on the shared arrival photo. Roots, soil moisture, drainage details, and previous care history not verified."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "succulent",
+        "light": "bright-indirect",
+        "water": "fully-dry",
+        "waterLabel": "Fully dry",
+        "soil": "gritty"
+      }
+    },
+    {
+      "id": "48",
+      "name": "Cole",
+      "species": "Chlorophytum comosum · variegated spider plant",
+      "searchName": "cole cole variegated spider plant white green ghost planter",
+      "searchSpecies": "chlorophytum comosum spider plant",
+      "status": "Good",
+      "photo": "",
+      "photoAlt": "Cole · variegated spider plant · photographed Oct 21, 2026",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-10-21",
+      "tags": [
+        {
+          "style": "",
+          "label": "BRIGHT INDIRECT"
+        },
+        {
+          "style": "",
+          "label": "TROPICAL"
+        },
+        {
+          "style": "",
+          "label": "BIOWARE TRIBUTE"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Place in bright indirect light, check that the nursery pot drains freely, and water when the upper 1–2 inches of mix become dry. Allow the graceful leaves to arch outward; later runners may create dangling baby plants.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Green-and-white striped leaves emerging from a compact central rosette, with long arching blades and a few curled tips. No widespread deterioration apparent from the Oct 21 photo. Roots and soil moisture not examined.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Water when the top 1–2 inches of mix dry, then drain thoroughly. Avoid keeping the plant waterlogged or letting it remain bone-dry for long periods.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Bright indirect light or gentle morning sun; avoid prolonged intense afternoon sun. A moderate grow light can maintain variegation indoors.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Feed lightly with balanced houseplant fertilizer during active spring/summer growth, following the label; avoid excessive salts that can contribute to brown tips.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "White ghost decorative planter in Amber’s arrival photo. Final home placement not yet recorded.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Keep in a draining nursery pot if healthy. Spider plants can tolerate snug roots, but repot one size larger if densely rootbound or drying unusually fast.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Well-draining general houseplant mix loosened with perlite. Drain completely before placing the inner pot back into the ghost planter.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Monitor brown leaf tips, chlorosis, wet soil, and pests around leaf bases. Spider plants are sensitive to salt buildup; flush the mix occasionally if tips brown persistently.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PROPAGATION",
+          "bodyHtml": "As it matures, hanging flowering stalks may develop plantlets ('spiderettes'); root them in water or soil once they have roots. Division also works for a crowded clump.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PEST CHECK",
+          "bodyHtml": "New arrival; pest status is unconfirmed. Inspect closely and keep separate from the known spider-mite-affected collection during acclimation.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 21, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Initial photo shared Oct 21, 2026; no formal GAIA photo-journal review recorded",
+            "style": ""
+          },
+          {
+            "label": "Added to collection",
+            "valueHtml": "Oct 21, 2026 · brought by Amber",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Cole",
+            "style": ""
+          },
+          {
+            "label": "Name inspiration",
+            "valueHtml": "Cole · Dragon Age: Inquisition",
+            "style": ""
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "White ghost-shaped decorative outer planter; visible nursery pot, drainage not yet confirmed",
+            "style": ""
+          },
+          {
+            "label": "Pest status",
+            "valueHtml": "Unconfirmed; inspect during acclimation",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "",
+            "bodyHtml": "<strong>Oct 21, 2026 · </strong>Named Cole in tribute to BioWare characters."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 21, 2026 · </strong>Initial identification and care profile based on the shared arrival photo. Roots, soil moisture, drainage details, and previous care history not verified."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "tropical",
+        "light": "bright-indirect",
         "water": "one-two",
         "waterLabel": "1–2″ dry",
         "soil": "well-drained"
