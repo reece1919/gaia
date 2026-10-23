@@ -152,3 +152,58 @@
  .gaia-photo-reviews-content,.gaia-settings-backup-content{padding:9px}
  #gaia-settings-backup #care-overview{padding:9px}
 }
+
+/* Responsive specimen cards: photos no longer stretch beside tall text/actions.
+   Card data and all tap targets remain present; only the phone layout changes. */
+.card-botany-actions{display:flex;align-items:flex-start;flex-wrap:wrap;gap:7px;margin-top:8px;min-width:0}
+.card-botany-actions .botanical-pronunciation{display:contents}
+.card-botany-actions .pronunciation-toggle,
+.card-botany-actions .species-info-shortcut{
+  display:inline-flex;align-items:center;justify-content:center;
+  margin:0;padding:7px 10px;min-height:38px;max-width:100%;font-size:11px
+}
+.card-botany-actions .pronunciation-guide{
+  flex:1 1 100%;min-width:0;width:100%;margin:0
+}
+@media(max-width:699px){
+  #grid .card>summary{
+    display:grid;
+    grid-template-columns:clamp(88px,27vw,108px) minmax(0,1fr);
+    column-gap:11px;row-gap:8px;align-items:start;
+    min-height:0;padding:10px
+  }
+  #grid .card>summary>.photo{
+    grid-column:1;grid-row:1;
+    width:100%;height:108px;min-height:0;align-self:start;
+    border-right:0;border-radius:6px
+  }
+  #grid .card>summary>.photo img{width:100%;height:100%;object-fit:cover}
+  /* Children participate in the parent grid while the original DOM remains intact
+     for photo, care, task, botanical, and reorder controls. */
+  #grid .card>summary .summary-body{display:contents}
+  #grid .card>summary .row{
+    grid-column:2;grid-row:1;
+    display:flex;flex-direction:column;align-items:flex-start;
+    justify-content:flex-start;gap:6px;min-width:0
+  }
+  #grid .card>summary .title-block{min-width:0;width:100%}
+  #grid .card>summary .name{font-size:20px;line-height:1.13}
+  #grid .card>summary .common-names{font-size:12px;line-height:1.35;margin:4px 0}
+  #grid .card>summary .species{font-size:10.5px;line-height:1.35}
+  #grid .card>summary .badge{margin:0}
+  #grid .card>summary .card-botany-actions,
+  #grid .card>summary .card-quick-facts,
+  #grid .card>summary .card-fact-explanation,
+  #grid .card>summary .gaia-card-todos,
+  #grid .card>summary .tap-hint{grid-column:1/-1;min-width:0}
+  #grid .card>summary .card-botany-actions{margin:0;gap:7px}
+  #grid .card>summary .card-quick-facts{
+    margin:0;padding-top:8px;gap:7px;width:100%
+  }
+  #grid .card>summary .card-fact-explanation{margin:0}
+  #grid .card>summary .gaia-card-todos{
+    margin:0!important;padding:9px 10px!important;
+    width:100%;font-size:12px!important;line-height:1.45
+  }
+  #grid .card>summary .tap-hint{margin:0;padding:0 0 2px;font-size:11px}
+}
