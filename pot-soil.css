@@ -1,0 +1,35 @@
+/* Pot profile and independent moisture / growth journal */
+.ps-panel{grid-column:1/-1;min-width:0;border:1px solid #cfe0d3;background:#eef6ee;border-radius:11px;padding:11px 12px;color:#285737}
+.ps-details>summary{cursor:pointer;font-size:13px;font-weight:750;color:#285737;line-height:1.5}
+.ps-summary{display:inline-block;margin-left:6px;font-size:11px;color:#54735b;font-weight:500}
+.ps-content{padding:10px 0 2px;display:grid;gap:10px}
+.ps-pot-summary{font-size:12px;line-height:1.55;overflow-wrap:anywhere}
+.ps-water{font-size:11px;color:#5b6f5e}
+.ps-mix{white-space:pre-wrap;overflow-wrap:anywhere;font-size:11px;line-height:1.5;margin:0;color:#46644d}
+.ps-editor{border-top:1px solid #cfe0d3;padding-top:8px}
+.ps-editor>summary{cursor:pointer;font-size:12px;color:#356a45;font-weight:650}
+.ps-pot-form,.ps-observe-form{display:grid;gap:10px;padding-top:10px}
+.ps-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 10px}
+.ps-fields label{font-size:11px;font-weight:650;color:#4b6050;display:grid;gap:4px;min-width:0}
+.ps-fields .ps-wide{grid-column:1/-1}
+.ps-fields input:not([type=checkbox]),.ps-fields select,.ps-fields textarea{
+  width:100%;min-width:0;background:#fff;border:1px solid #cfe0d3;border-radius:8px;
+  padding:8px;font-size:13px;color:#1c241d;font-family:inherit;box-shadow:none
+}
+.ps-fields textarea{resize:vertical}
+.ps-fields .ps-check{display:flex;align-items:center;gap:8px;font-size:12px;padding:7px 0}
+.ps-check input[type=checkbox]{width:18px;height:18px;min-width:18px;accent-color:#356a45;margin:0}
+.ps-growth{font-weight:750!important;color:#285737!important}
+.ps-save{justify-self:start;min-height:38px;border:1px solid #356a45!important;background:#356a45!important;color:white!important;font-weight:700!important;border-radius:8px;padding:7px 14px;cursor:pointer}
+.ps-divider{border-top:1px solid #cfe0d3;padding-top:12px;display:flex;gap:4px 10px;align-items:baseline;justify-content:space-between;flex-wrap:wrap;font-size:12px}
+.ps-divider span{font-size:10px;color:#64786a}
+.ps-recent{font-size:11px;color:#617266}
+.ps-list{list-style:none;margin:0;padding:0;display:grid;gap:6px;max-height:280px;overflow-y:auto}
+.ps-list li{display:flex;justify-content:space-between;gap:9px;align-items:flex-start;background:white;border-radius:8px;padding:8px;font-size:11px;line-height:1.55;color:#334d39;overflow-wrap:anywhere}
+.ps-list li>div{min-width:0}
+.ps-list p{margin:3px 0 0;white-space:pre-wrap}
+.ps-list small{color:#8a5a12}
+.ps-list button{flex:none;font:inherit;font-size:10px;min-height:28px;background:white;color:#566e5c;border:1px solid #cfe0d3;border-radius:6px;padding:5px 7px;cursor:pointer}
+.ps-message{font-size:11px;margin:3px 0 0;color:#356a45;line-height:1.5;overflow-wrap:anywhere}
+.ps-message.ps-error{color:#a83d3d}
+@media(max-width:550px){.ps-panel{padding:10px}.ps-fields{grid-template-columns:1fr 1fr}.ps-fields label:not(.ps-check){grid-column:1/-1}.ps-fields .ps-check{grid-column:1/-1}.ps-summary{display:block;margin-left:0}}
