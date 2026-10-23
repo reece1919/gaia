@@ -11,12 +11,21 @@ GAIA tracks a collection of 48 plants with care profiles, 45 original catalog ph
 ## How the website works
 
 - **`index.html`** holds the page layout and styles.
-- **`plants.json`** is the source of truth for plant records, quick-care icon metadata, dashboard tasks, and the recent-care summary. It contains all 45 plant profiles, their care sections, health labels, tags, and history.
+- **`plants.json`** is the source of truth for plant records, quick-care icon metadata, dashboard tasks, and the recent-care summary. It contains all 48 plant profiles, their care sections, health labels, tags, and history.
 - **`app.js`** builds the plant cards and quick-care icons, updates counts, and powers the search and filters.
+- **`species-guide.js`** is the read-only species encyclopedia, shared by related plants and linked to Kew's botanical reference.
 - **`tasks.js`** powers the private cross-device task checklist.
 - **`01-...jpg` through `45-...jpg`** are the plant photos, currently stored in the repository root.
 
 The plant records were migrated from the October 12, 2026 dashboard without dropping its 424 care sections, 266 history fields, or 71 history notes.
+
+## Botanical species guide
+
+Every plant card includes a **Species info** shortcut, which opens an expandable **About this species** panel. It shows a botanical reference, genus, family, typical growth habit, distinguishing traits, propagation, and a native range where specifically verified. The external Kew link searches Plants of the World Online and opens in a new tab.
+
+The content lives in `species-guide.js` rather than in the individual care journal or the Supabase database. Plants are mapped by their stable `id` in `byPlant`; repeat specimens of the same taxon share one `taxa` entry. When adding a new plant, assign its ID to a verified taxon key. Until then, the normal plant card continues working without a Species info shortcut.
+
+**Taxonomic caution:** The reference taxon may only be a genus or broader group if a plant's specific identification is uncertain. Cultivars, hybrids, and provisional IDs must not be silently upgraded to confirmed species. The guide provides general botany; use the individual card's WATER, LIGHT, SOIL, and care journal for actual care decisions. Do not invent native ranges when they are unverified.
 
 ## Editing plant records
 
