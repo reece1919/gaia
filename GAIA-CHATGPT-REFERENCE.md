@@ -7,6 +7,7 @@ This repository includes a scheduled, **read-only** snapshot of the GAIA plant c
 - **Plant facts, dates, care observations and review metadata:** `gaia-reference/snapshot.json`
 - **All uploaded photo history:** `gaia-reference/photos/`. Each entry in a plant's `photos` list has a `snapshot_image` path. The most recent two are also available under `latest_photo.snapshot_image` and `previous_photo.snapshot_image`.
 - **Original catalog photos:** Each plant's `reference_image` points to its existing image in the repository when available. A catalog reference is **not** a private photo-journal upload.
+- **Comparison index:** Each plant's `comparison` includes `latest_image`, its capture date, and all `candidates` from earlier journal photos and original catalog images. Use `comparison.ready` to find plants with a pair. Snapshot totals are in `comparison_ready_count` and `comparison_candidate_count`. Catalog image capture dates are **unknown** and must not be inferred.
 - **Live browser gallery:** `private-view.html` (requires its separate viewing link and is not a reliable machine-readable source)
 
 The snapshot is **not live**: check `synced_at` and `generated_at`. If a watering event, pot profile, or moisture check is missing, say **not recorded or not synced**, not that it never happened.
