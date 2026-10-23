@@ -51,6 +51,8 @@
     const wrapper = document.createElement("div");
     wrapper.className = kind === "type" ? "gaia-type-heading" : "gaia-family-heading";
     wrapper.dataset.groupKey = id;
+    wrapper.setAttribute("role", "heading");
+    wrapper.setAttribute("aria-level", kind === "type" ? "2" : "3");
     const title = document.createElement("button");
     title.type = "button";
     title.className = "gaia-group-toggle";
@@ -123,6 +125,7 @@
     if (view !== "grouped") return;
     let visible = 0;
     let visibleTypes = 0;
+    let visibleFamilies = 0;
     for (const type of typeGroups) {
       const typeClosed = collapsedTypes.has(type.id);
       let typeCount = 0;
@@ -130,6 +133,7 @@
         const familyClosed = collapsedFamilies.has(family.id);
         const matching = family.cards.filter(card => !card.hidden).length;
         typeCount += matching;
+        if (matching) visibleFamilies++;
         family.head.element.hidden = matching === 0 || typeClosed;
         family.head.count.textContent = matching + (matching === 1 ? " plant" : " plants");
         family.head.button.setAttribute("aria-expanded", String(!familyClosed));
@@ -146,7 +150,8 @@
       visible += typeCount;
     }
     status.textContent = visible + (visible === 1 ? " plant" : " plants") + " · " +
-      visibleTypes + (visibleTypes === 1 ? " type" : " types");
+      visibleTypes + (visibleTypes === 1 ? " type" : " types") + " · " +
+      visibleFamilies + (visibleFamilies === 1 ? " family group" : " family groups");
   }
 
   function restoreManualOrder() {
