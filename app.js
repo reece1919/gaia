@@ -54,6 +54,8 @@
     "vine": ["Vine", "vine"],
     "zz": ["ZZ plant", "sprout"]
   };
+  // Let the collection browser reuse exactly the same type labels as card icons.
+  window.GAIA_PLANT_TYPES = TYPES;
   const ICONS = {
     "sun": '<circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>',
     "sun-partial": '<path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2"/><path d="M16 12a4 4 0 0 0-8 0"/>',
