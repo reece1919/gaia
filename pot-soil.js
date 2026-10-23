@@ -291,6 +291,13 @@
     save();message("Observation removed.");render();
   });
   load();
+  window.GAIA_POT_SOIL = {
+    profile: id => { const p=profileFor(id); return p?{...p}:null; },
+    pending: () => Object.values(state.profiles).some(p=>p?.synced===false) || state.checks.some(x=>x?.synced===false),
+    refresh: sync
+  };
+  document.addEventListener("gaia:clipboard-saved",()=>{if(state.user)void sync();});
   if(window.GAIA_DATA?.plants)mount(window.GAIA_DATA.plants);
   if(window.GAIA_CLOUD)connect(window.GAIA_CLOUD);
 })();
+

@@ -1,5 +1,18 @@
 # GAIA — Plant Collection Dashboard
 
+## Clipboard field sheets
+
+Use **Export clipboard sheet** below the header to prepare the collection in its current saved order. Choose all plants or only those shown by the current filter. **Print landscape / save PDF** uses US Letter landscape with eight plants per page (six pages for 48 plants). The sheet includes plant IDs, common names, recorded watering, a writable watering date, inner pot width/depth in inches, actual soil mix, new growth, moisture, notes, and the latest associated open task with a Done box. Current recorded values are reference only. Todoist tasks confidently matching exactly one plant are preferred; retained GAIA tasks are the fallback. If neither exists, the latest logged care event is shown without a completion box. Long task/mix text may be shortened on paper; spreadsheet exports retain it in full.
+
+Download **spreadsheet (.xlsx)** for Excel, or **CSV** for direct round-trip editing. Yellow spreadsheet columns are changes; `recorded_` columns retain reference values. Blank/unchecked means no update. Keep plant IDs as text, including leading zeros. Dates use `YYYY-MM-DD`. To import an edited Excel file, save its **Tracking** tab as CSV. The scan key is also included in the workbook's guide tab in ordered JSON chunks.
+
+**Scan completed sheet** uses a manual ChatGPT transcription handoff, with no paid OpenAI API: choose the saved export, copy scan instructions, open ChatGPT and attach the sheet photos, then paste the returned JSON into GAIA. The optional photo preview stays in the browser and is not uploaded automatically. JSON/CSV file imports are also accepted. Export scan keys are retained locally for the latest 20 sheets per signed-in account; download the scan key JSON to use another device or recover after browser storage is cleared. Sign in and verify MFA before preparing a sheet intended for import.
+
+Preview loads current owner records, allows edits and per-plant exclusion, and requires **Save selected changes**. Saving uses the existing owner-authenticated Supabase client/RLS. Pot updates preserve unspecified fields and reject changes made after preview. Watering and soil/growth observations are appended, with deterministic per-sheet IDs and read-back verification; repeated imports do not replace existing observations. A watering already logged for the same plant/date is not duplicated. Task completion is tied to the exact exported task and never implies watering. Changed/removed GAIA tasks and edited Todoist tasks are rejected; Todoist completions are checked against a fresh open-task list. Partial failures are reported alongside retained successful writes. Pending local care/pot changes must sync before import. No photo assessments are changed, no tasks are created, and no new tables, credentials or service-role access are added.
+
+Code: `clipboard-core.js` (validation/interchange/Excel package), `clipboard-store.js` (authenticated persistence), `clipboard.js` and `clipboard.css` (UI and printing). Core/store checks: `node --test tests/clipboard.test.cjs`. The optional Playwright test `tests/clipboard.browser.cjs` runs against a local server with all private APIs mocked. `tests/clipboard-browser.html` is an isolated browser fixture; its saves affect in-memory test records only.
+
+
 ## Todoist / GAIA tasks (October 2026)
 
 A small optional, collapsible Todoist list is available below the collection totals. It filters open Todoist tasks with the personal `gaia` label, using ORBIT's existing secure OAuth bridge and the shared account's MFA session. No Todoist token is stored in GAIA; the herbarium appearance and plant records were not redesigned.

@@ -330,6 +330,7 @@
     if(document.visibilityState==="visible"&&isReady()&&!loading&&!saving.size&&!formBusy &&
        Date.now()-lastSync>60*1000) void sync();
   });
+  document.addEventListener("gaia:clipboard-saved",()=>{if(user)void sync();});
   if(window.GAIA_DATA) ready(window.GAIA_DATA);
   if(window.GAIA_CLOUD) auth(window.GAIA_CLOUD);
   render();

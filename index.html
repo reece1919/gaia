@@ -8,6 +8,7 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; img-src 'self' https: data: blob:; connect-src 'self' https://zdurujqwhxqrwbhwzzxg.supabase.co wss://zdurujqwhxqrwbhwzzxg.supabase.co https://api.todoist.com https://reece1919.github.io; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="description" content="GAIA — personal plant collection dashboard, care and history">
+<link rel="stylesheet" href="clipboard.css?v=20261023-v1">
 <title>GAIA — The Midnight Herbarium</title>
 <link rel="icon" type="image/svg+xml" href="gaia-metal-crest.svg?v=2.0.0">
 <link rel="apple-touch-icon" sizes="180x180" type="image/png" href="apple-touch-icon.png?v=2.0.0">
@@ -1038,6 +1039,10 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
   <a href="https://chatgpt.com/g/g-p-6a68d01f4a088191820e9381dd3d14c8/project" target="_blank" rel="noopener noreferrer" aria-label="Ask GAIA in ChatGPT (opens in a new tab)">Ask GAIA <span aria-hidden="true">↗</span></a>
 </nav>
 
+<section id="gaia-clipboard" aria-label="Plant care clipboard">
+ <div><strong>Clipboard field sheet</strong><p>Print landscape, track care by hand, then review your scanned updates.</p></div>
+ <div class="clip-actions"><button type="button" data-clipboard-export disabled>Export clipboard sheet</button><button type="button" data-clipboard-import>Scan completed sheet</button></div>
+</section>
 <details id="gaia-tasks" class="gaia-task-panel" aria-label="Tasks to complete">
   <summary>
     <span class="gaia-task-summary-title"><span aria-hidden="true" class="gaia-task-summary-icon">✓</span> Plant care &amp; tasks</span>
@@ -1168,13 +1173,16 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 <script src="species-guide.js?v=20261023-v1" defer></script>
 <script src="app.js?v=20261023-type-family1" defer></script>
 <script src="collection-grouping.js?v=20261023-type-family1" defer></script>
-<script src="care.js?v=20261013-mfa1" defer></script>
-<script src="pot-soil.js?v=20261023-v1" defer></script>
+<script src="care.js?v=20261023-clipboard1" defer></script>
+<script src="pot-soil.js?v=20261023-clipboard1" defer></script>
 <script src="gaia-todoist-checkable.js?v=1" defer></script>
 <script src="security-mfa.js?v=1.3.1" defer></script>
 <script src="photos.js?v=20261017-android-upload1" defer></script>
 <script src="manual-photo-review.js?v=20261023-snapshot-reviews-v1" defer></script>
-<script src="tasks.js?v=20261016-photo-to-dos1" defer></script>
+<script src="tasks.js?v=20261023-clipboard1" defer></script>
+<script src="clipboard-core.js?v=20261023-v1" defer></script>
+<script src="clipboard-store.js?v=20261023-v1" defer></script>
+<script src="clipboard.js?v=20261023-v1" defer></script>
 <script src="insights.js?v=20261016-manual-review1" defer></script>
 <script src="photo-review-summary.js?v=20261015-v1" defer></script>
 <script>

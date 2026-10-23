@@ -1,0 +1,18 @@
+/* Isolated in-memory browser fixture. Never loaded by index.html. */
+(()=>{
+ const owner='gaia-clipboard-test-fixture';
+ const tables={gaia_pot_profiles:[{user_id:owner,plant_id:'02',inner_diameter_in:4,inner_depth_in:5,soil_mix:'nursery mix',drainage_holes:true,inner_material:'terracotta',updated_at:'old'}],plant_care_events:[{id:'old-water',user_id:owner,plant_id:'40',action_type:'water',happened_on:'2026-10-14',created_at:'old'}],gaia_soil_observations:[],gaia_custom_tasks:[{id:'task-groot',user_id:owner,plant_id:'02',title:'Inspect Groot for fresh growth',created_at:'2026-10-23T12:00:00Z',completed_at:null}]};
+ const writes=[];
+ const db={auth:{getSession:async()=>({data:{session:{user:{id:owner},access_token:'test-only'}}}),mfa:{getAuthenticatorAssuranceLevel:async()=>({data:{currentLevel:'aal2'}})}},from(table){if(!Object.hasOwn(tables,table))throw Error('Unexpected table '+table);let op='read',data,filters=[],slice=null,one=false,ignore=false;const q={select(){return q;},eq(k,v){filters.push(r=>String(r[k])===String(v));return q;},is(k,v){filters.push(r=>r[k]===v);return q;},order(){return q;},range(a,b){slice=[a,b+1];return q;},limit(n){slice=[0,n];return q;},maybeSingle(){one=true;return q;},update(d){op='update';data=d;return q;},insert(d){op='insert';data=d;return q;},upsert(d,o){op='upsert';data=d;ignore=o.ignoreDuplicates;return q;},then(resolve,reject){try{let rows=tables[table].filter(r=>filters.every(f=>f(r)));if(op!=='read'){if(op==='update')rows.forEach(r=>Object.assign(r,data));else{const previous=tables[table].find(r=>data.id?r.id===data.id:r.user_id===data.user_id&&r.plant_id===data.plant_id);if(previous&&ignore)rows=[];else{const r={created_at:new Date().toISOString(),updated_at:new Date().toISOString(),...structuredClone(data)};tables[table].push(r);rows=[r];}}writes.push({table,op,data:structuredClone(data)});}if(slice)rows=rows.slice(...slice);return Promise.resolve({data:one?(structuredClone(rows[0])||null):structuredClone(rows),error:null}).then(resolve,reject);}catch(e){return Promise.reject(e).then(resolve,reject);}}};return q;}};
+ window.GAIA_CLOUD={client:db,user:{id:owner}};window.GAIA_SUPABASE={url:'https://fixture.invalid'};
+ window.GAIA_CARE={events:()=>[],pending:()=>false};window.GAIA_POT_SOIL={profile:()=>null,pending:()=>false};
+ const original=window.fetch.bind(window);window.fetch=(input,options)=>String(input).startsWith('https://fixture.invalid/')?Promise.resolve(new Response(JSON.stringify({results:[],next_cursor:null}),{headers:{'Content-Type':'application/json'}})):original(input,options);
+ document.addEventListener('gaia:clipboard-saved',()=>{document.getElementById('fixture-state').textContent=JSON.stringify({writes:writes.length,plants:tables.gaia_pot_profiles,watering:tables.plant_care_events,observations:tables.gaia_soil_observations,tasks:tables.gaia_custom_tasks},null,2);});
+ original('../plants.json').then(r=>r.json()).then(data=>{window.GAIA_DATA=data;for(const p of data.plants){const card=document.createElement('div');card.className='card';card.dataset.plantId=p.id;document.getElementById('grid').append(card);}document.dispatchEvent(new CustomEvent('gaia:ready',{detail:{plants:data.plants}}));});
+ document.getElementById('fixture-print').addEventListener('click',()=>{
+  if(!document.querySelector('.clip-page'))return;
+  document.getElementById('gaia-clipboard-dialog').close();
+  const rule=[...document.styleSheets].filter(s=>s.href?.includes('clipboard.css')).flatMap(s=>[...s.cssRules]).find(r=>r.conditionText==='print');
+  const style=document.createElement('style');style.textContent=[...rule.cssRules].map(r=>r.cssText).join('\n');document.head.append(style);document.body.classList.add('fixture-print');
+ });
+})();

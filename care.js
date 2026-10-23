@@ -407,6 +407,9 @@
   document.addEventListener("gaia:ready", event => mount(event.detail.plants || []));
   local = readKey(key());
   renderJournal();
+  window.GAIA_CARE = {events: () => allEvents().map(e => ({...e})), pending: () => local.some(e => !e.synced), refresh: sync};
+  document.addEventListener("gaia:clipboard-saved", () => { if (user) void sync(); });
   if (window.GAIA_DATA?.plants) mount(window.GAIA_DATA.plants);
   void setupCloud();
 })();
+
