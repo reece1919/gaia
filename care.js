@@ -145,10 +145,13 @@
   function mount(plantsArray) {
     if (plants.length) return;
     plants = plantsArray;
-    document.querySelectorAll("#grid .card").forEach((card, i) => {
-      const plant = plants[i];
-      if (plant && card.querySelector(".care")) {
-        card.querySelector(".care").insertAdjacentHTML("afterbegin", panelHtml(plant));
+    const plantsById = new Map(plants.map(p => [String(p.id), p]));
+    document.querySelectorAll("#grid .card[data-plant-id]").forEach(card => {
+      // Never pair care logs by DOM position: grouped cards are sorted.
+      const plant = plantsById.get(card.dataset.plantId);
+      const care = card.querySelector(".care");
+      if (plant && care && !care.querySelector(".care-tracker")) {
+        care.insertAdjacentHTML("afterbegin", panelHtml(plant));
       }
     });
     renderJournal();
