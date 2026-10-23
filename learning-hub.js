@@ -152,8 +152,6 @@
   const overview=el("section","gaia-care-overview-panel");
   overview.setAttribute("aria-labelledby","gaia-care-center-title");
   const head=el("div","gaia-hub-section-head");
-  head.appendChild(addText(el("span","",""),"span","gaia-eyebrow","")); // overwritten below
-  head.textContent="";
   const headingCopy=el("div");
   addText(headingCopy,"span","gaia-eyebrow","DAILY PRACTICE");
   addText(headingCopy,"h2","","Care Center");
@@ -191,7 +189,7 @@
         "medium":"Medium to bright indirect","flexible":"Low to bright"
       }[light]||"Check individual profile";
       [["Light guideline",lightName],["Watering cue",p.cardCare?.waterLabel||"Check individual profile"],
-      ["Last logged watering",latestWatering(p.id)||"No watering entry recorded"]].forEach(([label,value])=>{
+      ["Last logged watering",latestWatering(p.id)||"No date in loaded journal"]].forEach(([label,value])=>{
         const item=el("div");
         addText(item,"strong","",label);
         addText(item,"span","",value);
