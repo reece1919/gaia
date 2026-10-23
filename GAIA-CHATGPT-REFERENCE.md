@@ -12,6 +12,13 @@ This repository includes a scheduled, **read-only** snapshot of the GAIA plant c
 
 The snapshot is **not live**: check `synced_at` and `generated_at`. If a watering event, pot profile, or moisture check is missing, say **not recorded or not synced**, not that it never happened.
 
+## GAIA Review New Photos button
+
+The GAIA header's **Review New Photos** button builds a ChatGPT prompt from `manual-photo-review.js`. That prompt now prioritizes this full GitHub snapshot for visual inspection, including `comparison.candidates` and per-plant watering, moisture and growth notes. It cross-checks the newest photo's status with authenticated GAIA/Supabase before saving (because the snapshot can lag behind a new upload). It asks for all latest *pending* photos while preserving already-reviewed history.
+
+For save-back, use an authorized owner session (AAL2 verification) through the existing `gaia-photo-review` `save_review` operation. When multiple journal photos exist, the save endpoint requires the second-newest journal photo as `previous_source=private`; otherwise it requires the exact catalog reference in `plants.json`. Visual analysis may consider more historical images than the save endpoint uses as its primary comparison identity. Verify persisted statuses and resulting GAIA checkable tasks. GitHub read access **does not** automatically provide write access. The button opens ChatGPT, not an automatic background job or guaranteed Work-mode session.
+
+
 ## Activate automatic updates (one-time setup)
 
 1. In the GitHub repository, open **Settings → Secrets and variables → Actions**.
