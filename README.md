@@ -40,6 +40,14 @@ The content lives in `species-guide.js` rather than in the individual care journ
 
 **Taxonomic caution:** The reference taxon may only be a genus or broader group if a plant's specific identification is uncertain. Cultivars, hybrids, and provisional IDs must not be silently upgraded to confirmed species. The guide provides general botany; use the individual card's WATER, LIGHT, SOIL, and care journal for actual care decisions. Do not invent native ranges when they are unverified.
 
+## Learn about types and families
+
+Every plant-type and botanical-family heading has an independent **Learn about this plant type/family** expander. It teaches what the group is, how to recognize it, typical growth conditions, and something interesting or potentially misleading. The lessons remain accessible even when the plants in a category are collapsed. They do not write any data to Supabase and never use card position to associate a lesson or care record with a plant.
+
+The general guidance is stored in `group-learning.js`: `types` is keyed by the existing `cardCare.type` values and `families` is keyed by botanical family names from `species-guide.js`. Each entry contains `about`, `recognize`, `conditions`, and `learn`. Collection-specific examples help compare the differences between related plants. Kew (Plants of the World Online) links support family research; the RHS houseplant guide covers general care.
+
+**Important:** A type is a horticultural category or growth habit, not necessarily a botanical taxon. A family is a shared evolutionary lineage, not a guarantee of identical light, soil, watering, or temperature needs. Follow each plant's individual care profile for care decisions. If a new type or family is introduced, add the corresponding educational entry to `group-learning.js`.
+
 ## Browse by plant type and botanical family
 
 The collection defaults to **By type & family**. Each type heading uses the existing plant-type icon and label from `app.js`/`plants.json`. Within a type, cards are grouped alphabetically by botanical family, then by individual plant name. Both type and family headings can be collapsed, and the displayed counts follow search filters.
