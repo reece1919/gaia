@@ -225,3 +225,25 @@ test("Audit-approved UX only: no empty task boxes, duplicate quick facts or expo
   assert.ok(html.includes('id="recent-care"'),"Unselected dated catalog history must remain");
   assert.ok(html.includes('src="collection-grouping.js'),"Unselected taxonomy grouping must remain");
 });
+
+
+test("Phone plant cards keep image and title compact with full-width care and task rows",()=>{
+  const app=read("app.js");
+  const css=read("compact-shell.css");
+  const taskQueue=read("task-queue.js");
+  const html=read("index.html");
+  const cardMarkup=app.slice(app.indexOf("card.innerHTML ="),app.indexOf("return card;",app.indexOf("card.innerHTML =")));
+  assert.ok(cardMarkup.includes('class="card-botany-actions"'),"Botanical shortcuts need their own row");
+  assert.ok(cardMarkup.includes('class="badge"'),"Saved condition flag must remain visible");
+  assert.ok(cardMarkup.includes("quickFacts(p)"),"Quick care facts must remain present");
+  assert.ok(cardMarkup.includes("speciesGuide(p)"),"Expanded species education must remain present");
+  assert.match(css,/#grid \.card>summary\s*\{\s*display:grid;/);
+  assert.match(css,/grid-template-columns:clamp\(88px,27vw,108px\)/);
+  assert.match(css,/#grid \.card>summary>\.photo\s*\{[^}]*height:108px;min-height:0/);
+  assert.match(css,/#grid \.card>summary \.summary-body\{display:contents\}/);
+  for(const selector of [".card-botany-actions",".card-quick-facts",".card-fact-explanation",".gaia-card-todos",".tap-hint"]){
+    assert.ok(css.includes("#grid .card>summary "+selector),"Missing full-width layout for "+selector);
+  }
+  assert.match(taskQueue,/summaryBody\?\.insertBefore\(preview,summaryBody\.querySelector\("\.tap-hint"\)\)/);
+  assert.match(html,/href="compact-shell\.css\?v=20261023-mobile-cards1"/);
+});
