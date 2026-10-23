@@ -65,7 +65,7 @@
   function setMode(on) {
     if (on && (!loaded || !user || !client)) {
       announce(user ? "Finish GAIA account verification or reconnect to enable saved ordering." :
-        "Sign in under Sync, account & backup to save plant order across devices.");
+        "Sign in under Care → Tools & reviews → Settings & Backup to save plant order across devices.");
       return;
     }
     if (saving || drag) return;
