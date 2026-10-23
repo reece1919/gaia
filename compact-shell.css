@@ -101,3 +101,54 @@
   /* Remove overlapping tablet-only quicklink row; the hub tabs do the same job. */
   #gaia-hub-tabs{margin-top:10px}
 }
+
+/* Audit-approved simplification: no empty GAIA task containers. */
+.gaia-card-todos[hidden],.gaia-plant-todos[hidden]{display:none!important}
+
+/* Care Essentials uses the existing authoritative WATER/LIGHT/SOIL sections. */
+.gaia-care-essentials{grid-column:1/-1;min-width:0;border:1px solid #627b66;border-radius:8px;padding:12px;background:#1d342e}
+.gaia-care-essentials h3{font:700 18px Georgia,serif;color:#f0dba9;margin:0 0 11px}
+.gaia-care-essentials-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.gaia-care-essentials-fields>.box{min-width:0}
+.gaia-care-essentials-fields>.box.full{grid-column:1/-1}
+.gaia-care-why{border-top:1px solid rgba(197,174,124,.3);margin-top:12px;padding-top:8px}
+.gaia-care-why>summary{cursor:pointer;color:#edd19d;font:750 12px/1.5 system-ui,sans-serif;padding:7px 2px}
+.gaia-care-why-body{padding:5px 2px 8px}
+.gaia-care-why-body p{color:#d8e3d5;font:400 12px/1.65 system-ui,sans-serif;margin:7px 0}
+.gaia-care-why-body small{display:block;color:#b7c8b5;font:400 11px/1.55 system-ui,sans-serif}
+.gaia-care-why>summary:focus-visible{outline:2px solid #e7c890;outline-offset:2px}
+
+/* Photo analysis/refresh have separate labels but a single entry point. */
+#gaia-photo-reviews,#gaia-settings-backup{margin:10px 0;border:1px solid #6b866d;border-radius:8px;background:#213a30}
+#gaia-photo-reviews>summary,#gaia-settings-backup>summary{cursor:pointer;min-height:42px;padding:12px 14px;color:#ecd7ac;font:750 13px/1.4 system-ui,sans-serif;list-style:inside disclosure-closed}
+#gaia-photo-reviews[open]>summary,#gaia-settings-backup[open]>summary{list-style-type:disclosure-open;border-bottom:1px solid #536f5d}
+.gaia-photo-reviews-content,.gaia-settings-backup-content{padding:12px 13px}
+.gaia-photo-reviews-content>strong{display:block;color:#f0dba9;font:750 12px/1.5 system-ui,sans-serif;margin:8px 0 2px}
+.gaia-photo-reviews-content>p{font:400 12px/1.5 system-ui,sans-serif;color:#becfbb;margin:2px 0 8px}
+.gaia-photo-review-refresh{display:flex;flex-wrap:wrap;gap:9px;padding:7px 0 10px}
+.gaia-photo-review-refresh>button{border:1px solid #a18e66;background:#344d3c;color:#f6dfb1;border-radius:6px;font:750 12px system-ui,sans-serif;min-height:41px;padding:9px 12px;cursor:pointer}
+.gaia-photo-review-refresh>button:disabled{opacity:.48;cursor:not-allowed}
+#gaia-photo-reviews .gaia-review-launch{margin:4px 0 13px}
+#gaia-photo-reviews #gaia-photo-review-summary{border-top:1px solid #536d5b;margin:10px 0 0;padding-top:10px}
+#gaia-settings-backup #care-overview{margin:0;padding:12px;background:#172d27}
+#gaia-settings-backup .care-settings{margin:0;border:0;padding:0}
+#gaia-settings-backup .care-settings>summary{display:none}
+#gaia-settings-backup .care-settings-inner{padding-top:12px}
+#gaia-settings-backup .care-overview-head{margin-bottom:6px}
+#gaia-settings-backup .care-overview h2{font-size:16px}
+#gaia-settings-backup #gaia-photo-message,.gaia-settings-backup #care-message{overflow-wrap:anywhere}
+.gaia-photo-troubleshooting{margin:10px 0;border:1px solid #657b67;border-radius:6px;padding:9px 11px;background:#1b322c}
+.gaia-photo-troubleshooting>summary{cursor:pointer;color:#ebd4a5;font:750 12px/1.5 system-ui,sans-serif}
+.gaia-photo-troubleshooting p{color:#c6d4c6;font:400 12px/1.55 system-ui,sans-serif;margin:8px 0}
+.gaia-photo-test-list{display:flex;flex-wrap:wrap;gap:7px}
+.gaia-photo-test-list>button{padding:7px 9px;border:1px solid #667d6a;border-radius:5px;background:#2c4638;color:#e8dcc2;font-size:12px;cursor:pointer}
+#gaia-photo-reviews>summary:focus-visible,#gaia-settings-backup>summary:focus-visible,
+.gaia-photo-troubleshooting>summary:focus-visible{outline:2px solid #efd39f;outline-offset:2px}
+@media(max-width:699px){
+ .gaia-care-essentials{padding:10px}
+ .gaia-care-essentials h3{font-size:16px}
+ .gaia-care-essentials-fields{grid-template-columns:1fr}
+ .gaia-care-essentials-fields>.box.full{grid-column:auto}
+ .gaia-photo-reviews-content,.gaia-settings-backup-content{padding:9px}
+ #gaia-settings-backup #care-overview{padding:9px}
+}
