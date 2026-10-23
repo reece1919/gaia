@@ -26,13 +26,23 @@ async function load(){
   const res=await fetch(endpoint({format:"json"}),{cache:"no-store",referrerPolicy:"no-referrer"});
   if(!res.ok)throw Error("Unable to retrieve collection (HTTP "+res.status+").");
   const data=await res.json();if(!Array.isArray(data.plants))throw Error("Invalid collection response");
-  status.textContent=data.plants.length+" plants · Updated "+new Date(data.generated_at).toLocaleString();
+  status.textContent=data.plants.length+" plants · "+data.plants.reduce((sum,p)=>sum+(Array.isArray(p.photos)?p.photos.length:0),0)+" uploaded photos · Updated "+new Date(data.generated_at).toLocaleString();
   for(const p of data.plants){
    const card=node("article",undefined,"card");card.append(node("h2",p.name||p.plant_id),node("small",p.species||"Species not recorded"));
    if(p.latest_photo){
     const img=node("img");img.loading="lazy";img.alt="Latest photo of "+(p.name||p.plant_id);img.src=endpoint({image:p.latest_photo.id});card.append(img);
     card.append(node("small","Uploaded photo "+(p.latest_photo.taken_on||"undated")+" · "+p.latest_photo.analysis_status));
-    if(p.previous_photo){const a=node("a","View previous photo");a.href=endpoint({image:p.previous_photo.id});a.target="_blank";a.rel="noreferrer noopener";const linkRow=node("p");linkRow.append(a);card.append(linkRow)}
+    if(Array.isArray(p.photos) && p.photos.length>1){
+      const details=node("details"),summary=node("summary","View "+(p.photos.length-1)+" older photo"+(p.photos.length===2?"":"s"));
+      const history=node("ul",undefined,"logs");
+      for(const [index,oldPhoto] of p.photos.slice(1).entries()){
+        if(!oldPhoto.id)continue;
+        const link=node("a",(oldPhoto.taken_on||"Undated")+" · "+(oldPhoto.analysis_status||"unreviewed"));
+        link.href=endpoint({image:oldPhoto.id});link.target="_blank";link.rel="noreferrer noopener";
+        const item=node("li");item.append(link);history.append(item);
+      }
+      details.append(summary,history);card.append(details);
+    }
    } else if(p.reference_photo && /^[a-zA-Z0-9][a-zA-Z0-9_.-]{0,180}\.(?:jpe?g|png|webp)$/i.test(p.reference_photo)){
     const img=node("img");img.loading="lazy";img.alt="Catalog reference photo of "+(p.name||p.plant_id);
     img.src=new URL("./"+encodeURIComponent(p.reference_photo),location.href).href;card.append(img);
