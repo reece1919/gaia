@@ -170,57 +170,48 @@
   overview.appendChild(careFlagDetails);
   care.insertBefore(overview,care.firstChild);
 
-  function latestWatering(id){
-    const entries=window.GAIA_CARE?.events?.() || [];
-    const dates=entries.filter(x=>String(x.plant_id)===String(id)&&x.action_type==="water").map(x=>x.happened_on).filter(Boolean).sort();
-    return dates.length?dates[dates.length-1]:null;
-  }
   function refreshCardLearning(){
     if(!cardsAreReady())return;
-    for (const p of data){
-      const card=[...document.querySelectorAll("#grid > .card[data-plant-id]")].find(n=>n.dataset.plantId===String(p.id));
-      const grid=card?.querySelector(".care-grid");
+    const cards=new Map([...document.querySelectorAll("#grid > .card[data-plant-id]")]
+      .map(card=>[card.dataset.plantId,card]));
+    for(const p of data){
+      const grid=cards.get(String(p.id))?.querySelector(".care-grid");
       if(!grid)continue;
-      let panel=grid.querySelector(":scope > .gaia-care-reason");
-      if(!panel){
-        panel=el("section","gaia-care-reason");
-        grid.insertBefore(panel,grid.firstChild);
+      let essentials=grid.querySelector(":scope > .gaia-care-essentials");
+      if(!essentials){
+        // Move the original WATER, LIGHT and SOIL care sections without copying
+        // or altering their text. Keep every other care and species section intact.
+        const sections=[...grid.querySelectorAll(":scope > .box")];
+        const chosen=sections.filter(node=>["WATER","LIGHT","SOIL"]
+          .includes(node.querySelector(":scope > .label")?.textContent?.trim()));
+        if(!chosen.length)continue;
+        essentials=el("section","gaia-care-essentials");
+        addText(essentials,"h3","","Care Essentials");
+        const fields=el("div","gaia-care-essentials-fields");
+        chosen.forEach(node=>fields.appendChild(node));
+        essentials.appendChild(fields);
+        const why=el("details","gaia-care-why");
+        why.appendChild(el("summary","","Why this care works"));
+        why.appendChild(el("div","gaia-care-why-body"));
+        essentials.appendChild(why);
+        grid.insertBefore(essentials,grid.firstChild);
       }
-      panel.replaceChildren();
-      const title=el("h3","","Care reasoning · "+p.name);
-      panel.appendChild(title);
-      const current=el("div","gaia-care-reason-facts");
-      const light=p.cardCare?.light||"";
-      const lightName={
-        "full-sun":"Full sun","very-bright":"Very bright",
-        "bright":"Bright light","bright-indirect":"Bright indirect",
-        "medium":"Medium to bright indirect","flexible":"Low to bright"
-      }[light]||"Check individual profile";
-      [["Light guideline",lightName],["Watering cue",p.cardCare?.waterLabel||"Check individual profile"],
-      ["Last logged watering",latestWatering(p.id)||"No date in loaded journal"]].forEach(([label,value])=>{
-        const item=el("div");
-        addText(item,"strong","",label);
-        addText(item,"span","",value);
-        current.appendChild(item);
-      });
-      const profile=window.GAIA_POT_SOIL?.profile?.(p.id);
-      if(profile?.soil_mix){
-        const item=el("div");
-        addText(item,"strong","","Recorded soil mix");
-        addText(item,"span","",profile.soil_mix);
-        current.appendChild(item);
-      }
-      panel.appendChild(current);
+      const body=essentials.querySelector(".gaia-care-why-body");
+      if(!body)continue;
+      body.replaceChildren();
       const type=window.GAIA_GROUP_LEARNING?.types?.[p.cardCare?.type];
       if(type){
-        addText(panel,"p","gaia-care-reason-explainer",type.conditions);
-        addText(panel,"p","gaia-care-reason-caveat",
-          "General growth-pattern guidance, not a fixed watering schedule. Compare it with this plant’s care notes and current soil condition.");
+        addText(body,"p","",type.conditions);
+        addText(body,"p","",type.learn);
+      } else {
+        addText(body,"p","","Compare the plant’s actual root moisture and recent growth with its recorded care guidance.");
       }
+      addText(body,"small","",
+        "These are general growing patterns, not a fixed watering schedule. Individual care notes and observations take priority.");
       const links=el("div","gaia-care-reason-links");
-      links.appendChild(action("Learn the care principles",()=>{show("academy");focusLesson("water");}));
+      links.appendChild(action("Learn care principles",()=>{show("academy");focusLesson("water");}));
       links.appendChild(action("Explore "+family(p),()=>{show("botany");focusFamily(family(p));}));
-      panel.appendChild(links);
+      body.appendChild(links);
     }
   }
 
