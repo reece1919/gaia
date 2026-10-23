@@ -2,8 +2,8 @@
   "schema_version": 1,
   "read_only": true,
   "source": "GAIA owner-approved reference snapshot",
-  "generated_at": "2026-10-23T17:16:01.380Z",
-  "synced_at": "2026-10-23T17:16:01.408360+00:00",
+  "generated_at": "2026-10-23T17:42:39.547Z",
+  "synced_at": "2026-10-23T17:42:39.553672+00:00",
   "plant_count": 48,
   "comparison_ready_count": 42,
   "comparison_candidate_count": 57,
@@ -102,10 +102,37 @@
         "taken_on": "2026-10-18",
         "created_at": "2026-10-21T04:23:30.461618+00:00",
         "caption": "",
-        "analysis_status": "pending",
-        "analysis_summary": "",
-        "analysis_findings": [],
-        "analyzed_at": null,
+        "analysis_status": "reviewed",
+        "analysis_summary": "The October 18 photo retains Groot's green arching crown and exposed swollen base seen on October 14 and in the undated catalog image. Bent leaves and pale scuffed bands were already present; there is no clear new crown collapse. Purple lighting and a changed angle limit color and growth comparison. Watering, moisture and growth observations are not recorded or synced for this plant.",
+        "analysis_findings": [
+          {
+            "kind": "trend",
+            "text": "stable"
+          },
+          {
+            "kind": "observation",
+            "text": "Green arching foliage remains present around the crown in all three views."
+          },
+          {
+            "kind": "observation",
+            "text": "Pale bands, bent blades and some browned tips are visible in the October 14 and catalog views as well as the latest image."
+          },
+          {
+            "kind": "observation",
+            "text": "The exposed trunk base remains upright; firmness and roots cannot be assessed visually."
+          },
+          {
+            "kind": "care",
+            "text": "Check deep mix dryness, pot drainage holes and trunk firmness.",
+            "reason": "The existing care profile flags these checks; leaf creases alone do not establish a watering problem or justify repotting.",
+            "urgency": "routine"
+          },
+          {
+            "kind": "comparison_source",
+            "text": "Earlier private photo: a4b6fe2a-8d42-471c-ac7b-7caa412d4a07 versus newer private photo: 1701fc50-6542-45b9-bc7f-10216bb261d2"
+          }
+        ],
+        "analyzed_at": "2026-10-23T17:26:39.938+00:00",
         "snapshot_image": "gaia-reference/photos/02-a953f09a1b-latest_photo.webp"
       },
       "previous_photo": {
@@ -154,7 +181,7 @@
           "id": "1701fc50-6542-45b9-bc7f-10216bb261d2",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:23:30.461618+00:00",
-          "analysis_status": "pending",
+          "analysis_status": "reviewed",
           "snapshot_image": "gaia-reference/photos/02-a953f09a1b-latest_photo.webp"
         },
         {
@@ -201,10 +228,37 @@
         "taken_on": "2026-10-20",
         "created_at": "2026-10-21T04:24:01.164727+00:00",
         "caption": "",
-        "analysis_status": "pending",
-        "analysis_summary": "",
-        "analysis_findings": [],
-        "analyzed_at": null,
+        "analysis_status": "reviewed",
+        "analysis_summary": "Bowser remains rounded and densely spined on October 20 compared with October 14 and the undated catalog reference. A small pale dried-looking projection also appears in the earlier photo. The newest view is darker and more distant, so subtle tissue-color changes cannot be judged. No synced watering or moisture observations are available.",
+        "analysis_findings": [
+          {
+            "kind": "trend",
+            "text": "stable"
+          },
+          {
+            "kind": "observation",
+            "text": "The rounded cactus form and dense orange-brown spines persist without visible overall collapse."
+          },
+          {
+            "kind": "observation",
+            "text": "A pale projection on the side is present in both journal views, rather than a clearly new change."
+          },
+          {
+            "kind": "observation",
+            "text": "The newest image places the nursery pot in a shared tray beside other plants; standing liquid is not established from the photo."
+          },
+          {
+            "kind": "care",
+            "text": "Check full-depth mix dryness and whether the shared tray holds standing liquid.",
+            "reason": "Cactus care in the existing profile requires full drying between irrigations; nearby plants may have different moisture needs.",
+            "urgency": "routine"
+          },
+          {
+            "kind": "comparison_source",
+            "text": "Earlier private photo: 89e4f005-8383-4576-a7f1-da033840f461 versus newer private photo: 4197d4a9-9a30-4d71-b547-339855a3f32b"
+          }
+        ],
+        "analyzed_at": "2026-10-23T17:26:41.008+00:00",
         "snapshot_image": "gaia-reference/photos/03-0b8efa5a3b-latest_photo.webp"
       },
       "previous_photo": {
@@ -253,7 +307,7 @@
           "id": "4197d4a9-9a30-4d71-b547-339855a3f32b",
           "taken_on": "2026-10-20",
           "created_at": "2026-10-21T04:24:01.164727+00:00",
-          "analysis_status": "pending",
+          "analysis_status": "reviewed",
           "snapshot_image": "gaia-reference/photos/03-0b8efa5a3b-latest_photo.webp"
         },
         {
@@ -524,10 +578,37 @@
         "taken_on": "2026-10-18",
         "created_at": "2026-10-21T04:33:32.762911+00:00",
         "caption": "",
-        "analysis_status": "pending",
-        "analysis_summary": "",
-        "analysis_findings": [],
-        "analyzed_at": null,
+        "analysis_status": "reviewed",
+        "analysis_summary": "Malefecent's October 18 photo retains a broad green rosette and upright burgundy flower bracts compared with the undated catalog image. Brown lower-leaf patches are clear in the reference but poorly visible in the dark, purple-lit latest view; improvement or spread cannot be established. The catalog records an October 11 bath; no subsequent watering, moisture or growth readings are synced.",
+        "analysis_findings": [
+          {
+            "kind": "trend",
+            "text": "uncertain"
+          },
+          {
+            "kind": "observation",
+            "text": "The central bract structure remains upright, surrounded by multiple arching leaves."
+          },
+          {
+            "kind": "observation",
+            "text": "The reference shows a dead lower leaf and brown areas; the latest wider, shaded view does not resolve those same areas well."
+          },
+          {
+            "kind": "observation",
+            "text": "Roots, center firmness and liquid retained inside the decorative pot are not visible."
+          },
+          {
+            "kind": "care",
+            "text": "Inspect the center for softness or odor and compare the existing brown leaf patches in neutral light.",
+            "reason": "These physical checks address the catalog's existing damage without assuming rot or treating dark lighting as a color change.",
+            "urgency": "monitor"
+          },
+          {
+            "kind": "comparison_source",
+            "text": "Original GAIA image: 06-malefecent-bromeliad-guzmania-amber.jpg versus newer private photo: 95b88de2-0dd2-42e0-bb01-85ef80a35917"
+          }
+        ],
+        "analyzed_at": "2026-10-23T17:27:35.452+00:00",
         "snapshot_image": "gaia-reference/photos/06-aacd834b5c-latest_photo.webp"
       },
       "previous_photo": null,
@@ -536,7 +617,7 @@
           "id": "95b88de2-0dd2-42e0-bb01-85ef80a35917",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:33:32.762911+00:00",
-          "analysis_status": "pending",
+          "analysis_status": "reviewed",
           "snapshot_image": "gaia-reference/photos/06-aacd834b5c-latest_photo.webp"
         }
       ],
@@ -570,10 +651,37 @@
         "taken_on": "2026-10-18",
         "created_at": "2026-10-21T04:27:30.276907+00:00",
         "caption": "",
-        "analysis_status": "pending",
-        "analysis_summary": "",
-        "analysis_findings": [],
-        "analyzed_at": null,
+        "analysis_status": "reviewed",
+        "analysis_summary": "Samwise keeps its upright spear-shaped aloe leaves in the October 18 and October 14 journal photos and undated catalog reference. Minor old tip damage persists, with no obvious translucent collapse or broad leaf loss. Backlighting limits color judgment. The catalog records an October 11 foliage bath; soil irrigation and current moisture are not recorded or synced.",
+        "analysis_findings": [
+          {
+            "kind": "trend",
+            "text": "stable"
+          },
+          {
+            "kind": "observation",
+            "text": "The tall central blade and outward-pointing side leaves remain upright in both journal views."
+          },
+          {
+            "kind": "observation",
+            "text": "A small browned tip on a lower leaf is visible in the earlier image as well as the latest."
+          },
+          {
+            "kind": "observation",
+            "text": "The latest photo is strongly backlit; it cannot establish leaf firmness or root-zone dryness."
+          },
+          {
+            "kind": "care",
+            "text": "Check full-depth mix dryness and leaf-base firmness.",
+            "reason": "The aloe profile calls for drying between irrigations; a bath record and dark-looking soil do not establish current moisture.",
+            "urgency": "routine"
+          },
+          {
+            "kind": "comparison_source",
+            "text": "Earlier private photo: 37ab0d10-1adc-42df-ac73-ffd7a08fa14e versus newer private photo: f0c37a5b-b999-435b-a30c-b9311930ac3d"
+          }
+        ],
+        "analyzed_at": "2026-10-23T17:27:36.863+00:00",
         "snapshot_image": "gaia-reference/photos/07-19b100ab77-latest_photo.webp"
       },
       "previous_photo": {
@@ -614,7 +722,7 @@
           "id": "f0c37a5b-b999-435b-a30c-b9311930ac3d",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:27:30.276907+00:00",
-          "analysis_status": "pending",
+          "analysis_status": "reviewed",
           "snapshot_image": "gaia-reference/photos/07-19b100ab77-latest_photo.webp"
         },
         {
@@ -661,10 +769,37 @@
         "taken_on": "2026-10-18",
         "created_at": "2026-10-21T04:27:58.34951+00:00",
         "caption": "",
-        "analysis_status": "pending",
-        "analysis_summary": "",
-        "analysis_findings": [],
-        "analyzed_at": null,
+        "analysis_status": "reviewed",
+        "analysis_summary": "Drogo's October 18 foliage retains the upright green-and-burgundy fan seen on October 14 and in the undated catalog image. Some narrow tips are brown or bent, but broad new yellowing or collapse is not apparent. A root below the pot was already present in the catalog reference. Only an October 11 foliage bath is documented; current irrigation and moisture are not recorded or synced.",
+        "analysis_findings": [
+          {
+            "kind": "trend",
+            "text": "stable"
+          },
+          {
+            "kind": "observation",
+            "text": "The central leaf fan remains upright and similarly full in both journal views."
+          },
+          {
+            "kind": "observation",
+            "text": "Several pointed leaf tips show minor browning or bending, without an obvious large new dead area."
+          },
+          {
+            "kind": "observation",
+            "text": "A projecting root is visible in the latest and catalog photographs; this alone does not measure root crowding."
+          },
+          {
+            "kind": "care",
+            "text": "Inspect leaf tips and undersides for expanding damage or moving pests.",
+            "reason": "Tip wear and prior collection pest concerns support inspection; there is no visual basis for automatic treatment or repotting.",
+            "urgency": "monitor"
+          },
+          {
+            "kind": "comparison_source",
+            "text": "Earlier private photo: facbf1b3-3ccb-42c1-b590-8ff52aca6cb7 versus newer private photo: e432a6ee-e023-423f-9750-629dd8900845"
+          }
+        ],
+        "analyzed_at": "2026-10-23T17:28:27.481+00:00",
         "snapshot_image": "gaia-reference/photos/08-323783be9a-latest_photo.webp"
       },
       "previous_photo": {
@@ -709,7 +844,7 @@
           "id": "e432a6ee-e023-423f-9750-629dd8900845",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:27:58.34951+00:00",
-          "analysis_status": "pending",
+          "analysis_status": "reviewed",
           "snapshot_image": "gaia-reference/photos/08-323783be9a-latest_photo.webp"
         },
         {
@@ -756,10 +891,37 @@
         "taken_on": "2026-10-18",
         "created_at": "2026-10-21T04:28:23.085063+00:00",
         "caption": "",
-        "analysis_status": "pending",
-        "analysis_summary": "",
-        "analysis_findings": [],
-        "analyzed_at": null,
+        "analysis_status": "reviewed",
+        "analysis_summary": "Gandalf remains upright on October 18 with silver lobed foliage and pale-green or tan lower-leaf areas also visible on October 14 and in the undated reference. The latest view looks taller, but camera angle and scale differ and do not establish growth or stretching. The bath history is recorded; no synced moisture or new-growth measurements establish the cause of lower-leaf wear.",
+        "analysis_findings": [
+          {
+            "kind": "trend",
+            "text": "uncertain"
+          },
+          {
+            "kind": "observation",
+            "text": "Silver, fuzzy upper foliage remains present and upright in both journal photos."
+          },
+          {
+            "kind": "observation",
+            "text": "Several lower leaves have less-silver green or tan areas in earlier and latest views."
+          },
+          {
+            "kind": "observation",
+            "text": "Framing and leaf overlap differ, preventing reliable measurement of stem extension or patch spread."
+          },
+          {
+            "kind": "care",
+            "text": "Check whether pale-green or tan patches on lower leaves are expanding.",
+            "reason": "An existing open GAIA checklist already covers this uncertainty; track the same patches rather than treating natural silver fuzz as pests.",
+            "urgency": "monitor"
+          },
+          {
+            "kind": "comparison_source",
+            "text": "Earlier private photo: 7810d115-b522-4b93-befd-0de104804463 versus newer private photo: e65b6454-9142-489b-b3b9-e9a9388e6e4b"
+          }
+        ],
+        "analyzed_at": "2026-10-23T17:28:28.38+00:00",
         "snapshot_image": "gaia-reference/photos/09-3514acf617-latest_photo.webp"
       },
       "previous_photo": {
@@ -806,7 +968,7 @@
           "id": "e65b6454-9142-489b-b3b9-e9a9388e6e4b",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:28:23.085063+00:00",
-          "analysis_status": "pending",
+          "analysis_status": "reviewed",
           "snapshot_image": "gaia-reference/photos/09-3514acf617-latest_photo.webp"
         },
         {
@@ -853,10 +1015,37 @@
         "taken_on": "2026-10-18",
         "created_at": "2026-10-21T04:35:05.978313+00:00",
         "caption": "",
-        "analysis_status": "pending",
-        "analysis_summary": "",
-        "analysis_findings": [],
-        "analyzed_at": null,
+        "analysis_status": "reviewed",
+        "analysis_summary": "Maester's October 18 photo and undated catalog reference both show upright petioles and broad leaves with rolled or curled margins. One leaf appears lighter in the latest window-lit view, but the lighting and orientation differ too much to confirm yellowing or growth. The catalog notes an October 10 bath and protruding roots; no current moisture, root-crowding or growth observation is synced.",
+        "analysis_findings": [
+          {
+            "kind": "trend",
+            "text": "uncertain"
+          },
+          {
+            "kind": "observation",
+            "text": "Multiple broad leaves and upright petioles remain visible; the plant has not visibly collapsed."
+          },
+          {
+            "kind": "observation",
+            "text": "Curled or rolled leaf margins appear in the catalog reference as well as the latest view."
+          },
+          {
+            "kind": "observation",
+            "text": "The tallest leaves sit close to the shelf above; image scale does not establish physical contact or damage."
+          },
+          {
+            "kind": "care",
+            "text": "Monitor the central leaf and existing curled margins in matched neutral-light photos.",
+            "reason": "The profile calls for tracking central growth; consistent framing will distinguish progression from light and posture changes.",
+            "urgency": "monitor"
+          },
+          {
+            "kind": "comparison_source",
+            "text": "Original GAIA image: 10-maester.jpg versus newer private photo: 959b962c-9086-42de-9f37-b41633af4511"
+          }
+        ],
+        "analyzed_at": "2026-10-23T17:28:31.543+00:00",
         "snapshot_image": "gaia-reference/photos/10-4a44dc1536-latest_photo.webp"
       },
       "previous_photo": null,
@@ -865,7 +1054,7 @@
           "id": "959b962c-9086-42de-9f37-b41633af4511",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:35:05.978313+00:00",
-          "analysis_status": "pending",
+          "analysis_status": "reviewed",
           "snapshot_image": "gaia-reference/photos/10-4a44dc1536-latest_photo.webp"
         }
       ],
@@ -899,10 +1088,37 @@
         "taken_on": "2026-10-20",
         "created_at": "2026-10-21T04:39:31.749374+00:00",
         "caption": "",
-        "analysis_status": "pending",
-        "analysis_summary": "",
-        "analysis_findings": [],
-        "analyzed_at": null,
+        "analysis_status": "needs_attention",
+        "analysis_summary": "Karlach's October 20 image still shows upright leaves and red spathes, but the forward-facing leaf has conspicuous pale flecks and a larger dull tan patch. Leaf orientation differs from the undated reference, preventing a firm deterioration estimate. The catalog records spider mites and an October 10 bath with clearance unconfirmed; these marks warrant a prompt pest check, not an image-only mite diagnosis. No recent moisture data are synced.",
+        "analysis_findings": [
+          {
+            "kind": "trend",
+            "text": "uncertain"
+          },
+          {
+            "kind": "observation",
+            "text": "A large forward-facing green leaf has numerous pale marks and a broader tan area."
+          },
+          {
+            "kind": "observation",
+            "text": "Red spathes remain present, including a darker curled one; a spent spathe is also visible in the catalog reference."
+          },
+          {
+            "kind": "observation",
+            "text": "The latest leaf surfaces differ in orientation and lighting; live pests and webbing are not resolved."
+          },
+          {
+            "kind": "care",
+            "text": "Inspect leaf undersides and stem joints with magnification and a white-paper tap test.",
+            "reason": "Pale leaf damage plus the documented mite history make confirming live pests a priority before any treatment decision.",
+            "urgency": "soon"
+          },
+          {
+            "kind": "comparison_source",
+            "text": "Original GAIA image: 11-karlach.jpg versus newer private photo: c753f042-7fca-4cae-80a1-042c799ac495"
+          }
+        ],
+        "analyzed_at": "2026-10-23T17:29:09.803+00:00",
         "snapshot_image": "gaia-reference/photos/11-4fc82b26ae-latest_photo.webp"
       },
       "previous_photo": null,
@@ -911,7 +1127,7 @@
           "id": "c753f042-7fca-4cae-80a1-042c799ac495",
           "taken_on": "2026-10-20",
           "created_at": "2026-10-21T04:39:31.749374+00:00",
-          "analysis_status": "pending",
+          "analysis_status": "needs_attention",
           "snapshot_image": "gaia-reference/photos/11-4fc82b26ae-latest_photo.webp"
         }
       ],
@@ -945,10 +1161,37 @@
         "taken_on": "2026-10-18",
         "created_at": "2026-10-21T04:35:40.025981+00:00",
         "caption": "",
-        "analysis_status": "pending",
-        "analysis_summary": "",
-        "analysis_findings": [],
-        "analyzed_at": null,
+        "analysis_status": "reviewed",
+        "analysis_summary": "GLaDOS retains a fairly full canopy of pink-veined leaves on October 18 compared with the undated catalog photo. Uneven posture and some curled or downward leaves appear in both views; no clear whole-plant collapse is visible. Purple grow-light color limits assessment of yellowing. The profile mentions an earlier repot and October 10 bath, but current root-zone moisture and growth observations are not synced.",
+        "analysis_findings": [
+          {
+            "kind": "trend",
+            "text": "stable"
+          },
+          {
+            "kind": "observation",
+            "text": "Numerous veined leaves remain across the pot in both images."
+          },
+          {
+            "kind": "observation",
+            "text": "A few leaves curl or hang below neighboring foliage in both views."
+          },
+          {
+            "kind": "observation",
+            "text": "The latest purple lighting changes apparent leaf colors and does not establish actual moisture."
+          },
+          {
+            "kind": "care",
+            "text": "Check shallow and deeper mix moisture and leaf firmness before the next care decision.",
+            "reason": "The existing Fittonia profile warns against both drying and prolonged wetness in its larger pot; leaf posture alone cannot distinguish them.",
+            "urgency": "routine"
+          },
+          {
+            "kind": "comparison_source",
+            "text": "Original GAIA image: 12-glados.jpg versus newer private photo: 953d4e36-c5a8-46e8-b397-4d75d710e815"
+          }
+        ],
+        "analyzed_at": "2026-10-23T17:29:10.564+00:00",
         "snapshot_image": "gaia-reference/photos/12-6b51d431df-latest_photo.webp"
       },
       "previous_photo": null,
@@ -957,7 +1200,7 @@
           "id": "953d4e36-c5a8-46e8-b397-4d75d710e815",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:35:40.025981+00:00",
-          "analysis_status": "pending",
+          "analysis_status": "reviewed",
           "snapshot_image": "gaia-reference/photos/12-6b51d431df-latest_photo.webp"
         }
       ],
@@ -991,10 +1234,37 @@
         "taken_on": "2026-10-18",
         "created_at": "2026-10-21T04:36:55.822589+00:00",
         "caption": "",
-        "analysis_status": "pending",
-        "analysis_summary": "",
-        "analysis_findings": [],
-        "analyzed_at": null,
+        "analysis_status": "reviewed",
+        "analysis_summary": "Sauron retains an extensive upright canopy of serrated, green-and-cream leaves on October 18, consistent with the undated catalog reference. A brightly variegated upper blade and pink central sheath are visible without obvious whole-plant collapse. Different orientation and purple lighting prevent a reliable growth or color-change measurement. An October 10 bath is recorded in the profile; watering, moisture and growth measurements are not synced.",
+        "analysis_findings": [
+          {
+            "kind": "trend",
+            "text": "stable"
+          },
+          {
+            "kind": "observation",
+            "text": "Multiple long serrated leaves remain attached around upright stems in both views."
+          },
+          {
+            "kind": "observation",
+            "text": "The latest image shows a yellow-and-green upper blade and a pink central sheath."
+          },
+          {
+            "kind": "observation",
+            "text": "Some older leaves hang downward, but the comparison does not show a clear new widespread dead area."
+          },
+          {
+            "kind": "care",
+            "text": "Monitor the central emerging leaf and any brown edges with a neutral-light follow-up photo.",
+            "reason": "The profile already calls for observing new-leaf hardening; highly colored tissue alone does not justify changing care.",
+            "urgency": "monitor"
+          },
+          {
+            "kind": "comparison_source",
+            "text": "Original GAIA image: 13-sauron.jpg versus newer private photo: 92ade0bc-5d98-49df-9510-953a10ed222b"
+          }
+        ],
+        "analyzed_at": "2026-10-23T17:29:12.218+00:00",
         "snapshot_image": "gaia-reference/photos/13-3fdba35f04-latest_photo.webp"
       },
       "previous_photo": null,
@@ -1003,7 +1273,7 @@
           "id": "92ade0bc-5d98-49df-9510-953a10ed222b",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:36:55.822589+00:00",
-          "analysis_status": "pending",
+          "analysis_status": "reviewed",
           "snapshot_image": "gaia-reference/photos/13-3fdba35f04-latest_photo.webp"
         }
       ],
@@ -1037,10 +1307,37 @@
         "taken_on": "2026-10-18",
         "created_at": "2026-10-21T04:32:48.689891+00:00",
         "caption": "",
-        "analysis_status": "pending",
-        "analysis_summary": "",
-        "analysis_findings": [],
-        "analyzed_at": null,
+        "analysis_status": "reviewed",
+        "analysis_summary": "Galadriel's October 18 photo retains a substantial green canopy, with some hanging leaves, brown tips and a localized yellow-brown patch. The undated catalog reference already shows yellowing and a large dead leaf patch. The much darker latest view and changed side prevent determining whether lesions or droop have progressed. An October 10 bath is documented; current root-zone moisture and irrigation are not recorded or synced.",
+        "analysis_findings": [
+          {
+            "kind": "trend",
+            "text": "uncertain"
+          },
+          {
+            "kind": "observation",
+            "text": "Large green leaves remain present on upright and arching petioles."
+          },
+          {
+            "kind": "observation",
+            "text": "Several lower leaves hang downward and some tips or margins are brown."
+          },
+          {
+            "kind": "observation",
+            "text": "Localized damaged tissue occurs in both images, but the same leaves cannot be reliably matched."
+          },
+          {
+            "kind": "care",
+            "text": "Check deeper mix moisture, leaf firmness and the newest leaves for fresh lesions.",
+            "reason": "Droop can accompany different root-zone conditions; the existing old damage cannot establish the cause or justify automatic irrigation.",
+            "urgency": "routine"
+          },
+          {
+            "kind": "comparison_source",
+            "text": "Original GAIA image: 14-galadriel-peace-lily.jpg versus newer private photo: cf7ae034-1119-494c-81a5-32a9b3975841"
+          }
+        ],
+        "analyzed_at": "2026-10-23T17:29:57.125+00:00",
         "snapshot_image": "gaia-reference/photos/14-8527a891e2-latest_photo.webp"
       },
       "previous_photo": null,
@@ -1049,7 +1346,7 @@
           "id": "cf7ae034-1119-494c-81a5-32a9b3975841",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:32:48.689891+00:00",
-          "analysis_status": "pending",
+          "analysis_status": "reviewed",
           "snapshot_image": "gaia-reference/photos/14-8527a891e2-latest_photo.webp"
         }
       ],
@@ -1083,10 +1380,43 @@
         "taken_on": "2026-10-18",
         "created_at": "2026-10-21T04:31:58.030904+00:00",
         "caption": "",
-        "analysis_status": "pending",
-        "analysis_summary": "",
-        "analysis_findings": [],
-        "analyzed_at": null,
+        "analysis_status": "reviewed",
+        "analysis_summary": "Tywin retains upright stems and a mixed green and pale-green canopy on October 18. Pale leaflets are also conspicuous in the undated reference, so the photographs do not establish a new nutrient deficiency or reliable leaf-loss count. Lighting and camera distance differ. The catalog records spider mites and an October 10 bath, with clearance unconfirmed; recent irrigation, moisture and growth readings are not synced.",
+        "analysis_findings": [
+          {
+            "kind": "trend",
+            "text": "uncertain"
+          },
+          {
+            "kind": "observation",
+            "text": "Both images contain long pale-green leaflets among darker green foliage."
+          },
+          {
+            "kind": "observation",
+            "text": "The latest view shows several downward-angled leaflets and upright woody stems without visible stem collapse."
+          },
+          {
+            "kind": "observation",
+            "text": "The latest wider framing does not permit a dependable count of lost leaves or close pest inspection."
+          },
+          {
+            "kind": "care",
+            "text": "Inspect leaflet undersides and shoot tips for live mites or fresh damage.",
+            "reason": "The documented mite history remains unresolved; pale color alone does not identify an active infestation or a fertilizer need.",
+            "urgency": "routine"
+          },
+          {
+            "kind": "care",
+            "text": "Check deeper mix moisture and track any fresh leaf drop.",
+            "reason": "Measured conditions and a dated leaf-loss observation would clarify stress before changing irrigation or the pot.",
+            "urgency": "monitor"
+          },
+          {
+            "kind": "comparison_source",
+            "text": "Original GAIA image: 15-tywin.jpg versus newer private photo: 3b74a509-702e-4391-bdba-15120727741a"
+          }
+        ],
+        "analyzed_at": "2026-10-23T17:29:57.882+00:00",
         "snapshot_image": "gaia-reference/photos/15-e629fa6598-latest_photo.webp"
       },
       "previous_photo": null,
@@ -1095,7 +1425,7 @@
           "id": "3b74a509-702e-4391-bdba-15120727741a",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:31:58.030904+00:00",
-          "analysis_status": "pending",
+          "analysis_status": "reviewed",
           "snapshot_image": "gaia-reference/photos/15-e629fa6598-latest_photo.webp"
         }
       ],
@@ -1129,10 +1459,37 @@
         "taken_on": "2026-10-18",
         "created_at": "2026-10-21T04:28:50.812222+00:00",
         "caption": "",
-        "analysis_status": "pending",
-        "analysis_summary": "",
-        "analysis_findings": [],
-        "analyzed_at": null,
+        "analysis_status": "reviewed",
+        "analysis_summary": "Morgana retains a full variegated canopy on October 18 compared with October 14 and the undated catalog reference. The catalog's torn brown-patched leaf is not clearly exposed from the newest angle, so its absence in view does not prove healing. No clear new whole-plant decline is visible. The profile documents mites and an October 10 bath; clearance and current moisture remain unconfirmed.",
+        "analysis_findings": [
+          {
+            "kind": "trend",
+            "text": "stable"
+          },
+          {
+            "kind": "observation",
+            "text": "Cream-and-green leaves remain abundant and upright in both journal views."
+          },
+          {
+            "kind": "observation",
+            "text": "The catalog reference includes a hole and dry brown patch on one leaf."
+          },
+          {
+            "kind": "observation",
+            "text": "Leaf overlap and a different camera side obscure direct comparison of that damaged leaf."
+          },
+          {
+            "kind": "care",
+            "text": "Inspect the previously damaged leaf and newer curled edges for expanding brown or dry areas.",
+            "reason": "The existing open checklist already tracks this damage; include leaf undersides in the inspection because recorded mite clearance is unconfirmed.",
+            "urgency": "monitor"
+          },
+          {
+            "kind": "comparison_source",
+            "text": "Earlier private photo: 6a8c8d31-db85-49fc-bd53-cdcecc4fe6f1 versus newer private photo: 7f51c03b-dbca-41e5-9e68-188845bb8d74"
+          }
+        ],
+        "analyzed_at": "2026-10-23T17:29:59.658+00:00",
         "snapshot_image": "gaia-reference/photos/16-b17ef6d19c-latest_photo.webp"
       },
       "previous_photo": {
@@ -1183,7 +1540,7 @@
           "id": "7f51c03b-dbca-41e5-9e68-188845bb8d74",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:28:50.812222+00:00",
-          "analysis_status": "pending",
+          "analysis_status": "reviewed",
           "snapshot_image": "gaia-reference/photos/16-b17ef6d19c-latest_photo.webp"
         },
         {
@@ -1230,10 +1587,37 @@
         "taken_on": "2026-10-18",
         "created_at": "2026-10-21T04:37:17.747685+00:00",
         "caption": "",
-        "analysis_status": "pending",
-        "analysis_summary": "",
-        "analysis_findings": [],
-        "analyzed_at": null,
+        "analysis_status": "reviewed",
+        "analysis_summary": "C-3PO's October 18 photo retains the upright stems and yellow-speckled leaves seen on October 14 and in the undated catalog reference. The visible leaf arrangement is broadly similar, with no clear major new leaf loss. Gold spotting is part of the recorded cultivar pattern, not proof of mites. The catalog's October 10 mite and bath history remains relevant because pest clearance and recent moisture are not synced.",
+        "analysis_findings": [
+          {
+            "kind": "trend",
+            "text": "stable"
+          },
+          {
+            "kind": "observation",
+            "text": "The same general pattern of tall upper leaves and smaller lower leaves remains in both journal views."
+          },
+          {
+            "kind": "observation",
+            "text": "Yellow spots occur across intact green blades in all comparison images."
+          },
+          {
+            "kind": "observation",
+            "text": "No obvious whole-shoot collapse is visible; close pest detail and roots are not resolved."
+          },
+          {
+            "kind": "care",
+            "text": "Inspect leaf undersides and shoot tips for live mites, webbing or fresh stippling.",
+            "reason": "The documented infestation needs a physical clearance check; the cultivar's yellow pattern should not be mistaken for new pest damage.",
+            "urgency": "routine"
+          },
+          {
+            "kind": "comparison_source",
+            "text": "Earlier private photo: df160e4f-e9d0-40f8-b47e-39726b1e1aa2 versus newer private photo: 73dc363c-02cf-4ed6-bd1b-02dfa79b7240"
+          }
+        ],
+        "analyzed_at": "2026-10-23T17:30:33.805+00:00",
         "snapshot_image": "gaia-reference/photos/17-4523540f15-latest_photo.webp"
       },
       "previous_photo": {
@@ -1278,7 +1662,7 @@
           "id": "73dc363c-02cf-4ed6-bd1b-02dfa79b7240",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:37:17.747685+00:00",
-          "analysis_status": "pending",
+          "analysis_status": "reviewed",
           "snapshot_image": "gaia-reference/photos/17-4523540f15-latest_photo.webp"
         },
         {
@@ -1325,10 +1709,37 @@
         "taken_on": "2026-10-18",
         "created_at": "2026-10-21T04:38:04.22211+00:00",
         "caption": "",
-        "analysis_status": "pending",
-        "analysis_summary": "",
-        "analysis_findings": [],
-        "analyzed_at": null,
+        "analysis_status": "reviewed",
+        "analysis_summary": "Geoffrey still has several broad green orchid leaves in the October 18 image compared with the undated post-bloom catalog reference. No obvious widespread leaf yellowing or collapse is visible. The dried flower spike seen in the reference is not apparent in the latest framing, which does not confirm pruning. The profile records an August 22 repot in bark and October 10 bath; current root condition and irrigation are not synced.",
+        "analysis_findings": [
+          {
+            "kind": "trend",
+            "text": "stable"
+          },
+          {
+            "kind": "observation",
+            "text": "Several broad leaves remain attached around the orchid crown."
+          },
+          {
+            "kind": "observation",
+            "text": "The latest clear container shows coarse pieces of growing medium, but root colors are poorly resolved in purple light."
+          },
+          {
+            "kind": "observation",
+            "text": "The reference's long spent spike is not visible in the latest framing; no care event can be inferred from that."
+          },
+          {
+            "kind": "care",
+            "text": "Check visible root firmness, root color and bark dryness in neutral light.",
+            "reason": "The orchid profile bases irrigation on roots and bark rather than the calendar; this photo does not resolve those cues.",
+            "urgency": "routine"
+          },
+          {
+            "kind": "comparison_source",
+            "text": "Original GAIA image: 18-geoffrey.jpg versus newer private photo: b690e1e1-4202-4ada-93e4-6fdaffaf2433"
+          }
+        ],
+        "analyzed_at": "2026-10-23T17:30:34.82+00:00",
         "snapshot_image": "gaia-reference/photos/18-4ec9599fc2-latest_photo.webp"
       },
       "previous_photo": null,
@@ -1337,7 +1748,7 @@
           "id": "b690e1e1-4202-4ada-93e4-6fdaffaf2433",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:38:04.22211+00:00",
-          "analysis_status": "pending",
+          "analysis_status": "reviewed",
           "snapshot_image": "gaia-reference/photos/18-4ec9599fc2-latest_photo.webp"
         }
       ],
@@ -1409,10 +1820,37 @@
         "taken_on": "2026-10-18",
         "created_at": "2026-10-21T04:39:50.303372+00:00",
         "caption": "",
-        "analysis_status": "pending",
-        "analysis_summary": "",
-        "analysis_findings": [],
-        "analyzed_at": null,
+        "analysis_status": "reviewed",
+        "analysis_summary": "Violet retains numerous purple leaves on upright and trailing stems in the October 18 and October 14 journal photos and undated reference. Bare sections along older trailing stems persist, but changed pot orientation prevents a reliable new leaf-loss count. There is no obvious whole-plant collapse. The profile documents an October 10 bath; current moisture and measured growth are not recorded or synced.",
+        "analysis_findings": [
+          {
+            "kind": "trend",
+            "text": "stable"
+          },
+          {
+            "kind": "observation",
+            "text": "Purple leafy tips remain on several upright and trailing stems in both journal views."
+          },
+          {
+            "kind": "observation",
+            "text": "Older stem sections near the pot rim are sparsely leafed in the comparison images."
+          },
+          {
+            "kind": "observation",
+            "text": "The latest photograph is taken from the opposite side, preventing a direct count of stem or leaf changes."
+          },
+          {
+            "kind": "care",
+            "text": "Monitor the bare trailing stem sections and check whether leaf loss is advancing toward the tips.",
+            "reason": "The existing open checklist already addresses this issue; stable leafy tips do not require automatic trimming or repotting.",
+            "urgency": "monitor"
+          },
+          {
+            "kind": "comparison_source",
+            "text": "Earlier private photo: e4d94a2b-d350-453e-a62d-08636eba5fb7 versus newer private photo: bf8918b4-46af-473d-94b8-610675d12524"
+          }
+        ],
+        "analyzed_at": "2026-10-23T17:30:36.634+00:00",
         "snapshot_image": "gaia-reference/photos/21-6f4b661212-latest_photo.webp"
       },
       "previous_photo": {
@@ -1463,7 +1901,7 @@
           "id": "bf8918b4-46af-473d-94b8-610675d12524",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:39:50.303372+00:00",
-          "analysis_status": "pending",
+          "analysis_status": "reviewed",
           "snapshot_image": "gaia-reference/photos/21-6f4b661212-latest_photo.webp"
         },
         {
@@ -1510,10 +1948,37 @@
         "taken_on": "2026-10-18",
         "created_at": "2026-10-21T04:29:38.381774+00:00",
         "caption": "",
-        "analysis_status": "pending",
-        "analysis_summary": "",
-        "analysis_findings": [],
-        "analyzed_at": null,
+        "analysis_status": "reviewed",
+        "analysis_summary": "Molly's October 18 photo retains a compact central rosette and a small attached offset, as in the undated catalog reference. Older outer leaves remain pale brown or drooped in both views. The latest lower angle and backlighting limit assessment of subtle changes; firmness and root health cannot be seen. An October 10 foliage bath is recorded, while actual mix composition, recent irrigation and moisture are not synced.",
+        "analysis_findings": [
+          {
+            "kind": "trend",
+            "text": "stable"
+          },
+          {
+            "kind": "observation",
+            "text": "A compact central rosette and a separate small offset remain visible in both images."
+          },
+          {
+            "kind": "observation",
+            "text": "Several older outer leaves form a pale or brownish downward skirt."
+          },
+          {
+            "kind": "observation",
+            "text": "The latest photograph does not reveal the pot interior or leaf firmness."
+          },
+          {
+            "kind": "care",
+            "text": "Check outer-leaf and offset firmness, full-depth mix dryness and actual soil composition.",
+            "reason": "These checks distinguish persistent old-leaf wear from soft tissue or prolonged dampness before any repotting or irrigation decision.",
+            "urgency": "routine"
+          },
+          {
+            "kind": "comparison_source",
+            "text": "Original GAIA image: 22-molly-hens-chicks.jpg versus newer private photo: 02d8d41e-7295-4de4-be0c-e5aeceddfd87"
+          }
+        ],
+        "analyzed_at": "2026-10-23T17:31:23.939+00:00",
         "snapshot_image": "gaia-reference/photos/22-785f3ec7eb-latest_photo.webp"
       },
       "previous_photo": null,
@@ -1522,7 +1987,7 @@
           "id": "02d8d41e-7295-4de4-be0c-e5aeceddfd87",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:29:38.381774+00:00",
-          "analysis_status": "pending",
+          "analysis_status": "reviewed",
           "snapshot_image": "gaia-reference/photos/22-785f3ec7eb-latest_photo.webp"
         }
       ],
@@ -1556,10 +2021,37 @@
         "taken_on": "2026-10-18",
         "created_at": "2026-10-21T04:40:17.406753+00:00",
         "caption": "",
-        "analysis_status": "pending",
-        "analysis_summary": "",
-        "analysis_findings": [],
-        "analyzed_at": null,
+        "analysis_status": "reviewed",
+        "analysis_summary": "Calcifer's October 18 image retains upright orange-red bracts and a substantial green rosette, consistent with the undated catalog reference. Some tips or edges are worn, but there is no clear new widespread collapse or major bract loss. Lighting differs substantially. The catalog documents mites and an October 10 bath; pest clearance, cup maintenance and current mix moisture are not recorded or synced.",
+        "analysis_findings": [
+          {
+            "kind": "trend",
+            "text": "stable"
+          },
+          {
+            "kind": "observation",
+            "text": "The tall colored bract structure remains upright in both images."
+          },
+          {
+            "kind": "observation",
+            "text": "Numerous green strap-shaped leaves surround the center, with some arching outer blades."
+          },
+          {
+            "kind": "observation",
+            "text": "The crown interior and leaf undersides are not resolved well enough to assess pests or softness."
+          },
+          {
+            "kind": "care",
+            "text": "Inspect leaf bases and undersides for live pests and check center firmness.",
+            "reason": "The recorded mite history is unresolved, while the retained rosette and bracts do not justify treatment based on the photograph alone.",
+            "urgency": "routine"
+          },
+          {
+            "kind": "comparison_source",
+            "text": "Original GAIA image: 23-calcifer-bromeliad.jpg versus newer private photo: 6040457b-41d3-470a-be32-869eeddff3eb"
+          }
+        ],
+        "analyzed_at": "2026-10-23T17:31:24.835+00:00",
         "snapshot_image": "gaia-reference/photos/23-535fa30d7e-latest_photo.webp"
       },
       "previous_photo": null,
@@ -1568,7 +2060,7 @@
           "id": "6040457b-41d3-470a-be32-869eeddff3eb",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:40:17.406753+00:00",
-          "analysis_status": "pending",
+          "analysis_status": "reviewed",
           "snapshot_image": "gaia-reference/photos/23-535fa30d7e-latest_photo.webp"
         }
       ],
@@ -1602,10 +2094,37 @@
         "taken_on": "2026-10-18",
         "created_at": "2026-10-21T04:41:08.572779+00:00",
         "caption": "",
-        "analysis_status": "pending",
-        "analysis_summary": "",
-        "analysis_findings": [],
-        "analyzed_at": null,
+        "analysis_status": "reviewed",
+        "analysis_summary": "Phil retains a fairly full green canopy on October 18 compared with October 14, but a pale yellow-tan forward leaf and the previously noted brown-marked leaf merit tracking. Different leaf orientation and backlighting prevent proving patch expansion or a new deficiency. The undated catalog also shows a leafy trailing plant. The profile records mites and an October 10 bath; clearance and current moisture are not synced.",
+        "analysis_findings": [
+          {
+            "kind": "trend",
+            "text": "uncertain"
+          },
+          {
+            "kind": "observation",
+            "text": "Numerous green heart-shaped leaves remain around the pot in both journal views."
+          },
+          {
+            "kind": "observation",
+            "text": "The latest view shows a pale forward-facing leaf with a tan area and a separate left leaf with a brown mark."
+          },
+          {
+            "kind": "observation",
+            "text": "Leaves shift orientation between views, preventing reliable comparison of lesion size or total leaf loss."
+          },
+          {
+            "kind": "care",
+            "text": "Inspect the leaf with the localized brown patch and nearby foliage for spreading damage.",
+            "reason": "This existing open checklist covers the visible uncertainty; also examine undersides because mite clearance remains unconfirmed.",
+            "urgency": "monitor"
+          },
+          {
+            "kind": "comparison_source",
+            "text": "Earlier private photo: 59f3a553-376c-414c-8b97-26dd6546cdf3 versus newer private photo: b6866ddb-0d67-4eed-8221-a95654ddc4c2"
+          }
+        ],
+        "analyzed_at": "2026-10-23T17:31:26.605+00:00",
         "snapshot_image": "gaia-reference/photos/24-c2356069e9-latest_photo.webp"
       },
       "previous_photo": {
@@ -1656,7 +2175,7 @@
           "id": "b6866ddb-0d67-4eed-8221-a95654ddc4c2",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:41:08.572779+00:00",
-          "analysis_status": "pending",
+          "analysis_status": "reviewed",
           "snapshot_image": "gaia-reference/photos/24-c2356069e9-latest_photo.webp"
         },
         {
@@ -1703,10 +2222,37 @@
         "taken_on": "2026-10-18",
         "created_at": "2026-10-21T04:41:54.730104+00:00",
         "caption": "",
-        "analysis_status": "pending",
-        "analysis_summary": "",
-        "analysis_findings": [],
-        "analyzed_at": null,
+        "analysis_status": "reviewed",
+        "analysis_summary": "Ruby's October 18 photo shows a dense top of fleshy leaves with purple trailing stems, alongside narrow or shriveled leaves and bare sections below. Those sparse trailing sections also occur in the October 14 view and older journal image; the undated reference is fuller. The newest overhead angle exposes more of the canopy and does not prove rapid recovery or new growth. Current irrigation and moisture readings are not synced.",
+        "analysis_findings": [
+          {
+            "kind": "trend",
+            "text": "stable"
+          },
+          {
+            "kind": "observation",
+            "text": "The latest view has many fleshy leaves across the pot surface and purple stems over the rim."
+          },
+          {
+            "kind": "observation",
+            "text": "Some hanging leaves are thin or wrinkled and sections of trailing stems are bare in latest and earlier journal images."
+          },
+          {
+            "kind": "observation",
+            "text": "The second older journal view and catalog also show a dense pot top; camera angle strongly affects apparent fullness."
+          },
+          {
+            "kind": "care",
+            "text": "Check leaf plumpness together with deep mix moisture and track fresh leaf loss.",
+            "reason": "Shriveling alone does not distinguish dryness from root stress; the existing succulent profile calls for a moisture-based decision.",
+            "urgency": "monitor"
+          },
+          {
+            "kind": "comparison_source",
+            "text": "Earlier private photo: b967edd3-7888-42c1-acd7-6764feac1e5b versus newer private photo: 5377d226-834e-47ff-89ce-2c6f43f3d316"
+          }
+        ],
+        "analyzed_at": "2026-10-23T17:32:07.536+00:00",
         "snapshot_image": "gaia-reference/photos/25-b7a56873cd-latest_photo.webp"
       },
       "previous_photo": {
@@ -1759,7 +2305,7 @@
           "id": "5377d226-834e-47ff-89ce-2c6f43f3d316",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:41:54.730104+00:00",
-          "analysis_status": "pending",
+          "analysis_status": "reviewed",
           "snapshot_image": "gaia-reference/photos/25-b7a56873cd-latest_photo.webp"
         },
         {
@@ -1819,10 +2365,37 @@
         "taken_on": "2026-10-18",
         "created_at": "2026-10-21T04:42:39.119922+00:00",
         "caption": "",
-        "analysis_status": "pending",
-        "analysis_summary": "",
-        "analysis_findings": [],
-        "analyzed_at": null,
+        "analysis_status": "reviewed",
+        "analysis_summary": "Nayru remains upright with textured green leaves and purple-toned undersides on October 18 compared with the undated catalog reference. Several leaves angle downward in both images, without visible whole-stem collapse. The latest side exposes more undersides, so the color difference is not evidence of new damage. An October 10 bath is documented; current moisture and quantified growth are not synced.",
+        "analysis_findings": [
+          {
+            "kind": "trend",
+            "text": "stable"
+          },
+          {
+            "kind": "observation",
+            "text": "An upright central stem retains several paired textured leaves in both images."
+          },
+          {
+            "kind": "observation",
+            "text": "Purple coloration is concentrated on visible leaf undersides and stems."
+          },
+          {
+            "kind": "observation",
+            "text": "Small leaves remain at the upper shoot; the photographs do not establish their growth rate."
+          },
+          {
+            "kind": "care",
+            "text": "Monitor shoot-tip expansion, leaf firmness and any newly yellowing leaves.",
+            "reason": "Consistent observations can distinguish persistent leaf posture from a developing problem before optional pruning or other changes.",
+            "urgency": "monitor"
+          },
+          {
+            "kind": "comparison_source",
+            "text": "Original GAIA image: 26-nayru-plectranthus-white-pot.jpg versus newer private photo: bb41b568-0aba-4cee-a01a-fa2ab7a29395"
+          }
+        ],
+        "analyzed_at": "2026-10-23T17:32:08.421+00:00",
         "snapshot_image": "gaia-reference/photos/26-5f9c4ab08c-latest_photo.webp"
       },
       "previous_photo": null,
@@ -1831,7 +2404,7 @@
           "id": "bb41b568-0aba-4cee-a01a-fa2ab7a29395",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:42:39.119922+00:00",
-          "analysis_status": "pending",
+          "analysis_status": "reviewed",
           "snapshot_image": "gaia-reference/photos/26-5f9c4ab08c-latest_photo.webp"
         }
       ],
@@ -1865,10 +2438,37 @@
         "taken_on": "2026-10-18",
         "created_at": "2026-10-21T04:42:54.909869+00:00",
         "caption": "",
-        "analysis_status": "pending",
-        "analysis_summary": "",
-        "analysis_findings": [],
-        "analyzed_at": null,
+        "analysis_status": "reviewed",
+        "analysis_summary": "Yennefer retains dark burgundy foliage on upright reddish stems in the October 18 image and undated catalog reference. Some blades are cupped or curled in both views; there is no clear new widespread collapse or yellowing. A lighter small leaf near the top cannot establish a growth rate. The profile records an October 10 bath, while recent irrigation, moisture and growth observations are not synced.",
+        "analysis_findings": [
+          {
+            "kind": "trend",
+            "text": "stable"
+          },
+          {
+            "kind": "observation",
+            "text": "The two main leafy shoots remain upright in both photographs."
+          },
+          {
+            "kind": "observation",
+            "text": "Dark, glossy leaves with curled or cupped margins appear in both views."
+          },
+          {
+            "kind": "observation",
+            "text": "The latest view includes small paler top foliage, but scale and lighting differ from the reference."
+          },
+          {
+            "kind": "care",
+            "text": "Monitor the smallest new leaves for normal expansion and spreading spots or crisp edges.",
+            "reason": "The profile already prioritizes clean new growth; existing dark coloration and cupping alone do not identify a treatable problem.",
+            "urgency": "monitor"
+          },
+          {
+            "kind": "comparison_source",
+            "text": "Original GAIA image: 27-yennefer-purple-joyweed.jpg versus newer private photo: 2705f059-b66b-4e43-aa6f-3b2a9d3b6b41"
+          }
+        ],
+        "analyzed_at": "2026-10-23T17:32:10.103+00:00",
         "snapshot_image": "gaia-reference/photos/27-670671cd97-latest_photo.webp"
       },
       "previous_photo": null,
@@ -1877,7 +2477,7 @@
           "id": "2705f059-b66b-4e43-aa6f-3b2a9d3b6b41",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:42:54.909869+00:00",
-          "analysis_status": "pending",
+          "analysis_status": "reviewed",
           "snapshot_image": "gaia-reference/photos/27-670671cd97-latest_photo.webp"
         }
       ],
@@ -1911,10 +2511,37 @@
         "taken_on": "2026-10-18",
         "created_at": "2026-10-21T04:43:17.588312+00:00",
         "caption": "",
-        "analysis_status": "pending",
-        "analysis_summary": "",
-        "analysis_findings": [],
-        "analyzed_at": null,
+        "analysis_status": "reviewed",
+        "analysis_summary": "Beetlejuice retains an upright striped rosette in the October 18 image and undated catalog reference. Several narrow leaves have dry-looking tips or curvature in both views; there is no clear new base collapse. The latest photo shows the metallic inner container inside a decorative outer pot, so hidden runoff cannot be judged. An October 10 bath is recorded; current moisture and drainage performance are not synced.",
+        "analysis_findings": [
+          {
+            "kind": "trend",
+            "text": "stable"
+          },
+          {
+            "kind": "observation",
+            "text": "The striped pointed leaves remain upright and radiating from the central rosette."
+          },
+          {
+            "kind": "observation",
+            "text": "Some pointed tips are thin, curved or dry-looking in both comparison images."
+          },
+          {
+            "kind": "observation",
+            "text": "A metallic inner container and decorative outer pot are visible in the latest view; their bottoms are hidden."
+          },
+          {
+            "kind": "care",
+            "text": "Check deep mix dryness, lower-leaf firmness and liquid retained inside the outer pot.",
+            "reason": "The existing profile specifically flags hidden runoff; photos cannot establish adequate drainage or the root zone's moisture.",
+            "urgency": "routine"
+          },
+          {
+            "kind": "comparison_source",
+            "text": "Original GAIA image: 28-beetlejuice-zebra-haworthia.jpg versus newer private photo: e030f329-e336-4f27-a33a-11415118a8e7"
+          }
+        ],
+        "analyzed_at": "2026-10-23T17:32:54.469+00:00",
         "snapshot_image": "gaia-reference/photos/28-59e19706d5-latest_photo.webp"
       },
       "previous_photo": null,
@@ -1923,7 +2550,7 @@
           "id": "e030f329-e336-4f27-a33a-11415118a8e7",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:43:17.588312+00:00",
-          "analysis_status": "pending",
+          "analysis_status": "reviewed",
           "snapshot_image": "gaia-reference/photos/28-59e19706d5-latest_photo.webp"
         }
       ],
@@ -1957,10 +2584,37 @@
         "taken_on": "2026-10-18",
         "created_at": "2026-10-21T04:43:38.669688+00:00",
         "caption": "",
-        "analysis_status": "pending",
-        "analysis_summary": "",
-        "analysis_findings": [],
-        "analyzed_at": null,
+        "analysis_status": "reviewed",
+        "analysis_summary": "Stanley retains green upright shoots on October 18 compared with October 14 and the undated catalog reference. Minor curled or damaged tips persist, and the lower reservoir still looks cloudy in all views. This supports a direct reservoir and root check; photographs cannot identify microbes or determine cleaning history. No recent reservoir-maintenance event is recorded or synced.",
+        "analysis_findings": [
+          {
+            "kind": "trend",
+            "text": "stable"
+          },
+          {
+            "kind": "observation",
+            "text": "Green shoots remain upright above an intact-looking cane in both journal photographs."
+          },
+          {
+            "kind": "observation",
+            "text": "Several narrow outer leaves have curled or imperfect tips in the earlier and latest views."
+          },
+          {
+            "kind": "observation",
+            "text": "The lower liquid appears cloudy in the latest image and in both earlier sources."
+          },
+          {
+            "kind": "care",
+            "text": "Check reservoir clarity, odor and cane or root firmness.",
+            "reason": "Cloudiness persists across the images and the profile already flags reservoir hygiene; confirm conditions before choosing a cleaning step.",
+            "urgency": "routine"
+          },
+          {
+            "kind": "comparison_source",
+            "text": "Earlier private photo: 918422bd-0636-4ea5-b2ce-ffed8d688870 versus newer private photo: 5820cdb9-bef1-4a96-9097-2d5340e84597"
+          }
+        ],
+        "analyzed_at": "2026-10-23T17:32:55.438+00:00",
         "snapshot_image": "gaia-reference/photos/29-35135aaa6c-latest_photo.webp"
       },
       "previous_photo": {
@@ -2009,7 +2663,7 @@
           "id": "5820cdb9-bef1-4a96-9097-2d5340e84597",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:43:38.669688+00:00",
-          "analysis_status": "pending",
+          "analysis_status": "reviewed",
           "snapshot_image": "gaia-reference/photos/29-35135aaa6c-latest_photo.webp"
         },
         {
@@ -2056,10 +2710,37 @@
         "taken_on": "2026-10-18",
         "created_at": "2026-10-21T04:44:07.06858+00:00",
         "caption": "",
-        "analysis_status": "pending",
-        "analysis_summary": "",
-        "analysis_findings": [],
-        "analyzed_at": null,
+        "analysis_status": "reviewed",
+        "analysis_summary": "Aloy remains sparsely leafed on October 18, with two pale upper leaves and a small greener basal shoot, as broadly seen in the undated reference. Different angles and backlighting prevent establishing whether upper-leaf yellowing or basal growth has progressed. The profile records emerging roots and an October 10 bath, but no current moisture or crowding assessment is synced. The images alone do not justify feeding or repotting.",
+        "analysis_findings": [
+          {
+            "kind": "trend",
+            "text": "uncertain"
+          },
+          {
+            "kind": "observation",
+            "text": "The main stem carries only a small number of pale upper leaves in both views."
+          },
+          {
+            "kind": "observation",
+            "text": "A small green basal shoot remains visible near the mix surface."
+          },
+          {
+            "kind": "observation",
+            "text": "The latest image shows an upright rolled shoot beside the upper petioles, but its development rate is not established."
+          },
+          {
+            "kind": "care",
+            "text": "Monitor basal-shoot expansion and check deeper mix moisture and stem firmness.",
+            "reason": "This plant's recorded recovery depends on healthy new growth; pale older leaves cannot diagnose the root zone or a nutrient shortage.",
+            "urgency": "monitor"
+          },
+          {
+            "kind": "comparison_source",
+            "text": "Original GAIA image: 30-aloy-arrowhead-plant.jpg versus newer private photo: 5bc31cf6-e71f-4c09-84d1-79a6df4df53a"
+          }
+        ],
+        "analyzed_at": "2026-10-23T17:32:57.317+00:00",
         "snapshot_image": "gaia-reference/photos/30-624b60c58c-latest_photo.webp"
       },
       "previous_photo": null,
@@ -2068,7 +2749,7 @@
           "id": "5bc31cf6-e71f-4c09-84d1-79a6df4df53a",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:44:07.06858+00:00",
-          "analysis_status": "pending",
+          "analysis_status": "reviewed",
           "snapshot_image": "gaia-reference/photos/30-624b60c58c-latest_photo.webp"
         }
       ],
@@ -2102,10 +2783,37 @@
         "taken_on": "2026-10-18",
         "created_at": "2026-10-21T04:30:51.868906+00:00",
         "caption": "",
-        "analysis_status": "pending",
-        "analysis_summary": "",
-        "analysis_findings": [],
-        "analyzed_at": null,
+        "analysis_status": "reviewed",
+        "analysis_summary": "Amelia's October 18 photo retains curled, strap-shaped green-gray leaves around the mushroom holder, broadly matching the undated reference. The curl pattern differs, but angle and hydration at capture are unknown; no definite new collapse is visible. The base remains concealed. The profile records an October 10 bath, with no later soaking or drying observation synced.",
+        "analysis_findings": [
+          {
+            "kind": "trend",
+            "text": "stable"
+          },
+          {
+            "kind": "observation",
+            "text": "Multiple curled leaves remain present and attached around the holder opening."
+          },
+          {
+            "kind": "observation",
+            "text": "The latest image exposes a different side and darker green leaf surfaces than the brighter catalog view."
+          },
+          {
+            "kind": "observation",
+            "text": "The enclosed base cannot be inspected in either photograph."
+          },
+          {
+            "kind": "care",
+            "text": "Check base firmness and dryness inside the mushroom holder.",
+            "reason": "The care profile flags trapped moisture around this concealed base; the images do not establish either dehydration or rot.",
+            "urgency": "routine"
+          },
+          {
+            "kind": "comparison_source",
+            "text": "Original GAIA image: 31-amelia-air-plant.jpg versus newer private photo: 2d89a5d0-d939-4066-a835-3642e4c88fb7"
+          }
+        ],
+        "analyzed_at": "2026-10-23T17:33:36.55+00:00",
         "snapshot_image": "gaia-reference/photos/31-eb1e33e8a8-latest_photo.webp"
       },
       "previous_photo": null,
@@ -2114,7 +2822,7 @@
           "id": "2d89a5d0-d939-4066-a835-3642e4c88fb7",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:30:51.868906+00:00",
-          "analysis_status": "pending",
+          "analysis_status": "reviewed",
           "snapshot_image": "gaia-reference/photos/31-eb1e33e8a8-latest_photo.webp"
         }
       ],
@@ -2148,10 +2856,37 @@
         "taken_on": "2026-10-18",
         "created_at": "2026-10-21T04:46:08.225633+00:00",
         "caption": "",
-        "analysis_status": "pending",
-        "analysis_summary": "",
-        "analysis_findings": [],
-        "analyzed_at": null,
+        "analysis_status": "reviewed",
+        "analysis_summary": "Navi still has substantial living green foliage on October 18, while brown crispy-looking lower frond margins persist as in the undated reference. The latest angle hides part of the previously damaged foliage, so it does not prove repair or removal. No clear whole-plant collapse is visible. An October 10 bath is documented; current moisture and new-frond observations are not synced.",
+        "analysis_findings": [
+          {
+            "kind": "trend",
+            "text": "stable"
+          },
+          {
+            "kind": "observation",
+            "text": "Multiple green lobed fronds remain upright above the pot."
+          },
+          {
+            "kind": "observation",
+            "text": "A lower left frond has a broad dry tan margin, and several brown frond ends hang below the label."
+          },
+          {
+            "kind": "observation",
+            "text": "Similar substantial old-frond damage is visible in the catalog reference."
+          },
+          {
+            "kind": "care",
+            "text": "Monitor the newest fronds for clean edges and check current mix moisture.",
+            "reason": "New-frond condition is more informative than old brown edges, which will not turn green; avoid changing care from old damage alone.",
+            "urgency": "monitor"
+          },
+          {
+            "kind": "comparison_source",
+            "text": "Original GAIA image: 32-navi-blue-star-fern.jpg versus newer private photo: 46f5b390-837c-4d2a-9509-588c698f5cd5"
+          }
+        ],
+        "analyzed_at": "2026-10-23T17:33:37.43+00:00",
         "snapshot_image": "gaia-reference/photos/32-e29c9c180c-latest_photo.webp"
       },
       "previous_photo": null,
@@ -2160,7 +2895,7 @@
           "id": "46f5b390-837c-4d2a-9509-588c698f5cd5",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:46:08.225633+00:00",
-          "analysis_status": "pending",
+          "analysis_status": "reviewed",
           "snapshot_image": "gaia-reference/photos/32-e29c9c180c-latest_photo.webp"
         }
       ],
@@ -2194,10 +2929,37 @@
         "taken_on": "2026-10-18",
         "created_at": "2026-10-21T04:45:03.336744+00:00",
         "caption": "",
-        "analysis_status": "pending",
-        "analysis_summary": "",
-        "analysis_findings": [],
-        "analyzed_at": null,
+        "analysis_status": "reviewed",
+        "analysis_summary": "Din appears to have expanded more leaf area by October 18 compared with the undated catalog reference: several larger paired leaves now fill more of the space above the same nursery pot. Foliage remains pale and some older leaves have discolored areas, so recovery is incomplete. The unknown catalog capture date prevents a growth-rate estimate. An October 10 bath is recorded; moisture and measured growth are not synced.",
+        "analysis_findings": [
+          {
+            "kind": "trend",
+            "text": "improving"
+          },
+          {
+            "kind": "observation",
+            "text": "The latest image shows several expanded paired leaves on multiple upright green shoots."
+          },
+          {
+            "kind": "observation",
+            "text": "Leaf area relative to the pot appears greater than in the sparse catalog reference."
+          },
+          {
+            "kind": "observation",
+            "text": "Some leaves remain light green or mottled; the photographs cannot identify the cause."
+          },
+          {
+            "kind": "care",
+            "text": "Monitor new-leaf color and expansion while checking mix moisture.",
+            "reason": "The visible increase in foliage supports continued observation; persistent pale older leaves alone do not justify feeding or repotting.",
+            "urgency": "monitor"
+          },
+          {
+            "kind": "comparison_source",
+            "text": "Original GAIA image: 33-din-plectranthus-maroon-pot.jpg versus newer private photo: 0fb98d26-0755-4a0e-8f30-2ea4f09c897e"
+          }
+        ],
+        "analyzed_at": "2026-10-23T17:33:39.223+00:00",
         "snapshot_image": "gaia-reference/photos/33-c6f3ac5794-latest_photo.webp"
       },
       "previous_photo": null,
@@ -2206,7 +2968,7 @@
           "id": "0fb98d26-0755-4a0e-8f30-2ea4f09c897e",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:45:03.336744+00:00",
-          "analysis_status": "pending",
+          "analysis_status": "reviewed",
           "snapshot_image": "gaia-reference/photos/33-c6f3ac5794-latest_photo.webp"
         }
       ],
@@ -2240,10 +3002,37 @@
         "taken_on": "2026-10-18",
         "created_at": "2026-10-21T04:45:36.379975+00:00",
         "caption": "",
-        "analysis_status": "pending",
-        "analysis_summary": "",
-        "analysis_findings": [],
-        "analyzed_at": null,
+        "analysis_status": "reviewed",
+        "analysis_summary": "Farore's October 18 image shows an upright leafy plant with lighter tips and darker mottled older foliage, broadly resembling the undated reference. The newest image is blurred and taken farther away, so patch expansion and new-leaf quality cannot be judged reliably. An October 10 bath is documented, but current moisture and measured growth are not synced. No treatment or repotting is supported by this image alone.",
+        "analysis_findings": [
+          {
+            "kind": "trend",
+            "text": "uncertain"
+          },
+          {
+            "kind": "observation",
+            "text": "Multiple textured leaves remain attached around upright stems."
+          },
+          {
+            "kind": "observation",
+            "text": "The reference clearly shows dark mottling on an older leaf; darker areas are also visible in the latest image."
+          },
+          {
+            "kind": "observation",
+            "text": "Latest-image blur prevents matching spots or assessing leaf margins precisely."
+          },
+          {
+            "kind": "care",
+            "text": "Photograph the newest and mottled older leaves close up in neutral light.",
+            "reason": "A sharper matched view is needed to determine whether damage is confined to older tissue, as the care profile expects.",
+            "urgency": "monitor"
+          },
+          {
+            "kind": "comparison_source",
+            "text": "Original GAIA image: 34-farore-plectranthus-black-square-pot.jpg versus newer private photo: a7893942-fb59-4316-96d0-475ba51fda73"
+          }
+        ],
+        "analyzed_at": "2026-10-23T17:34:25.289+00:00",
         "snapshot_image": "gaia-reference/photos/34-86e5014965-latest_photo.webp"
       },
       "previous_photo": null,
@@ -2252,7 +3041,7 @@
           "id": "a7893942-fb59-4316-96d0-475ba51fda73",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:45:36.379975+00:00",
-          "analysis_status": "pending",
+          "analysis_status": "reviewed",
           "snapshot_image": "gaia-reference/photos/34-86e5014965-latest_photo.webp"
         }
       ],
@@ -2286,10 +3075,37 @@
         "taken_on": "2026-10-18",
         "created_at": "2026-10-21T04:46:59.561289+00:00",
         "caption": "",
-        "analysis_status": "pending",
-        "analysis_summary": "",
-        "analysis_findings": [],
-        "analyzed_at": null,
+        "analysis_status": "reviewed",
+        "analysis_summary": "Chewie retains upright reddish stems and textured silver-green leaves in the October 18 photo and undated catalog reference. Several blades have curled or irregular margins in both views. The latest photograph looks fuller from its front angle, but the older view is more overhead and cannot establish a growth rate or recovery. An October 10 bath is recorded; current moisture and growth observations are not synced.",
+        "analysis_findings": [
+          {
+            "kind": "trend",
+            "text": "stable"
+          },
+          {
+            "kind": "observation",
+            "text": "Several upright stems carry textured leaves in both images."
+          },
+          {
+            "kind": "observation",
+            "text": "Curled or irregular leaf margins occur in earlier and latest views."
+          },
+          {
+            "kind": "observation",
+            "text": "No obvious whole-plant collapse is visible, while leaf firmness and deeper soil conditions remain unobservable."
+          },
+          {
+            "kind": "care",
+            "text": "Check leaf firmness and mix moisture and monitor new tips for crisp edges.",
+            "reason": "The profile highlights steady moisture and new growth; existing leaf texture or curling alone does not identify the cause of stress.",
+            "urgency": "routine"
+          },
+          {
+            "kind": "comparison_source",
+            "text": "Original GAIA image: 35-chewie-friendship-plant.jpg versus newer private photo: 846c6985-ecd9-43c5-baa2-d0e00f36365c"
+          }
+        ],
+        "analyzed_at": "2026-10-23T17:34:26.641+00:00",
         "snapshot_image": "gaia-reference/photos/35-9f14025af0-latest_photo.webp"
       },
       "previous_photo": null,
@@ -2298,7 +3114,7 @@
           "id": "846c6985-ecd9-43c5-baa2-d0e00f36365c",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:46:59.561289+00:00",
-          "analysis_status": "pending",
+          "analysis_status": "reviewed",
           "snapshot_image": "gaia-reference/photos/35-9f14025af0-latest_photo.webp"
         }
       ],
@@ -2332,10 +3148,37 @@
         "taken_on": "2026-10-18",
         "created_at": "2026-10-21T04:47:22.213776+00:00",
         "caption": "",
-        "analysis_status": "pending",
-        "analysis_summary": "",
-        "analysis_findings": [],
-        "analyzed_at": null,
+        "analysis_status": "reviewed",
+        "analysis_summary": "Orion remains nearly leafless on October 18, with an upright green stalk and a small pointed growth beside its sheath compared with the undated catalog reference. There is no clear visible stalk collapse, but this remains a vulnerable recovery plant rather than evidence of full health. Roots and node condition are hidden. The profile records an October 10 bath; current mix moisture and growth measurements are not synced.",
+        "analysis_findings": [
+          {
+            "kind": "trend",
+            "text": "stable"
+          },
+          {
+            "kind": "observation",
+            "text": "An upright green stalk persists without an expanded leaf blade in both images."
+          },
+          {
+            "kind": "observation",
+            "text": "The latest view shows a small pointed green growth beside the main sheath."
+          },
+          {
+            "kind": "observation",
+            "text": "The visible base is not obviously collapsed, but its firmness and roots cannot be assessed visually."
+          },
+          {
+            "kind": "care",
+            "text": "Check exposed-base firmness and mix moisture without disturbing the roots; monitor the small shoot.",
+            "reason": "The plant has little foliage and the profile prioritizes protecting its surviving node; physical checks should guide any irrigation decision.",
+            "urgency": "routine"
+          },
+          {
+            "kind": "comparison_source",
+            "text": "Original GAIA image: 36-orion-thai-constellation-1-round-pot.jpg versus newer private photo: 9683643e-7e9d-4084-9d93-cfa7b98fdd41"
+          }
+        ],
+        "analyzed_at": "2026-10-23T17:34:28.463+00:00",
         "snapshot_image": "gaia-reference/photos/36-76a50887d8-latest_photo.webp"
       },
       "previous_photo": null,
@@ -2344,7 +3187,7 @@
           "id": "9683643e-7e9d-4084-9d93-cfa7b98fdd41",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:47:22.213776+00:00",
-          "analysis_status": "pending",
+          "analysis_status": "reviewed",
           "snapshot_image": "gaia-reference/photos/36-76a50887d8-latest_photo.webp"
         }
       ],
@@ -2397,10 +3240,37 @@
         "taken_on": "2026-10-18",
         "created_at": "2026-10-21T04:48:32.47992+00:00",
         "caption": "",
-        "analysis_status": "pending",
-        "analysis_summary": "",
-        "analysis_findings": [],
-        "analyzed_at": null,
+        "analysis_status": "reviewed",
+        "analysis_summary": "Andromeda retains several upright petioles and expanded variegated leaves on October 18 compared with the undated catalog reference. The reference includes a rolled spear, while the newest side view exposes expanded blades, but individual leaf identities and growth rate cannot be confirmed. No obvious broad collapse is visible. An October 10 bath is documented; current moisture, actual mix and dated growth observations are not synced.",
+        "analysis_findings": [
+          {
+            "kind": "trend",
+            "text": "stable"
+          },
+          {
+            "kind": "observation",
+            "text": "Several green-and-cream leaf blades remain supported on upright petioles."
+          },
+          {
+            "kind": "observation",
+            "text": "The catalog shows a rolled spear beside the main petiole; the latest view shows several expanded blades from a different side."
+          },
+          {
+            "kind": "observation",
+            "text": "The pot sits inside an outer decorative container, whose interior and drainage are not visible."
+          },
+          {
+            "kind": "care",
+            "text": "Monitor emerging-leaf expansion and check mix moisture plus hidden runoff in the outer pot.",
+            "reason": "The profile prioritizes undisturbed new growth; these checks address recovery and drainage without assuming a need to repot.",
+            "urgency": "monitor"
+          },
+          {
+            "kind": "comparison_source",
+            "text": "Original GAIA image: 38-andromeda-thai-constellation-3-maroon-pot.jpg versus newer private photo: 5efb7d18-42f1-49a7-a67f-f6d760874498"
+          }
+        ],
+        "analyzed_at": "2026-10-23T17:35:16.445+00:00",
         "snapshot_image": "gaia-reference/photos/38-aea92132c4-latest_photo.webp"
       },
       "previous_photo": null,
@@ -2409,7 +3279,7 @@
           "id": "5efb7d18-42f1-49a7-a67f-f6d760874498",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:48:32.47992+00:00",
-          "analysis_status": "pending",
+          "analysis_status": "reviewed",
           "snapshot_image": "gaia-reference/photos/38-aea92132c4-latest_photo.webp"
         }
       ],
@@ -2443,10 +3313,37 @@
         "taken_on": "2026-10-20",
         "created_at": "2026-10-21T04:39:09.500373+00:00",
         "caption": "",
-        "analysis_status": "pending",
-        "analysis_summary": "",
-        "analysis_findings": [],
-        "analyzed_at": null,
+        "analysis_status": "reviewed",
+        "analysis_summary": "Raven's October 20 photo retains dense upright shoots and mostly dark foliage compared with the undated catalog reference. Some lighter green shoots remain visible, consistent with the profile's description of new Raven foliage darkening as it matures. The prior isolated brown patch cannot be reliably matched through the changed angle and overlapping leaves. No recent irrigation or moisture measurements are synced.",
+        "analysis_findings": [
+          {
+            "kind": "trend",
+            "text": "stable"
+          },
+          {
+            "kind": "observation",
+            "text": "Numerous upright stalks and dark leaflets remain visible without obvious widespread collapse."
+          },
+          {
+            "kind": "observation",
+            "text": "Lighter green foliage occurs among dark mature shoots in both comparison images."
+          },
+          {
+            "kind": "observation",
+            "text": "A neighboring broad leaf partly obscures the top of the latest view, limiting exact shoot counts."
+          },
+          {
+            "kind": "care",
+            "text": "Check deep mix dryness and monitor new shoots and any expanding brown patches.",
+            "reason": "The ZZ profile calls for substantial drying between irrigations; the green new foliage and old isolated patch do not alone justify changing care.",
+            "urgency": "routine"
+          },
+          {
+            "kind": "comparison_source",
+            "text": "Original GAIA image: 39-raven-raven-zz.jpg versus newer private photo: 75703807-0ae3-40fe-b1c3-2b114d420cf8"
+          }
+        ],
+        "analyzed_at": "2026-10-23T17:35:17.42+00:00",
         "snapshot_image": "gaia-reference/photos/39-0b918943df-latest_photo.webp"
       },
       "previous_photo": null,
@@ -2455,7 +3352,7 @@
           "id": "75703807-0ae3-40fe-b1c3-2b114d420cf8",
           "taken_on": "2026-10-20",
           "created_at": "2026-10-21T04:39:09.500373+00:00",
-          "analysis_status": "pending",
+          "analysis_status": "reviewed",
           "snapshot_image": "gaia-reference/photos/39-0b918943df-latest_photo.webp"
         }
       ],
@@ -2489,10 +3386,37 @@
         "taken_on": "2026-10-18",
         "created_at": "2026-10-21T04:50:38.801407+00:00",
         "caption": "",
-        "analysis_status": "pending",
-        "analysis_summary": "",
-        "analysis_findings": [],
-        "analyzed_at": null,
+        "analysis_status": "reviewed",
+        "analysis_summary": "Loki's October 18 image retains upright stems and a compact dark leafy crown compared with the undated catalog reference, but the latest photograph is distant and blurred. It cannot establish subtle leaf loss, crisping or pest clearance. A confirmed October 14 watering was logged four days before this photo; that event does not establish today's moisture, and no later moisture or growth readings are synced.",
+        "analysis_findings": [
+          {
+            "kind": "trend",
+            "text": "uncertain"
+          },
+          {
+            "kind": "observation",
+            "text": "Several upright narrow stems and dark leaflets remain visible in both images."
+          },
+          {
+            "kind": "observation",
+            "text": "No clear whole-stem collapse is visible in the newest photograph."
+          },
+          {
+            "kind": "observation",
+            "text": "The latest blur prevents matching individual leaf tips or inspecting undersides."
+          },
+          {
+            "kind": "care",
+            "text": "Check current mix moisture and inspect narrow leaflets close up for fresh damage or moving pests.",
+            "reason": "The October 14 irrigation is useful history but cannot substitute for current moisture; a close inspection resolves limits of the distant image.",
+            "urgency": "routine"
+          },
+          {
+            "kind": "comparison_source",
+            "text": "Original GAIA image: 40-loki-false-aralia.jpg versus newer private photo: 7f6ea2d7-603d-4832-991c-90682869aca9"
+          }
+        ],
+        "analyzed_at": "2026-10-23T17:35:19.047+00:00",
         "snapshot_image": "gaia-reference/photos/40-d59eced1de-latest_photo.webp"
       },
       "previous_photo": null,
@@ -2501,7 +3425,7 @@
           "id": "7f6ea2d7-603d-4832-991c-90682869aca9",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:50:38.801407+00:00",
-          "analysis_status": "pending",
+          "analysis_status": "reviewed",
           "snapshot_image": "gaia-reference/photos/40-d59eced1de-latest_photo.webp"
         }
       ],
@@ -2543,10 +3467,37 @@
         "taken_on": "2026-10-18",
         "created_at": "2026-10-21T04:49:26.452818+00:00",
         "caption": "",
-        "analysis_status": "pending",
-        "analysis_summary": "",
-        "analysis_findings": [],
-        "analyzed_at": null,
+        "analysis_status": "reviewed",
+        "analysis_summary": "Paarthurnax remains upright with narrow green succulent leaves on October 18 compared with the undated catalog reference. Lower leaves arch downward in both images, while the top retains upright foliage without obvious stem collapse. A confirmed October 14 watering was logged four days before this photo; no current moisture or growth reading is synced, so elapsed time alone cannot guide the next irrigation.",
+        "analysis_findings": [
+          {
+            "kind": "trend",
+            "text": "stable"
+          },
+          {
+            "kind": "observation",
+            "text": "An upright central stem retains many narrow leaves in both views."
+          },
+          {
+            "kind": "observation",
+            "text": "Several lower leaves curve or hang down in both comparison images."
+          },
+          {
+            "kind": "observation",
+            "text": "The upper shoot remains green and upright; root-zone moisture and stem firmness cannot be measured visually."
+          },
+          {
+            "kind": "care",
+            "text": "Check full-depth mix dryness and stem or lower-leaf firmness.",
+            "reason": "The recorded October 14 irrigation is context; the succulent profile calls for actual drying rather than a fixed interval.",
+            "urgency": "routine"
+          },
+          {
+            "kind": "comparison_source",
+            "text": "Original GAIA image: 41-paarthurnax-himalaya-senecio.jpg versus newer private photo: 0ce735a3-4d53-403a-9cc2-0dc6ac5414b6"
+          }
+        ],
+        "analyzed_at": "2026-10-23T17:36:33.395+00:00",
         "snapshot_image": "gaia-reference/photos/41-3d914f9348-latest_photo.webp"
       },
       "previous_photo": null,
@@ -2555,7 +3506,7 @@
           "id": "0ce735a3-4d53-403a-9cc2-0dc6ac5414b6",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:49:26.452818+00:00",
-          "analysis_status": "pending",
+          "analysis_status": "reviewed",
           "snapshot_image": "gaia-reference/photos/41-3d914f9348-latest_photo.webp"
         }
       ],
@@ -2597,10 +3548,41 @@
         "taken_on": "2026-10-18",
         "created_at": "2026-10-21T04:26:46.040712+00:00",
         "caption": "",
-        "analysis_status": "pending",
-        "analysis_summary": "",
-        "analysis_findings": [],
-        "analyzed_at": null,
+        "analysis_status": "reviewed",
+        "analysis_summary": "Zelda's October 18 latest photo shows several leafy silver-and-purple striped stems, broadly consistent with its undated catalog reference, without obvious whole-plant collapse. Its nominal earlier journal image is byte-identical to Violet's latest exported photo and depicts a different unstriped purple-heart plant; it cannot support a same-plant dated trend. The meaningful comparison here is with Zelda's catalog image. Current moisture and measured growth are not synced.",
+        "analysis_findings": [
+          {
+            "kind": "trend",
+            "text": "uncertain"
+          },
+          {
+            "kind": "observation",
+            "text": "The latest Zelda image contains multiple striped purple-and-silver leaves on upright and arching stems."
+          },
+          {
+            "kind": "observation",
+            "text": "The correct catalog image, 42-zelda-tradescantia-zebrina.jpg, shows the same striped leaf type and no obvious contrasting whole-plant collapse."
+          },
+          {
+            "kind": "observation",
+            "text": "The nominal prior journal image depicts unstriped long purple foliage in Violet's orange decorative pot and duplicates Violet's latest exported image."
+          },
+          {
+            "kind": "observation",
+            "text": "Because the journal source is mismatched and the catalog date is unknown, no reliable dated growth trend can be assigned."
+          },
+          {
+            "kind": "care",
+            "text": "Check Zelda's exported earlier-photo association against Violet's duplicate image.",
+            "reason": "The history source is mismatched; verify the upload/export association before using it for future growth comparisons.",
+            "urgency": "routine"
+          },
+          {
+            "kind": "comparison_source",
+            "text": "Earlier private photo: ca4444e0-14bd-4a86-aa0b-79d7ce348ebf versus newer private photo: 79d88182-b716-4a37-be18-8512fec25ce3"
+          }
+        ],
+        "analyzed_at": "2026-10-23T17:36:34.168+00:00",
         "snapshot_image": "gaia-reference/photos/42-73475cb40a-latest_photo.webp"
       },
       "previous_photo": {
@@ -2620,7 +3602,7 @@
           "id": "79d88182-b716-4a37-be18-8512fec25ce3",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:26:46.040712+00:00",
-          "analysis_status": "pending",
+          "analysis_status": "reviewed",
           "snapshot_image": "gaia-reference/photos/42-73475cb40a-latest_photo.webp"
         },
         {
@@ -2667,10 +3649,37 @@
         "taken_on": "2026-10-18",
         "created_at": "2026-10-21T04:30:07.755004+00:00",
         "caption": "",
-        "analysis_status": "pending",
-        "analysis_summary": "",
-        "analysis_findings": [],
-        "analyzed_at": null,
+        "analysis_status": "reviewed",
+        "analysis_summary": "Triss retains a similarly full upright canopy with pink petioles and red-green leaves on October 18 and October 14, also consistent with the undated catalog reference. No clear major new leaf loss or collapse is visible. Some older leaf edges remain imperfect, and changed exposure prevents judging subtle color changes. The profile records an October 10 bath and unconfirmed drainage; current moisture and growth measurements are not synced.",
+        "analysis_findings": [
+          {
+            "kind": "trend",
+            "text": "stable"
+          },
+          {
+            "kind": "observation",
+            "text": "The main petiole cluster and most broad leaves have similar positions in both journal views."
+          },
+          {
+            "kind": "observation",
+            "text": "Pink-red margins and mixed green-red leaf coloration occur across all three images."
+          },
+          {
+            "kind": "observation",
+            "text": "Some older lower or side leaves have imperfect tips or edges, without a clearly enlarged new dead area in the matched journal views."
+          },
+          {
+            "kind": "care",
+            "text": "Check mix moisture and the pot's drainage arrangement; monitor newly yellowing lower leaves.",
+            "reason": "The profile specifically leaves drainage unconfirmed; current conditions should guide any change rather than normal cultivar colors.",
+            "urgency": "routine"
+          },
+          {
+            "kind": "comparison_source",
+            "text": "Earlier private photo: b23f259e-8cf5-47ae-a62e-46eb9908c26f versus newer private photo: 5d4fec19-e55f-45e5-955f-b7e08788a19c"
+          }
+        ],
+        "analyzed_at": "2026-10-23T17:36:35.919+00:00",
         "snapshot_image": "gaia-reference/photos/43-44cb730c42-latest_photo.webp"
       },
       "previous_photo": {
@@ -2715,7 +3724,7 @@
           "id": "5d4fec19-e55f-45e5-955f-b7e08788a19c",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:30:07.755004+00:00",
-          "analysis_status": "pending",
+          "analysis_status": "reviewed",
           "snapshot_image": "gaia-reference/photos/43-44cb730c42-latest_photo.webp"
         },
         {
@@ -2762,10 +3771,37 @@
         "taken_on": "2026-10-18",
         "created_at": "2026-10-21T04:41:31.774977+00:00",
         "caption": "",
-        "analysis_status": "pending",
-        "analysis_summary": "",
-        "analysis_findings": [],
-        "analyzed_at": null,
+        "analysis_status": "reviewed",
+        "analysis_summary": "Ciri appears less drooped in the October 18 photograph than in the undated catalog reference: the upper canopy is held more horizontally and light green tip growth is visible above the trellis crossbar. Some lower foliage still hangs down. Different angles and the unknown reference date prevent measuring the change or attributing it to irrigation. An October 10 bath is recorded; current moisture and dated growth observations are not synced.",
+        "analysis_findings": [
+          {
+            "kind": "trend",
+            "text": "improving"
+          },
+          {
+            "kind": "observation",
+            "text": "The latest upper canopy includes several outstretched green blades and lighter small leaves near the top."
+          },
+          {
+            "kind": "observation",
+            "text": "The reference shows more conspicuously downward-hanging foliage around the trellis."
+          },
+          {
+            "kind": "observation",
+            "text": "Lower leaves remain pendant in the latest view; no overall stem collapse is visible."
+          },
+          {
+            "kind": "care",
+            "text": "Monitor the upper tips and leaf posture while checking current mix moisture.",
+            "reason": "The apparent improvement needs confirmation from consistent photos and physical moisture checks rather than extra irrigation based on past droop.",
+            "urgency": "monitor"
+          },
+          {
+            "kind": "comparison_source",
+            "text": "Original GAIA image: 44-ciri-grape-ivy-oak-leaf-ivy-cissus-alata-elle.jpg versus newer private photo: 8291b78e-6a7f-4a45-9235-e8653c33367c"
+          }
+        ],
+        "analyzed_at": "2026-10-23T17:37:26.978+00:00",
         "snapshot_image": "gaia-reference/photos/44-71ee45a3c0-latest_photo.webp"
       },
       "previous_photo": null,
@@ -2774,7 +3810,7 @@
           "id": "8291b78e-6a7f-4a45-9235-e8653c33367c",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:41:31.774977+00:00",
-          "analysis_status": "pending",
+          "analysis_status": "reviewed",
           "snapshot_image": "gaia-reference/photos/44-71ee45a3c0-latest_photo.webp"
         }
       ],
@@ -2808,10 +3844,37 @@
         "taken_on": "2026-10-18",
         "created_at": "2026-10-21T04:49:47.152333+00:00",
         "caption": "",
-        "analysis_status": "pending",
-        "analysis_summary": "",
-        "analysis_findings": [],
-        "analyzed_at": null,
+        "analysis_status": "reviewed",
+        "analysis_summary": "Jango retains abundant green lobed foliage on long, widely spaced stems in the October 18 image. The undated reference shows a much broader canopy, but framing and placement differ and no pruning or leaf-loss event is synced, so the apparent size difference cannot establish decline. The persistent leggy form is consistent with the existing profile. Current root-ball moisture and growth observations are not recorded or synced.",
+        "analysis_findings": [
+          {
+            "kind": "trend",
+            "text": "uncertain"
+          },
+          {
+            "kind": "observation",
+            "text": "The latest photograph shows numerous green lobed leaves on long upright and outward-reaching stems."
+          },
+          {
+            "kind": "observation",
+            "text": "Long gaps between leaves are present in both the latest and catalog views."
+          },
+          {
+            "kind": "observation",
+            "text": "The catalog canopy is much wider in frame; the photographs do not distinguish pruning, loss or framing differences."
+          },
+          {
+            "kind": "care",
+            "text": "Check moisture inside the root ball and surrounding mix; monitor spacing on new growth.",
+            "reason": "Direct moisture checks should precede irrigation changes, and new stem spacing provides evidence for judging the existing light concern.",
+            "urgency": "routine"
+          },
+          {
+            "kind": "comparison_source",
+            "text": "Original GAIA image: 45-jango-citronella-plant-scented-geranium-mosqu.jpg versus newer private photo: 73cb3c5f-1559-4a13-a20e-5de25ea5c44b"
+          }
+        ],
+        "analyzed_at": "2026-10-23T17:37:27.74+00:00",
         "snapshot_image": "gaia-reference/photos/45-811786ad1a-latest_photo.webp"
       },
       "previous_photo": null,
@@ -2820,7 +3883,7 @@
           "id": "73cb3c5f-1559-4a13-a20e-5de25ea5c44b",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:49:47.152333+00:00",
-          "analysis_status": "pending",
+          "analysis_status": "reviewed",
           "snapshot_image": "gaia-reference/photos/45-811786ad1a-latest_photo.webp"
         }
       ],
