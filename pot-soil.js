@@ -138,7 +138,8 @@
     if (!cards.length) return;
     state.plants=arr;
     for(const [i,card] of cards.entries()){
-      const plant=arr.find(p=>p.id===card.dataset.plantId) || arr[i];
+      // Stable IDs only; index fallback can attach care measurements to the wrong plant.
+      const plant=arr.find(p=>String(p.id)===card.dataset.plantId);
       if(!plant) continue;
       const where=card.querySelector(".care-tracker") || card.querySelector(".care");
       if(where) where.insertAdjacentHTML(where.classList.contains("care-tracker")?"afterend":"afterbegin",panelHtml(plant));
