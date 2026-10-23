@@ -89,7 +89,11 @@
 
   const buttons={};
   [["care","clipboard-check"],["academy","book-open"],["botany","sprout"]].forEach(([key])=>{
-    const b=el("button","gaia-hub-tab",titles[key]);
+    const b=el("button","gaia-hub-tab");
+    const full=el("span","gaia-hub-tab-full",titles[key]);
+    const short=el("span","gaia-hub-tab-short",{care:"Care",academy:"Learn",botany:"Botany"}[key]);
+    b.append(full,short);
+    b.setAttribute("aria-label", titles[key]);
     b.id="gaia-tab-"+key;
     b.type="button";
     b.setAttribute("role","tab");
@@ -158,8 +162,12 @@
   addText(headingCopy,"p","","Check the plant, understand the reason, then record what you observe. Existing care tasks, photos, and journals are below.");
   head.appendChild(headingCopy);
   overview.appendChild(head);
+  const careFlagDetails=el("details","gaia-care-attention-details");
+  const flagTrigger=el("summary","gaia-care-attention-summary","Review saved condition flags");
+  careFlagDetails.appendChild(flagTrigger);
   const flags=el("div","gaia-care-priority-list");
-  overview.appendChild(flags);
+  careFlagDetails.appendChild(flags);
+  overview.appendChild(careFlagDetails);
   care.insertBefore(overview,care.firstChild);
 
   function latestWatering(id){
@@ -219,12 +227,15 @@
   function renderCarePriorities(){
     flags.replaceChildren();
     const attention=data.filter(p=>!["Good","Excellent"].includes(p.status));
+    flagTrigger.textContent=attention.length
+      ? "Review " + attention.length + " saved condition " + (attention.length===1?"flag":"flags")
+      : "No catalog condition flags · see collection";
     const caption=el("p","gaia-care-priority-note",
       "Based on saved catalog condition labels—not a live diagnosis or automatic watering alert. Inspect soil, roots and recent observations before acting.");
     flags.appendChild(caption);
     if(!data.length)return;
     const list=el("div","gaia-care-priority-grid");
-    const sample=(attention.length?attention:data).slice(0,6);
+    const sample=attention.slice(0,6);
     for(const p of sample){
       const item=el("article","gaia-care-priority-item");
       const top=el("div","gaia-care-priority-top");
