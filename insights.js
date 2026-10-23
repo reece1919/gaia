@@ -116,8 +116,8 @@
     if (!client || !user) {
       stamp.textContent = "Private notes · sign in";
       body.innerHTML =
-        '<p class="gaia-insights-empty">Sign in using <strong>Sync, account &amp; backup</strong> ' +
-        'at the bottom of GAIA to read your private GAIA insights.</p>';
+        '<p class="gaia-insights-empty">Sign in under <strong>Care → Tools &amp; reviews → Settings &amp; Backup</strong> ' +
+        'to read your private GAIA insights.</p>';
       status.textContent = "Reviews are stored privately. This website does not contact an AI service.";
       return;
     }
@@ -272,7 +272,7 @@
     if(!client||!user||busy)return;
     document.dispatchEvent(new CustomEvent("gaia:photo-reviews-changed"));
     await refresh();
-    status.textContent="Saved photo comparisons refreshed. Use Review New Photos in the GAIA header to start a collection-wide interactive review.";
+    status.textContent="Saved photo comparisons refreshed. Use Run new photo analysis in Photo reviews to start a new interactive review.";
   });
   button.addEventListener("click", () => void refresh());
   if (window.GAIA_CLOUD) onAuth(window.GAIA_CLOUD);
