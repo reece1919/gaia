@@ -2,9 +2,12 @@
   "schema_version": 1,
   "read_only": true,
   "source": "GAIA owner-approved reference snapshot",
-  "generated_at": "2026-10-23T17:02:19.901Z",
-  "synced_at": "2026-10-23T17:03:49.062329+00:00",
+  "generated_at": "2026-10-23T17:09:47.196Z",
+  "synced_at": "2026-10-23T17:09:48.689756+00:00",
   "plant_count": 48,
+  "uploaded_photo_count": 57,
+  "exported_photo_count": 57,
+  "catalog_reference_count": 45,
   "unavailable_sections": [],
   "plants": [
     {
@@ -63,12 +66,14 @@
           "id": "1d29de98-4dfd-4c6e-9dbe-ad3326bf47db",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:34:12.976456+00:00",
-          "analysis_status": "reviewed"
+          "analysis_status": "reviewed",
+          "snapshot_image": "gaia-reference/photos/01-938db8c9f8-latest_photo.webp"
         }
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": []
+      "care_events": [],
+      "reference_image": "01-red-banana-croton-name-pending.jpg"
     },
     {
       "plant_id": "02",
@@ -133,18 +138,21 @@
           "id": "1701fc50-6542-45b9-bc7f-10216bb261d2",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:23:30.461618+00:00",
-          "analysis_status": "pending"
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/02-a953f09a1b-latest_photo.webp"
         },
         {
           "id": "a4b6fe2a-8d42-471c-ac7b-7caa412d4a07",
           "taken_on": "2026-10-14",
           "created_at": "2026-10-15T00:41:24.432897+00:00",
-          "analysis_status": "reviewed"
+          "analysis_status": "reviewed",
+          "snapshot_image": "gaia-reference/photos/02-a953f09a1b-previous_photo.webp"
         }
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": []
+      "care_events": [],
+      "reference_image": "02-ponytail-palm-name-pending-elephant-foot-tree.jpg"
     },
     {
       "plant_id": "03",
@@ -209,18 +217,21 @@
           "id": "4197d4a9-9a30-4d71-b547-339855a3f32b",
           "taken_on": "2026-10-20",
           "created_at": "2026-10-21T04:24:01.164727+00:00",
-          "analysis_status": "pending"
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/03-0b8efa5a3b-latest_photo.webp"
         },
         {
           "id": "89e4f005-8383-4576-a7f1-da033840f461",
           "taken_on": "2026-10-14",
           "created_at": "2026-10-15T00:45:49.765397+00:00",
-          "analysis_status": "reviewed"
+          "analysis_status": "reviewed",
+          "snapshot_image": "gaia-reference/photos/03-0b8efa5a3b-previous_photo.webp"
         }
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": []
+      "care_events": [],
+      "reference_image": "03-bowser-pincushion-cactus.jpg"
     },
     {
       "plant_id": "04",
@@ -322,13 +333,15 @@
           "id": "9b3de1ef-0b4a-4dd5-bcaf-42fbb2211d7a",
           "taken_on": "2026-10-16",
           "created_at": "2026-10-16T17:12:06.218528+00:00",
-          "analysis_status": "reviewed"
+          "analysis_status": "reviewed",
+          "snapshot_image": "gaia-reference/photos/04-6cd5b6e519-latest_photo.webp"
         },
         {
           "id": "88650d43-c42e-4217-95d8-f9386276bc05",
           "taken_on": "2026-10-14",
           "created_at": "2026-10-15T00:45:37.253808+00:00",
-          "analysis_status": "reviewed"
+          "analysis_status": "reviewed",
+          "snapshot_image": "gaia-reference/photos/04-6cd5b6e519-previous_photo.webp"
         }
       ],
       "pot": null,
@@ -348,7 +361,8 @@
           "note": "Audrey II (Venus flytrap): Reece confirmed the nursery medium was very dry, the original pot has drainage holes, and a bottom-soak was in progress. Soak completion and water source unconfirmed; do not log completed watering. Photo reviewed in ChatGPT showed green traps and some black older traps. Normally in a window with grow light beside succulents. Possible east-facing bedroom windowsill for winter; sill temperatures unmeasured. Follow-up: confirm rehydration, obtain distilled/RO/rain water, check overnight windowsill temperatures before choosing dormancy location.",
           "created_at": "2026-10-14T05:20:32.950909+00:00"
         }
-      ]
+      ],
+      "reference_image": "04-audrey-ii-venus-flytrap.jpg"
     },
     {
       "plant_id": "05",
@@ -400,12 +414,14 @@
           "id": "74cd1231-ff17-4a7f-891e-3b4f68bb8ab4",
           "taken_on": "2026-10-14",
           "created_at": "2026-10-15T00:46:12.350369+00:00",
-          "analysis_status": "reviewed"
+          "analysis_status": "reviewed",
+          "snapshot_image": "gaia-reference/photos/05-c97550ce82-latest_photo.webp"
         }
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": []
+      "care_events": [],
+      "reference_image": "05-treebeard-parlor-palm.jpg"
     },
     {
       "plant_id": "06",
@@ -430,12 +446,14 @@
           "id": "95b88de2-0dd2-42e0-bb01-85ef80a35917",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:33:32.762911+00:00",
-          "analysis_status": "pending"
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/06-aacd834b5c-latest_photo.webp"
         }
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": []
+      "care_events": [],
+      "reference_image": "06-malefecent-bromeliad-guzmania-amber.jpg"
     },
     {
       "plant_id": "07",
@@ -492,18 +510,21 @@
           "id": "f0c37a5b-b999-435b-a30c-b9311930ac3d",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:27:30.276907+00:00",
-          "analysis_status": "pending"
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/07-19b100ab77-latest_photo.webp"
         },
         {
           "id": "37ab0d10-1adc-42df-ac73-ffd7a08fa14e",
           "taken_on": "2026-10-14",
           "created_at": "2026-10-15T00:47:33.476197+00:00",
-          "analysis_status": "reviewed"
+          "analysis_status": "reviewed",
+          "snapshot_image": "gaia-reference/photos/07-19b100ab77-previous_photo.webp"
         }
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": []
+      "care_events": [],
+      "reference_image": "07-samwise-aloe.jpg"
     },
     {
       "plant_id": "08",
@@ -564,18 +585,21 @@
           "id": "e432a6ee-e023-423f-9750-629dd8900845",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:27:58.34951+00:00",
-          "analysis_status": "pending"
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/08-323783be9a-latest_photo.webp"
         },
         {
           "id": "facbf1b3-3ccb-42c1-b590-8ff52aca6cb7",
           "taken_on": "2026-10-14",
           "created_at": "2026-10-15T00:44:57.097385+00:00",
-          "analysis_status": "reviewed"
+          "analysis_status": "reviewed",
+          "snapshot_image": "gaia-reference/photos/08-323783be9a-previous_photo.webp"
         }
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": []
+      "care_events": [],
+      "reference_image": "08-drogo-magenta-dragon-tree.jpg"
     },
     {
       "plant_id": "09",
@@ -638,18 +662,21 @@
           "id": "e65b6454-9142-489b-b3b9-e9a9388e6e4b",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:28:23.085063+00:00",
-          "analysis_status": "pending"
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/09-3514acf617-latest_photo.webp"
         },
         {
           "id": "7810d115-b522-4b93-befd-0de104804463",
           "taken_on": "2026-10-14",
           "created_at": "2026-10-15T00:42:33.060741+00:00",
-          "analysis_status": "reviewed"
+          "analysis_status": "reviewed",
+          "snapshot_image": "gaia-reference/photos/09-3514acf617-previous_photo.webp"
         }
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": []
+      "care_events": [],
+      "reference_image": "09-gandalf-dusty-miller.jpg"
     },
     {
       "plant_id": "10",
@@ -674,12 +701,14 @@
           "id": "959b962c-9086-42de-9f37-b41633af4511",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:35:05.978313+00:00",
-          "analysis_status": "pending"
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/10-4a44dc1536-latest_photo.webp"
         }
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": []
+      "care_events": [],
+      "reference_image": "10-maester.jpg"
     },
     {
       "plant_id": "11",
@@ -704,12 +733,14 @@
           "id": "c753f042-7fca-4cae-80a1-042c799ac495",
           "taken_on": "2026-10-20",
           "created_at": "2026-10-21T04:39:31.749374+00:00",
-          "analysis_status": "pending"
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/11-4fc82b26ae-latest_photo.webp"
         }
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": []
+      "care_events": [],
+      "reference_image": "11-karlach.jpg"
     },
     {
       "plant_id": "12",
@@ -734,12 +765,14 @@
           "id": "953d4e36-c5a8-46e8-b397-4d75d710e815",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:35:40.025981+00:00",
-          "analysis_status": "pending"
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/12-6b51d431df-latest_photo.webp"
         }
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": []
+      "care_events": [],
+      "reference_image": "12-glados.jpg"
     },
     {
       "plant_id": "13",
@@ -764,12 +797,14 @@
           "id": "92ade0bc-5d98-49df-9510-953a10ed222b",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:36:55.822589+00:00",
-          "analysis_status": "pending"
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/13-3fdba35f04-latest_photo.webp"
         }
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": []
+      "care_events": [],
+      "reference_image": "13-sauron.jpg"
     },
     {
       "plant_id": "14",
@@ -794,12 +829,14 @@
           "id": "cf7ae034-1119-494c-81a5-32a9b3975841",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:32:48.689891+00:00",
-          "analysis_status": "pending"
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/14-8527a891e2-latest_photo.webp"
         }
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": []
+      "care_events": [],
+      "reference_image": "14-galadriel-peace-lily.jpg"
     },
     {
       "plant_id": "15",
@@ -824,12 +861,14 @@
           "id": "3b74a509-702e-4391-bdba-15120727741a",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:31:58.030904+00:00",
-          "analysis_status": "pending"
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/15-e629fa6598-latest_photo.webp"
         }
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": []
+      "care_events": [],
+      "reference_image": "15-tywin.jpg"
     },
     {
       "plant_id": "16",
@@ -896,18 +935,21 @@
           "id": "7f51c03b-dbca-41e5-9e68-188845bb8d74",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:28:50.812222+00:00",
-          "analysis_status": "pending"
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/16-b17ef6d19c-latest_photo.webp"
         },
         {
           "id": "6a8c8d31-db85-49fc-bd53-cdcecc4fe6f1",
           "taken_on": "2026-10-14",
           "created_at": "2026-10-15T00:43:50.362026+00:00",
-          "analysis_status": "reviewed"
+          "analysis_status": "reviewed",
+          "snapshot_image": "gaia-reference/photos/16-b17ef6d19c-previous_photo.webp"
         }
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": []
+      "care_events": [],
+      "reference_image": "16-morgana.jpg"
     },
     {
       "plant_id": "17",
@@ -968,18 +1010,21 @@
           "id": "73dc363c-02cf-4ed6-bd1b-02dfa79b7240",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:37:17.747685+00:00",
-          "analysis_status": "pending"
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/17-4523540f15-latest_photo.webp"
         },
         {
           "id": "df160e4f-e9d0-40f8-b47e-39726b1e1aa2",
           "taken_on": "2026-10-14",
           "created_at": "2026-10-15T00:43:31.621567+00:00",
-          "analysis_status": "reviewed"
+          "analysis_status": "reviewed",
+          "snapshot_image": "gaia-reference/photos/17-4523540f15-previous_photo.webp"
         }
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": []
+      "care_events": [],
+      "reference_image": "17-c-3po.jpg"
     },
     {
       "plant_id": "18",
@@ -1004,12 +1049,14 @@
           "id": "b690e1e1-4202-4ada-93e4-6fdaffaf2433",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:38:04.22211+00:00",
-          "analysis_status": "pending"
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/18-4ec9599fc2-latest_photo.webp"
         }
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": []
+      "care_events": [],
+      "reference_image": "18-geoffrey.jpg"
     },
     {
       "plant_id": "19",
@@ -1021,7 +1068,8 @@
       "photos": [],
       "pot": null,
       "soil_observations": [],
-      "care_events": []
+      "care_events": [],
+      "reference_image": "19-arya.jpg"
     },
     {
       "plant_id": "20",
@@ -1033,7 +1081,8 @@
       "photos": [],
       "pot": null,
       "soil_observations": [],
-      "care_events": []
+      "care_events": [],
+      "reference_image": "20-david.jpg"
     },
     {
       "plant_id": "21",
@@ -1100,18 +1149,21 @@
           "id": "bf8918b4-46af-473d-94b8-610675d12524",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:39:50.303372+00:00",
-          "analysis_status": "pending"
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/21-6f4b661212-latest_photo.webp"
         },
         {
           "id": "e4d94a2b-d350-453e-a62d-08636eba5fb7",
           "taken_on": "2026-10-14",
           "created_at": "2026-10-15T00:48:12.268417+00:00",
-          "analysis_status": "reviewed"
+          "analysis_status": "reviewed",
+          "snapshot_image": "gaia-reference/photos/21-6f4b661212-previous_photo.webp"
         }
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": []
+      "care_events": [],
+      "reference_image": "21-violet-purple-heart.jpg"
     },
     {
       "plant_id": "22",
@@ -1136,12 +1188,14 @@
           "id": "02d8d41e-7295-4de4-be0c-e5aeceddfd87",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:29:38.381774+00:00",
-          "analysis_status": "pending"
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/22-785f3ec7eb-latest_photo.webp"
         }
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": []
+      "care_events": [],
+      "reference_image": "22-molly-hens-chicks.jpg"
     },
     {
       "plant_id": "23",
@@ -1166,12 +1220,14 @@
           "id": "6040457b-41d3-470a-be32-869eeddff3eb",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:40:17.406753+00:00",
-          "analysis_status": "pending"
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/23-535fa30d7e-latest_photo.webp"
         }
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": []
+      "care_events": [],
+      "reference_image": "23-calcifer-bromeliad.jpg"
     },
     {
       "plant_id": "24",
@@ -1238,18 +1294,21 @@
           "id": "b6866ddb-0d67-4eed-8221-a95654ddc4c2",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:41:08.572779+00:00",
-          "analysis_status": "pending"
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/24-c2356069e9-latest_photo.webp"
         },
         {
           "id": "59f3a553-376c-414c-8b97-26dd6546cdf3",
           "taken_on": "2026-10-14",
           "created_at": "2026-10-15T00:42:08.657089+00:00",
-          "analysis_status": "reviewed"
+          "analysis_status": "reviewed",
+          "snapshot_image": "gaia-reference/photos/24-c2356069e9-previous_photo.webp"
         }
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": []
+      "care_events": [],
+      "reference_image": "24-phil-heartleaf-philodendron.jpg"
     },
     {
       "plant_id": "25",
@@ -1318,24 +1377,28 @@
           "id": "5377d226-834e-47ff-89ce-2c6f43f3d316",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:41:54.730104+00:00",
-          "analysis_status": "pending"
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/25-b7a56873cd-latest_photo.webp"
         },
         {
           "id": "b967edd3-7888-42c1-acd7-6764feac1e5b",
           "taken_on": "2026-10-14",
           "created_at": "2026-10-15T00:47:50.228707+00:00",
-          "analysis_status": "reviewed"
+          "analysis_status": "reviewed",
+          "snapshot_image": "gaia-reference/photos/25-b7a56873cd-previous_photo.webp"
         },
         {
           "id": "9dfef0ab-b334-49f4-a9b3-f153fb09d90a",
           "taken_on": "2026-10-12",
           "created_at": "2026-10-12T21:12:40.446773+00:00",
-          "analysis_status": "pending"
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/25-b7a56873cd-history-9dfef0ab-b334-49f4-a9b3-f153fb09d90a.webp"
         }
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": []
+      "care_events": [],
+      "reference_image": "25-ruby-ruby-necklace.jpg"
     },
     {
       "plant_id": "26",
@@ -1360,12 +1423,14 @@
           "id": "bb41b568-0aba-4cee-a01a-fa2ab7a29395",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:42:39.119922+00:00",
-          "analysis_status": "pending"
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/26-5f9c4ab08c-latest_photo.webp"
         }
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": []
+      "care_events": [],
+      "reference_image": "26-nayru-plectranthus-white-pot.jpg"
     },
     {
       "plant_id": "27",
@@ -1390,12 +1455,14 @@
           "id": "2705f059-b66b-4e43-aa6f-3b2a9d3b6b41",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:42:54.909869+00:00",
-          "analysis_status": "pending"
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/27-670671cd97-latest_photo.webp"
         }
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": []
+      "care_events": [],
+      "reference_image": "27-yennefer-purple-joyweed.jpg"
     },
     {
       "plant_id": "28",
@@ -1420,12 +1487,14 @@
           "id": "e030f329-e336-4f27-a33a-11415118a8e7",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:43:17.588312+00:00",
-          "analysis_status": "pending"
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/28-59e19706d5-latest_photo.webp"
         }
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": []
+      "care_events": [],
+      "reference_image": "28-beetlejuice-zebra-haworthia.jpg"
     },
     {
       "plant_id": "29",
@@ -1490,18 +1559,21 @@
           "id": "5820cdb9-bef1-4a96-9097-2d5340e84597",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:43:38.669688+00:00",
-          "analysis_status": "pending"
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/29-35135aaa6c-latest_photo.webp"
         },
         {
           "id": "918422bd-0636-4ea5-b2ce-ffed8d688870",
           "taken_on": "2026-10-14",
           "created_at": "2026-10-15T00:47:04.358705+00:00",
-          "analysis_status": "reviewed"
+          "analysis_status": "reviewed",
+          "snapshot_image": "gaia-reference/photos/29-35135aaa6c-previous_photo.webp"
         }
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": []
+      "care_events": [],
+      "reference_image": "29-stanley-lucky-bamboo.jpg"
     },
     {
       "plant_id": "30",
@@ -1526,12 +1598,14 @@
           "id": "5bc31cf6-e71f-4c09-84d1-79a6df4df53a",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:44:07.06858+00:00",
-          "analysis_status": "pending"
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/30-624b60c58c-latest_photo.webp"
         }
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": []
+      "care_events": [],
+      "reference_image": "30-aloy-arrowhead-plant.jpg"
     },
     {
       "plant_id": "31",
@@ -1556,12 +1630,14 @@
           "id": "2d89a5d0-d939-4066-a835-3642e4c88fb7",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:30:51.868906+00:00",
-          "analysis_status": "pending"
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/31-eb1e33e8a8-latest_photo.webp"
         }
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": []
+      "care_events": [],
+      "reference_image": "31-amelia-air-plant.jpg"
     },
     {
       "plant_id": "32",
@@ -1586,12 +1662,14 @@
           "id": "46f5b390-837c-4d2a-9509-588c698f5cd5",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:46:08.225633+00:00",
-          "analysis_status": "pending"
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/32-e29c9c180c-latest_photo.webp"
         }
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": []
+      "care_events": [],
+      "reference_image": "32-navi-blue-star-fern.jpg"
     },
     {
       "plant_id": "33",
@@ -1616,12 +1694,14 @@
           "id": "0fb98d26-0755-4a0e-8f30-2ea4f09c897e",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:45:03.336744+00:00",
-          "analysis_status": "pending"
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/33-c6f3ac5794-latest_photo.webp"
         }
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": []
+      "care_events": [],
+      "reference_image": "33-din-plectranthus-maroon-pot.jpg"
     },
     {
       "plant_id": "34",
@@ -1646,12 +1726,14 @@
           "id": "a7893942-fb59-4316-96d0-475ba51fda73",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:45:36.379975+00:00",
-          "analysis_status": "pending"
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/34-86e5014965-latest_photo.webp"
         }
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": []
+      "care_events": [],
+      "reference_image": "34-farore-plectranthus-black-square-pot.jpg"
     },
     {
       "plant_id": "35",
@@ -1676,12 +1758,14 @@
           "id": "846c6985-ecd9-43c5-baa2-d0e00f36365c",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:46:59.561289+00:00",
-          "analysis_status": "pending"
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/35-9f14025af0-latest_photo.webp"
         }
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": []
+      "care_events": [],
+      "reference_image": "35-chewie-friendship-plant.jpg"
     },
     {
       "plant_id": "36",
@@ -1706,12 +1790,14 @@
           "id": "9683643e-7e9d-4084-9d93-cfa7b98fdd41",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:47:22.213776+00:00",
-          "analysis_status": "pending"
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/36-76a50887d8-latest_photo.webp"
         }
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": []
+      "care_events": [],
+      "reference_image": "36-orion-thai-constellation-1-round-pot.jpg"
     },
     {
       "plant_id": "37",
@@ -1723,7 +1809,8 @@
       "photos": [],
       "pot": null,
       "soil_observations": [],
-      "care_events": []
+      "care_events": [],
+      "reference_image": "37-cassie-thai-constellation-2-hanging-pot.jpg"
     },
     {
       "plant_id": "38",
@@ -1748,12 +1835,14 @@
           "id": "5efb7d18-42f1-49a7-a67f-f6d760874498",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:48:32.47992+00:00",
-          "analysis_status": "pending"
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/38-aea92132c4-latest_photo.webp"
         }
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": []
+      "care_events": [],
+      "reference_image": "38-andromeda-thai-constellation-3-maroon-pot.jpg"
     },
     {
       "plant_id": "39",
@@ -1778,12 +1867,14 @@
           "id": "75703807-0ae3-40fe-b1c3-2b114d420cf8",
           "taken_on": "2026-10-20",
           "created_at": "2026-10-21T04:39:09.500373+00:00",
-          "analysis_status": "pending"
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/39-0b918943df-latest_photo.webp"
         }
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": []
+      "care_events": [],
+      "reference_image": "39-raven-raven-zz.jpg"
     },
     {
       "plant_id": "40",
@@ -1808,7 +1899,8 @@
           "id": "7f6ea2d7-603d-4832-991c-90682869aca9",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:50:38.801407+00:00",
-          "analysis_status": "pending"
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/40-d59eced1de-latest_photo.webp"
         }
       ],
       "pot": null,
@@ -1821,7 +1913,8 @@
           "note": "Loki: watered today, confirmed by owner.",
           "created_at": "2026-10-15T05:31:33.715988+00:00"
         }
-      ]
+      ],
+      "reference_image": "40-loki-false-aralia.jpg"
     },
     {
       "plant_id": "41",
@@ -1846,7 +1939,8 @@
           "id": "0ce735a3-4d53-403a-9cc2-0dc6ac5414b6",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:49:26.452818+00:00",
-          "analysis_status": "pending"
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/41-3d914f9348-latest_photo.webp"
         }
       ],
       "pot": null,
@@ -1859,7 +1953,8 @@
           "note": "Paarthurnax: watered today, confirmed by owner.",
           "created_at": "2026-10-15T05:31:33.715988+00:00"
         }
-      ]
+      ],
+      "reference_image": "41-paarthurnax-himalaya-senecio.jpg"
     },
     {
       "plant_id": "42",
@@ -1895,18 +1990,21 @@
           "id": "79d88182-b716-4a37-be18-8512fec25ce3",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:26:46.040712+00:00",
-          "analysis_status": "pending"
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/42-73475cb40a-latest_photo.webp"
         },
         {
           "id": "ca4444e0-14bd-4a86-aa0b-79d7ce348ebf",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:24:43.824398+00:00",
-          "analysis_status": "pending"
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/42-73475cb40a-previous_photo.webp"
         }
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": []
+      "care_events": [],
+      "reference_image": "42-zelda-tradescantia-zebrina.jpg"
     },
     {
       "plant_id": "43",
@@ -1967,18 +2065,21 @@
           "id": "5d4fec19-e55f-45e5-955f-b7e08788a19c",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:30:07.755004+00:00",
-          "analysis_status": "pending"
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/43-44cb730c42-latest_photo.webp"
         },
         {
           "id": "b23f259e-8cf5-47ae-a62e-46eb9908c26f",
           "taken_on": "2026-10-14",
           "created_at": "2026-10-15T00:46:42.617461+00:00",
-          "analysis_status": "reviewed"
+          "analysis_status": "reviewed",
+          "snapshot_image": "gaia-reference/photos/43-44cb730c42-previous_photo.webp"
         }
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": []
+      "care_events": [],
+      "reference_image": "43-triss-red-chinese-evergreen-siam-aurora-aglao.jpg"
     },
     {
       "plant_id": "44",
@@ -2003,12 +2104,14 @@
           "id": "8291b78e-6a7f-4a45-9235-e8653c33367c",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:41:31.774977+00:00",
-          "analysis_status": "pending"
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/44-71ee45a3c0-latest_photo.webp"
         }
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": []
+      "care_events": [],
+      "reference_image": "44-ciri-grape-ivy-oak-leaf-ivy-cissus-alata-elle.jpg"
     },
     {
       "plant_id": "45",
@@ -2033,12 +2136,14 @@
           "id": "73cb3c5f-1559-4a13-a20e-5de25ea5c44b",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:49:47.152333+00:00",
-          "analysis_status": "pending"
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/45-811786ad1a-latest_photo.webp"
         }
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": []
+      "care_events": [],
+      "reference_image": "45-jango-citronella-plant-scented-geranium-mosqu.jpg"
     },
     {
       "plant_id": "46",
@@ -2050,7 +2155,8 @@
       "photos": [],
       "pot": null,
       "soil_observations": [],
-      "care_events": []
+      "care_events": [],
+      "reference_image": null
     },
     {
       "plant_id": "47",
@@ -2062,7 +2168,8 @@
       "photos": [],
       "pot": null,
       "soil_observations": [],
-      "care_events": []
+      "care_events": [],
+      "reference_image": null
     },
     {
       "plant_id": "48",
@@ -2074,7 +2181,8 @@
       "photos": [],
       "pot": null,
       "soil_observations": [],
-      "care_events": []
+      "care_events": [],
+      "reference_image": null
     }
   ]
 }
