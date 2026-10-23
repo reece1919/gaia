@@ -192,11 +192,14 @@
       '<summary><div class="photo">' + photo + '</div><div class="summary-body">' +
       '<div class="row"><div class="title-block"><div class="name">' + esc(p.name) + '</div>' +
       (p.commonNames?.length ? '<div class="common-names">' + esc(p.commonNames.join(' · ')) + '</div>' : '') +
-      '<div class="species">' + esc(p.species) + '</div>' + pronunciationGuide(p) +
-      (window.GAIA_SPECIES_GUIDE?.byPlant?.[p.id] ?
-        '<button type="button" class="species-info-shortcut" aria-label="Read botanical information for ' + esc(p.name) + '">Species info ↗</button>' : '') +
+      '<div class="species">' + esc(p.species) + '</div>' +
       (tags ? '<div class="meta-tags">' + tags + '</div>' : '') + '</div>' +
       '<span class="badge">' + esc(p.status) + '</span></div>' +
+      // Keep learning shortcuts available without forcing them into the narrow title column on phones.
+      '<div class="card-botany-actions">' + pronunciationGuide(p) +
+      (window.GAIA_SPECIES_GUIDE?.byPlant?.[p.id] ?
+        '<button type="button" class="species-info-shortcut" aria-label="Read botanical information for ' + esc(p.name) + '">Species info ↗</button>' : '') +
+      '</div>' +
       quickFacts(p) +
       '<div class="tap-hint">Tap for care details</div></div></summary>' +
       '<div class="care"><div class="care-grid">' + speciesGuide(p) + sections +
