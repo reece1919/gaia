@@ -15,6 +15,61 @@
   let typeGroups = [];
   const collapsedTypes = new Set();
   const collapsedFamilies = new Set();
+  const openLessons = new Set();
+  const lessonKey = (kind, id) => kind + ":" + id;
+
+  function makeLesson(kind, name, id) {
+    const library = window.GAIA_GROUP_LEARNING;
+    const profile = kind === "type" ? library?.types?.[id] : library?.families?.[name];
+    if (!profile) return null;
+    const details = document.createElement("details");
+    details.className = "gaia-group-lesson";
+    details.dataset.lessonKind = kind;
+    details.dataset.lessonId = id;
+    details.open = openLessons.has(lessonKey(kind, id));
+
+    const summary = document.createElement("summary");
+    summary.textContent = kind === "type" ? "Learn about this plant type" : "Learn about this botanical family";
+    const intro = document.createElement("p");
+    intro.className = "gaia-group-lesson-intro";
+    intro.textContent = profile.about;
+    const facts = document.createElement("dl");
+    facts.className = "gaia-group-lesson-facts";
+    const fields = [
+      ["How to recognize it", profile.recognize],
+      ["Typical conditions", profile.conditions],
+      ["Interesting to know", profile.learn]
+    ];
+    fields.forEach(([title, value]) => {
+      if (!value) return;
+      const item = document.createElement("div");
+      const dt = document.createElement("dt");
+      dt.textContent = title;
+      const dd = document.createElement("dd");
+      dd.textContent = value;
+      item.append(dt, dd);
+      facts.appendChild(item);
+    });
+    const foot = document.createElement("div");
+    foot.className = "gaia-group-lesson-foot";
+    const link = document.createElement("a");
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.href = kind === "type" ? library.resources.care :
+      library.resources.familySearch + encodeURIComponent(name);
+    link.textContent = kind === "type" ? "RHS houseplant care guide ↗" : "Research the family at Kew ↗";
+    const caveat = document.createElement("small");
+    caveat.textContent = kind === "type" ?
+      "Plant types are practical labels, not taxonomic ranks. These are usual patterns, not care instructions for every member." :
+      "Botanical families show relationships—not identical light, water, or soil needs. Follow each plant’s own care card.";
+    foot.append(link, caveat);
+    const body = document.createElement("div");
+    body.className = "gaia-group-lesson-body";
+    body.append(intro, facts, foot);
+    details.append(summary, body);
+    return details;
+  }
+
   const sorter = new Intl.Collator(undefined, {sensitivity: "base", numeric: true});
   const allCards = () => [...grid.querySelectorAll(":scope > .card")];
 
@@ -51,8 +106,9 @@
     const wrapper = document.createElement("div");
     wrapper.className = kind === "type" ? "gaia-type-heading" : "gaia-family-heading";
     wrapper.dataset.groupKey = id;
-    wrapper.setAttribute("role", "heading");
-    wrapper.setAttribute("aria-level", kind === "type" ? "2" : "3");
+    const headingRow = document.createElement("div");
+    headingRow.setAttribute("role", "heading");
+    headingRow.setAttribute("aria-level", kind === "type" ? "2" : "3");
     const title = document.createElement("button");
     title.type = "button";
     title.className = "gaia-group-toggle";
@@ -74,7 +130,10 @@
     marker.setAttribute("aria-hidden", "true");
     marker.textContent = closed ? "＋" : "−";
     title.append(text, count, marker);
-    wrapper.appendChild(title);
+    headingRow.appendChild(title);
+    wrapper.appendChild(headingRow);
+    const lesson = makeLesson(kind, name, id);
+    if (lesson) wrapper.appendChild(lesson);
     return {element:wrapper, button:title, count, marker};
   }
 
@@ -198,6 +257,15 @@
     }
   }, true);
 
+  // Independent education expansion; keep reading state across saved-order redraws.
+  grid.addEventListener("click", event => {
+    const summary = event.target.closest(".gaia-group-lesson > summary");
+    if (!summary) return;
+    const lesson = summary.parentElement;
+    const key = lessonKey(lesson.dataset.lessonKind, lesson.dataset.lessonId);
+    if (lesson.open) openLessons.delete(key);
+    else openLessons.add(key);
+  });
   grid.addEventListener("click", event => {
     const trigger = event.target.closest(".gaia-group-toggle");
     if (!trigger || view !== "grouped") return;
