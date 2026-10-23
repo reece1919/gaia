@@ -118,6 +118,36 @@
       (guide.genusOnly ? ' Genus only; species not specified here.' : '') + '</small></div></div>';
   }
 
+  // Botanical background is separate from an individual plant's recorded care and observations.
+  function speciesGuide(p) {
+    const library = window.GAIA_SPECIES_GUIDE;
+    const profile = library?.taxa?.[library.byPlant?.[p.id]];
+    if (!profile) return "";
+    const taxon = profile.taxon || p.species;
+    const genus = taxon.includes(" / ") ? taxon : taxon.split(/\\s+/)[0];
+    const fact = (label, value) => value
+      ? '<div class="species-guide-fact"><dt>' + esc(label) + '</dt><dd>' + esc(value) + '</dd></div>'
+      : "";
+    const searchUrl = "https://powo.science.kew.org/results?q=" + encodeURIComponent(taxon);
+    return '<details class="species-guide" id="species-guide-' + esc(p.id) + '">' +
+      '<summary>About this species <small>Botany &amp; growth</small></summary>' +
+      '<div class="species-guide-body">' +
+      '<dl class="species-guide-grid">' +
+      fact("Botanical reference", taxon) +
+      fact("Genus", genus) +
+      fact("Family", profile.family) +
+      fact("Growth habit", profile.habit) +
+      fact("Native range", profile.native) +
+      fact("Typical propagation", profile.propagation) +
+      '</dl>' +
+      (profile.trait ? '<p class="species-guide-trait">' + esc(profile.trait) + '</p>' : '') +
+      '<div class="species-guide-footer">' +
+      '<a href="' + esc(searchUrl) + '" target="_blank" rel="noopener noreferrer">Research this taxon at Kew ↗</a>' +
+      '<small>General species information, not a confirmed identification or a replacement for this plant’s care record. ' +
+      'For uncertain IDs and named cultivars, use the broader genus or species reference.</small>' +
+      '</div></div></details>';
+  }
+
   function makeCard(p) {
     const card = document.createElement("details");
     card.className = "card";
@@ -159,11 +189,13 @@
       '<div class="row"><div class="title-block"><div class="name">' + esc(p.name) + '</div>' +
       (p.commonNames?.length ? '<div class="common-names">' + esc(p.commonNames.join(' · ')) + '</div>' : '') +
       '<div class="species">' + esc(p.species) + '</div>' + pronunciationGuide(p) +
+      (window.GAIA_SPECIES_GUIDE?.byPlant?.[p.id] ?
+        '<button type="button" class="species-info-shortcut" aria-label="Read botanical information for ' + esc(p.name) + '">Species info ↗</button>' : '') +
       (tags ? '<div class="meta-tags">' + tags + '</div>' : '') + '</div>' +
       '<span class="badge">' + esc(p.status) + '</span></div>' +
       quickFacts(p) +
       '<div class="tap-hint">Tap for care details</div></div></summary>' +
-      '<div class="care"><div class="care-grid">' + sections +
+      '<div class="care"><div class="care-grid">' + speciesGuide(p) + sections +
       '<div class="history-wrap"><details class="history"><summary>History &amp; records</summary>' +
       '<div class="history-grid">' + facts + notes + '</div></details></div>' +
       '</div></div>';
@@ -244,6 +276,20 @@
     if (!output) return;
     output.hidden = !output.hidden;
     button.setAttribute("aria-expanded", String(!output.hidden));
+  });
+
+  // The card shortcut opens the reference directly, without toggling the entire plant card closed.
+  grid.addEventListener("click", event => {
+    const shortcut = event.target.closest(".species-info-shortcut");
+    if (!shortcut) return;
+    event.preventDefault();
+    event.stopPropagation();
+    const card = shortcut.closest(".card");
+    const guide = card?.querySelector(".species-guide");
+    if (!card || !guide) return;
+    card.open = true;
+    guide.open = true;
+    guide.scrollIntoView({behavior: "smooth", block: "nearest"});
   });
 
   // Tapping an icon explains the source care rule without opening the profile.
