@@ -74,7 +74,7 @@
     return '<section class="plant-photo-journal" data-plant-photo="' + esc(p.id) + '">' +
       '<div class="photo-journal-head"><strong>Photo journal</strong>' +
       '<span class="photo-count" data-photo-count>Original photo only</span></div>' +
-      '<div class="photo-signed-out">Sign in under <strong>Sync, account &amp; backup</strong> to add private photos.</div>' +
+      '<div class="photo-signed-out">Sign in under <strong>Care → Tools &amp; reviews → Settings &amp; Backup</strong> to add private photos.</div>' +
       '<div class="photo-signed-in" hidden>' +
       '<form class="plant-photo-form">' +
       '<label>Take or choose a photo <input type="file" name="image" accept="image/*,.heic,.heif" required></label>' +
