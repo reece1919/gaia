@@ -19,11 +19,11 @@
  function fillSheets(selected){$('clip-sheets').innerHTML='<option value="">Select a saved sheet…</option>'+sheets().map(s=>'<option value="'+esc(s.sheet_id)+'"'+(s.sheet_id===selected?' selected':'')+'>'+esc(s.visit_date+' · '+s.plants.length+' plants · '+s.sheet_id)+'</option>').join('');}
  function selectedSheet(){const s=sheets().find(s=>s.sheet_id===$('clip-sheets').value);if(!s)throw Error('Choose the exported sheet or load its scan key.');return C.validateSnapshot(s,window.GAIA_DATA?.plants||[],state.user?.id||null);}
  async function guard(owner=state.user?.id){
-  if(!state.client||!state.user||state.user.id!==owner)throw Error('Sign in to GAIA under Sync, account & backup.');
+  if(!state.client||!state.user||state.user.id!==owner)throw Error('Sign in under Care → Tools & reviews → Settings & Backup.');
   const {data,error}=await state.client.auth.getSession();if(error)throw error;
   if(data?.session?.user?.id!==owner)throw Error('Your sign-in changed. Reopen the clipboard panel.');
   const level=await state.client.auth.mfa.getAuthenticatorAssuranceLevel();if(level.error)throw level.error;
-  if(level.data?.currentLevel!=='aal2')throw Error('Verify your authenticator under Sync, account & backup, then try again.');
+  if(level.data?.currentLevel!=='aal2')throw Error('Verify your authenticator under Settings & Backup, then try again.');
  }
  function store(owner=state.user?.id){return S.create({client:state.client,owner,guard:()=>guard(owner),completeTodoist:task=>completeTodoist(task,owner)});}
  async function todoistRequest(extra,owner){
