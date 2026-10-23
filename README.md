@@ -27,6 +27,14 @@ The content lives in `species-guide.js` rather than in the individual care journ
 
 **Taxonomic caution:** The reference taxon may only be a genus or broader group if a plant's specific identification is uncertain. Cultivars, hybrids, and provisional IDs must not be silently upgraded to confirmed species. The guide provides general botany; use the individual card's WATER, LIGHT, SOIL, and care journal for actual care decisions. Do not invent native ranges when they are unverified.
 
+## Browse by plant type and botanical family
+
+The collection defaults to **By type & family**. Each type heading uses the existing plant-type icon and label from `app.js`/`plants.json`. Within a type, cards are grouped alphabetically by botanical family, then by individual plant name. Both type and family headings can be collapsed, and the displayed counts follow search filters.
+
+The **Custom order** button restores the signed-in user's existing manual order. Clicking **Rearrange** automatically selects Custom order before drag/keyboard reordering; saving the order is unchanged. The selection of grouped/custom view is saved on this device only; custom plant order continues syncing through GAIA's existing account. The browser's read-only taxonomy comes from `species-guide.js`, and `collection-grouping.js` only moves existing card elements without modifying care or photo data.
+
+For newly added records, set `cardCare.type` to the appropriate existing type key and add a matching entry to `species-guide.js`'s `byPlant` and `taxa` dictionaries for accurate family grouping. Unknown families are shown as unclassified rather than invented.
+
 ## Editing plant records
 
 To update a plant, edit the matching object in the `plants` array in `plants.json`. Each record has a stable `id`, `name`, `species`, `status`, `photo`, `tags`, `sections`, and `history`.
