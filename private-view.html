@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive"><meta name="referrer" content="no-referrer">
+<title>GAIA — Private Collection Viewer</title>
+<style>
+:root{color-scheme:dark}body{font:15px/1.55 system-ui,sans-serif;max-width:1160px;margin:auto;padding:20px;background:#101b19;color:#e4e9df}
+h1{color:#e3c98e}h2{margin:0}.sub{color:#aec4b7}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+.card{padding:16px;background:#1d2e29;border:1px solid #486055;border-radius:14px}.card img{width:100%;height:260px;object-fit:contain;background:#0e1918;border-radius:8px}
+small{color:#adc4b6}.row{display:flex;gap:10px;flex-wrap:wrap}.row a{color:#efd394}.logs{padding-left:20px}.logs li{margin:5px 0}
+code{overflow-wrap:anywhere}a{color:#e9cf9b}.error{color:#ffb6aa}
+</style></head><body><h1>GAIA · Private Collection</h1>
+<p class="sub">Unlisted, read-only plant gallery and care history. Keep the access link private.</p>
+<p id="status" role="status">Loading collection…</p>
+<p class="sub">For ChatGPT: use the same access link with <code>&amp;format=json</code> on the Supabase endpoint to retrieve dated care records.</p>
+<div class="grid" id="grid"></div>
+<script>
+"use strict";
+const api="https://zdurujqwhxqrwbhwzzxg.supabase.co/functions/v1/gaia-private-view";
+const token=new URL(location.href).searchParams.get("access")||"";
+const status=document.getElementById("status"),grid=document.getElementById("grid");
+const node=(tag,text,cls)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=String(text);if(cls)e.className=cls;return e};
+const endpoint=(params={})=>{const u=new URL(api);u.searchParams.set("access",token);for(const [k,v] of Object.entries(params))u.searchParams.set(k,v);return u.toString()};
+async function load(){
+ if(!token){status.textContent="Missing access token. Open the private link supplied by GAIA.";status.className="error";return}
+ try{
+  const res=await fetch(endpoint({format:"json"}),{cache:"no-store",referrerPolicy:"no-referrer"});
+  if(!res.ok)throw Error("Unable to retrieve collection (HTTP "+res.status+").");
+  const data=await res.json();if(!Array.isArray(data.plants))throw Error("Invalid collection response");
+  status.textContent=data.plants.length+" plants · Updated "+new Date(data.generated_at).toLocaleString();
+  for(const p of data.plants){
+   const card=node("article",undefined,"card");card.append(node("h2",p.name||p.plant_id),node("small",p.species||"Species not recorded"));
+   if(p.latest_photo){
+    const img=node("img");img.loading="lazy";img.alt="Latest photo of "+(p.name||p.plant_id);img.src=endpoint({image:p.latest_photo.id});card.append(img);
+    card.append(node("small","Photo "+(p.latest_photo.taken_on||"undated")+" · "+p.latest_photo.analysis_status));
+    if(p.previous_photo){const a=node("a","View previous photo");a.href=endpoint({image:p.previous_photo.id});a.target="_blank";a.rel="noreferrer noopener";card.append(node("p")).append(a)}
+   }
+   if(p.pot)card.append(node("p","Pot: "+[p.pot.inner_diameter_in&&p.pot.inner_diameter_in+" in",p.pot.inner_material,p.pot.soil_mix&&"Mix: "+p.pot.soil_mix].filter(Boolean).join(" · ")));
+   const watered=(p.care_events||[]).find(x=>x.action_type==="water");
+   card.append(node("p","Last watered: "+(watered?.happened_on||"not recorded")));
+   const logs=node("ul",undefined,"logs");
+   for(const x of (p.soil_observations||[]).slice(0,10))logs.append(node("li",(x.observed_on||"Undated")+" · Moisture: "+(x.moisture_value==null?"not measured":x.moisture_value+" ("+x.moisture_scale+")")+(x.new_growth?" · New growth":"")+(x.note?" · "+x.note:"")));
+   for(const x of (p.care_events||[]).slice(0,10))logs.append(node("li",(x.happened_on||"Undated")+" · "+x.action_type+(x.note?" · "+x.note:"")));
+   if(logs.children.length)card.append(logs);grid.append(card);
+  }
+ }catch(e){status.textContent=e.message;status.className="error"}
+}
+load();
+</script></body></html>
