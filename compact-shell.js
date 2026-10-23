@@ -10,8 +10,10 @@
   const grouping = document.querySelector(".gaia-collection-toolbar");
   const clipboard = document.getElementById("gaia-clipboard");
   const insights = document.getElementById("gaia-insights");
-  const guide = document.querySelector(".card-icon-guide");
   const review = document.querySelector(".gaia-review-launch");
+  const savedReviews = document.getElementById("gaia-photo-review-now");
+  const photoComparisons = document.getElementById("gaia-photo-review-summary");
+  const account = document.getElementById("care-overview");
   const healthTotals = document.querySelector(".gaia-hero-stats");
   const savedConditions = care.querySelector(".gaia-care-attention-details");
   if (!tasks || !controls || !grid || !empty || !clipboard || !insights) return;
@@ -40,7 +42,7 @@
   body.className = "gaia-care-utilities-content";
   const note = document.createElement("p");
   note.className = "gaia-care-utilities-note";
-  note.textContent = "Photo reviews, clipboard exports, guides and saved insights. Your records stay in their original systems.";
+  note.textContent = "Photo reviews, clipboard exports, saved insights, and account settings. Your records stay in their original systems.";
   body.appendChild(note);
   // Collection health is available on demand, not permanently shown in the masthead.
   // Relocate the existing live counts (IDs and DOM nodes) into the folded condition panel.
@@ -51,10 +53,59 @@
   } else if (healthTotals) {
     body.appendChild(healthTotals);
   }
-  // Move original controls. No copying or re-creating the private photo widgets.
-  if (review) body.appendChild(review);
+  // One clear place for photo review. Both buttons keep their existing handlers:
+  // launching ChatGPT is NOT the same as reloading already saved comparisons.
+  if (review || savedReviews || photoComparisons) {
+    const photoPanel=document.createElement("details");
+    photoPanel.id="gaia-photo-reviews";
+    photoPanel.className="gaia-photo-reviews";
+    const photoSummary=document.createElement("summary");
+    photoSummary.textContent="Photo reviews";
+    const photoBody=document.createElement("div");
+    photoBody.className="gaia-photo-reviews-content";
+    if (review) {
+      const title=document.createElement("strong");
+      title.textContent="Run new analysis";
+      const info=document.createElement("p");
+      info.textContent="Open ChatGPT to assess the newest photos awaiting review.";
+      photoBody.append(title, info, review);
+      const runButton=review.querySelector("#gaia-review-new-photos");
+      if (runButton) runButton.textContent="Run new photo analysis ↗";
+    }
+    if (savedReviews) {
+      const title=document.createElement("strong");
+      title.textContent="Refresh saved results";
+      const info=document.createElement("p");
+      info.textContent="Reload assessments already stored in GAIA. This does not start a new analysis.";
+      const row=document.createElement("div");
+      row.className="gaia-photo-review-refresh";
+      row.appendChild(savedReviews);
+      photoBody.append(title, info, row);
+    }
+    if (photoComparisons) photoBody.appendChild(photoComparisons);
+    photoPanel.append(photoSummary, photoBody);
+    body.appendChild(photoPanel);
+  }
   body.append(clipboard, insights);
-  if (guide) body.appendChild(guide);
+
+  // Preserve the original owner-only forms, MFA flow and backup buttons.
+  // Move the whole section; scripts still query the same IDs and event targets.
+  if (account) {
+    const settings=document.createElement("details");
+    settings.id="gaia-settings-backup";
+    settings.className="gaia-settings-backup";
+    const heading=document.createElement("summary");
+    heading.textContent="Settings & Backup";
+    const inner=document.createElement("div");
+    inner.className="gaia-settings-backup-content";
+    const nested=account.querySelector(".care-settings");
+    if (nested) nested.open=true;
+    const originalTitle=account.querySelector(".care-overview-head h2");
+    if (originalTitle) originalTitle.textContent="Account, sync & backups";
+    inner.appendChild(account);
+    settings.append(heading, inner);
+    body.appendChild(settings);
+  }
   drawer.append(summary, body);
   // One compact row before the plant search, collapsed unless the user opens it.
   tasks.after(drawer);
