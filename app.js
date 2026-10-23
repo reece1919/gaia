@@ -124,7 +124,7 @@
     const profile = library?.taxa?.[library.byPlant?.[p.id]];
     if (!profile) return "";
     const taxon = profile.taxon || p.species;
-    const genus = taxon.includes(" / ") ? taxon : taxon.split(/\\s+/)[0];
+    const genus = taxon.includes(" / ") ? taxon : taxon.split(" ")[0];
     const fact = (label, value) => value
       ? '<div class="species-guide-fact"><dt>' + esc(label) + '</dt><dd>' + esc(value) + '</dd></div>'
       : "";
