@@ -31,8 +31,18 @@ async function load(){
    const card=node("article",undefined,"card");card.append(node("h2",p.name||p.plant_id),node("small",p.species||"Species not recorded"));
    if(p.latest_photo){
     const img=node("img");img.loading="lazy";img.alt="Latest photo of "+(p.name||p.plant_id);img.src=endpoint({image:p.latest_photo.id});card.append(img);
-    card.append(node("small","Photo "+(p.latest_photo.taken_on||"undated")+" · "+p.latest_photo.analysis_status));
+    card.append(node("small","Uploaded photo "+(p.latest_photo.taken_on||"undated")+" · "+p.latest_photo.analysis_status));
     if(p.previous_photo){const a=node("a","View previous photo");a.href=endpoint({image:p.previous_photo.id});a.target="_blank";a.rel="noreferrer noopener";const linkRow=node("p");linkRow.append(a);card.append(linkRow)}
+   } else if(p.reference_photo && /^[a-zA-Z0-9][a-zA-Z0-9_.-]{0,180}\.(?:jpe?g|png|webp)$/i.test(p.reference_photo)){
+    const img=node("img");img.loading="lazy";img.alt="Catalog reference photo of "+(p.name||p.plant_id);
+    img.src=new URL("./"+encodeURIComponent(p.reference_photo),location.href).href;card.append(img);
+    card.append(node("small","Catalog reference photo · no uploaded photo-journal records yet"));
+   } else {
+    card.append(node("p","No accessible photo yet. Upload one through the GAIA dashboard."));
+   }
+   if(p.reference_photo && p.latest_photo && /^[a-zA-Z0-9][a-zA-Z0-9_.-]{0,180}\.(?:jpe?g|png|webp)$/i.test(p.reference_photo)){
+    const a=node("a","View original catalog photo");a.href=new URL("./"+encodeURIComponent(p.reference_photo),location.href).href;
+    a.target="_blank";a.rel="noopener noreferrer";const refRow=node("p");refRow.append(a);card.append(refRow);
    }
    if(p.pot)card.append(node("p","Pot: "+[p.pot.inner_diameter_in&&p.pot.inner_diameter_in+" in",p.pot.inner_material,p.pot.soil_mix&&"Mix: "+p.pot.soil_mix].filter(Boolean).join(" · ")));
    const watered=(p.care_events||[]).find(x=>x.action_type==="water");
