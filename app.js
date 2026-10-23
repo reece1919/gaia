@@ -128,7 +128,8 @@
     const fact = (label, value) => value
       ? '<div class="species-guide-fact"><dt>' + esc(label) + '</dt><dd>' + esc(value) + '</dd></div>'
       : "";
-    const searchUrl = "https://powo.science.kew.org/results?q=" + encodeURIComponent(taxon);
+    const searchTaxon = taxon.includes(" / ") ? taxon.split(" / ")[0] : taxon;
+    const searchUrl = "https://powo.science.kew.org/results?q=" + encodeURIComponent(searchTaxon);
     return '<details class="species-guide" id="species-guide-' + esc(p.id) + '">' +
       '<summary>About this species <small>Botany &amp; growth</small></summary>' +
       '<div class="species-guide-body">' +
