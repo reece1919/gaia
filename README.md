@@ -1,5 +1,13 @@
 # GAIA — Plant Collection Dashboard
 
+## Approved screen-space cleanup (October 23, 2026)
+
+The Care tab now hides empty per-plant task summaries while showing all actual tasks and pending approvals. Each expanded plant keeps the original WATER, LIGHT, and SOIL sections together under **Care Essentials**, with a collapsed **Why this care works** lesson. Icon buttons still retain accessible descriptions; the duplicate static icon legend was removed.
+
+**Care → Tools & reviews → Photo reviews** distinguishes **Run new photo analysis** (opens interactive ChatGPT) from **Refresh saved results** (reloads existing assessments). Existing plant galleries and Delete buttons remain. **Photo troubleshooting** holds per-photo secure-access test actions, which should only be needed when a photo will not load.
+
+**Care → Tools & reviews → Settings & Backup** includes the original account session, authentication, MFA, sync and backup controls. They are the same DOM nodes and record handlers, not new forms; nothing was migrated in Supabase. The inactive historical notes, old task approval hub, and alternate type/family grouping were deliberately not removed because those changes were not approved.
+
 ## Clipboard field sheets
 
 Use **Export clipboard sheet** below the header to prepare the collection in its current saved order. Choose all plants or only those shown by the current filter. **Print landscape / save PDF** uses US Letter landscape with eight plants per page (six pages for 48 plants). The sheet includes plant IDs, common names, recorded watering, a writable watering date, inner pot width/depth in inches, actual soil mix, new growth, moisture, notes, and the latest associated open task with a Done box. Current recorded values are reference only. Todoist tasks confidently matching exactly one plant are preferred; retained GAIA tasks are the fallback. If neither exists, the latest logged care event is shown without a completion box. Long task/mix text may be shortened on paper; spreadsheet exports retain it in full.
