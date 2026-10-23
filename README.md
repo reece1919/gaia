@@ -58,6 +58,8 @@ GAIA now opens with **Care Center**, followed by two independent read-only refer
 
 Implementation: `learning-hub.js` + `learning-hub.css`. The new hub safely moves existing dashboard DOM nodes *as original elements* into a Care Center tabpanel, while the other views are read-only generated content. It never rewrites cloud records, creates separate plant cards, or uploads photos. Plant navigation uses stable `data-plant-id` values. The previous type/family visual grouping is still available from within Care Center, and owner-defined card ordering is preserved.
 
+Run `node --test tests/learning-hub.test.cjs` to verify all 48 botanical mappings, 18 type lessons, 23 family lessons, every Academy practice ID, script loading order and stable photo/care card association. This test is also run by the GitHub Security baseline workflow.
+
 Read-only learning recommendations do not override a plant-specific care cue, recorded history, or verified assessment. No Supabase migrations, new secrets, API calls or background inference are involved.
 
 ## Browse by plant type and botanical family
