@@ -130,6 +130,33 @@ def main():
             item["reference_image"] = reference
         else:
             item["reference_image"] = None
+        latest = item.get("latest_photo")
+        # Explicit candidates allow ChatGPT to compare real images rather than
+        # counting uploads and overlooking catalog baselines.
+        older_sources = [
+            {
+                "source": "journal",
+                "captured_on": photo.get("taken_on"),
+                "image": photo.get("snapshot_image"),
+                "photo_id": photo.get("id"),
+            }
+            for photo in (item.get("photos") or [])[1:]
+            if photo.get("snapshot_image")
+        ]
+        if item.get("reference_image"):
+            older_sources.append({
+                "source": "catalog_reference",
+                "captured_on": None,
+                "image": item["reference_image"],
+                "photo_id": None,
+                "capture_date_known": False,
+            })
+        item["comparison"] = {
+            "ready": bool(latest and latest.get("snapshot_image") and older_sources),
+            "latest_image": latest.get("snapshot_image") if latest else None,
+            "latest_captured_on": latest.get("taken_on") if latest else None,
+            "candidates": older_sources if latest else [],
+        }
         plants.append(item)
     if not plants:
         raise RuntimeError("GAIA returned no plants; refusing to publish an empty snapshot")
@@ -150,6 +177,8 @@ def main():
         "generated_at": result.get("generated_at"),
         "synced_at": datetime.now(timezone.utc).isoformat(),
         "plant_count": len(plants),
+        "comparison_ready_count": sum(bool(p["comparison"]["ready"]) for p in plants),
+        "comparison_candidate_count": sum(len(p["comparison"]["candidates"]) for p in plants),
         "uploaded_photo_count": expected_photos,
         "exported_photo_count": exported_photos,
         "catalog_reference_count": sum(bool(p.get("reference_image")) for p in plants),
