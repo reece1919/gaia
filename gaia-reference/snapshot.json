@@ -2,9 +2,11 @@
   "schema_version": 1,
   "read_only": true,
   "source": "GAIA owner-approved reference snapshot",
-  "generated_at": "2026-10-23T17:09:47.196Z",
-  "synced_at": "2026-10-23T17:09:48.689756+00:00",
+  "generated_at": "2026-10-23T17:16:01.380Z",
+  "synced_at": "2026-10-23T17:16:01.408360+00:00",
   "plant_count": 48,
+  "comparison_ready_count": 42,
+  "comparison_candidate_count": 57,
   "uploaded_photo_count": 57,
   "exported_photo_count": 57,
   "catalog_reference_count": 45,
@@ -73,7 +75,21 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [],
-      "reference_image": "01-red-banana-croton-name-pending.jpg"
+      "reference_image": "01-red-banana-croton-name-pending.jpg",
+      "comparison": {
+        "ready": true,
+        "latest_image": "gaia-reference/photos/01-938db8c9f8-latest_photo.webp",
+        "latest_captured_on": "2026-10-18",
+        "candidates": [
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "01-red-banana-croton-name-pending.jpg",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
+      }
     },
     {
       "plant_id": "02",
@@ -152,7 +168,27 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [],
-      "reference_image": "02-ponytail-palm-name-pending-elephant-foot-tree.jpg"
+      "reference_image": "02-ponytail-palm-name-pending-elephant-foot-tree.jpg",
+      "comparison": {
+        "ready": true,
+        "latest_image": "gaia-reference/photos/02-a953f09a1b-latest_photo.webp",
+        "latest_captured_on": "2026-10-18",
+        "candidates": [
+          {
+            "source": "journal",
+            "captured_on": "2026-10-14",
+            "image": "gaia-reference/photos/02-a953f09a1b-previous_photo.webp",
+            "photo_id": "a4b6fe2a-8d42-471c-ac7b-7caa412d4a07"
+          },
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "02-ponytail-palm-name-pending-elephant-foot-tree.jpg",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
+      }
     },
     {
       "plant_id": "03",
@@ -231,7 +267,27 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [],
-      "reference_image": "03-bowser-pincushion-cactus.jpg"
+      "reference_image": "03-bowser-pincushion-cactus.jpg",
+      "comparison": {
+        "ready": true,
+        "latest_image": "gaia-reference/photos/03-0b8efa5a3b-latest_photo.webp",
+        "latest_captured_on": "2026-10-20",
+        "candidates": [
+          {
+            "source": "journal",
+            "captured_on": "2026-10-14",
+            "image": "gaia-reference/photos/03-0b8efa5a3b-previous_photo.webp",
+            "photo_id": "89e4f005-8383-4576-a7f1-da033840f461"
+          },
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "03-bowser-pincushion-cactus.jpg",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
+      }
     },
     {
       "plant_id": "04",
@@ -362,7 +418,27 @@
           "created_at": "2026-10-14T05:20:32.950909+00:00"
         }
       ],
-      "reference_image": "04-audrey-ii-venus-flytrap.jpg"
+      "reference_image": "04-audrey-ii-venus-flytrap.jpg",
+      "comparison": {
+        "ready": true,
+        "latest_image": "gaia-reference/photos/04-6cd5b6e519-latest_photo.webp",
+        "latest_captured_on": "2026-10-16",
+        "candidates": [
+          {
+            "source": "journal",
+            "captured_on": "2026-10-14",
+            "image": "gaia-reference/photos/04-6cd5b6e519-previous_photo.webp",
+            "photo_id": "88650d43-c42e-4217-95d8-f9386276bc05"
+          },
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "04-audrey-ii-venus-flytrap.jpg",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
+      }
     },
     {
       "plant_id": "05",
@@ -421,7 +497,21 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [],
-      "reference_image": "05-treebeard-parlor-palm.jpg"
+      "reference_image": "05-treebeard-parlor-palm.jpg",
+      "comparison": {
+        "ready": true,
+        "latest_image": "gaia-reference/photos/05-c97550ce82-latest_photo.webp",
+        "latest_captured_on": "2026-10-14",
+        "candidates": [
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "05-treebeard-parlor-palm.jpg",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
+      }
     },
     {
       "plant_id": "06",
@@ -453,7 +543,21 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [],
-      "reference_image": "06-malefecent-bromeliad-guzmania-amber.jpg"
+      "reference_image": "06-malefecent-bromeliad-guzmania-amber.jpg",
+      "comparison": {
+        "ready": true,
+        "latest_image": "gaia-reference/photos/06-aacd834b5c-latest_photo.webp",
+        "latest_captured_on": "2026-10-18",
+        "candidates": [
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "06-malefecent-bromeliad-guzmania-amber.jpg",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
+      }
     },
     {
       "plant_id": "07",
@@ -524,7 +628,27 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [],
-      "reference_image": "07-samwise-aloe.jpg"
+      "reference_image": "07-samwise-aloe.jpg",
+      "comparison": {
+        "ready": true,
+        "latest_image": "gaia-reference/photos/07-19b100ab77-latest_photo.webp",
+        "latest_captured_on": "2026-10-18",
+        "candidates": [
+          {
+            "source": "journal",
+            "captured_on": "2026-10-14",
+            "image": "gaia-reference/photos/07-19b100ab77-previous_photo.webp",
+            "photo_id": "37ab0d10-1adc-42df-ac73-ffd7a08fa14e"
+          },
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "07-samwise-aloe.jpg",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
+      }
     },
     {
       "plant_id": "08",
@@ -599,7 +723,27 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [],
-      "reference_image": "08-drogo-magenta-dragon-tree.jpg"
+      "reference_image": "08-drogo-magenta-dragon-tree.jpg",
+      "comparison": {
+        "ready": true,
+        "latest_image": "gaia-reference/photos/08-323783be9a-latest_photo.webp",
+        "latest_captured_on": "2026-10-18",
+        "candidates": [
+          {
+            "source": "journal",
+            "captured_on": "2026-10-14",
+            "image": "gaia-reference/photos/08-323783be9a-previous_photo.webp",
+            "photo_id": "facbf1b3-3ccb-42c1-b590-8ff52aca6cb7"
+          },
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "08-drogo-magenta-dragon-tree.jpg",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
+      }
     },
     {
       "plant_id": "09",
@@ -676,7 +820,27 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [],
-      "reference_image": "09-gandalf-dusty-miller.jpg"
+      "reference_image": "09-gandalf-dusty-miller.jpg",
+      "comparison": {
+        "ready": true,
+        "latest_image": "gaia-reference/photos/09-3514acf617-latest_photo.webp",
+        "latest_captured_on": "2026-10-18",
+        "candidates": [
+          {
+            "source": "journal",
+            "captured_on": "2026-10-14",
+            "image": "gaia-reference/photos/09-3514acf617-previous_photo.webp",
+            "photo_id": "7810d115-b522-4b93-befd-0de104804463"
+          },
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "09-gandalf-dusty-miller.jpg",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
+      }
     },
     {
       "plant_id": "10",
@@ -708,7 +872,21 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [],
-      "reference_image": "10-maester.jpg"
+      "reference_image": "10-maester.jpg",
+      "comparison": {
+        "ready": true,
+        "latest_image": "gaia-reference/photos/10-4a44dc1536-latest_photo.webp",
+        "latest_captured_on": "2026-10-18",
+        "candidates": [
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "10-maester.jpg",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
+      }
     },
     {
       "plant_id": "11",
@@ -740,7 +918,21 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [],
-      "reference_image": "11-karlach.jpg"
+      "reference_image": "11-karlach.jpg",
+      "comparison": {
+        "ready": true,
+        "latest_image": "gaia-reference/photos/11-4fc82b26ae-latest_photo.webp",
+        "latest_captured_on": "2026-10-20",
+        "candidates": [
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "11-karlach.jpg",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
+      }
     },
     {
       "plant_id": "12",
@@ -772,7 +964,21 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [],
-      "reference_image": "12-glados.jpg"
+      "reference_image": "12-glados.jpg",
+      "comparison": {
+        "ready": true,
+        "latest_image": "gaia-reference/photos/12-6b51d431df-latest_photo.webp",
+        "latest_captured_on": "2026-10-18",
+        "candidates": [
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "12-glados.jpg",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
+      }
     },
     {
       "plant_id": "13",
@@ -804,7 +1010,21 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [],
-      "reference_image": "13-sauron.jpg"
+      "reference_image": "13-sauron.jpg",
+      "comparison": {
+        "ready": true,
+        "latest_image": "gaia-reference/photos/13-3fdba35f04-latest_photo.webp",
+        "latest_captured_on": "2026-10-18",
+        "candidates": [
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "13-sauron.jpg",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
+      }
     },
     {
       "plant_id": "14",
@@ -836,7 +1056,21 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [],
-      "reference_image": "14-galadriel-peace-lily.jpg"
+      "reference_image": "14-galadriel-peace-lily.jpg",
+      "comparison": {
+        "ready": true,
+        "latest_image": "gaia-reference/photos/14-8527a891e2-latest_photo.webp",
+        "latest_captured_on": "2026-10-18",
+        "candidates": [
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "14-galadriel-peace-lily.jpg",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
+      }
     },
     {
       "plant_id": "15",
@@ -868,7 +1102,21 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [],
-      "reference_image": "15-tywin.jpg"
+      "reference_image": "15-tywin.jpg",
+      "comparison": {
+        "ready": true,
+        "latest_image": "gaia-reference/photos/15-e629fa6598-latest_photo.webp",
+        "latest_captured_on": "2026-10-18",
+        "candidates": [
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "15-tywin.jpg",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
+      }
     },
     {
       "plant_id": "16",
@@ -949,7 +1197,27 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [],
-      "reference_image": "16-morgana.jpg"
+      "reference_image": "16-morgana.jpg",
+      "comparison": {
+        "ready": true,
+        "latest_image": "gaia-reference/photos/16-b17ef6d19c-latest_photo.webp",
+        "latest_captured_on": "2026-10-18",
+        "candidates": [
+          {
+            "source": "journal",
+            "captured_on": "2026-10-14",
+            "image": "gaia-reference/photos/16-b17ef6d19c-previous_photo.webp",
+            "photo_id": "6a8c8d31-db85-49fc-bd53-cdcecc4fe6f1"
+          },
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "16-morgana.jpg",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
+      }
     },
     {
       "plant_id": "17",
@@ -1024,7 +1292,27 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [],
-      "reference_image": "17-c-3po.jpg"
+      "reference_image": "17-c-3po.jpg",
+      "comparison": {
+        "ready": true,
+        "latest_image": "gaia-reference/photos/17-4523540f15-latest_photo.webp",
+        "latest_captured_on": "2026-10-18",
+        "candidates": [
+          {
+            "source": "journal",
+            "captured_on": "2026-10-14",
+            "image": "gaia-reference/photos/17-4523540f15-previous_photo.webp",
+            "photo_id": "df160e4f-e9d0-40f8-b47e-39726b1e1aa2"
+          },
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "17-c-3po.jpg",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
+      }
     },
     {
       "plant_id": "18",
@@ -1056,7 +1344,21 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [],
-      "reference_image": "18-geoffrey.jpg"
+      "reference_image": "18-geoffrey.jpg",
+      "comparison": {
+        "ready": true,
+        "latest_image": "gaia-reference/photos/18-4ec9599fc2-latest_photo.webp",
+        "latest_captured_on": "2026-10-18",
+        "candidates": [
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "18-geoffrey.jpg",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
+      }
     },
     {
       "plant_id": "19",
@@ -1069,7 +1371,13 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [],
-      "reference_image": "19-arya.jpg"
+      "reference_image": "19-arya.jpg",
+      "comparison": {
+        "ready": false,
+        "latest_image": null,
+        "latest_captured_on": null,
+        "candidates": []
+      }
     },
     {
       "plant_id": "20",
@@ -1082,7 +1390,13 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [],
-      "reference_image": "20-david.jpg"
+      "reference_image": "20-david.jpg",
+      "comparison": {
+        "ready": false,
+        "latest_image": null,
+        "latest_captured_on": null,
+        "candidates": []
+      }
     },
     {
       "plant_id": "21",
@@ -1163,7 +1477,27 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [],
-      "reference_image": "21-violet-purple-heart.jpg"
+      "reference_image": "21-violet-purple-heart.jpg",
+      "comparison": {
+        "ready": true,
+        "latest_image": "gaia-reference/photos/21-6f4b661212-latest_photo.webp",
+        "latest_captured_on": "2026-10-18",
+        "candidates": [
+          {
+            "source": "journal",
+            "captured_on": "2026-10-14",
+            "image": "gaia-reference/photos/21-6f4b661212-previous_photo.webp",
+            "photo_id": "e4d94a2b-d350-453e-a62d-08636eba5fb7"
+          },
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "21-violet-purple-heart.jpg",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
+      }
     },
     {
       "plant_id": "22",
@@ -1195,7 +1529,21 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [],
-      "reference_image": "22-molly-hens-chicks.jpg"
+      "reference_image": "22-molly-hens-chicks.jpg",
+      "comparison": {
+        "ready": true,
+        "latest_image": "gaia-reference/photos/22-785f3ec7eb-latest_photo.webp",
+        "latest_captured_on": "2026-10-18",
+        "candidates": [
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "22-molly-hens-chicks.jpg",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
+      }
     },
     {
       "plant_id": "23",
@@ -1227,7 +1575,21 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [],
-      "reference_image": "23-calcifer-bromeliad.jpg"
+      "reference_image": "23-calcifer-bromeliad.jpg",
+      "comparison": {
+        "ready": true,
+        "latest_image": "gaia-reference/photos/23-535fa30d7e-latest_photo.webp",
+        "latest_captured_on": "2026-10-18",
+        "candidates": [
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "23-calcifer-bromeliad.jpg",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
+      }
     },
     {
       "plant_id": "24",
@@ -1308,7 +1670,27 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [],
-      "reference_image": "24-phil-heartleaf-philodendron.jpg"
+      "reference_image": "24-phil-heartleaf-philodendron.jpg",
+      "comparison": {
+        "ready": true,
+        "latest_image": "gaia-reference/photos/24-c2356069e9-latest_photo.webp",
+        "latest_captured_on": "2026-10-18",
+        "candidates": [
+          {
+            "source": "journal",
+            "captured_on": "2026-10-14",
+            "image": "gaia-reference/photos/24-c2356069e9-previous_photo.webp",
+            "photo_id": "59f3a553-376c-414c-8b97-26dd6546cdf3"
+          },
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "24-phil-heartleaf-philodendron.jpg",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
+      }
     },
     {
       "plant_id": "25",
@@ -1398,7 +1780,33 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [],
-      "reference_image": "25-ruby-ruby-necklace.jpg"
+      "reference_image": "25-ruby-ruby-necklace.jpg",
+      "comparison": {
+        "ready": true,
+        "latest_image": "gaia-reference/photos/25-b7a56873cd-latest_photo.webp",
+        "latest_captured_on": "2026-10-18",
+        "candidates": [
+          {
+            "source": "journal",
+            "captured_on": "2026-10-14",
+            "image": "gaia-reference/photos/25-b7a56873cd-previous_photo.webp",
+            "photo_id": "b967edd3-7888-42c1-acd7-6764feac1e5b"
+          },
+          {
+            "source": "journal",
+            "captured_on": "2026-10-12",
+            "image": "gaia-reference/photos/25-b7a56873cd-history-9dfef0ab-b334-49f4-a9b3-f153fb09d90a.webp",
+            "photo_id": "9dfef0ab-b334-49f4-a9b3-f153fb09d90a"
+          },
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "25-ruby-ruby-necklace.jpg",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
+      }
     },
     {
       "plant_id": "26",
@@ -1430,7 +1838,21 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [],
-      "reference_image": "26-nayru-plectranthus-white-pot.jpg"
+      "reference_image": "26-nayru-plectranthus-white-pot.jpg",
+      "comparison": {
+        "ready": true,
+        "latest_image": "gaia-reference/photos/26-5f9c4ab08c-latest_photo.webp",
+        "latest_captured_on": "2026-10-18",
+        "candidates": [
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "26-nayru-plectranthus-white-pot.jpg",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
+      }
     },
     {
       "plant_id": "27",
@@ -1462,7 +1884,21 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [],
-      "reference_image": "27-yennefer-purple-joyweed.jpg"
+      "reference_image": "27-yennefer-purple-joyweed.jpg",
+      "comparison": {
+        "ready": true,
+        "latest_image": "gaia-reference/photos/27-670671cd97-latest_photo.webp",
+        "latest_captured_on": "2026-10-18",
+        "candidates": [
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "27-yennefer-purple-joyweed.jpg",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
+      }
     },
     {
       "plant_id": "28",
@@ -1494,7 +1930,21 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [],
-      "reference_image": "28-beetlejuice-zebra-haworthia.jpg"
+      "reference_image": "28-beetlejuice-zebra-haworthia.jpg",
+      "comparison": {
+        "ready": true,
+        "latest_image": "gaia-reference/photos/28-59e19706d5-latest_photo.webp",
+        "latest_captured_on": "2026-10-18",
+        "candidates": [
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "28-beetlejuice-zebra-haworthia.jpg",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
+      }
     },
     {
       "plant_id": "29",
@@ -1573,7 +2023,27 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [],
-      "reference_image": "29-stanley-lucky-bamboo.jpg"
+      "reference_image": "29-stanley-lucky-bamboo.jpg",
+      "comparison": {
+        "ready": true,
+        "latest_image": "gaia-reference/photos/29-35135aaa6c-latest_photo.webp",
+        "latest_captured_on": "2026-10-18",
+        "candidates": [
+          {
+            "source": "journal",
+            "captured_on": "2026-10-14",
+            "image": "gaia-reference/photos/29-35135aaa6c-previous_photo.webp",
+            "photo_id": "918422bd-0636-4ea5-b2ce-ffed8d688870"
+          },
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "29-stanley-lucky-bamboo.jpg",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
+      }
     },
     {
       "plant_id": "30",
@@ -1605,7 +2075,21 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [],
-      "reference_image": "30-aloy-arrowhead-plant.jpg"
+      "reference_image": "30-aloy-arrowhead-plant.jpg",
+      "comparison": {
+        "ready": true,
+        "latest_image": "gaia-reference/photos/30-624b60c58c-latest_photo.webp",
+        "latest_captured_on": "2026-10-18",
+        "candidates": [
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "30-aloy-arrowhead-plant.jpg",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
+      }
     },
     {
       "plant_id": "31",
@@ -1637,7 +2121,21 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [],
-      "reference_image": "31-amelia-air-plant.jpg"
+      "reference_image": "31-amelia-air-plant.jpg",
+      "comparison": {
+        "ready": true,
+        "latest_image": "gaia-reference/photos/31-eb1e33e8a8-latest_photo.webp",
+        "latest_captured_on": "2026-10-18",
+        "candidates": [
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "31-amelia-air-plant.jpg",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
+      }
     },
     {
       "plant_id": "32",
@@ -1669,7 +2167,21 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [],
-      "reference_image": "32-navi-blue-star-fern.jpg"
+      "reference_image": "32-navi-blue-star-fern.jpg",
+      "comparison": {
+        "ready": true,
+        "latest_image": "gaia-reference/photos/32-e29c9c180c-latest_photo.webp",
+        "latest_captured_on": "2026-10-18",
+        "candidates": [
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "32-navi-blue-star-fern.jpg",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
+      }
     },
     {
       "plant_id": "33",
@@ -1701,7 +2213,21 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [],
-      "reference_image": "33-din-plectranthus-maroon-pot.jpg"
+      "reference_image": "33-din-plectranthus-maroon-pot.jpg",
+      "comparison": {
+        "ready": true,
+        "latest_image": "gaia-reference/photos/33-c6f3ac5794-latest_photo.webp",
+        "latest_captured_on": "2026-10-18",
+        "candidates": [
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "33-din-plectranthus-maroon-pot.jpg",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
+      }
     },
     {
       "plant_id": "34",
@@ -1733,7 +2259,21 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [],
-      "reference_image": "34-farore-plectranthus-black-square-pot.jpg"
+      "reference_image": "34-farore-plectranthus-black-square-pot.jpg",
+      "comparison": {
+        "ready": true,
+        "latest_image": "gaia-reference/photos/34-86e5014965-latest_photo.webp",
+        "latest_captured_on": "2026-10-18",
+        "candidates": [
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "34-farore-plectranthus-black-square-pot.jpg",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
+      }
     },
     {
       "plant_id": "35",
@@ -1765,7 +2305,21 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [],
-      "reference_image": "35-chewie-friendship-plant.jpg"
+      "reference_image": "35-chewie-friendship-plant.jpg",
+      "comparison": {
+        "ready": true,
+        "latest_image": "gaia-reference/photos/35-9f14025af0-latest_photo.webp",
+        "latest_captured_on": "2026-10-18",
+        "candidates": [
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "35-chewie-friendship-plant.jpg",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
+      }
     },
     {
       "plant_id": "36",
@@ -1797,7 +2351,21 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [],
-      "reference_image": "36-orion-thai-constellation-1-round-pot.jpg"
+      "reference_image": "36-orion-thai-constellation-1-round-pot.jpg",
+      "comparison": {
+        "ready": true,
+        "latest_image": "gaia-reference/photos/36-76a50887d8-latest_photo.webp",
+        "latest_captured_on": "2026-10-18",
+        "candidates": [
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "36-orion-thai-constellation-1-round-pot.jpg",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
+      }
     },
     {
       "plant_id": "37",
@@ -1810,7 +2378,13 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [],
-      "reference_image": "37-cassie-thai-constellation-2-hanging-pot.jpg"
+      "reference_image": "37-cassie-thai-constellation-2-hanging-pot.jpg",
+      "comparison": {
+        "ready": false,
+        "latest_image": null,
+        "latest_captured_on": null,
+        "candidates": []
+      }
     },
     {
       "plant_id": "38",
@@ -1842,7 +2416,21 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [],
-      "reference_image": "38-andromeda-thai-constellation-3-maroon-pot.jpg"
+      "reference_image": "38-andromeda-thai-constellation-3-maroon-pot.jpg",
+      "comparison": {
+        "ready": true,
+        "latest_image": "gaia-reference/photos/38-aea92132c4-latest_photo.webp",
+        "latest_captured_on": "2026-10-18",
+        "candidates": [
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "38-andromeda-thai-constellation-3-maroon-pot.jpg",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
+      }
     },
     {
       "plant_id": "39",
@@ -1874,7 +2462,21 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [],
-      "reference_image": "39-raven-raven-zz.jpg"
+      "reference_image": "39-raven-raven-zz.jpg",
+      "comparison": {
+        "ready": true,
+        "latest_image": "gaia-reference/photos/39-0b918943df-latest_photo.webp",
+        "latest_captured_on": "2026-10-20",
+        "candidates": [
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "39-raven-raven-zz.jpg",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
+      }
     },
     {
       "plant_id": "40",
@@ -1914,7 +2516,21 @@
           "created_at": "2026-10-15T05:31:33.715988+00:00"
         }
       ],
-      "reference_image": "40-loki-false-aralia.jpg"
+      "reference_image": "40-loki-false-aralia.jpg",
+      "comparison": {
+        "ready": true,
+        "latest_image": "gaia-reference/photos/40-d59eced1de-latest_photo.webp",
+        "latest_captured_on": "2026-10-18",
+        "candidates": [
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "40-loki-false-aralia.jpg",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
+      }
     },
     {
       "plant_id": "41",
@@ -1954,7 +2570,21 @@
           "created_at": "2026-10-15T05:31:33.715988+00:00"
         }
       ],
-      "reference_image": "41-paarthurnax-himalaya-senecio.jpg"
+      "reference_image": "41-paarthurnax-himalaya-senecio.jpg",
+      "comparison": {
+        "ready": true,
+        "latest_image": "gaia-reference/photos/41-3d914f9348-latest_photo.webp",
+        "latest_captured_on": "2026-10-18",
+        "candidates": [
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "41-paarthurnax-himalaya-senecio.jpg",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
+      }
     },
     {
       "plant_id": "42",
@@ -2004,7 +2634,27 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [],
-      "reference_image": "42-zelda-tradescantia-zebrina.jpg"
+      "reference_image": "42-zelda-tradescantia-zebrina.jpg",
+      "comparison": {
+        "ready": true,
+        "latest_image": "gaia-reference/photos/42-73475cb40a-latest_photo.webp",
+        "latest_captured_on": "2026-10-18",
+        "candidates": [
+          {
+            "source": "journal",
+            "captured_on": "2026-10-18",
+            "image": "gaia-reference/photos/42-73475cb40a-previous_photo.webp",
+            "photo_id": "ca4444e0-14bd-4a86-aa0b-79d7ce348ebf"
+          },
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "42-zelda-tradescantia-zebrina.jpg",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
+      }
     },
     {
       "plant_id": "43",
@@ -2079,7 +2729,27 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [],
-      "reference_image": "43-triss-red-chinese-evergreen-siam-aurora-aglao.jpg"
+      "reference_image": "43-triss-red-chinese-evergreen-siam-aurora-aglao.jpg",
+      "comparison": {
+        "ready": true,
+        "latest_image": "gaia-reference/photos/43-44cb730c42-latest_photo.webp",
+        "latest_captured_on": "2026-10-18",
+        "candidates": [
+          {
+            "source": "journal",
+            "captured_on": "2026-10-14",
+            "image": "gaia-reference/photos/43-44cb730c42-previous_photo.webp",
+            "photo_id": "b23f259e-8cf5-47ae-a62e-46eb9908c26f"
+          },
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "43-triss-red-chinese-evergreen-siam-aurora-aglao.jpg",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
+      }
     },
     {
       "plant_id": "44",
@@ -2111,7 +2781,21 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [],
-      "reference_image": "44-ciri-grape-ivy-oak-leaf-ivy-cissus-alata-elle.jpg"
+      "reference_image": "44-ciri-grape-ivy-oak-leaf-ivy-cissus-alata-elle.jpg",
+      "comparison": {
+        "ready": true,
+        "latest_image": "gaia-reference/photos/44-71ee45a3c0-latest_photo.webp",
+        "latest_captured_on": "2026-10-18",
+        "candidates": [
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "44-ciri-grape-ivy-oak-leaf-ivy-cissus-alata-elle.jpg",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
+      }
     },
     {
       "plant_id": "45",
@@ -2143,7 +2827,21 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [],
-      "reference_image": "45-jango-citronella-plant-scented-geranium-mosqu.jpg"
+      "reference_image": "45-jango-citronella-plant-scented-geranium-mosqu.jpg",
+      "comparison": {
+        "ready": true,
+        "latest_image": "gaia-reference/photos/45-811786ad1a-latest_photo.webp",
+        "latest_captured_on": "2026-10-18",
+        "candidates": [
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "45-jango-citronella-plant-scented-geranium-mosqu.jpg",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
+      }
     },
     {
       "plant_id": "46",
@@ -2156,7 +2854,13 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [],
-      "reference_image": null
+      "reference_image": null,
+      "comparison": {
+        "ready": false,
+        "latest_image": null,
+        "latest_captured_on": null,
+        "candidates": []
+      }
     },
     {
       "plant_id": "47",
@@ -2169,7 +2873,13 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [],
-      "reference_image": null
+      "reference_image": null,
+      "comparison": {
+        "ready": false,
+        "latest_image": null,
+        "latest_captured_on": null,
+        "candidates": []
+      }
     },
     {
       "plant_id": "48",
@@ -2182,7 +2892,13 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [],
-      "reference_image": null
+      "reference_image": null,
+      "comparison": {
+        "ready": false,
+        "latest_image": null,
+        "latest_captured_on": null,
+        "candidates": []
+      }
     }
   ]
 }
