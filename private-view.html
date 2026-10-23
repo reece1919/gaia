@@ -8,6 +8,12 @@ h1{color:#e3c98e}h2{margin:0}.sub{color:#aec4b7}.grid{display:grid;grid-template
 .card{padding:16px;background:#1d2e29;border:1px solid #486055;border-radius:14px}.card img{width:100%;height:260px;object-fit:contain;background:#0e1918;border-radius:8px}
 small{color:#adc4b6}.row{display:flex;gap:10px;flex-wrap:wrap}.row a{color:#efd394}.logs{padding-left:20px}.logs li{margin:5px 0}
 code{overflow-wrap:anywhere}a{color:#e9cf9b}.error{color:#ffb6aa}
+.compare{margin:12px 0;padding:10px;border:1px solid #496458;border-radius:9px;background:#13231f}
+.compare>summary{color:#edd19b;cursor:pointer;font-weight:600}
+.compare-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-top:12px}
+.compare figure{margin:0}.compare img{height:185px;width:100%;object-fit:contain;border-radius:7px;background:#0b1815}
+.compare figcaption{font-size:12px;color:#c5d8c8;margin-top:4px}
+.compare a{display:block}
 </style></head><body><h1>GAIA · Private Collection</h1>
 <p class="sub">Unlisted, read-only plant gallery and care history. Keep the access link private.</p>
 <p id="status" role="status">Loading collection…</p>
@@ -26,33 +32,40 @@ async function load(){
   const res=await fetch(endpoint({format:"json"}),{cache:"no-store",referrerPolicy:"no-referrer"});
   if(!res.ok)throw Error("Unable to retrieve collection (HTTP "+res.status+").");
   const data=await res.json();if(!Array.isArray(data.plants))throw Error("Invalid collection response");
-  status.textContent=data.plants.length+" plants · "+data.plants.reduce((sum,p)=>sum+(Array.isArray(p.photos)?p.photos.length:0),0)+" uploaded photos · Updated "+new Date(data.generated_at).toLocaleString();
+  const uploaded=data.plants.reduce((sum,p)=>sum+(Array.isArray(p.photos)?p.photos.length:0),0);
+  const references=data.plants.filter(p=>p.reference_photo).length;
+  status.textContent=data.plants.length+" plants · "+uploaded+" uploaded photos · "+references+" catalog baselines · Updated "+new Date(data.generated_at).toLocaleString();
   for(const p of data.plants){
    const card=node("article",undefined,"card");card.append(node("h2",p.name||p.plant_id),node("small",p.species||"Species not recorded"));
+   const hasReference=typeof p.reference_photo==="string" && /^[a-zA-Z0-9][a-zA-Z0-9_.-]{0,180}\.(?:jpe?g|png|webp)$/i.test(p.reference_photo);
+   const referenceUrl=hasReference?new URL("./"+encodeURIComponent(p.reference_photo),location.href).href:null;
    if(p.latest_photo){
     const img=node("img");img.loading="lazy";img.alt="Latest photo of "+(p.name||p.plant_id);img.src=endpoint({image:p.latest_photo.id});card.append(img);
-    card.append(node("small","Uploaded photo "+(p.latest_photo.taken_on||"undated")+" · "+p.latest_photo.analysis_status));
-    if(Array.isArray(p.photos) && p.photos.length>1){
-      const details=node("details"),summary=node("summary","View "+(p.photos.length-1)+" older photo"+(p.photos.length===2?"":"s"));
-      const history=node("ul",undefined,"logs");
-      for(const [index,oldPhoto] of p.photos.slice(1).entries()){
-        if(!oldPhoto.id)continue;
-        const link=node("a",(oldPhoto.taken_on||"Undated")+" · "+(oldPhoto.analysis_status||"unreviewed"));
-        link.href=endpoint({image:oldPhoto.id});link.target="_blank";link.rel="noreferrer noopener";
-        const item=node("li");item.append(link);history.append(item);
+    card.append(node("small","Latest uploaded photo · "+(p.latest_photo.taken_on||"undated")+" · "+p.latest_photo.analysis_status));
+    const archive=Array.isArray(p.photos)?p.photos.slice(1):[];
+    if(hasReference || archive.length){
+      const details=node("details",undefined,"compare");
+      const total=archive.length+(hasReference?1:0);
+      details.append(node("summary","Compare with "+total+" earlier/reference image"+(total===1?"":"s")));
+      const gallery=node("div",undefined,"compare-grid");
+      const imageTile=(label,src)=>{
+        const figure=node("figure"),a=node("a"),img=node("img");
+        a.href=src;a.target="_blank";a.rel="noopener noreferrer";
+        img.loading="lazy";img.src=src;img.alt=label+" of "+(p.name||p.plant_id);
+        a.append(img);figure.append(a,node("figcaption",label));return figure;
+      };
+      gallery.append(imageTile("Latest uploaded · "+(p.latest_photo.taken_on||"date unknown"),endpoint({image:p.latest_photo.id})));
+      for(const oldPhoto of archive){
+        if(oldPhoto.id)gallery.append(imageTile("Journal · "+(oldPhoto.taken_on||"date unknown"),endpoint({image:oldPhoto.id})));
       }
-      details.append(summary,history);card.append(details);
+      if(referenceUrl)gallery.append(imageTile("Original catalog · capture date unknown",referenceUrl));
+      details.append(gallery);card.append(details);
     }
-   } else if(p.reference_photo && /^[a-zA-Z0-9][a-zA-Z0-9_.-]{0,180}\.(?:jpe?g|png|webp)$/i.test(p.reference_photo)){
-    const img=node("img");img.loading="lazy";img.alt="Catalog reference photo of "+(p.name||p.plant_id);
-    img.src=new URL("./"+encodeURIComponent(p.reference_photo),location.href).href;card.append(img);
-    card.append(node("small","Catalog reference photo · no uploaded photo-journal records yet"));
-   } else {
+   }else if(referenceUrl){
+    const img=node("img");img.loading="lazy";img.alt="Catalog reference photo of "+(p.name||p.plant_id);img.src=referenceUrl;card.append(img);
+    card.append(node("small","Original catalog photo · no uploaded journal records"));
+   }else{
     card.append(node("p","No accessible photo yet. Upload one through the GAIA dashboard."));
-   }
-   if(p.reference_photo && p.latest_photo && /^[a-zA-Z0-9][a-zA-Z0-9_.-]{0,180}\.(?:jpe?g|png|webp)$/i.test(p.reference_photo)){
-    const a=node("a","View original catalog photo");a.href=new URL("./"+encodeURIComponent(p.reference_photo),location.href).href;
-    a.target="_blank";a.rel="noopener noreferrer";const refRow=node("p");refRow.append(a);card.append(refRow);
    }
    if(p.pot)card.append(node("p","Pot: "+[p.pot.inner_diameter_in&&p.pot.inner_diameter_in+" in",p.pot.inner_material,p.pot.soil_mix&&"Mix: "+p.pot.soil_mix].filter(Boolean).join(" · ")));
    const watered=(p.care_events||[]).find(x=>x.action_type==="water");
