@@ -109,7 +109,7 @@
     renderUnifiedPriorities();
     button.disabled = busy || !client || !user;
     const reviewButton=document.getElementById("gaia-photo-review-now");
-    if(reviewButton){reviewButton.disabled=busy||!client||!user;reviewButton.textContent="Refresh photo comparisons";}
+    if(reviewButton){reviewButton.disabled=busy||!client||!user;reviewButton.textContent="Refresh saved results";}
     button.textContent = busy ? "Checking…" : "Refresh notes";
     status.classList.toggle("gaia-insights-error", Boolean(error));
 
