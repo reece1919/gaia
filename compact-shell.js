@@ -42,7 +42,7 @@
   body.appendChild(note);
   // Move original controls. No copying or re-creating the private photo widgets.
   if (review) body.appendChild(review);
-  body.appendChild(clipboard, insights);
+  body.append(clipboard, insights);
   if (guide) body.appendChild(guide);
   drawer.append(summary, body);
   // One compact row before the plant search, collapsed unless the user opens it.
