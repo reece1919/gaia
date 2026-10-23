@@ -6,6 +6,12 @@
 .gaia-care-attention-details>summary{cursor:pointer;display:list-item;list-style:inside disclosure-closed;padding:11px 13px;color:#ecd4a0;font:750 13px/1.5 system-ui,sans-serif}
 .gaia-care-attention-details[open]>summary{list-style-type:disclosure-open;border-bottom:1px solid #5a765f}
 .gaia-care-attention-details>.gaia-care-priority-list{border:0;border-radius:0 0 7px 7px;background:#1c322b}
+/* Health totals are retained as on-demand detail, never permanently above Care. */
+.gaia-care-attention-details .gaia-hero-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin:11px 11px 6px;max-width:none}
+.gaia-care-attention-details .gaia-hero-stat{min-width:0;flex:none;padding:8px}
+.gaia-care-attention-details .gaia-hero-stat-attention{min-width:0;flex:none}
+.gaia-care-attention-details .gaia-hero-stat-attention span{display:block;font-size:10px;line-height:1.4}
+
 .gaia-care-utilities{margin:8px 0 10px;background:#20392e;border:1px solid #608067;border-radius:8px}
 .gaia-care-utilities>summary{cursor:pointer;list-style:inside disclosure-closed;color:#eedfbd;padding:12px 14px;min-height:45px;display:list-item;font:750 13px system-ui,sans-serif}
 .gaia-care-utilities>summary::marker{color:#e1c68e}
@@ -61,6 +67,11 @@
   .gaia-care-overview-panel .gaia-eyebrow{display:none}
   .gaia-care-overview-panel .gaia-hub-section-head h2{font-size:18px;line-height:1.1;margin:2px 0}
   .gaia-care-overview-panel .gaia-hub-section-head p{display:none}
+  /* The Care tab already identifies this page; don't repeat the title. */
+  .gaia-care-overview-panel{display:none!important}
+  .gaia-care-attention-details .gaia-hero-stats{gap:5px;margin:8px 5px}
+  .gaia-care-attention-details .gaia-hero-stat{padding:7px 5px!important}
+  .gaia-care-attention-details .gaia-hero-stat-attention span{display:block!important;font-size:10px!important}
   .gaia-care-attention-details{margin-bottom:6px}
   .gaia-care-attention-details>summary{padding:10px 11px;font-size:12px}
   #gaia-tasks{margin:5px 0!important}
