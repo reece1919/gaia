@@ -855,6 +855,28 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 .species-guide-footer{display:flex;flex-direction:column;gap:8px;padding-top:12px}
 .species-guide-footer a{align-self:flex-start;color:#f2d5a0;font-size:12px;font-weight:700;text-underline-offset:3px}
 .species-guide-footer small{font-size:11px;line-height:1.5;color:#abbeb0}
+/* Taxonomy-first collection view. Existing cards remain intact and can return to custom order. */
+.gaia-collection-toolbar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:12px 0 15px;padding:10px 12px;background:#20332d;border:1px solid #65785d;border-radius:8px;color:#e1e0cd}
+.gaia-collection-toolbar-label{font-size:11px;text-transform:uppercase;letter-spacing:.09em;font-weight:800;color:#d8bd88;margin-right:4px}
+.gaia-collection-toolbar button{min-height:42px;font:inherit;font-size:12px;font-weight:750;border:1px solid #657c69;border-radius:6px;padding:9px 11px;background:#273b33;color:#d7dfd1;cursor:pointer}
+.gaia-collection-toolbar button[aria-pressed="true"]{color:#203127;background:#e2c791;border-color:#e2c791}
+.gaia-collection-toolbar button:hover{border-color:#e6cb97}
+.gaia-collection-toolbar button:focus-visible,.gaia-group-toggle:focus-visible{outline:2px solid #eac990;outline-offset:3px}
+.gaia-collection-view-status{margin-left:auto;font-size:11px;color:#b0c7b5}
+.grid>.gaia-type-heading,.grid>.gaia-family-heading{grid-column:1/-1;min-width:0}
+.grid>.gaia-type-heading[hidden],.grid>.gaia-family-heading[hidden],.grid>.card.gaia-group-collapsed{display:none!important}
+.gaia-type-heading{background:linear-gradient(90deg,#30483b,#203630);border:1px solid #7b8d65;border-left:4px solid #c4a66c;border-radius:7px;margin-top:8px}
+.gaia-family-heading{margin-top:0;background:#243a33;border:1px solid #536d5a;border-radius:6px}
+.gaia-group-toggle{display:flex;align-items:center;gap:10px;width:100%;min-height:44px;text-align:left;border:0;background:transparent;color:#efdfbb;cursor:pointer;padding:10px 13px;font:inherit}
+.gaia-type-heading .gaia-group-toggle{font-family:Georgia,"Times New Roman",serif;font-size:18px}
+.gaia-family-heading .gaia-group-toggle{padding:9px 13px 9px 25px;font-size:12px;color:#c9dfca;font-weight:650}
+.gaia-group-toggle svg{height:23px;width:23px;flex:0 0 auto;stroke:#e2c687}
+.gaia-group-title{min-width:0;flex:1;overflow-wrap:anywhere}
+.gaia-group-count{font:600 11px system-ui,sans-serif;white-space:nowrap;color:#bad0bb}
+.gaia-group-chevron{font:700 16px system-ui,sans-serif;color:#e2c687;width:20px;text-align:center}
+.gaia-type-heading .gaia-group-toggle:hover,.gaia-family-heading .gaia-group-toggle:hover{background:rgba(255,255,255,.045)}
+@media(max-width:600px){.gaia-collection-toolbar{padding:9px;gap:7px}.gaia-collection-toolbar-label{width:100%}.gaia-collection-view-status{margin-left:0;width:100%}.gaia-group-toggle{gap:7px}.gaia-type-heading .gaia-group-toggle{font-size:16px}.gaia-family-heading .gaia-group-toggle{padding-left:16px}.gaia-group-count{font-size:10px}}
+
 @media(max-width:440px){.species-guide-grid{grid-template-columns:1fr 1fr;gap:10px}.species-guide>summary small{display:none}.species-info-shortcut{min-height:42px}}
 
 </style>
@@ -1144,7 +1166,8 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 <script src="gaia-config.js?v=20261012-sync3"></script>
 <script src="pronunciation.js?v=20261023-v1" defer></script>
 <script src="species-guide.js?v=20261023-v1" defer></script>
-<script src="app.js?v=20261023-species-guide1" defer></script>
+<script src="app.js?v=20261023-type-family1" defer></script>
+<script src="collection-grouping.js?v=20261023-type-family1" defer></script>
 <script src="care.js?v=20261013-mfa1" defer></script>
 <script src="pot-soil.js?v=20261023-v1" defer></script>
 <script src="gaia-todoist-checkable.js?v=1" defer></script>
@@ -1178,6 +1201,6 @@ window.addEventListener("load",function(){
 </script>
 <script src="tablet.js?v=20261012-fielddesk1" defer></script>
 <script src="task-queue.js?v=20261016-checklist2" defer></script>
-<script src="plant-order.js?v=20261015-v1" defer></script>
+<script src="plant-order.js?v=20261023-type-family1" defer></script>
 </body>
 </html>
