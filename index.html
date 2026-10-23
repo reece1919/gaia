@@ -826,6 +826,14 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 #gaia-review-queue-count{font-size:11px;color:#c3d4bf;line-height:1.4}
 #gaia-review-queue-count.gaia-review-error{color:#f4b6a6}
 @media(max-width:600px){.gaia-review-launch{align-items:flex-start;flex-direction:column}}
+
+.botanical-pronunciation{margin-top:5px;font-style:normal}
+.pronunciation-toggle{font:inherit;font-size:12px;min-height:44px;padding:6px 10px;border:1px solid currentColor;border-radius:8px;background:transparent;color:inherit;cursor:pointer}
+.pronunciation-toggle:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+.pronunciation-guide{margin:6px 0;padding:9px;border-left:2px solid currentColor;font-size:12px;line-height:1.6;overflow-wrap:anywhere}
+.pronunciation-guide[hidden]{display:none}
+.pronunciation-word,.pronunciation-guide small{display:block}
+.pronunciation-guide small{margin-top:6px;font-size:11px;opacity:.8}
 </style>
 <link rel="stylesheet" href="security-mfa.css?v=1.2.1">
 <link rel="stylesheet" href="pot-soil.css?v=20261023-v1">
@@ -1111,7 +1119,8 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 </section>
 </div>
 <script src="gaia-config.js?v=20261012-sync3"></script>
-<script src="app.js?v=20261015-hero-stats2" defer></script>
+<script src="pronunciation.js?v=20261023-v1" defer></script>
+<script src="app.js?v=20261023-pronunciation1" defer></script>
 <script src="care.js?v=20261013-mfa1" defer></script>
 <script src="pot-soil.js?v=20261023-v1" defer></script>
 <script src="gaia-todoist-checkable.js?v=1" defer></script>

@@ -104,6 +104,20 @@
   }
   const UTILITY_TAGS = /^(?:NEW ADDITION|NEW · CARING FOR AMBER|BRIGHT LIGHT|VERY BRIGHT|VERY BRIGHT LIGHT|BRIGHT INDIRECT|MEDIUM–BRIGHT|MEDIUM–BRIGHT INDIRECT|LOW–BRIGHT|SUN \/ STRONG LIGHT|FULL SUN|STRONG LIGHT|CROTON|SUCCULENT|CACTUS|PALM|BROMELIAD|DRACAENA|BEDDING PLANT|TROPICAL|AROID|PEACE LILY|ORCHID|PRAYER PLANT|PILEA|TRADESCANTIA|VINE|PLECTRANTHUS|FOLIAGE|EPIPHYTE|FERN|ZZ PLANT|AGLAONEMA|SCENTED GERANIUM)$/;
 
+  function pronunciationGuide(p) {
+    const guide = window.gaiaBotanicalPronunciation?.(p.species);
+    if (!guide?.entries.length) return "";
+    const id = "pronunciation-" + p.id;
+    return '<div class="botanical-pronunciation">' +
+      '<button type="button" class="pronunciation-toggle" aria-expanded="false" aria-controls="' + esc(id) +
+      '" aria-label="Botanical pronunciation for ' + esc(p.name) + '">Pronunciation</button>' +
+      '<div class="pronunciation-guide" id="' + esc(id) + '" hidden>' +
+      guide.entries.map(entry => '<span class="pronunciation-word"><i>' + esc(entry.name) + '</i>: <strong>' +
+        esc(entry.pronunciation) + '</strong></span>').join('') +
+      '<small>CAPITALS mark the stressed syllable. English pronunciation varies.' +
+      (guide.genusOnly ? ' Genus only; species not specified here.' : '') + '</small></div></div>';
+  }
+
   function makeCard(p) {
     const card = document.createElement("details");
     card.className = "card";
@@ -142,7 +156,7 @@
     card.innerHTML =
       '<summary><div class="photo">' + photo + '</div><div class="summary-body">' +
       '<div class="row"><div class="title-block"><div class="name">' + esc(p.name) + '</div>' +
-      '<div class="species">' + esc(p.species) + '</div>' +
+      '<div class="species">' + esc(p.species) + '</div>' + pronunciationGuide(p) +
       (tags ? '<div class="meta-tags">' + tags + '</div>' : '') + '</div>' +
       '<span class="badge">' + esc(p.status) + '</span></div>' +
       quickFacts(p) +
@@ -218,6 +232,17 @@
         "Could not load plant records. Please refresh GAIA. If this continues, check plants.json in the GitHub repository.";
     }
   }
+
+  grid.addEventListener("click", event => {
+    const button = event.target.closest(".pronunciation-toggle");
+    if (!button) return;
+    event.preventDefault();
+    event.stopPropagation();
+    const output = document.getElementById(button.getAttribute("aria-controls"));
+    if (!output) return;
+    output.hidden = !output.hidden;
+    button.setAttribute("aria-expanded", String(!output.hidden));
+  });
 
   // Tapping an icon explains the source care rule without opening the profile.
   grid.addEventListener("click", event => {
