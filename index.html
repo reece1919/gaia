@@ -876,6 +876,24 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 .gaia-group-count{font:600 11px system-ui,sans-serif;white-space:nowrap;color:#bad0bb}
 .gaia-group-chevron{font:700 16px system-ui,sans-serif;color:#e2c687;width:20px;text-align:center}
 .gaia-type-heading .gaia-group-toggle:hover,.gaia-family-heading .gaia-group-toggle:hover{background:rgba(255,255,255,.045)}
+/* Read-only lessons beneath each collapsible type or family. */
+.gaia-group-lesson{margin:0 11px 12px;border-top:1px solid rgba(232,209,158,.19);padding-top:4px;color:#dfe9db}
+.gaia-group-lesson>summary{display:list-item;list-style:inside disclosure-closed;font:700 12px system-ui,sans-serif;cursor:pointer;padding:9px 7px;color:#f1d9a6;line-height:1.45;border-radius:5px}
+.gaia-group-lesson[open]>summary{list-style-type:disclosure-open}
+.gaia-group-lesson>summary:hover{background:rgba(240,220,180,.065)}
+.gaia-group-lesson>summary:focus-visible,.gaia-group-lesson a:focus-visible{outline:2px solid #eed29a;outline-offset:2px}
+.gaia-group-lesson-body{padding:3px 7px 8px}
+.gaia-group-lesson-intro{font-size:13px;line-height:1.65;margin:0 0 11px;color:#e8e6d5;max-width:95ch}
+.gaia-group-lesson-facts{margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,225px),1fr));gap:9px}
+.gaia-group-lesson-facts>div{padding:10px 12px;background:#172e29;border:1px solid #476551;border-radius:6px}
+.gaia-group-lesson-facts dt{text-transform:uppercase;letter-spacing:.045em;font-weight:800;font-size:10px;color:#dbc18e}
+.gaia-group-lesson-facts dd{margin:5px 0 0;color:#dfebdd;line-height:1.55;font-size:12px}
+.gaia-group-lesson-foot{margin-top:12px;padding-top:10px;border-top:1px solid rgba(209,196,158,.14);display:flex;gap:10px 18px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}
+.gaia-group-lesson-foot a{font-size:12px;color:#eed19c;font-weight:750;text-underline-offset:3px}
+.gaia-group-lesson-foot small{font-size:11px;color:#b6c8b6;line-height:1.45;max-width:58ch}
+.gaia-family-heading .gaia-group-lesson{margin:0 12px 10px 24px}
+@media(max-width:600px){.gaia-group-lesson{margin:0 8px 9px}.gaia-family-heading .gaia-group-lesson{margin:0 8px 9px 15px}.gaia-group-lesson-facts{grid-template-columns:1fr}.gaia-group-lesson-body{padding:2px 4px 7px}}
+
 @media(max-width:600px){.gaia-collection-toolbar{padding:9px;gap:7px}.gaia-collection-toolbar-label{width:100%}.gaia-collection-view-status{margin-left:0;width:100%}.gaia-group-toggle{gap:7px}.gaia-type-heading .gaia-group-toggle{font-size:16px}.gaia-family-heading .gaia-group-toggle{padding-left:16px}.gaia-group-count{font-size:10px}}
 
 @media(max-width:440px){.species-guide-grid{grid-template-columns:1fr 1fr;gap:10px}.species-guide>summary small{display:none}.species-info-shortcut{min-height:42px}}
@@ -1172,7 +1190,8 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 <script src="pronunciation.js?v=20261023-v1" defer></script>
 <script src="species-guide.js?v=20261023-v1" defer></script>
 <script src="app.js?v=20261023-type-family1" defer></script>
-<script src="collection-grouping.js?v=20261023-type-family1" defer></script>
+<script src="group-learning.js?v=20261023-v1" defer></script>
+<script src="collection-grouping.js?v=20261023-lessons1" defer></script>
 <script src="care.js?v=20261023-stable-plant-id1" defer></script>
 <script src="pot-soil.js?v=20261023-stable-plant-id1" defer></script>
 <script src="gaia-todoist-checkable.js?v=1" defer></script>
