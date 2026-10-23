@@ -71,6 +71,9 @@ def snapshot_image(plant_id, label, photo, old_plant, keep):
     filename = photo_filename(plant_id, label)
     path = IMAGES / filename
     former = old_plant.get(label) or {}
+    if former.get("id") != photo_id:
+        former = next((x for x in (old_plant.get("photos") or [])
+                       if x.get("id") == photo_id and x.get("snapshot_image") == "gaia-reference/photos/" + filename), {})
     if not (path.is_file() and former.get("id") == photo_id):
         photo_data = read_endpoint({"image": photo_id}, MAX_IMAGE_BYTES)
         with Image.open(io.BytesIO(photo_data)) as original:
@@ -106,13 +109,40 @@ def main():
             continue
         item = {field: record.get(field) for field in PLANT_FIELDS}
         plant_id = str(item["plant_id"])
-        for which in ("latest_photo", "previous_photo"):
-            snapshot_image(
-                plant_id, which, item.get(which), previous.get(plant_id, {}), keep
-            )
+        # Every private journal photo must be available, not only the two newest.
+        # Keep the established latest/previous filenames for existing readers.
+        gallery = item.get("photos") or []
+        for index, photo in enumerate(gallery):
+            label = ("latest_photo" if index == 0 else
+                     "previous_photo" if index == 1 else
+                     "history-" + str(photo.get("id", "")))
+            snapshot_image(plant_id, label, photo, previous.get(plant_id, {}), keep)
+            if index < 2:
+                selected = item.get(label)
+                if isinstance(selected, dict) and selected.get("id") == photo.get("id"):
+                    selected["snapshot_image"] = photo.get("snapshot_image")
+        # Catalog photos predate the private photo journal; keep their paths
+        # without duplicating the files or treating them as journal uploads.
+        reference = item.get("reference_photo")
+        if isinstance(reference, str) and re.fullmatch(
+            r"[A-Za-z0-9][A-Za-z0-9_.-]{0,180}\\.(?:jpe?g|png|webp)", reference, re.IGNORECASE
+        ) and Path(reference).is_file():
+            item["reference_image"] = reference
+        else:
+            item["reference_image"] = None
         plants.append(item)
     if not plants:
         raise RuntimeError("GAIA returned no plants; refusing to publish an empty snapshot")
+    expected_photos = sum(len(p.get("photos") or []) for p in plants)
+    exported_photos = sum(
+        bool(photo.get("snapshot_image"))
+        for p in plants for photo in (p.get("photos") or [])
+    )
+    if expected_photos != exported_photos or expected_photos != len(keep):
+        raise RuntimeError(
+            f"Photo coverage mismatch: {exported_photos}/{expected_photos} exported, "
+            f"{len(keep)} unique files. Refusing incomplete snapshot."
+        )
     output = {
         "schema_version": 1,
         "read_only": True,
@@ -120,6 +150,9 @@ def main():
         "generated_at": result.get("generated_at"),
         "synced_at": datetime.now(timezone.utc).isoformat(),
         "plant_count": len(plants),
+        "uploaded_photo_count": expected_photos,
+        "exported_photo_count": exported_photos,
+        "catalog_reference_count": sum(bool(p.get("reference_image")) for p in plants),
         "unavailable_sections": result.get("unavailable_sections", []),
         "plants": plants,
     }
@@ -127,7 +160,7 @@ def main():
     for unused in IMAGES.glob("*.webp"):
         if unused.name not in keep:
             unused.unlink()
-    print("Published reference snapshot for", len(plants), "plants and", len(keep), "photos.")
+    print("Published reference snapshot for", len(plants), "plants and all", len(keep), "uploaded photos.")
 
 
 if __name__ == "__main__":
