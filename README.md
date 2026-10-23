@@ -48,6 +48,18 @@ The general guidance is stored in `group-learning.js`: `types` is keyed by the e
 
 **Important:** A type is a horticultural category or growth habit, not necessarily a botanical taxon. A family is a shared evolutionary lineage, not a guarantee of identical light, soil, watering, or temperature needs. Follow each plant's individual care profile for care decisions. If a new type or family is introduced, add the corresponding educational entry to `group-learning.js`.
 
+## GAIA Learning Hub — care-first navigation (October 23, 2026)
+
+GAIA now opens with **Care Center**, followed by two independent read-only reference views:
+
+1. **Care Center** — the existing original plant cards, photo journal, soil/pot and care trackers, tasks, Insights and backups are preserved in one DOM home. A new catalog-condition triage overview clearly labels catalog flags as non-live observations. Each expanded card shows the plant's saved quick-care cues, latest loaded watering entry when available, saved soil mix when available, and an explanation of its broader growth pattern. Links navigate to education and its botanical family.
+2. **Care Academy** — seven practical lessons (watering, light, roots/pots, environment, pests, growth/propagation and dormancy). Each lesson covers why it matters, actions to practice, exceptions and links to actual plants in the collection. Overlapping practice groups compare dry-adapted plants, moderate dry-down, moisture-preferring plants, specialist growing media and seasonal patterns. The examples teach observation; they do **not** generate watering reminders or invent sensor readings.
+3. **Botanical Library** — taxonomy grouped by family → genus → catalog plant (species/cultivar label). The underlying botanical family is read from `species-guide.js`, and its education profile from `group-learning.js`. Uncertain IDs remain tentative and all botanical rows link back to the original plant card rather than cloning photo/journal controls.
+
+Implementation: `learning-hub.js` + `learning-hub.css`. The new hub safely moves existing dashboard DOM nodes *as original elements* into a Care Center tabpanel, while the other views are read-only generated content. It never rewrites cloud records, creates separate plant cards, or uploads photos. Plant navigation uses stable `data-plant-id` values. The previous type/family visual grouping is still available from within Care Center, and owner-defined card ordering is preserved.
+
+Read-only learning recommendations do not override a plant-specific care cue, recorded history, or verified assessment. No Supabase migrations, new secrets, API calls or background inference are involved.
+
 ## Browse by plant type and botanical family
 
 The collection defaults to **By type & family**. Each type heading uses the existing plant-type icon and label from `app.js`/`plants.json`. Within a type, cards are grouped alphabetically by botanical family, then by individual plant name. Both type and family headings can be collapsed, and the displayed counts follow search filters.
