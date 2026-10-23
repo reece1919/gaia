@@ -146,10 +146,16 @@
             '</time>' + (i===0 ? '<span class="photo-cover-label">Current</span>' : '') + '</div>' +
             (p.caption ? '<div class="photo-caption">' + esc(p.caption) + '</div>' : '') +
             analysisMarkup(p) +
-            '<button type="button" data-photo-test="' + esc(p.id) + '">Test secure access</button><button type="button" data-photo-delete="' + esc(p.id) + '">Delete</button>' +
+            '<button type="button" data-photo-delete="' + esc(p.id) + '">Delete</button>' +
             '</div>';
         }).join("") + '</div>' +
-        (items.length>30?'<p class="photo-hint">Showing the 30 most recently uploaded photos.</p>':'')
+        (items.length>30?'<p class="photo-hint">Showing the 30 most recently uploaded photos.</p>':'') +
+        '<details class="gaia-photo-troubleshooting"><summary>Photo troubleshooting</summary>' +
+        '<p>Test access only when a private photo fails to load. This does not delete or change the photo.</p>' +
+        '<div class="gaia-photo-test-list">' + items.slice(0,30).map((p,i) =>
+          '<button type="button" data-photo-test="' + esc(p.id) + '">' +
+          'Test photo ' + (i+1) + ' · ' + esc(displayDate(p.taken_on)) + '</button>'
+        ).join("") + '</div></details>'
         : '';
       const cover = covers.get(String(plantId));
       if (cover) {
