@@ -91,11 +91,19 @@
   function mount(data) {
     if (plants.length) return;
     plants = data;
-    document.querySelectorAll("#grid .card").forEach((card,i) => {
-      const p=plants[i], section=card.querySelector(".care"), img=card.querySelector(".photo img");
+    const plantsById = new Map(plants.map(p => [String(p.id), p]));
+    document.querySelectorAll("#grid .card[data-plant-id]").forEach(card => {
+      // Card positions change under type/family grouping and custom sorting.
+      // Bind the photo cover, journal and upload target to the stable plant ID.
+      const id = card.dataset.plantId;
+      const p = plantsById.get(id);
+      const section = card.querySelector(".care");
+      const img = card.querySelector(".photo img");
       if (!p || !section) return;
-      if (img) covers.set(String(p.id),{element:img,original:img.getAttribute("src")});
-      section.insertAdjacentHTML("afterbegin",panel(p));
+      if (img) covers.set(id, {element:img, original:img.getAttribute("src")});
+      if (!section.querySelector(".plant-photo-journal")) {
+        section.insertAdjacentHTML("afterbegin", panel(p));
+      }
     });
     render();
   }
