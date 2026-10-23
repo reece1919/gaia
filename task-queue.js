@@ -53,27 +53,31 @@
    }
    document.querySelectorAll("#grid .card[data-plant-id]").forEach(card=>{
     const id=card.dataset.plantId,items=byPlant.get(id)||[],active=openByPlant.get(id)||[];
+    const visibleCount=active.length+items.length;
     let preview=card.querySelector(".gaia-card-todos");
-    if(!preview){
+    if(visibleCount && !preview){
       preview=document.createElement("div");preview.className="gaia-card-todos";
       preview.style.cssText="margin:10px 0;padding:10px;border:1px solid rgba(180,190,150,.35);border-radius:10px;font-size:.88rem";
       card.querySelector(".summary-body")?.append(preview);
     }
-    if(!preview)return;
-    const visibleCount=active.length+items.length;
-    preview.innerHTML=visibleCount?
-      '<strong>To-dos · '+active.length+'</strong>'+
-      active.slice(0,3).map(t=>'<div style="padding-top:6px">'+esc(t.title)+'</div>').join("")+
-      (active.length>3?'<small>+'+(active.length-3)+' more in checklist</small>':'')+
-      (items.length?'<div><small>'+items.length+' awaiting approval</small></div>':''):
-      '<small>No pending GAIA to-dos</small>';
+    if(preview){
+      preview.hidden=!visibleCount;
+      if(visibleCount) preview.innerHTML=
+        '<strong>To-dos · '+active.length+'</strong>'+
+        active.slice(0,3).map(t=>'<div style="padding-top:6px">'+esc(t.title)+'</div>').join("")+
+        (active.length>3?'<small>+'+(active.length-3)+' more in checklist</small>':'')+
+        (items.length?'<div><small>'+items.length+' awaiting approval</small></div>':'');
+      else preview.replaceChildren();
+    }
     let inside=card.querySelector(".gaia-plant-todos");
-    if(!inside){
+    if(visibleCount && !inside){
       inside=document.createElement("section");inside.className="gaia-plant-todos";
       inside.style.cssText="padding:12px;margin:10px;border:1px solid rgba(180,190,150,.35);border-radius:10px";
       card.querySelector(".care")?.prepend(inside);
     }
-    if(inside)inside.innerHTML='<strong>Plant to-dos · '+active.length+'</strong>'+
+    if(inside){
+      inside.hidden=!visibleCount;
+      if(visibleCount) inside.innerHTML='<strong>Plant to-dos · '+active.length+'</strong>'+
       (active.length?active.map(t=>
         '<label style="display:flex;gap:9px;align-items:start;padding:9px 0;border-bottom:1px solid rgba(180,190,150,.2)">'+
         '<input type="checkbox" data-gaia-complete-custom="'+esc(t.id)+'" aria-label="Complete '+esc(t.title)+'" style="flex:none;width:17px;height:17px;margin-top:2px">'+
@@ -86,6 +90,8 @@
           '<button type="button" data-gaia-approve="'+esc(item.id)+'">Add to checklist</button>'+
           '<button type="button" data-gaia-decline="'+esc(item.id)+'">Decline</button></div></div>'
         ).join(""):'');
+      else inside.replaceChildren();
+    }
    });
    root().innerHTML='<p>'+due.length+' new photo reminders queued · '+(rows||[]).length+' awaiting decisions</p>'+
     ((rows||[]).length?'<div style="display:grid;gap:12px">'+rows.map(r=>'<div style="border:1px solid var(--border,#768);border-radius:12px;padding:12px"><strong>'+esc(r.title)+'</strong><p>'+esc(r.rationale)+'</p><small>'+esc(name(r.plant_id))+(r.due_on?' · Due '+esc(r.due_on):'')+'</small><div style="display:flex;gap:12px;margin-top:8px"><button data-gaia-approve="'+esc(r.id)+'">Add to checklist</button><button data-gaia-decline="'+esc(r.id)+'">Decline</button></div></div>').join("")+'</div>':'<p>No suggestions awaiting approval.</p>');
