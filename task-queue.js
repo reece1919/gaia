@@ -77,12 +77,12 @@
     }
     if(inside){
       inside.hidden=!visibleCount;
-      if(visibleCount) inside.innerHTML='<strong>Plant to-dos · '+active.length+'</strong>'+
+      if(visibleCount) inside.innerHTML=(active.length?'<strong>Plant to-dos · '+active.length+'</strong>':'')+
       (active.length?active.map(t=>
         '<label style="display:flex;gap:9px;align-items:start;padding:9px 0;border-bottom:1px solid rgba(180,190,150,.2)">'+
         '<input type="checkbox" data-gaia-complete-custom="'+esc(t.id)+'" aria-label="Complete '+esc(t.title)+'" style="flex:none;width:17px;height:17px;margin-top:2px">'+
         '<span>'+esc(t.title)+(t.due_on?' <small>('+esc(t.due_on)+')</small>':'')+'</span></label>'
-      ).join(""):'<p>No active checklist tasks for this plant.</p>')+
+      ).join(""):'')+
       (items.length?'<strong style="display:block;margin-top:8px">Awaiting approval</strong>'+
         items.map(item=>
           '<div style="padding:10px 0;border-bottom:1px solid rgba(180,190,150,.2)"><div>'+esc(item.title)+
