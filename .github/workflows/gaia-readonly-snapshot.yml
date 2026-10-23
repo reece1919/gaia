@@ -1,6 +1,13 @@
 name: Publish GAIA read-only reference
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/gaia_reference_snapshot.py"
+      - ".github/workflows/gaia-readonly-snapshot.yml"
+      - "plants.json"
   schedule:
     - cron: "17 5,11,17,23 * * *"
 permissions:
