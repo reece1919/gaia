@@ -117,6 +117,8 @@ test("Compact shell moves, never clones, task/search/card and photo-review UI",(
   const root=new FakeNode();
   const hero=new FakeNode("header", "hero");
   const review=new FakeNode("div","","gaia-review-launch");
+  const runPhoto=new FakeNode("button","gaia-review-new-photos");
+  review.appendChild(runPhoto);
   const totals=new FakeNode("div","","gaia-hero-stats");
   hero.append(review, totals);
   root.appendChild(hero);
@@ -130,8 +132,17 @@ test("Compact shell moves, never clones, task/search/card and photo-review UI",(
   const clipboard=new FakeNode("section","gaia-clipboard");
   const tasks=new FakeNode("details","gaia-tasks");
   const insights=new FakeNode("details","gaia-insights");
+  const savedPhotoButton=new FakeNode("button","gaia-photo-review-now");
+  const photoResults=new FakeNode("section","gaia-photo-review-summary");
+  insights.append(photoResults,savedPhotoButton);
   const controls=new FakeNode("div","controls");
-  const guide=new FakeNode("details","","card-icon-guide");
+  const account=new FakeNode("section","care-overview");
+  const settingsInner=new FakeNode("details","","care-settings");
+  const passwordForm=new FakeNode("form","care-password-login");
+  const backupButton=new FakeNode("button","care-export");
+  const mfaButton=new FakeNode("button","gaia-mfa-open");
+  settingsInner.append(passwordForm,backupButton,mfaButton);
+  account.appendChild(settingsInner);
   const grouping=new FakeNode("nav","","gaia-collection-toolbar");
   const grid=new FakeNode("div","grid");
   const originalCard=new FakeNode("details","plant-02","card");
@@ -140,7 +151,7 @@ test("Compact shell moves, never clones, task/search/card and photo-review UI",(
   grid.appendChild(originalCard);
   const empty=new FakeNode("div","empty");
   const recent=new FakeNode("section","recent-care");
-  care.append(overview,clipboard,tasks,insights,controls,guide,grouping,grid,empty,recent);
+  care.append(overview,clipboard,tasks,insights,controls,grouping,grid,empty,recent,account);
   const document={
     getElementById:id=>(root.id===id?root:root.querySelector("#"+id)),
     querySelector:selector=>root.querySelector(selector),
@@ -154,8 +165,20 @@ test("Compact shell moves, never clones, task/search/card and photo-review UI",(
   assert.deepEqual(care.childNodes.slice(0,7),[overview,tasks,drawer,controls,grouping,grid,empty]);
   assert.equal(drawer.querySelector("#gaia-clipboard"),clipboard);
   assert.equal(drawer.querySelector("#gaia-insights"),insights);
-  assert.equal(drawer.querySelector(".gaia-review-launch"),review);
-  assert.equal(drawer.querySelector(".card-icon-guide"),guide);
+  const reviews=drawer.querySelector("#gaia-photo-reviews");
+  assert.ok(reviews);
+  assert.equal(reviews.querySelector(".gaia-review-launch"),review);
+  assert.equal(reviews.querySelector("#gaia-review-new-photos"),runPhoto);
+  assert.equal(reviews.querySelector("#gaia-photo-review-now"),savedPhotoButton);
+  assert.equal(reviews.querySelector("#gaia-photo-review-summary"),photoResults);
+  const settings=drawer.querySelector("#gaia-settings-backup");
+  assert.ok(settings);
+  assert.equal(settings.querySelector("#care-overview"),account);
+  assert.equal(settings.querySelector("#care-password-login"),passwordForm);
+  assert.equal(settings.querySelector("#care-export"),backupButton);
+  assert.equal(settings.querySelector("#gaia-mfa-open"),mfaButton);
+  assert.equal(settingsInner.open,true);
+  assert.equal(drawer.querySelector(".card-icon-guide"),null);
   assert.equal(drawer.querySelector(".gaia-care-attention-details"),flags);
   assert.equal(flags.querySelector(".gaia-hero-stats"),totals);
   assert.equal(totals.parentElement,flags);
@@ -176,4 +199,29 @@ test("Mobile navigation uses short destinations and compact header without hidin
   assert.doesNotMatch(css, /#gaia-attention-count\s*\{\s*display:none/);
   assert.match(hub,/gaia-care-attention-details/);
   assert.match(hub,/Review " \+ attention\.length/);
+});
+
+test("Audit-approved UX only: no empty task boxes, duplicate quick facts or exposed photo diagnostics",()=>{
+  const task=read("task-queue.js");
+  const hub=read("learning-hub.js");
+  const photos=read("photos.js");
+  const html=read("index.html");
+  const css=read("compact-shell.css");
+  assert.match(task,/preview\.hidden=!visibleCount/);
+  assert.match(task,/inside\.hidden=!visibleCount/);
+  assert.doesNotMatch(task,/No pending GAIA to-dos/);
+  assert.doesNotMatch(task,/No active checklist tasks for this plant/);
+  assert.match(hub,/gaia-care-essentials/);
+  assert.match(hub,/\["WATER","LIGHT","SOIL"\]/);
+  assert.match(hub,/chosen\.forEach\(node=>fields\.appendChild\(node\)\)/);
+  assert.match(hub,/Why this care works/);
+  assert.doesNotMatch(hub,/Last logged watering/);
+  assert.match(photos,/gaia-photo-troubleshooting/);
+  assert.match(photos,/data-photo-test/);
+  assert.match(photos,/data-photo-delete/);
+  assert.match(css,/gaia-plant-todos\[hidden\]/);
+  assert.doesNotMatch(html,/<details class="card-icon-guide">/);
+  assert.ok(html.includes('id="gaia-task-approvals"'),"Unselected task approval queue must remain");
+  assert.ok(html.includes('id="recent-care"'),"Unselected dated catalog history must remain");
+  assert.ok(html.includes('src="collection-grouping.js'),"Unselected taxonomy grouping must remain");
 });
