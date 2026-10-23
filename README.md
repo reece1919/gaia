@@ -48,6 +48,14 @@ The general guidance is stored in `group-learning.js`: `types` is keyed by the e
 
 **Important:** A type is a horticultural category or growth habit, not necessarily a botanical taxon. A family is a shared evolutionary lineage, not a guarantee of identical light, soil, watering, or temperature needs. Follow each plant's individual care profile for care decisions. If a new type or family is introduced, add the corresponding educational entry to `group-learning.js`.
 
+## Compact GAIA mobile navigation (October 23, 2026)
+
+The responsive shell is implemented in `compact-shell.js` and `compact-shell.css`. The phone masthead keeps a small GAIA brand, **Ask GAIA**, and the three health totals visible without the decorative hero copy. The top navigation uses accessible **Care / Learn / Botany** labels on phones and full labels on larger devices, with a sticky tab strip on narrow screens. The old tablet-only shortcut row is hidden because it duplicates the hub's main navigation.
+
+Within Care Center, saved catalog-condition flags are folded into an expandable summary, followed by care tasks, **Tools & reviews** (folded by default), search, the existing type/custom-order toggle, and the actual plant cards. Photo review, clipboard export/import, saved insights, and the icon guide remain in the tools drawer and are only moved as intact DOM nodes with their existing IDs and listeners. No plant cards are cloned and private records are not changed. The Tools drawer is collapsed by default on both desktop and mobile to keep daily care prominent.
+
+The viewport-specific styling reduces spacing and long labels on phones but does **not** hide attention counts. Run `node --test tests/learning-hub.test.cjs` for DOM identity/order regression checks; they run automatically in the Security baseline workflow.
+
 ## GAIA Learning Hub — care-first navigation (October 23, 2026)
 
 GAIA now opens with **Care Center**, followed by two independent read-only reference views:
