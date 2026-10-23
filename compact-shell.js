@@ -29,7 +29,11 @@
   drawer.className = "gaia-care-utilities";
   const summary = document.createElement("summary");
   summary.className = "gaia-care-utilities-summary";
-  summary.textContent = "Tools & reviews";
+  const title = document.createElement("strong");
+  title.textContent = "Tools & reviews";
+  const hint = document.createElement("small");
+  hint.textContent = "Photos · Clipboard · Insights";
+  summary.append(title, hint);
   const body = document.createElement("div");
   body.className = "gaia-care-utilities-content";
   const note = document.createElement("p");
@@ -41,14 +45,6 @@
   body.appendChild(clipboard, insights);
   if (guide) body.appendChild(guide);
   drawer.append(summary, body);
-  empty.after(drawer);
-
-  const small = window.matchMedia("(max-width:699px)");
-  const updateWidth = () => {
-    // On larger screens keep the tools in view, as before. Mobile starts folded.
-    drawer.open = !small.matches;
-  };
-  updateWidth();
-  if (small.addEventListener) small.addEventListener("change", updateWidth);
-  else small.addListener(updateWidth);
+  // One compact row before the plant search, collapsed unless the user opens it.
+  tasks.after(drawer);
 })();
