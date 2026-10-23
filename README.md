@@ -143,3 +143,17 @@ The site is hosted publicly, but new uploaded photos are **not** published to Gi
 ## Recovery
 
 GitHub retains file revision history. If an update breaks something, previous commits can be used to restore a working version.
+
+
+## Pot, soil, moisture and growth tracking (October 23, 2026)
+
+Each plant card has **Pot, soil & growth tracking**, separate from the automated photo-review system. The section contains:
+
+- Editable pot profile: inner pot diameter and depth in **inches**, inner pot material, clear-pot indicator, drainage holes, decorative outer pot, actual soil mix and last repotted date.
+- Dated observations: optional numeric moisture reading with its meter scale, a **New growth observed** checkbox, and optional notes. At least one observation is required to save an entry. Readings are relative to the meter's scale, not laboratory-calibrated moisture percentages.
+- Recent observation history and last watered date (from the existing signed-in care journal).
+- Device-local saving even before sign-in, with private owner-only cross-device sync once signed into GAIA. As with the original journal, device-only entries are not automatically transferred to an account; use the same signed-in account for cross-device records.
+
+**Photo-review failures do not prevent manual observations.** Checking "New growth observed" and saving creates a dated event; it does not change the plant's health category or require a photo analysis.
+
+Source: \`pot-soil.js\` and \`pot-soil.css\`. Tables: \`public.gaia_pot_profiles\` and \`public.gaia_soil_observations\`. RLS is enabled with owner-only policies, no anonymous data access; see \`supabase/gaia_pot_soil_growth.sql\`.
