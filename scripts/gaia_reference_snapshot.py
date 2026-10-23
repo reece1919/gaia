@@ -125,7 +125,7 @@ def main():
         # without duplicating the files or treating them as journal uploads.
         reference = item.get("reference_photo")
         if isinstance(reference, str) and re.fullmatch(
-            r"[A-Za-z0-9][A-Za-z0-9_.-]{0,180}\\.(?:jpe?g|png|webp)", reference, re.IGNORECASE
+            r"[A-Za-z0-9][A-Za-z0-9_.-]{0,180}\.(?:jpe?g|png|webp)", reference, re.IGNORECASE
         ) and Path(reference).is_file():
             item["reference_image"] = reference
         else:
