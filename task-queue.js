@@ -58,7 +58,8 @@
     if(visibleCount && !preview){
       preview=document.createElement("div");preview.className="gaia-card-todos";
       preview.style.cssText="margin:10px 0;padding:10px;border:1px solid rgba(180,190,150,.35);border-radius:10px;font-size:.88rem";
-      card.querySelector(".summary-body")?.append(preview);
+      const summaryBody=card.querySelector(".summary-body");
+      summaryBody?.insertBefore(preview,summaryBody.querySelector(".tap-hint"));
     }
     if(preview){
       preview.hidden=!visibleCount;
