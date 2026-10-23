@@ -12,6 +12,8 @@
   const insights = document.getElementById("gaia-insights");
   const guide = document.querySelector(".card-icon-guide");
   const review = document.querySelector(".gaia-review-launch");
+  const healthTotals = document.querySelector(".gaia-hero-stats");
+  const savedConditions = care.querySelector(".gaia-care-attention-details");
   if (!tasks || !controls || !grid || !empty || !clipboard || !insights) return;
 
   // Keep the exact existing DOM elements and their listeners/ID relationships.
@@ -40,6 +42,15 @@
   note.className = "gaia-care-utilities-note";
   note.textContent = "Photo reviews, clipboard exports, guides and saved insights. Your records stay in their original systems.";
   body.appendChild(note);
+  // Collection health is available on demand, not permanently shown in the masthead.
+  // Relocate the existing live counts (IDs and DOM nodes) into the folded condition panel.
+  if (savedConditions) {
+    const priorityCards = savedConditions.querySelector(".gaia-care-priority-list");
+    if (healthTotals && priorityCards) savedConditions.insertBefore(healthTotals, priorityCards);
+    body.appendChild(savedConditions);
+  } else if (healthTotals) {
+    body.appendChild(healthTotals);
+  }
   // Move original controls. No copying or re-creating the private photo widgets.
   if (review) body.appendChild(review);
   body.append(clipboard, insights);
