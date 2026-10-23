@@ -159,7 +159,8 @@
     card.dataset.species = p.searchSpecies || p.species || "";
     card.dataset.commonNames = (p.commonNames || []).join(" ");
     card.dataset.status = p.status || "";
-    card.dataset.photo = p.photo ? "yes" : "no";
+    const coverPhoto = p.coverPhoto || p.photo;
+    card.dataset.photo = coverPhoto ? "yes" : "no";
     card.dataset.new = p.newAddition ? "yes" : "no";
     card.dataset.pest = p.pest || "";
     if (p.added) card.dataset.added = p.added;
@@ -167,8 +168,8 @@
     const tags = (p.tags || []).filter(tag => !UTILITY_TAGS.test(tag.label)).map(tag =>
       '<span class="meta-tag' + (tag.style ? ' ' + cleanClass(tag.style) : "") + '">' + esc(tag.label) + '</span>'
     ).join("");
-    const photo = p.photo
-      ? '<img alt="' + esc(p.photoAlt || p.name) + '" loading="lazy" decoding="async" src="' + esc(p.photo) + '">'
+    const photo = coverPhoto
+      ? '<img alt="' + esc(p.photoAlt || p.name) + '" loading="lazy" decoding="async" src="' + esc(coverPhoto) + '">'
       : '<span class="photo-missing">No photo yet</span>';
     const sections = (p.sections || []).map(section =>
       '<section class="box' + (section.style ? ' ' + cleanClass(section.style) : "") + '">' +

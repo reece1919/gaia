@@ -100,7 +100,11 @@
       const section = card.querySelector(".care");
       const img = card.querySelector(".photo img");
       if (!p || !section) return;
-      if (img) covers.set(id, {element:img, original:img.getAttribute("src")});
+      const container = card.querySelector(".photo");
+      if (container) covers.set(id, {
+        card, container, element:img, original:img?.getAttribute("src") || "",
+        placeholder:container.querySelector(".photo-missing")
+      });
       if (!section.querySelector(".plant-photo-journal")) {
         section.insertAdjacentHTML("afterbegin", panel(p));
       }
@@ -151,10 +155,26 @@
       if (cover) {
         const latest=items.find(p=>signed.has(p.object_path));
         const src=latest ? signed.get(latest.object_path) : cover.original;
-        if (cover.element.getAttribute("src") !== src) cover.element.setAttribute("src",src);
-        cover.element.alt=latest ? "Latest private photo for " +
-          (plants.find(p=>String(p.id)===plantId)?.name || "plant") : 
-          (plants.find(p=>String(p.id)===plantId)?.photoAlt || "Plant photo");
+        // A newly added plant may have a placeholder instead of a catalog image.
+        // Create its cover when a signed journal photo arrives; restore on sign-out.
+        if (src) {
+          cover.placeholder?.remove();
+          if (!cover.element) {
+            cover.element = document.createElement("img");
+            cover.element.loading = "lazy";
+            cover.element.decoding = "async";
+            cover.container.appendChild(cover.element);
+          }
+          if (cover.element.getAttribute("src") !== src) cover.element.setAttribute("src",src);
+          cover.element.alt=latest ? "Latest private photo for " +
+            (plants.find(p=>String(p.id)===plantId)?.name || "plant") :
+            (plants.find(p=>String(p.id)===plantId)?.photoAlt || "Plant photo");
+        } else {
+          cover.element?.remove();
+          cover.element = null;
+          if (cover.placeholder) cover.container.appendChild(cover.placeholder);
+        }
+        cover.card.dataset.photo = src ? "yes" : "no";
       }
     });
     document.getElementById("gaia-photo-sync-state").textContent = user ?

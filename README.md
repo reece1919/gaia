@@ -209,3 +209,7 @@ Each plant card has **Pot, soil & growth tracking**, separate from the automated
 **Photo-review failures do not prevent manual observations.** Checking "New growth observed" and saving creates a dated event; it does not change the plant's health category or require a photo analysis.
 
 Source: \`pot-soil.js\` and \`pot-soil.css\`. Tables: \`public.gaia_pot_profiles\` and \`public.gaia_soil_observations\`. RLS is enabled with owner-only policies, no anonymous data access; see \`supabase/gaia_pot_soil_growth.sql\`.
+
+## Card covers for plants without catalog references
+
+`coverPhoto` is an optional display-only image path in `plants.json`; cards prefer it over `photo`. Tali, Wrex, and Cole use stable copies of their October 21 journal uploads already exported in the owner-approved GitHub snapshot. These covers do not add a historical comparison, change the original catalog `photo` field, or mark a photo reviewed. Signed-in journal photos continue to replace the cover. Plants with neither cover nor catalog image can also display a journal cover, reverting to their placeholder when signed out.
