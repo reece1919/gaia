@@ -292,4 +292,10 @@
   }
   document.addEventListener("gaia:ready", event => setup(event.detail?.plants));
   if (window.GAIA_DATA?.plants) setup(window.GAIA_DATA.plants);
+  // Public read-only navigation API. Does not save a new plant order.
+  window.GAIA_COLLECTION_BROWSER = {
+    showCustomOrder: (remember = false) => switchView("manual", Boolean(remember)),
+    showTypeFamily: (remember = false) => switchView("grouped", Boolean(remember)),
+    currentView: () => view
+  };
 })();
