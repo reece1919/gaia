@@ -835,6 +835,28 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 .pronunciation-guide[hidden]{display:none}
 .pronunciation-word,.pronunciation-guide small{display:block}
 .pronunciation-guide small{margin-top:6px;font-size:11px;opacity:.8}
+/* GAIA species reference: general botany, kept distinct from the care journal. */
+.species-info-shortcut{display:inline-flex;align-items:center;margin-top:7px;padding:7px 10px;min-height:40px;font:inherit;font-size:12px;font-weight:700;letter-spacing:.025em;color:#e4d0a4;background:#294238;border:1px solid #758768;border-radius:6px;cursor:pointer}
+.species-info-shortcut:hover{background:#375344}
+.species-info-shortcut:focus-visible,.species-guide>summary:focus-visible,.species-guide a:focus-visible{outline:2px solid #f2d5a0;outline-offset:3px}
+.species-guide{grid-column:1/-1;min-width:0;border:1px solid #7c765a;border-radius:7px;background:#233731;color:#e5e3d2;overflow:hidden}
+.species-guide>summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px 14px;color:#eddbb5;font-family:Georgia,"Times New Roman",serif;font-size:15px;font-weight:700}
+.species-guide>summary::-webkit-details-marker{display:none}
+.species-guide>summary::before{content:"✧";font-size:18px;color:#dabf87}
+.species-guide>summary small{margin-left:auto;font:500 11px system-ui,sans-serif;color:#b9cabc}
+.species-guide>summary::after{content:"＋";font:700 16px system-ui,sans-serif}
+.species-guide[open]>summary::after{content:"−"}
+.species-guide-body{border-top:1px solid #536b59;padding:13px 14px 14px;background:#1c302b}
+.species-guide-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px 18px;margin:0}
+.species-guide-fact{min-width:0}
+.species-guide-fact dt{font-size:10px;text-transform:uppercase;letter-spacing:.07em;color:#c6af81;font-weight:800}
+.species-guide-fact dd{margin:4px 0 0;font-size:13px;line-height:1.45;overflow-wrap:anywhere}
+.species-guide-trait{font-size:13px;line-height:1.55;padding-top:12px;margin:12px 0 0;border-top:1px solid #4a6257;color:#e3e3d4}
+.species-guide-footer{display:flex;flex-direction:column;gap:8px;padding-top:12px}
+.species-guide-footer a{align-self:flex-start;color:#f2d5a0;font-size:12px;font-weight:700;text-underline-offset:3px}
+.species-guide-footer small{font-size:11px;line-height:1.5;color:#abbeb0}
+@media(max-width:440px){.species-guide-grid{grid-template-columns:1fr 1fr;gap:10px}.species-guide>summary small{display:none}.species-info-shortcut{min-height:42px}}
+
 </style>
 <link rel="stylesheet" href="security-mfa.css?v=1.2.1">
 <link rel="stylesheet" href="pot-soil.css?v=20261023-v1">
@@ -1121,7 +1143,8 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 </div>
 <script src="gaia-config.js?v=20261012-sync3"></script>
 <script src="pronunciation.js?v=20261023-v1" defer></script>
-<script src="app.js?v=20261023-common-names1" defer></script>
+<script src="species-guide.js?v=20261023-v1" defer></script>
+<script src="app.js?v=20261023-species-guide1" defer></script>
 <script src="care.js?v=20261013-mfa1" defer></script>
 <script src="pot-soil.js?v=20261023-v1" defer></script>
 <script src="gaia-todoist-checkable.js?v=1" defer></script>
