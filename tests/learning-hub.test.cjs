@@ -117,11 +117,16 @@ test("Compact shell moves, never clones, task/search/card and photo-review UI",(
   const root=new FakeNode();
   const hero=new FakeNode("header", "hero");
   const review=new FakeNode("div","","gaia-review-launch");
-  hero.appendChild(review);
+  const totals=new FakeNode("div","","gaia-hero-stats");
+  hero.append(review, totals);
   root.appendChild(hero);
   const care=new FakeNode("main","gaia-care-center");
   root.appendChild(care);
   const overview=new FakeNode("div","","gaia-care-overview-panel");
+  const flags=new FakeNode("details","","gaia-care-attention-details");
+  const priorityList=new FakeNode("div","","gaia-care-priority-list");
+  flags.appendChild(priorityList);
+  overview.appendChild(flags);
   const clipboard=new FakeNode("section","gaia-clipboard");
   const tasks=new FakeNode("details","gaia-tasks");
   const insights=new FakeNode("details","gaia-insights");
@@ -151,6 +156,10 @@ test("Compact shell moves, never clones, task/search/card and photo-review UI",(
   assert.equal(drawer.querySelector("#gaia-insights"),insights);
   assert.equal(drawer.querySelector(".gaia-review-launch"),review);
   assert.equal(drawer.querySelector(".card-icon-guide"),guide);
+  assert.equal(drawer.querySelector(".gaia-care-attention-details"),flags);
+  assert.equal(flags.querySelector(".gaia-hero-stats"),totals);
+  assert.equal(totals.parentElement,flags);
+  assert.equal(flags.querySelector(".gaia-care-priority-list"),priorityList);
   assert.equal(grid.childNodes[0],originalCard);
   assert.equal(originalCard.childNodes[0],existingPhoto);
   assert.equal(recent.parentElement,care);
