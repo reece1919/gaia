@@ -183,7 +183,10 @@
         "water": "one-two",
         "waterLabel": "1–2″ dry",
         "soil": "well-drained"
-      }
+      },
+      "commonNames": [
+        "Red Banana croton"
+      ]
     },
     {
       "id": "02",
@@ -348,7 +351,11 @@
         "water": "fully-dry",
         "waterLabel": "Fully dry",
         "soil": "gritty"
-      }
+      },
+      "commonNames": [
+        "Ponytail palm",
+        "Elephant-foot tree"
+      ]
     },
     {
       "id": "03",
@@ -513,7 +520,10 @@
         "water": "fully-dry",
         "waterLabel": "Fully dry",
         "soil": "gritty"
-      }
+      },
+      "commonNames": [
+        "Pincushion cactus"
+      ]
     },
     {
       "id": "04",
@@ -706,7 +716,10 @@
         "water": "moist",
         "waterLabel": "Keep moist",
         "soil": "carnivorous"
-      }
+      },
+      "commonNames": [
+        "Venus flytrap"
+      ]
     },
     {
       "id": "05",
@@ -866,7 +879,10 @@
         "water": "one",
         "waterLabel": "1″ dry",
         "soil": "well-drained"
-      }
+      },
+      "commonNames": [
+        "Parlor palm"
+      ]
     },
     {
       "id": "06",
@@ -1042,7 +1058,10 @@
         "water": "cup",
         "waterLabel": "Cup + surface",
         "soil": "bromeliad"
-      }
+      },
+      "commonNames": [
+        "Guzmania bromeliad"
+      ]
     },
     {
       "id": "07",
@@ -1202,7 +1221,10 @@
         "water": "fully-dry",
         "waterLabel": "Fully dry",
         "soil": "gritty"
-      }
+      },
+      "commonNames": [
+        "Aloe vera"
+      ]
     },
     {
       "id": "08",
@@ -1362,7 +1384,10 @@
         "water": "one-two",
         "waterLabel": "1–2″ dry",
         "soil": "well-drained"
-      }
+      },
+      "commonNames": [
+        "Madagascar dragon tree"
+      ]
     },
     {
       "id": "09",
@@ -1522,7 +1547,10 @@
         "water": "one-two",
         "waterLabel": "1–2″ dry",
         "soil": "well-drained"
-      }
+      },
+      "commonNames": [
+        "Dusty miller"
+      ]
     },
     {
       "id": "10",
@@ -1647,7 +1675,10 @@
         "water": "two-three",
         "waterLabel": "2–3″ dry",
         "soil": "airy"
-      }
+      },
+      "commonNames": [
+        "Bird of paradise"
+      ]
     },
     {
       "id": "11",
@@ -1781,7 +1812,11 @@
         "water": "one-two",
         "waterLabel": "1–2″ dry",
         "soil": "chunky"
-      }
+      },
+      "commonNames": [
+        "Flamingo flower",
+        "Anthurium"
+      ]
     },
     {
       "id": "12",
@@ -1902,7 +1937,11 @@
         "water": "half-one",
         "waterLabel": "½–1″ dry",
         "soil": "moisture"
-      }
+      },
+      "commonNames": [
+        "Nerve plant",
+        "Mosaic plant"
+      ]
     },
     {
       "id": "13",
@@ -2027,7 +2066,10 @@
         "water": "one-two",
         "waterLabel": "1–2″ dry",
         "soil": "chunky"
-      }
+      },
+      "commonNames": [
+        "Ring of Fire philodendron"
+      ]
     },
     {
       "id": "14",
@@ -2152,7 +2194,10 @@
         "water": "one",
         "waterLabel": "1″ dry",
         "soil": "moisture"
-      }
+      },
+      "commonNames": [
+        "Peace lily"
+      ]
     },
     {
       "id": "15",
@@ -2286,7 +2331,10 @@
         "water": "two-three",
         "waterLabel": "2–3″ dry",
         "soil": "airy"
-      }
+      },
+      "commonNames": [
+        "Money tree"
+      ]
     },
     {
       "id": "16",
@@ -2420,7 +2468,10 @@
         "water": "one-two",
         "waterLabel": "1–2″ dry",
         "soil": "chunky"
-      }
+      },
+      "commonNames": [
+        "Marble Queen pothos"
+      ]
     },
     {
       "id": "17",
@@ -2554,7 +2605,10 @@
         "water": "one-two",
         "waterLabel": "1–2″ dry",
         "soil": "airy"
-      }
+      },
+      "commonNames": [
+        "Gold Dust croton"
+      ]
     },
     {
       "id": "18",
@@ -2675,7 +2729,10 @@
         "water": "silver-roots",
         "waterLabel": "Silver roots",
         "soil": "orchid"
-      }
+      },
+      "commonNames": [
+        "Moth orchid"
+      ]
     },
     {
       "id": "19",
@@ -2796,7 +2853,11 @@
         "water": "half-one",
         "waterLabel": "½–1″ dry",
         "soil": "moisture"
-      }
+      },
+      "commonNames": [
+        "Prayer plant",
+        "Calathea"
+      ]
     },
     {
       "id": "20",
@@ -2921,7 +2982,10 @@
         "water": "one",
         "waterLabel": "1″ dry",
         "soil": "well-drained"
-      }
+      },
+      "commonNames": [
+        "Aluminum plant"
+      ]
     },
     {
       "id": "21",
@@ -3042,7 +3106,10 @@
         "water": "one-two",
         "waterLabel": "1–2″ dry",
         "soil": "well-drained"
-      }
+      },
+      "commonNames": [
+        "Purple heart"
+      ]
     },
     {
       "id": "22",
@@ -3163,7 +3230,11 @@
         "water": "fully-dry",
         "waterLabel": "Fully dry",
         "soil": "gritty"
-      }
+      },
+      "commonNames": [
+        "Hens and chicks",
+        "Houseleek"
+      ]
     },
     {
       "id": "23",
@@ -3301,7 +3372,10 @@
         "water": "cup",
         "waterLabel": "Cup + surface",
         "soil": "bromeliad"
-      }
+      },
+      "commonNames": [
+        "Guzmania bromeliad"
+      ]
     },
     {
       "id": "24",
@@ -3439,7 +3513,10 @@
         "water": "one-two",
         "waterLabel": "1–2″ dry",
         "soil": "chunky"
-      }
+      },
+      "commonNames": [
+        "Heartleaf philodendron"
+      ]
     },
     {
       "id": "25",
@@ -3560,7 +3637,11 @@
         "water": "almost-dry",
         "waterLabel": "Almost dry",
         "soil": "gritty"
-      }
+      },
+      "commonNames": [
+        "Ruby necklace",
+        "String of rubies"
+      ]
     },
     {
       "id": "26",
@@ -3681,7 +3762,10 @@
         "water": "one",
         "waterLabel": "1″ dry",
         "soil": "well-drained"
-      }
+      },
+      "commonNames": [
+        "Speckled spurflower"
+      ]
     },
     {
       "id": "27",
@@ -3802,7 +3886,10 @@
         "water": "one",
         "waterLabel": "1″ dry",
         "soil": "well-drained"
-      }
+      },
+      "commonNames": [
+        "Joyweed"
+      ]
     },
     {
       "id": "28",
@@ -3923,7 +4010,10 @@
         "water": "almost-dry",
         "waterLabel": "Almost dry",
         "soil": "gritty"
-      }
+      },
+      "commonNames": [
+        "Zebra haworthia"
+      ]
     },
     {
       "id": "29",
@@ -4044,7 +4134,10 @@
         "water": "water-grown",
         "waterLabel": "Refresh weekly",
         "soil": "water-grown"
-      }
+      },
+      "commonNames": [
+        "Lucky bamboo"
+      ]
     },
     {
       "id": "30",
@@ -4169,7 +4262,10 @@
         "water": "one-two",
         "waterLabel": "1–2″ dry",
         "soil": "chunky"
-      }
+      },
+      "commonNames": [
+        "Arrowhead plant"
+      ]
     },
     {
       "id": "31",
@@ -4294,7 +4390,10 @@
         "water": "soak",
         "waterLabel": "Weekly soak",
         "soil": "no-soil"
-      }
+      },
+      "commonNames": [
+        "Air plant"
+      ]
     },
     {
       "id": "32",
@@ -4419,7 +4518,10 @@
         "water": "half-one",
         "waterLabel": "½–1″ dry",
         "soil": "moisture"
-      }
+      },
+      "commonNames": [
+        "Blue star fern"
+      ]
     },
     {
       "id": "33",
@@ -4540,7 +4642,10 @@
         "water": "one",
         "waterLabel": "1″ dry",
         "soil": "well-drained"
-      }
+      },
+      "commonNames": [
+        "Speckled spurflower"
+      ]
     },
     {
       "id": "34",
@@ -4665,7 +4770,10 @@
         "water": "one",
         "waterLabel": "1″ dry",
         "soil": "well-drained"
-      }
+      },
+      "commonNames": [
+        "Speckled spurflower"
+      ]
     },
     {
       "id": "35",
@@ -4786,7 +4894,10 @@
         "water": "one",
         "waterLabel": "1″ dry",
         "soil": "moisture"
-      }
+      },
+      "commonNames": [
+        "Friendship plant"
+      ]
     },
     {
       "id": "36",
@@ -4911,7 +5022,11 @@
         "water": "two-three",
         "waterLabel": "2–3″ dry",
         "soil": "chunky"
-      }
+      },
+      "commonNames": [
+        "Thai Constellation monstera",
+        "Swiss cheese plant"
+      ]
     },
     {
       "id": "37",
@@ -5032,7 +5147,11 @@
         "water": "one-two",
         "waterLabel": "1–2″ dry",
         "soil": "chunky"
-      }
+      },
+      "commonNames": [
+        "Thai Constellation monstera",
+        "Swiss cheese plant"
+      ]
     },
     {
       "id": "38",
@@ -5153,7 +5272,11 @@
         "water": "one-two",
         "waterLabel": "1–2″ dry",
         "soil": "chunky"
-      }
+      },
+      "commonNames": [
+        "Thai Constellation monstera",
+        "Swiss cheese plant"
+      ]
     },
     {
       "id": "39",
@@ -5274,7 +5397,10 @@
         "water": "almost-dry",
         "waterLabel": "Almost dry",
         "soil": "airy"
-      }
+      },
+      "commonNames": [
+        "Raven ZZ plant"
+      ]
     },
     {
       "id": "40",
@@ -5395,7 +5521,10 @@
         "water": "one",
         "waterLabel": "1″ dry",
         "soil": "airy"
-      }
+      },
+      "commonNames": [
+        "False aralia"
+      ]
     },
     {
       "id": "41",
@@ -5516,7 +5645,10 @@
         "water": "almost-dry",
         "waterLabel": "Almost dry",
         "soil": "gritty"
-      }
+      },
+      "commonNames": [
+        "Succulent bush senecio"
+      ]
     },
     {
       "id": "42",
@@ -5637,7 +5769,10 @@
         "water": "one",
         "waterLabel": "1″ dry",
         "soil": "well-drained"
-      }
+      },
+      "commonNames": [
+        "Inch plant"
+      ]
     },
     {
       "id": "43",
@@ -5758,7 +5893,10 @@
         "water": "one-two",
         "waterLabel": "1–2″ dry",
         "soil": "airy"
-      }
+      },
+      "commonNames": [
+        "Siam Aurora Chinese evergreen"
+      ]
     },
     {
       "id": "44",
@@ -5879,7 +6017,11 @@
         "water": "one-two",
         "waterLabel": "1–2″ dry",
         "soil": "airy"
-      }
+      },
+      "commonNames": [
+        "Grape ivy",
+        "Oak leaf ivy"
+      ]
     },
     {
       "id": "45",
@@ -6004,7 +6146,11 @@
         "water": "one-two",
         "waterLabel": "1–2″ dry",
         "soil": "well-drained"
-      }
+      },
+      "commonNames": [
+        "Scented geranium",
+        "Citronella plant"
+      ]
     },
     {
       "id": "46",
@@ -6170,7 +6316,10 @@
         "water": "one-two",
         "waterLabel": "1–2″ dry",
         "soil": "well-drained"
-      }
+      },
+      "commonNames": [
+        "Nanouk inch plant"
+      ]
     },
     {
       "id": "47",
@@ -6336,7 +6485,10 @@
         "water": "fully-dry",
         "waterLabel": "Fully dry",
         "soil": "gritty"
-      }
+      },
+      "commonNames": [
+        "Zebra haworthia"
+      ]
     },
     {
       "id": "48",
@@ -6502,7 +6654,10 @@
         "water": "one-two",
         "waterLabel": "1–2″ dry",
         "soil": "well-drained"
-      }
+      },
+      "commonNames": [
+        "Variegated spider plant"
+      ]
     }
   ],
   "dashboardTasks": [

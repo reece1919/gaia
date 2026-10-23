@@ -124,6 +124,7 @@
     card.dataset.name = p.searchName || p.name || "";
     card.dataset.plantId = p.id;
     card.dataset.species = p.searchSpecies || p.species || "";
+    card.dataset.commonNames = (p.commonNames || []).join(" ");
     card.dataset.status = p.status || "";
     card.dataset.photo = p.photo ? "yes" : "no";
     card.dataset.new = p.newAddition ? "yes" : "no";
@@ -156,6 +157,7 @@
     card.innerHTML =
       '<summary><div class="photo">' + photo + '</div><div class="summary-body">' +
       '<div class="row"><div class="title-block"><div class="name">' + esc(p.name) + '</div>' +
+      (p.commonNames?.length ? '<div class="common-names">' + esc(p.commonNames.join(' · ')) + '</div>' : '') +
       '<div class="species">' + esc(p.species) + '</div>' + pronunciationGuide(p) +
       (tags ? '<div class="meta-tags">' + tags + '</div>' : '') + '</div>' +
       '<span class="badge">' + esc(p.status) + '</span></div>' +
@@ -172,7 +174,7 @@
     const q = (search.value || "").trim().toLowerCase();
     let count = 0;
     for (const card of cards) {
-      const haystack = (card.dataset.name + " " + card.dataset.species).toLowerCase();
+      const haystack = (card.dataset.name + " " + card.dataset.species + " " + card.dataset.commonNames).toLowerCase();
       const show = !q || haystack.includes(q);
       card.hidden = !show;
       if (show) count++;
