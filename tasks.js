@@ -142,7 +142,7 @@
     }
     status.textContent=issue || (loading ? "Syncing tasks…" : ready ?
       "" :
-      "Sign in under Account & backup at the bottom to add tasks and track completion.");
+      "Sign in under Care → Tools & reviews → Settings & Backup to add tasks and track completion.");
     status.classList.toggle("gaia-task-error",!!issue);
   }
   async function sync() {
