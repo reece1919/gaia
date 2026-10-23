@@ -51,6 +51,10 @@
       if (byId.has(id)) fragment.appendChild(byId.get(id));
     });
     grid.appendChild(fragment);
+    // Reapply the taxonomy view after a saved-order sync without changing that saved order.
+    document.dispatchEvent(new CustomEvent("gaia:order-applied", {
+      detail: {plantIds:normalize(ids)}
+    }));
   }
   function updateButton() {
     button.textContent = mode ? "Done" : "Rearrange";
