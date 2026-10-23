@@ -1,0 +1,92 @@
+/* GAIA compact shell: one purposeful action bar before original plant collection.
+   No cards, photos, care records or form identifiers are cloned. */
+.gaia-tablet-desk{display:none!important} /* Hub navigation supersedes duplicate tablet shortcuts. */
+.gaia-hub-tab-short{display:none}
+.gaia-care-attention-details{margin:0 0 9px;background:#23392f;border:1px solid #607e67;border-radius:8px}
+.gaia-care-attention-details>summary{cursor:pointer;display:list-item;list-style:inside disclosure-closed;padding:11px 13px;color:#ecd4a0;font:750 13px/1.5 system-ui,sans-serif}
+.gaia-care-attention-details[open]>summary{list-style-type:disclosure-open;border-bottom:1px solid #5a765f}
+.gaia-care-attention-details>.gaia-care-priority-list{border:0;border-radius:0 0 7px 7px;background:#1c322b}
+.gaia-care-utilities{margin:8px 0 10px;background:#20392e;border:1px solid #608067;border-radius:8px}
+.gaia-care-utilities>summary{cursor:pointer;list-style:inside disclosure-closed;color:#eedfbd;padding:12px 14px;min-height:45px;display:list-item;font:750 13px system-ui,sans-serif}
+.gaia-care-utilities>summary::marker{color:#e1c68e}
+.gaia-care-utilities[open]>summary{list-style-type:disclosure-open;border-bottom:1px solid #58715c}
+.gaia-care-utilities-summary strong{font-weight:750}
+.gaia-care-utilities-summary small{font-size:11px;font-weight:450;color:#c1cfbe;margin-left:9px}
+.gaia-care-utilities-content{padding:10px 13px 13px}
+.gaia-care-utilities-note{margin:0 0 10px;color:#c4d1be;font:400 12px/1.5 system-ui,sans-serif}
+#gaia-care-utilities .gaia-review-launch{margin:0 0 9px}
+#gaia-care-utilities #gaia-clipboard{margin:8px 0}
+#gaia-care-utilities #gaia-insights{margin:8px 0}
+#gaia-care-utilities .card-icon-guide{margin:8px 0}
+.gaia-care-attention-details>summary:focus-visible,.gaia-care-utilities>summary:focus-visible{outline:2px solid #eed095;outline-offset:2px}
+#gaia-care-center .controls{margin-top:9px}
+#gaia-care-center #grid{scroll-margin-top:76px}
+#gaia-care-center .card{scroll-margin-top:76px}
+
+@media(max-width:699px){
+  /* A readable ~two-row masthead: collection brand + key counts; Ask GAIA stays visible. */
+  .gaia-hero{padding:11px 12px!important;margin:0 0 7px!important;border-radius:8px!important;min-height:0!important}
+  .gaia-hero::before{inset:5px}
+  .gaia-hero .hero-copy{max-width:none;position:relative}
+  .gaia-hero .hero-brand{gap:8px;align-items:center;padding-right:94px}
+  .gaia-hero .hero-crest{flex:0 0 32px;width:32px}
+  .gaia-hero .hero-eyebrow{display:none}
+  .gaia-hero h1{font-size:32px!important;line-height:1.05;letter-spacing:.085em}
+  .gaia-hero .hero-tagline{font-size:10px!important;letter-spacing:.015em;margin:1px 0 0;white-space:nowrap}
+  .gaia-hero .hero-botanical,.gaia-hero .hero-divider,
+  .gaia-hero .hero-description,.gaia-hero .sub{display:none!important}
+  .gaia-hero .hero-ask-link{
+    position:absolute;right:0;top:2px;margin:0!important;min-height:37px!important;
+    padding:8px 9px!important;font-size:11px!important;gap:0!important;
+    white-space:nowrap;border-radius:7px;z-index:3
+  }
+  .gaia-hero .gaia-link-star,.gaia-hero .gaia-link-arrow{display:none!important}
+  .gaia-hero-stats{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;
+    gap:5px!important;margin-top:9px!important;max-width:none!important}
+  .gaia-hero-stat,.gaia-hero-stat-attention{flex:none!important;min-width:0!important;padding:7px 6px!important;gap:2px!important}
+  .gaia-hero-stat small{font:700 9px/1.2 system-ui,sans-serif!important;letter-spacing:0!important}
+  .gaia-hero-stat strong{font-size:19px!important;line-height:1.1}
+  .gaia-hero-stat-attention span{display:none!important}
+  /* Only the three primary destinations remain; no duplicate field desk. */
+  #gaia-hub-tabs{
+    position:sticky;top:env(safe-area-inset-top,0px);z-index:60;
+    background:#152920;border:1px solid #476450;border-radius:9px;
+    padding:5px;gap:5px;margin:0 0 8px!important;box-shadow:0 4px 12px rgba(0,0,0,.22)
+  }
+  .gaia-hub-tab{min-height:42px!important;padding:9px 4px!important;border-radius:6px!important;font-size:12px!important}
+  .gaia-hub-tab-full{display:none}
+  .gaia-hub-tab-short{display:inline}
+  .gaia-care-overview-panel{margin:0 0 7px}
+  .gaia-care-overview-panel .gaia-hub-section-head{border:0;background:transparent;padding:3px 2px 5px;margin:0}
+  .gaia-care-overview-panel .gaia-eyebrow{display:none}
+  .gaia-care-overview-panel .gaia-hub-section-head h2{font-size:18px;line-height:1.1;margin:2px 0}
+  .gaia-care-overview-panel .gaia-hub-section-head p{display:none}
+  .gaia-care-attention-details{margin-bottom:6px}
+  .gaia-care-attention-details>summary{padding:10px 11px;font-size:12px}
+  #gaia-tasks{margin:5px 0!important}
+  #gaia-care-utilities{margin:5px 0 9px}
+  .gaia-care-utilities>summary{min-height:43px;padding:11px}
+  .gaia-care-utilities-summary small{font-size:10px;margin-left:6px}
+  .gaia-care-utilities-content{padding:9px}
+  #gaia-care-center .controls{margin:7px 0 8px}
+  #gaia-care-center .controls #search{min-height:44px}
+  .gaia-collection-toolbar{gap:5px;padding:6px 7px;margin:6px 0 9px}
+  .gaia-collection-toolbar-label,.gaia-collection-view-status{display:none!important}
+  .gaia-collection-toolbar button{font-size:11px;padding:7px 8px;min-height:38px}
+  #gaia-order-toggle{min-height:38px!important}
+  #gaia-care-center .card{scroll-margin-top:70px}
+  .gaia-hub-education .gaia-hub-section-head{padding:10px 12px;margin-bottom:9px}
+  .gaia-hub-education .gaia-hub-section-head h2{font-size:21px}
+}
+@media(max-width:370px){
+  .gaia-hero .hero-brand{padding-right:85px;gap:6px}
+  .gaia-hero .hero-crest{flex-basis:29px;width:29px}
+  .gaia-hero h1{font-size:28px!important}
+  .gaia-hero .hero-tagline{font-size:9px!important}
+  .gaia-hero .hero-ask-link{padding:7px 7px!important;font-size:10px!important}
+  .gaia-care-utilities-summary small{display:block;margin:3px 0 0 18px}
+}
+@media(min-width:700px) and (max-width:1280px){
+  /* Remove overlapping tablet-only quicklink row; the hub tabs do the same job. */
+  #gaia-hub-tabs{margin-top:10px}
+}
