@@ -2,9 +2,9 @@
   "schema_version": 1,
   "read_only": true,
   "source": "GAIA owner-approved reference snapshot",
-  "generated_at": "2026-10-24T21:33:52.922Z",
-  "synced_at": "2026-10-24T21:33:52.970178+00:00",
-  "plant_count": 50,
+  "generated_at": "2026-10-24T23:37:30.751Z",
+  "synced_at": "2026-10-24T23:37:30.781144+00:00",
+  "plant_count": 53,
   "comparison_ready_count": 42,
   "comparison_candidate_count": 57,
   "uploaded_photo_count": 62,
@@ -4093,6 +4093,63 @@
         "ready": false,
         "latest_image": "gaia-reference/photos/50-1a6562590e-latest_photo.webp",
         "latest_captured_on": "2026-10-23",
+        "candidates": []
+      }
+    },
+    {
+      "plant_id": "51",
+      "name": "Moxxi",
+      "species": "Coleus scutellarioides ‘Trailing Plum’",
+      "reference_photo": null,
+      "latest_photo": null,
+      "previous_photo": null,
+      "photos": [],
+      "pot": null,
+      "soil_observations": [],
+      "care_events": [],
+      "reference_image": null,
+      "comparison": {
+        "ready": false,
+        "latest_image": null,
+        "latest_captured_on": null,
+        "candidates": []
+      }
+    },
+    {
+      "plant_id": "52",
+      "name": "Celebrimbor",
+      "species": "Heptapleurum arboricola (syn. Schefflera arboricola)",
+      "reference_photo": null,
+      "latest_photo": null,
+      "previous_photo": null,
+      "photos": [],
+      "pot": null,
+      "soil_observations": [],
+      "care_events": [],
+      "reference_image": null,
+      "comparison": {
+        "ready": false,
+        "latest_image": null,
+        "latest_captured_on": null,
+        "candidates": []
+      }
+    },
+    {
+      "plant_id": "53",
+      "name": "Delilah",
+      "species": "Gynura aurantiaca",
+      "reference_photo": null,
+      "latest_photo": null,
+      "previous_photo": null,
+      "photos": [],
+      "pot": null,
+      "soil_observations": [],
+      "care_events": [],
+      "reference_image": null,
+      "comparison": {
+        "ready": false,
+        "latest_image": null,
+        "latest_captured_on": null,
         "candidates": []
       }
     }
