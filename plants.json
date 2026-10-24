@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "Oct 21, 2026",
+  "updatedAt": "Oct 23, 2026",
   "summaryNote": "tap for care, priorities & history",
   "recentCare": {
     "dateLabel": "OCT 10–12, 2026",
@@ -6661,6 +6661,364 @@
         "Variegated spider plant"
       ],
       "coverPhoto": "48-cole-spider-plant-cover.webp"
+    },
+    {
+      "id": "49",
+      "name": "Legion",
+      "species": "Dracaena sanderiana",
+      "searchName": "legion lucky bamboo dracaena sanderiana mass effect",
+      "searchSpecies": "dracaena sanderiana lucky bamboo",
+      "status": "Good",
+      "photo": "",
+      "photoAlt": "Legion · lucky bamboo in a glass pebble-filled water vessel · first photographed Oct 23, 2026",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-10-23",
+      "tags": [
+        {
+          "style": "",
+          "label": "MEDIUM–BRIGHT"
+        },
+        {
+          "style": "",
+          "label": "WATER-GROWN"
+        },
+        {
+          "style": "",
+          "label": "DRACAENA"
+        },
+        {
+          "style": "",
+          "label": "BIOWARE TRIBUTE"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Find a permanent location in medium to bright indirect light. Check that the visible orange roots remain submerged while upper canes stay above water. Check the jar for cloudiness and inspect new growth for pests.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Multiple green cane stalks with upright, fresh-looking lime-green shoots. Orange roots are visible among decorative pebbles in a transparent glass jar. No obvious widespread yellowing or cane collapse in the Oct 23 photo; root firmness, water quality, and exact level were not independently checked.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Grow in clean water with the roots submerged and only the lowest cane portions in water. Top off as needed and replace the water about weekly; rinse the jar and stones if film or cloudiness develops. Filtered or low-mineral water can help if leaf tips brown.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Medium to bright indirect light, avoiding harsh afternoon sun. Rotate occasionally if shoots lean toward the light.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Water-grown lucky bamboo needs very little fertilizer. If growth is active, use only a tiny fraction of a product's labeled rate for hydroponic/water culture; overfertilizing can damage roots.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Photographed indoors in a glass pebble jar on Oct 23; permanent GAIA location not recorded.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "No soil repot needed while water-grown. Move to a clean vessel if the jar becomes crowded or difficult to clean; preserve roots and avoid burying much of the cane.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "No soil: decorative mixed pebbles supporting the stalks in water.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Watch for yellowing or soft stalks, brown tips, algae, cloudy water, and root decline. Inspect new growth and leaf axils for pests.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PROPAGATION",
+          "bodyHtml": "Healthy shoots with nodes may root as cuttings in clean water. Avoid cutting the main canes until established and only use clean tools.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PEST CHECK",
+          "bodyHtml": "New arrival; no confirmed inspection or treatment. Check leaves and canes before placing near plants previously affected by spider mites.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 23, 2026",
+            "style": ""
+          },
+          {
+            "label": "Added to collection",
+            "valueHtml": "Oct 23, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Arrival photo shared in chat Oct 23; no GAIA photo-journal review recorded",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Legion",
+            "style": ""
+          },
+          {
+            "label": "Name inspiration",
+            "valueHtml": "Legion · Mass Effect",
+            "style": ""
+          },
+          {
+            "label": "Last watered / water refreshed",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Transparent glass jar with mixed decorative pebbles, water-grown; vessel diameter not measured",
+            "style": ""
+          },
+          {
+            "label": "Current substrate",
+            "valueHtml": "Pebbles and water; no soil",
+            "style": ""
+          },
+          {
+            "label": "Pest status",
+            "valueHtml": "Unconfirmed; inspect during acclimation",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "",
+            "bodyHtml": "<strong>Oct 23, 2026 · </strong>Named Legion, plant #49, after the Mass Effect character."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 23, 2026 · </strong>Arrival photo showed upright canes and new shoots in a pebble-filled glass jar. Care profile recorded from the photo; water quality, recent refills, and root health remain unverified."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "dracaena",
+        "light": "medium",
+        "water": "water-grown",
+        "waterLabel": "Refresh weekly",
+        "soil": "water-grown"
+      },
+      "commonNames": [
+        "Lucky bamboo"
+      ]
+    },
+    {
+      "id": "50",
+      "name": "Sovereign",
+      "species": "Monstera deliciosa",
+      "searchName": "sovereign monstera deliciosa split leaf monstera mass effect reaper",
+      "searchSpecies": "monstera deliciosa",
+      "status": "Good",
+      "photo": "",
+      "photoAlt": "Sovereign · Monstera deliciosa with fenestrated mature leaves and new unfurling leaf · photographed Oct 23, 2026",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-10-23",
+      "tags": [
+        {
+          "style": "",
+          "label": "BRIGHT INDIRECT"
+        },
+        {
+          "style": "",
+          "label": "AROID"
+        },
+        {
+          "style": "",
+          "label": "CLIMBING MONSTERA"
+        },
+        {
+          "style": "",
+          "label": "BIOWARE TRIBUTE"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Inspect leaf undersides and petiole joints for thrips, spider mites, and mealybugs before grouping with the other plants. Confirm the inner pot has drainage and check current mix moisture before watering. Allow the unfurling leaf to open naturally; no immediate repot needed if drainage and roots are healthy.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Full, mature green foliage with characteristic splits and enclosed fenestrations, plus a fresh leaf visibly unfurling in the Oct 23 arrival photo. No obvious widespread chlorosis or collapse. Exact root condition, moisture level, and pest status cannot be determined from the photo.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Check the upper 1–2 inches of mix and the pot's weight before watering. When partly dry, water thoroughly and allow all excess to drain. Avoid standing water inside any decorative outer pot; use measured moisture readings and plant response rather than a fixed calendar.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Provide bright indirect light near a bright window or suitable grow light; gentle morning sun is usually tolerated after gradual acclimation. Avoid prolonged harsh direct sun and dim corners.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "No immediate fertilizer required during acclimation. During active growth, use a balanced houseplant fertilizer according to label instructions at a conservative rate; reduce feeding in lower-light months.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Photographed temporarily on a kitchen counter Oct 23; intended permanent home location not yet recorded.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Leave in the current container while acclimating if drainage is adequate and the plant is not rootbound. When indicated, repot one size larger into a draining inner pot and consider a sturdy moss pole or plank for climbing.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Current nursery mix composition unverified. When eventually repotting, use an airy aroid blend such as 2 parts indoor potting mix, 1 part orchid bark, and 1 part perlite or pumice.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Monitor the new leaf's unfurling, any yellowing or dark wet spots, soil drying time, and pests hiding in leaf folds. Older leaves can retain cosmetic scars without indicating an active problem.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PROPAGATION",
+          "bodyHtml": "Stem cuttings need at least one node; a leaf or petiole alone will not form a new plant. Root cuttings in water or an airy medium when the plant is established.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PEST CHECK",
+          "bodyHtml": "New arrival. Inspect carefully for thrips and mites, especially leaf undersides, emerging foliage, and petiole sheaths. Keep separated during initial observation, since pest absence has not been verified.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 23, 2026",
+            "style": ""
+          },
+          {
+            "label": "Added to collection",
+            "valueHtml": "Oct 23, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Arrival photo shared in chat Oct 23; no GAIA photo-journal review recorded",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Sovereign",
+            "style": ""
+          },
+          {
+            "label": "Name inspiration",
+            "valueHtml": "Sovereign, the Reaper · Mass Effect",
+            "style": ""
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "White ridged pot shown with plant; inner pot drainage and measured diameter unconfirmed",
+            "style": ""
+          },
+          {
+            "label": "Current substrate",
+            "valueHtml": "Brown nursery-style potting medium; components not identified",
+            "style": ""
+          },
+          {
+            "label": "Pest status",
+            "valueHtml": "Unconfirmed; inspect during acclimation",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "",
+            "bodyHtml": "<strong>Oct 23, 2026 · </strong>Named Sovereign, plant #50, after the Mass Effect Reaper."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 23, 2026 · </strong>Arrival image shows fenestrated leaves and emerging new growth. Actual soil moisture, root health, drainage holes, fertilizer history, and pest status have not been verified."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "aroid",
+        "light": "bright-indirect",
+        "water": "one-two",
+        "waterLabel": "1–2″ dry",
+        "soil": "chunky"
+      },
+      "commonNames": [
+        "Monstera",
+        "Swiss cheese plant",
+        "Split-leaf monstera"
+      ]
     }
   ],
   "dashboardTasks": [
