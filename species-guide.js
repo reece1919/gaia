@@ -45,6 +45,9 @@
     pelargonium: {taxon:"Pelargonium",family:"Geraniaceae",habit:"Aromatic herbaceous subshrub",trait:"Scented leaves release oils when brushed; the 'citronella' trade name does not establish mosquito-control effectiveness.",propagation:"Stem cuttings"},
     nanouk: {taxon:"Tradescantia",family:"Commelinaceae",habit:"Trailing succulent-stemmed ornamental",trait:"'Nanouk' is selected for pink, cream and green foliage; the trade cultivar label is not a full species identification.",propagation:"Stem cuttings"},
     spider: {taxon:"Chlorophytum comosum",family:"Asparagaceae",habit:"Clumping perennial with arching leaves",trait:"Mature plants often form hanging plantlets on runners, especially in favorable growing conditions.",propagation:"Root the runner plantlets or divide"}
+    ,coleus: {taxon:"Coleus scutellarioides",family:"Lamiaceae",habit:"Tender herbaceous perennial grown for variegated foliage",trait:"Coleus cultivars display pigment patterns that respond to light. Pinched shoot tips often branch, and cuttings root readily.",propagation:"Stem tip cuttings"},
+    umbrella: {taxon:"Heptapleurum arboricola (syn. Schefflera arboricola)",family:"Araliaceae",habit:"Woody evergreen tropical shrub or small tree",trait:"Each umbrella-like leaf is palmately compound, with several leaflets radiating from one point. Not a true palm.",propagation:"Stem cuttings"},
+    purplepassion: {taxon:"Gynura aurantiaca",family:"Asteraceae",habit:"Velvety herbaceous perennial, spreading to trailing with age",trait:"Fine purple hairs cover the foliage and create its velvety violet appearance. The plant belongs to the daisy family despite its unusual foliage.",propagation:"Stem tip cuttings"}
   };
   const byPlant = {
     "01":"croton","02":"ponytail","03":"mammillaria","04":"flytrap","05":"parlor","06":"guzmania",
@@ -55,7 +58,8 @@
     "29":"luckybamboo","30":"syngonium","31":"tillandsia","32":"bluestar","33":"plectranthus",
     "34":"plectranthus","35":"friendship","36":"monstera","37":"monstera","38":"monstera",
     "39":"zz","40":"falsearalia","41":"curio","42":"zebrina","43":"aglaonema","44":"cissus",
-    "45":"pelargonium","46":"nanouk","47":"haworthiopsis","48":"spider"
+    "45":"pelargonium","46":"nanouk","47":"haworthiopsis","48":"spider",
+    "51":"coleus","52":"umbrella","53":"purplepassion"
   };
   window.GAIA_SPECIES_GUIDE = Object.freeze({taxa,byPlant});
 })();
