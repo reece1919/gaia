@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "Oct 23, 2026",
+  "updatedAt": "Oct 24, 2026",
   "summaryNote": "tap for care, priorities & history",
   "recentCare": {
     "dateLabel": "OCT 10–12, 2026",
@@ -7021,6 +7021,537 @@
         "Split-leaf monstera"
       ],
       "coverPhoto": "gaia-reference/photos/50-1a6562590e-latest_photo.webp"
+    },
+    {
+      "id": "51",
+      "name": "Moxxi",
+      "species": "Coleus scutellarioides ‘Trailing Plum’",
+      "searchName": "moxxi coleus trailing plum pink burgundy trailing",
+      "searchSpecies": "coleus scutellarioides trailing plum",
+      "status": "Watch",
+      "photo": "",
+      "photoAlt": "Moxxi · trailing plum coleus · arrival photo shared Oct 24, 2026",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-10-24",
+      "tags": [
+        {
+          "style": "",
+          "label": "BRIGHT INDIRECT"
+        },
+        {
+          "style": "",
+          "label": "COLEUS"
+        },
+        {
+          "style": "",
+          "label": "TRAILING"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Inspect undersides and growing tips for pests; check the nursery pot's drainage and soil moisture. Choose a bright spot and let the plant acclimate before pruning or repotting. Later, pinch healthy tips if fuller branching is desired.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Pink-edged, plum-colored foliage on branching stems. Upper stems look stretched with leaves spaced apart; dense smaller growth is present lower down. No reliable root or soil assessment from the Oct 24 photograph.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Check the top inch of soil; water when it begins to dry, then allow surplus to drain. Do not allow the entire root ball to remain bone-dry for long or keep the pot continuously soggy.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Bright indirect light or gentle morning sun to retain leaf coloring. Acclimate gradually to direct light; avoid harsh hot afternoon sun and dim placement that encourages long internodes.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "After acclimation, fertilize during active growth with a balanced houseplant fertilizer, following the product label conservatively. Avoid fertilizing a stressed or recently moved plant.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Arrival photographed on Oct 24, 2026; permanent location not yet recorded.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Keep in the nursery pot during acclimation if it drains freely. Repot only if the root system or drying behavior indicates a need, using a slightly larger draining inner pot.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "A moisture-retentive but aerated indoor potting mix with some perlite is suitable. Existing mix composition unconfirmed.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Track stem extension, leaf spacing and new branching. Check for aphids, whiteflies, mealybugs and mites; sudden wilting can indicate both too-dry and too-wet roots.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PROPAGATION",
+          "bodyHtml": "Take short stem-tip cuttings with nodes; root in water or moist medium. Pinching established stems encourages a fuller shape.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PEST CHECK",
+          "bodyHtml": "New addition; pest status not verified. Inspect leaves, stems and growing tips and keep separated from plants with recent mite activity during initial observation.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 24, 2026",
+            "style": ""
+          },
+          {
+            "label": "Added to collection",
+            "valueHtml": "Oct 24, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Arrival photo shared in chat Oct 24; no formal GAIA journal review recorded",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Moxxi",
+            "style": ""
+          },
+          {
+            "label": "Name inspiration",
+            "valueHtml": "Moxxi · Borderlands",
+            "style": ""
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Black plastic nursery pot, exact diameter and drainage condition not recorded",
+            "style": ""
+          },
+          {
+            "label": "Current substrate",
+            "valueHtml": "Nursery-style potting mix visible; composition and moisture not confirmed",
+            "style": ""
+          },
+          {
+            "label": "Pest status",
+            "valueHtml": "Unconfirmed; inspect during acclimation",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "",
+            "bodyHtml": "<strong>Oct 24, 2026 · </strong>Named Moxxi, plant #51, after Moxxi · Borderlands."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 24, 2026 · </strong>Initial botanical identification from nursery label and care profile from arrival photograph. Roots, actual moisture, pot size, drainage and prior care history remain unverified."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "flowering",
+        "light": "bright-indirect",
+        "water": "top-one",
+        "waterLabel": "Top 1″ dry",
+        "soil": "moisture"
+      },
+      "commonNames": [
+        "Coleus",
+        "Trailing Plum coleus",
+        "Painted nettle"
+      ],
+      "coverPhoto": ""
+    },
+    {
+      "id": "52",
+      "name": "Celebrimbor",
+      "species": "Heptapleurum arboricola (syn. Schefflera arboricola)",
+      "searchName": "celebrimbor dwarf umbrella tree schefflera arboricola green",
+      "searchSpecies": "heptapleurum arboricola schefflera arboricola",
+      "status": "Good",
+      "photo": "",
+      "photoAlt": "Celebrimbor · green dwarf umbrella tree · arrival photo shared Oct 24, 2026",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-10-24",
+      "tags": [
+        {
+          "style": "",
+          "label": "BRIGHT INDIRECT"
+        },
+        {
+          "style": "",
+          "label": "UMBRELLA TREE"
+        },
+        {
+          "style": "",
+          "label": "WOODY"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Inspect leaf undersides and stems for pests, verify drainage, and place in bright indirect light. Keep the existing two main stems stable while acclimating; wait to prune or repot until new growth and root health are better understood.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Two upright green stems with clusters of healthy-looking glossy palmate leaflets; foliage is fairly sparse near the base. Several smaller leaves and shoots are visible. Roots and actual moisture have not been inspected.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Allow approximately the upper 1–2 inches of substrate to dry before watering; water thoroughly until it drains and empty any saucer. Avoid chronically waterlogged soil.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Bright, filtered indirect light; a little gentle morning sun can be tolerated after acclimation. Rotate periodically for balanced growth.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "After acclimation, fertilize during active growth with a balanced houseplant fertilizer, following the product label conservatively. Avoid fertilizing a stressed or recently moved plant.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Arrival photographed on Oct 24, 2026; permanent location not yet recorded.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Retain current draining nursery pot during acclimation unless roots are crowded or soil stays wet too long. Increase pot size conservatively when repotting.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "A well-drained houseplant potting mix with perlite or pumice, holding moderate moisture while allowing air to the roots.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Watch for yellowing, unexplained leaf drop, dark stems or signs of mites and scale insects. Reduce drafts and avoid cold window exposure.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PROPAGATION",
+          "bodyHtml": "Stem cuttings can root with warmth and patience. Existing stems may be pruned later to promote branching after establishment.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PEST CHECK",
+          "bodyHtml": "New addition; pest status not verified. Inspect leaves, stems and growing tips and keep separated from plants with recent mite activity during initial observation.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 24, 2026",
+            "style": ""
+          },
+          {
+            "label": "Added to collection",
+            "valueHtml": "Oct 24, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Arrival photo shared in chat Oct 24; no formal GAIA journal review recorded",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Celebrimbor",
+            "style": ""
+          },
+          {
+            "label": "Name inspiration",
+            "valueHtml": "Celebrimbor · Middle-earth: Shadow of Mordor / Shadow of War",
+            "style": ""
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Small black plastic nursery pot; two stems; exact diameter and drainage unverified",
+            "style": ""
+          },
+          {
+            "label": "Current substrate",
+            "valueHtml": "Nursery-style potting mix visible; composition and moisture not confirmed",
+            "style": ""
+          },
+          {
+            "label": "Pest status",
+            "valueHtml": "Unconfirmed; inspect during acclimation",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "",
+            "bodyHtml": "<strong>Oct 24, 2026 · </strong>Named Celebrimbor, plant #52, after Celebrimbor · Middle-earth: Shadow of Mordor / Shadow of War."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 24, 2026 · </strong>Initial botanical identification from nursery label and care profile from arrival photograph. Roots, actual moisture, pot size, drainage and prior care history remain unverified."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "tropical",
+        "light": "bright-indirect",
+        "water": "one-two",
+        "waterLabel": "1–2″ dry",
+        "soil": "well-drained"
+      },
+      "commonNames": [
+        "Dwarf umbrella tree",
+        "Umbrella plant",
+        "Dwarf schefflera"
+      ],
+      "coverPhoto": ""
+    },
+    {
+      "id": "53",
+      "name": "Delilah",
+      "species": "Gynura aurantiaca",
+      "searchName": "delilah gynura purple passion purple velvet plant",
+      "searchSpecies": "gynura aurantiaca",
+      "status": "Watch",
+      "photo": "",
+      "photoAlt": "Delilah · purple passion plant · arrival photo shared Oct 24, 2026",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-10-24",
+      "tags": [
+        {
+          "style": "",
+          "label": "BRIGHT INDIRECT"
+        },
+        {
+          "style": "",
+          "label": "PURPLE PASSION"
+        },
+        {
+          "style": "",
+          "label": "VELVET FOLIAGE"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Check soil moisture and drainage before watering; inspect the purple-hairy undersides and curled new tips for pests. Place in bright indirect light, away from heater drafts. Let it acclimate rather than cutting back immediately.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Deep green-purple leaves with distinctive purple hairs and serrated margins. Several leaves droop or curl, particularly at the outer stems; photo alone cannot determine whether moisture stress, transport or pests are responsible.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Allow the upper 1 inch or so of soil to become slightly dry between thorough waterings; drain well. Avoid letting the whole pot stay saturated or become extremely dry for long periods.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Bright indirect light helps sustain purple coloration. Avoid low light and scorching midday sun. Protect foliage from cold or hot drafts.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "After acclimation, fertilize during active growth with a balanced houseplant fertilizer, following the product label conservatively. Avoid fertilizing a stressed or recently moved plant.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Arrival photographed on Oct 24, 2026; permanent location not yet recorded.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Delay repotting while acclimating unless drainage fails or the root ball is demonstrably compromised. Choose a draining pot and a modest size increase when necessary.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Airy, moisture-retentive indoor potting mix with perlite; avoid dense, waterlogged media.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Monitor curled leaves and tip growth after stabilizing moisture and light. Inspect for aphids, mites and mealybugs. Keep fuzzy leaves dry when possible and provide gentle air circulation.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PROPAGATION",
+          "bodyHtml": "Root young stem-tip cuttings containing nodes in moist medium or water. Pinch established growing tips to encourage a bushier plant; older leggy plants are often refreshed from cuttings.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PEST CHECK",
+          "bodyHtml": "New addition; pest status not verified. Inspect leaves, stems and growing tips and keep separated from plants with recent mite activity during initial observation.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Oct 24, 2026",
+            "style": ""
+          },
+          {
+            "label": "Added to collection",
+            "valueHtml": "Oct 24, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Arrival photo shared in chat Oct 24; no formal GAIA journal review recorded",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Delilah",
+            "style": ""
+          },
+          {
+            "label": "Name inspiration",
+            "valueHtml": "Delilah Copperspoon · Dishonored 2",
+            "style": ""
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Orange-red plastic nursery pot; exact size, root condition and drainage not verified",
+            "style": ""
+          },
+          {
+            "label": "Current substrate",
+            "valueHtml": "Nursery-style potting mix visible; composition and moisture not confirmed",
+            "style": ""
+          },
+          {
+            "label": "Pest status",
+            "valueHtml": "Unconfirmed; inspect during acclimation",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "",
+            "bodyHtml": "<strong>Oct 24, 2026 · </strong>Named Delilah, plant #53, after Delilah Copperspoon · Dishonored 2."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 24, 2026 · </strong>Initial botanical identification from nursery label and care profile from arrival photograph. Roots, actual moisture, pot size, drainage and prior care history remain unverified."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "tropical",
+        "light": "bright-indirect",
+        "water": "top-one",
+        "waterLabel": "Top 1″ dry",
+        "soil": "moisture"
+      },
+      "commonNames": [
+        "Purple passion plant",
+        "Purple velvet plant",
+        "Velvet plant"
+      ],
+      "coverPhoto": ""
     }
   ],
   "dashboardTasks": [
