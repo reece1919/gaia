@@ -66,7 +66,14 @@
   "alata": "uh-LAY-tuh",
   "Pelargonium": "pel-ar-GOH-nee-um",
   "Chlorophytum": "klor-oh-FY-tum",
-  "comosum": "koh-MOH-sum"
+  "comosum": "koh-MOH-sum",
+  "Coleus": "KOH-lee-us",
+  "scutellarioides": "skoo-tel-air-ee-OY-deez",
+  "Heptapleurum": "hep-tuh-PLOOR-um",
+  "arboricola": "ar-bor-IK-oh-luh",
+  "Schefflera": "SHEF-ler-uh",
+  "Gynura": "jy-NOOR-uh",
+  "aurantiaca": "aw-ran-tee-AY-kuh"
 };
   const aliases = {
     "Bird of Paradise": "Strelitzia",
