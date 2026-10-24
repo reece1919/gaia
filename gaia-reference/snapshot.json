@@ -2,13 +2,13 @@
   "schema_version": 1,
   "read_only": true,
   "source": "GAIA owner-approved reference snapshot",
-  "generated_at": "2026-10-24T04:39:50.355Z",
-  "synced_at": "2026-10-24T04:39:50.367757+00:00",
-  "plant_count": 48,
+  "generated_at": "2026-10-24T04:45:13.989Z",
+  "synced_at": "2026-10-24T04:45:17.562383+00:00",
+  "plant_count": 50,
   "comparison_ready_count": 42,
   "comparison_candidate_count": 57,
-  "uploaded_photo_count": 60,
-  "exported_photo_count": 60,
+  "uploaded_photo_count": 62,
+  "exported_photo_count": 62,
   "catalog_reference_count": 45,
   "unavailable_sections": [],
   "plants": [
@@ -4017,6 +4017,82 @@
         "ready": false,
         "latest_image": "gaia-reference/photos/48-98010bd927-latest_photo.webp",
         "latest_captured_on": "2026-10-21",
+        "candidates": []
+      }
+    },
+    {
+      "plant_id": "49",
+      "name": "Legion",
+      "species": "Dracaena sanderiana",
+      "reference_photo": null,
+      "latest_photo": {
+        "id": "26a983b1-bebb-4013-81ae-11defbcdff53",
+        "plant_id": "49",
+        "taken_on": "2026-10-23",
+        "created_at": "2026-10-24T04:41:33.897542+00:00",
+        "caption": "",
+        "analysis_status": "pending",
+        "analysis_summary": "",
+        "analysis_findings": [],
+        "analyzed_at": null,
+        "snapshot_image": "gaia-reference/photos/49-0e17daca5f-latest_photo.webp"
+      },
+      "previous_photo": null,
+      "photos": [
+        {
+          "id": "26a983b1-bebb-4013-81ae-11defbcdff53",
+          "taken_on": "2026-10-23",
+          "created_at": "2026-10-24T04:41:33.897542+00:00",
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/49-0e17daca5f-latest_photo.webp"
+        }
+      ],
+      "pot": null,
+      "soil_observations": [],
+      "care_events": [],
+      "reference_image": null,
+      "comparison": {
+        "ready": false,
+        "latest_image": "gaia-reference/photos/49-0e17daca5f-latest_photo.webp",
+        "latest_captured_on": "2026-10-23",
+        "candidates": []
+      }
+    },
+    {
+      "plant_id": "50",
+      "name": "Sovereign",
+      "species": "Monstera deliciosa",
+      "reference_photo": null,
+      "latest_photo": {
+        "id": "c937ac8d-231c-4df4-b6d4-b4dad984aa9a",
+        "plant_id": "50",
+        "taken_on": "2026-10-23",
+        "created_at": "2026-10-24T04:42:03.710565+00:00",
+        "caption": "",
+        "analysis_status": "pending",
+        "analysis_summary": "",
+        "analysis_findings": [],
+        "analyzed_at": null,
+        "snapshot_image": "gaia-reference/photos/50-1a6562590e-latest_photo.webp"
+      },
+      "previous_photo": null,
+      "photos": [
+        {
+          "id": "c937ac8d-231c-4df4-b6d4-b4dad984aa9a",
+          "taken_on": "2026-10-23",
+          "created_at": "2026-10-24T04:42:03.710565+00:00",
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/50-1a6562590e-latest_photo.webp"
+        }
+      ],
+      "pot": null,
+      "soil_observations": [],
+      "care_events": [],
+      "reference_image": null,
+      "comparison": {
+        "ready": false,
+        "latest_image": "gaia-reference/photos/50-1a6562590e-latest_photo.webp",
+        "latest_captured_on": "2026-10-23",
         "candidates": []
       }
     }
