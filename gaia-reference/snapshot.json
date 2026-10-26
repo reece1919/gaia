@@ -2,8 +2,8 @@
   "schema_version": 1,
   "read_only": true,
   "source": "GAIA owner-approved reference snapshot",
-  "generated_at": "2026-10-26T13:04:58.709Z",
-  "synced_at": "2026-10-26T13:04:58.739391+00:00",
+  "generated_at": "2026-10-26T17:48:27.787Z",
+  "synced_at": "2026-10-26T17:48:27.806750+00:00",
   "plant_count": 53,
   "comparison_ready_count": 42,
   "comparison_candidate_count": 57,
@@ -74,7 +74,15 @@
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": [],
+      "care_events": [
+        {
+          "plant_id": "01",
+          "action_type": "water",
+          "happened_on": "2026-10-25",
+          "note": "Weekend care reported Oct 26, 2026 for Oct 24–25; exact day unspecified, filed under Oct 25. Mushu watered, confirmed by owner.",
+          "created_at": "2026-10-26T16:51:26.059246+00:00"
+        }
+      ],
       "reference_image": "01-red-banana-croton-name-pending.jpg",
       "comparison": {
         "ready": true,
@@ -320,7 +328,15 @@
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": [],
+      "care_events": [
+        {
+          "plant_id": "03",
+          "action_type": "water",
+          "happened_on": "2026-10-25",
+          "note": "Weekend care reported Oct 26, 2026 for Oct 24–25; exact day unspecified, filed under Oct 25. Bowser watered, confirmed by owner.",
+          "created_at": "2026-10-26T16:51:26.059246+00:00"
+        }
+      ],
       "reference_image": "03-bowser-pincushion-cactus.jpg",
       "comparison": {
         "ready": true,
@@ -457,6 +473,20 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [
+        {
+          "plant_id": "04",
+          "action_type": "prune",
+          "happened_on": "2026-10-25",
+          "note": "Weekend care reported Oct 26, 2026 for Oct 24–25; exact day unspecified, filed under Oct 25. Audrey II: trimmed black and dead traps/heads; owner reports generally looking better.",
+          "created_at": "2026-10-26T16:51:26.059246+00:00"
+        },
+        {
+          "plant_id": "04",
+          "action_type": "water",
+          "happened_on": "2026-10-25",
+          "note": "Weekend care reported Oct 26, 2026 for Oct 24–25; exact day unspecified, filed under Oct 25. Audrey II received fresh water; water source unspecified. Looking generally better per owner.",
+          "created_at": "2026-10-26T16:51:26.059246+00:00"
+        },
         {
           "plant_id": "04",
           "action_type": "water",
@@ -623,7 +653,15 @@
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": [],
+      "care_events": [
+        {
+          "plant_id": "06",
+          "action_type": "water",
+          "happened_on": "2026-10-25",
+          "note": "Weekend care reported Oct 26, 2026 for Oct 24–25; exact day unspecified, filed under Oct 25. Malefecent watered, confirmed by owner.",
+          "created_at": "2026-10-26T16:51:26.059246+00:00"
+        }
+      ],
       "reference_image": "06-malefecent-bromeliad-guzmania-amber.jpg",
       "comparison": {
         "ready": true,
@@ -735,7 +773,15 @@
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": [],
+      "care_events": [
+        {
+          "plant_id": "07",
+          "action_type": "water",
+          "happened_on": "2026-10-25",
+          "note": "Weekend care reported Oct 26, 2026 for Oct 24–25; exact day unspecified, filed under Oct 25. Samwise watered, confirmed by owner.",
+          "created_at": "2026-10-26T16:51:26.059246+00:00"
+        }
+      ],
       "reference_image": "07-samwise-aloe.jpg",
       "comparison": {
         "ready": true,
@@ -857,7 +903,15 @@
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": [],
+      "care_events": [
+        {
+          "plant_id": "08",
+          "action_type": "water",
+          "happened_on": "2026-10-25",
+          "note": "Weekend care reported Oct 26, 2026 for Oct 24–25; exact day unspecified, filed under Oct 25. Drogo watered, confirmed by owner.",
+          "created_at": "2026-10-26T16:51:26.059246+00:00"
+        }
+      ],
       "reference_image": "08-drogo-magenta-dragon-tree.jpg",
       "comparison": {
         "ready": true,
@@ -981,7 +1035,15 @@
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": [],
+      "care_events": [
+        {
+          "plant_id": "09",
+          "action_type": "water",
+          "happened_on": "2026-10-25",
+          "note": "Weekend care reported Oct 26, 2026 for Oct 24–25; exact day unspecified, filed under Oct 25. Gandalf watered, confirmed by owner.",
+          "created_at": "2026-10-26T16:51:26.059246+00:00"
+        }
+      ],
       "reference_image": "09-gandalf-dusty-miller.jpg",
       "comparison": {
         "ready": true,
@@ -1133,7 +1195,22 @@
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": [],
+      "care_events": [
+        {
+          "plant_id": "11",
+          "action_type": "note",
+          "happened_on": "2026-10-26",
+          "note": "Karlach: new pot and substrate planned for tonight, Oct 26; not yet completed.",
+          "created_at": "2026-10-26T16:51:26.059246+00:00"
+        },
+        {
+          "plant_id": "11",
+          "action_type": "prune",
+          "happened_on": "2026-10-25",
+          "note": "Weekend care reported Oct 26, 2026 for Oct 24–25; exact day unspecified, filed under Oct 25. Karlach: bad leaf trimmed back. New pot and substrate planned for Oct 26 evening; not yet completed.",
+          "created_at": "2026-10-26T16:51:26.059246+00:00"
+        }
+      ],
       "reference_image": "11-karlach.jpg",
       "comparison": {
         "ready": true,
@@ -1206,7 +1283,15 @@
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": [],
+      "care_events": [
+        {
+          "plant_id": "12",
+          "action_type": "note",
+          "happened_on": "2026-10-26",
+          "note": "GLaDOS: new pot planned for tonight, Oct 26; not yet completed.",
+          "created_at": "2026-10-26T16:51:26.059246+00:00"
+        }
+      ],
       "reference_image": "12-glados.jpg",
       "comparison": {
         "ready": true,
@@ -1431,7 +1516,15 @@
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": [],
+      "care_events": [
+        {
+          "plant_id": "15",
+          "action_type": "note",
+          "happened_on": "2026-10-26",
+          "note": "Owner reports continued monitoring of Tywin's leaf spots and requests a follow-up reminder. No confirmed diagnosis or treatment reported.",
+          "created_at": "2026-10-26T16:51:26.059246+00:00"
+        }
+      ],
       "reference_image": "15-tywin.jpg",
       "comparison": {
         "ready": true,
@@ -1553,7 +1646,15 @@
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": [],
+      "care_events": [
+        {
+          "plant_id": "16",
+          "action_type": "water",
+          "happened_on": "2026-10-25",
+          "note": "Weekend care reported Oct 26, 2026 for Oct 24–25; exact day unspecified, filed under Oct 25. Morgana watered, confirmed by owner.",
+          "created_at": "2026-10-26T16:51:26.059246+00:00"
+        }
+      ],
       "reference_image": "16-morgana.jpg",
       "comparison": {
         "ready": true,
@@ -1754,7 +1855,15 @@
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": [],
+      "care_events": [
+        {
+          "plant_id": "18",
+          "action_type": "water",
+          "happened_on": "2026-10-25",
+          "note": "Weekend care reported Oct 26, 2026 for Oct 24–25; exact day unspecified, filed under Oct 25. Geoffrey received a good overnight soak.",
+          "created_at": "2026-10-26T16:51:26.059246+00:00"
+        }
+      ],
       "reference_image": "18-geoffrey.jpg",
       "comparison": {
         "ready": true,
@@ -1993,7 +2102,15 @@
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": [],
+      "care_events": [
+        {
+          "plant_id": "22",
+          "action_type": "water",
+          "happened_on": "2026-10-25",
+          "note": "Weekend care reported Oct 26, 2026 for Oct 24–25; exact day unspecified, filed under Oct 25. Molly watered, confirmed by owner.",
+          "created_at": "2026-10-26T16:51:26.059246+00:00"
+        }
+      ],
       "reference_image": "22-molly-hens-chicks.jpg",
       "comparison": {
         "ready": true,
@@ -2188,7 +2305,15 @@
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": [],
+      "care_events": [
+        {
+          "plant_id": "24",
+          "action_type": "water",
+          "happened_on": "2026-10-25",
+          "note": "Weekend care reported Oct 26, 2026 for Oct 24–25; exact day unspecified, filed under Oct 25. Phil watered, confirmed by owner.",
+          "created_at": "2026-10-26T16:51:26.059246+00:00"
+        }
+      ],
       "reference_image": "24-phil-heartleaf-philodendron.jpg",
       "comparison": {
         "ready": true,
@@ -2325,7 +2450,15 @@
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": [],
+      "care_events": [
+        {
+          "plant_id": "25",
+          "action_type": "water",
+          "happened_on": "2026-10-25",
+          "note": "Weekend care reported Oct 26, 2026 for Oct 24–25; exact day unspecified, filed under Oct 25. Ruby watered, confirmed by owner.",
+          "created_at": "2026-10-26T16:51:26.059246+00:00"
+        }
+      ],
       "reference_image": "25-ruby-ruby-necklace.jpg",
       "comparison": {
         "ready": true,
@@ -2410,7 +2543,15 @@
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": [],
+      "care_events": [
+        {
+          "plant_id": "26",
+          "action_type": "water",
+          "happened_on": "2026-10-25",
+          "note": "Weekend care reported Oct 26, 2026 for Oct 24–25; exact day unspecified, filed under Oct 25. Nayru watered, confirmed by owner.",
+          "created_at": "2026-10-26T16:51:26.059246+00:00"
+        }
+      ],
       "reference_image": "26-nayru-plectranthus-white-pot.jpg",
       "comparison": {
         "ready": true,
@@ -2483,7 +2624,15 @@
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": [],
+      "care_events": [
+        {
+          "plant_id": "27",
+          "action_type": "water",
+          "happened_on": "2026-10-25",
+          "note": "Weekend care reported Oct 26, 2026 for Oct 24–25; exact day unspecified, filed under Oct 25. Yennefer watered, confirmed by owner.",
+          "created_at": "2026-10-26T16:51:26.059246+00:00"
+        }
+      ],
       "reference_image": "27-yennefer-purple-joyweed.jpg",
       "comparison": {
         "ready": true,
@@ -2556,7 +2705,15 @@
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": [],
+      "care_events": [
+        {
+          "plant_id": "28",
+          "action_type": "water",
+          "happened_on": "2026-10-25",
+          "note": "Weekend care reported Oct 26, 2026 for Oct 24–25; exact day unspecified, filed under Oct 25. Beetlejuice watered, confirmed by owner.",
+          "created_at": "2026-10-26T16:51:26.059246+00:00"
+        }
+      ],
       "reference_image": "28-beetlejuice-zebra-haworthia.jpg",
       "comparison": {
         "ready": true,
@@ -2755,7 +2912,15 @@
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": [],
+      "care_events": [
+        {
+          "plant_id": "30",
+          "action_type": "water",
+          "happened_on": "2026-10-25",
+          "note": "Weekend care reported Oct 26, 2026 for Oct 24–25; exact day unspecified, filed under Oct 25. Aloy watered, confirmed by owner.",
+          "created_at": "2026-10-26T16:51:26.059246+00:00"
+        }
+      ],
       "reference_image": "30-aloy-arrowhead-plant.jpg",
       "comparison": {
         "ready": true,
@@ -2828,7 +2993,15 @@
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": [],
+      "care_events": [
+        {
+          "plant_id": "31",
+          "action_type": "water",
+          "happened_on": "2026-10-25",
+          "note": "Weekend care reported Oct 26, 2026 for Oct 24–25; exact day unspecified, filed under Oct 25. Amelia watered, confirmed by owner.",
+          "created_at": "2026-10-26T16:51:26.059246+00:00"
+        }
+      ],
       "reference_image": "31-amelia-air-plant.jpg",
       "comparison": {
         "ready": true,
@@ -2901,7 +3074,15 @@
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": [],
+      "care_events": [
+        {
+          "plant_id": "32",
+          "action_type": "water",
+          "happened_on": "2026-10-25",
+          "note": "Weekend care reported Oct 26, 2026 for Oct 24–25; exact day unspecified, filed under Oct 25. Navi watered, confirmed by owner.",
+          "created_at": "2026-10-26T16:51:26.059246+00:00"
+        }
+      ],
       "reference_image": "32-navi-blue-star-fern.jpg",
       "comparison": {
         "ready": true,
@@ -2974,7 +3155,15 @@
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": [],
+      "care_events": [
+        {
+          "plant_id": "33",
+          "action_type": "water",
+          "happened_on": "2026-10-25",
+          "note": "Weekend care reported Oct 26, 2026 for Oct 24–25; exact day unspecified, filed under Oct 25. Din watered, confirmed by owner.",
+          "created_at": "2026-10-26T16:51:26.059246+00:00"
+        }
+      ],
       "reference_image": "33-din-plectranthus-maroon-pot.jpg",
       "comparison": {
         "ready": true,
@@ -3047,7 +3236,15 @@
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": [],
+      "care_events": [
+        {
+          "plant_id": "34",
+          "action_type": "water",
+          "happened_on": "2026-10-25",
+          "note": "Weekend care reported Oct 26, 2026 for Oct 24–25; exact day unspecified, filed under Oct 25. Farore watered, confirmed by owner.",
+          "created_at": "2026-10-26T16:51:26.059246+00:00"
+        }
+      ],
       "reference_image": "34-farore-plectranthus-black-square-pot.jpg",
       "comparison": {
         "ready": true,
@@ -3120,7 +3317,22 @@
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": [],
+      "care_events": [
+        {
+          "plant_id": "35",
+          "action_type": "note",
+          "happened_on": "2026-10-26",
+          "note": "Chewie: new pot planned for tonight, Oct 26; not yet completed.",
+          "created_at": "2026-10-26T16:51:26.059246+00:00"
+        },
+        {
+          "plant_id": "35",
+          "action_type": "water",
+          "happened_on": "2026-10-25",
+          "note": "Weekend care reported Oct 26, 2026 for Oct 24–25; exact day unspecified, filed under Oct 25. Chewie watered, confirmed by owner.",
+          "created_at": "2026-10-26T16:51:26.059246+00:00"
+        }
+      ],
       "reference_image": "35-chewie-friendship-plant.jpg",
       "comparison": {
         "ready": true,
@@ -3193,7 +3405,15 @@
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": [],
+      "care_events": [
+        {
+          "plant_id": "36",
+          "action_type": "water",
+          "happened_on": "2026-10-25",
+          "note": "Weekend care reported Oct 26, 2026 for Oct 24–25; exact day unspecified, filed under Oct 25. Orion watered, confirmed by owner.",
+          "created_at": "2026-10-26T16:51:26.059246+00:00"
+        }
+      ],
       "reference_image": "36-orion-thai-constellation-1-round-pot.jpg",
       "comparison": {
         "ready": true,
@@ -3285,7 +3505,15 @@
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": [],
+      "care_events": [
+        {
+          "plant_id": "38",
+          "action_type": "water",
+          "happened_on": "2026-10-25",
+          "note": "Weekend care reported Oct 26, 2026 for Oct 24–25; exact day unspecified, filed under Oct 25. Andromeda watered, confirmed by owner.",
+          "created_at": "2026-10-26T16:51:26.059246+00:00"
+        }
+      ],
       "reference_image": "38-andromeda-thai-constellation-3-maroon-pot.jpg",
       "comparison": {
         "ready": true,
@@ -3435,6 +3663,13 @@
         {
           "plant_id": "40",
           "action_type": "water",
+          "happened_on": "2026-10-25",
+          "note": "Weekend care reported Oct 26, 2026 for Oct 24–25; exact day unspecified, filed under Oct 25. Loki watered, confirmed by owner.",
+          "created_at": "2026-10-26T16:51:26.059246+00:00"
+        },
+        {
+          "plant_id": "40",
+          "action_type": "water",
           "happened_on": "2026-10-14",
           "note": "Loki: watered today, confirmed by owner.",
           "created_at": "2026-10-15T05:31:33.715988+00:00"
@@ -3513,6 +3748,13 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [
+        {
+          "plant_id": "41",
+          "action_type": "water",
+          "happened_on": "2026-10-25",
+          "note": "Weekend care reported Oct 26, 2026 for Oct 24–25; exact day unspecified, filed under Oct 25. Paarthurnax watered, confirmed by owner.",
+          "created_at": "2026-10-26T16:51:26.059246+00:00"
+        },
         {
           "plant_id": "41",
           "action_type": "water",
@@ -3615,7 +3857,22 @@
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": [],
+      "care_events": [
+        {
+          "plant_id": "42",
+          "action_type": "note",
+          "happened_on": "2026-10-26",
+          "note": "Zelda: repot planned for tonight, Oct 26; not yet completed.",
+          "created_at": "2026-10-26T16:51:26.059246+00:00"
+        },
+        {
+          "plant_id": "42",
+          "action_type": "water",
+          "happened_on": "2026-10-25",
+          "note": "Weekend care reported Oct 26, 2026 for Oct 24–25; exact day unspecified, filed under Oct 25. Zelda watered, confirmed by owner.",
+          "created_at": "2026-10-26T16:51:26.059246+00:00"
+        }
+      ],
       "reference_image": "42-zelda-tradescantia-zebrina.jpg",
       "comparison": {
         "ready": true,
@@ -3889,7 +4146,22 @@
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": [],
+      "care_events": [
+        {
+          "plant_id": "45",
+          "action_type": "note",
+          "happened_on": "2026-10-26",
+          "note": "Jango: possible new pot and substrate tonight, Oct 26; decision pending. Not a completed repot.",
+          "created_at": "2026-10-26T16:51:26.059246+00:00"
+        },
+        {
+          "plant_id": "45",
+          "action_type": "water",
+          "happened_on": "2026-10-25",
+          "note": "Weekend care reported Oct 26, 2026 for Oct 24–25; exact day unspecified, filed under Oct 25. Jango watered, confirmed by owner.",
+          "created_at": "2026-10-26T16:51:26.059246+00:00"
+        }
+      ],
       "reference_image": "45-jango-citronella-plant-scented-geranium-mosqu.jpg",
       "comparison": {
         "ready": true,
@@ -3935,7 +4207,15 @@
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": [],
+      "care_events": [
+        {
+          "plant_id": "46",
+          "action_type": "water",
+          "happened_on": "2026-10-25",
+          "note": "Weekend care reported Oct 26, 2026 for Oct 24–25; exact day unspecified, filed under Oct 25. Tali watered, confirmed by owner.",
+          "created_at": "2026-10-26T16:51:26.059246+00:00"
+        }
+      ],
       "reference_image": null,
       "comparison": {
         "ready": false,
