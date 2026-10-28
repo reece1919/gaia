@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "Oct 24, 2026",
+  "updatedAt": "Oct 28, 2026",
   "summaryNote": "tap for care, priorities & history",
   "recentCare": {
     "dateLabel": "OCT 10–12, 2026",
@@ -1745,7 +1745,7 @@
         },
         {
           "label": "REPOT",
-          "bodyHtml": "Recently repotted—leave it alone for now.",
+          "bodyHtml": "Repotted Oct 26, 2026, confirmed by owner Oct 28. Clear plastic nursery pot with drainage; avoid another unnecessary repot while acclimating.",
           "pClass": "",
           "style": ""
         },
@@ -1766,23 +1766,23 @@
         "facts": [
           {
             "label": "Last updated",
-            "valueHtml": "Oct 11, 2026",
+            "valueHtml": "Oct 28, 2026",
             "style": ""
           },
           {
             "label": "Last photo review",
-            "valueHtml": "Oct 5, 2026",
+            "valueHtml": "Oct 28, 2026 · updated photo reviewed in ChatGPT; upload to private gallery pending",
             "style": ""
           },
           {
             "label": "Last repotted",
-            "valueHtml": "Not recorded",
-            "style": "unknown"
+            "valueHtml": "Oct 26, 2026",
+            "style": ""
           },
           {
             "label": "Pot / container",
-            "valueHtml": "Not recorded",
-            "style": "unknown"
+            "valueHtml": "Clear plastic nursery pot, with drainage",
+            "style": ""
           },
           {
             "label": "Last bath",
@@ -1796,6 +1796,10 @@
           }
         ],
         "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 26, 2026 · </strong>Repotted into clear plastic nursery pot with drainage and amended substrate; completion confirmed by owner Oct 28. Actual recipe, dimensions and root condition not specified."
+          },
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
@@ -1879,7 +1883,7 @@
         },
         {
           "label": "REPOT",
-          "bodyHtml": "Recently repotted—leave it alone for now.",
+          "bodyHtml": "Repotted Oct 26, 2026, confirmed by owner Oct 28. Clear plastic nursery pot with drainage; avoid another unnecessary repot while acclimating.",
           "pClass": "",
           "style": ""
         },
@@ -1900,23 +1904,23 @@
         "facts": [
           {
             "label": "Last updated",
-            "valueHtml": "Oct 11, 2026",
+            "valueHtml": "Oct 28, 2026",
             "style": ""
           },
           {
             "label": "Last photo review",
-            "valueHtml": "Oct 5, 2026",
+            "valueHtml": "Oct 28, 2026 · updated photo reviewed in ChatGPT; upload to private gallery pending",
             "style": ""
           },
           {
             "label": "Last repotted",
-            "valueHtml": "Not recorded",
-            "style": "unknown"
+            "valueHtml": "Oct 26, 2026",
+            "style": ""
           },
           {
             "label": "Pot / container",
-            "valueHtml": "Not recorded",
-            "style": "unknown"
+            "valueHtml": "Clear plastic nursery pot, with drainage",
+            "style": ""
           },
           {
             "label": "Last bath",
@@ -1925,6 +1929,10 @@
           }
         ],
         "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 26, 2026 · </strong>Repotted into clear plastic nursery pot with drainage and amended substrate; completion confirmed by owner Oct 28. Actual recipe, dimensions and root condition not specified."
+          },
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
@@ -5711,7 +5719,7 @@
         },
         {
           "label": "REPOT",
-          "bodyHtml": "Repot when rootbound or the mix/drainage deteriorates.",
+          "bodyHtml": "Repotted Oct 26, 2026, confirmed by owner Oct 28. Clear plastic nursery pot with drainage; avoid another unnecessary repot while acclimating.",
           "pClass": "",
           "style": ""
         },
@@ -5732,23 +5740,23 @@
         "facts": [
           {
             "label": "Last updated",
-            "valueHtml": "Oct 11, 2026",
+            "valueHtml": "Oct 28, 2026",
             "style": ""
           },
           {
             "label": "Last photo review",
-            "valueHtml": "Oct 5, 2026",
+            "valueHtml": "Oct 28, 2026 · updated photo reviewed in ChatGPT; upload to private gallery pending",
             "style": ""
           },
           {
             "label": "Last repotted",
-            "valueHtml": "Not recorded",
-            "style": "unknown"
+            "valueHtml": "Oct 26, 2026",
+            "style": ""
           },
           {
             "label": "Pot / container",
-            "valueHtml": "Not recorded",
-            "style": "unknown"
+            "valueHtml": "Clear plastic nursery pot, with drainage",
+            "style": ""
           },
           {
             "label": "Last bath",
@@ -5757,6 +5765,10 @@
           }
         ],
         "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 26, 2026 · </strong>Repotted into clear plastic nursery pot with drainage and amended substrate; completion confirmed by owner Oct 28. Actual recipe, dimensions and root condition not specified."
+          },
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
@@ -7441,7 +7453,7 @@
         },
         {
           "label": "REPOT",
-          "bodyHtml": "Delay repotting while acclimating unless drainage fails or the root ball is demonstrably compromised. Choose a draining pot and a modest size increase when necessary.",
+          "bodyHtml": "Repotted Oct 26, 2026, confirmed by owner Oct 28. Clear plastic nursery pot with drainage; avoid another unnecessary repot while acclimating.",
           "pClass": "",
           "style": ""
         },
@@ -7474,7 +7486,7 @@
         "facts": [
           {
             "label": "Last updated",
-            "valueHtml": "Oct 24, 2026",
+            "valueHtml": "Oct 28, 2026",
             "style": ""
           },
           {
@@ -7484,7 +7496,7 @@
           },
           {
             "label": "Last photo review",
-            "valueHtml": "Arrival photo shared in chat Oct 24; no formal GAIA journal review recorded",
+            "valueHtml": "Oct 28, 2026 · updated photo reviewed in ChatGPT; upload to private gallery pending",
             "style": ""
           },
           {
@@ -7509,17 +7521,17 @@
           },
           {
             "label": "Last repotted",
-            "valueHtml": "Not recorded",
+            "valueHtml": "Oct 26, 2026",
             "style": ""
           },
           {
             "label": "Pot / container",
-            "valueHtml": "Orange-red plastic nursery pot; exact size, root condition and drainage not verified",
+            "valueHtml": "Clear plastic nursery pot, with drainage",
             "style": ""
           },
           {
             "label": "Current substrate",
-            "valueHtml": "Nursery-style potting mix visible; composition and moisture not confirmed",
+            "valueHtml": "Amended potting mix visible; exact ratios not confirmed",
             "style": ""
           },
           {
@@ -7529,6 +7541,10 @@
           }
         ],
         "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Oct 26, 2026 · </strong>Repotted into clear plastic nursery pot with drainage and amended substrate; completion confirmed by owner Oct 28. Actual recipe, dimensions and root condition not specified."
+          },
           {
             "style": "",
             "bodyHtml": "<strong>Oct 24, 2026 · </strong>Named Delilah, plant #53, after Delilah Copperspoon · Dishonored 2."
