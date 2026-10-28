@@ -2,8 +2,8 @@
   "schema_version": 1,
   "read_only": true,
   "source": "GAIA owner-approved reference snapshot",
-  "generated_at": "2026-10-28T23:46:55.845Z",
-  "synced_at": "2026-10-28T23:46:55.856602+00:00",
+  "generated_at": "2026-10-28T23:53:46.544Z",
+  "synced_at": "2026-10-28T23:53:46.867428+00:00",
   "plant_count": 53,
   "comparison_ready_count": 42,
   "comparison_candidate_count": 57,
@@ -1193,15 +1193,39 @@
           "snapshot_image": "gaia-reference/photos/11-4fc82b26ae-latest_photo.webp"
         }
       ],
-      "pot": null,
+      "pot": {
+        "plant_id": "11",
+        "inner_diameter_in": null,
+        "inner_depth_in": null,
+        "inner_material": "Plastic",
+        "outer_pot": "",
+        "drainage_holes": true,
+        "soil_mix": "",
+        "repotted_on": "2026-10-26",
+        "updated_at": "2026-10-28T23:52:45.775604+00:00"
+      },
       "soil_observations": [],
       "care_events": [
+        {
+          "plant_id": "11",
+          "action_type": "inspect",
+          "happened_on": "2026-10-28",
+          "note": "Oct 28 photo review (ChatGPT photo; image not uploaded to GAIA): Karlach in clear nursery pot with coarse amendments visible. Older red spathes show browning/aging. Multiple leaves have pale or mottled areas; cause not established from the photo. Monitor new leaves and inspect undersides for pests. Owner confirmed repot completed Monday, Oct 26.",
+          "created_at": "2026-10-28T23:49:24.489043+00:00"
+        },
         {
           "plant_id": "11",
           "action_type": "note",
           "happened_on": "2026-10-26",
           "note": "Karlach: new pot and substrate planned for tonight, Oct 26; not yet completed.",
           "created_at": "2026-10-26T16:51:26.059246+00:00"
+        },
+        {
+          "plant_id": "11",
+          "action_type": "repot",
+          "happened_on": "2026-10-26",
+          "note": "Owner confirmed on Oct 28 that repotting shown in updated photos was completed Monday, Oct 26. Clear inner nursery pot and amended substrate visible; specific recipe and root condition unconfirmed.",
+          "created_at": "2026-10-28T23:52:45.775604+00:00"
         },
         {
           "plant_id": "11",
@@ -1281,9 +1305,33 @@
           "snapshot_image": "gaia-reference/photos/12-6b51d431df-latest_photo.webp"
         }
       ],
-      "pot": null,
+      "pot": {
+        "plant_id": "12",
+        "inner_diameter_in": null,
+        "inner_depth_in": null,
+        "inner_material": "Plastic",
+        "outer_pot": "",
+        "drainage_holes": true,
+        "soil_mix": "",
+        "repotted_on": "2026-10-26",
+        "updated_at": "2026-10-28T23:52:45.775604+00:00"
+      },
       "soil_observations": [],
       "care_events": [
+        {
+          "plant_id": "12",
+          "action_type": "inspect",
+          "happened_on": "2026-10-28",
+          "note": "Oct 28 photo review (ChatGPT photo; image not uploaded to GAIA): GLaDOS in clear nursery pot with amended substrate. Colorful foliage is fairly full with some curling and minor browning at leaf margins. Water is visible on the tray; do not leave the pot standing in it. Owner confirmed repot completed Monday, Oct 26.",
+          "created_at": "2026-10-28T23:49:24.489043+00:00"
+        },
+        {
+          "plant_id": "12",
+          "action_type": "repot",
+          "happened_on": "2026-10-26",
+          "note": "Owner confirmed on Oct 28 that repotting shown in updated photos was completed Monday, Oct 26. Clear inner nursery pot and amended substrate visible; specific recipe and root condition unconfirmed.",
+          "created_at": "2026-10-28T23:52:45.775604+00:00"
+        },
         {
           "plant_id": "12",
           "action_type": "note",
@@ -3855,9 +3903,33 @@
           "snapshot_image": "gaia-reference/photos/42-73475cb40a-previous_photo.webp"
         }
       ],
-      "pot": null,
+      "pot": {
+        "plant_id": "42",
+        "inner_diameter_in": null,
+        "inner_depth_in": null,
+        "inner_material": "Plastic",
+        "outer_pot": "",
+        "drainage_holes": true,
+        "soil_mix": "",
+        "repotted_on": "2026-10-26",
+        "updated_at": "2026-10-28T23:52:45.775604+00:00"
+      },
       "soil_observations": [],
       "care_events": [
+        {
+          "plant_id": "42",
+          "action_type": "inspect",
+          "happened_on": "2026-10-28",
+          "note": "Oct 28 photo review (ChatGPT photo; image not uploaded to GAIA): Zelda in clear nursery pot with bright purple-striped leaves and several active trailing shoots. General foliage looks vigorous, with minor leaf curling. Monitor how the substrate dries. Owner confirmed repot completed Monday, Oct 26.",
+          "created_at": "2026-10-28T23:49:24.489043+00:00"
+        },
+        {
+          "plant_id": "42",
+          "action_type": "repot",
+          "happened_on": "2026-10-26",
+          "note": "Owner confirmed on Oct 28 that repotting shown in updated photos was completed Monday, Oct 26. Clear inner nursery pot and amended substrate visible; specific recipe and root condition unconfirmed.",
+          "created_at": "2026-10-28T23:52:45.775604+00:00"
+        },
         {
           "plant_id": "42",
           "action_type": "note",
@@ -4422,9 +4494,34 @@
       "latest_photo": null,
       "previous_photo": null,
       "photos": [],
-      "pot": null,
+      "pot": {
+        "plant_id": "53",
+        "inner_diameter_in": null,
+        "inner_depth_in": null,
+        "inner_material": "Plastic",
+        "outer_pot": "",
+        "drainage_holes": true,
+        "soil_mix": "",
+        "repotted_on": "2026-10-26",
+        "updated_at": "2026-10-28T23:52:45.775604+00:00"
+      },
       "soil_observations": [],
-      "care_events": [],
+      "care_events": [
+        {
+          "plant_id": "53",
+          "action_type": "inspect",
+          "happened_on": "2026-10-28",
+          "note": "Oct 28 photo review (ChatGPT photo; image not uploaded to GAIA): Delilah upright in clear pot with textured purple-green leaves. Several leaves are curled or drooping; some growing tips visible. Continue watching leaf posture and check actual root-zone moisture before watering. No pests confirmed from this image.",
+          "created_at": "2026-10-28T23:49:24.489043+00:00"
+        },
+        {
+          "plant_id": "53",
+          "action_type": "repot",
+          "happened_on": "2026-10-26",
+          "note": "Owner confirmed on Oct 28 that repotting shown in updated photos was completed Monday, Oct 26. Clear inner nursery pot and amended substrate visible; specific recipe and root condition unconfirmed.",
+          "created_at": "2026-10-28T23:52:45.775604+00:00"
+        }
+      ],
       "reference_image": "53-delilah-purple-passion-cover.webp",
       "comparison": {
         "ready": false,
