@@ -2,13 +2,13 @@
   "schema_version": 1,
   "read_only": true,
   "source": "GAIA owner-approved reference snapshot",
-  "generated_at": "2026-10-28T23:53:46.544Z",
-  "synced_at": "2026-10-28T23:53:46.867428+00:00",
+  "generated_at": "2026-10-29T05:54:28.233Z",
+  "synced_at": "2026-10-29T05:54:41.062715+00:00",
   "plant_count": 53,
   "comparison_ready_count": 42,
-  "comparison_candidate_count": 57,
-  "uploaded_photo_count": 62,
-  "exported_photo_count": 62,
+  "comparison_candidate_count": 61,
+  "uploaded_photo_count": 66,
+  "exported_photo_count": 66,
   "catalog_reference_count": 48,
   "unavailable_sections": [],
   "plants": [
@@ -1145,6 +1145,18 @@
       "species": "Anthurium",
       "reference_photo": "11-karlach.jpg",
       "latest_photo": {
+        "id": "7259d160-3a2d-4eec-8ef2-61b9bf32746e",
+        "plant_id": "11",
+        "taken_on": "2026-10-28",
+        "created_at": "2026-10-29T02:14:47.137509+00:00",
+        "caption": "",
+        "analysis_status": "pending",
+        "analysis_summary": "",
+        "analysis_findings": [],
+        "analyzed_at": null,
+        "snapshot_image": "gaia-reference/photos/11-4fc82b26ae-latest_photo.webp"
+      },
+      "previous_photo": {
         "id": "c753f042-7fca-4cae-80a1-042c799ac495",
         "plant_id": "11",
         "taken_on": "2026-10-20",
@@ -1181,16 +1193,22 @@
           }
         ],
         "analyzed_at": "2026-10-23T17:29:09.803+00:00",
-        "snapshot_image": "gaia-reference/photos/11-4fc82b26ae-latest_photo.webp"
+        "snapshot_image": "gaia-reference/photos/11-4fc82b26ae-previous_photo.webp"
       },
-      "previous_photo": null,
       "photos": [
+        {
+          "id": "7259d160-3a2d-4eec-8ef2-61b9bf32746e",
+          "taken_on": "2026-10-28",
+          "created_at": "2026-10-29T02:14:47.137509+00:00",
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/11-4fc82b26ae-latest_photo.webp"
+        },
         {
           "id": "c753f042-7fca-4cae-80a1-042c799ac495",
           "taken_on": "2026-10-20",
           "created_at": "2026-10-21T04:39:31.749374+00:00",
           "analysis_status": "needs_attention",
-          "snapshot_image": "gaia-reference/photos/11-4fc82b26ae-latest_photo.webp"
+          "snapshot_image": "gaia-reference/photos/11-4fc82b26ae-previous_photo.webp"
         }
       ],
       "pot": {
@@ -1239,8 +1257,14 @@
       "comparison": {
         "ready": true,
         "latest_image": "gaia-reference/photos/11-4fc82b26ae-latest_photo.webp",
-        "latest_captured_on": "2026-10-20",
+        "latest_captured_on": "2026-10-28",
         "candidates": [
+          {
+            "source": "journal",
+            "captured_on": "2026-10-20",
+            "image": "gaia-reference/photos/11-4fc82b26ae-previous_photo.webp",
+            "photo_id": "c753f042-7fca-4cae-80a1-042c799ac495"
+          },
           {
             "source": "catalog_reference",
             "captured_on": null,
@@ -1257,6 +1281,18 @@
       "species": "Fittonia",
       "reference_photo": "12-glados.jpg",
       "latest_photo": {
+        "id": "474f039f-c283-45e6-a44e-1bc40e69b751",
+        "plant_id": "12",
+        "taken_on": "2026-10-28",
+        "created_at": "2026-10-29T02:14:22.492934+00:00",
+        "caption": "",
+        "analysis_status": "pending",
+        "analysis_summary": "",
+        "analysis_findings": [],
+        "analyzed_at": null,
+        "snapshot_image": "gaia-reference/photos/12-6b51d431df-latest_photo.webp"
+      },
+      "previous_photo": {
         "id": "953d4e36-c5a8-46e8-b397-4d75d710e815",
         "plant_id": "12",
         "taken_on": "2026-10-18",
@@ -1293,16 +1329,22 @@
           }
         ],
         "analyzed_at": "2026-10-23T17:29:10.564+00:00",
-        "snapshot_image": "gaia-reference/photos/12-6b51d431df-latest_photo.webp"
+        "snapshot_image": "gaia-reference/photos/12-6b51d431df-previous_photo.webp"
       },
-      "previous_photo": null,
       "photos": [
+        {
+          "id": "474f039f-c283-45e6-a44e-1bc40e69b751",
+          "taken_on": "2026-10-28",
+          "created_at": "2026-10-29T02:14:22.492934+00:00",
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/12-6b51d431df-latest_photo.webp"
+        },
         {
           "id": "953d4e36-c5a8-46e8-b397-4d75d710e815",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:35:40.025981+00:00",
           "analysis_status": "reviewed",
-          "snapshot_image": "gaia-reference/photos/12-6b51d431df-latest_photo.webp"
+          "snapshot_image": "gaia-reference/photos/12-6b51d431df-previous_photo.webp"
         }
       ],
       "pot": {
@@ -1344,8 +1386,14 @@
       "comparison": {
         "ready": true,
         "latest_image": "gaia-reference/photos/12-6b51d431df-latest_photo.webp",
-        "latest_captured_on": "2026-10-18",
+        "latest_captured_on": "2026-10-28",
         "candidates": [
+          {
+            "source": "journal",
+            "captured_on": "2026-10-18",
+            "image": "gaia-reference/photos/12-6b51d431df-previous_photo.webp",
+            "photo_id": "953d4e36-c5a8-46e8-b397-4d75d710e815"
+          },
           {
             "source": "catalog_reference",
             "captured_on": null,
@@ -3315,6 +3363,18 @@
       "species": "Pilea involucrata-type",
       "reference_photo": "35-chewie-friendship-plant.jpg",
       "latest_photo": {
+        "id": "c946aea5-b468-424c-b626-d267b4d8fdc4",
+        "plant_id": "35",
+        "taken_on": "2026-10-28",
+        "created_at": "2026-10-29T02:15:18.781796+00:00",
+        "caption": "",
+        "analysis_status": "pending",
+        "analysis_summary": "",
+        "analysis_findings": [],
+        "analyzed_at": null,
+        "snapshot_image": "gaia-reference/photos/35-9f14025af0-latest_photo.webp"
+      },
+      "previous_photo": {
         "id": "846c6985-ecd9-43c5-baa2-d0e00f36365c",
         "plant_id": "35",
         "taken_on": "2026-10-18",
@@ -3351,16 +3411,22 @@
           }
         ],
         "analyzed_at": "2026-10-23T17:34:26.641+00:00",
-        "snapshot_image": "gaia-reference/photos/35-9f14025af0-latest_photo.webp"
+        "snapshot_image": "gaia-reference/photos/35-9f14025af0-previous_photo.webp"
       },
-      "previous_photo": null,
       "photos": [
+        {
+          "id": "c946aea5-b468-424c-b626-d267b4d8fdc4",
+          "taken_on": "2026-10-28",
+          "created_at": "2026-10-29T02:15:18.781796+00:00",
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/35-9f14025af0-latest_photo.webp"
+        },
         {
           "id": "846c6985-ecd9-43c5-baa2-d0e00f36365c",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:46:59.561289+00:00",
           "analysis_status": "reviewed",
-          "snapshot_image": "gaia-reference/photos/35-9f14025af0-latest_photo.webp"
+          "snapshot_image": "gaia-reference/photos/35-9f14025af0-previous_photo.webp"
         }
       ],
       "pot": null,
@@ -3385,8 +3451,14 @@
       "comparison": {
         "ready": true,
         "latest_image": "gaia-reference/photos/35-9f14025af0-latest_photo.webp",
-        "latest_captured_on": "2026-10-18",
+        "latest_captured_on": "2026-10-28",
         "candidates": [
+          {
+            "source": "journal",
+            "captured_on": "2026-10-18",
+            "image": "gaia-reference/photos/35-9f14025af0-previous_photo.webp",
+            "photo_id": "846c6985-ecd9-43c5-baa2-d0e00f36365c"
+          },
           {
             "source": "catalog_reference",
             "captured_on": null,
@@ -3833,6 +3905,18 @@
       "species": "Tradescantia zebrina",
       "reference_photo": "42-zelda-tradescantia-zebrina.jpg",
       "latest_photo": {
+        "id": "5c88c6e6-6f46-4580-8fcd-acbe830d081c",
+        "plant_id": "42",
+        "taken_on": "2026-10-28",
+        "created_at": "2026-10-29T02:13:52.917272+00:00",
+        "caption": "",
+        "analysis_status": "pending",
+        "analysis_summary": "",
+        "analysis_findings": [],
+        "analyzed_at": null,
+        "snapshot_image": "gaia-reference/photos/42-73475cb40a-latest_photo.webp"
+      },
+      "previous_photo": {
         "id": "79d88182-b716-4a37-be18-8512fec25ce3",
         "plant_id": "42",
         "taken_on": "2026-10-18",
@@ -3873,34 +3957,29 @@
           }
         ],
         "analyzed_at": "2026-10-23T17:36:34.168+00:00",
-        "snapshot_image": "gaia-reference/photos/42-73475cb40a-latest_photo.webp"
-      },
-      "previous_photo": {
-        "id": "ca4444e0-14bd-4a86-aa0b-79d7ce348ebf",
-        "plant_id": "42",
-        "taken_on": "2026-10-18",
-        "created_at": "2026-10-21T04:24:43.824398+00:00",
-        "caption": "",
-        "analysis_status": "pending",
-        "analysis_summary": "",
-        "analysis_findings": [],
-        "analyzed_at": null,
         "snapshot_image": "gaia-reference/photos/42-73475cb40a-previous_photo.webp"
       },
       "photos": [
+        {
+          "id": "5c88c6e6-6f46-4580-8fcd-acbe830d081c",
+          "taken_on": "2026-10-28",
+          "created_at": "2026-10-29T02:13:52.917272+00:00",
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/42-73475cb40a-latest_photo.webp"
+        },
         {
           "id": "79d88182-b716-4a37-be18-8512fec25ce3",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:26:46.040712+00:00",
           "analysis_status": "reviewed",
-          "snapshot_image": "gaia-reference/photos/42-73475cb40a-latest_photo.webp"
+          "snapshot_image": "gaia-reference/photos/42-73475cb40a-previous_photo.webp"
         },
         {
           "id": "ca4444e0-14bd-4a86-aa0b-79d7ce348ebf",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:24:43.824398+00:00",
           "analysis_status": "pending",
-          "snapshot_image": "gaia-reference/photos/42-73475cb40a-previous_photo.webp"
+          "snapshot_image": "gaia-reference/photos/42-73475cb40a-history-ca4444e0-14bd-4a86-aa0b-79d7ce348ebf.webp"
         }
       ],
       "pot": {
@@ -3949,12 +4028,18 @@
       "comparison": {
         "ready": true,
         "latest_image": "gaia-reference/photos/42-73475cb40a-latest_photo.webp",
-        "latest_captured_on": "2026-10-18",
+        "latest_captured_on": "2026-10-28",
         "candidates": [
           {
             "source": "journal",
             "captured_on": "2026-10-18",
             "image": "gaia-reference/photos/42-73475cb40a-previous_photo.webp",
+            "photo_id": "79d88182-b716-4a37-be18-8512fec25ce3"
+          },
+          {
+            "source": "journal",
+            "captured_on": "2026-10-18",
+            "image": "gaia-reference/photos/42-73475cb40a-history-ca4444e0-14bd-4a86-aa0b-79d7ce348ebf.webp",
             "photo_id": "ca4444e0-14bd-4a86-aa0b-79d7ce348ebf"
           },
           {
