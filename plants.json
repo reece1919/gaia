@@ -1,10 +1,14 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "Oct 28, 2026",
+  "updatedAt": "Nov 1, 2026",
   "summaryNote": "tap for care, priorities & history",
   "recentCare": {
-    "dateLabel": "OCT 10–12, 2026",
+    "dateLabel": "NOV 1, 2026",
     "tiles": [
+      {
+        "title": "Nov 1 · eleven additions",
+        "descriptionHtml": "Sheogorath, Trinity, Hurley, Xemnas, Bellatrix, Fleur, Ripley, Varric, Kairi, Sylens and Meridia were added as plants #54–64. New plants need initial pest and moisture checks; photos are not yet uploaded to GAIA."
+      },
       {
         "title": "Oct 10 · existing crew",
         "descriptionHtml": "Existing collection bathed. Spider mites reported on Morgana, Phil, C-3PO, Tywin, Karlach, and Calcifer."
@@ -7568,6 +7572,1900 @@
         "Velvet plant"
       ],
       "coverPhoto": "53-delilah-purple-passion-cover.webp"
+    },
+    {
+      "id": "54",
+      "name": "Sheogorath",
+      "species": "Mixed planting: variegated devil’s backbone (Euphorbia tithymaloides, provisional) and an unidentified Tradescantia-type trailer",
+      "searchName": "sheogorath variegated devil’s backbone mixed trailing planter",
+      "searchSpecies": "mixed planting: variegated devil’s backbone (euphorbia tithymaloides, provisional) and an unidentified tradescantia-type trailer",
+      "status": "Watch",
+      "photo": "",
+      "photoAlt": "Sheogorath · arrival photograph discussed Nov 1, 2026; image not yet uploaded to GAIA",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-01",
+      "tags": [
+        {
+          "style": "",
+          "label": "MIXED PLANTING"
+        },
+        {
+          "style": "",
+          "label": "ID TO VERIFY"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Inspect the two plant types separately, check drainage, and watch whether their watering needs differ. Confirm the identity of both components before making care changes.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Newly acquired Nov 1, 2026. An arrival photograph was discussed, but no formal GAIA condition, root, moisture or pest assessment has been saved yet.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Water only after checking moisture in both areas of the pot. Devil’s backbone generally prefers more dry-down than soft trailing Tradescantia; avoid maintaining constantly wet soil.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Start with bright indirect light; avoid abruptly placing either component in strong afternoon sun.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "After acclimation and once actively growing, use a balanced liquid houseplant fertilizer at a conservative label-based dilution; do not fertilize a plant that is stressed or has dry roots.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "New arrival Nov 1, 2026; permanent placement not recorded.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Do not rush to divide the new planter. Consider separate pots after acclimation if the roots or moisture requirements prove incompatible.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "An airy, free-draining mix is a compromise for this mixed planting. Check whether the two plants are actually sharing a root zone.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Species identification is provisional. Watch for softening stems, leaf drop and uneven moisture stress between the two components.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PROPAGATION",
+          "bodyHtml": "Propagation depends on confirming both plant IDs. Devil’s backbone can root from dried/callused stem cuttings; Tradescantia types root from stem nodes.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PEST CHECK",
+          "bodyHtml": "New addition; pest status unknown. Inspect upper and lower leaf surfaces, nodes and stems and keep separate from any plants with recent spider-mite activity during the initial observation period.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Nov 1, 2026",
+            "style": ""
+          },
+          {
+            "label": "Added to collection",
+            "valueHtml": "Nov 1, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Arrival photos shared Nov 1; no GAIA photo entry or formal photo review recorded",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Sheogorath",
+            "style": ""
+          },
+          {
+            "label": "Name inspiration",
+            "valueHtml": "Sheogorath · The Elder Scrolls",
+            "style": ""
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Current substrate",
+            "valueHtml": "Nursery mix; composition not verified",
+            "style": ""
+          },
+          {
+            "label": "Pest status",
+            "valueHtml": "Unconfirmed; inspect during acclimation",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "",
+            "bodyHtml": "<strong>Nov 1, 2026 · </strong>Named Sheogorath, plant #54, after Sheogorath · The Elder Scrolls."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 1, 2026 · </strong>New arrival recorded from the earlier photo conversation. Exact cultivar may be provisional, no photo file has been imported, and water/pot/roots/soil/pest data have not been independently verified."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "tropical",
+        "light": "bright-indirect",
+        "water": "one-two",
+        "waterLabel": "Check both root zones",
+        "soil": "well-drained"
+      },
+      "commonNames": [
+        "Variegated devil’s backbone",
+        "Mixed trailing planter"
+      ],
+      "coverPhoto": ""
+    },
+    {
+      "id": "55",
+      "name": "Trinity",
+      "species": "Tradescantia zebrina ‘Zebrina Purple’ (nursery label)",
+      "searchName": "trinity zebrina purple wandering dude",
+      "searchSpecies": "tradescantia zebrina ‘zebrina purple’ (nursery label)",
+      "status": "Good",
+      "photo": "",
+      "photoAlt": "Trinity · arrival photograph discussed Nov 1, 2026; image not yet uploaded to GAIA",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-01",
+      "tags": [
+        {
+          "style": "",
+          "label": "TRADESCANTIA"
+        },
+        {
+          "style": "",
+          "label": "PURPLE FOLIAGE"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Acclimate in very bright, indirect light; inspect the stem nodes and undersides for mites or thrips.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Newly acquired Nov 1, 2026. An arrival photograph was discussed, but no formal GAIA condition, root, moisture or pest assessment has been saved yet.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Water thoroughly when approximately the upper inch of mix dries, then drain. Do not keep the container standing in water.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Very bright indirect light helps maintain striping and compact growth; introduce limited gentle sun gradually.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "After acclimation and once actively growing, use a balanced liquid houseplant fertilizer at a conservative label-based dilution; do not fertilize a plant that is stressed or has dry roots.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "New arrival Nov 1, 2026; permanent placement not recorded.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Keep in the nursery pot while acclimating if it drains well. Repot only if root crowding or unsuitable soil makes it necessary.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Use a loose potting mix amended with perlite or small bark, retaining some moisture but draining freely.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Watch for leggy stems, browning leaf tips, and pests in the dense growth. Avoid leaving water trapped on foliage.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PROPAGATION",
+          "bodyHtml": "Root healthy stem cuttings with nodes in water or lightly moist mix; pinch stems after establishment for fullness.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PEST CHECK",
+          "bodyHtml": "New addition; pest status unknown. Inspect upper and lower leaf surfaces, nodes and stems and keep separate from any plants with recent spider-mite activity during the initial observation period.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Nov 1, 2026",
+            "style": ""
+          },
+          {
+            "label": "Added to collection",
+            "valueHtml": "Nov 1, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Arrival photos shared Nov 1; no GAIA photo entry or formal photo review recorded",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Trinity",
+            "style": ""
+          },
+          {
+            "label": "Name inspiration",
+            "valueHtml": "Trinity · The Matrix",
+            "style": ""
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Current substrate",
+            "valueHtml": "Nursery mix; composition not verified",
+            "style": ""
+          },
+          {
+            "label": "Pest status",
+            "valueHtml": "Unconfirmed; inspect during acclimation",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "",
+            "bodyHtml": "<strong>Nov 1, 2026 · </strong>Named Trinity, plant #55, after Trinity · The Matrix."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 1, 2026 · </strong>New arrival recorded from the earlier photo conversation. Exact cultivar may be provisional, no photo file has been imported, and water/pot/roots/soil/pest data have not been independently verified."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "tradescantia",
+        "light": "very-bright",
+        "water": "one",
+        "waterLabel": "Top 1″ dry",
+        "soil": "well-drained"
+      },
+      "commonNames": [
+        "Zebrina Purple",
+        "Wandering dude"
+      ],
+      "coverPhoto": ""
+    },
+    {
+      "id": "56",
+      "name": "Hurley",
+      "species": "Tradescantia chrysophylla ‘Baby Bunny Bellies’ (identification to confirm)",
+      "searchName": "hurley baby bunny bellies fuzzy tradescantia",
+      "searchSpecies": "tradescantia chrysophylla ‘baby bunny bellies’ (identification to confirm)",
+      "status": "Good",
+      "photo": "",
+      "photoAlt": "Hurley · arrival photograph discussed Nov 1, 2026; image not yet uploaded to GAIA",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-01",
+      "tags": [
+        {
+          "style": "",
+          "label": "TRADESCANTIA"
+        },
+        {
+          "style": "",
+          "label": "SOFT FOLIAGE"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Give bright indirect light and check drainage; allow it to acclimate before taking cuttings.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Newly acquired Nov 1, 2026. An arrival photograph was discussed, but no formal GAIA condition, root, moisture or pest assessment has been saved yet.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Let the upper portion of mix become slightly dry, then water through and drain. Avoid a permanently wet root ball.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Bright filtered light encourages short internodes; shield tender leaves from hot midday sun.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "After acclimation and once actively growing, use a balanced liquid houseplant fertilizer at a conservative label-based dilution; do not fertilize a plant that is stressed or has dry roots.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "New arrival Nov 1, 2026; permanent placement not recorded.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Keep in the nursery pot while acclimating if it drains well. Repot only if root crowding or unsuitable soil makes it necessary.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Loose well-draining mix with perlite or fine orchid bark; do not use a dense saturated substrate.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Fuzzy leaves can mark if repeatedly wetted; watch for stem rot, stretch and pests.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PROPAGATION",
+          "bodyHtml": "Stem cuttings containing nodes root readily; pinch established tips for bushier growth.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PEST CHECK",
+          "bodyHtml": "New addition; pest status unknown. Inspect upper and lower leaf surfaces, nodes and stems and keep separate from any plants with recent spider-mite activity during the initial observation period.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Nov 1, 2026",
+            "style": ""
+          },
+          {
+            "label": "Added to collection",
+            "valueHtml": "Nov 1, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Arrival photos shared Nov 1; no GAIA photo entry or formal photo review recorded",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Hurley",
+            "style": ""
+          },
+          {
+            "label": "Name inspiration",
+            "valueHtml": "Hurley · Lost",
+            "style": ""
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Current substrate",
+            "valueHtml": "Nursery mix; composition not verified",
+            "style": ""
+          },
+          {
+            "label": "Pest status",
+            "valueHtml": "Unconfirmed; inspect during acclimation",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "",
+            "bodyHtml": "<strong>Nov 1, 2026 · </strong>Named Hurley, plant #56, after Hurley · Lost."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 1, 2026 · </strong>New arrival recorded from the earlier photo conversation. Exact cultivar may be provisional, no photo file has been imported, and water/pot/roots/soil/pest data have not been independently verified."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "tradescantia",
+        "light": "bright-indirect",
+        "water": "one",
+        "waterLabel": "Top 1″ dry",
+        "soil": "well-drained"
+      },
+      "commonNames": [
+        "Baby Bunny Bellies",
+        "Fuzzy Tradescantia"
+      ],
+      "coverPhoto": ""
+    },
+    {
+      "id": "57",
+      "name": "Xemnas",
+      "species": "Scindapsus pictus (possibly ‘Exotica’; cultivar unverified)",
+      "searchName": "xemnas satin pothos scindapsus possible exotica",
+      "searchSpecies": "scindapsus pictus (possibly ‘exotica’; cultivar unverified)",
+      "status": "Good",
+      "photo": "",
+      "photoAlt": "Xemnas · arrival photograph discussed Nov 1, 2026; image not yet uploaded to GAIA",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-01",
+      "tags": [
+        {
+          "style": "",
+          "label": "AROID"
+        },
+        {
+          "style": "",
+          "label": "SATIN FOLIAGE"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Check for drainage and pest signs, then settle in bright indirect light. Confirm cultivar as foliage matures.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Newly acquired Nov 1, 2026. An arrival photograph was discussed, but no formal GAIA condition, root, moisture or pest assessment has been saved yet.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Let roughly the upper 1–2 inches of the mix dry before watering; allow excess to drain.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Bright indirect light preserves silver markings without scorching the leaves.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "After acclimation and once actively growing, use a balanced liquid houseplant fertilizer at a conservative label-based dilution; do not fertilize a plant that is stressed or has dry roots.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "New arrival Nov 1, 2026; permanent placement not recorded.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Keep in the nursery pot while acclimating if it drains well. Repot only if root crowding or unsuitable soil makes it necessary.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Use an airy aroid mix with potting mix, bark and perlite, rather than an excessively coarse or waterlogged medium.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Curled leaves, dry tips or yellowing can indicate water imbalance. Inspect nodes and leaf backs for pests.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PROPAGATION",
+          "bodyHtml": "Root stem sections with a node in a moist, airy medium or water; provide support for larger climbing leaves.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PEST CHECK",
+          "bodyHtml": "New addition; pest status unknown. Inspect upper and lower leaf surfaces, nodes and stems and keep separate from any plants with recent spider-mite activity during the initial observation period.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Nov 1, 2026",
+            "style": ""
+          },
+          {
+            "label": "Added to collection",
+            "valueHtml": "Nov 1, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Arrival photos shared Nov 1; no GAIA photo entry or formal photo review recorded",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Xemnas",
+            "style": ""
+          },
+          {
+            "label": "Name inspiration",
+            "valueHtml": "Xemnas · Kingdom Hearts",
+            "style": ""
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Current substrate",
+            "valueHtml": "Nursery mix; composition not verified",
+            "style": ""
+          },
+          {
+            "label": "Pest status",
+            "valueHtml": "Unconfirmed; inspect during acclimation",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "",
+            "bodyHtml": "<strong>Nov 1, 2026 · </strong>Named Xemnas, plant #57, after Xemnas · Kingdom Hearts."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 1, 2026 · </strong>New arrival recorded from the earlier photo conversation. Exact cultivar may be provisional, no photo file has been imported, and water/pot/roots/soil/pest data have not been independently verified."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "aroid",
+        "light": "bright-indirect",
+        "water": "one-two",
+        "waterLabel": "1–2″ dry",
+        "soil": "chunky"
+      },
+      "commonNames": [
+        "Satin pothos",
+        "Scindapsus",
+        "Possible Exotica"
+      ],
+      "coverPhoto": ""
+    },
+    {
+      "id": "58",
+      "name": "Bellatrix",
+      "species": "Tradescantia zebrina (burgundy form; cultivar unverified)",
+      "searchName": "bellatrix burgundy zebrina tradescantia zebrina",
+      "searchSpecies": "tradescantia zebrina (burgundy form; cultivar unverified)",
+      "status": "Good",
+      "photo": "",
+      "photoAlt": "Bellatrix · arrival photograph discussed Nov 1, 2026; image not yet uploaded to GAIA",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-01",
+      "tags": [
+        {
+          "style": "",
+          "label": "TRADESCANTIA"
+        },
+        {
+          "style": "",
+          "label": "BURGUNDY"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Place in bright light and inspect foliage and nodes; avoid immediately soaking a still-wet nursery pot.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Newly acquired Nov 1, 2026. An arrival photograph was discussed, but no formal GAIA condition, root, moisture or pest assessment has been saved yet.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Water when the upper inch begins to dry, with full drainage. Avoid prolonged dryness or constant saturation.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Very bright indirect light helps retain rich burgundy pigmentation; acclimate to any direct sun.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "After acclimation and once actively growing, use a balanced liquid houseplant fertilizer at a conservative label-based dilution; do not fertilize a plant that is stressed or has dry roots.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "New arrival Nov 1, 2026; permanent placement not recorded.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Keep in the nursery pot while acclimating if it drains well. Repot only if root crowding or unsuitable soil makes it necessary.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Well-drained potting mix with perlite or small bark particles.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Monitor fading color, legginess and spider mites; exact cultivar remains unverified.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PROPAGATION",
+          "bodyHtml": "Take node-bearing cuttings and replant them in the same pot to create a fuller plant.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PEST CHECK",
+          "bodyHtml": "New addition; pest status unknown. Inspect upper and lower leaf surfaces, nodes and stems and keep separate from any plants with recent spider-mite activity during the initial observation period.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Nov 1, 2026",
+            "style": ""
+          },
+          {
+            "label": "Added to collection",
+            "valueHtml": "Nov 1, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Arrival photos shared Nov 1; no GAIA photo entry or formal photo review recorded",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Bellatrix",
+            "style": ""
+          },
+          {
+            "label": "Name inspiration",
+            "valueHtml": "Bellatrix Lestrange · Harry Potter",
+            "style": ""
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Current substrate",
+            "valueHtml": "Nursery mix; composition not verified",
+            "style": ""
+          },
+          {
+            "label": "Pest status",
+            "valueHtml": "Unconfirmed; inspect during acclimation",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "",
+            "bodyHtml": "<strong>Nov 1, 2026 · </strong>Named Bellatrix, plant #58, after Bellatrix Lestrange · Harry Potter."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 1, 2026 · </strong>New arrival recorded from the earlier photo conversation. Exact cultivar may be provisional, no photo file has been imported, and water/pot/roots/soil/pest data have not been independently verified."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "tradescantia",
+        "light": "very-bright",
+        "water": "one",
+        "waterLabel": "Top 1″ dry",
+        "soil": "well-drained"
+      },
+      "commonNames": [
+        "Burgundy zebrina",
+        "Tradescantia zebrina"
+      ],
+      "coverPhoto": ""
+    },
+    {
+      "id": "59",
+      "name": "Fleur",
+      "species": "Variegated Tradescantia (possibly ‘Pistachio White’; cultivar unverified)",
+      "searchName": "fleur variegated tradescantia possible pistachio white",
+      "searchSpecies": "variegated tradescantia (possibly ‘pistachio white’; cultivar unverified)",
+      "status": "Good",
+      "photo": "",
+      "photoAlt": "Fleur · arrival photograph discussed Nov 1, 2026; image not yet uploaded to GAIA",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-01",
+      "tags": [
+        {
+          "style": "",
+          "label": "VARIEGATED"
+        },
+        {
+          "style": "",
+          "label": "ID TO VERIFY"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Give bright, filtered light without scorching pale foliage and confirm the cultivar later.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Newly acquired Nov 1, 2026. An arrival photograph was discussed, but no formal GAIA condition, root, moisture or pest assessment has been saved yet.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Water after the top inch of soil starts to dry; let surplus drain.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Strong filtered light supports variegation; protect pale sections from direct harsh sun.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "After acclimation and once actively growing, use a balanced liquid houseplant fertilizer at a conservative label-based dilution; do not fertilize a plant that is stressed or has dry roots.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "New arrival Nov 1, 2026; permanent placement not recorded.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Keep in the nursery pot while acclimating if it drains well. Repot only if root crowding or unsuitable soil makes it necessary.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Airy, modestly moisture-retentive potting mix with extra drainage material.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Watch for browning white tissue, green reversion, and soft stems; do not claim a precise cultivar until verified.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PROPAGATION",
+          "bodyHtml": "Root healthy variegated node cuttings; selective pinching can encourage branching.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PEST CHECK",
+          "bodyHtml": "New addition; pest status unknown. Inspect upper and lower leaf surfaces, nodes and stems and keep separate from any plants with recent spider-mite activity during the initial observation period.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Nov 1, 2026",
+            "style": ""
+          },
+          {
+            "label": "Added to collection",
+            "valueHtml": "Nov 1, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Arrival photos shared Nov 1; no GAIA photo entry or formal photo review recorded",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Fleur",
+            "style": ""
+          },
+          {
+            "label": "Name inspiration",
+            "valueHtml": "Fleur Delacour · Harry Potter",
+            "style": ""
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Current substrate",
+            "valueHtml": "Nursery mix; composition not verified",
+            "style": ""
+          },
+          {
+            "label": "Pest status",
+            "valueHtml": "Unconfirmed; inspect during acclimation",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "",
+            "bodyHtml": "<strong>Nov 1, 2026 · </strong>Named Fleur, plant #59, after Fleur Delacour · Harry Potter."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 1, 2026 · </strong>New arrival recorded from the earlier photo conversation. Exact cultivar may be provisional, no photo file has been imported, and water/pot/roots/soil/pest data have not been independently verified."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "tradescantia",
+        "light": "bright-indirect",
+        "water": "one",
+        "waterLabel": "Top 1″ dry",
+        "soil": "well-drained"
+      },
+      "commonNames": [
+        "Variegated Tradescantia",
+        "Possible Pistachio White"
+      ],
+      "coverPhoto": ""
+    },
+    {
+      "id": "60",
+      "name": "Ripley",
+      "species": "Monstera deliciosa (juvenile)",
+      "searchName": "ripley monstera deliciosa swiss cheese plant",
+      "searchSpecies": "monstera deliciosa (juvenile)",
+      "status": "Good",
+      "photo": "",
+      "photoAlt": "Ripley · arrival photograph discussed Nov 1, 2026; image not yet uploaded to GAIA",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-01",
+      "tags": [
+        {
+          "style": "",
+          "label": "MONSTERA"
+        },
+        {
+          "style": "",
+          "label": "YOUNG PLANT"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Give bright indirect light, check drainage and inspect leaves for pests. Let the young plant acclimate before any repotting.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Newly acquired Nov 1, 2026. An arrival photograph was discussed, but no formal GAIA condition, root, moisture or pest assessment has been saved yet.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Water once the top 1–2 inches of mix are dry; drain fully and adjust to pot size.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Bright indirect light for steady juvenile growth; avoid an abrupt move into direct afternoon sun.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "After acclimation and once actively growing, use a balanced liquid houseplant fertilizer at a conservative label-based dilution; do not fertilize a plant that is stressed or has dry roots.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "New arrival Nov 1, 2026; permanent placement not recorded.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Keep in the nursery pot while acclimating if it drains well. Repot only if root crowding or unsuitable soil makes it necessary.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Airy aroid mix with bark and perlite plus enough finer material to retain moisture around juvenile roots.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Watch for yellowing, leaf loss and new growth; fenestrations generally develop with maturity and adequate support/light.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PROPAGATION",
+          "bodyHtml": "Stem cuttings with a viable node can propagate once the plant is well established.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PEST CHECK",
+          "bodyHtml": "New addition; pest status unknown. Inspect upper and lower leaf surfaces, nodes and stems and keep separate from any plants with recent spider-mite activity during the initial observation period.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Nov 1, 2026",
+            "style": ""
+          },
+          {
+            "label": "Added to collection",
+            "valueHtml": "Nov 1, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Arrival photos shared Nov 1; no GAIA photo entry or formal photo review recorded",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Ripley",
+            "style": ""
+          },
+          {
+            "label": "Name inspiration",
+            "valueHtml": "Ellen Ripley · Alien",
+            "style": ""
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Current substrate",
+            "valueHtml": "Nursery mix; composition not verified",
+            "style": ""
+          },
+          {
+            "label": "Pest status",
+            "valueHtml": "Unconfirmed; inspect during acclimation",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "",
+            "bodyHtml": "<strong>Nov 1, 2026 · </strong>Named Ripley, plant #60, after Ellen Ripley · Alien."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 1, 2026 · </strong>New arrival recorded from the earlier photo conversation. Exact cultivar may be provisional, no photo file has been imported, and water/pot/roots/soil/pest data have not been independently verified."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "aroid",
+        "light": "bright-indirect",
+        "water": "one-two",
+        "waterLabel": "1–2″ dry",
+        "soil": "chunky"
+      },
+      "commonNames": [
+        "Monstera deliciosa",
+        "Swiss cheese plant"
+      ],
+      "coverPhoto": ""
+    },
+    {
+      "id": "61",
+      "name": "Varric",
+      "species": "Epipremnum aureum (golden pothos)",
+      "searchName": "varric golden pothos devil’s ivy",
+      "searchSpecies": "epipremnum aureum (golden pothos)",
+      "status": "Good",
+      "photo": "",
+      "photoAlt": "Varric · arrival photograph discussed Nov 1, 2026; image not yet uploaded to GAIA",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-01",
+      "tags": [
+        {
+          "style": "",
+          "label": "POTHOS"
+        },
+        {
+          "style": "",
+          "label": "TRAILING VINE"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Place in bright indirect light and inspect stem nodes and undersides. Decide later whether to trail or climb.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Newly acquired Nov 1, 2026. An arrival photograph was discussed, but no formal GAIA condition, root, moisture or pest assessment has been saved yet.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Water when about the top 1–2 inches dry, then drain. Avoid a soggy decorative cachepot.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Medium to bright indirect light is tolerated; brighter filtered light usually improves variegation and growth.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "After acclimation and once actively growing, use a balanced liquid houseplant fertilizer at a conservative label-based dilution; do not fertilize a plant that is stressed or has dry roots.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "New arrival Nov 1, 2026; permanent placement not recorded.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Keep in the nursery pot while acclimating if it drains well. Repot only if root crowding or unsuitable soil makes it necessary.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Well-draining houseplant mix with some perlite and bark.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Watch for yellow leaves after overwatering, leaf curl with drought, and pest activity.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PROPAGATION",
+          "bodyHtml": "Propagate stem cuttings that each include a node, then group rooted cuttings for bushiness.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PEST CHECK",
+          "bodyHtml": "New addition; pest status unknown. Inspect upper and lower leaf surfaces, nodes and stems and keep separate from any plants with recent spider-mite activity during the initial observation period.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Nov 1, 2026",
+            "style": ""
+          },
+          {
+            "label": "Added to collection",
+            "valueHtml": "Nov 1, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Arrival photos shared Nov 1; no GAIA photo entry or formal photo review recorded",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Varric",
+            "style": ""
+          },
+          {
+            "label": "Name inspiration",
+            "valueHtml": "Varric Tethras · Dragon Age",
+            "style": ""
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Current substrate",
+            "valueHtml": "Nursery mix; composition not verified",
+            "style": ""
+          },
+          {
+            "label": "Pest status",
+            "valueHtml": "Unconfirmed; inspect during acclimation",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "",
+            "bodyHtml": "<strong>Nov 1, 2026 · </strong>Named Varric, plant #61, after Varric Tethras · Dragon Age."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 1, 2026 · </strong>New arrival recorded from the earlier photo conversation. Exact cultivar may be provisional, no photo file has been imported, and water/pot/roots/soil/pest data have not been independently verified."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "aroid",
+        "light": "bright-indirect",
+        "water": "one-two",
+        "waterLabel": "1–2″ dry",
+        "soil": "well-drained"
+      },
+      "commonNames": [
+        "Golden pothos",
+        "Devil’s ivy"
+      ],
+      "coverPhoto": ""
+    },
+    {
+      "id": "62",
+      "name": "Kairi",
+      "species": "Tradescantia spathacea ‘Tricolor’",
+      "searchName": "kairi oyster plant moses-in-the-cradle tricolor tradescantia",
+      "searchSpecies": "tradescantia spathacea ‘tricolor’",
+      "status": "Good",
+      "photo": "",
+      "photoAlt": "Kairi · arrival photograph discussed Nov 1, 2026; image not yet uploaded to GAIA",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-01",
+      "tags": [
+        {
+          "style": "",
+          "label": "TRICOLOR"
+        },
+        {
+          "style": "",
+          "label": "ROSETTE"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Give bright filtered light and check the center of the rosette and leaf undersides for pests.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Newly acquired Nov 1, 2026. An arrival photograph was discussed, but no formal GAIA condition, root, moisture or pest assessment has been saved yet.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Let the upper inch or two of mix dry between thorough waterings. Avoid letting water pool in the central rosette.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Bright indirect light or gentle morning sun helps maintain pink and cream coloration; acclimate carefully.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "After acclimation and once actively growing, use a balanced liquid houseplant fertilizer at a conservative label-based dilution; do not fertilize a plant that is stressed or has dry roots.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "New arrival Nov 1, 2026; permanent placement not recorded.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Keep in the nursery pot while acclimating if it drains well. Repot only if root crowding or unsuitable soil makes it necessary.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Free-draining potting mix with added perlite or small bark.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Watch for faded variegation, brown tips and soft rosette bases.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PROPAGATION",
+          "bodyHtml": "Propagate by separating well-rooted offsets or using stem cuttings where appropriate.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PEST CHECK",
+          "bodyHtml": "New addition; pest status unknown. Inspect upper and lower leaf surfaces, nodes and stems and keep separate from any plants with recent spider-mite activity during the initial observation period.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Nov 1, 2026",
+            "style": ""
+          },
+          {
+            "label": "Added to collection",
+            "valueHtml": "Nov 1, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Arrival photos shared Nov 1; no GAIA photo entry or formal photo review recorded",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Kairi",
+            "style": ""
+          },
+          {
+            "label": "Name inspiration",
+            "valueHtml": "Kairi · Kingdom Hearts",
+            "style": ""
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Current substrate",
+            "valueHtml": "Nursery mix; composition not verified",
+            "style": ""
+          },
+          {
+            "label": "Pest status",
+            "valueHtml": "Unconfirmed; inspect during acclimation",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "",
+            "bodyHtml": "<strong>Nov 1, 2026 · </strong>Named Kairi, plant #62, after Kairi · Kingdom Hearts."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 1, 2026 · </strong>New arrival recorded from the earlier photo conversation. Exact cultivar may be provisional, no photo file has been imported, and water/pot/roots/soil/pest data have not been independently verified."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "tradescantia",
+        "light": "bright-indirect",
+        "water": "one-two",
+        "waterLabel": "1–2″ dry",
+        "soil": "well-drained"
+      },
+      "commonNames": [
+        "Oyster plant",
+        "Moses-in-the-cradle",
+        "Tricolor Tradescantia"
+      ],
+      "coverPhoto": ""
+    },
+    {
+      "id": "63",
+      "name": "Sylens",
+      "species": "Scindapsus pictus (cultivar unverified)",
+      "searchName": "sylens satin pothos scindapsus pictus",
+      "searchSpecies": "scindapsus pictus (cultivar unverified)",
+      "status": "Good",
+      "photo": "",
+      "photoAlt": "Sylens · arrival photograph discussed Nov 1, 2026; image not yet uploaded to GAIA",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-01",
+      "tags": [
+        {
+          "style": "",
+          "label": "AROID"
+        },
+        {
+          "style": "",
+          "label": "SILVER FOLIAGE"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Acclimate in bright indirect light, inspect leaves and check drainage. Keep cultivar unspecified pending better identification.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Newly acquired Nov 1, 2026. An arrival photograph was discussed, but no formal GAIA condition, root, moisture or pest assessment has been saved yet.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Allow about the upper 1–2 inches of mix to dry before watering. Drain thoroughly.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Bright filtered light encourages silver patterning while avoiding scorch.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "After acclimation and once actively growing, use a balanced liquid houseplant fertilizer at a conservative label-based dilution; do not fertilize a plant that is stressed or has dry roots.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "New arrival Nov 1, 2026; permanent placement not recorded.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Keep in the nursery pot while acclimating if it drains well. Repot only if root crowding or unsuitable soil makes it necessary.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Airy aroid mix of potting mix, bark and perlite with moisture retention for fine roots.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Check leaf curling, yellowing and pest pressure; distinguish this plant from Xemnas using its unique plant ID.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PROPAGATION",
+          "bodyHtml": "Root node-bearing stem cuttings and train upward for larger leaves, if desired.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PEST CHECK",
+          "bodyHtml": "New addition; pest status unknown. Inspect upper and lower leaf surfaces, nodes and stems and keep separate from any plants with recent spider-mite activity during the initial observation period.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Nov 1, 2026",
+            "style": ""
+          },
+          {
+            "label": "Added to collection",
+            "valueHtml": "Nov 1, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Arrival photos shared Nov 1; no GAIA photo entry or formal photo review recorded",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Sylens",
+            "style": ""
+          },
+          {
+            "label": "Name inspiration",
+            "valueHtml": "Sylens · Horizon Zero Dawn",
+            "style": ""
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Current substrate",
+            "valueHtml": "Nursery mix; composition not verified",
+            "style": ""
+          },
+          {
+            "label": "Pest status",
+            "valueHtml": "Unconfirmed; inspect during acclimation",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "",
+            "bodyHtml": "<strong>Nov 1, 2026 · </strong>Named Sylens, plant #63, after Sylens · Horizon Zero Dawn."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 1, 2026 · </strong>New arrival recorded from the earlier photo conversation. Exact cultivar may be provisional, no photo file has been imported, and water/pot/roots/soil/pest data have not been independently verified."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "aroid",
+        "light": "bright-indirect",
+        "water": "one-two",
+        "waterLabel": "1–2″ dry",
+        "soil": "chunky"
+      },
+      "commonNames": [
+        "Satin pothos",
+        "Scindapsus pictus"
+      ],
+      "coverPhoto": ""
+    },
+    {
+      "id": "64",
+      "name": "Meridia",
+      "species": "Variegated Tradescantia (possibly ‘Yellow Hill’; cultivar unverified)",
+      "searchName": "meridia variegated tradescantia possible yellow hill",
+      "searchSpecies": "variegated tradescantia (possibly ‘yellow hill’; cultivar unverified)",
+      "status": "Good",
+      "photo": "",
+      "photoAlt": "Meridia · arrival photograph discussed Nov 1, 2026; image not yet uploaded to GAIA",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-01",
+      "tags": [
+        {
+          "style": "",
+          "label": "VARIEGATED"
+        },
+        {
+          "style": "",
+          "label": "ID TO VERIFY"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Start in bright indirect light; monitor pale leaves and confirm the cultivar as new growth develops.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Newly acquired Nov 1, 2026. An arrival photograph was discussed, but no formal GAIA condition, root, moisture or pest assessment has been saved yet.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Water once the top inch of mix starts to dry, then drain well.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Bright indirect light supports variegation; avoid sudden direct midday sun.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "After acclimation and once actively growing, use a balanced liquid houseplant fertilizer at a conservative label-based dilution; do not fertilize a plant that is stressed or has dry roots.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "New arrival Nov 1, 2026; permanent placement not recorded.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Keep in the nursery pot while acclimating if it drains well. Repot only if root crowding or unsuitable soil makes it necessary.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Loose, well-drained potting mix with perlite or bark in moderation.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Watch for scorch on pale areas, weak stretched growth and green reversion; exact cultivar is unconfirmed.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PROPAGATION",
+          "bodyHtml": "Root variegated node cuttings and pinch established stems to encourage density.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PEST CHECK",
+          "bodyHtml": "New addition; pest status unknown. Inspect upper and lower leaf surfaces, nodes and stems and keep separate from any plants with recent spider-mite activity during the initial observation period.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Nov 1, 2026",
+            "style": ""
+          },
+          {
+            "label": "Added to collection",
+            "valueHtml": "Nov 1, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Arrival photos shared Nov 1; no GAIA photo entry or formal photo review recorded",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Meridia",
+            "style": ""
+          },
+          {
+            "label": "Name inspiration",
+            "valueHtml": "Meridia · The Elder Scrolls",
+            "style": ""
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Last bath",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Not recorded",
+            "style": ""
+          },
+          {
+            "label": "Current substrate",
+            "valueHtml": "Nursery mix; composition not verified",
+            "style": ""
+          },
+          {
+            "label": "Pest status",
+            "valueHtml": "Unconfirmed; inspect during acclimation",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "",
+            "bodyHtml": "<strong>Nov 1, 2026 · </strong>Named Meridia, plant #64, after Meridia · The Elder Scrolls."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 1, 2026 · </strong>New arrival recorded from the earlier photo conversation. Exact cultivar may be provisional, no photo file has been imported, and water/pot/roots/soil/pest data have not been independently verified."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "tradescantia",
+        "light": "bright-indirect",
+        "water": "one",
+        "waterLabel": "Top 1″ dry",
+        "soil": "well-drained"
+      },
+      "commonNames": [
+        "Variegated Tradescantia",
+        "Possible Yellow Hill"
+      ],
+      "coverPhoto": ""
     }
   ],
   "dashboardTasks": [
