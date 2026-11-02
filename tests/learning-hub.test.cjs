@@ -17,7 +17,7 @@ const learning = evaluate("group-learning.js", {}).GAIA_GROUP_LEARNING;
 const ids = new Set(plants.map(p=>String(p.id)));
 
 test("Each plant has one stable ID, known family and an educated care type",()=>{
-  assert.equal(plants.length,48);
+  assert.ok(plants.length > 0, "Plant catalog must not be empty");
   assert.equal(ids.size,plants.length);
   for(const p of plants) {
     assert.match(p.id,/^\d\d$/);

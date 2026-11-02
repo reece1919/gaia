@@ -64,6 +64,7 @@
     "34":"plectranthus","35":"friendship","36":"monstera","37":"monstera","38":"monstera",
     "39":"zz","40":"falsearalia","41":"curio","42":"zebrina","43":"aglaonema","44":"cissus",
     "45":"pelargonium","46":"nanouk","47":"haworthiopsis","48":"spider",
+    "49":"luckybamboo","50":"monstera",
     "51":"coleus","52":"umbrella","53":"purplepassion",
     "54":"euphorbiamix",
     "55":"zebrina",
