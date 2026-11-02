@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "Nov 1, 2026",
+  "updatedAt": "Nov 2, 2026",
   "summaryNote": "tap for care, priorities & history",
   "recentCare": {
     "dateLabel": "NOV 1, 2026",
@@ -8957,8 +8957,8 @@
       "searchName": "kairi oyster plant moses-in-the-cradle tricolor tradescantia",
       "searchSpecies": "tradescantia spathacea ‘tricolor’",
       "status": "Good",
-      "photo": "",
-      "photoAlt": "Kairi · arrival photograph discussed Nov 1, 2026; image not yet uploaded to GAIA",
+      "photo": "62-kairi-arrival-20261101.webp",
+      "photoAlt": "Kairi · Tradescantia spathacea ‘Tricolor’ · arrival photo Nov 1, 2026",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-11-01",
@@ -9044,7 +9044,7 @@
         "facts": [
           {
             "label": "Last updated",
-            "valueHtml": "Nov 1, 2026",
+            "valueHtml": "Nov 2, 2026",
             "style": ""
           },
           {
@@ -9054,7 +9054,7 @@
           },
           {
             "label": "Last photo review",
-            "valueHtml": "Arrival photos shared Nov 1; no GAIA photo entry or formal photo review recorded",
+            "valueHtml": "Nov 1, 2026 · arrival cover saved; formal GAIA photo review not recorded",
             "style": ""
           },
           {
@@ -9105,7 +9105,7 @@
           },
           {
             "style": "care-entry",
-            "bodyHtml": "<strong>Nov 1, 2026 · </strong>New arrival recorded from the earlier photo conversation. Exact cultivar may be provisional, no photo file has been imported, and water/pot/roots/soil/pest data have not been independently verified."
+            "bodyHtml": "<strong>Nov 1, 2026 · </strong>New arrival recorded from the earlier photo conversation. Exact cultivar may be provisional, arrival cover photo saved Nov 2, and water/pot/roots/soil/pest data have not been independently verified."
           }
         ]
       },
@@ -9121,17 +9121,17 @@
         "Moses-in-the-cradle",
         "Tricolor Tradescantia"
       ],
-      "coverPhoto": ""
+      "coverPhoto": "62-kairi-arrival-20261101.webp"
     },
     {
       "id": "63",
-      "name": "Sylens",
+      "name": "Charles",
       "species": "Scindapsus pictus (cultivar unverified)",
-      "searchName": "sylens satin pothos scindapsus pictus",
+      "searchName": "charles satin pothos scindapsus pictus",
       "searchSpecies": "scindapsus pictus (cultivar unverified)",
       "status": "Good",
-      "photo": "63-sylens-arrival-20261101.webp",
-      "photoAlt": "Sylens · arrival photo · Nov 1, 2026",
+      "photo": "63-charles-arrival-20261101.webp",
+      "photoAlt": "Charles · Scindapsus pictus · arrival photo Nov 1, 2026",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-11-01",
@@ -9217,7 +9217,7 @@
         "facts": [
           {
             "label": "Last updated",
-            "valueHtml": "Nov 1, 2026",
+            "valueHtml": "Nov 2, 2026",
             "style": ""
           },
           {
@@ -9232,12 +9232,12 @@
           },
           {
             "label": "Name",
-            "valueHtml": "Sylens",
+            "valueHtml": "Charles",
             "style": ""
           },
           {
             "label": "Name inspiration",
-            "valueHtml": "Sylens · Horizon Zero Dawn",
+            "valueHtml": "Not recorded",
             "style": ""
           },
           {
@@ -9274,7 +9274,7 @@
         "notes": [
           {
             "style": "",
-            "bodyHtml": "<strong>Nov 1, 2026 · </strong>Named Sylens, plant #63, after Sylens · Horizon Zero Dawn."
+            "bodyHtml": "<strong>Nov 1, 2026 · </strong>Name corrected to Charles (#63) on Nov 2, as confirmed by owner; the mistaken name was removed."
           },
           {
             "style": "care-entry",
@@ -9293,7 +9293,7 @@
         "Satin pothos",
         "Scindapsus pictus"
       ],
-      "coverPhoto": "63-sylens-arrival-20261101.webp"
+      "coverPhoto": "63-charles-arrival-20261101.webp"
     },
     {
       "id": "64",
