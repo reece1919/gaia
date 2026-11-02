@@ -48,6 +48,11 @@
     coleus: {taxon:"Coleus scutellarioides",family:"Lamiaceae",habit:"Tender herbaceous perennial grown for variegated foliage",trait:"Coleus cultivars display pigment patterns that respond to light. Pinched shoot tips often branch, and cuttings root readily.",propagation:"Stem tip cuttings"},
     umbrella: {taxon:"Heptapleurum arboricola (syn. Schefflera arboricola)",family:"Araliaceae",habit:"Woody evergreen tropical shrub or small tree",trait:"Each umbrella-like leaf is palmately compound, with several leaflets radiating from one point. Not a true palm.",propagation:"Stem cuttings"},
     purplepassion: {taxon:"Gynura aurantiaca",family:"Asteraceae",habit:"Velvety herbaceous perennial, spreading to trailing with age",trait:"Fine purple hairs cover the foliage and create its velvety violet appearance. The plant belongs to the daisy family despite its unusual foliage.",propagation:"Stem tip cuttings"}
+    euphorbiamix: {taxon:"Euphorbia tithymaloides (provisional component of a mixed planter)",family:"Euphorbiaceae",habit:"Succulent-stemmed tropical shrub in mixed planting",trait:"The identification of the devil’s-backbone component is provisional. A second unidentified Tradescantia-type plant shares the pot; this family describes only the Euphorbia component.",propagation:"Stem cuttings after confirming identification"},
+    chrysophylla: {taxon:"Tradescantia chrysophylla (provisional)",family:"Commelinaceae",habit:"Soft-leaved trailing tropical perennial",trait:"Often marketed as Baby Bunny Bellies; hairy, golden-green trailing leaves. Cultivar labeling should be verified rather than presumed.",propagation:"Stem cuttings with nodes"},
+    scindapsus: {taxon:"Scindapsus pictus",family:"Araceae",habit:"Climbing or trailing tropical aroid",trait:"Matte heart-shaped leaves have silvery markings. Leaf size and pattern vary between cultivars; these plants’ cultivar labels are not confirmed.",propagation:"Node-bearing stem cuttings"},
+    tradescantiagenus: {taxon:"Tradescantia (species/cultivar uncertain)",family:"Commelinaceae",habit:"Trailing or creeping herbaceous perennial",trait:"Variegated trade selections can be difficult to distinguish; cultivar labels on Fleur and Meridia are provisional.",propagation:"Node-bearing stem cuttings"},
+    spathacea: {taxon:"Tradescantia spathacea",family:"Commelinaceae",habit:"Rosette-forming tropical perennial",trait:"Sword-like leaves can have purple undersides; Tricolor is grown for green, cream and pink striping.",propagation:"Rooted offsets or stem cuttings"}
   };
   const byPlant = {
     "01":"croton","02":"ponytail","03":"mammillaria","04":"flytrap","05":"parlor","06":"guzmania",
@@ -59,7 +64,18 @@
     "34":"plectranthus","35":"friendship","36":"monstera","37":"monstera","38":"monstera",
     "39":"zz","40":"falsearalia","41":"curio","42":"zebrina","43":"aglaonema","44":"cissus",
     "45":"pelargonium","46":"nanouk","47":"haworthiopsis","48":"spider",
-    "51":"coleus","52":"umbrella","53":"purplepassion"
+    "51":"coleus","52":"umbrella","53":"purplepassion",
+    "54":"euphorbiamix",
+    "55":"zebrina",
+    "56":"chrysophylla",
+    "57":"scindapsus",
+    "58":"zebrina",
+    "59":"tradescantiagenus",
+    "60":"monstera",
+    "61":"pothos",
+    "62":"spathacea",
+    "63":"scindapsus",
+    "64":"tradescantiagenus"
   };
   window.GAIA_SPECIES_GUIDE = Object.freeze({taxa,byPlant});
 })();
