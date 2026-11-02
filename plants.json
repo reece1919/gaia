@@ -7,7 +7,7 @@
     "tiles": [
       {
         "title": "Nov 1 · eleven additions",
-        "descriptionHtml": "Sheogorath, Trinity, Hurley, Xemnas, Bellatrix, Fleur, Ripley, Varric, Kairi, Sylens and Meridia were added as plants #54–64. New plants need initial pest and moisture checks; photos are not yet uploaded to GAIA."
+        "descriptionHtml": "Eleven named plants #54–64 were added. Arrival cover photos for 10 plants are saved to GAIA; Kairi (#62) still needs an arrival image. Watering, root condition, pot sizes and pests remain unverified."
       },
       {
         "title": "Oct 10 · existing crew",
@@ -7580,8 +7580,8 @@
       "searchName": "sheogorath variegated devil’s backbone mixed trailing planter",
       "searchSpecies": "mixed planting: variegated devil’s backbone (euphorbia tithymaloides, provisional) and an unidentified tradescantia-type trailer",
       "status": "Watch",
-      "photo": "",
-      "photoAlt": "Sheogorath · arrival photograph discussed Nov 1, 2026; image not yet uploaded to GAIA",
+      "photo": "54-sheogorath-arrival-20261101.webp",
+      "photoAlt": "Sheogorath · arrival photo · Nov 1, 2026",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-11-01",
@@ -7604,7 +7604,7 @@
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "Newly acquired Nov 1, 2026. An arrival photograph was discussed, but no formal GAIA condition, root, moisture or pest assessment has been saved yet.",
+          "bodyHtml": "Two visibly different plants share the small nursery pot: upright narrow yellow-green leaves and a purple-stemmed trailing plant with dusky green-purple foliage. Some pale or marked lower leaves are visible. Soil moisture, root condition and pest activity cannot be verified from this photograph.",
           "pClass": "",
           "style": "full"
         },
@@ -7677,7 +7677,7 @@
           },
           {
             "label": "Last photo review",
-            "valueHtml": "Arrival photos shared Nov 1; no GAIA photo entry or formal photo review recorded",
+            "valueHtml": "Nov 1, 2026 · arrival cover saved; formal GAIA photo review not recorded",
             "style": ""
           },
           {
@@ -7728,7 +7728,7 @@
           },
           {
             "style": "care-entry",
-            "bodyHtml": "<strong>Nov 1, 2026 · </strong>New arrival recorded from the earlier photo conversation. Exact cultivar may be provisional, no photo file has been imported, and water/pot/roots/soil/pest data have not been independently verified."
+            "bodyHtml": "<strong>Nov 1, 2026 · </strong>Arrival photo matched and added to the GAIA catalog. Two visibly different plants share the small nursery pot: upright narrow yellow-green leaves and a purple-stemmed trailing plant with dusky green-purple foliage. Some pale or marked lower leaves are visible. Soil moisture, root condition and pest activity cannot be verified from this photograph."
           }
         ]
       },
@@ -7743,7 +7743,7 @@
         "Variegated devil’s backbone",
         "Mixed trailing planter"
       ],
-      "coverPhoto": ""
+      "coverPhoto": "54-sheogorath-arrival-20261101.webp"
     },
     {
       "id": "55",
@@ -7752,8 +7752,8 @@
       "searchName": "trinity zebrina purple wandering dude",
       "searchSpecies": "tradescantia zebrina ‘zebrina purple’ (nursery label)",
       "status": "Good",
-      "photo": "",
-      "photoAlt": "Trinity · arrival photograph discussed Nov 1, 2026; image not yet uploaded to GAIA",
+      "photo": "55-trinity-arrival-20261101.webp",
+      "photoAlt": "Trinity · arrival photo · Nov 1, 2026",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-11-01",
@@ -7776,7 +7776,7 @@
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "Newly acquired Nov 1, 2026. An arrival photograph was discussed, but no formal GAIA condition, root, moisture or pest assessment has been saved yet.",
+          "bodyHtml": "Full trailing Tradescantia with silver-green striped, purple-backed pointed leaves and multiple branches spreading from the nursery pot. A few minor leaf blemishes are visible; no widespread collapse is apparent. Roots, moisture and pests remain unverified.",
           "pClass": "",
           "style": "full"
         },
@@ -7849,7 +7849,7 @@
           },
           {
             "label": "Last photo review",
-            "valueHtml": "Arrival photos shared Nov 1; no GAIA photo entry or formal photo review recorded",
+            "valueHtml": "Nov 1, 2026 · arrival cover saved; formal GAIA photo review not recorded",
             "style": ""
           },
           {
@@ -7900,7 +7900,7 @@
           },
           {
             "style": "care-entry",
-            "bodyHtml": "<strong>Nov 1, 2026 · </strong>New arrival recorded from the earlier photo conversation. Exact cultivar may be provisional, no photo file has been imported, and water/pot/roots/soil/pest data have not been independently verified."
+            "bodyHtml": "<strong>Nov 1, 2026 · </strong>Arrival photo matched and added to the GAIA catalog. Full trailing Tradescantia with silver-green striped, purple-backed pointed leaves and multiple branches spreading from the nursery pot. A few minor leaf blemishes are visible; no widespread collapse is apparent. Roots, moisture and pests remain unverified."
           }
         ]
       },
@@ -7915,7 +7915,7 @@
         "Zebrina Purple",
         "Wandering dude"
       ],
-      "coverPhoto": ""
+      "coverPhoto": "55-trinity-arrival-20261101.webp"
     },
     {
       "id": "56",
@@ -7924,8 +7924,8 @@
       "searchName": "hurley baby bunny bellies fuzzy tradescantia",
       "searchSpecies": "tradescantia chrysophylla ‘baby bunny bellies’ (identification to confirm)",
       "status": "Good",
-      "photo": "",
-      "photoAlt": "Hurley · arrival photograph discussed Nov 1, 2026; image not yet uploaded to GAIA",
+      "photo": "56-hurley-arrival-20261101.webp",
+      "photoAlt": "Hurley · arrival photo · Nov 1, 2026",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-11-01",
@@ -7948,7 +7948,7 @@
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "Newly acquired Nov 1, 2026. An arrival photograph was discussed, but no formal GAIA condition, root, moisture or pest assessment has been saved yet.",
+          "bodyHtml": "Numerous soft-looking, fuzzy dark green leaves with purplish undersides on trailing stems; some lighter specks or marks are visible. Overall foliage looks full in this view, but roots, moisture and pests were not examined.",
           "pClass": "",
           "style": "full"
         },
@@ -8021,7 +8021,7 @@
           },
           {
             "label": "Last photo review",
-            "valueHtml": "Arrival photos shared Nov 1; no GAIA photo entry or formal photo review recorded",
+            "valueHtml": "Nov 1, 2026 · arrival cover saved; formal GAIA photo review not recorded",
             "style": ""
           },
           {
@@ -8072,7 +8072,7 @@
           },
           {
             "style": "care-entry",
-            "bodyHtml": "<strong>Nov 1, 2026 · </strong>New arrival recorded from the earlier photo conversation. Exact cultivar may be provisional, no photo file has been imported, and water/pot/roots/soil/pest data have not been independently verified."
+            "bodyHtml": "<strong>Nov 1, 2026 · </strong>Arrival photo matched and added to the GAIA catalog. Numerous soft-looking, fuzzy dark green leaves with purplish undersides on trailing stems; some lighter specks or marks are visible. Overall foliage looks full in this view, but roots, moisture and pests were not examined."
           }
         ]
       },
@@ -8087,7 +8087,7 @@
         "Baby Bunny Bellies",
         "Fuzzy Tradescantia"
       ],
-      "coverPhoto": ""
+      "coverPhoto": "56-hurley-arrival-20261101.webp"
     },
     {
       "id": "57",
@@ -8096,8 +8096,8 @@
       "searchName": "xemnas satin pothos scindapsus possible exotica",
       "searchSpecies": "scindapsus pictus (possibly ‘exotica’; cultivar unverified)",
       "status": "Good",
-      "photo": "",
-      "photoAlt": "Xemnas · arrival photograph discussed Nov 1, 2026; image not yet uploaded to GAIA",
+      "photo": "57-xemnas-arrival-20261101.webp",
+      "photoAlt": "Xemnas · arrival photo · Nov 1, 2026",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-11-01",
@@ -8120,7 +8120,7 @@
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "Newly acquired Nov 1, 2026. An arrival photograph was discussed, but no formal GAIA condition, root, moisture or pest assessment has been saved yet.",
+          "bodyHtml": "Scindapsus with broad, matte heart-shaped leaves showing extensive silver-gray overlay and green veining. Several leaves extend beyond the pot, with small localized blemishes but no obvious extensive dieback. Exact cultivar remains unverified.",
           "pClass": "",
           "style": "full"
         },
@@ -8193,7 +8193,7 @@
           },
           {
             "label": "Last photo review",
-            "valueHtml": "Arrival photos shared Nov 1; no GAIA photo entry or formal photo review recorded",
+            "valueHtml": "Nov 1, 2026 · arrival cover saved; formal GAIA photo review not recorded",
             "style": ""
           },
           {
@@ -8244,7 +8244,7 @@
           },
           {
             "style": "care-entry",
-            "bodyHtml": "<strong>Nov 1, 2026 · </strong>New arrival recorded from the earlier photo conversation. Exact cultivar may be provisional, no photo file has been imported, and water/pot/roots/soil/pest data have not been independently verified."
+            "bodyHtml": "<strong>Nov 1, 2026 · </strong>Arrival photo matched and added to the GAIA catalog. Scindapsus with broad, matte heart-shaped leaves showing extensive silver-gray overlay and green veining. Several leaves extend beyond the pot, with small localized blemishes but no obvious extensive dieback. Exact cultivar remains unverified."
           }
         ]
       },
@@ -8260,7 +8260,7 @@
         "Scindapsus",
         "Possible Exotica"
       ],
-      "coverPhoto": ""
+      "coverPhoto": "57-xemnas-arrival-20261101.webp"
     },
     {
       "id": "58",
@@ -8269,8 +8269,8 @@
       "searchName": "bellatrix burgundy zebrina tradescantia zebrina",
       "searchSpecies": "tradescantia zebrina (burgundy form; cultivar unverified)",
       "status": "Good",
-      "photo": "",
-      "photoAlt": "Bellatrix · arrival photograph discussed Nov 1, 2026; image not yet uploaded to GAIA",
+      "photo": "58-bellatrix-arrival-20261101.webp",
+      "photoAlt": "Bellatrix · arrival photo · Nov 1, 2026",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-11-01",
@@ -8293,7 +8293,7 @@
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "Newly acquired Nov 1, 2026. An arrival photograph was discussed, but no formal GAIA condition, root, moisture or pest assessment has been saved yet.",
+          "bodyHtml": "Full hanging plant with burgundy, plum and purple-striped foliage, many branching tips and trailing stems. Some leaves show minor edge wear or small marks; root and pest assessments remain outstanding.",
           "pClass": "",
           "style": "full"
         },
@@ -8366,7 +8366,7 @@
           },
           {
             "label": "Last photo review",
-            "valueHtml": "Arrival photos shared Nov 1; no GAIA photo entry or formal photo review recorded",
+            "valueHtml": "Nov 1, 2026 · arrival cover saved; formal GAIA photo review not recorded",
             "style": ""
           },
           {
@@ -8417,7 +8417,7 @@
           },
           {
             "style": "care-entry",
-            "bodyHtml": "<strong>Nov 1, 2026 · </strong>New arrival recorded from the earlier photo conversation. Exact cultivar may be provisional, no photo file has been imported, and water/pot/roots/soil/pest data have not been independently verified."
+            "bodyHtml": "<strong>Nov 1, 2026 · </strong>Arrival photo matched and added to the GAIA catalog. Full hanging plant with burgundy, plum and purple-striped foliage, many branching tips and trailing stems. Some leaves show minor edge wear or small marks; root and pest assessments remain outstanding."
           }
         ]
       },
@@ -8432,7 +8432,7 @@
         "Burgundy zebrina",
         "Tradescantia zebrina"
       ],
-      "coverPhoto": ""
+      "coverPhoto": "58-bellatrix-arrival-20261101.webp"
     },
     {
       "id": "59",
@@ -8440,9 +8440,9 @@
       "species": "Variegated Tradescantia (possibly ‘Pistachio White’; cultivar unverified)",
       "searchName": "fleur variegated tradescantia possible pistachio white",
       "searchSpecies": "variegated tradescantia (possibly ‘pistachio white’; cultivar unverified)",
-      "status": "Good",
-      "photo": "",
-      "photoAlt": "Fleur · arrival photograph discussed Nov 1, 2026; image not yet uploaded to GAIA",
+      "status": "Watch",
+      "photo": "59-fleur-arrival-20261101.webp",
+      "photoAlt": "Fleur · arrival photo · Nov 1, 2026",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-11-01",
@@ -8465,7 +8465,7 @@
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "Newly acquired Nov 1, 2026. An arrival photograph was discussed, but no formal GAIA condition, root, moisture or pest assessment has been saved yet.",
+          "bodyHtml": "Dense cluster of green and predominantly cream-white striped trailing Tradescantia leaves. Several pale leaves have brown or dry-looking edges and patches. Observe new growth after acclimation; specific cultivar is not confirmed.",
           "pClass": "",
           "style": "full"
         },
@@ -8538,7 +8538,7 @@
           },
           {
             "label": "Last photo review",
-            "valueHtml": "Arrival photos shared Nov 1; no GAIA photo entry or formal photo review recorded",
+            "valueHtml": "Nov 1, 2026 · arrival cover saved; formal GAIA photo review not recorded",
             "style": ""
           },
           {
@@ -8589,7 +8589,7 @@
           },
           {
             "style": "care-entry",
-            "bodyHtml": "<strong>Nov 1, 2026 · </strong>New arrival recorded from the earlier photo conversation. Exact cultivar may be provisional, no photo file has been imported, and water/pot/roots/soil/pest data have not been independently verified."
+            "bodyHtml": "<strong>Nov 1, 2026 · </strong>Arrival photo matched and added to the GAIA catalog. Dense cluster of green and predominantly cream-white striped trailing Tradescantia leaves. Several pale leaves have brown or dry-looking edges and patches. Observe new growth after acclimation; specific cultivar is not confirmed."
           }
         ]
       },
@@ -8604,7 +8604,7 @@
         "Variegated Tradescantia",
         "Possible Pistachio White"
       ],
-      "coverPhoto": ""
+      "coverPhoto": "59-fleur-arrival-20261101.webp"
     },
     {
       "id": "60",
@@ -8613,8 +8613,8 @@
       "searchName": "ripley monstera deliciosa swiss cheese plant",
       "searchSpecies": "monstera deliciosa (juvenile)",
       "status": "Good",
-      "photo": "",
-      "photoAlt": "Ripley · arrival photograph discussed Nov 1, 2026; image not yet uploaded to GAIA",
+      "photo": "60-ripley-arrival-20261101.webp",
+      "photoAlt": "Ripley · arrival photo · Nov 1, 2026",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-11-01",
@@ -8637,7 +8637,7 @@
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "Newly acquired Nov 1, 2026. An arrival photograph was discussed, but no formal GAIA condition, root, moisture or pest assessment has been saved yet.",
+          "bodyHtml": "Juvenile green Monstera growing upright in a small nursery pot with unfenestrated leaves and a slender emerging leaf. No obvious whole-plant collapse in this view; the potting medium and roots were not assessed.",
           "pClass": "",
           "style": "full"
         },
@@ -8710,7 +8710,7 @@
           },
           {
             "label": "Last photo review",
-            "valueHtml": "Arrival photos shared Nov 1; no GAIA photo entry or formal photo review recorded",
+            "valueHtml": "Nov 1, 2026 · arrival cover saved; formal GAIA photo review not recorded",
             "style": ""
           },
           {
@@ -8761,7 +8761,7 @@
           },
           {
             "style": "care-entry",
-            "bodyHtml": "<strong>Nov 1, 2026 · </strong>New arrival recorded from the earlier photo conversation. Exact cultivar may be provisional, no photo file has been imported, and water/pot/roots/soil/pest data have not been independently verified."
+            "bodyHtml": "<strong>Nov 1, 2026 · </strong>Arrival photo matched and added to the GAIA catalog. Juvenile green Monstera growing upright in a small nursery pot with unfenestrated leaves and a slender emerging leaf. No obvious whole-plant collapse in this view; the potting medium and roots were not assessed."
           }
         ]
       },
@@ -8776,7 +8776,7 @@
         "Monstera deliciosa",
         "Swiss cheese plant"
       ],
-      "coverPhoto": ""
+      "coverPhoto": "60-ripley-arrival-20261101.webp"
     },
     {
       "id": "61",
@@ -8785,8 +8785,8 @@
       "searchName": "varric golden pothos devil’s ivy",
       "searchSpecies": "epipremnum aureum (golden pothos)",
       "status": "Good",
-      "photo": "",
-      "photoAlt": "Varric · arrival photograph discussed Nov 1, 2026; image not yet uploaded to GAIA",
+      "photo": "61-varric-arrival-20261101.webp",
+      "photoAlt": "Varric · arrival photo · Nov 1, 2026",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-11-01",
@@ -8809,7 +8809,7 @@
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "Newly acquired Nov 1, 2026. An arrival photograph was discussed, but no formal GAIA condition, root, moisture or pest assessment has been saved yet.",
+          "bodyHtml": "Golden pothos with upright and arching green leaves mottled with yellow, with a nursery Golden Pothos label visible. Some localized yellowing or damage appears near a lower leaf; roots, soil moisture and pests are unverified.",
           "pClass": "",
           "style": "full"
         },
@@ -8882,7 +8882,7 @@
           },
           {
             "label": "Last photo review",
-            "valueHtml": "Arrival photos shared Nov 1; no GAIA photo entry or formal photo review recorded",
+            "valueHtml": "Nov 1, 2026 · arrival cover saved; formal GAIA photo review not recorded",
             "style": ""
           },
           {
@@ -8933,7 +8933,7 @@
           },
           {
             "style": "care-entry",
-            "bodyHtml": "<strong>Nov 1, 2026 · </strong>New arrival recorded from the earlier photo conversation. Exact cultivar may be provisional, no photo file has been imported, and water/pot/roots/soil/pest data have not been independently verified."
+            "bodyHtml": "<strong>Nov 1, 2026 · </strong>Arrival photo matched and added to the GAIA catalog. Golden pothos with upright and arching green leaves mottled with yellow, with a nursery Golden Pothos label visible. Some localized yellowing or damage appears near a lower leaf; roots, soil moisture and pests are unverified."
           }
         ]
       },
@@ -8948,7 +8948,7 @@
         "Golden pothos",
         "Devil’s ivy"
       ],
-      "coverPhoto": ""
+      "coverPhoto": "61-varric-arrival-20261101.webp"
     },
     {
       "id": "62",
@@ -9130,8 +9130,8 @@
       "searchName": "sylens satin pothos scindapsus pictus",
       "searchSpecies": "scindapsus pictus (cultivar unverified)",
       "status": "Good",
-      "photo": "",
-      "photoAlt": "Sylens · arrival photograph discussed Nov 1, 2026; image not yet uploaded to GAIA",
+      "photo": "63-sylens-arrival-20261101.webp",
+      "photoAlt": "Sylens · arrival photo · Nov 1, 2026",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-11-01",
@@ -9154,7 +9154,7 @@
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "Newly acquired Nov 1, 2026. An arrival photograph was discussed, but no formal GAIA condition, root, moisture or pest assessment has been saved yet.",
+          "bodyHtml": "Compact Scindapsus with many matte heart-shaped green leaves covered in irregular silvery mottling. Foliage looks relatively full; individual leaves have small marks. Specific cultivar remains unverified and no root/pest check was recorded.",
           "pClass": "",
           "style": "full"
         },
@@ -9227,7 +9227,7 @@
           },
           {
             "label": "Last photo review",
-            "valueHtml": "Arrival photos shared Nov 1; no GAIA photo entry or formal photo review recorded",
+            "valueHtml": "Nov 1, 2026 · arrival cover saved; formal GAIA photo review not recorded",
             "style": ""
           },
           {
@@ -9278,7 +9278,7 @@
           },
           {
             "style": "care-entry",
-            "bodyHtml": "<strong>Nov 1, 2026 · </strong>New arrival recorded from the earlier photo conversation. Exact cultivar may be provisional, no photo file has been imported, and water/pot/roots/soil/pest data have not been independently verified."
+            "bodyHtml": "<strong>Nov 1, 2026 · </strong>Arrival photo matched and added to the GAIA catalog. Compact Scindapsus with many matte heart-shaped green leaves covered in irregular silvery mottling. Foliage looks relatively full; individual leaves have small marks. Specific cultivar remains unverified and no root/pest check was recorded."
           }
         ]
       },
@@ -9293,7 +9293,7 @@
         "Satin pothos",
         "Scindapsus pictus"
       ],
-      "coverPhoto": ""
+      "coverPhoto": "63-sylens-arrival-20261101.webp"
     },
     {
       "id": "64",
@@ -9302,8 +9302,8 @@
       "searchName": "meridia variegated tradescantia possible yellow hill",
       "searchSpecies": "variegated tradescantia (possibly ‘yellow hill’; cultivar unverified)",
       "status": "Good",
-      "photo": "",
-      "photoAlt": "Meridia · arrival photograph discussed Nov 1, 2026; image not yet uploaded to GAIA",
+      "photo": "64-meridia-arrival-20261101.webp",
+      "photoAlt": "Meridia · arrival photo · Nov 1, 2026",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-11-01",
@@ -9326,7 +9326,7 @@
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "Newly acquired Nov 1, 2026. An arrival photograph was discussed, but no formal GAIA condition, root, moisture or pest assessment has been saved yet.",
+          "bodyHtml": "Trailing Tradescantia with many narrow green leaves striped yellow to cream, including pale new growth. Several leaves have small browned edges or blemishes. The precise cultivar is still provisional; no roots or pest assessment was made.",
           "pClass": "",
           "style": "full"
         },
@@ -9399,7 +9399,7 @@
           },
           {
             "label": "Last photo review",
-            "valueHtml": "Arrival photos shared Nov 1; no GAIA photo entry or formal photo review recorded",
+            "valueHtml": "Nov 1, 2026 · arrival cover saved; formal GAIA photo review not recorded",
             "style": ""
           },
           {
@@ -9450,7 +9450,7 @@
           },
           {
             "style": "care-entry",
-            "bodyHtml": "<strong>Nov 1, 2026 · </strong>New arrival recorded from the earlier photo conversation. Exact cultivar may be provisional, no photo file has been imported, and water/pot/roots/soil/pest data have not been independently verified."
+            "bodyHtml": "<strong>Nov 1, 2026 · </strong>Arrival photo matched and added to the GAIA catalog. Trailing Tradescantia with many narrow green leaves striped yellow to cream, including pale new growth. Several leaves have small browned edges or blemishes. The precise cultivar is still provisional; no roots or pest assessment was made."
           }
         ]
       },
@@ -9465,7 +9465,7 @@
         "Variegated Tradescantia",
         "Possible Yellow Hill"
       ],
-      "coverPhoto": ""
+      "coverPhoto": "64-meridia-arrival-20261101.webp"
     }
   ],
   "dashboardTasks": [
