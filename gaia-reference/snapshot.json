@@ -2,14 +2,14 @@
   "schema_version": 1,
   "read_only": true,
   "source": "GAIA owner-approved reference snapshot",
-  "generated_at": "2026-11-02T12:02:31.990Z",
-  "synced_at": "2026-11-02T12:02:32.014424+00:00",
+  "generated_at": "2026-11-02T16:03:59.637Z",
+  "synced_at": "2026-11-02T16:03:59.654044+00:00",
   "plant_count": 64,
   "comparison_ready_count": 42,
   "comparison_candidate_count": 61,
   "uploaded_photo_count": 66,
   "exported_photo_count": 66,
-  "catalog_reference_count": 58,
+  "catalog_reference_count": 57,
   "unavailable_sections": [],
   "plants": [
     {
@@ -4797,7 +4797,7 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [],
-      "reference_image": "63-sylens-arrival-20261101.webp",
+      "reference_image": null,
       "comparison": {
         "ready": false,
         "latest_image": null,
