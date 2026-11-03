@@ -10,7 +10,7 @@ The Care tab now hides empty per-plant task summaries while showing all actual t
 
 ## Clipboard field sheets
 
-Use **Export clipboard sheet** below the header to prepare the collection in its current saved order. Choose all plants or only those shown by the current filter. **Print landscape / save PDF** uses US Letter landscape with eight plants per page (six pages for 48 plants). The sheet includes plant IDs, common names, recorded watering, a writable watering date, inner pot width/depth in inches, actual soil mix, new growth, moisture, notes, and the latest associated open task with a Done box. Current recorded values are reference only. Todoist tasks confidently matching exactly one plant are preferred; retained GAIA tasks are the fallback. If neither exists, the latest logged care event is shown without a completion box. Long task/mix text may be shortened on paper; spreadsheet exports retain it in full.
+Use **Export clipboard sheet** below the header to prepare the collection in its current saved order. Choose all plants or only those shown by the current filter. **Print landscape / save PDF** uses US Letter landscape with eight plants per page (page count adjusts to the current collection). The sheet includes plant IDs, common names, recorded watering, a writable watering date, inner pot width/depth in inches, actual soil mix, new growth, moisture, notes, and the latest associated open task with a Done box. Current recorded values are reference only. Todoist tasks confidently matching exactly one plant are preferred; retained GAIA tasks are the fallback. If neither exists, the latest logged care event is shown without a completion box. Long task/mix text may be shortened on paper; spreadsheet exports retain it in full.
 
 Download **spreadsheet (.xlsx)** for Excel, or **CSV** for direct round-trip editing. Yellow spreadsheet columns are changes; `recorded_` columns retain reference values. Blank/unchecked means no update. Keep plant IDs as text, including leading zeros. Dates use `YYYY-MM-DD`. To import an edited Excel file, save its **Tracking** tab as CSV. The scan key is also included in the workbook's guide tab in ordered JSON chunks.
 
@@ -27,12 +27,12 @@ A small optional, collapsible Todoist list is available below the collection tot
 
 **Live site:** https://reece1919.github.io/gaia/
 
-GAIA tracks a collection of 48 plants with care profiles, 45 original catalog photos, current health, care instructions, follow-up priorities, and care history. The site is published with GitHub Pages from the `main` branch.
+GAIA tracks 64 plants as of November 2, 2026, with care profiles, catalog cover photos where available, private journal photos, saved condition flags, care instructions, follow-up priorities, and care history. The site is published with GitHub Pages from the `main` branch.
 
 ## How the website works
 
 - **`index.html`** holds the page layout and styles.
-- **`plants.json`** is the source of truth for plant records, quick-care icon metadata, dashboard tasks, and the recent-care summary. It contains all 48 plant profiles, their care sections, health labels, tags, and history.
+- **`plants.json`** is the source of truth for plant records, quick-care icon metadata, dashboard tasks, and the recent-care summary. It contains all catalog plant profiles, their care sections, health labels, tags, and history.
 - **`app.js`** builds the plant cards and quick-care icons, updates counts, and powers the search and filters.
 - **`species-guide.js`** is the read-only species encyclopedia, shared by related plants and linked to Kew's botanical reference.
 - **`tasks.js`** powers the private cross-device task checklist.
@@ -74,7 +74,7 @@ GAIA now opens with **Care Center**, followed by two independent read-only refer
 
 Implementation: `learning-hub.js` + `learning-hub.css`. The new hub safely moves existing dashboard DOM nodes *as original elements* into a Care Center tabpanel, while the other views are read-only generated content. It never rewrites cloud records, creates separate plant cards, or uploads photos. Plant navigation uses stable `data-plant-id` values. The previous type/family visual grouping is still available from within Care Center, and owner-defined card ordering is preserved.
 
-Run `node --test tests/learning-hub.test.cjs` to verify all 48 botanical mappings, 18 type lessons, 23 family lessons, every Academy practice ID, script loading order and stable photo/care card association. This test is also run by the GitHub Security baseline workflow.
+Run `node --test tests/learning-hub.test.cjs` to verify all botanical mappings, 18 type lessons, 23 family lessons, every Academy practice ID, script loading order and stable photo/care card association. This test is also run by the GitHub Security baseline workflow.
 
 Read-only learning recommendations do not override a plant-specific care cue, recorded history, or verified assessment. No Supabase migrations, new secrets, API calls or background inference are involved.
 
