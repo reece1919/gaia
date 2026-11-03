@@ -1,5 +1,13 @@
 # GAIA — Plant Collection Dashboard
 
+## Daily Care Inbox (November 3, 2026)
+
+The Care Center's **Daily Care Inbox** now combines existing interfaces into three views: **Do** (Todoist and the saved GAIA checklist), **Decide** (explicit approve/decline proposal queue), and **Monitor** (saved AI priorities, which are advisory). These views move the original DOM nodes, rather than cloning controls or migrating records. Personal plant-card checkboxes and proposal shortcuts remain.
+
+Todoist and GAIA are **independent task systems**. Their open-task counts are shown separately to avoid claiming duplicate actions are one unique task; completing one task does not complete its cross-reference or log physical care. GAIA's previously hidden checklist can now be inspected as a collapsible section under Do. The task-edit and completion handlers, proposal approval/rejection events, account permissions, and private data models are unchanged. The owner must still explicitly approve suggestions before they become checkable GAIA tasks.
+
+Implementation: `daily-care-inbox.js` and `daily-care-inbox.css`, loaded after `compact-shell.js`. Tests: `node --test tests/learning-hub.test.cjs tests/daily-inbox.test.cjs`. This change does not auto-approve tasks, add reminders, or create backend records.
+
 ## Approved screen-space cleanup (October 23, 2026)
 
 The Care tab now hides empty per-plant task summaries while showing all actual tasks and pending approvals. Each expanded plant keeps the original WATER, LIGHT, and SOIL sections together under **Care Essentials**, with a collapsed **Why this care works** lesson. Icon buttons still retain accessible descriptions; the duplicate static icon legend was removed.
