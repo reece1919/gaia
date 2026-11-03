@@ -334,6 +334,7 @@
       form.reset();
       form.elements.taken_on.value=today();
       await refresh();
+      document.dispatchEvent(new CustomEvent("gaia:photos-changed",{detail:{owner}}));
       localStatus(id,"Photo saved and queued for GAIA visual review.");
       report("Photo saved privately and queued for GAIA visual review.");
     } catch(error) {
@@ -394,6 +395,7 @@
         report("Removed from the gallery, but storage cleanup failed. You can contact support to remove the orphaned file.",true);
       } else report("Photo deleted from GAIA.");
       await refresh();
+      document.dispatchEvent(new CustomEvent("gaia:photos-changed",{detail:{owner:user.id}}));
     }catch(error){report("Could not delete the photo: "+safeError(error),true);}
   }
   document.addEventListener("gaia:ready",ev=>mount(ev.detail.plants||[]));
