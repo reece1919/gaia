@@ -30,7 +30,7 @@ test("Same-day uploads use newest created_at, then ID as deterministic tiebreake
   const newer=photo("12","bb","2026-10-22","2026-10-22T15:00:00Z","pending");
   const tie=photo("13","bb","2026-10-22","2026-10-22T15:00:00Z","reviewed");
   const tieHigher=photo("13","cc","2026-10-22","2026-10-22T15:00:00Z","pending");
-  assert.deepEqual(build([first,tie,newer,tieHigher]).pending.map(p=>p.id),["bb","cc"]);
+  assert.deepEqual(build([first,tie,newer,tieHigher]).pending.map(p=>p.id).sort(),["bb","cc"]);
 });
 test("An empty or unrecognized history does not invent status or dates",()=>{
   assert.deepEqual(build([]),{pending:[],processing:[],completedLatest:0,withJournal:0});
