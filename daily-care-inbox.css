@@ -1,0 +1,33 @@
+/* The original Todoist, GAIA task, approval, and priorities nodes are moved here,
+   not duplicated. Dark herbarium palette follows the existing Care Center. */
+#gaia-tasks .gaia-inbox-intro{margin:12px 1px 8px;color:#d0dccc;font-size:12px;line-height:1.55}
+#gaia-tasks .gaia-inbox-tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin:8px 0 12px}
+#gaia-tasks .gaia-inbox-tab{display:flex;align-items:center;justify-content:center;gap:8px;min-height:44px;
+  border:1px solid #68826f;border-radius:7px;background:#1d302b;color:#e0e7d8;font:700 13px system-ui,sans-serif;
+  padding:9px 6px;cursor:pointer}
+#gaia-tasks .gaia-inbox-tab[aria-selected="true"]{background:#405b46;border-color:#ddc289;color:#fff3d4;box-shadow:inset 0 -2px #ddc289}
+#gaia-tasks .gaia-inbox-tab:focus-visible{outline:3px solid #e9c886;outline-offset:2px}
+#gaia-tasks .gaia-inbox-count:not([hidden]){display:inline-block;padding:2px 6px;background:#182a25;color:#e6d5ad;
+  border-radius:20px;font-size:11px;font-variant-numeric:tabular-nums;min-width:19px;text-align:center}
+#gaia-tasks .gaia-inbox-panel[hidden],#gaia-tasks .gaia-inbox-count[hidden]{display:none!important}
+#gaia-tasks .gaia-inbox-panel{min-width:0}
+#gaia-tasks .gaia-inbox-panel-note{font-size:12px;line-height:1.5;color:#cbd8c7;margin:3px 0 12px}
+#gaia-tasks .gaia-inbox-source-heading{font:600 16px Georgia,serif;color:#edd8a8;margin:0 0 10px}
+#gaia-tasks #gaia-checklist-section{padding:12px;border:1px solid #647a68;border-radius:7px;background:#192b28}
+#gaia-tasks #gaia-checklist-section>summary{cursor:pointer;color:#f0dcac;font-weight:750;min-height:27px}
+#gaia-tasks #gaia-checklist-section>p{font-size:12px;line-height:1.55;color:#c0cfc0;margin:9px 0 12px}
+#gaia-tasks #gaia-task-approvals{display:block;margin:0;padding:12px;background:#1c312b;border:1px solid #71856e;
+  border-radius:8px;color:#e8eadf}
+#gaia-tasks #gaia-task-approvals h2{font-size:16px;color:#eedaad;margin:0 0 7px}
+#gaia-tasks #gaia-task-approvals p{color:#d4e1d2;line-height:1.55}
+#gaia-tasks #gaia-task-approvals button{min-height:42px;margin:2px 0;border-color:#94a58c;
+  color:#1e3b2c;background:#f4e7c8}
+#gaia-tasks #gaia-task-approvals button:focus-visible{outline:3px solid #e9c886;outline-offset:2px}
+#gaia-tasks #gaia-task-queue-content{overflow-wrap:anywhere}
+#gaia-tasks .gaia-unified-priorities{margin:0}
+@media(max-width:520px){
+ #gaia-tasks .gaia-inbox-tab{font-size:12px;gap:4px}
+ #gaia-tasks .gaia-inbox-tabs{gap:4px}
+ #gaia-tasks #gaia-task-approvals{padding:10px}
+ #gaia-tasks #gaia-checklist-section{padding:10px}
+}
