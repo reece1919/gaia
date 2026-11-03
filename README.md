@@ -1,5 +1,15 @@
 # GAIA — Plant Collection Dashboard
 
+## Latest photo-review queue (November 3, 2026)
+
+**Care → Tools & reviews → Photo reviews** now shows **Latest photos awaiting review**, based on an owner-authenticated, MFA-verified query to Supabase `plant_photos`. This is a checked-at snapshot, not a live stream. The queue chooses the newest private journal upload per plant by photo date, upload time, then photo ID, matching the existing manual reviewer. Earlier pending photos remain available in the journal as comparison evidence but never appear as separate actionable entries. Catalog cover images are not cloud journal uploads.
+
+Each pending entry shows the plant, newest photo date, and previous completed assessment date if available, with an **Open plant** shortcut to the original card/journal. The collapsible Photo reviews heading shows a count only after a successful read; **Check status** refreshes it. An AAL2 MFA session is required; errors do not silently display a false zero. Uploads/deletions notify the queue, and saves continue using the existing `gaia:photo-reviews-changed` event.
+
+**Run new photo analysis** continues to launch interactive ChatGPT and is not a background vision job. **Refresh saved results** still reloads existing outcomes. This frontend module does not perform photo analysis, mark any photo reviewed, create tasks, alter backups, or write to Supabase. The stored `analysis_status` can only change through the existing authorized reviewer action.
+
+Implementation: `photo-review-queue-core.js`, `photo-review-queue.js`, `photo-review-queue.css`. Test: `node --test tests/photo-review-queue.test.cjs`.
+
 ## Daily Care Inbox (November 3, 2026)
 
 The Care Center's **Daily Care Inbox** now combines existing interfaces into three views: **Do** (Todoist and the saved GAIA checklist), **Decide** (explicit approve/decline proposal queue), and **Monitor** (saved AI priorities, which are advisory). These views move the original DOM nodes, rather than cloning controls or migrating records. Personal plant-card checkboxes and proposal shortcuts remain.
