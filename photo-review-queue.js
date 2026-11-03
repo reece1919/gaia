@@ -108,6 +108,11 @@
     const current=++sequence,owner=user.id,db=client;
     busy=true;error="";render();
     try{
+      const assurance=await db.auth.mfa.getAuthenticatorAssuranceLevel();
+      if(assurance.error)throw assurance.error;
+      if(assurance.data?.currentLevel!=="aal2")
+        throw new Error("Verify your account under Settings & Backup to read private photos.");
+      if(current!==sequence||user?.id!==owner)return;
       const result=await db.from("plant_photos")
         .select("id,plant_id,taken_on,created_at,analysis_status,analyzed_at")
         .eq("user_id",owner).order("taken_on",{ascending:false})
