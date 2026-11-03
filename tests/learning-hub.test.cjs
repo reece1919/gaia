@@ -247,3 +247,33 @@ test("Phone plant cards keep image and title compact with full-width care and ta
   assert.match(taskQueue,/summaryBody\?\.insertBefore\(preview,summaryBody\.querySelector\("\.tap-hint"\)\)/);
   assert.match(html,/href="compact-shell\.css\?v=20261023-mobile-cards1"/);
 });
+
+test("Catalog photo references resolve and plant names remain unique",()=>{
+  const names=new Set();
+  for(const plant of plants){
+    const normalizedName=plant.name.trim().toLocaleLowerCase("en-US");
+    assert.ok(normalizedName,plant.id+" missing a name");
+    assert.ok(!names.has(normalizedName),plant.name+" duplicates another plant name");
+    names.add(normalizedName);
+    for(const field of ["photo","coverPhoto"]){
+      const filename=plant[field];
+      if(!filename)continue; // Some plants have only private journal photos.
+      assert.ok(!path.isAbsolute(filename) && !filename.split(/[\\/]/).includes(".."),plant.name+" unsafe "+field);
+      assert.ok(fs.existsSync(path.join(root,filename)),plant.name+" missing "+field+": "+filename);
+    }
+  }
+});
+
+test("Historical recap cannot label an expired check as upcoming",()=>{
+  const data=JSON.parse(read("plants.json"));
+  const updated=new Date(data.updatedAt);
+  assert.ok(Number.isFinite(updated.getTime()),"Catalog updatedAt is invalid");
+  for(const tile of data.recentCare?.tiles||[]){
+    const match=/^Next check\\s*·\\s*([a-z]{3})\\s+(\\d{1,2})(?:,?\\s*(\\d{4}))?$/i.exec(tile.title);
+    if(!match)continue;
+    const year=match[3]||String(updated.getUTCFullYear());
+    const planned=new Date(match[1]+" "+match[2]+", "+year+" 23:59:59 GMT");
+    assert.ok(Number.isFinite(planned.getTime()),"Cannot parse check date: "+tile.title);
+    assert.ok(planned>=updated,"Expired check shown as upcoming: "+tile.title);
+  }
+});
