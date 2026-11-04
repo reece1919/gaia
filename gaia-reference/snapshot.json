@@ -2,13 +2,13 @@
   "schema_version": 1,
   "read_only": true,
   "source": "GAIA owner-approved reference snapshot",
-  "generated_at": "2026-11-03T23:49:23.721Z",
-  "synced_at": "2026-11-03T23:49:23.748411+00:00",
+  "generated_at": "2026-11-04T06:09:22.836Z",
+  "synced_at": "2026-11-04T06:09:22.877396+00:00",
   "plant_count": 64,
   "comparison_ready_count": 42,
-  "comparison_candidate_count": 61,
-  "uploaded_photo_count": 66,
-  "exported_photo_count": 66,
+  "comparison_candidate_count": 60,
+  "uploaded_photo_count": 65,
+  "exported_photo_count": 65,
   "catalog_reference_count": 59,
   "unavailable_sections": [],
   "plants": [
@@ -3973,13 +3973,6 @@
           "created_at": "2026-10-21T04:26:46.040712+00:00",
           "analysis_status": "reviewed",
           "snapshot_image": "gaia-reference/photos/42-73475cb40a-previous_photo.webp"
-        },
-        {
-          "id": "ca4444e0-14bd-4a86-aa0b-79d7ce348ebf",
-          "taken_on": "2026-10-18",
-          "created_at": "2026-10-21T04:24:43.824398+00:00",
-          "analysis_status": "pending",
-          "snapshot_image": "gaia-reference/photos/42-73475cb40a-history-ca4444e0-14bd-4a86-aa0b-79d7ce348ebf.webp"
         }
       ],
       "pot": {
@@ -4035,12 +4028,6 @@
             "captured_on": "2026-10-18",
             "image": "gaia-reference/photos/42-73475cb40a-previous_photo.webp",
             "photo_id": "79d88182-b716-4a37-be18-8512fec25ce3"
-          },
-          {
-            "source": "journal",
-            "captured_on": "2026-10-18",
-            "image": "gaia-reference/photos/42-73475cb40a-history-ca4444e0-14bd-4a86-aa0b-79d7ce348ebf.webp",
-            "photo_id": "ca4444e0-14bd-4a86-aa0b-79d7ce348ebf"
           },
           {
             "source": "catalog_reference",
