@@ -7273,13 +7273,13 @@
       "sections": [
         {
           "label": "NEXT ACTION",
-          "bodyHtml": "Inspect leaf undersides and stems for pests, verify drainage, and place in bright indirect light. Keep the existing two main stems stable while acclimating; wait to prune or repot until new growth and root health are better understood.",
+          "bodyHtml": "Check the widespread grayish fuzzy/fibrous surface material in the Nov 4 photo: it may be harmless fungal growth on organic mix but can indicate a persistently damp surface. Confirm drainage and check soil moisture 1–2 in down before watering. If it is superficial fuzzy growth, remove the loose affected surface layer, improve gentle airflow, and avoid leaving the pot wet. No urgent pruning or repotting based on the foliage.",
           "pClass": "",
           "style": "full next-action"
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "Two upright green stems with clusters of healthy-looking glossy palmate leaflets; foliage is fairly sparse near the base. Several smaller leaves and shoots are visible. Roots and actual moisture have not been inspected.",
+          "bodyHtml": "Nov 4 chat photo compared directly with Oct 24 arrival cover: both green main stems remain upright and firm-looking, with fuller-looking leaf clusters and small green developing leaflets. A few scattered old-looking leaf spots and small holes occur but there is no obvious widespread leaf yellowing or collapse. The soil surface shows widespread gray-white fuzzy/fibrous material, which could be fungal mycelium or fibrous substrate; a diagnosis and actual root-zone moisture cannot be established from a photograph. A pale crust is also visible near the pot rim.",
           "pClass": "",
           "style": "full"
         },
@@ -7321,7 +7321,7 @@
         },
         {
           "label": "WATCH",
-          "bodyHtml": "Watch for yellowing, unexplained leaf drop, dark stems or signs of mites and scale insects. Reduce drafts and avoid cold window exposure.",
+          "bodyHtml": "Watch whether gray-white fuzz on the soil returns or spreads, whether the mix remains wet for many days, and whether stems soften, foliage yellows or drops. Otherwise follow the healthy-looking developing leaflets over the next few weeks. Isolated pre-existing cosmetic marks need no treatment.",
           "pClass": "",
           "style": "full"
         },
@@ -7342,7 +7342,7 @@
         "facts": [
           {
             "label": "Last updated",
-            "valueHtml": "Oct 24, 2026",
+            "valueHtml": "Nov 4, 2026",
             "style": ""
           },
           {
@@ -7352,7 +7352,7 @@
           },
           {
             "label": "Last photo review",
-            "valueHtml": "Arrival photo shared in chat Oct 24; no formal GAIA journal review recorded",
+            "valueHtml": "Nov 4, 2026 (chat review; image not uploaded)",
             "style": ""
           },
           {
@@ -7397,6 +7397,10 @@
           }
         ],
         "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 4, 2026 · </strong>New chat photo reviewed against Oct 24 arrival cover. Two firm-looking green stems and fairly full upper foliage with some developing leaflets; scattered minor leaf imperfections. Gray-white fuzzy/fibrous material covers much of soil surface, possibly superficial fungus or substrate fibers; appearance alone cannot confirm its identity or current moisture. Recommend checking moisture and drainage before watering and inspecting/removing superficial growth if present; monitor for sogginess or stem softening. <strong>Written assessment only; photo not uploaded.</strong>"
+          },
           {
             "style": "",
             "bodyHtml": "<strong>Oct 24, 2026 · </strong>Named Celebrimbor, plant #52, after Celebrimbor · Middle-earth: Shadow of Mordor / Shadow of War."
