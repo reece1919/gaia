@@ -5315,13 +5315,13 @@
       "sections": [
         {
           "label": "NEXT ACTION",
-          "bodyHtml": "No urgent action. Keep the current routine and let the mix dry almost completely between waterings.",
+          "bodyHtml": "No urgent action. Let the mix dry almost completely between waterings, then water thoroughly and allow excess water to drain. Do not prune healthy green shoots; they naturally darken as they mature.",
           "pClass": "",
           "style": "full next-action"
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "Excellent; multiple fresh lime-green shoots are actively expanding.",
+          "bodyHtml": "Excellent in the Nov 4, 2026 chat-submitted photo: full upright stems, abundant mature dark foliage, bright lime-green new leaves and intermediate bronzing foliage. One isolated older brown patch is visible on an upper-right leaflet; no obvious widespread decline or clearly visible pests. Compared with the Oct 5 written assessment, growth remains vigorous (the older photo itself was not available for visual comparison).",
           "pClass": "",
           "style": "full"
         },
@@ -5363,7 +5363,7 @@
         },
         {
           "label": "WATCH",
-          "bodyHtml": "Track the new lime-green shoots as they mature and darken; the isolated older brown patch is cosmetic unless it spreads.",
+          "bodyHtml": "Follow new lime-green leaves as they turn bronze and near-black. Monitor whether the isolated brown patch enlarges, new spotting develops, or stems yellow/soften. Check leaves periodically for pests.",
           "pClass": "",
           "style": "full"
         }
@@ -5372,12 +5372,12 @@
         "facts": [
           {
             "label": "Last updated",
-            "valueHtml": "Oct 11, 2026",
+            "valueHtml": "Nov 4, 2026",
             "style": ""
           },
           {
             "label": "Last photo review",
-            "valueHtml": "Oct 5, 2026",
+            "valueHtml": "Nov 4, 2026 (chat photo; not stored in GAIA)",
             "style": ""
           },
           {
@@ -5397,6 +5397,10 @@
           }
         ],
         "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 4, 2026 · </strong>ChatGPT reviewed new user-submitted Raven photo. Robust dark mature growth, bright green developing foliage and bronzing new leaves; stems appear erect and sturdy. Small brown patch on upper-right leaflet appears isolated. No clear pest evidence, but photo alone cannot exclude pests. Comparison to Oct 5 written baseline only; prior GAIA image unavailable. Photo reviewed in chat but <strong>not uploaded to GAIA photo storage</strong>."
+          },
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
