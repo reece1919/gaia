@@ -2,8 +2,8 @@
   "schema_version": 1,
   "read_only": true,
   "source": "GAIA owner-approved reference snapshot",
-  "generated_at": "2026-11-05T06:23:08.827Z",
-  "synced_at": "2026-11-05T06:23:08.861035+00:00",
+  "generated_at": "2026-11-05T12:04:34.441Z",
+  "synced_at": "2026-11-05T12:04:34.458512+00:00",
   "plant_count": 66,
   "comparison_ready_count": 42,
   "comparison_candidate_count": 60,
@@ -1036,6 +1036,13 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [
+        {
+          "plant_id": "09",
+          "action_type": "inspect",
+          "happened_on": "2026-11-04",
+          "note": "Nov 4 chat photo review: Gandalf (#09), dusty miller. Compared with Oct 11 public catalog photo; Oct 14/18 private photo review summaries also checked (not image pixels). Upright, silver foliage looks full. Several upper shoots show rolled/curled developing leaves; similar curls were present on arrival. Older lower leaf patches persist; no definite pest infestation or widespread dieback visible. Owner confirms positioned BETWEEN TWO newer LED grow-light bars, no more than approximately 12 inches away, so inadequate light is less likely, although intensity unmeasured. Observe emerging leaves; check tips and undersides for pests if distortion persists or worsens. Avoid saturated substrate. No watering or treatment confirmed. Current image reviewed in chat but NOT uploaded to GAIA.",
+          "created_at": "2026-11-05T06:31:56.260737+00:00"
+        },
         {
           "plant_id": "09",
           "action_type": "water",
@@ -2547,6 +2554,13 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [
+        {
+          "plant_id": "25",
+          "action_type": "inspect",
+          "happened_on": "2026-11-04",
+          "note": "Nov 4 chat photo review: Ruby (#25), Crassothonna capensis. Public GAIA catalog image compared; Oct 14/18 review summaries checked, not private image pixels. Crown has abundant fleshy green leaves and purple stems, with some sparse trailing lengths and a few thinner/shriveled leaves already mentioned in older reviews. No clear new decline or pest evidence established; roots and moisture not measured. OWNER CLARIFICATION: last recorded watering, Oct 25, is confirmed to be the most recent watering. Ruby was previously repotted OUT of standard garden soil because it had caused issues; actual repot date and present mix not specified. Owner is deliberately avoiding overwatering since repotting. Do not infer present underwatering merely from days since last watering; evaluate substrate dryness, leaf firmness and drainage next time convenient. No action required tonight. Current photo reviewed in chat only, NOT uploaded to GAIA.",
+          "created_at": "2026-11-05T06:38:33.335003+00:00"
+        },
         {
           "plant_id": "25",
           "action_type": "water",
@@ -4783,7 +4797,15 @@
       "photos": [],
       "pot": null,
       "soil_observations": [],
-      "care_events": [],
+      "care_events": [
+        {
+          "plant_id": "63",
+          "action_type": "inspect",
+          "happened_on": "2026-11-04",
+          "note": "Nov 4 chat photo review of Charles (Scindapsus pictus), compared directly with Nov 1 GAIA catalog arrival image: foliage remains full and firm-looking with rich green and normal silver variegation. Leaves appear more spread in the current angle; no definite new leaf or meaningful growth established in 3 days. No obvious widespread yellowing, browning or webbing; leaf undersides, roots, moisture and pests not verified. No urgent action indicated. Photo reviewed in chat only; new image NOT uploaded to GAIA.",
+          "created_at": "2026-11-05T06:29:16.000361+00:00"
+        }
+      ],
       "reference_image": "63-charles-arrival-20261101.webp",
       "comparison": {
         "ready": false,
