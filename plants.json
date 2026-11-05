@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "Nov 2, 2026",
+  "updatedAt": "Nov 4, 2026",
   "summaryNote": "tap for care, priorities & history",
   "recentCare": {
     "dateLabel": "NOV 1, 2026",
@@ -5917,12 +5917,12 @@
     {
       "id": "44",
       "name": "Ciri",
-      "species": "Grape Ivy / Oak Leaf Ivy · Cissus alata 'Ellen Danica'",
-      "searchName": "ciri grape ivy oak leaf ivy cissus alata ellen danica",
-      "searchSpecies": "grape ivy oak leaf ivy cissus alata 'ellen danica'",
+      "species": "China Doll · Radermachera sinica",
+      "searchName": "ciri china doll radermachera sinica emerald tree",
+      "searchSpecies": "china doll radermachera sinica",
       "status": "Watch",
       "photo": "44-ciri-grape-ivy-oak-leaf-ivy-cissus-alata-elle.jpg",
-      "photoAlt": "Ciri",
+      "photoAlt": "Ciri — China doll plant",
       "newAddition": false,
       "pest": "",
       "added": "",
@@ -5933,37 +5933,37 @@
         },
         {
           "style": "",
-          "label": "VINE"
+          "label": "WOODY / BUSHY"
         }
       ],
       "sections": [
         {
           "label": "NEXT ACTION",
-          "bodyHtml": "Check soil moisture now. If the top 1–2 in are dry, water thoroughly; continue training new growth onto the trellis.",
+          "bodyHtml": "Check moisture around 1 in below the surface and water only if beginning to dry; allow full drainage. Monitor foliage and avoid abrupt changes in placement.",
           "pClass": "",
           "style": "full next-action"
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "Alive and established on its trellis; foliage is somewhat droopy and sparse in places.",
+          "bodyHtml": "Earlier notes describe somewhat drooping, sparse foliage. Current condition requires an updated photo; the prior trellis is historical setup, not a climbing requirement.",
           "pClass": "",
           "style": "full"
         },
         {
           "label": "WATER",
-          "bodyHtml": "Water when the top 1–2 in are dry; soak thoroughly and drain. Terracotta can dry quickly.",
+          "bodyHtml": "Keep evenly, lightly moist but never soggy. Water when roughly the top 1 in feels dry, then drain completely; avoid letting the rootball dry out fully.",
           "pClass": "",
           "style": ""
         },
         {
           "label": "LIGHT",
-          "bodyHtml": "Medium to bright indirect light; gentle morning sun is fine.",
+          "bodyHtml": "Bright indirect light in a warm, stable spot. Avoid harsh direct sun and sudden changes in light or placement.",
           "pClass": "",
           "style": ""
         },
         {
           "label": "FERTILIZER",
-          "bodyHtml": "Balanced fertilizer at 1/2 strength about monthly during active growth.",
+          "bodyHtml": "Use a balanced houseplant fertilizer at about half strength monthly in spring and summer while actively growing; reduce or pause in winter.",
           "pClass": "",
           "style": ""
         },
@@ -5975,19 +5975,19 @@
         },
         {
           "label": "REPOT",
-          "bodyHtml": "Repot when clearly rootbound, drainage slows, or the pot begins drying unusually fast.",
+          "bodyHtml": "Repot only when rootbound or when soil/drainage is failing, ideally during active growth. Minimize major changes that can trigger leaf drop.",
           "pClass": "",
           "style": ""
         },
         {
           "label": "SOIL",
-          "bodyHtml": "2 parts indoor mix + 1 part perlite/pumice; fine bark can be added for extra air space.",
+          "bodyHtml": "Well-draining indoor potting mix that still retains some moisture; mix in roughly 25–30% perlite or pumice for airflow.",
           "pClass": "",
           "style": ""
         },
         {
           "label": "WATCH",
-          "bodyHtml": "Track droop, leaf drop, bare stems, and new tendrils/growth reaching the trellis.",
+          "bodyHtml": "Watch for sudden leaf drop after changes in position, draft exposure, or inconsistent watering; check for mites, aphids, scale, and mealybugs. Pinch tips to encourage bushier branching when growing well.",
           "pClass": "",
           "style": "full"
         }
@@ -5996,7 +5996,7 @@
         "facts": [
           {
             "label": "Last updated",
-            "valueHtml": "Oct 11, 2026",
+            "valueHtml": "Nov 4, 2026",
             "style": ""
           },
           {
@@ -6023,20 +6023,25 @@
         "notes": [
           {
             "style": "care-entry",
+            "bodyHtml": "<strong>Nov 4, 2026 · </strong>Identification corrected from grape ivy / oak leaf ivy (Cissus alata) to China doll (Radermachera sinica) based on owner's research. Care and growth habit guidance updated; original photo filename retained as historical media."
+          },
+          {
+            "style": "care-entry",
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
           }
         ]
       },
       "cardCare": {
-        "type": "vine",
+        "type": "tropical",
         "light": "bright-indirect",
-        "water": "one-two",
-        "waterLabel": "1–2″ dry",
-        "soil": "airy"
+        "water": "one",
+        "waterLabel": "top 1″ dry",
+        "soil": "well-drained"
       },
       "commonNames": [
-        "Grape ivy",
-        "Oak leaf ivy"
+        "China doll",
+        "Emerald tree",
+        "Asian bell tree"
       ]
     },
     {
