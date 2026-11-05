@@ -8836,7 +8836,7 @@
       "sections": [
         {
           "label": "NEXT ACTION",
-          "bodyHtml": "No urgent action. After Nov 1 acquisition, allow acclimation in his usual bright indirect light. Check the upper 1–2 inches of soil before watering with complete drainage. Once growing actively, encourage lush growth through reliable light and moderate feeding; later take node cuttings from long vines and root several together in the pot for fullness. Heater proximity in Nov 4 photo was temporary only.",
+          "bodyHtml": "Owner's plan (Nov 4): let healthy pothos vines lengthen for a few months before taking node-bearing propagation cuttings, then combine rooted starts into fuller large plants and possibly train vines up a support for bigger leaves. Prioritize strong, well-lit growth rather than deliberately stretched internodes; hold off on pruning Varric during the initial grow-out.",
           "pClass": "",
           "style": "full next-action"
         },
@@ -8890,7 +8890,7 @@
         },
         {
           "label": "PROPAGATION",
-          "bodyHtml": "Propagate stem cuttings that each include a node, then group rooted cuttings for bushiness.",
+          "bodyHtml": "Grow healthy vines first, then take cuttings with at least one node and one healthy leaf. Root in water or airy moist medium. For water rooting, transfer after roots are roughly 1–2 inches long; group several established cuttings in one suitably sized, well-drained pot to build fullness. Vertical support and attached aerial roots can promote larger mature leaves over time.",
           "pClass": "",
           "style": "full"
         },
@@ -8960,6 +8960,10 @@
           }
         ],
         "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 4, 2026 · Planned propagation:</strong> Owner intends to allow Varric and other pothos vines to grow long for a few months, harvest healthy node-bearing cuttings, then use the starts to build fuller or climbing larger plants. Avoid intentionally low-light leggy growth. This is a future plan, not a completed pruning/propagation event."
+          },
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Nov 4, 2026 · Placement clarification:</strong> Varric was placed near the wall heater solely for his photo. That is not his normal growing location, so the apparent heater proximity should not be treated as an ongoing environmental issue. Owner interested in encouraging vigorous, full pothos growth. No photo upload."
