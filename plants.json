@@ -8296,7 +8296,7 @@
       "sections": [
         {
           "label": "NEXT ACTION",
-          "bodyHtml": "Following the user's recent bath, dead-leaf/broken-piece cleanup and reported repotting, let the potting mix drain and dry slightly before the next watering. Keep in stable bright indirect light; avoid fertilizer until she has had time to settle. No urgent intervention.",
+          "bodyHtml": "After removing dead/brown foliage and putting accidentally broken healthy stems into holes made with a chopstick in the existing soil, check that each cutting has at least one node buried in contact with lightly moist mix and no buried leaves. Continue bright indirect light. No urgent action or repotting needed; avoid waterlogging the established pot.",
           "pClass": "",
           "style": "full next-action"
         },
@@ -8320,7 +8320,7 @@
         },
         {
           "label": "FERTILIZER",
-          "bodyHtml": "After this recent repotting, wait about 2–4 weeks and until visibly growing well before resuming light fertilizer. Then use a balanced fertilizer at a conservative dilution during active growth.",
+          "bodyHtml": "No repotting was performed. During active growth, use a balanced liquid houseplant fertilizer at a conservative label-based dilution; do not overfertilize to force newly reinserted cuttings to root.",
           "pClass": "",
           "style": ""
         },
@@ -8344,13 +8344,13 @@
         },
         {
           "label": "WATCH",
-          "bodyHtml": "Observe over the next 7–14 days for delayed repotting stress, persistent limp stems, expanding dry patches, yellowing or pest signs on leaf undersides and nodes. Mild isolated damage is cosmetic; variegated silver/burgundy pattern is normal. Check for crowding with the grow light as shoots extend.",
+          "bodyHtml": "Over the next 1–3 weeks, monitor the reinserted stem cuttings for wilting, rot or new growth; rooting is not yet confirmed. Continue monitoring existing foliage for isolated blemishes, color fading and pests. There was no full repotting, so broad transplant shock is not expected.",
           "pClass": "",
           "style": "full"
         },
         {
           "label": "PROPAGATION",
-          "bodyHtml": "Healthy broken stems can be cut cleanly just below a node and rooted in water or lightly moist potting mix; return rooted cuttings to the pot for fuller growth. Do not propagate visibly damaged or pest-infested material.",
+          "bodyHtml": "On Nov 4 the user clarified that a few stems broke during cleanup of brown/dead foliage and were inserted directly into the existing pot's soil using chopstick-made holes. For success, ensure at least one healthy node is below the soil surface, remove leaves that would be buried, and gently firm the mix around the stem. Keep that area lightly moist but not soggy while rooting; visible progress may take around 1–3 weeks or longer. Do not count these as rooted until established.",
           "pClass": "",
           "style": "full"
         },
@@ -8400,7 +8400,7 @@
           },
           {
             "label": "Last repotted",
-            "valueHtml": "Recent repotting, reported Nov 4, 2026 (exact day not specified)",
+            "valueHtml": "Not recorded (Nov 4 correction: no repotting)",
             "style": ""
           },
           {
@@ -8422,7 +8422,7 @@
         "notes": [
           {
             "style": "care-entry",
-            "bodyHtml": "<strong>Nov 4, 2026 · </strong>User shared a follow-up photo, reporting a recent bath, removal of dead leaves and broken material, and repotting (exact event date and substrate not specified). Direct comparison with Nov 1 arrival cover: full, healthy-looking trailing habit retained; deep burgundy and silver coloration; minor isolated blemishes but no evident widespread wilt, yellowing, bleaching or obvious pest clusters. Different lighting/angles limit growth assessment. Monitor for delayed handling stress; defer fertilizing temporarily. <strong>Review saved as text only; Nov 4 image was not uploaded to GAIA.</strong>"
+            "bodyHtml": "<strong>Nov 4, 2026 · </strong>User shared a follow-up photo and reported a recent plant bath and cleanup of dead/brown foliage. A few healthy stems broke during cleanup and were pushed into holes made with a chopstick in the existing potting mix as direct soil propagation; <strong>the plant was not repotted</strong>. Direct comparison with Nov 1 arrival cover: full trailing foliage retained, deep burgundy and silver coloration, minor isolated blemishes, no evident widespread wilt or yellowing. Different photo angles and lighting limit growth measurement. Watch the reinserted cuttings for rooting and avoid waterlogging. <strong>Review saved as text only; Nov 4 image not uploaded to GAIA.</strong>"
           },
           {
             "style": "",
