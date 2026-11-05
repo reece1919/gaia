@@ -4562,10 +4562,10 @@
     {
       "id": "33",
       "name": "Din",
-      "species": "Plectranthus ciliatus-type",
+      "species": "Coleus scutellarioides (tentative)",
       "searchName": "din plectranthus — maroon pot",
-      "searchSpecies": "plectranthus ciliatus-type",
-      "status": "Watch",
+      "searchSpecies": "coleus scutellarioides",
+      "status": "Good",
       "photo": "33-din-plectranthus-maroon-pot.jpg",
       "photoAlt": "Din",
       "newAddition": false,
@@ -4590,7 +4590,7 @@
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "Sparse but actively producing fresh pale-green growth; older leaves still show stress spotting.",
+          "bodyHtml": "Owner confirms Nov 4 photograph is Din. Compared with Oct 18 photo, leaves appear fuller, with vivid lime-green edges and red centers. Healthy-looking growing tips and upright stems. Likely coleus rather than the previous Plectranthus ciliatus identification; exact cultivar unconfirmed.",
           "pClass": "",
           "style": "full"
         },
@@ -4641,12 +4641,12 @@
         "facts": [
           {
             "label": "Last updated",
-            "valueHtml": "Oct 11, 2026",
+            "valueHtml": "Nov 4, 2026",
             "style": ""
           },
           {
             "label": "Last photo review",
-            "valueHtml": "Oct 5, 2026",
+            "valueHtml": "Nov 4, 2026 (chat photo; not uploaded)",
             "style": ""
           },
           {
@@ -4668,6 +4668,10 @@
         "notes": [
           {
             "style": "care-entry",
+            "bodyHtml": "<strong>Nov 4, 2026:</strong> Photo confirmed as Din. Green and red coleus foliage looks fuller and more vibrant than Oct 18. Prior botanical ID corrected provisionally. No photo upload."
+          },
+          {
+            "style": "care-entry",
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
           }
         ]
@@ -4680,7 +4684,8 @@
         "soil": "well-drained"
       },
       "commonNames": [
-        "Speckled spurflower"
+        "Coleus",
+        "Painted nettle"
       ]
     },
     {
