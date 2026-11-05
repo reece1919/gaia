@@ -1988,13 +1988,13 @@
       "sections": [
         {
           "label": "NEXT ACTION",
-          "bodyHtml": "No urgent action. Continue current care and let the new pink/red leaf harden off before making any changes.",
+          "bodyHtml": "No urgent intervention: continue bright indirect light and consistent watering after the upper 1–2 inches of mix dry, with full drainage. Let the colorful central growth develop without manipulating it. No new pruning or repotting needed based on this healthy-looking photo.",
           "pClass": "",
           "style": "full next-action"
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "Excellent — strong, upright growth with good variegation and a fresh colored leaf emerging from the center.",
+          "bodyHtml": "Nov 4, 2026 chat photo: Sauron is full and upright with healthy-looking green, yellow and cream variegated, serrated leaves. An upper yellow-green lobed leaf has patchy green edges consistent with the natural Ring of Fire variegation, rather than confirmed chlorosis. Pink-orange central developing leaf or sheath remains visible. Several small older leaf-edge brown marks and scattered minor blemishes are present without widespread collapse. Compared with the original GAIA catalog photo and Oct 18 written review, the overall rosette continues to appear vigorous; differing angles and incomplete journal photos preclude exact leaf-by-leaf growth measurements.",
           "pClass": "",
           "style": "full"
         },
@@ -2036,7 +2036,7 @@
         },
         {
           "label": "WATCH",
-          "bodyHtml": "Track the new leaf as it unfurls and hardens. Some browning on highly variegated older tissue is cosmetic unless it begins spreading into new growth.",
+          "bodyHtml": "Enjoy the new central growth and richly patterned yellow-green leaves. Watch whether the pale tissue develops expanding brown patches or if numerous new leaves turn uniformly yellow, rather than mistaking normal sectoral variegation for a nutrient issue. Keep an eye on minor existing leaf-edge damage only if it spreads.",
           "pClass": "",
           "style": "full"
         }
@@ -2045,12 +2045,12 @@
         "facts": [
           {
             "label": "Last updated",
-            "valueHtml": "Oct 11, 2026",
+            "valueHtml": "Nov 4, 2026",
             "style": ""
           },
           {
             "label": "Last photo review",
-            "valueHtml": "Oct 5, 2026",
+            "valueHtml": "Nov 4, 2026 (chat photo; not uploaded to GAIA)",
             "style": ""
           },
           {
@@ -2070,6 +2070,10 @@
           }
         ],
         "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 4, 2026 · </strong>Compared owner-submitted photo against earlier GAIA catalog image and October 18 written image review. Strong full foliage, colorful yellow-green patterned upper leaf and pink-orange developing central growth; minor isolated older cosmetic markings. Overall looks vigorous and stable. Yellow-green coloration is consistent with characteristic variegation, not clear widespread chlorosis. Recommend continuing established bright indirect light and watering by soil dryness. <strong>Photo reviewed in chat but not uploaded.</strong>"
+          },
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
