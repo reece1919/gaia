@@ -233,7 +233,7 @@
         },
         {
           "label": "WATER",
-          "bodyHtml": "Let the mix dry throughout before watering thoroughly and draining. Water less often in winter. Check moisture rather than using the tropical plants’ watering schedule.",
+          "bodyHtml": "Groot is in a self-watering wick pot. Do not maintain a continuously full reservoir: allow the substrate to dry all the way through between waterings, and leave reservoir empty during dry-down. Check moisture below the surface, not just at the top. Water thoroughly when dry, then remove any standing water.",
           "pClass": "",
           "style": ""
         },
@@ -257,7 +257,7 @@
         },
         {
           "label": "REPOT",
-          "bodyHtml": "No immediate repot indicated by this photo. Confirm drainage; change the mix if it stays wet for prolonged periods. Otherwise repot only when crowded, using a slightly larger pot.",
+          "bodyHtml": "Gray wick pot reported Nov 4. No need to repot solely due to the wick system if substrate dries thoroughly and trunk remains healthy. Reassess only if the reservoir keeps the substrate wet for extended periods or roots show problems.",
           "pClass": "",
           "style": ""
         },
@@ -325,7 +325,7 @@
           },
           {
             "label": "Pot / container",
-            "valueHtml": "Gray fluted pot; drainage arrangement and size unconfirmed",
+            "valueHtml": "Gray self-watering wick pot (owner confirmed Nov 4); reservoir use and current moisture not recorded",
             "style": ""
           },
           {
@@ -335,6 +335,10 @@
           }
         ],
         "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 4, 2026 · </strong>Owner clarified that Groot's gray container is a wick/self-watering pot. Adapt watering to ponytail palm's dry-down needs: avoid continuously replenishing the reservoir, allow the whole mix to dry, and monitor moisture before rewatering. No evidence this setup is causing harm at present."
+          },
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Nov 4, 2026 · </strong>New photo compared with prior Oct 12 GAIA catalog image. Healthy-looking, dense green foliage with normal curling, and swollen caudex visibly intact. Minor older bends/scuffs but no widespread yellowing or clearly visible pests. Camera differences prevent reliable growth quantification. Keep very bright light and water only after the mix has dried thoroughly; photo reviewed in chat only, not uploaded."
