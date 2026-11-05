@@ -8473,7 +8473,7 @@
       "species": "Variegated Tradescantia (possibly ‘Pistachio White’; cultivar unverified)",
       "searchName": "fleur variegated tradescantia possible pistachio white",
       "searchSpecies": "variegated tradescantia (possibly ‘pistachio white’; cultivar unverified)",
-      "status": "Watch",
+      "status": "Good",
       "photo": "59-fleur-arrival-20261101.webp",
       "photoAlt": "Fleur · arrival photo · Nov 1, 2026",
       "newAddition": true,
@@ -8492,13 +8492,13 @@
       "sections": [
         {
           "label": "NEXT ACTION",
-          "bodyHtml": "Give bright, filtered light without scorching pale foliage and confirm the cultivar later.",
+          "bodyHtml": "No urgent intervention. Continue bright indirect light, avoiding strong direct sun on pale leaves. Water when approximately the upper inch starts to dry and drain fully. Avoid prolonged moisture on leaves and crowded wet leaf axils. Allow time to acclimate before major pruning or repotting.",
           "pClass": "",
           "style": "full next-action"
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "Dense cluster of green and predominantly cream-white striped trailing Tradescantia leaves. Several pale leaves have brown or dry-looking edges and patches. Observe new growth after acclimation; specific cultivar is not confirmed.",
+          "bodyHtml": "Nov 4, 2026 photo reviewed against Nov 1 GAIA arrival photo: compact, full variegated Tradescantia with prominent cream-white and green striping, multiple small growing tips, and generally firm foliage. A few isolated brown tips and edge marks are visible, several of which were present at arrival. No obvious widespread wilt, yellowing or collapsing stems. Differences in camera angle and lighting prevent measuring new growth over three days. Cultivar unconfirmed.",
           "pClass": "",
           "style": "full"
         },
@@ -8540,7 +8540,7 @@
         },
         {
           "label": "WATCH",
-          "bodyHtml": "Watch for browning white tissue, green reversion, and soft stems; do not claim a precise cultivar until verified.",
+          "bodyHtml": "Track the small growing tips for gradual extension and watch whether isolated brown edges spread to fresh leaves. Pale variegation is normal; a few old cosmetic marks alone do not imply active damage. If new tissue repeatedly scorches, reassess direct light, watering consistency and wet foliage.",
           "pClass": "",
           "style": "full"
         },
@@ -8561,7 +8561,7 @@
         "facts": [
           {
             "label": "Last updated",
-            "valueHtml": "Nov 1, 2026",
+            "valueHtml": "Nov 4, 2026",
             "style": ""
           },
           {
@@ -8571,7 +8571,7 @@
           },
           {
             "label": "Last photo review",
-            "valueHtml": "Nov 1, 2026 · arrival cover saved; formal GAIA photo review not recorded",
+            "valueHtml": "Nov 4, 2026 (reviewed in chat; photo not uploaded)",
             "style": ""
           },
           {
@@ -8616,6 +8616,10 @@
           }
         ],
         "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 4, 2026 · </strong>Compared owner-submitted photo with GAIA's Nov 1 arrival cover. Fleur remains full with firm-looking cream-and-green leaves and multiple growing tips. Small isolated brown leaf edges appear partly pre-existing. No widespread decline visible. Continue bright indirect light and water by top-inch dryness; avoid leaving foliage wet. Cultivar remains unverified. <strong>Written review only; photo not uploaded.</strong>"
+          },
           {
             "style": "",
             "bodyHtml": "<strong>Nov 1, 2026 · </strong>Named Fleur, plant #59, after Fleur Delacour · Harry Potter."
