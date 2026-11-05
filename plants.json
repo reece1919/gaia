@@ -54,7 +54,7 @@
       "sections": [
         {
           "label": "NEXT ACTION",
-          "bodyHtml": "Place in bright light and inspect leaf undersides and stem joints for mites. Keep apart from affected plants while the collection’s outbreak is active. Check soil moisture before watering.",
+          "bodyHtml": "Place in bright light and inspect leaf undersides and stem joints for mites. Keep apart from affected plants while any active infestation is present. Check soil moisture before watering.",
           "pClass": "",
           "style": "full next-action"
         },
@@ -281,7 +281,7 @@
         },
         {
           "label": "PEST CHECK",
-          "bodyHtml": "No infestation confirmed from the photo. Keep apart from affected plants while the collection’s mite outbreak is active and check leaf bases and undersides.",
+          "bodyHtml": "No infestation confirmed from the photo. Keep apart from affected plants during any active mite outbreak and check leaf bases and undersides.",
           "pClass": "",
           "style": "full"
         }
@@ -606,7 +606,7 @@
         },
         {
           "label": "WATCH",
-          "bodyHtml": "After the Oct 13 rehydration, check for renewed growth and adequate moisture through the center of the pot. Older traps may blacken naturally; trim only fully dead, easy-to-remove material. Do not manually trigger traps to test them. Verify actual water source and window temperatures. Keep apart from plants with confirmed spider mites; no mites established on Audrey II.",
+          "bodyHtml": "After the Oct 13 rehydration, check for renewed growth and adequate moisture through the center of the pot. Older traps may blacken naturally; trim only fully dead, easy-to-remove material. Do not manually trigger traps to test them. Verify actual water source and window temperatures. Keep apart from plants showing active spider mites; no mites established on Audrey II.",
           "pClass": "",
           "style": "full"
         },
@@ -1259,7 +1259,7 @@
       "sections": [
         {
           "label": "NEXT ACTION",
-          "bodyHtml": "Keep in bright indirect light and let it settle. Check root crowding before deciding to repot; keep it apart from plants with active mites.",
+          "bodyHtml": "Keep in bright indirect light and let it settle. Check root crowding before deciding to repot; keep it apart from plants with active mites, if any recur.",
           "pClass": "",
           "style": "full next-action"
         },
@@ -1698,7 +1698,7 @@
       "photo": "11-karlach.jpg",
       "photoAlt": "Karlach",
       "newAddition": false,
-      "pest": "reported",
+      "pest": "resolved",
       "added": "",
       "tags": [
         {
@@ -1708,10 +1708,6 @@
         {
           "style": "",
           "label": "AROID"
-        },
-        {
-          "style": "pest-tag",
-          "label": "MITES · FOLLOW-UP"
         }
       ],
       "sections": [
@@ -1723,7 +1719,7 @@
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "Spider mites reported Oct 10; bath completed Oct 10. Clearance has not been confirmed. Earlier photo assessment: Healthy, flowering, and producing fresh growth; one older spathe is spent.",
+          "bodyHtml": "Spider mites identified Oct 10 and bathed; owner reports no further mite activity across collection as of Nov 4. Earlier damage may remain; continued monitoring is prudent. Earlier photo assessment: Healthy, flowering, and producing fresh growth; one older spathe is spent.",
           "pClass": "",
           "style": "full"
         },
@@ -1765,7 +1761,7 @@
         },
         {
           "label": "WATCH",
-          "bodyHtml": "Watch for live mites, fine webbing, pale stippling, and damaged new growth. Watch new leaves for clean growth and older flowers as they age; monitor any worsening edge scorch.",
+          "bodyHtml": "Continue periodic checks for recurring mites (fine webbing, stippling or moving dots). Watch new leaves for clean growth and older flowers as they age; monitor any worsening edge scorch.",
           "pClass": "",
           "style": "full"
         }
@@ -1774,7 +1770,7 @@
         "facts": [
           {
             "label": "Last updated",
-            "valueHtml": "Oct 28, 2026",
+            "valueHtml": "Nov 4, 2026",
             "style": ""
           },
           {
@@ -1799,11 +1795,15 @@
           },
           {
             "label": "Pest follow-up",
-            "valueHtml": "Spider mites reported; clearance pending",
+            "valueHtml": "No current mite activity reported Nov 4, 2026; routine monitoring",
             "style": ""
           }
         ],
         "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 4, 2026 · </strong>Owner reports spider-mite activity appears gone across all plants. Previous Oct 10 mite infestation and bath history retained. Active mite follow-up flag closed based on owner report, <strong>not independently verified by a fresh pest inspection</strong>. Continue ordinary periodic checks for recurrence."
+          },
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Oct 26, 2026 · </strong>Repotted into clear plastic nursery pot with drainage and amended substrate; completion confirmed by owner Oct 28. Actual recipe, dimensions and root condition not specified."
@@ -2225,7 +2225,7 @@
       "photo": "15-tywin.jpg",
       "photoAlt": "Tywin",
       "newAddition": false,
-      "pest": "reported",
+      "pest": "resolved",
       "added": "",
       "tags": [
         {
@@ -2235,10 +2235,6 @@
         {
           "style": "",
           "label": "TROPICAL"
-        },
-        {
-          "style": "pest-tag",
-          "label": "MITES · FOLLOW-UP"
         }
       ],
       "sections": [
@@ -2250,7 +2246,7 @@
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "Spider mites reported Oct 10; bath completed Oct 10. Clearance has not been confirmed. Earlier photo assessment: Strong recovery with a large flush of healthy bright-green new growth.",
+          "bodyHtml": "Spider mites identified Oct 10 and bathed; owner reports no further mite activity across collection as of Nov 4. Earlier damage may remain; continued monitoring is prudent. Earlier photo assessment: Strong recovery with a large flush of healthy bright-green new growth.",
           "pClass": "",
           "style": "full"
         },
@@ -2292,7 +2288,7 @@
         },
         {
           "label": "WATCH",
-          "bodyHtml": "Watch for live mites, fine webbing, pale stippling, and damaged new growth. Track the new flush as it darkens and expands; remove older yellow leaves only after they are mostly spent.",
+          "bodyHtml": "Continue periodic checks for recurring mites (fine webbing, stippling or moving dots). Track the new flush as it darkens and expands; remove older yellow leaves only after they are mostly spent.",
           "pClass": "",
           "style": "full"
         }
@@ -2301,7 +2297,7 @@
         "facts": [
           {
             "label": "Last updated",
-            "valueHtml": "Oct 11, 2026",
+            "valueHtml": "Nov 4, 2026",
             "style": ""
           },
           {
@@ -2326,11 +2322,15 @@
           },
           {
             "label": "Pest follow-up",
-            "valueHtml": "Spider mites reported; clearance pending",
+            "valueHtml": "No current mite activity reported Nov 4, 2026; routine monitoring",
             "style": ""
           }
         ],
         "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 4, 2026 · </strong>Owner reports spider-mite activity appears gone across all plants. Previous Oct 10 mite infestation and bath history retained. Active mite follow-up flag closed based on owner report, <strong>not independently verified by a fresh pest inspection</strong>. Continue ordinary periodic checks for recurrence."
+          },
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
@@ -2362,7 +2362,7 @@
       "photo": "16-morgana.jpg",
       "photoAlt": "Morgana",
       "newAddition": false,
-      "pest": "reported",
+      "pest": "resolved",
       "added": "",
       "tags": [
         {
@@ -2372,10 +2372,6 @@
         {
           "style": "",
           "label": "AROID"
-        },
-        {
-          "style": "pest-tag",
-          "label": "MITES · FOLLOW-UP"
         }
       ],
       "sections": [
@@ -2387,7 +2383,7 @@
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "Spider mites reported Oct 10; bath completed Oct 10. Clearance has not been confirmed. Earlier photo assessment: Full, strongly variegated growth with only minor cosmetic leaf tears/browning.",
+          "bodyHtml": "Spider mites identified Oct 10 and bathed; owner reports no further mite activity across collection as of Nov 4. Earlier damage may remain; continued monitoring is prudent. Earlier photo assessment: Full, strongly variegated growth with only minor cosmetic leaf tears/browning.",
           "pClass": "",
           "style": "full"
         },
@@ -2429,7 +2425,7 @@
         },
         {
           "label": "WATCH",
-          "bodyHtml": "Watch for live mites, fine webbing, pale stippling, and damaged new growth. Track whether new leaves stay clean; older tears and brown patches do not need treatment if they remain isolated.",
+          "bodyHtml": "Continue periodic checks for recurring mites (fine webbing, stippling or moving dots). Track whether new leaves stay clean; older tears and brown patches do not need treatment if they remain isolated.",
           "pClass": "",
           "style": "full"
         }
@@ -2438,7 +2434,7 @@
         "facts": [
           {
             "label": "Last updated",
-            "valueHtml": "Oct 11, 2026",
+            "valueHtml": "Nov 4, 2026",
             "style": ""
           },
           {
@@ -2463,11 +2459,15 @@
           },
           {
             "label": "Pest follow-up",
-            "valueHtml": "Spider mites reported; clearance pending",
+            "valueHtml": "No current mite activity reported Nov 4, 2026; routine monitoring",
             "style": ""
           }
         ],
         "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 4, 2026 · </strong>Owner reports spider-mite activity appears gone across all plants. Previous Oct 10 mite infestation and bath history retained. Active mite follow-up flag closed based on owner report, <strong>not independently verified by a fresh pest inspection</strong>. Continue ordinary periodic checks for recurrence."
+          },
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
@@ -2499,7 +2499,7 @@
       "photo": "17-c-3po.jpg",
       "photoAlt": "C-3PO",
       "newAddition": false,
-      "pest": "reported",
+      "pest": "resolved",
       "added": "",
       "tags": [
         {
@@ -2509,10 +2509,6 @@
         {
           "style": "",
           "label": "TROPICAL"
-        },
-        {
-          "style": "pest-tag",
-          "label": "MITES · FOLLOW-UP"
         }
       ],
       "sections": [
@@ -2524,7 +2520,7 @@
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "Spider mites reported Oct 10; bath completed Oct 10. Clearance has not been confirmed. Earlier photo assessment: Improving with upright growth and several fresh leaves; color is strong.",
+          "bodyHtml": "Spider mites identified Oct 10 and bathed; owner reports no further mite activity across collection as of Nov 4. Earlier damage may remain; continued monitoring is prudent. Earlier photo assessment: Improving with upright growth and several fresh leaves; color is strong.",
           "pClass": "",
           "style": "full"
         },
@@ -2566,7 +2562,7 @@
         },
         {
           "label": "WATCH",
-          "bodyHtml": "Watch for live mites, fine webbing, pale stippling, and damaged new growth. Track new leaf size and continued leaf retention; watch for sudden leaf drop, crispy tips, or spider mites.",
+          "bodyHtml": "Continue periodic checks for recurring mites (fine webbing, stippling or moving dots). Track new leaf size and continued leaf retention; watch for sudden leaf drop, crispy tips, or spider mites.",
           "pClass": "",
           "style": "full"
         }
@@ -2575,7 +2571,7 @@
         "facts": [
           {
             "label": "Last updated",
-            "valueHtml": "Oct 11, 2026",
+            "valueHtml": "Nov 4, 2026",
             "style": ""
           },
           {
@@ -2600,11 +2596,15 @@
           },
           {
             "label": "Pest follow-up",
-            "valueHtml": "Spider mites reported; clearance pending",
+            "valueHtml": "No current mite activity reported Nov 4, 2026; routine monitoring",
             "style": ""
           }
         ],
         "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 4, 2026 · </strong>Owner reports spider-mite activity appears gone across all plants. Previous Oct 10 mite infestation and bath history retained. Active mite follow-up flag closed based on owner report, <strong>not independently verified by a fresh pest inspection</strong>. Continue ordinary periodic checks for recurrence."
+          },
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
@@ -3262,7 +3262,7 @@
       "photo": "23-calcifer-bromeliad.jpg",
       "photoAlt": "Calcifer",
       "newAddition": false,
-      "pest": "reported",
+      "pest": "resolved",
       "added": "",
       "tags": [
         {
@@ -3276,16 +3276,12 @@
         {
           "style": "",
           "label": "FLOWERING"
-        },
-        {
-          "style": "pest-tag",
-          "label": "MITES · FOLLOW-UP"
         }
       ],
       "sections": [
         {
           "label": "NEXT ACTION",
-          "bodyHtml": "Nov 4 photo shows no urgent foliage or bloom issue. Inspect leaf undersides for any active spider mites and repeat the white-paper test because Oct 10 infestation has no confirmed clearance. Keep bright indirect light, check the central cup and container drainage, and protect from cold window drafts.",
+          "bodyHtml": "Nov 4 photo shows no urgent foliage or bloom issue. Owner reports no remaining mite activity across the collection; routine monitoring is sufficient rather than active infestation treatment. Keep bright indirect light, refresh the cup periodically, check drainage and avoid cold window drafts.",
           "pClass": "",
           "style": "full next-action"
         },
@@ -3333,7 +3329,7 @@
         },
         {
           "label": "WATCH",
-          "bodyHtml": "Continue monitoring brown areas for spreading damage, and check the central rosette for softness or rot. After flowering, the mother rosette will eventually decline and may produce pups, which should be left to grow before separation. Spider mites were reported on Oct 10; current clearance is still not verified from photos.",
+          "bodyHtml": "Continue monitoring brown areas for spreading damage, and check the central rosette for softness or rot. After flowering, the mother rosette will eventually decline and may produce pups, which should be left to grow before separation. The owner reports no current mite activity as of Nov 4; visually monitor for recurrence.",
           "pClass": "",
           "style": "full"
         }
@@ -3367,11 +3363,15 @@
           },
           {
             "label": "Pest follow-up",
-            "valueHtml": "Spider mites reported; clearance pending",
+            "valueHtml": "No current mite activity reported Nov 4, 2026; routine monitoring",
             "style": ""
           }
         ],
         "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 4, 2026 · </strong>Owner reports spider-mite activity appears gone across all plants. Previous Oct 10 mite infestation and bath history retained. Active mite follow-up flag closed based on owner report, <strong>not independently verified by a fresh pest inspection</strong>. Continue ordinary periodic checks for recurrence."
+          },
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Nov 4, 2026 · </strong>Chat photo reviewed against previous GAIA catalog image and Oct 18 written photo review. Bracts still tall and red, rosette predominantly green and firm-looking; isolated older outer-leaf drying/brown tips. No obvious widespread decline. Colors differ in the two lighting conditions. Previously reported spider mites (Oct 10) cannot be confirmed cleared from this picture. Check leaf undersides and repeat paper test. Protect from cold window drafts; watch for pups following bloom. <strong>No image uploaded; text review only.</strong>"
@@ -3407,7 +3407,7 @@
       "photo": "24-phil-heartleaf-philodendron.jpg",
       "photoAlt": "Phil",
       "newAddition": false,
-      "pest": "reported",
+      "pest": "resolved",
       "added": "",
       "tags": [
         {
@@ -3421,10 +3421,6 @@
         {
           "style": "",
           "label": "ACTIVE GROWTH"
-        },
-        {
-          "style": "pest-tag",
-          "label": "MITES · FOLLOW-UP"
         }
       ],
       "sections": [
@@ -3436,7 +3432,7 @@
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "Spider mites reported Oct 10; bath completed Oct 10. Clearance has not been confirmed. Earlier photo assessment: Excellent — dense, vigorous foliage with several fresh light-green leaves and long healthy vines.",
+          "bodyHtml": "Spider mites identified Oct 10 and bathed; owner reports no further mite activity across collection as of Nov 4. Earlier damage may remain; continued monitoring is prudent. Earlier photo assessment: Excellent — dense, vigorous foliage with several fresh light-green leaves and long healthy vines.",
           "pClass": "",
           "style": "full"
         },
@@ -3478,7 +3474,7 @@
         },
         {
           "label": "WATCH",
-          "bodyHtml": "Watch for live mites, fine webbing, pale stippling, and damaged new growth. Track the longest vines for increasing bare internodes; brighter indirect light and occasional tip-pruning will keep the pot fuller.",
+          "bodyHtml": "Continue periodic checks for recurring mites (fine webbing, stippling or moving dots). Track the longest vines for increasing bare internodes; brighter indirect light and occasional tip-pruning will keep the pot fuller.",
           "pClass": "",
           "style": "full"
         }
@@ -3487,7 +3483,7 @@
         "facts": [
           {
             "label": "Last updated",
-            "valueHtml": "Oct 11, 2026",
+            "valueHtml": "Nov 4, 2026",
             "style": ""
           },
           {
@@ -3512,11 +3508,15 @@
           },
           {
             "label": "Pest follow-up",
-            "valueHtml": "Spider mites reported; clearance pending",
+            "valueHtml": "No current mite activity reported Nov 4, 2026; routine monitoring",
             "style": ""
           }
         ],
         "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 4, 2026 · </strong>Owner reports spider-mite activity appears gone across all plants. Previous Oct 10 mite infestation and bath history retained. Active mite follow-up flag closed based on owner report, <strong>not independently verified by a fresh pest inspection</strong>. Continue ordinary periodic checks for recurrence."
+          },
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
@@ -6274,7 +6274,7 @@
         },
         {
           "label": "PEST CHECK",
-          "bodyHtml": "New arrival; pest status is unconfirmed. Inspect closely and keep separate from the known spider-mite-affected collection during acclimation.",
+          "bodyHtml": "New arrival; pest status is unconfirmed. Inspect closely and keep separate from any plants showing active mite activity during acclimation.",
           "pClass": "",
           "style": "full"
         }
@@ -6444,7 +6444,7 @@
         },
         {
           "label": "PEST CHECK",
-          "bodyHtml": "New arrival; pest status is unconfirmed. Inspect closely and keep separate from the known spider-mite-affected collection during acclimation.",
+          "bodyHtml": "New arrival; pest status is unconfirmed. Inspect closely and keep separate from any plants showing active mite activity during acclimation.",
           "pClass": "",
           "style": "full"
         }
@@ -6614,7 +6614,7 @@
         },
         {
           "label": "PEST CHECK",
-          "bodyHtml": "New arrival; pest status is unconfirmed. Inspect closely and keep separate from the known spider-mite-affected collection during acclimation.",
+          "bodyHtml": "New arrival; pest status is unconfirmed. Inspect closely and keep separate from any plants showing active mite activity during acclimation.",
           "pClass": "",
           "style": "full"
         }
