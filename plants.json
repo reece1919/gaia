@@ -7096,13 +7096,13 @@
       "sections": [
         {
           "label": "NEXT ACTION",
-          "bodyHtml": "Maintain bright indirect light to support compact branching and vivid coloring. Do not rush to repot or aggressively prune during acclimation; assess whether leaf loss or trimming caused the more open lower canopy. Check upper inch of the potting mix before watering, then water and drain. If desired after establishment, pinch selected stem tips to encourage lower branching; healthy node-bearing tips can be rooted.",
+          "bodyHtml": "Owner confirms no trimming has been performed as of Nov 4. Let Moxxi acclimate and continue its natural branching in bright indirect light; check upper inch of soil before watering. Optional tip pinching and rooting healthy stem cuttings may be useful later if a denser habit is desired; no immediate pruning necessary.",
           "pClass": "",
           "style": "full next-action"
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "Nov 4, 2026 chat photo compared with the Oct 24 arrival cover: two or more strong upright, branching green stems with attractive pink-edged plum foliage, several visible growing tips, and larger-looking upper leaf clusters. Lower foliage appears relatively sparse and a number of smaller leaves are curled or show dry/pale edges; some wear was visible on arrival. Lighting/angle differences limit exact assessment of growth or leaf loss. No clear widespread stem collapse or distinct active pest clusters visible. Surface of nursery mix looks dark, but actual moisture is unknown.",
+          "bodyHtml": "Nov 4, 2026 chat photo compared with the Oct 24 arrival cover: two or more strong upright, branching green stems with attractive pink-edged plum foliage, several visible growing tips, and larger-looking upper leaf clusters. The naturally open lower foliage is confirmed as unpruned by the owner; a number of smaller leaves are curled or show dry/pale edges, some visible at arrival. Lighting/angle differences limit exact assessment of growth or leaf loss; no pruning has occurred. No clear widespread stem collapse or distinct active pest clusters visible. Surface of nursery mix looks dark, but actual moisture is unknown.",
           "pClass": "",
           "style": "full"
         },
@@ -7222,7 +7222,11 @@
         "notes": [
           {
             "style": "care-entry",
-            "bodyHtml": "<strong>Nov 4, 2026 · </strong>Owner-shared photo compared to Oct 24 arrival cover. Several upright green stems support healthy-looking plum-and-pink leaf clusters and growing tips, with an open/sparse lower structure. Some leaf curl and dry/pale margins remain; it is not clear whether lower foliage changed because of pruning or ordinary adjustment. No obvious widespread decline or clear pest cluster. Recommend bright indirect light, moisture checks, and optional tip pinching once established. <strong>Written review only; photo not uploaded.</strong>"
+            "bodyHtml": "<strong>Nov 4, 2026 · Clarification:</strong> Owner has not trimmed Moxxi. Her upright, somewhat open structure and several growing tips developed without pruning. No immediate intervention; allow ongoing growth, with optional tip-pinching later for density."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 4, 2026 · </strong>Owner-shared photo compared to Oct 24 arrival cover. Several upright green stems support healthy-looking plum-and-pink leaf clusters and growing tips, with an open/sparse lower structure. Some leaf curl and dry/pale margins remain; owner confirms no trimming has occurred, so the open structure is natural and not post-pruning. No obvious widespread decline or clear pest cluster. Recommend bright indirect light, moisture checks, and optional tip pinching once established. <strong>Written review only; photo not uploaded.</strong>"
           },
           {
             "style": "",
