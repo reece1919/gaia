@@ -7096,13 +7096,13 @@
       "sections": [
         {
           "label": "NEXT ACTION",
-          "bodyHtml": "Inspect undersides and growing tips for pests; check the nursery pot's drainage and soil moisture. Choose a bright spot and let the plant acclimate before pruning or repotting. Later, pinch healthy tips if fuller branching is desired.",
+          "bodyHtml": "Maintain bright indirect light to support compact branching and vivid coloring. Do not rush to repot or aggressively prune during acclimation; assess whether leaf loss or trimming caused the more open lower canopy. Check upper inch of the potting mix before watering, then water and drain. If desired after establishment, pinch selected stem tips to encourage lower branching; healthy node-bearing tips can be rooted.",
           "pClass": "",
           "style": "full next-action"
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "Pink-edged, plum-colored foliage on branching stems. Upper stems look stretched with leaves spaced apart; dense smaller growth is present lower down. No reliable root or soil assessment from the Oct 24 photograph.",
+          "bodyHtml": "Nov 4, 2026 chat photo compared with the Oct 24 arrival cover: two or more strong upright, branching green stems with attractive pink-edged plum foliage, several visible growing tips, and larger-looking upper leaf clusters. Lower foliage appears relatively sparse and a number of smaller leaves are curled or show dry/pale edges; some wear was visible on arrival. Lighting/angle differences limit exact assessment of growth or leaf loss. No clear widespread stem collapse or distinct active pest clusters visible. Surface of nursery mix looks dark, but actual moisture is unknown.",
           "pClass": "",
           "style": "full"
         },
@@ -7144,7 +7144,7 @@
         },
         {
           "label": "WATCH",
-          "bodyHtml": "Track stem extension, leaf spacing and new branching. Check for aphids, whiteflies, mealybugs and mites; sudden wilting can indicate both too-dry and too-wet roots.",
+          "bodyHtml": "Follow the existing upper growing tips and emerging branch points for fuller growth. Observe whether curled edges normalize on new leaves or whether fresh leaf damage, wilt, yellowing or lower-leaf drop develops. Inspect leaf undersides if damage progresses; prior photos do not establish an active infestation.",
           "pClass": "",
           "style": "full"
         },
@@ -7165,7 +7165,7 @@
         "facts": [
           {
             "label": "Last updated",
-            "valueHtml": "Oct 24, 2026",
+            "valueHtml": "Nov 4, 2026",
             "style": ""
           },
           {
@@ -7175,7 +7175,7 @@
           },
           {
             "label": "Last photo review",
-            "valueHtml": "Arrival photo shared in chat Oct 24; no formal GAIA journal review recorded",
+            "valueHtml": "Nov 4, 2026 · compared in chat; image not uploaded",
             "style": ""
           },
           {
@@ -7220,6 +7220,10 @@
           }
         ],
         "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 4, 2026 · </strong>Owner-shared photo compared to Oct 24 arrival cover. Several upright green stems support healthy-looking plum-and-pink leaf clusters and growing tips, with an open/sparse lower structure. Some leaf curl and dry/pale margins remain; it is not clear whether lower foliage changed because of pruning or ordinary adjustment. No obvious widespread decline or clear pest cluster. Recommend bright indirect light, moisture checks, and optional tip pinching once established. <strong>Written review only; photo not uploaded.</strong>"
+          },
           {
             "style": "",
             "bodyHtml": "<strong>Oct 24, 2026 · </strong>Named Moxxi, plant #51, after Moxxi · Borderlands."
