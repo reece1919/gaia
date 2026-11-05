@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "Nov 4, 2026",
+  "updatedAt": "Nov 5, 2026",
   "summaryNote": "tap for care, priorities & history",
   "recentCare": {
     "dateLabel": "NOV 1, 2026",
@@ -7567,7 +7567,7 @@
         },
         {
           "label": "REPOT",
-          "bodyHtml": "Repotted Oct 26, 2026, confirmed by owner Oct 28. Clear plastic nursery pot with drainage; avoid another unnecessary repot while acclimating.",
+          "bodyHtml": "Owner confirmed Nov 5 that Delilah has not been repotted since acquisition. Previous Oct 26 record was erroneous. Check drainage, root condition and substrate performance before deciding whether to repot.",
           "pClass": "",
           "style": ""
         },
@@ -7600,7 +7600,7 @@
         "facts": [
           {
             "label": "Last updated",
-            "valueHtml": "Oct 28, 2026",
+            "valueHtml": "Nov 5, 2026",
             "style": ""
           },
           {
@@ -7610,7 +7610,7 @@
           },
           {
             "label": "Last photo review",
-            "valueHtml": "Oct 28, 2026 · updated photo reviewed in ChatGPT; upload to private gallery pending",
+            "valueHtml": "Nov 5, 2026 · photo reviewed in ChatGPT; not uploaded",
             "style": ""
           },
           {
@@ -7635,17 +7635,17 @@
           },
           {
             "label": "Last repotted",
-            "valueHtml": "Oct 26, 2026",
+            "valueHtml": "Not repotted by owner (confirmed Nov 5, 2026)",
             "style": ""
           },
           {
             "label": "Pot / container",
-            "valueHtml": "Clear plastic nursery pot, with drainage",
+            "valueHtml": "Nursery pot; inner pot and drainage details not verified",
             "style": ""
           },
           {
             "label": "Current substrate",
-            "valueHtml": "Amended potting mix visible; exact ratios not confirmed",
+            "valueHtml": "Original nursery substrate; composition not verified",
             "style": ""
           },
           {
@@ -7657,7 +7657,7 @@
         "notes": [
           {
             "style": "care-entry",
-            "bodyHtml": "<strong>Oct 26, 2026 · </strong>Repotted into clear plastic nursery pot with drainage and amended substrate; completion confirmed by owner Oct 28. Actual recipe, dimensions and root condition not specified."
+            "bodyHtml": "<strong>Nov 5, 2026 · Correction:</strong> Owner confirmed Delilah has not been repotted. An Oct 26 repot entry was incorrectly attributed to this plant and has been corrected in GAIA. Original nursery substrate and drainage configuration not verified."
           },
           {
             "style": "",
