@@ -9811,7 +9811,7 @@
         },
         {
           "label": "NAMES & POT MAPPING",
-          "bodyHtml": "The three names chosen by the owner are <strong>Grog</strong>, <strong>Duhg</strong> and <strong>Gahg</strong>, from the owner's D&D campaign. Name-to-pot assignments not yet confirmed; the photo shows a back-left pot, front-center pot with a yellow sticky trap, and back-right pot. Keep these as one grouped GAIA entry until individual identities are assigned.",
+          "bodyHtml": "<strong>Confirmed pot assignments (Nov 4, 2026):</strong> Back left = <strong>Grog</strong>; front center (yellow sticky trap) = <strong>Gahg</strong>; back right = <strong>Duhg</strong>. Three separately potted yucca cuttings tracked within one GAIA record.",
           "pClass": "full",
           "style": ""
         },
@@ -9898,8 +9898,8 @@
           },
           {
             "label": "Individual pot names",
-            "valueHtml": "Not yet assigned",
-            "style": "unknown"
+            "valueHtml": "Back left: Grog · Front center: Gahg · Back right: Duhg",
+            "style": ""
           },
           {
             "label": "Rooting confirmed",
@@ -9918,6 +9918,10 @@
           }
         ],
         "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 4, 2026 · Pot names confirmed:</strong> Owner assigned <strong>Grog</strong> to the back-left pot, <strong>Gahg</strong> to the front-center pot with the yellow trap, and <strong>Duhg</strong> to the back-right pot. All three remain one shared GAIA entry; no photos uploaded."
+          },
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Nov 4, 2026 · </strong>Owner named the three yucca cuttings Grog, Duhg and Gahg after their D&D game. All three shown in chat photograph. Green narrow leaves remain on each; some lower basal leaves are brown/dry, and white curly leaf-edge filaments are visible. Root establishment unknown. One shared GAIA record created without assigning a name to a specific pot. No photo upload."
