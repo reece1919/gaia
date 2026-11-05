@@ -2,8 +2,8 @@
   "schema_version": 1,
   "read_only": true,
   "source": "GAIA owner-approved reference snapshot",
-  "generated_at": "2026-11-05T12:04:34.441Z",
-  "synced_at": "2026-11-05T12:04:34.458512+00:00",
+  "generated_at": "2026-11-05T17:57:56.583Z",
+  "synced_at": "2026-11-05T17:57:56.607505+00:00",
   "plant_count": 66,
   "comparison_ready_count": 42,
   "comparison_candidate_count": 60,
@@ -1240,17 +1240,17 @@
         },
         {
           "plant_id": "11",
-          "action_type": "note",
-          "happened_on": "2026-10-26",
-          "note": "Karlach: new pot and substrate planned for tonight, Oct 26; not yet completed.",
-          "created_at": "2026-10-26T16:51:26.059246+00:00"
-        },
-        {
-          "plant_id": "11",
           "action_type": "repot",
           "happened_on": "2026-10-26",
           "note": "Owner confirmed on Oct 28 that repotting shown in updated photos was completed Monday, Oct 26. Clear inner nursery pot and amended substrate visible; specific recipe and root condition unconfirmed.",
           "created_at": "2026-10-28T23:52:45.775604+00:00"
+        },
+        {
+          "plant_id": "11",
+          "action_type": "note",
+          "happened_on": "2026-10-26",
+          "note": "Karlach: new pot and substrate planned for tonight, Oct 26; not yet completed.",
+          "created_at": "2026-10-26T16:51:26.059246+00:00"
         },
         {
           "plant_id": "11",
@@ -2818,6 +2818,13 @@
       "care_events": [
         {
           "plant_id": "28",
+          "action_type": "inspect",
+          "happened_on": "2026-11-05",
+          "note": "Nov 5 chat photo review: Beetlejuice (#28), Haworthiopsis attenuata-type. Compared directly to public GAIA catalog photo and checked Oct 18 review summary (private photo pixels not directly inspected). Rosette retains upright striped leaves with no obvious widespread yellowing or collapse. Some narrow, slightly dry/curved tips appear pre-existing; no clear new decline or measured growth. Top leaves appear close to newer LED light bar; observe for bleaching or newly crispy tips. Metallic inner container is nested in white decorative cachepot; drainage and retained runoff cannot be verified, so inspect when convenient and empty standing water. Last recorded watering Oct 25; current moisture unknown, do not water based on calendar. Current image reviewed in chat only and NOT uploaded to GAIA. Owner confirms metallic inner pot HAS a drainage hole. Remove any collected runoff from the white outer pot after watering.",
+          "created_at": "2026-11-05T15:35:29.451515+00:00"
+        },
+        {
+          "plant_id": "28",
           "action_type": "water",
           "happened_on": "2026-10-25",
           "note": "Weekend care reported Oct 26, 2026 for Oct 24–25; exact day unspecified, filed under Oct 25. Beetlejuice watered, confirmed by owner.",
@@ -3884,6 +3891,13 @@
       "care_events": [
         {
           "plant_id": "41",
+          "action_type": "inspect",
+          "happened_on": "2026-11-05",
+          "note": "Nov 5 chat photo: Paarthurnax (#41), Curio barbertonicus-type, foreground in terracotta nursery pot. Compared directly with GAIA public catalog photo plus Oct 18 private review summary (private image pixels not read). Upper leaf cluster now visually denser/fuller, consistent with new growth; exact amount not measurable due to differing angles. Blue-green narrow leaves look firm; lower leaves arch down as in older photo. No obvious scorch, yellowing, stem collapse, or clear pests. LED bar visible overhead. Last recorded watering Oct 25, also Oct 14; current substrate moisture unmeasured. Keep bright light, allow mix to dry substantially between watering, avoid premature repot/pruning. Other plants in frame: Samwise (#07) left, Molly (#22) back; not separately reviewed. New photo assessed in chat only; NOT uploaded to GAIA photo storage.",
+          "created_at": "2026-11-05T17:21:26.9334+00:00"
+        },
+        {
+          "plant_id": "41",
           "action_type": "water",
           "happened_on": "2026-10-25",
           "note": "Weekend care reported Oct 26, 2026 for Oct 24–25; exact day unspecified, filed under Oct 25. Paarthurnax watered, confirmed by owner.",
@@ -4411,7 +4425,15 @@
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": [],
+      "care_events": [
+        {
+          "plant_id": "47",
+          "action_type": "inspect",
+          "happened_on": "2026-11-05",
+          "note": "Nov 5 chat review of Wrex (#47), Haworthiopsis zebra-type in red skull cachepot. Current photo shows a compact, upright dark-green ridged rosette, with minor apparent tip wear and no obvious large-scale yellowing, collapse or visible pests. Central growth appears intact, but new growth cannot be confirmed from one photo. Compared with written Oct 21 GAIA arrival assessment; Oct 21 private photo record exists but image pixels not accessed. LED bar visible overhead, no obvious bleaching. Confirm inner pot drainage and empty water from decorative skull; avoid watering until substrate has dried. Soil, roots, moisture, actual drainage, and watering date not verified. Current chat photo NOT uploaded to GAIA. Owner confirms Wrex is in a draining inner pot inside the red skull cachepot. Continue emptying any runoff from outer skull after watering.",
+          "created_at": "2026-11-05T15:45:57.007631+00:00"
+        }
+      ],
       "reference_image": null,
       "comparison": {
         "ready": false,
