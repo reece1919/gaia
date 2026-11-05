@@ -6074,7 +6074,7 @@
       "species": "Scented geranium · Pelargonium 'Citrosum'-type",
       "searchName": "jango citronella plant scented geranium mosquito plant",
       "searchSpecies": "pelargonium 'citrosum'-type",
-      "status": "Watch",
+      "status": "Good",
       "photo": "45-jango-citronella-plant-scented-geranium-mosqu.jpg",
       "photoAlt": "Jango",
       "newAddition": false,
@@ -6091,19 +6091,19 @@
         },
         {
           "style": "",
-          "label": "PRUNE"
+          "label": "17 CLONES"
         }
       ],
       "sections": [
         {
           "label": "NEXT ACTION",
-          "bodyHtml": "Prune the longest stems back by about one-third to one-half to encourage branching, and root healthy tip cuttings if you want backups. Give it the brightest indoor light you can.",
+          "bodyHtml": "Jango has already had selective corrective pruning (owner estimated roughly one-third to one-half removed) and is the parent of 17 potted clones grouped as Clone Force 17 (#65). Maintain strong light and let the parent develop fresh branches before additional heavy pruning.",
           "pClass": "",
           "style": "full next-action"
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "Watch / vigorous but very leggy — the plant has a large amount of healthy green foliage, but the long, widely spaced stems show it is stretching and becoming difficult to manage indoors.",
+          "bodyHtml": "Nov 4 chat photo of Jango after selective pruning looked less sprawling and more balanced, with healthy green foliage and growing tips; some older stretched internodes remain. Owner reports around one-third to one-half of the lanky growth removed, retaining adequate foliage. Seventeen cuttings derived from Jango are now recorded together under Clone Force 17 (#65).",
           "pClass": "",
           "style": "full"
         },
@@ -6154,12 +6154,12 @@
         "facts": [
           {
             "label": "Last updated",
-            "valueHtml": "Oct 11, 2026",
+            "valueHtml": "Nov 4, 2026",
             "style": ""
           },
           {
             "label": "Last photo review",
-            "valueHtml": "Oct 5, 2026",
+            "valueHtml": "Nov 4, 2026 (chat photo; no upload)",
             "style": ""
           },
           {
@@ -6179,6 +6179,10 @@
           }
         ],
         "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 4, 2026 · </strong>Owner shared three photos of 17 individual scented-geranium cuttings propagated from Jango. Added a single grouped GAIA catalog entry, Clone Force 17 (#65), with a proposed Star Wars clone-name roster. These are individual cuttings and not 17 new GAIA cards; individual pot names and root status remain to be confirmed."
+          },
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
@@ -9531,6 +9535,179 @@
         "Possible Yellow Hill"
       ],
       "coverPhoto": "64-meridia-arrival-20261101.webp"
+    },
+    {
+      "id": "65",
+      "name": "Clone Force 17",
+      "species": "Scented geranium · Pelargonium 'Citrosum'-type (Jango cuttings)",
+      "searchName": "clone force 17 jango clones star wars scented geranium citronella pelargonium rex cody fives echo jesse kix tup hardcase wolffe gregor hunter wrecker tech crosshair omega boba 99",
+      "searchSpecies": "pelargonium 'citrosum'-type scented geranium",
+      "status": "Good",
+      "photo": "",
+      "photoAlt": "Clone Force 17 · Jango scented-geranium cuttings",
+      "newAddition": true,
+      "pest": "",
+      "added": "2026-11-04",
+      "tags": [
+        {
+          "style": "",
+          "label": "17 CUTTINGS"
+        },
+        {
+          "style": "",
+          "label": "JANGO CLONES"
+        },
+        {
+          "style": "",
+          "label": "PROPAGATION"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Continue bright light without harsh sudden sun; keep each small pot lightly moist while rooting, but not waterlogged. Check each cutting individually for firm stems, new leafy shoots, and eventual root establishment. No need to pinch newly establishing plants yet.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Owner reports 17 separate clones propagated from Jango. Three chat photographs on Nov 4 show several small individual pots containing green, upright Pelargonium cuttings with lobed green leaves and many small growing points. Growth and leaf posture look encouraging overall, with varying stem lengths and foliage density. Root development and survival of every one of the 17 are not independently verified.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "PARENT PLANT",
+          "bodyHtml": "Jango (GAIA #45), scented geranium / citronella-type Pelargonium. These are vegetative clones of the original plant, kept together as one group catalog entry rather than 17 separate GAIA cards.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "CLONE ROSTER",
+          "bodyHtml": "<strong>Proposed Star Wars names (17):</strong> Rex · Cody · Fives · Echo · Jesse · Kix · Tup · Hardcase · Wolffe · Gregor · Hunter · Wrecker · Tech · Crosshair · Omega · Boba · 99.<br>These names are a shared roster only; individual name-to-pot assignments have not yet been identified or confirmed.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "For unrooted or recently rooted cuttings, keep the mix lightly and evenly moist while allowing excess to drain; avoid standing water in trays. Once roots are established and growth is steady, allow the upper part of the mix to dry between thorough waterings. Check each pot, since drying speeds can vary.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Bright indirect light or adequate grow lights while establishing. After rooting, acclimate gradually to stronger light to encourage compact foliage and shorter internodes.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Wait until rooting and sustained new growth are evident. Thereafter feed lightly with a balanced fertilizer during active growth, following label guidance.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Small grouped pots pictured on metal grow-light shelves; exact permanent location and light distance not recorded.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Do not immediately move cuttings into oversized pots. Wait until each rooted cutting has a working root system and needs more space; pot up gradually.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Photos show small pots with an airy, perlite-containing mix; exact composition and drainage remain unverified. Prefer lightly moisture-retentive but freely draining potting mix.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Monitor new leaves, expanding branching, wilt or dark/soft stems, and whether the soil stays too wet. A few pots show pale specks on the surface that may be perlite or other substrate material; identify by close inspection rather than assuming pests or mold. Track rooting by pot when possible.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "FUTURE SHAPING",
+          "bodyHtml": "Once well rooted and growing strongly, pinch a small terminal growing tip just above a node if you want bushier clones. Keep enough green leaf area, and root healthy tip cuttings to expand the group further.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Nov 4, 2026",
+            "style": ""
+          },
+          {
+            "label": "Added to collection",
+            "valueHtml": "Nov 4, 2026 (group catalog entry)",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Nov 4, 2026 · 3 chat photos, no image uploaded",
+            "style": ""
+          },
+          {
+            "label": "Group size",
+            "valueHtml": "17 Jango-derived cuttings (owner reported)",
+            "style": ""
+          },
+          {
+            "label": "Parent plant",
+            "valueHtml": "Jango · GAIA #45",
+            "style": ""
+          },
+          {
+            "label": "Individual names",
+            "valueHtml": "17 Star Wars names proposed; pot assignments not confirmed",
+            "style": ""
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Propagation / rooting date",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Multiple individual small round and square nursery pots",
+            "style": ""
+          },
+          {
+            "label": "Pest status",
+            "valueHtml": "No active pests reported; individual inspections not recorded",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 4, 2026 · </strong>Created one GAIA entry for the owner's 17 cuttings cloned from Jango. Three photographs shared in chat show multiple potted stem cuttings with vivid green lobed leaves and encouraging new tips. Proposed the names Rex, Cody, Fives, Echo, Jesse, Kix, Tup, Hardcase, Wolffe, Gregor, Hunter, Wrecker, Tech, Crosshair, Omega, Boba and 99. Names are not yet matched to individual pots; rooting stage and dates not confirmed. No photo upload attempted."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "flowering",
+        "light": "very-bright",
+        "water": "one-two",
+        "waterLabel": "Check each pot",
+        "soil": "well-drained"
+      },
+      "commonNames": [
+        "Jango's clone army",
+        "Scented geranium clones",
+        "Citronella cuttings"
+      ]
     }
   ],
   "dashboardTasks": [
