@@ -4721,13 +4721,13 @@
       "sections": [
         {
           "label": "NEXT ACTION",
-          "bodyHtml": "No urgent action. Keep conditions steady and watch the fresh tip growth; pinch later if you want a bushier plant.",
+          "bodyHtml": "No urgent intervention: maintain bright indirect light, consistent moisture (water when upper inch starts drying) and free drainage. Let current leafy tips expand before any optional pinching. Check purple undersides and, if available, the original nursery tag to help confirm the tentative 'Troy's Gold' identity.",
           "pClass": "",
           "style": "full next-action"
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "Good / establishing — multiple fresh shoots are developing. One older leaf still shows mottled damage, but the newest growth looks better.",
+          "bodyHtml": "Nov 4, 2026 owner photo: Farore shows full, firm-looking, lime-chartreuse, quilted/scalloped leaves, purple-red coloring near some veins and on leaf undersides, and multiple healthy-looking growing tips. Compared with the older catalog image and Oct 18 photo, there is markedly more healthy leaf area and less conspicuous old mottling. No apparent widespread collapse. Botanical review suggests Plectranthus ciliatus 'Troy's Gold' as a promising but unconfirmed cultivar match; a name tag or clearer underside image would be needed to confirm.",
           "pClass": "",
           "style": "full"
         },
@@ -4769,7 +4769,13 @@
         },
         {
           "label": "WATCH",
-          "bodyHtml": "Watch whether new leaves emerge clean. If the dark mottling stays limited to older foliage, treat it as historical damage rather than an active problem.",
+          "bodyHtml": "Enjoy the expanding healthy lime-green foliage. The raised quilted surface and some purple vein/underside coloring may be characteristic, not damage. Monitor only if fresh leaves develop widespread spreading spots or wilting. Cultivar identification remains provisional.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "BOTANICAL ID",
+          "bodyHtml": "Tentative match: Plectranthus ciliatus 'Troy's Gold' (sometimes sold as 'Kelly's Gold'). Quilted golden/chartreuse leaves with green and reddish-purple accents fit published descriptions, but not yet proven from a photo. Keep the broader Plectranthus ciliatus-type ID pending tag or close examination.",
           "pClass": "",
           "style": "full"
         }
@@ -4778,12 +4784,12 @@
         "facts": [
           {
             "label": "Last updated",
-            "valueHtml": "Oct 11, 2026",
+            "valueHtml": "Nov 4, 2026",
             "style": ""
           },
           {
             "label": "Last photo review",
-            "valueHtml": "Oct 5, 2026",
+            "valueHtml": "Nov 4, 2026 (chat photo; no upload)",
             "style": ""
           },
           {
@@ -4803,6 +4809,10 @@
           }
         ],
         "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 4, 2026:</strong> Reviewed photo vs earlier GAIA images: fuller green/chartreuse foliage, textured quilted leaves, reddish accents and multiple growing tips. Strong potential match to Plectranthus ciliatus 'Troy's Gold', but cultivar unconfirmed. Continue bright indirect light, water when top inch begins drying and allow healthy tips to develop. Photo not uploaded."
+          },
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
