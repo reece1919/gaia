@@ -8836,13 +8836,13 @@
       "sections": [
         {
           "label": "NEXT ACTION",
-          "bodyHtml": "Place in bright indirect light and inspect stem nodes and undersides. Decide later whether to trail or climb.",
+          "bodyHtml": "No urgent action. Maintain bright indirect light and let Varric acclimate. Check dryness in the top 1–2 inches before watering and allow full drainage. The Nov 4 photo places him near a wall heater; if it is running, keep leaves and pot away from direct hot/dry airflow.",
           "pClass": "",
           "style": "full next-action"
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "Golden pothos with upright and arching green leaves mottled with yellow, with a nursery Golden Pothos label visible. Some localized yellowing or damage appears near a lower leaf; roots, soil moisture and pests are unverified.",
+          "bodyHtml": "Nov 4, 2026 chat photo directly compared with Nov 1 GAIA arrival cover: broad mature green and golden-variegated leaves remain firm-looking with no obvious widespread yellowing, necrosis or collapse. Multiple upright stems and one low arching or trailing stem are visible. The curled, pale young leaf on the left was also present in the arrival photo, so it is not a newly developing change confirmed by this review. No clear deterioration or measurable growth over the three days. Roots, soil moisture, and pest status remain unverified.",
           "pClass": "",
           "style": "full"
         },
@@ -8884,7 +8884,7 @@
         },
         {
           "label": "WATCH",
-          "bodyHtml": "Watch for yellow leaves after overwatering, leaf curl with drought, and pest activity.",
+          "bodyHtml": "Watch the pre-existing curled leaf on the left for eventual opening or normal continued growth, and monitor new stems and leaf coloration. If the nearby wall heater runs, avoid drying drafts and excessive warmth around roots. Do not interpret ordinary golden variegation as yellowing.",
           "pClass": "",
           "style": "full"
         },
@@ -8905,7 +8905,7 @@
         "facts": [
           {
             "label": "Last updated",
-            "valueHtml": "Nov 1, 2026",
+            "valueHtml": "Nov 4, 2026",
             "style": ""
           },
           {
@@ -8915,7 +8915,7 @@
           },
           {
             "label": "Last photo review",
-            "valueHtml": "Nov 1, 2026 · arrival cover saved; formal GAIA photo review not recorded",
+            "valueHtml": "Nov 4, 2026 · reviewed in chat, image not uploaded",
             "style": ""
           },
           {
@@ -8960,6 +8960,10 @@
           }
         ],
         "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 4, 2026 · </strong>Chat photo reviewed against Nov 1 arrival cover. Mature green and golden-variegated leaves look firm and healthy, and upright stems plus a low arching stem remain. Curled pale leaf on left was already visible on arrival; no clear new decline or measurable growth after three days. Plant shown near a wall heater; avoid hot drafts if running. Continue normal acclimation and watering by soil dryness. <strong>Photo reviewed in chat only; not uploaded to GAIA.</strong>"
+          },
           {
             "style": "",
             "bodyHtml": "<strong>Nov 1, 2026 · </strong>Named Varric, plant #61, after Varric Tethras · Dragon Age."
