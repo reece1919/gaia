@@ -2,8 +2,8 @@
   "schema_version": 1,
   "read_only": true,
   "source": "GAIA owner-approved reference snapshot",
-  "generated_at": "2026-11-05T00:31:25.424Z",
-  "synced_at": "2026-11-05T00:31:25.458494+00:00",
+  "generated_at": "2026-11-05T00:34:17.049Z",
+  "synced_at": "2026-11-05T00:34:17.067441+00:00",
   "plant_count": 64,
   "comparison_ready_count": 42,
   "comparison_candidate_count": 60,
@@ -4164,7 +4164,7 @@
     {
       "plant_id": "44",
       "name": "Ciri",
-      "species": "Grape Ivy / Oak Leaf Ivy · Cissus alata 'Ellen Danica'",
+      "species": "China Doll · Radermachera sinica",
       "reference_photo": "44-ciri-grape-ivy-oak-leaf-ivy-cissus-alata-elle.jpg",
       "latest_photo": {
         "id": "8291b78e-6a7f-4a45-9235-e8653c33367c",
