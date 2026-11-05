@@ -4948,13 +4948,13 @@
       "sections": [
         {
           "label": "NEXT ACTION",
-          "bodyHtml": "Nov 4 photo shows an emerging green leaf at the base, a positive change from the earlier nearly leafless condition. Leave Orion undisturbed and allow the leaf to expand. Maintain bright indirect light and warmth; check deeper moisture before watering because the small plant uses little water.",
+          "bodyHtml": "The small green basal leaf has been present for roughly a few weeks, according to the owner on Nov 4. Do not count it as newly emerged on Nov 4. Leave Orion undisturbed in stable bright indirect light and warmth. Watch for gradual leaf expansion or another growth point; check deeper soil moisture before watering.",
           "pClass": "",
           "style": "full next-action"
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "Recovering / still fragile: Nov 4 chat photograph shows a small pale-green leaf emerging near the base, with the original tall, bare petiole or stalk still upright and apparently cut at the tip. This is visible progress compared with the older GAIA cover, which showed a mostly leafless green shoot. No obvious base blackening in this view. The single small leaf does not establish full root recovery; root condition remains unverified.",
+          "bodyHtml": "Watch / fragile but alive. Nov 4 photo shows a small pale-green basal leaf and a taller upright bare green stalk. Owner says the small leaf has been present for a few weeks, so its appearance in this photo alone does not prove recent growth or continued development. No obvious blackening at the base in the picture; root condition and whether leaf has expanded remain unconfirmed.",
           "pClass": "",
           "style": "full"
         },
@@ -4996,7 +4996,7 @@
         },
         {
           "label": "WATCH",
-          "bodyHtml": "Watch whether the new leaf unfolds and stays firm; look for another growth point over the coming weeks. Monitor for soft/darkening tissue at the base, persistent wetness, a stalled or rotting new leaf, or rapid yellowing. Avoid disturbing the roots unnecessarily.",
+          "bodyHtml": "Track the existing basal leaf for measurable enlargement, opening, yellowing or softening over the next several weeks, and watch for a second shoot. If unchanged, reassess light, warmth and deeper substrate moisture before intervening. Check for soft/dark basal tissue or consistently wet potting mix; avoid unnecessary root disturbance.",
           "pClass": "",
           "style": "full"
         }
@@ -5030,6 +5030,10 @@
           }
         ],
         "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 4, 2026 · Clarification:</strong> Owner reports Orion's small green leaf has already been present for roughly a few weeks. It should not be described as newly emerged today. Its presence indicates survival, but active continued growth is not yet demonstrated. Monitor whether it expands and whether another shoot emerges; no photo uploaded."
+          },
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Nov 4, 2026 · </strong>Current chat photo compared with older GAIA cover. New small green leaf emerging at base, representing visible recovery from nearly leafless state. Long original stalk remains upright; root condition still unknown. Last reported watering was Oct 24–25. Keep roots undisturbed, maintain bright indirect light, monitor pot moisture carefully because foliage is minimal, and avoid fertilizer until recovery is sustained. Image analyzed in chat only; no upload attempted."
