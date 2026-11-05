@@ -4563,7 +4563,7 @@
       "id": "33",
       "name": "Din",
       "species": "Coleus scutellarioides (tentative)",
-      "searchName": "din plectranthus — maroon pot",
+      "searchName": "din coleus lime green crimson red centers",
       "searchSpecies": "coleus scutellarioides",
       "status": "Good",
       "photo": "33-din-plectranthus-maroon-pot.jpg",
@@ -4578,13 +4578,17 @@
         },
         {
           "style": "",
-          "label": "PLECTRANTHUS"
+          "label": "COLEUS"
+        },
+        {
+          "style": "",
+          "label": "NEW GROWTH"
         }
       ],
       "sections": [
         {
           "label": "NEXT ACTION",
-          "bodyHtml": "Keep conditions stable and watch the newest leaves. Do not repot or heavily prune while it is rebuilding.",
+          "bodyHtml": "Allow current coleus growing tips to develop. Maintain bright light and water when the top inch of soil begins drying; drain excess. Later, pinch selected tips above leaf nodes to encourage a bushier plant.",
           "pClass": "",
           "style": "full next-action"
         },
@@ -4632,7 +4636,7 @@
         },
         {
           "label": "WATCH",
-          "bodyHtml": "Track whether new growth emerges clean and stronger-colored while the older spotted leaves age out.",
+          "bodyHtml": "Monitor the healthy growing tips and natural red-centered leaf coloration. Old faded or tan patches are cosmetic unless fresh leaves develop spreading damage.",
           "pClass": "",
           "style": "full"
         }
