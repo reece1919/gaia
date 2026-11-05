@@ -4925,7 +4925,7 @@
       "species": "Monstera deliciosa 'Thai Constellation'",
       "searchName": "orion thai constellation #1 — round pot",
       "searchSpecies": "monstera deliciosa 'thai constellation'",
-      "status": "Concern",
+      "status": "Watch",
       "photo": "36-orion-thai-constellation-1-round-pot.jpg",
       "photoAlt": "Orion",
       "newAddition": false,
@@ -4948,19 +4948,19 @@
       "sections": [
         {
           "label": "NEXT ACTION",
-          "bodyHtml": "Leave Orion undisturbed. Keep warm in bright indirect light and let the upper 2–3 in of mix dry before watering; the main goal is protecting the surviving node/root system from rot.",
+          "bodyHtml": "Nov 4 photo shows an emerging green leaf at the base, a positive change from the earlier nearly leafless condition. Leave Orion undisturbed and allow the leaf to expand. Maintain bright indirect light and warmth; check deeper moisture before watering because the small plant uses little water.",
           "pClass": "",
           "style": "full next-action"
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "Concern / alive — still nearly leafless, but the pale green shoot remains upright. Recovery is possible, but this division has very little foliage to support it.",
+          "bodyHtml": "Recovering / still fragile: Nov 4 chat photograph shows a small pale-green leaf emerging near the base, with the original tall, bare petiole or stalk still upright and apparently cut at the tip. This is visible progress compared with the older GAIA cover, which showed a mostly leafless green shoot. No obvious base blackening in this view. The single small leaf does not establish full root recovery; root condition remains unverified.",
           "pClass": "",
           "style": "full"
         },
         {
           "label": "WATER",
-          "bodyHtml": "Because Orion is nearly leafless, let the upper 2–3 in of mix dry and confirm the pot is getting lighter before watering thoroughly and draining.",
+          "bodyHtml": "Last known watering was reported for the Oct 24–25 weekend. With minimal leaf area and a relatively large volume of nursery mix, check moisture several inches deep and pot weight; let the upper 2–3 inches dry before watering, and let excess drain. Do not water on a calendar or assume the surface dryness reflects deeper moisture.",
           "pClass": "",
           "style": ""
         },
@@ -4972,7 +4972,7 @@
         },
         {
           "label": "FERTILIZER",
-          "bodyHtml": "Hold fertilizer while actively recovering from division; once stable, use balanced fertilizer at 1/2 strength about monthly during active growth.",
+          "bodyHtml": "Hold fertilizer during early recovery. Reassess after the developing leaf has opened and Orion shows sustained healthy growth.",
           "pClass": "",
           "style": ""
         },
@@ -4996,7 +4996,7 @@
         },
         {
           "label": "WATCH",
-          "bodyHtml": "Watch whether the green shoot stays firm and continues developing. Any softening, darkening at the base, or stalled/wilting growth would raise concern for root or stem rot.",
+          "bodyHtml": "Watch whether the new leaf unfolds and stays firm; look for another growth point over the coming weeks. Monitor for soft/darkening tissue at the base, persistent wetness, a stalled or rotting new leaf, or rapid yellowing. Avoid disturbing the roots unnecessarily.",
           "pClass": "",
           "style": "full"
         }
@@ -5005,12 +5005,12 @@
         "facts": [
           {
             "label": "Last updated",
-            "valueHtml": "Oct 11, 2026",
+            "valueHtml": "Nov 4, 2026",
             "style": ""
           },
           {
             "label": "Last photo review",
-            "valueHtml": "Oct 5, 2026",
+            "valueHtml": "Nov 4, 2026 (chat photograph; not uploaded)",
             "style": ""
           },
           {
@@ -5030,6 +5030,10 @@
           }
         ],
         "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 4, 2026 · </strong>Current chat photo compared with older GAIA cover. New small green leaf emerging at base, representing visible recovery from nearly leafless state. Long original stalk remains upright; root condition still unknown. Last reported watering was Oct 24–25. Keep roots undisturbed, maintain bright indirect light, monitor pot moisture carefully because foliage is minimal, and avoid fertilizer until recovery is sustained. Image analyzed in chat only; no upload attempted."
+          },
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
