@@ -1593,7 +1593,7 @@
         },
         {
           "label": "WATER",
-          "bodyHtml": "Water when the top 2–3 in is dry; water thoroughly.",
+          "bodyHtml": "User reports soil takes about two weeks to dry as of Nov 4. Check moisture 2–3 in below the surface before watering thoroughly; don't water by calendar. Ensure drainage and avoid long periods of saturated soil.",
           "pClass": "",
           "style": ""
         },
@@ -1617,7 +1617,7 @@
         },
         {
           "label": "REPOT",
-          "bodyHtml": "Roots at the drainage holes reported Oct 10. Check whether the root ball is densely crowded or dries unusually fast before sizing up; visible roots alone do not require an immediate repot.",
+          "bodyHtml": "Roots seen at drainage holes Oct 10, but no repotting as of Nov 4. User reports soil takes roughly two weeks to dry, rather than drying unusually fast. Do not size up solely for protruding roots; reassess if actual root crowding, poor drainage, or growth problems emerge.",
           "pClass": "",
           "style": ""
         },
@@ -1638,12 +1638,12 @@
         "facts": [
           {
             "label": "Last updated",
-            "valueHtml": "Oct 11, 2026",
+            "valueHtml": "Nov 4, 2026",
             "style": ""
           },
           {
             "label": "Last photo review",
-            "valueHtml": "Oct 5, 2026",
+            "valueHtml": "Nov 4, 2026 (chat review; image not uploaded)",
             "style": ""
           },
           {
@@ -1663,6 +1663,10 @@
           }
         ],
         "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 4, 2026 · </strong>Owner confirmed Maester has not been repotted and the soil takes approximately two weeks to dry between waterings. Continue checking deeper soil moisture before watering and defer repotting unless root crowding, poor drainage or decline develops. New central spear and older minor leaf-edge damage noted in chat photo; image not uploaded."
+          },
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
