@@ -7273,7 +7273,7 @@
       "sections": [
         {
           "label": "NEXT ACTION",
-          "bodyHtml": "Check the widespread grayish fuzzy/fibrous surface material in the Nov 4 photo: it may be harmless fungal growth on organic mix but can indicate a persistently damp surface. Confirm drainage and check soil moisture 1–2 in down before watering. If it is superficial fuzzy growth, remove the loose affected surface layer, improve gentle airflow, and avoid leaving the pot wet. No urgent pruning or repotting based on the foliage.",
+          "bodyHtml": "Owner clarified Nov 4 that Celebrimbor was watered and bathed around 1–2 days earlier. Damp-looking soil and grayish fibrous material in the Nov 4 photo may reflect recently wetted potting mix, not necessarily mold. No immediate soil treatment: allow the upper 1–2 inches to dry, confirm normal drainage, and reassess only if actual fuzzy growth persists when the surface dries, there is an odor, or moisture remains excessive.",
           "pClass": "",
           "style": "full next-action"
         },
@@ -7321,7 +7321,7 @@
         },
         {
           "label": "WATCH",
-          "bodyHtml": "Watch whether gray-white fuzz on the soil returns or spreads, whether the mix remains wet for many days, and whether stems soften, foliage yellows or drops. Otherwise follow the healthy-looking developing leaflets over the next few weeks. Isolated pre-existing cosmetic marks need no treatment.",
+          "bodyHtml": "Foliage looks good. Allow the substrate to dry appropriately after the recently reported watering and bath. The gray surface material is not confirmed to be mold; watch for distinct persistent fungal growth, sour smell, prolonged waterlogging, or declining leaves rather than treating appearance alone.",
           "pClass": "",
           "style": "full"
         },
@@ -7367,12 +7367,12 @@
           },
           {
             "label": "Last watered",
-            "valueHtml": "Not recorded",
+            "valueHtml": "Approx. Nov 2–3, 2026 (owner-reported Nov 4)",
             "style": ""
           },
           {
             "label": "Last bath",
-            "valueHtml": "Not recorded",
+            "valueHtml": "Approx. Nov 2–3, 2026 (owner-reported Nov 4)",
             "style": ""
           },
           {
@@ -7399,7 +7399,11 @@
         "notes": [
           {
             "style": "care-entry",
-            "bodyHtml": "<strong>Nov 4, 2026 · </strong>New chat photo reviewed against Oct 24 arrival cover. Two firm-looking green stems and fairly full upper foliage with some developing leaflets; scattered minor leaf imperfections. Gray-white fuzzy/fibrous material covers much of soil surface, possibly superficial fungus or substrate fibers; appearance alone cannot confirm its identity or current moisture. Recommend checking moisture and drainage before watering and inspecting/removing superficial growth if present; monitor for sogginess or stem softening. <strong>Written assessment only; photo not uploaded.</strong>"
+            "bodyHtml": "<strong>Nov 4, 2026 · Care clarification:</strong> Owner reports Celebrimbor was watered and given a plant bath approximately 1–2 days before the photo; both occurred on the same day. Exact care date and watering method are unconfirmed. Dark/wet-looking mix is expected after recent watering; the grayish material seen in the photo is not confirmed to be mold. No additional intervention recommended unless persistent fungal growth, odor, or overly slow drying develops."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 4, 2026 · </strong>New chat photo reviewed against Oct 24 arrival cover. Two firm-looking green stems and fairly full upper foliage with some developing leaflets; scattered minor leaf imperfections. Gray-white fuzzy/fibrous material is visible at the surface. Owner later clarified the plant was watered and bathed 1–2 days before this photo, making ordinary damp substrate/fibers plausible; mold is unconfirmed. Monitor normal dry-down and do not remove surface material solely on the basis of this image. <strong>Written assessment only; photo not uploaded.</strong>"
           },
           {
             "style": "",
