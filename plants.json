@@ -4948,13 +4948,13 @@
       "sections": [
         {
           "label": "NEXT ACTION",
-          "bodyHtml": "The small green basal leaf has been present for roughly a few weeks, according to the owner on Nov 4. Do not count it as newly emerged on Nov 4. Leave Orion undisturbed in stable bright indirect light and warmth. Watch for gradual leaf expansion or another growth point; check deeper soil moisture before watering.",
+          "bodyHtml": "Celebrate the retained green leaf and stable-looking stem; continue consistent bright indirect light, warmth, and careful moisture checks. Leave Orion undisturbed and look for eventual leaf expansion or another shoot.",
           "pClass": "",
           "style": "full next-action"
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "Watch / fragile but alive. Nov 4 photo shows a small pale-green basal leaf and a taller upright bare green stalk. Owner says the small leaf has been present for a few weeks, so its appearance in this photo alone does not prove recent growth or continued development. No obvious blackening at the base in the picture; root condition and whether leaf has expanded remain unconfirmed.",
+          "bodyHtml": "Stable-looking, recovering plant with a small pale-green leaf near the base and an upright green stalk. Owner confirmed on Nov 4 that the leaf has remained about the same size for several weeks. Its continued green appearance and retention are encouraging; active enlargement is not yet visible. No urgent intervention indicated from this photograph.",
           "pClass": "",
           "style": "full"
         },
@@ -4996,7 +4996,7 @@
         },
         {
           "label": "WATCH",
-          "bodyHtml": "Track the existing basal leaf for measurable enlargement, opening, yellowing or softening over the next several weeks, and watch for a second shoot. If unchanged, reassess light, warmth and deeper substrate moisture before intervening. Check for soft/dark basal tissue or consistently wet potting mix; avoid unnecessary root disturbance.",
+          "bodyHtml": "Occasionally compare the small leaf's size and look for future new growth. A few weeks without visible enlargement is not by itself an emergency. Avoid overwatering or unnecessary root disturbance.",
           "pClass": "",
           "style": "full"
         }
@@ -5030,6 +5030,10 @@
           }
         ],
         "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 4, 2026 · </strong>Owner confirms the small basal leaf has stayed approximately the same size for several weeks. Green tissue is being retained and the plant looks stable, though no visible recent enlargement can be claimed. Continue normal supportive care; no urgency indicated."
+          },
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Nov 4, 2026 · Clarification:</strong> Owner reports Orion's small green leaf has already been present for roughly a few weeks. It should not be described as newly emerged today. Its presence indicates survival, but active continued growth is not yet demonstrated. Monitor whether it expands and whether another shoot emerges; no photo uploaded."
