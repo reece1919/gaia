@@ -5082,7 +5082,7 @@
       "species": "Monstera deliciosa 'Thai Constellation'",
       "searchName": "cassie thai constellation #2 — hanging pot",
       "searchSpecies": "monstera deliciosa 'thai constellation'",
-      "status": "Watch",
+      "status": "Good",
       "photo": "37-cassie-thai-constellation-2-hanging-pot.jpg",
       "photoAlt": "Cassie",
       "newAddition": false,
@@ -5101,13 +5101,13 @@
       "sections": [
         {
           "label": "NEXT ACTION",
-          "bodyHtml": "Keep bright indirect/grow light and water sparingly—wait until the top ~2 in is dry, then drain fully. Do not repot.",
+          "bodyHtml": "Maintain stable bright indirect light or grow light and allow Cassie to keep establishing without root disturbance. Check moisture several inches into the hanging pot before watering because leaf area is small relative to the soil volume; drain fully and do not leave water standing. No urgent leaf trimming or repotting indicated by the photo. Investigate soil surface fuzz only if it persists, expands markedly or is accompanied by prolonged dampness or odor.",
           "pClass": "",
           "style": "full next-action"
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "Recovering with two small functional leaves; the newer leaf is open and the stem remains firm.",
+          "bodyHtml": "Nov 4, 2026 chat photo directly compared with older GAIA catalog reference: Cassie remains a small division with at least two functional green-and-cream variegated leaves and upright, green petioles. The upper leaf is now much larger and fully expanded relative to the older reference, a meaningful encouraging development; a second smaller variegated leaf is also visible. No obvious widespread chlorosis, collapse or severe leaf damage. Some pale fuzzy/fibrous patches on the soil surface are visible but their identity is unconfirmed and may be substrate fibers or superficial fungus. Root health, moisture and pot drainage cannot be determined from the picture. Reference image capture date is unknown; no exact growth rate should be inferred.",
           "pClass": "",
           "style": "full"
         },
@@ -5149,7 +5149,7 @@
         },
         {
           "label": "WATCH",
-          "bodyHtml": "Track the newest leaf, petiole firmness, and any new growth point; the main risk is rot from staying wet while foliage is sparse.",
+          "bodyHtml": "Enjoy the large, expanding variegated leaf and monitor for another new leaf over time. Observe soil dry-down and avoid unnecessary watering while foliage is limited. Cream-and-green variegation is normal. White surface flecks or fuzz are not confirmed as a disease from this image; reassess only if associated with persistently wet substrate or decline.",
           "pClass": "",
           "style": "full"
         }
@@ -5158,12 +5158,12 @@
         "facts": [
           {
             "label": "Last updated",
-            "valueHtml": "Oct 11, 2026",
+            "valueHtml": "Nov 4, 2026",
             "style": ""
           },
           {
             "label": "Last photo review",
-            "valueHtml": "Oct 5, 2026",
+            "valueHtml": "Nov 4, 2026 (chat image vs. undated GAIA catalog photo; no upload)",
             "style": ""
           },
           {
@@ -5173,8 +5173,8 @@
           },
           {
             "label": "Pot / container",
-            "valueHtml": "Not recorded",
-            "style": "unknown"
+            "valueHtml": "Black hanging nursery pot, drainage not verified",
+            "style": ""
           },
           {
             "label": "Last bath",
@@ -5183,6 +5183,10 @@
           }
         ],
         "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 4, 2026 · </strong>Reviewed chat photograph against previous undated GAIA catalog cover. Cassie has a much larger, fully open cream-and-green variegated leaf, another smaller leaf, and upright green petioles. Appears to be progressing well after division; growth timing cannot be quantified from undated reference. Some pale fibrous or fuzzy-looking patches on pot surface, not diagnosed as fungus from image. Continue bright indirect light, careful moisture checks deeper in the relatively large hanging pot, and no unnecessary root disturbance. <strong>Written review only; photo not uploaded.</strong>"
+          },
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
