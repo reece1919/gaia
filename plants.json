@@ -3285,13 +3285,13 @@
       "sections": [
         {
           "label": "NEXT ACTION",
-          "bodyHtml": "Inspect leaf undersides and stems every few days; repeat the white-paper test. Keep apart from clean plants where practical. If using a mite treatment, follow its label for coverage and repeat applications.",
+          "bodyHtml": "Nov 4 photo shows no urgent foliage or bloom issue. Inspect leaf undersides for any active spider mites and repeat the white-paper test because Oct 10 infestation has no confirmed clearance. Keep bright indirect light, check the central cup and container drainage, and protect from cold window drafts.",
           "pClass": "",
           "style": "full next-action"
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "Spider mites reported Oct 10; bath completed Oct 10. Clearance has not been confirmed. Earlier photo assessment: Excellent — the foliage is firm and green and the red-orange flower bracts remain vivid and upright.",
+          "bodyHtml": "Nov 4, 2026 chat photo: substantial upright, vivid red flower bracts with a firm-looking green rosette. Isolated brown dry portions on some lower/outer leaves, notably a long left leaf and lower tips; no obvious widespread collapse, chlorosis or flower-bract dieback. Compared directly with older GAIA catalog image and Oct 18 written photo analysis: overall appearance remains strong. Bracts look deeper red than the older orange-red image, but ambient lighting and maturation could explain the difference; no objective color change established. Visible image does not confirm presence or absence of mites.",
           "pClass": "",
           "style": "full"
         },
@@ -3333,7 +3333,7 @@
         },
         {
           "label": "WATCH",
-          "bodyHtml": "Watch for live mites, fine webbing, pale stippling, and damaged new growth. Watch for the normal gradual fading of the bracts and for pups developing near the base; neither signals a problem.",
+          "bodyHtml": "Continue monitoring brown areas for spreading damage, and check the central rosette for softness or rot. After flowering, the mother rosette will eventually decline and may produce pups, which should be left to grow before separation. Spider mites were reported on Oct 10; current clearance is still not verified from photos.",
           "pClass": "",
           "style": "full"
         }
@@ -3342,12 +3342,12 @@
         "facts": [
           {
             "label": "Last updated",
-            "valueHtml": "Oct 11, 2026",
+            "valueHtml": "Nov 4, 2026",
             "style": ""
           },
           {
             "label": "Last photo review",
-            "valueHtml": "Oct 5, 2026",
+            "valueHtml": "Nov 4, 2026 (chat photo only; not uploaded)",
             "style": ""
           },
           {
@@ -3372,6 +3372,10 @@
           }
         ],
         "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 4, 2026 · </strong>Chat photo reviewed against previous GAIA catalog image and Oct 18 written photo review. Bracts still tall and red, rosette predominantly green and firm-looking; isolated older outer-leaf drying/brown tips. No obvious widespread decline. Colors differ in the two lighting conditions. Previously reported spider mites (Oct 10) cannot be confirmed cleared from this picture. Check leaf undersides and repeat paper test. Protect from cold window drafts; watch for pups following bloom. <strong>No image uploaded; text review only.</strong>"
+          },
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
