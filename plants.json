@@ -9769,6 +9769,172 @@
         "Scented geranium clones",
         "Citronella cuttings"
       ]
+    },
+    {
+      "id": "66",
+      "name": "Grog, Duhg & Gahg",
+      "species": "Yucca sp. · three propagated cuttings (species unconfirmed)",
+      "searchName": "grog duhg gahg yucca trio dnd cuttings grant",
+      "searchSpecies": "yucca species unconfirmed",
+      "status": "Watch",
+      "photo": "",
+      "photoAlt": "Grog, Duhg and Gahg · three young yucca cuttings",
+      "newAddition": true,
+      "pest": "",
+      "added": "2026-11-04",
+      "tags": [
+        {
+          "style": "",
+          "label": "THREE CUTTINGS"
+        },
+        {
+          "style": "",
+          "label": "D&D NAMES"
+        },
+        {
+          "style": "",
+          "label": "ROOT ESTABLISHMENT"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Let all three remain in their current small draining pots while roots establish. Give bright light, acclimating gradually to stronger sun; water individually only when the mix has dried substantially, with complete drainage. Avoid heavy feeding, repotting or pulling up to check roots without reason.",
+          "pClass": "full next-action",
+          "style": ""
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Nov 4, 2026 chat photo shows three individually potted narrow-leaved plants identified by the owner as yucca cuttings. Multiple long green, thin leaves remain upright or arching; several lower leaves are brown and dry near the crowns. Fine curling white fibers appear along leaf margins, potentially normal for filamentous yuccas. Plants look alive and reasonably stable, but root establishment and exact yucca species are not confirmed from a photograph.",
+          "pClass": "full",
+          "style": ""
+        },
+        {
+          "label": "NAMES & POT MAPPING",
+          "bodyHtml": "The three names chosen by the owner are <strong>Grog</strong>, <strong>Duhg</strong> and <strong>Gahg</strong>, from the owner's D&D campaign. Name-to-pot assignments not yet confirmed; the photo shows a back-left pot, front-center pot with a yellow sticky trap, and back-right pot. Keep these as one grouped GAIA entry until individual identities are assigned.",
+          "pClass": "full",
+          "style": ""
+        },
+        {
+          "label": "ORIGIN",
+          "bodyHtml": "Three yucca cuttings received from Grant around Oct 27, 2026, previously described as started in perlite and bark. Exact cutting date, rooting stage, method and botanical species remain unverified.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Avoid keeping the small containers persistently wet. When the mix has dried significantly, water carefully and let all excess escape through drainage holes. Small cuttings may use little water; check each pot rather than watering all on a fixed schedule. Do not leave water in catch trays.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Very bright light and gradual introduction to suitable direct sun after acclimation. Under grow lights, avoid crowding leaves right against LEDs. Protect new cuttings from sudden harsh sun and freezing window drafts.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Do not rush to fertilize newly rooting cuttings. Once root establishment and continued growth are evident, feed sparingly in active growth following product directions.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Three small pots on a metal grow-light shelf, photographed Nov 4. Final or permanent arrangement not recorded.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "All three remain in individual small nursery containers. Pot up individually only after good root establishment and when roots need more room; avoid oversized wet containers.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Perlite-and-bark propagation material was previously reported. Current pots have coarse, pale material at the surface; exact full mix is not confirmed. Maintain airy, freely draining substrate.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Check for healthy new leaves at each crown, whether drying stays confined to older basal leaves, and whether stems or bases become soft. Some fibrous curls can be normal yucca leaf filaments. Note progress individually after assigning names to pots.",
+          "pClass": "",
+          "style": ""
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Nov 4, 2026",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Nov 4, 2026 (chat image; not uploaded)",
+            "style": ""
+          },
+          {
+            "label": "Added to collection",
+            "valueHtml": "Nov 4, 2026 (group record)",
+            "style": ""
+          },
+          {
+            "label": "Number of cuttings",
+            "valueHtml": "3 (owner-reported)",
+            "style": ""
+          },
+          {
+            "label": "Source",
+            "valueHtml": "Grant, around Oct 27, 2026 (owner-reported)",
+            "style": ""
+          },
+          {
+            "label": "Names",
+            "valueHtml": "Grog · Duhg · Gahg",
+            "style": ""
+          },
+          {
+            "label": "Individual pot names",
+            "valueHtml": "Not yet assigned",
+            "style": "unknown"
+          },
+          {
+            "label": "Rooting confirmed",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Three separate small nursery pots",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 4, 2026 · </strong>Owner named the three yucca cuttings Grog, Duhg and Gahg after their D&D game. All three shown in chat photograph. Green narrow leaves remain on each; some lower basal leaves are brown/dry, and white curly leaf-edge filaments are visible. Root establishment unknown. One shared GAIA record created without assigning a name to a specific pot. No photo upload."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "succulent",
+        "light": "very-bright",
+        "water": "fully-dry",
+        "waterLabel": "Dry well",
+        "soil": "gritty"
+      },
+      "commonNames": [
+        "Yucca trio",
+        "Grog, Duhg and Gahg"
+      ]
     }
   ],
   "dashboardTasks": [
