@@ -8296,13 +8296,13 @@
       "sections": [
         {
           "label": "NEXT ACTION",
-          "bodyHtml": "Place in bright light and inspect foliage and nodes; avoid immediately soaking a still-wet nursery pot.",
+          "bodyHtml": "Following the user's recent bath, dead-leaf/broken-piece cleanup and reported repotting, let the potting mix drain and dry slightly before the next watering. Keep in stable bright indirect light; avoid fertilizer until she has had time to settle. No urgent intervention.",
           "pClass": "",
           "style": "full next-action"
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "Full hanging plant with burgundy, plum and purple-striped foliage, many branching tips and trailing stems. Some leaves show minor edge wear or small marks; root and pest assessments remain outstanding.",
+          "bodyHtml": "Nov 4, 2026 chat photo: dense, full hanging Tradescantia with burgundy-purple and metallic silver-striped foliage, firm-looking upright and trailing shoots, and scattered minor cosmetic leaf blemishes. No obvious widespread yellowing, wilting, bleaching or visible pest clusters. Compared directly with Nov 1 GAIA arrival cover: foliage looks similarly full, without a clear new decline; differences in camera angle, placement, and lighting prevent reliable growth measurement over three days. Root health remains unverified.",
           "pClass": "",
           "style": "full"
         },
@@ -8320,7 +8320,7 @@
         },
         {
           "label": "FERTILIZER",
-          "bodyHtml": "After acclimation and once actively growing, use a balanced liquid houseplant fertilizer at a conservative label-based dilution; do not fertilize a plant that is stressed or has dry roots.",
+          "bodyHtml": "After this recent repotting, wait about 2–4 weeks and until visibly growing well before resuming light fertilizer. Then use a balanced fertilizer at a conservative dilution during active growth.",
           "pClass": "",
           "style": ""
         },
@@ -8344,13 +8344,13 @@
         },
         {
           "label": "WATCH",
-          "bodyHtml": "Monitor fading color, legginess and spider mites; exact cultivar remains unverified.",
+          "bodyHtml": "Observe over the next 7–14 days for delayed repotting stress, persistent limp stems, expanding dry patches, yellowing or pest signs on leaf undersides and nodes. Mild isolated damage is cosmetic; variegated silver/burgundy pattern is normal. Check for crowding with the grow light as shoots extend.",
           "pClass": "",
           "style": "full"
         },
         {
           "label": "PROPAGATION",
-          "bodyHtml": "Take node-bearing cuttings and replant them in the same pot to create a fuller plant.",
+          "bodyHtml": "Healthy broken stems can be cut cleanly just below a node and rooted in water or lightly moist potting mix; return rooted cuttings to the pot for fuller growth. Do not propagate visibly damaged or pest-infested material.",
           "pClass": "",
           "style": "full"
         },
@@ -8365,7 +8365,7 @@
         "facts": [
           {
             "label": "Last updated",
-            "valueHtml": "Nov 1, 2026",
+            "valueHtml": "Nov 4, 2026",
             "style": ""
           },
           {
@@ -8375,7 +8375,7 @@
           },
           {
             "label": "Last photo review",
-            "valueHtml": "Nov 1, 2026 · arrival cover saved; formal GAIA photo review not recorded",
+            "valueHtml": "Nov 4, 2026 · reviewed in chat; photo not uploaded to GAIA",
             "style": ""
           },
           {
@@ -8395,12 +8395,12 @@
           },
           {
             "label": "Last bath",
-            "valueHtml": "Not recorded",
+            "valueHtml": "Recent bath, reported Nov 4, 2026 (exact day not specified)",
             "style": ""
           },
           {
             "label": "Last repotted",
-            "valueHtml": "Not recorded",
+            "valueHtml": "Recent repotting, reported Nov 4, 2026 (exact day not specified)",
             "style": ""
           },
           {
@@ -8420,6 +8420,10 @@
           }
         ],
         "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 4, 2026 · </strong>User shared a follow-up photo, reporting a recent bath, removal of dead leaves and broken material, and repotting (exact event date and substrate not specified). Direct comparison with Nov 1 arrival cover: full, healthy-looking trailing habit retained; deep burgundy and silver coloration; minor isolated blemishes but no evident widespread wilt, yellowing, bleaching or obvious pest clusters. Different lighting/angles limit growth assessment. Monitor for delayed handling stress; defer fertilizing temporarily. <strong>Review saved as text only; Nov 4 image was not uploaded to GAIA.</strong>"
+          },
           {
             "style": "",
             "bodyHtml": "<strong>Nov 1, 2026 · </strong>Named Bellatrix, plant #58, after Bellatrix Lestrange · Harry Potter."
