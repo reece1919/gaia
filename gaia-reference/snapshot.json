@@ -2,8 +2,8 @@
   "schema_version": 1,
   "read_only": true,
   "source": "GAIA owner-approved reference snapshot",
-  "generated_at": "2026-11-05T06:12:17.084Z",
-  "synced_at": "2026-11-05T06:12:17.107962+00:00",
+  "generated_at": "2026-11-05T06:16:24.761Z",
+  "synced_at": "2026-11-05T06:16:24.793586+00:00",
   "plant_count": 65,
   "comparison_ready_count": 42,
   "comparison_candidate_count": 60,
@@ -3198,7 +3198,7 @@
     {
       "plant_id": "33",
       "name": "Din",
-      "species": "Plectranthus ciliatus-type",
+      "species": "Coleus scutellarioides (tentative)",
       "reference_photo": "33-din-plectranthus-maroon-pot.jpg",
       "latest_photo": {
         "id": "0fb98d26-0755-4a0e-8f30-2ea4f09c897e",
