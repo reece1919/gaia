@@ -198,7 +198,7 @@
       "species": "Beaucarnea recurvata",
       "searchName": "groot ponytail palm elephant foot tree",
       "searchSpecies": "beaucarnea recurvata",
-      "status": "Watch",
+      "status": "Good",
       "photo": "02-ponytail-palm-name-pending-elephant-foot-tree.jpg",
       "photoAlt": "Groot · Ponytail palm · photo review Oct 12, 2026",
       "newAddition": true,
@@ -221,13 +221,13 @@
       "sections": [
         {
           "label": "NEXT ACTION",
-          "bodyHtml": "Check that the trunk is firm and the pot has drainage. Feel the mix deeper in the pot; wait until it is dry throughout before watering. Inspect the leaf bases and undersides for moving mites or fine webbing.",
+          "bodyHtml": "No urgent care changes indicated. Keep in strong light, checking that the mix has dried throughout before watering thoroughly and draining. Protect from persistently wet soil. The curling leaf shape is normal for ponytail palm; no trimming needed other than fully dead tips if desired.",
           "pClass": "",
           "style": "full next-action"
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "Green foliage with several bent or creased leaves and pale scuffed areas in the Oct 12 photo. Curving, arching leaves are typical. The cause of the damaged areas is unconfirmed; pests, trunk firmness, and roots have not been assessed.",
+          "bodyHtml": "Nov 4, 2026 chat photograph compared with Oct 12 GAIA cover: dense crown of narrow, arching, naturally curling green leaves, with an established, swollen, firm-looking elephant-foot trunk. A few older leaf bends or small scuffs are visible without widespread yellowing or obvious pest clusters. Overall foliage appears healthy and stable; different lighting and angle do not support an exact new-leaf count or a definite density increase. Actual trunk firmness, roots and soil moisture have not been physically checked.",
           "pClass": "",
           "style": "full"
         },
@@ -269,7 +269,7 @@
         },
         {
           "label": "WATCH",
-          "bodyHtml": "Watch for a soft trunk or base, spreading yellowing, prolonged wet soil, fine webbing, or moving mites. Existing creases and dead leaf tips will not recover; monitor new growth. Leaf damage alone does not confirm an infestation.",
+          "bodyHtml": "Monitor for persistent soil wetness or a genuinely soft trunk/base, widespread new yellowing, or new pest activity. Ordinary curling and pre-existing leaf creases are cosmetic and need no intervention. Check young center leaves over time for healthy growth.",
           "pClass": "",
           "style": "full"
         },
@@ -290,12 +290,12 @@
         "facts": [
           {
             "label": "Last updated",
-            "valueHtml": "Oct 12, 2026",
+            "valueHtml": "Nov 4, 2026",
             "style": ""
           },
           {
             "label": "Last photo review",
-            "valueHtml": "Oct 12, 2026",
+            "valueHtml": "Nov 4, 2026 (chat photo; image not uploaded)",
             "style": ""
           },
           {
@@ -335,6 +335,10 @@
           }
         ],
         "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 4, 2026 · </strong>New photo compared with prior Oct 12 GAIA catalog image. Healthy-looking, dense green foliage with normal curling, and swollen caudex visibly intact. Minor older bends/scuffs but no widespread yellowing or clearly visible pests. Camera differences prevent reliable growth quantification. Keep very bright light and water only after the mix has dried thoroughly; photo reviewed in chat only, not uploaded."
+          },
           {
             "style": "",
             "bodyHtml": "<strong>Oct 12, 2026 · </strong>Name confirmed: Groot (ponytail palm)."
