@@ -5731,13 +5731,13 @@
       "sections": [
         {
           "label": "NEXT ACTION",
-          "bodyHtml": "No urgent action. Pinch or trim the longest stems only if you want a denser, bushier pot.",
+          "bodyHtml": "Continue bright indirect/grow light, and water when the upper inch of the mix begins to dry, allowing excess drainage. Let trailing vines lengthen for future propagation or pinch later if a bushier habit is desired. No immediate intervention indicated.",
           "pClass": "",
           "style": "full next-action"
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "Vigorous, colorful growth with multiple healthy stems.",
+          "bodyHtml": "Nov 4, 2026 photo compared with GAIA's Oct 28 photo: vibrant magenta, lavender and silver-striped leaves, numerous upright leafy growing tips, dense central foliage and several trailing shoots. Stems appear firm with strong leaf color and only minor cosmetic blemishes; no widespread yellowing or collapse. Different angles prevent a reliable new leaf count. Overall healthy appearance following Oct 26 repot into a clear nursery pot.",
           "pClass": "",
           "style": "full"
         },
@@ -5767,7 +5767,7 @@
         },
         {
           "label": "REPOT",
-          "bodyHtml": "Repotted Oct 26, 2026, confirmed by owner Oct 28. Clear plastic nursery pot with drainage; avoid another unnecessary repot while acclimating.",
+          "bodyHtml": "Owner confirmed repot Oct 26, 2026 into a clear plastic nursery pot with drainage and amended substrate. Plant looks well established in Nov 4 picture; no immediate repot needed.",
           "pClass": "",
           "style": ""
         },
@@ -5779,31 +5779,37 @@
         },
         {
           "label": "WATCH",
-          "bodyHtml": "Track branching and color; root trimmed tips back into the pot if you want to thicken the planting.",
+          "bodyHtml": "Enjoy the active-looking growing tips and trailing vines. Check the mix dries normally after repotting, monitor leaf spacing and color, and only investigate if fresh widespread damage occurs.",
           "pClass": "",
           "style": "full"
+        },
+        {
+          "label": "PROPAGATION",
+          "bodyHtml": "To build a fuller pot, let vines lengthen, take healthy cuttings with at least one node and leaf, root in water or a lightly moist well-draining medium, and plant established cuttings back in the pot. No need to pinch or cut yet.",
+          "pClass": "",
+          "style": ""
         }
       ],
       "history": {
         "facts": [
           {
             "label": "Last updated",
-            "valueHtml": "Oct 28, 2026",
+            "valueHtml": "Nov 4, 2026",
             "style": ""
           },
           {
             "label": "Last photo review",
-            "valueHtml": "Oct 28, 2026 · updated photo reviewed in ChatGPT; upload to private gallery pending",
+            "valueHtml": "Nov 4, 2026 (compared with Oct 28; photo in chat only)",
             "style": ""
           },
           {
             "label": "Last repotted",
-            "valueHtml": "Oct 26, 2026",
+            "valueHtml": "Oct 26, 2026 (owner-confirmed)",
             "style": ""
           },
           {
             "label": "Pot / container",
-            "valueHtml": "Clear plastic nursery pot, with drainage",
+            "valueHtml": "Clear plastic inner nursery pot with drainage",
             "style": ""
           },
           {
@@ -5813,6 +5819,10 @@
           }
         ],
         "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 4, 2026 · </strong>Compared chat photo with GAIA Oct 28 journal image. Strong purple-pink and silver striping, numerous healthy-looking growing tips, full center and trailing vines; no widespread damage. Repotted Oct 26 in clear nursery pot. Continue bright light and water by upper mix dry-down; allow vines to lengthen for later propagation. No photo upload."
+          },
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Oct 26, 2026 · </strong>Repotted into clear plastic nursery pot with drainage and amended substrate; completion confirmed by owner Oct 28. Actual recipe, dimensions and root condition not specified."
