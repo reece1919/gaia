@@ -2,9 +2,9 @@
   "schema_version": 1,
   "read_only": true,
   "source": "GAIA owner-approved reference snapshot",
-  "generated_at": "2026-11-06T07:18:04.413Z",
-  "synced_at": "2026-11-06T07:18:04.441257+00:00",
-  "plant_count": 66,
+  "generated_at": "2026-11-06T11:59:26.564Z",
+  "synced_at": "2026-11-06T11:59:26.603805+00:00",
+  "plant_count": 67,
   "comparison_ready_count": 52,
   "comparison_candidate_count": 90,
   "uploaded_photo_count": 95,
@@ -5579,6 +5579,33 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [],
+      "reference_image": null,
+      "comparison": {
+        "ready": false,
+        "latest_image": null,
+        "latest_captured_on": null,
+        "candidates": []
+      }
+    },
+    {
+      "plant_id": "67",
+      "name": "Robert California",
+      "species": "Ocimum basilicum (sweet basil; cultivar unverified)",
+      "reference_photo": null,
+      "latest_photo": null,
+      "previous_photo": null,
+      "photos": [],
+      "pot": null,
+      "soil_observations": [],
+      "care_events": [
+        {
+          "plant_id": "67",
+          "action_type": "note",
+          "happened_on": "2026-11-05",
+          "note": "Nov 5 new plant: Robert California (#67), sweet basil (Ocimum basilicum), named for The Office. Owner reports basil had recently been transplanted from hydroponic growing to perlite-containing soil mix; exact transplantation date unconfirmed. Current chat photo: broad green leaves and small central growing cluster, slight downward arching of some leaves; no widespread yellowing or visible pests. Clear plastic pot set on white saucer, drainage not verified. Transition care: avoid complete drying during first 1-2 weeks, maintain lightly moist not saturated, ensure drainage and monitor growth. Catalog entry created in GAIA GitHub on Nov 5. Photo reviewed but NOT uploaded.",
+          "created_at": "2026-11-06T07:18:18.375393+00:00"
+        }
+      ],
       "reference_image": null,
       "comparison": {
         "ready": false,
