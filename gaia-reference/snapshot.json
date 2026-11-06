@@ -2,13 +2,13 @@
   "schema_version": 1,
   "read_only": true,
   "source": "GAIA owner-approved reference snapshot",
-  "generated_at": "2026-11-06T04:37:03.227Z",
-  "synced_at": "2026-11-06T04:37:03.454276+00:00",
+  "generated_at": "2026-11-06T05:39:12.579Z",
+  "synced_at": "2026-11-06T05:40:33.495537+00:00",
   "plant_count": 66,
-  "comparison_ready_count": 42,
-  "comparison_candidate_count": 60,
-  "uploaded_photo_count": 65,
-  "exported_photo_count": 65,
+  "comparison_ready_count": 52,
+  "comparison_candidate_count": 90,
+  "uploaded_photo_count": 95,
+  "exported_photo_count": 95,
   "catalog_reference_count": 59,
   "unavailable_sections": [],
   "plants": [
@@ -105,6 +105,18 @@
       "species": "Beaucarnea recurvata",
       "reference_photo": "02-ponytail-palm-name-pending-elephant-foot-tree.jpg",
       "latest_photo": {
+        "id": "a14e10e5-ee3b-42e9-89d3-2240ef0d3166",
+        "plant_id": "02",
+        "taken_on": "2026-11-05",
+        "created_at": "2026-11-06T04:40:48.68207+00:00",
+        "caption": "",
+        "analysis_status": "pending",
+        "analysis_summary": "",
+        "analysis_findings": [],
+        "analyzed_at": null,
+        "snapshot_image": "gaia-reference/photos/02-a953f09a1b-latest_photo.webp"
+      },
+      "previous_photo": {
         "id": "1701fc50-6542-45b9-bc7f-10216bb261d2",
         "plant_id": "02",
         "taken_on": "2026-10-18",
@@ -141,63 +153,29 @@
           }
         ],
         "analyzed_at": "2026-10-23T17:26:39.938+00:00",
-        "snapshot_image": "gaia-reference/photos/02-a953f09a1b-latest_photo.webp"
-      },
-      "previous_photo": {
-        "id": "a4b6fe2a-8d42-471c-ac7b-7caa412d4a07",
-        "plant_id": "02",
-        "taken_on": "2026-10-14",
-        "created_at": "2026-10-15T00:41:24.432897+00:00",
-        "caption": "",
-        "analysis_status": "reviewed",
-        "analysis_summary": "Comparing Groot's original GAIA plant-card photo with the private photo from October 14: his ponytail palm retains a substantial crown of arching green leaves and a visible intact caudex. Some pale or curled leaf tips are visible in the recent view, but there is no obvious severe crown loss. Different light and framing prevent a precise growth comparison.",
-        "analysis_findings": [
-          {
-            "kind": "trend",
-            "text": "stable"
-          },
-          {
-            "kind": "observation",
-            "text": "Both images show a full crown of long arching green leaves and an exposed swollen trunk base."
-          },
-          {
-            "kind": "observation",
-            "text": "The newer image shows some pale leaf tips and curling foliage; cause and age of those changes cannot be established from photographs."
-          },
-          {
-            "kind": "care",
-            "text": "Monitor whether the pale or curled tips expand, and check for nearby heat sources or drafts.",
-            "reason": "Leaf-tip changes have multiple possible causes; the photographs do not prove water stress.",
-            "urgency": "monitor"
-          },
-          {
-            "kind": "care",
-            "text": "Check potting-mix dryness well below the surface before the next watering.",
-            "reason": "This species stores water in its swollen base, and photos cannot determine root-zone moisture.",
-            "urgency": "routine"
-          },
-          {
-            "kind": "comparison_source",
-            "text": "Original GAIA image: 02-ponytail-palm-name-pending-elephant-foot-tree.jpg versus newer private photo: a4b6fe2a-8d42-471c-ac7b-7caa412d4a07"
-          }
-        ],
-        "analyzed_at": "2026-10-15T22:32:53.806+00:00",
         "snapshot_image": "gaia-reference/photos/02-a953f09a1b-previous_photo.webp"
       },
       "photos": [
+        {
+          "id": "a14e10e5-ee3b-42e9-89d3-2240ef0d3166",
+          "taken_on": "2026-11-05",
+          "created_at": "2026-11-06T04:40:48.68207+00:00",
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/02-a953f09a1b-latest_photo.webp"
+        },
         {
           "id": "1701fc50-6542-45b9-bc7f-10216bb261d2",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:23:30.461618+00:00",
           "analysis_status": "reviewed",
-          "snapshot_image": "gaia-reference/photos/02-a953f09a1b-latest_photo.webp"
+          "snapshot_image": "gaia-reference/photos/02-a953f09a1b-previous_photo.webp"
         },
         {
           "id": "a4b6fe2a-8d42-471c-ac7b-7caa412d4a07",
           "taken_on": "2026-10-14",
           "created_at": "2026-10-15T00:41:24.432897+00:00",
           "analysis_status": "reviewed",
-          "snapshot_image": "gaia-reference/photos/02-a953f09a1b-previous_photo.webp"
+          "snapshot_image": "gaia-reference/photos/02-a953f09a1b-history-a4b6fe2a-8d42-471c-ac7b-7caa412d4a07.webp"
         }
       ],
       "pot": null,
@@ -207,12 +185,18 @@
       "comparison": {
         "ready": true,
         "latest_image": "gaia-reference/photos/02-a953f09a1b-latest_photo.webp",
-        "latest_captured_on": "2026-10-18",
+        "latest_captured_on": "2026-11-05",
         "candidates": [
           {
             "source": "journal",
-            "captured_on": "2026-10-14",
+            "captured_on": "2026-10-18",
             "image": "gaia-reference/photos/02-a953f09a1b-previous_photo.webp",
+            "photo_id": "1701fc50-6542-45b9-bc7f-10216bb261d2"
+          },
+          {
+            "source": "journal",
+            "captured_on": "2026-10-14",
+            "image": "gaia-reference/photos/02-a953f09a1b-history-a4b6fe2a-8d42-471c-ac7b-7caa412d4a07.webp",
             "photo_id": "a4b6fe2a-8d42-471c-ac7b-7caa412d4a07"
           },
           {
@@ -231,6 +215,18 @@
       "species": "Mammillaria sp. · likely; species unconfirmed",
       "reference_photo": "03-bowser-pincushion-cactus.jpg",
       "latest_photo": {
+        "id": "6acdbf05-446b-47e5-9f26-d6738dcda504",
+        "plant_id": "03",
+        "taken_on": "2026-11-05",
+        "created_at": "2026-11-06T04:41:22.645225+00:00",
+        "caption": "",
+        "analysis_status": "pending",
+        "analysis_summary": "",
+        "analysis_findings": [],
+        "analyzed_at": null,
+        "snapshot_image": "gaia-reference/photos/03-0b8efa5a3b-latest_photo.webp"
+      },
+      "previous_photo": {
         "id": "4197d4a9-9a30-4d71-b547-339855a3f32b",
         "plant_id": "03",
         "taken_on": "2026-10-20",
@@ -267,63 +263,29 @@
           }
         ],
         "analyzed_at": "2026-10-23T17:26:41.008+00:00",
-        "snapshot_image": "gaia-reference/photos/03-0b8efa5a3b-latest_photo.webp"
-      },
-      "previous_photo": {
-        "id": "89e4f005-8383-4576-a7f1-da033840f461",
-        "plant_id": "03",
-        "taken_on": "2026-10-14",
-        "created_at": "2026-10-15T00:45:49.765397+00:00",
-        "caption": "",
-        "analysis_status": "reviewed",
-        "analysis_summary": "Compared Bowser's original undated GAIA reference photo with the private photograph taken October 14, 2026. The cactus remains rounded and densely spined, with a visible green body and no obvious collapse or widespread new discoloration. Lighting and angle differ, so subtle growth cannot be reliably assessed from this pair.",
-        "analysis_findings": [
-          {
-            "kind": "trend",
-            "text": "stable"
-          },
-          {
-            "kind": "observation",
-            "text": "The rounded form and dense amber-colored spines appear similar in both images."
-          },
-          {
-            "kind": "observation",
-            "text": "Visible green stem tissue remains present in the newer view; small pale areas cannot be diagnosed from photos alone."
-          },
-          {
-            "kind": "care",
-            "text": "Confirm that the pot drains and the mix is sufficiently dry before watering.",
-            "reason": "The image cannot reveal root-zone moisture or drainage performance.",
-            "urgency": "routine"
-          },
-          {
-            "kind": "care",
-            "text": "Retake a photo from a similar angle in 2–3 weeks to monitor form and any spreading discoloration.",
-            "reason": "Similar framing is more reliable for identifying slow cactus changes.",
-            "urgency": "monitor"
-          },
-          {
-            "kind": "comparison_source",
-            "text": "Original GAIA image: 03-bowser-pincushion-cactus.jpg versus newer private photo: 89e4f005-8383-4576-a7f1-da033840f461"
-          }
-        ],
-        "analyzed_at": "2026-10-15T22:33:28.987+00:00",
         "snapshot_image": "gaia-reference/photos/03-0b8efa5a3b-previous_photo.webp"
       },
       "photos": [
+        {
+          "id": "6acdbf05-446b-47e5-9f26-d6738dcda504",
+          "taken_on": "2026-11-05",
+          "created_at": "2026-11-06T04:41:22.645225+00:00",
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/03-0b8efa5a3b-latest_photo.webp"
+        },
         {
           "id": "4197d4a9-9a30-4d71-b547-339855a3f32b",
           "taken_on": "2026-10-20",
           "created_at": "2026-10-21T04:24:01.164727+00:00",
           "analysis_status": "reviewed",
-          "snapshot_image": "gaia-reference/photos/03-0b8efa5a3b-latest_photo.webp"
+          "snapshot_image": "gaia-reference/photos/03-0b8efa5a3b-previous_photo.webp"
         },
         {
           "id": "89e4f005-8383-4576-a7f1-da033840f461",
           "taken_on": "2026-10-14",
           "created_at": "2026-10-15T00:45:49.765397+00:00",
           "analysis_status": "reviewed",
-          "snapshot_image": "gaia-reference/photos/03-0b8efa5a3b-previous_photo.webp"
+          "snapshot_image": "gaia-reference/photos/03-0b8efa5a3b-history-89e4f005-8383-4576-a7f1-da033840f461.webp"
         }
       ],
       "pot": null,
@@ -341,12 +303,18 @@
       "comparison": {
         "ready": true,
         "latest_image": "gaia-reference/photos/03-0b8efa5a3b-latest_photo.webp",
-        "latest_captured_on": "2026-10-20",
+        "latest_captured_on": "2026-11-05",
         "candidates": [
           {
             "source": "journal",
-            "captured_on": "2026-10-14",
+            "captured_on": "2026-10-20",
             "image": "gaia-reference/photos/03-0b8efa5a3b-previous_photo.webp",
+            "photo_id": "4197d4a9-9a30-4d71-b547-339855a3f32b"
+          },
+          {
+            "source": "journal",
+            "captured_on": "2026-10-14",
+            "image": "gaia-reference/photos/03-0b8efa5a3b-history-89e4f005-8383-4576-a7f1-da033840f461.webp",
             "photo_id": "89e4f005-8383-4576-a7f1-da033840f461"
           },
           {
@@ -684,6 +652,18 @@
       "species": "Aloe vera · likely",
       "reference_photo": "07-samwise-aloe.jpg",
       "latest_photo": {
+        "id": "819d02c0-d076-4948-a642-5ab832c65ce4",
+        "plant_id": "07",
+        "taken_on": "2026-11-05",
+        "created_at": "2026-11-06T04:45:09.127335+00:00",
+        "caption": "",
+        "analysis_status": "pending",
+        "analysis_summary": "",
+        "analysis_findings": [],
+        "analyzed_at": null,
+        "snapshot_image": "gaia-reference/photos/07-19b100ab77-latest_photo.webp"
+      },
+      "previous_photo": {
         "id": "f0c37a5b-b999-435b-a30c-b9311930ac3d",
         "plant_id": "07",
         "taken_on": "2026-10-18",
@@ -720,55 +700,29 @@
           }
         ],
         "analyzed_at": "2026-10-23T17:27:36.863+00:00",
-        "snapshot_image": "gaia-reference/photos/07-19b100ab77-latest_photo.webp"
-      },
-      "previous_photo": {
-        "id": "37ab0d10-1adc-42df-ac73-ffd7a08fa14e",
-        "plant_id": "07",
-        "taken_on": "2026-10-14",
-        "created_at": "2026-10-15T00:47:33.476197+00:00",
-        "caption": "",
-        "analysis_status": "reviewed",
-        "analysis_summary": "Samwise shows the same upright aloe rosette and long, pointed leaves as in the catalog image. The center looks darker in the new backlit photograph, but no clear new collapse or widespread leaf loss is visible.",
-        "analysis_findings": [
-          {
-            "kind": "trend",
-            "text": "stable"
-          },
-          {
-            "kind": "observation",
-            "text": "Tall central leaves remain upright in both photos."
-          },
-          {
-            "kind": "observation",
-            "text": "Small existing tip blemishes and white leaf markings are visible; their exact progression is not established."
-          },
-          {
-            "kind": "observation",
-            "text": "Backlighting and the changed framing make leaf color and exact count difficult to compare."
-          },
-          {
-            "kind": "comparison_source",
-            "text": "Original GAIA image: 07-samwise-aloe.jpg versus newer private photo: 37ab0d10-1adc-42df-ac73-ffd7a08fa14e"
-          }
-        ],
-        "analyzed_at": "2026-10-16T16:31:13.005+00:00",
         "snapshot_image": "gaia-reference/photos/07-19b100ab77-previous_photo.webp"
       },
       "photos": [
+        {
+          "id": "819d02c0-d076-4948-a642-5ab832c65ce4",
+          "taken_on": "2026-11-05",
+          "created_at": "2026-11-06T04:45:09.127335+00:00",
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/07-19b100ab77-latest_photo.webp"
+        },
         {
           "id": "f0c37a5b-b999-435b-a30c-b9311930ac3d",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:27:30.276907+00:00",
           "analysis_status": "reviewed",
-          "snapshot_image": "gaia-reference/photos/07-19b100ab77-latest_photo.webp"
+          "snapshot_image": "gaia-reference/photos/07-19b100ab77-previous_photo.webp"
         },
         {
           "id": "37ab0d10-1adc-42df-ac73-ffd7a08fa14e",
           "taken_on": "2026-10-14",
           "created_at": "2026-10-15T00:47:33.476197+00:00",
           "analysis_status": "reviewed",
-          "snapshot_image": "gaia-reference/photos/07-19b100ab77-previous_photo.webp"
+          "snapshot_image": "gaia-reference/photos/07-19b100ab77-history-37ab0d10-1adc-42df-ac73-ffd7a08fa14e.webp"
         }
       ],
       "pot": null,
@@ -793,12 +747,18 @@
       "comparison": {
         "ready": true,
         "latest_image": "gaia-reference/photos/07-19b100ab77-latest_photo.webp",
-        "latest_captured_on": "2026-10-18",
+        "latest_captured_on": "2026-11-05",
         "candidates": [
           {
             "source": "journal",
-            "captured_on": "2026-10-14",
+            "captured_on": "2026-10-18",
             "image": "gaia-reference/photos/07-19b100ab77-previous_photo.webp",
+            "photo_id": "f0c37a5b-b999-435b-a30c-b9311930ac3d"
+          },
+          {
+            "source": "journal",
+            "captured_on": "2026-10-14",
+            "image": "gaia-reference/photos/07-19b100ab77-history-37ab0d10-1adc-42df-ac73-ffd7a08fa14e.webp",
             "photo_id": "37ab0d10-1adc-42df-ac73-ffd7a08fa14e"
           },
           {
@@ -947,6 +907,18 @@
       "species": "Jacobaea maritima · syn. Senecio cineraria",
       "reference_photo": "09-gandalf-dusty-miller.jpg",
       "latest_photo": {
+        "id": "f6c50378-f473-4c59-bba4-b37d525f0787",
+        "plant_id": "09",
+        "taken_on": "2026-11-05",
+        "created_at": "2026-11-06T04:45:34.653449+00:00",
+        "caption": "",
+        "analysis_status": "pending",
+        "analysis_summary": "",
+        "analysis_findings": [],
+        "analyzed_at": null,
+        "snapshot_image": "gaia-reference/photos/09-3514acf617-latest_photo.webp"
+      },
+      "previous_photo": {
         "id": "e65b6454-9142-489b-b3b9-e9a9388e6e4b",
         "plant_id": "09",
         "taken_on": "2026-10-18",
@@ -983,61 +955,29 @@
           }
         ],
         "analyzed_at": "2026-10-23T17:28:28.38+00:00",
-        "snapshot_image": "gaia-reference/photos/09-3514acf617-latest_photo.webp"
-      },
-      "previous_photo": {
-        "id": "7810d115-b522-4b93-befd-0de104804463",
-        "plant_id": "09",
-        "taken_on": "2026-10-14",
-        "created_at": "2026-10-15T00:42:33.060741+00:00",
-        "caption": "",
-        "analysis_status": "reviewed",
-        "analysis_summary": "Gandalf retains multiple upright branched stems and lobed, velvety leaves. The new photo is much brighter and makes the usual silver-white leaf surface appear more prominent; no convincing overall loss of foliage can be established.",
-        "analysis_findings": [
-          {
-            "kind": "trend",
-            "text": "stable"
-          },
-          {
-            "kind": "observation",
-            "text": "Several branching stems and many lobed leaves remain present."
-          },
-          {
-            "kind": "observation",
-            "text": "The near-front leaves in the newer image show pale silver felt and some light green patches rather than uniform brown necrosis."
-          },
-          {
-            "kind": "observation",
-            "text": "The original image is strongly backlit, making a direct color comparison unreliable."
-          },
-          {
-            "kind": "care",
-            "text": "Check whether pale-green or tan patches on lower leaves are expanding.",
-            "reason": "Some lower leaves show patchy coloration, though light and normal silver leaf hairs make their significance uncertain.",
-            "urgency": "monitor"
-          },
-          {
-            "kind": "comparison_source",
-            "text": "Original GAIA image: 09-gandalf-dusty-miller.jpg versus newer private photo: 7810d115-b522-4b93-befd-0de104804463"
-          }
-        ],
-        "analyzed_at": "2026-10-16T16:31:13.006+00:00",
         "snapshot_image": "gaia-reference/photos/09-3514acf617-previous_photo.webp"
       },
       "photos": [
+        {
+          "id": "f6c50378-f473-4c59-bba4-b37d525f0787",
+          "taken_on": "2026-11-05",
+          "created_at": "2026-11-06T04:45:34.653449+00:00",
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/09-3514acf617-latest_photo.webp"
+        },
         {
           "id": "e65b6454-9142-489b-b3b9-e9a9388e6e4b",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:28:23.085063+00:00",
           "analysis_status": "reviewed",
-          "snapshot_image": "gaia-reference/photos/09-3514acf617-latest_photo.webp"
+          "snapshot_image": "gaia-reference/photos/09-3514acf617-previous_photo.webp"
         },
         {
           "id": "7810d115-b522-4b93-befd-0de104804463",
           "taken_on": "2026-10-14",
           "created_at": "2026-10-15T00:42:33.060741+00:00",
           "analysis_status": "reviewed",
-          "snapshot_image": "gaia-reference/photos/09-3514acf617-previous_photo.webp"
+          "snapshot_image": "gaia-reference/photos/09-3514acf617-history-7810d115-b522-4b93-befd-0de104804463.webp"
         }
       ],
       "pot": null,
@@ -1062,12 +1002,18 @@
       "comparison": {
         "ready": true,
         "latest_image": "gaia-reference/photos/09-3514acf617-latest_photo.webp",
-        "latest_captured_on": "2026-10-18",
+        "latest_captured_on": "2026-11-05",
         "candidates": [
           {
             "source": "journal",
-            "captured_on": "2026-10-14",
+            "captured_on": "2026-10-18",
             "image": "gaia-reference/photos/09-3514acf617-previous_photo.webp",
+            "photo_id": "e65b6454-9142-489b-b3b9-e9a9388e6e4b"
+          },
+          {
+            "source": "journal",
+            "captured_on": "2026-10-14",
+            "image": "gaia-reference/photos/09-3514acf617-history-7810d115-b522-4b93-befd-0de104804463.webp",
             "photo_id": "7810d115-b522-4b93-befd-0de104804463"
           },
           {
@@ -1424,6 +1370,18 @@
       "species": "Ring of Fire Philodendron",
       "reference_photo": "13-sauron.jpg",
       "latest_photo": {
+        "id": "16956800-593c-4330-9fe6-9dc23672bbbe",
+        "plant_id": "13",
+        "taken_on": "2026-11-05",
+        "created_at": "2026-11-06T04:55:28.938581+00:00",
+        "caption": "",
+        "analysis_status": "pending",
+        "analysis_summary": "",
+        "analysis_findings": [],
+        "analyzed_at": null,
+        "snapshot_image": "gaia-reference/photos/13-3fdba35f04-latest_photo.webp"
+      },
+      "previous_photo": {
         "id": "92ade0bc-5d98-49df-9510-953a10ed222b",
         "plant_id": "13",
         "taken_on": "2026-10-18",
@@ -1460,16 +1418,22 @@
           }
         ],
         "analyzed_at": "2026-10-23T17:29:12.218+00:00",
-        "snapshot_image": "gaia-reference/photos/13-3fdba35f04-latest_photo.webp"
+        "snapshot_image": "gaia-reference/photos/13-3fdba35f04-previous_photo.webp"
       },
-      "previous_photo": null,
       "photos": [
+        {
+          "id": "16956800-593c-4330-9fe6-9dc23672bbbe",
+          "taken_on": "2026-11-05",
+          "created_at": "2026-11-06T04:55:28.938581+00:00",
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/13-3fdba35f04-latest_photo.webp"
+        },
         {
           "id": "92ade0bc-5d98-49df-9510-953a10ed222b",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:36:55.822589+00:00",
           "analysis_status": "reviewed",
-          "snapshot_image": "gaia-reference/photos/13-3fdba35f04-latest_photo.webp"
+          "snapshot_image": "gaia-reference/photos/13-3fdba35f04-previous_photo.webp"
         }
       ],
       "pot": null,
@@ -1479,8 +1443,14 @@
       "comparison": {
         "ready": true,
         "latest_image": "gaia-reference/photos/13-3fdba35f04-latest_photo.webp",
-        "latest_captured_on": "2026-10-18",
+        "latest_captured_on": "2026-11-05",
         "candidates": [
+          {
+            "source": "journal",
+            "captured_on": "2026-10-18",
+            "image": "gaia-reference/photos/13-3fdba35f04-previous_photo.webp",
+            "photo_id": "92ade0bc-5d98-49df-9510-953a10ed222b"
+          },
           {
             "source": "catalog_reference",
             "captured_on": null,
@@ -2034,6 +2004,18 @@
       "species": "Tradescantia pallida-type",
       "reference_photo": "21-violet-purple-heart.jpg",
       "latest_photo": {
+        "id": "71f75cbc-3e83-4914-bc36-fff1f672e3d0",
+        "plant_id": "21",
+        "taken_on": "2026-11-05",
+        "created_at": "2026-11-06T05:01:08.761077+00:00",
+        "caption": "",
+        "analysis_status": "pending",
+        "analysis_summary": "",
+        "analysis_findings": [],
+        "analyzed_at": null,
+        "snapshot_image": "gaia-reference/photos/21-6f4b661212-latest_photo.webp"
+      },
+      "previous_photo": {
         "id": "bf8918b4-46af-473d-94b8-610675d12524",
         "plant_id": "21",
         "taken_on": "2026-10-18",
@@ -2070,65 +2052,29 @@
           }
         ],
         "analyzed_at": "2026-10-23T17:30:36.634+00:00",
-        "snapshot_image": "gaia-reference/photos/21-6f4b661212-latest_photo.webp"
-      },
-      "previous_photo": {
-        "id": "e4d94a2b-d350-453e-a62d-08636eba5fb7",
-        "plant_id": "21",
-        "taken_on": "2026-10-14",
-        "created_at": "2026-10-15T00:48:12.268417+00:00",
-        "caption": "",
-        "analysis_status": "reviewed",
-        "analysis_summary": "Violet still has upright purple shoots and trailing stems with purple leaves extending beyond the pot. Some bare, older stem sections are visible in the newer view, but the earlier photograph also showed trailing stems and a different side, so substantial new thinning is not established.",
-        "analysis_findings": [
-          {
-            "kind": "trend",
-            "text": "stable"
-          },
-          {
-            "kind": "observation",
-            "text": "Purple upright leaf clusters remain around the pot's center."
-          },
-          {
-            "kind": "observation",
-            "text": "A long trailing stem with leaves is visible at the left of the newer image."
-          },
-          {
-            "kind": "observation",
-            "text": "Some older stem portions near the rim are bare or tan, but exact progression cannot be judged."
-          },
-          {
-            "kind": "observation",
-            "text": "Indoor purple light in the original and daylight in the newer photo alter apparent foliage color."
-          },
-          {
-            "kind": "care",
-            "text": "Monitor the bare trailing stem sections and check whether leaf loss is advancing toward the tips.",
-            "reason": "Some bare stem intervals are visible, but older photos and changed framing do not establish worsening.",
-            "urgency": "monitor"
-          },
-          {
-            "kind": "comparison_source",
-            "text": "Original GAIA image: 21-violet-purple-heart.jpg versus newer private photo: e4d94a2b-d350-453e-a62d-08636eba5fb7"
-          }
-        ],
-        "analyzed_at": "2026-10-16T16:32:21.827+00:00",
         "snapshot_image": "gaia-reference/photos/21-6f4b661212-previous_photo.webp"
       },
       "photos": [
+        {
+          "id": "71f75cbc-3e83-4914-bc36-fff1f672e3d0",
+          "taken_on": "2026-11-05",
+          "created_at": "2026-11-06T05:01:08.761077+00:00",
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/21-6f4b661212-latest_photo.webp"
+        },
         {
           "id": "bf8918b4-46af-473d-94b8-610675d12524",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:39:50.303372+00:00",
           "analysis_status": "reviewed",
-          "snapshot_image": "gaia-reference/photos/21-6f4b661212-latest_photo.webp"
+          "snapshot_image": "gaia-reference/photos/21-6f4b661212-previous_photo.webp"
         },
         {
           "id": "e4d94a2b-d350-453e-a62d-08636eba5fb7",
           "taken_on": "2026-10-14",
           "created_at": "2026-10-15T00:48:12.268417+00:00",
           "analysis_status": "reviewed",
-          "snapshot_image": "gaia-reference/photos/21-6f4b661212-previous_photo.webp"
+          "snapshot_image": "gaia-reference/photos/21-6f4b661212-history-e4d94a2b-d350-453e-a62d-08636eba5fb7.webp"
         }
       ],
       "pot": null,
@@ -2146,12 +2092,18 @@
       "comparison": {
         "ready": true,
         "latest_image": "gaia-reference/photos/21-6f4b661212-latest_photo.webp",
-        "latest_captured_on": "2026-10-18",
+        "latest_captured_on": "2026-11-05",
         "candidates": [
           {
             "source": "journal",
-            "captured_on": "2026-10-14",
+            "captured_on": "2026-10-18",
             "image": "gaia-reference/photos/21-6f4b661212-previous_photo.webp",
+            "photo_id": "bf8918b4-46af-473d-94b8-610675d12524"
+          },
+          {
+            "source": "journal",
+            "captured_on": "2026-10-14",
+            "image": "gaia-reference/photos/21-6f4b661212-history-e4d94a2b-d350-453e-a62d-08636eba5fb7.webp",
             "photo_id": "e4d94a2b-d350-453e-a62d-08636eba5fb7"
           },
           {
@@ -2170,6 +2122,18 @@
       "species": "Sempervivum",
       "reference_photo": "22-molly-hens-chicks.jpg",
       "latest_photo": {
+        "id": "57384b28-8987-4c24-9c96-361758f88e4b",
+        "plant_id": "22",
+        "taken_on": "2026-11-05",
+        "created_at": "2026-11-06T04:47:37.883256+00:00",
+        "caption": "",
+        "analysis_status": "pending",
+        "analysis_summary": "",
+        "analysis_findings": [],
+        "analyzed_at": null,
+        "snapshot_image": "gaia-reference/photos/22-785f3ec7eb-latest_photo.webp"
+      },
+      "previous_photo": {
         "id": "02d8d41e-7295-4de4-be0c-e5aeceddfd87",
         "plant_id": "22",
         "taken_on": "2026-10-18",
@@ -2206,16 +2170,22 @@
           }
         ],
         "analyzed_at": "2026-10-23T17:31:23.939+00:00",
-        "snapshot_image": "gaia-reference/photos/22-785f3ec7eb-latest_photo.webp"
+        "snapshot_image": "gaia-reference/photos/22-785f3ec7eb-previous_photo.webp"
       },
-      "previous_photo": null,
       "photos": [
+        {
+          "id": "57384b28-8987-4c24-9c96-361758f88e4b",
+          "taken_on": "2026-11-05",
+          "created_at": "2026-11-06T04:47:37.883256+00:00",
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/22-785f3ec7eb-latest_photo.webp"
+        },
         {
           "id": "02d8d41e-7295-4de4-be0c-e5aeceddfd87",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:29:38.381774+00:00",
           "analysis_status": "reviewed",
-          "snapshot_image": "gaia-reference/photos/22-785f3ec7eb-latest_photo.webp"
+          "snapshot_image": "gaia-reference/photos/22-785f3ec7eb-previous_photo.webp"
         }
       ],
       "pot": null,
@@ -2240,8 +2210,14 @@
       "comparison": {
         "ready": true,
         "latest_image": "gaia-reference/photos/22-785f3ec7eb-latest_photo.webp",
-        "latest_captured_on": "2026-10-18",
+        "latest_captured_on": "2026-11-05",
         "candidates": [
+          {
+            "source": "journal",
+            "captured_on": "2026-10-18",
+            "image": "gaia-reference/photos/22-785f3ec7eb-previous_photo.webp",
+            "photo_id": "02d8d41e-7295-4de4-be0c-e5aeceddfd87"
+          },
           {
             "source": "catalog_reference",
             "captured_on": null,
@@ -2258,6 +2234,18 @@
       "species": "Guzmania hybrid",
       "reference_photo": "23-calcifer-bromeliad.jpg",
       "latest_photo": {
+        "id": "98b806e2-b16c-4480-a492-aa54c7194345",
+        "plant_id": "23",
+        "taken_on": "2026-11-05",
+        "created_at": "2026-11-06T05:03:18.302852+00:00",
+        "caption": "",
+        "analysis_status": "pending",
+        "analysis_summary": "",
+        "analysis_findings": [],
+        "analyzed_at": null,
+        "snapshot_image": "gaia-reference/photos/23-535fa30d7e-latest_photo.webp"
+      },
+      "previous_photo": {
         "id": "6040457b-41d3-470a-be32-869eeddff3eb",
         "plant_id": "23",
         "taken_on": "2026-10-18",
@@ -2294,16 +2282,22 @@
           }
         ],
         "analyzed_at": "2026-10-23T17:31:24.835+00:00",
-        "snapshot_image": "gaia-reference/photos/23-535fa30d7e-latest_photo.webp"
+        "snapshot_image": "gaia-reference/photos/23-535fa30d7e-previous_photo.webp"
       },
-      "previous_photo": null,
       "photos": [
+        {
+          "id": "98b806e2-b16c-4480-a492-aa54c7194345",
+          "taken_on": "2026-11-05",
+          "created_at": "2026-11-06T05:03:18.302852+00:00",
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/23-535fa30d7e-latest_photo.webp"
+        },
         {
           "id": "6040457b-41d3-470a-be32-869eeddff3eb",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:40:17.406753+00:00",
           "analysis_status": "reviewed",
-          "snapshot_image": "gaia-reference/photos/23-535fa30d7e-latest_photo.webp"
+          "snapshot_image": "gaia-reference/photos/23-535fa30d7e-previous_photo.webp"
         }
       ],
       "pot": null,
@@ -2313,8 +2307,14 @@
       "comparison": {
         "ready": true,
         "latest_image": "gaia-reference/photos/23-535fa30d7e-latest_photo.webp",
-        "latest_captured_on": "2026-10-18",
+        "latest_captured_on": "2026-11-05",
         "candidates": [
+          {
+            "source": "journal",
+            "captured_on": "2026-10-18",
+            "image": "gaia-reference/photos/23-535fa30d7e-previous_photo.webp",
+            "photo_id": "6040457b-41d3-470a-be32-869eeddff3eb"
+          },
           {
             "source": "catalog_reference",
             "captured_on": null,
@@ -2331,6 +2331,18 @@
       "species": "Philodendron hederaceum",
       "reference_photo": "24-phil-heartleaf-philodendron.jpg",
       "latest_photo": {
+        "id": "f6ffcbcd-b252-49f8-a54a-1638ebfbaa54",
+        "plant_id": "24",
+        "taken_on": "2026-11-05",
+        "created_at": "2026-11-06T05:03:46.54739+00:00",
+        "caption": "",
+        "analysis_status": "pending",
+        "analysis_summary": "",
+        "analysis_findings": [],
+        "analyzed_at": null,
+        "snapshot_image": "gaia-reference/photos/24-c2356069e9-latest_photo.webp"
+      },
+      "previous_photo": {
         "id": "b6866ddb-0d67-4eed-8221-a95654ddc4c2",
         "plant_id": "24",
         "taken_on": "2026-10-18",
@@ -2367,65 +2379,29 @@
           }
         ],
         "analyzed_at": "2026-10-23T17:31:26.605+00:00",
-        "snapshot_image": "gaia-reference/photos/24-c2356069e9-latest_photo.webp"
-      },
-      "previous_photo": {
-        "id": "59f3a553-376c-414c-8b97-26dd6546cdf3",
-        "plant_id": "24",
-        "taken_on": "2026-10-14",
-        "created_at": "2026-10-15T00:42:08.657089+00:00",
-        "caption": "",
-        "analysis_status": "reviewed",
-        "analysis_summary": "Phil retains a full cluster of heart-shaped green leaves and trailing stems in the newer image, with no convincing widespread loss. A small brown patch is visible on a leaf near the pot rim; the original higher-shelf view does not allow a match to determine when it appeared.",
-        "analysis_findings": [
-          {
-            "kind": "trend",
-            "text": "stable"
-          },
-          {
-            "kind": "observation",
-            "text": "Multiple broad green heart-shaped leaves remain intact and glossy."
-          },
-          {
-            "kind": "observation",
-            "text": "Trailing stems and smaller leaves extend around the container in the newer image."
-          },
-          {
-            "kind": "observation",
-            "text": "One lower leaf near the right of the pot has a localized brown damaged patch."
-          },
-          {
-            "kind": "observation",
-            "text": "The plant's position, distance, and lighting differ strongly between photos."
-          },
-          {
-            "kind": "care",
-            "text": "Inspect the leaf with the localized brown patch and nearby foliage for spreading damage.",
-            "reason": "One leaf shows a distinct affected area, but this photograph cannot establish whether it is new or active.",
-            "urgency": "monitor"
-          },
-          {
-            "kind": "comparison_source",
-            "text": "Original GAIA image: 24-phil-heartleaf-philodendron.jpg versus newer private photo: 59f3a553-376c-414c-8b97-26dd6546cdf3"
-          }
-        ],
-        "analyzed_at": "2026-10-16T16:33:20.182+00:00",
         "snapshot_image": "gaia-reference/photos/24-c2356069e9-previous_photo.webp"
       },
       "photos": [
+        {
+          "id": "f6ffcbcd-b252-49f8-a54a-1638ebfbaa54",
+          "taken_on": "2026-11-05",
+          "created_at": "2026-11-06T05:03:46.54739+00:00",
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/24-c2356069e9-latest_photo.webp"
+        },
         {
           "id": "b6866ddb-0d67-4eed-8221-a95654ddc4c2",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:41:08.572779+00:00",
           "analysis_status": "reviewed",
-          "snapshot_image": "gaia-reference/photos/24-c2356069e9-latest_photo.webp"
+          "snapshot_image": "gaia-reference/photos/24-c2356069e9-previous_photo.webp"
         },
         {
           "id": "59f3a553-376c-414c-8b97-26dd6546cdf3",
           "taken_on": "2026-10-14",
           "created_at": "2026-10-15T00:42:08.657089+00:00",
           "analysis_status": "reviewed",
-          "snapshot_image": "gaia-reference/photos/24-c2356069e9-previous_photo.webp"
+          "snapshot_image": "gaia-reference/photos/24-c2356069e9-history-59f3a553-376c-414c-8b97-26dd6546cdf3.webp"
         }
       ],
       "pot": null,
@@ -2457,12 +2433,18 @@
       "comparison": {
         "ready": true,
         "latest_image": "gaia-reference/photos/24-c2356069e9-latest_photo.webp",
-        "latest_captured_on": "2026-10-18",
+        "latest_captured_on": "2026-11-05",
         "candidates": [
           {
             "source": "journal",
-            "captured_on": "2026-10-14",
+            "captured_on": "2026-10-18",
             "image": "gaia-reference/photos/24-c2356069e9-previous_photo.webp",
+            "photo_id": "b6866ddb-0d67-4eed-8221-a95654ddc4c2"
+          },
+          {
+            "source": "journal",
+            "captured_on": "2026-10-14",
+            "image": "gaia-reference/photos/24-c2356069e9-history-59f3a553-376c-414c-8b97-26dd6546cdf3.webp",
             "photo_id": "59f3a553-376c-414c-8b97-26dd6546cdf3"
           },
           {
@@ -2481,6 +2463,18 @@
       "species": "Crassothonna capensis",
       "reference_photo": "25-ruby-ruby-necklace.jpg",
       "latest_photo": {
+        "id": "ff4e066d-9960-41f1-b0c0-c5fa378734cf",
+        "plant_id": "25",
+        "taken_on": "2026-11-05",
+        "created_at": "2026-11-06T05:05:02.268437+00:00",
+        "caption": "",
+        "analysis_status": "pending",
+        "analysis_summary": "",
+        "analysis_findings": [],
+        "analyzed_at": null,
+        "snapshot_image": "gaia-reference/photos/25-b7a56873cd-latest_photo.webp"
+      },
+      "previous_photo": {
         "id": "5377d226-834e-47ff-89ce-2c6f43f3d316",
         "plant_id": "25",
         "taken_on": "2026-10-18",
@@ -2517,67 +2511,29 @@
           }
         ],
         "analyzed_at": "2026-10-23T17:32:07.536+00:00",
-        "snapshot_image": "gaia-reference/photos/25-b7a56873cd-latest_photo.webp"
-      },
-      "previous_photo": {
-        "id": "b967edd3-7888-42c1-acd7-6764feac1e5b",
-        "plant_id": "25",
-        "taken_on": "2026-10-14",
-        "created_at": "2026-10-15T00:47:50.228707+00:00",
-        "caption": "",
-        "analysis_status": "reviewed",
-        "analysis_summary": "Compared Ruby photos taken Oct 12 and Oct 14, 2026. Both show trailing purple-pink stems, several plump green leaves, and some elongated yellow-green leaves and sparsely leafed sections. Different camera angles and daylight make a reliable two-day improvement or decline unclear. This comparison cannot establish soil moisture, pests, or root health.",
-        "analysis_findings": [
-          {
-            "kind": "trend",
-            "text": "uncertain"
-          },
-          {
-            "kind": "observation",
-            "text": "Both photos show green bead-like leaves together with long yellow-green leaves and sparsely populated trailing stems."
-          },
-          {
-            "kind": "observation",
-            "text": "Different camera position and lighting prevent a confident conclusion about change over two days."
-          },
-          {
-            "kind": "care",
-            "text": "Check potting mix dryness and drainage before considering watering.",
-            "reason": "A photo cannot establish whether the root zone is wet or dry.",
-            "urgency": "monitor"
-          },
-          {
-            "kind": "care",
-            "text": "Photograph Ruby again from a similar angle in 7–14 days.",
-            "reason": "Consistent photography makes a trend easier to assess.",
-            "urgency": "routine"
-          },
-          {
-            "kind": "comparison_source",
-            "text": "Two private Supabase photos captured Oct 12 and Oct 14, 2026."
-          },
-          {
-            "kind": "compared_photo_ids",
-            "text": "9dfef0ab-b334-49f4-a9b3-f153fb09d90a"
-          }
-        ],
-        "analyzed_at": "2026-10-15T22:10:06.406468+00:00",
         "snapshot_image": "gaia-reference/photos/25-b7a56873cd-previous_photo.webp"
       },
       "photos": [
+        {
+          "id": "ff4e066d-9960-41f1-b0c0-c5fa378734cf",
+          "taken_on": "2026-11-05",
+          "created_at": "2026-11-06T05:05:02.268437+00:00",
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/25-b7a56873cd-latest_photo.webp"
+        },
         {
           "id": "5377d226-834e-47ff-89ce-2c6f43f3d316",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:41:54.730104+00:00",
           "analysis_status": "reviewed",
-          "snapshot_image": "gaia-reference/photos/25-b7a56873cd-latest_photo.webp"
+          "snapshot_image": "gaia-reference/photos/25-b7a56873cd-previous_photo.webp"
         },
         {
           "id": "b967edd3-7888-42c1-acd7-6764feac1e5b",
           "taken_on": "2026-10-14",
           "created_at": "2026-10-15T00:47:50.228707+00:00",
           "analysis_status": "reviewed",
-          "snapshot_image": "gaia-reference/photos/25-b7a56873cd-previous_photo.webp"
+          "snapshot_image": "gaia-reference/photos/25-b7a56873cd-history-b967edd3-7888-42c1-acd7-6764feac1e5b.webp"
         },
         {
           "id": "9dfef0ab-b334-49f4-a9b3-f153fb09d90a",
@@ -2609,12 +2565,18 @@
       "comparison": {
         "ready": true,
         "latest_image": "gaia-reference/photos/25-b7a56873cd-latest_photo.webp",
-        "latest_captured_on": "2026-10-18",
+        "latest_captured_on": "2026-11-05",
         "candidates": [
           {
             "source": "journal",
-            "captured_on": "2026-10-14",
+            "captured_on": "2026-10-18",
             "image": "gaia-reference/photos/25-b7a56873cd-previous_photo.webp",
+            "photo_id": "5377d226-834e-47ff-89ce-2c6f43f3d316"
+          },
+          {
+            "source": "journal",
+            "captured_on": "2026-10-14",
+            "image": "gaia-reference/photos/25-b7a56873cd-history-b967edd3-7888-42c1-acd7-6764feac1e5b.webp",
             "photo_id": "b967edd3-7888-42c1-acd7-6764feac1e5b"
           },
           {
@@ -2801,6 +2763,18 @@
       "species": "Haworthiopsis attenuata-type",
       "reference_photo": "28-beetlejuice-zebra-haworthia.jpg",
       "latest_photo": {
+        "id": "74b39df8-5c5b-48fb-8e35-d0c16d4917f2",
+        "plant_id": "28",
+        "taken_on": "2026-11-05",
+        "created_at": "2026-11-06T05:10:07.538736+00:00",
+        "caption": "",
+        "analysis_status": "pending",
+        "analysis_summary": "",
+        "analysis_findings": [],
+        "analyzed_at": null,
+        "snapshot_image": "gaia-reference/photos/28-59e19706d5-latest_photo.webp"
+      },
+      "previous_photo": {
         "id": "e030f329-e336-4f27-a33a-11415118a8e7",
         "plant_id": "28",
         "taken_on": "2026-10-18",
@@ -2837,16 +2811,22 @@
           }
         ],
         "analyzed_at": "2026-10-23T17:32:54.469+00:00",
-        "snapshot_image": "gaia-reference/photos/28-59e19706d5-latest_photo.webp"
+        "snapshot_image": "gaia-reference/photos/28-59e19706d5-previous_photo.webp"
       },
-      "previous_photo": null,
       "photos": [
+        {
+          "id": "74b39df8-5c5b-48fb-8e35-d0c16d4917f2",
+          "taken_on": "2026-11-05",
+          "created_at": "2026-11-06T05:10:07.538736+00:00",
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/28-59e19706d5-latest_photo.webp"
+        },
         {
           "id": "e030f329-e336-4f27-a33a-11415118a8e7",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:43:17.588312+00:00",
           "analysis_status": "reviewed",
-          "snapshot_image": "gaia-reference/photos/28-59e19706d5-latest_photo.webp"
+          "snapshot_image": "gaia-reference/photos/28-59e19706d5-previous_photo.webp"
         }
       ],
       "pot": null,
@@ -2871,8 +2851,14 @@
       "comparison": {
         "ready": true,
         "latest_image": "gaia-reference/photos/28-59e19706d5-latest_photo.webp",
-        "latest_captured_on": "2026-10-18",
+        "latest_captured_on": "2026-11-05",
         "candidates": [
+          {
+            "source": "journal",
+            "captured_on": "2026-10-18",
+            "image": "gaia-reference/photos/28-59e19706d5-previous_photo.webp",
+            "photo_id": "e030f329-e336-4f27-a33a-11415118a8e7"
+          },
           {
             "source": "catalog_reference",
             "captured_on": null,
@@ -2895,7 +2881,7 @@
         "created_at": "2026-10-21T04:43:38.669688+00:00",
         "caption": "",
         "analysis_status": "reviewed",
-        "analysis_summary": "Stanley retains green upright shoots on October 18 compared with October 14 and the undated catalog reference. Minor curled or damaged tips persist, and the lower reservoir still looks cloudy in all views. This supports a direct reservoir and root check; photographs cannot identify microbes or determine cleaning history. No recent reservoir-maintenance event is recorded or synced.",
+        "analysis_summary": "Oct 18 photo review: Stanley has green upright shoots and some persistent minor leaf-tip damage. Nov 5 owner clarification: the lower portion of the glass reservoir is intentionally frosted, creating a cloudy-looking appearance in photos. Earlier descriptions of cloudy water from the image were mistaken. Actual water clarity, root condition, and date of last refresh were not verified.",
         "analysis_findings": [
           {
             "kind": "trend",
@@ -2986,7 +2972,15 @@
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": [],
+      "care_events": [
+        {
+          "plant_id": "29",
+          "action_type": "inspect",
+          "happened_on": "2026-11-05",
+          "note": "Nov 5 photo review: Stanley (#29), Dracaena sanderiana water-grown. Leaves upright and green with lighter stripes; some minor pre-existing curled tips. OWNER CORRECTION: glass tube has a frosted bottom, which explains the cloudy appearance in older and current photos. Prior claims of cloudy reservoir water were mistaken; actual water clarity, root condition and date of latest water change remain unverified. Refresh water as appropriate based on care routine, not based on frosted glass. No confirmed rot, pests, or widespread leaf decline. Current photo reviewed only in chat, NOT uploaded to GAIA.",
+          "created_at": "2026-11-06T05:36:26.119004+00:00"
+        }
+      ],
       "reference_image": "29-stanley-lucky-bamboo.jpg",
       "comparison": {
         "ready": true,
@@ -3015,6 +3009,18 @@
       "species": "Syngonium",
       "reference_photo": "30-aloy-arrowhead-plant.jpg",
       "latest_photo": {
+        "id": "87a3f931-c6f1-4748-bd27-079594cbd09d",
+        "plant_id": "30",
+        "taken_on": "2026-11-05",
+        "created_at": "2026-11-06T05:11:05.668108+00:00",
+        "caption": "",
+        "analysis_status": "pending",
+        "analysis_summary": "",
+        "analysis_findings": [],
+        "analyzed_at": null,
+        "snapshot_image": "gaia-reference/photos/30-624b60c58c-latest_photo.webp"
+      },
+      "previous_photo": {
         "id": "5bc31cf6-e71f-4c09-84d1-79a6df4df53a",
         "plant_id": "30",
         "taken_on": "2026-10-18",
@@ -3051,16 +3057,22 @@
           }
         ],
         "analyzed_at": "2026-10-23T17:32:57.317+00:00",
-        "snapshot_image": "gaia-reference/photos/30-624b60c58c-latest_photo.webp"
+        "snapshot_image": "gaia-reference/photos/30-624b60c58c-previous_photo.webp"
       },
-      "previous_photo": null,
       "photos": [
+        {
+          "id": "87a3f931-c6f1-4748-bd27-079594cbd09d",
+          "taken_on": "2026-11-05",
+          "created_at": "2026-11-06T05:11:05.668108+00:00",
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/30-624b60c58c-latest_photo.webp"
+        },
         {
           "id": "5bc31cf6-e71f-4c09-84d1-79a6df4df53a",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:44:07.06858+00:00",
           "analysis_status": "reviewed",
-          "snapshot_image": "gaia-reference/photos/30-624b60c58c-latest_photo.webp"
+          "snapshot_image": "gaia-reference/photos/30-624b60c58c-previous_photo.webp"
         }
       ],
       "pot": null,
@@ -3085,8 +3097,14 @@
       "comparison": {
         "ready": true,
         "latest_image": "gaia-reference/photos/30-624b60c58c-latest_photo.webp",
-        "latest_captured_on": "2026-10-18",
+        "latest_captured_on": "2026-11-05",
         "candidates": [
+          {
+            "source": "journal",
+            "captured_on": "2026-10-18",
+            "image": "gaia-reference/photos/30-624b60c58c-previous_photo.webp",
+            "photo_id": "5bc31cf6-e71f-4c09-84d1-79a6df4df53a"
+          },
           {
             "source": "catalog_reference",
             "captured_on": null,
@@ -3265,6 +3283,18 @@
       "species": "Coleus scutellarioides (tentative)",
       "reference_photo": "33-din-plectranthus-maroon-pot.jpg",
       "latest_photo": {
+        "id": "9039c04f-2164-48a7-ac00-5bf30f03d9b4",
+        "plant_id": "33",
+        "taken_on": "2026-11-05",
+        "created_at": "2026-11-06T05:12:31.442912+00:00",
+        "caption": "",
+        "analysis_status": "pending",
+        "analysis_summary": "",
+        "analysis_findings": [],
+        "analyzed_at": null,
+        "snapshot_image": "gaia-reference/photos/33-c6f3ac5794-latest_photo.webp"
+      },
+      "previous_photo": {
         "id": "0fb98d26-0755-4a0e-8f30-2ea4f09c897e",
         "plant_id": "33",
         "taken_on": "2026-10-18",
@@ -3301,16 +3331,22 @@
           }
         ],
         "analyzed_at": "2026-10-23T17:33:39.223+00:00",
-        "snapshot_image": "gaia-reference/photos/33-c6f3ac5794-latest_photo.webp"
+        "snapshot_image": "gaia-reference/photos/33-c6f3ac5794-previous_photo.webp"
       },
-      "previous_photo": null,
       "photos": [
+        {
+          "id": "9039c04f-2164-48a7-ac00-5bf30f03d9b4",
+          "taken_on": "2026-11-05",
+          "created_at": "2026-11-06T05:12:31.442912+00:00",
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/33-c6f3ac5794-latest_photo.webp"
+        },
         {
           "id": "0fb98d26-0755-4a0e-8f30-2ea4f09c897e",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:45:03.336744+00:00",
           "analysis_status": "reviewed",
-          "snapshot_image": "gaia-reference/photos/33-c6f3ac5794-latest_photo.webp"
+          "snapshot_image": "gaia-reference/photos/33-c6f3ac5794-previous_photo.webp"
         }
       ],
       "pot": null,
@@ -3328,8 +3364,14 @@
       "comparison": {
         "ready": true,
         "latest_image": "gaia-reference/photos/33-c6f3ac5794-latest_photo.webp",
-        "latest_captured_on": "2026-10-18",
+        "latest_captured_on": "2026-11-05",
         "candidates": [
+          {
+            "source": "journal",
+            "captured_on": "2026-10-18",
+            "image": "gaia-reference/photos/33-c6f3ac5794-previous_photo.webp",
+            "photo_id": "0fb98d26-0755-4a0e-8f30-2ea4f09c897e"
+          },
           {
             "source": "catalog_reference",
             "captured_on": null,
@@ -3539,6 +3581,18 @@
       "species": "Monstera deliciosa 'Thai Constellation'",
       "reference_photo": "36-orion-thai-constellation-1-round-pot.jpg",
       "latest_photo": {
+        "id": "d1e6da17-cac7-4813-8e1e-36d8a0bc3b57",
+        "plant_id": "36",
+        "taken_on": "2026-11-05",
+        "created_at": "2026-11-06T05:13:49.174143+00:00",
+        "caption": "",
+        "analysis_status": "pending",
+        "analysis_summary": "",
+        "analysis_findings": [],
+        "analyzed_at": null,
+        "snapshot_image": "gaia-reference/photos/36-76a50887d8-latest_photo.webp"
+      },
+      "previous_photo": {
         "id": "9683643e-7e9d-4084-9d93-cfa7b98fdd41",
         "plant_id": "36",
         "taken_on": "2026-10-18",
@@ -3575,16 +3629,22 @@
           }
         ],
         "analyzed_at": "2026-10-23T17:34:28.463+00:00",
-        "snapshot_image": "gaia-reference/photos/36-76a50887d8-latest_photo.webp"
+        "snapshot_image": "gaia-reference/photos/36-76a50887d8-previous_photo.webp"
       },
-      "previous_photo": null,
       "photos": [
+        {
+          "id": "d1e6da17-cac7-4813-8e1e-36d8a0bc3b57",
+          "taken_on": "2026-11-05",
+          "created_at": "2026-11-06T05:13:49.174143+00:00",
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/36-76a50887d8-latest_photo.webp"
+        },
         {
           "id": "9683643e-7e9d-4084-9d93-cfa7b98fdd41",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:47:22.213776+00:00",
           "analysis_status": "reviewed",
-          "snapshot_image": "gaia-reference/photos/36-76a50887d8-latest_photo.webp"
+          "snapshot_image": "gaia-reference/photos/36-76a50887d8-previous_photo.webp"
         }
       ],
       "pot": null,
@@ -3602,8 +3662,14 @@
       "comparison": {
         "ready": true,
         "latest_image": "gaia-reference/photos/36-76a50887d8-latest_photo.webp",
-        "latest_captured_on": "2026-10-18",
+        "latest_captured_on": "2026-11-05",
         "candidates": [
+          {
+            "source": "journal",
+            "captured_on": "2026-10-18",
+            "image": "gaia-reference/photos/36-76a50887d8-previous_photo.webp",
+            "photo_id": "9683643e-7e9d-4084-9d93-cfa7b98fdd41"
+          },
           {
             "source": "catalog_reference",
             "captured_on": null,
@@ -3619,18 +3685,45 @@
       "name": "Cassie",
       "species": "Monstera deliciosa 'Thai Constellation'",
       "reference_photo": "37-cassie-thai-constellation-2-hanging-pot.jpg",
-      "latest_photo": null,
+      "latest_photo": {
+        "id": "84f9a392-6306-40dd-8d23-5d85a6528708",
+        "plant_id": "37",
+        "taken_on": "2026-11-05",
+        "created_at": "2026-11-06T05:14:27.221428+00:00",
+        "caption": "",
+        "analysis_status": "pending",
+        "analysis_summary": "",
+        "analysis_findings": [],
+        "analyzed_at": null,
+        "snapshot_image": "gaia-reference/photos/37-7a61b53701-latest_photo.webp"
+      },
       "previous_photo": null,
-      "photos": [],
+      "photos": [
+        {
+          "id": "84f9a392-6306-40dd-8d23-5d85a6528708",
+          "taken_on": "2026-11-05",
+          "created_at": "2026-11-06T05:14:27.221428+00:00",
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/37-7a61b53701-latest_photo.webp"
+        }
+      ],
       "pot": null,
       "soil_observations": [],
       "care_events": [],
       "reference_image": "37-cassie-thai-constellation-2-hanging-pot.jpg",
       "comparison": {
-        "ready": false,
-        "latest_image": null,
-        "latest_captured_on": null,
-        "candidates": []
+        "ready": true,
+        "latest_image": "gaia-reference/photos/37-7a61b53701-latest_photo.webp",
+        "latest_captured_on": "2026-11-05",
+        "candidates": [
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "37-cassie-thai-constellation-2-hanging-pot.jpg",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
       }
     },
     {
@@ -3639,6 +3732,18 @@
       "species": "Monstera deliciosa 'Thai Constellation'",
       "reference_photo": "38-andromeda-thai-constellation-3-maroon-pot.jpg",
       "latest_photo": {
+        "id": "d10f40ab-e974-401c-861a-e30a80935785",
+        "plant_id": "38",
+        "taken_on": "2026-11-05",
+        "created_at": "2026-11-06T05:15:06.036423+00:00",
+        "caption": "",
+        "analysis_status": "pending",
+        "analysis_summary": "",
+        "analysis_findings": [],
+        "analyzed_at": null,
+        "snapshot_image": "gaia-reference/photos/38-aea92132c4-latest_photo.webp"
+      },
+      "previous_photo": {
         "id": "5efb7d18-42f1-49a7-a67f-f6d760874498",
         "plant_id": "38",
         "taken_on": "2026-10-18",
@@ -3675,16 +3780,22 @@
           }
         ],
         "analyzed_at": "2026-10-23T17:35:16.445+00:00",
-        "snapshot_image": "gaia-reference/photos/38-aea92132c4-latest_photo.webp"
+        "snapshot_image": "gaia-reference/photos/38-aea92132c4-previous_photo.webp"
       },
-      "previous_photo": null,
       "photos": [
+        {
+          "id": "d10f40ab-e974-401c-861a-e30a80935785",
+          "taken_on": "2026-11-05",
+          "created_at": "2026-11-06T05:15:06.036423+00:00",
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/38-aea92132c4-latest_photo.webp"
+        },
         {
           "id": "5efb7d18-42f1-49a7-a67f-f6d760874498",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:48:32.47992+00:00",
           "analysis_status": "reviewed",
-          "snapshot_image": "gaia-reference/photos/38-aea92132c4-latest_photo.webp"
+          "snapshot_image": "gaia-reference/photos/38-aea92132c4-previous_photo.webp"
         }
       ],
       "pot": null,
@@ -3702,8 +3813,14 @@
       "comparison": {
         "ready": true,
         "latest_image": "gaia-reference/photos/38-aea92132c4-latest_photo.webp",
-        "latest_captured_on": "2026-10-18",
+        "latest_captured_on": "2026-11-05",
         "candidates": [
+          {
+            "source": "journal",
+            "captured_on": "2026-10-18",
+            "image": "gaia-reference/photos/38-aea92132c4-previous_photo.webp",
+            "photo_id": "5efb7d18-42f1-49a7-a67f-f6d760874498"
+          },
           {
             "source": "catalog_reference",
             "captured_on": null,
@@ -3720,6 +3837,18 @@
       "species": "Zamioculcas zamiifolia 'Raven'",
       "reference_photo": "39-raven-raven-zz.jpg",
       "latest_photo": {
+        "id": "11adbbfa-e87f-4ca5-a787-5203170120a4",
+        "plant_id": "39",
+        "taken_on": "2026-11-05",
+        "created_at": "2026-11-06T04:57:06.02589+00:00",
+        "caption": "",
+        "analysis_status": "pending",
+        "analysis_summary": "",
+        "analysis_findings": [],
+        "analyzed_at": null,
+        "snapshot_image": "gaia-reference/photos/39-0b918943df-latest_photo.webp"
+      },
+      "previous_photo": {
         "id": "75703807-0ae3-40fe-b1c3-2b114d420cf8",
         "plant_id": "39",
         "taken_on": "2026-10-20",
@@ -3756,16 +3885,22 @@
           }
         ],
         "analyzed_at": "2026-10-23T17:35:17.42+00:00",
-        "snapshot_image": "gaia-reference/photos/39-0b918943df-latest_photo.webp"
+        "snapshot_image": "gaia-reference/photos/39-0b918943df-previous_photo.webp"
       },
-      "previous_photo": null,
       "photos": [
+        {
+          "id": "11adbbfa-e87f-4ca5-a787-5203170120a4",
+          "taken_on": "2026-11-05",
+          "created_at": "2026-11-06T04:57:06.02589+00:00",
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/39-0b918943df-latest_photo.webp"
+        },
         {
           "id": "75703807-0ae3-40fe-b1c3-2b114d420cf8",
           "taken_on": "2026-10-20",
           "created_at": "2026-10-21T04:39:09.500373+00:00",
           "analysis_status": "reviewed",
-          "snapshot_image": "gaia-reference/photos/39-0b918943df-latest_photo.webp"
+          "snapshot_image": "gaia-reference/photos/39-0b918943df-previous_photo.webp"
         }
       ],
       "pot": null,
@@ -3775,8 +3910,14 @@
       "comparison": {
         "ready": true,
         "latest_image": "gaia-reference/photos/39-0b918943df-latest_photo.webp",
-        "latest_captured_on": "2026-10-20",
+        "latest_captured_on": "2026-11-05",
         "candidates": [
+          {
+            "source": "journal",
+            "captured_on": "2026-10-20",
+            "image": "gaia-reference/photos/39-0b918943df-previous_photo.webp",
+            "photo_id": "75703807-0ae3-40fe-b1c3-2b114d420cf8"
+          },
           {
             "source": "catalog_reference",
             "captured_on": null,
@@ -3881,6 +4022,18 @@
       "species": "Curio barbertonicus-type",
       "reference_photo": "41-paarthurnax-himalaya-senecio.jpg",
       "latest_photo": {
+        "id": "f5e30702-d8ca-4f9d-b9fa-a8cdbf631577",
+        "plant_id": "41",
+        "taken_on": "2026-11-05",
+        "created_at": "2026-11-06T05:15:58.634822+00:00",
+        "caption": "",
+        "analysis_status": "pending",
+        "analysis_summary": "",
+        "analysis_findings": [],
+        "analyzed_at": null,
+        "snapshot_image": "gaia-reference/photos/41-3d914f9348-latest_photo.webp"
+      },
+      "previous_photo": {
         "id": "0ce735a3-4d53-403a-9cc2-0dc6ac5414b6",
         "plant_id": "41",
         "taken_on": "2026-10-18",
@@ -3917,16 +4070,22 @@
           }
         ],
         "analyzed_at": "2026-10-23T17:36:33.395+00:00",
-        "snapshot_image": "gaia-reference/photos/41-3d914f9348-latest_photo.webp"
+        "snapshot_image": "gaia-reference/photos/41-3d914f9348-previous_photo.webp"
       },
-      "previous_photo": null,
       "photos": [
+        {
+          "id": "f5e30702-d8ca-4f9d-b9fa-a8cdbf631577",
+          "taken_on": "2026-11-05",
+          "created_at": "2026-11-06T05:15:58.634822+00:00",
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/41-3d914f9348-latest_photo.webp"
+        },
         {
           "id": "0ce735a3-4d53-403a-9cc2-0dc6ac5414b6",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:49:26.452818+00:00",
           "analysis_status": "reviewed",
-          "snapshot_image": "gaia-reference/photos/41-3d914f9348-latest_photo.webp"
+          "snapshot_image": "gaia-reference/photos/41-3d914f9348-previous_photo.webp"
         }
       ],
       "pot": null,
@@ -3958,8 +4117,14 @@
       "comparison": {
         "ready": true,
         "latest_image": "gaia-reference/photos/41-3d914f9348-latest_photo.webp",
-        "latest_captured_on": "2026-10-18",
+        "latest_captured_on": "2026-11-05",
         "candidates": [
+          {
+            "source": "journal",
+            "captured_on": "2026-10-18",
+            "image": "gaia-reference/photos/41-3d914f9348-previous_photo.webp",
+            "photo_id": "0ce735a3-4d53-403a-9cc2-0dc6ac5414b6"
+          },
           {
             "source": "catalog_reference",
             "captured_on": null,
@@ -3976,6 +4141,18 @@
       "species": "Tradescantia zebrina",
       "reference_photo": "42-zelda-tradescantia-zebrina.jpg",
       "latest_photo": {
+        "id": "a1170ffb-ab5e-4fb0-895a-ae9811f669ea",
+        "plant_id": "42",
+        "taken_on": "2026-11-05",
+        "created_at": "2026-11-06T04:42:27.08839+00:00",
+        "caption": "",
+        "analysis_status": "pending",
+        "analysis_summary": "",
+        "analysis_findings": [],
+        "analyzed_at": null,
+        "snapshot_image": "gaia-reference/photos/42-73475cb40a-latest_photo.webp"
+      },
+      "previous_photo": {
         "id": "5c88c6e6-6f46-4580-8fcd-acbe830d081c",
         "plant_id": "42",
         "taken_on": "2026-10-28",
@@ -3985,65 +4162,29 @@
         "analysis_summary": "",
         "analysis_findings": [],
         "analyzed_at": null,
-        "snapshot_image": "gaia-reference/photos/42-73475cb40a-latest_photo.webp"
-      },
-      "previous_photo": {
-        "id": "79d88182-b716-4a37-be18-8512fec25ce3",
-        "plant_id": "42",
-        "taken_on": "2026-10-18",
-        "created_at": "2026-10-21T04:26:46.040712+00:00",
-        "caption": "",
-        "analysis_status": "reviewed",
-        "analysis_summary": "Zelda's October 18 latest photo shows several leafy silver-and-purple striped stems, broadly consistent with its undated catalog reference, without obvious whole-plant collapse. Its nominal earlier journal image is byte-identical to Violet's latest exported photo and depicts a different unstriped purple-heart plant; it cannot support a same-plant dated trend. The meaningful comparison here is with Zelda's catalog image. Current moisture and measured growth are not synced.",
-        "analysis_findings": [
-          {
-            "kind": "trend",
-            "text": "uncertain"
-          },
-          {
-            "kind": "observation",
-            "text": "The latest Zelda image contains multiple striped purple-and-silver leaves on upright and arching stems."
-          },
-          {
-            "kind": "observation",
-            "text": "The correct catalog image, 42-zelda-tradescantia-zebrina.jpg, shows the same striped leaf type and no obvious contrasting whole-plant collapse."
-          },
-          {
-            "kind": "observation",
-            "text": "The nominal prior journal image depicts unstriped long purple foliage in Violet's orange decorative pot and duplicates Violet's latest exported image."
-          },
-          {
-            "kind": "observation",
-            "text": "Because the journal source is mismatched and the catalog date is unknown, no reliable dated growth trend can be assigned."
-          },
-          {
-            "kind": "care",
-            "text": "Check Zelda's exported earlier-photo association against Violet's duplicate image.",
-            "reason": "The history source is mismatched; verify the upload/export association before using it for future growth comparisons.",
-            "urgency": "routine"
-          },
-          {
-            "kind": "comparison_source",
-            "text": "Earlier private photo: ca4444e0-14bd-4a86-aa0b-79d7ce348ebf versus newer private photo: 79d88182-b716-4a37-be18-8512fec25ce3"
-          }
-        ],
-        "analyzed_at": "2026-10-23T17:36:34.168+00:00",
         "snapshot_image": "gaia-reference/photos/42-73475cb40a-previous_photo.webp"
       },
       "photos": [
+        {
+          "id": "a1170ffb-ab5e-4fb0-895a-ae9811f669ea",
+          "taken_on": "2026-11-05",
+          "created_at": "2026-11-06T04:42:27.08839+00:00",
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/42-73475cb40a-latest_photo.webp"
+        },
         {
           "id": "5c88c6e6-6f46-4580-8fcd-acbe830d081c",
           "taken_on": "2026-10-28",
           "created_at": "2026-10-29T02:13:52.917272+00:00",
           "analysis_status": "pending",
-          "snapshot_image": "gaia-reference/photos/42-73475cb40a-latest_photo.webp"
+          "snapshot_image": "gaia-reference/photos/42-73475cb40a-previous_photo.webp"
         },
         {
           "id": "79d88182-b716-4a37-be18-8512fec25ce3",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:26:46.040712+00:00",
           "analysis_status": "reviewed",
-          "snapshot_image": "gaia-reference/photos/42-73475cb40a-previous_photo.webp"
+          "snapshot_image": "gaia-reference/photos/42-73475cb40a-history-79d88182-b716-4a37-be18-8512fec25ce3.webp"
         }
       ],
       "pot": {
@@ -4092,12 +4233,18 @@
       "comparison": {
         "ready": true,
         "latest_image": "gaia-reference/photos/42-73475cb40a-latest_photo.webp",
-        "latest_captured_on": "2026-10-28",
+        "latest_captured_on": "2026-11-05",
         "candidates": [
           {
             "source": "journal",
-            "captured_on": "2026-10-18",
+            "captured_on": "2026-10-28",
             "image": "gaia-reference/photos/42-73475cb40a-previous_photo.webp",
+            "photo_id": "5c88c6e6-6f46-4580-8fcd-acbe830d081c"
+          },
+          {
+            "source": "journal",
+            "captured_on": "2026-10-18",
+            "image": "gaia-reference/photos/42-73475cb40a-history-79d88182-b716-4a37-be18-8512fec25ce3.webp",
             "photo_id": "79d88182-b716-4a37-be18-8512fec25ce3"
           },
           {
@@ -4238,6 +4385,18 @@
       "species": "China Doll · Radermachera sinica",
       "reference_photo": "44-ciri-grape-ivy-oak-leaf-ivy-cissus-alata-elle.jpg",
       "latest_photo": {
+        "id": "19038999-63b5-4d87-b148-9ba61ac15320",
+        "plant_id": "44",
+        "taken_on": "2026-11-05",
+        "created_at": "2026-11-06T05:04:38.011013+00:00",
+        "caption": "",
+        "analysis_status": "pending",
+        "analysis_summary": "",
+        "analysis_findings": [],
+        "analyzed_at": null,
+        "snapshot_image": "gaia-reference/photos/44-71ee45a3c0-latest_photo.webp"
+      },
+      "previous_photo": {
         "id": "8291b78e-6a7f-4a45-9235-e8653c33367c",
         "plant_id": "44",
         "taken_on": "2026-10-18",
@@ -4274,16 +4433,22 @@
           }
         ],
         "analyzed_at": "2026-10-23T17:37:26.978+00:00",
-        "snapshot_image": "gaia-reference/photos/44-71ee45a3c0-latest_photo.webp"
+        "snapshot_image": "gaia-reference/photos/44-71ee45a3c0-previous_photo.webp"
       },
-      "previous_photo": null,
       "photos": [
+        {
+          "id": "19038999-63b5-4d87-b148-9ba61ac15320",
+          "taken_on": "2026-11-05",
+          "created_at": "2026-11-06T05:04:38.011013+00:00",
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/44-71ee45a3c0-latest_photo.webp"
+        },
         {
           "id": "8291b78e-6a7f-4a45-9235-e8653c33367c",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:41:31.774977+00:00",
           "analysis_status": "reviewed",
-          "snapshot_image": "gaia-reference/photos/44-71ee45a3c0-latest_photo.webp"
+          "snapshot_image": "gaia-reference/photos/44-71ee45a3c0-previous_photo.webp"
         }
       ],
       "pot": null,
@@ -4293,8 +4458,14 @@
       "comparison": {
         "ready": true,
         "latest_image": "gaia-reference/photos/44-71ee45a3c0-latest_photo.webp",
-        "latest_captured_on": "2026-10-18",
+        "latest_captured_on": "2026-11-05",
         "candidates": [
+          {
+            "source": "journal",
+            "captured_on": "2026-10-18",
+            "image": "gaia-reference/photos/44-71ee45a3c0-previous_photo.webp",
+            "photo_id": "8291b78e-6a7f-4a45-9235-e8653c33367c"
+          },
           {
             "source": "catalog_reference",
             "captured_on": null,
@@ -4311,6 +4482,18 @@
       "species": "Scented geranium · Pelargonium 'Citrosum'-type",
       "reference_photo": "45-jango-citronella-plant-scented-geranium-mosqu.jpg",
       "latest_photo": {
+        "id": "0bbdb101-b858-4818-bc1a-2761448c343e",
+        "plant_id": "45",
+        "taken_on": "2026-11-05",
+        "created_at": "2026-11-06T05:16:46.04345+00:00",
+        "caption": "",
+        "analysis_status": "pending",
+        "analysis_summary": "",
+        "analysis_findings": [],
+        "analyzed_at": null,
+        "snapshot_image": "gaia-reference/photos/45-811786ad1a-latest_photo.webp"
+      },
+      "previous_photo": {
         "id": "73cb3c5f-1559-4a13-a20e-5de25ea5c44b",
         "plant_id": "45",
         "taken_on": "2026-10-18",
@@ -4347,16 +4530,22 @@
           }
         ],
         "analyzed_at": "2026-10-23T17:37:27.74+00:00",
-        "snapshot_image": "gaia-reference/photos/45-811786ad1a-latest_photo.webp"
+        "snapshot_image": "gaia-reference/photos/45-811786ad1a-previous_photo.webp"
       },
-      "previous_photo": null,
       "photos": [
+        {
+          "id": "0bbdb101-b858-4818-bc1a-2761448c343e",
+          "taken_on": "2026-11-05",
+          "created_at": "2026-11-06T05:16:46.04345+00:00",
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/45-811786ad1a-latest_photo.webp"
+        },
         {
           "id": "73cb3c5f-1559-4a13-a20e-5de25ea5c44b",
           "taken_on": "2026-10-18",
           "created_at": "2026-10-21T04:49:47.152333+00:00",
           "analysis_status": "reviewed",
-          "snapshot_image": "gaia-reference/photos/45-811786ad1a-latest_photo.webp"
+          "snapshot_image": "gaia-reference/photos/45-811786ad1a-previous_photo.webp"
         }
       ],
       "pot": null,
@@ -4381,8 +4570,14 @@
       "comparison": {
         "ready": true,
         "latest_image": "gaia-reference/photos/45-811786ad1a-latest_photo.webp",
-        "latest_captured_on": "2026-10-18",
+        "latest_captured_on": "2026-11-05",
         "candidates": [
+          {
+            "source": "journal",
+            "captured_on": "2026-10-18",
+            "image": "gaia-reference/photos/45-811786ad1a-previous_photo.webp",
+            "photo_id": "73cb3c5f-1559-4a13-a20e-5de25ea5c44b"
+          },
           {
             "source": "catalog_reference",
             "captured_on": null,
@@ -4445,6 +4640,18 @@
       "species": "Haworthiopsis sp. · zebra-type; exact species unconfirmed",
       "reference_photo": null,
       "latest_photo": {
+        "id": "0e26ca06-9444-4b80-8650-2ddf61415157",
+        "plant_id": "47",
+        "taken_on": "2026-11-05",
+        "created_at": "2026-11-06T05:19:02.813278+00:00",
+        "caption": "",
+        "analysis_status": "pending",
+        "analysis_summary": "",
+        "analysis_findings": [],
+        "analyzed_at": null,
+        "snapshot_image": "gaia-reference/photos/47-31489056e0-latest_photo.webp"
+      },
+      "previous_photo": {
         "id": "e6fac0a5-1a91-49af-ac0f-717985d8fa6e",
         "plant_id": "47",
         "taken_on": "2026-10-21",
@@ -4454,16 +4661,22 @@
         "analysis_summary": "",
         "analysis_findings": [],
         "analyzed_at": null,
-        "snapshot_image": "gaia-reference/photos/47-31489056e0-latest_photo.webp"
+        "snapshot_image": "gaia-reference/photos/47-31489056e0-previous_photo.webp"
       },
-      "previous_photo": null,
       "photos": [
+        {
+          "id": "0e26ca06-9444-4b80-8650-2ddf61415157",
+          "taken_on": "2026-11-05",
+          "created_at": "2026-11-06T05:19:02.813278+00:00",
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/47-31489056e0-latest_photo.webp"
+        },
         {
           "id": "e6fac0a5-1a91-49af-ac0f-717985d8fa6e",
           "taken_on": "2026-10-21",
           "created_at": "2026-10-23T18:37:50.944254+00:00",
           "analysis_status": "pending",
-          "snapshot_image": "gaia-reference/photos/47-31489056e0-latest_photo.webp"
+          "snapshot_image": "gaia-reference/photos/47-31489056e0-previous_photo.webp"
         }
       ],
       "pot": null,
@@ -4479,10 +4692,17 @@
       ],
       "reference_image": null,
       "comparison": {
-        "ready": false,
+        "ready": true,
         "latest_image": "gaia-reference/photos/47-31489056e0-latest_photo.webp",
-        "latest_captured_on": "2026-10-21",
-        "candidates": []
+        "latest_captured_on": "2026-11-05",
+        "candidates": [
+          {
+            "source": "journal",
+            "captured_on": "2026-10-21",
+            "image": "gaia-reference/photos/47-31489056e0-previous_photo.webp",
+            "photo_id": "e6fac0a5-1a91-49af-ac0f-717985d8fa6e"
+          }
+        ]
       }
     },
     {
@@ -4590,7 +4810,22 @@
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": [],
+      "care_events": [
+        {
+          "plant_id": "50",
+          "action_type": "note",
+          "happened_on": "2026-11-05",
+          "note": "Owner plans to install a moss pole for Sovereign (Monstera deliciosa) this weekend (Nov 7–8, 2026). Planned only; installation has NOT occurred. When setting up: position pole on the aerial-root/back side of the main climbing stem, avoid damaging roots, secure the stem loosely without tying leaf petioles, and check stability and container drainage.",
+          "created_at": "2026-11-06T05:32:29.465545+00:00"
+        },
+        {
+          "plant_id": "50",
+          "action_type": "inspect",
+          "happened_on": "2026-11-05",
+          "note": "Nov 5 chat photo: Sovereign (#50), Monstera deliciosa. Large spreading green foliage with several fenestrated leaves, an upright lighter-green leaf near center-left apparently still expanding or hardening, other healthy-looking mature leaves, and a few small cosmetic tears. No widespread yellowing or collapse visible. Grow light bar on left and light from surrounding room; avoid leaf contact with lamp. Large plant could eventually benefit from climbing support, but no immediate repotting indicated. Black nursery pot nested in white decorative outer pot; drainage and residual water unverified. Previous Oct 23 arrival photo record is private, not directly viewed here, so no precise visual before/after comparison. No watering or repotting confirmed; check substrate moisture and drain runoff. Check leaf undersides and new folds for thrips or mites because no pest clearance established. Current image reviewed in chat, NOT uploaded to GAIA.",
+          "created_at": "2026-11-06T04:41:29.322614+00:00"
+        }
+      ],
       "reference_image": null,
       "comparison": {
         "ready": false,
@@ -4623,18 +4858,45 @@
       "name": "Celebrimbor",
       "species": "Heptapleurum arboricola (syn. Schefflera arboricola)",
       "reference_photo": "52-celebrimbor-dwarf-umbrella-tree-cover.webp",
-      "latest_photo": null,
+      "latest_photo": {
+        "id": "f693d417-911a-495e-a85c-56eab0e7eeb4",
+        "plant_id": "52",
+        "taken_on": "2026-11-05",
+        "created_at": "2026-11-06T05:19:36.349833+00:00",
+        "caption": "",
+        "analysis_status": "pending",
+        "analysis_summary": "",
+        "analysis_findings": [],
+        "analyzed_at": null,
+        "snapshot_image": "gaia-reference/photos/52-41cfc0d1f2-latest_photo.webp"
+      },
       "previous_photo": null,
-      "photos": [],
+      "photos": [
+        {
+          "id": "f693d417-911a-495e-a85c-56eab0e7eeb4",
+          "taken_on": "2026-11-05",
+          "created_at": "2026-11-06T05:19:36.349833+00:00",
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/52-41cfc0d1f2-latest_photo.webp"
+        }
+      ],
       "pot": null,
       "soil_observations": [],
       "care_events": [],
       "reference_image": "52-celebrimbor-dwarf-umbrella-tree-cover.webp",
       "comparison": {
-        "ready": false,
-        "latest_image": null,
-        "latest_captured_on": null,
-        "candidates": []
+        "ready": true,
+        "latest_image": "gaia-reference/photos/52-41cfc0d1f2-latest_photo.webp",
+        "latest_captured_on": "2026-11-05",
+        "candidates": [
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "52-celebrimbor-dwarf-umbrella-tree-cover.webp",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
       }
     },
     {
@@ -4642,9 +4904,28 @@
       "name": "Delilah",
       "species": "Gynura aurantiaca",
       "reference_photo": "53-delilah-purple-passion-cover.webp",
-      "latest_photo": null,
+      "latest_photo": {
+        "id": "59c90a61-646f-4b3a-adc5-00d8da222658",
+        "plant_id": "53",
+        "taken_on": "2026-11-05",
+        "created_at": "2026-11-06T05:21:12.962943+00:00",
+        "caption": "",
+        "analysis_status": "pending",
+        "analysis_summary": "",
+        "analysis_findings": [],
+        "analyzed_at": null,
+        "snapshot_image": "gaia-reference/photos/53-2858dcd105-latest_photo.webp"
+      },
       "previous_photo": null,
-      "photos": [],
+      "photos": [
+        {
+          "id": "59c90a61-646f-4b3a-adc5-00d8da222658",
+          "taken_on": "2026-11-05",
+          "created_at": "2026-11-06T05:21:12.962943+00:00",
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/53-2858dcd105-latest_photo.webp"
+        }
+      ],
       "pot": null,
       "soil_observations": [],
       "care_events": [
@@ -4665,10 +4946,18 @@
       ],
       "reference_image": "53-delilah-purple-passion-cover.webp",
       "comparison": {
-        "ready": false,
-        "latest_image": null,
-        "latest_captured_on": null,
-        "candidates": []
+        "ready": true,
+        "latest_image": "gaia-reference/photos/53-2858dcd105-latest_photo.webp",
+        "latest_captured_on": "2026-11-05",
+        "candidates": [
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "53-delilah-purple-passion-cover.webp",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
       }
     },
     {
@@ -4676,9 +4965,28 @@
       "name": "Sheogorath",
       "species": "Mixed planting: variegated devil’s backbone (Euphorbia tithymaloides, provisional) and an unidentified Tradescantia-type trailer",
       "reference_photo": "54-sheogorath-arrival-20261101.webp",
-      "latest_photo": null,
+      "latest_photo": {
+        "id": "48849755-b6ea-43d3-ad88-0554e7e588b6",
+        "plant_id": "54",
+        "taken_on": "2026-11-05",
+        "created_at": "2026-11-06T05:21:42.006267+00:00",
+        "caption": "",
+        "analysis_status": "pending",
+        "analysis_summary": "",
+        "analysis_findings": [],
+        "analyzed_at": null,
+        "snapshot_image": "gaia-reference/photos/54-2fca346db6-latest_photo.webp"
+      },
       "previous_photo": null,
-      "photos": [],
+      "photos": [
+        {
+          "id": "48849755-b6ea-43d3-ad88-0554e7e588b6",
+          "taken_on": "2026-11-05",
+          "created_at": "2026-11-06T05:21:42.006267+00:00",
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/54-2fca346db6-latest_photo.webp"
+        }
+      ],
       "pot": null,
       "soil_observations": [],
       "care_events": [
@@ -4692,10 +5000,18 @@
       ],
       "reference_image": "54-sheogorath-arrival-20261101.webp",
       "comparison": {
-        "ready": false,
-        "latest_image": null,
-        "latest_captured_on": null,
-        "candidates": []
+        "ready": true,
+        "latest_image": "gaia-reference/photos/54-2fca346db6-latest_photo.webp",
+        "latest_captured_on": "2026-11-05",
+        "candidates": [
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "54-sheogorath-arrival-20261101.webp",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
       }
     },
     {
@@ -4703,9 +5019,28 @@
       "name": "Trinity",
       "species": "Tradescantia zebrina ‘Zebrina Purple’ (nursery label)",
       "reference_photo": "55-trinity-arrival-20261101.webp",
-      "latest_photo": null,
+      "latest_photo": {
+        "id": "6a5a6bd8-8394-41a2-a17a-115ae5272c45",
+        "plant_id": "55",
+        "taken_on": "2026-11-05",
+        "created_at": "2026-11-06T05:24:54.137061+00:00",
+        "caption": "",
+        "analysis_status": "pending",
+        "analysis_summary": "",
+        "analysis_findings": [],
+        "analyzed_at": null,
+        "snapshot_image": "gaia-reference/photos/55-02d20bbd7e-latest_photo.webp"
+      },
       "previous_photo": null,
-      "photos": [],
+      "photos": [
+        {
+          "id": "6a5a6bd8-8394-41a2-a17a-115ae5272c45",
+          "taken_on": "2026-11-05",
+          "created_at": "2026-11-06T05:24:54.137061+00:00",
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/55-02d20bbd7e-latest_photo.webp"
+        }
+      ],
       "pot": null,
       "soil_observations": [],
       "care_events": [
@@ -4719,10 +5054,18 @@
       ],
       "reference_image": "55-trinity-arrival-20261101.webp",
       "comparison": {
-        "ready": false,
-        "latest_image": null,
-        "latest_captured_on": null,
-        "candidates": []
+        "ready": true,
+        "latest_image": "gaia-reference/photos/55-02d20bbd7e-latest_photo.webp",
+        "latest_captured_on": "2026-11-05",
+        "candidates": [
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "55-trinity-arrival-20261101.webp",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
       }
     },
     {
@@ -4747,11 +5090,30 @@
     {
       "plant_id": "57",
       "name": "Xemnas",
-      "species": "Scindapsus pictus (possibly ‘Exotica’; cultivar unverified)",
+      "species": "Variegated Tradescantia-type (green, cream and yellow striped; cultivar unverified)",
       "reference_photo": "57-xemnas-arrival-20261101.webp",
-      "latest_photo": null,
+      "latest_photo": {
+        "id": "cf54bade-8679-4a70-a0b2-afed23510471",
+        "plant_id": "57",
+        "taken_on": "2026-11-05",
+        "created_at": "2026-11-06T05:25:31.982892+00:00",
+        "caption": "",
+        "analysis_status": "pending",
+        "analysis_summary": "",
+        "analysis_findings": [],
+        "analyzed_at": null,
+        "snapshot_image": "gaia-reference/photos/57-c837649cce-latest_photo.webp"
+      },
       "previous_photo": null,
-      "photos": [],
+      "photos": [
+        {
+          "id": "cf54bade-8679-4a70-a0b2-afed23510471",
+          "taken_on": "2026-11-05",
+          "created_at": "2026-11-06T05:25:31.982892+00:00",
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/57-c837649cce-latest_photo.webp"
+        }
+      ],
       "pot": null,
       "soil_observations": [],
       "care_events": [
@@ -4765,10 +5127,18 @@
       ],
       "reference_image": "57-xemnas-arrival-20261101.webp",
       "comparison": {
-        "ready": false,
-        "latest_image": null,
-        "latest_captured_on": null,
-        "candidates": []
+        "ready": true,
+        "latest_image": "gaia-reference/photos/57-c837649cce-latest_photo.webp",
+        "latest_captured_on": "2026-11-05",
+        "candidates": [
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "57-xemnas-arrival-20261101.webp",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
       }
     },
     {
@@ -4776,18 +5146,45 @@
       "name": "Bellatrix",
       "species": "Tradescantia zebrina (burgundy form; cultivar unverified)",
       "reference_photo": "58-bellatrix-arrival-20261101.webp",
-      "latest_photo": null,
+      "latest_photo": {
+        "id": "e82605f8-95c5-4088-aab6-415bf1851755",
+        "plant_id": "58",
+        "taken_on": "2026-11-05",
+        "created_at": "2026-11-06T05:26:03.649512+00:00",
+        "caption": "",
+        "analysis_status": "pending",
+        "analysis_summary": "",
+        "analysis_findings": [],
+        "analyzed_at": null,
+        "snapshot_image": "gaia-reference/photos/58-6208ef0f77-latest_photo.webp"
+      },
       "previous_photo": null,
-      "photos": [],
+      "photos": [
+        {
+          "id": "e82605f8-95c5-4088-aab6-415bf1851755",
+          "taken_on": "2026-11-05",
+          "created_at": "2026-11-06T05:26:03.649512+00:00",
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/58-6208ef0f77-latest_photo.webp"
+        }
+      ],
       "pot": null,
       "soil_observations": [],
       "care_events": [],
       "reference_image": "58-bellatrix-arrival-20261101.webp",
       "comparison": {
-        "ready": false,
-        "latest_image": null,
-        "latest_captured_on": null,
-        "candidates": []
+        "ready": true,
+        "latest_image": "gaia-reference/photos/58-6208ef0f77-latest_photo.webp",
+        "latest_captured_on": "2026-11-05",
+        "candidates": [
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "58-bellatrix-arrival-20261101.webp",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
       }
     },
     {
@@ -4795,18 +5192,45 @@
       "name": "Fleur",
       "species": "Variegated Tradescantia (possibly ‘Pistachio White’; cultivar unverified)",
       "reference_photo": "59-fleur-arrival-20261101.webp",
-      "latest_photo": null,
+      "latest_photo": {
+        "id": "2af2d017-6bb5-4834-8eed-f63b6098c15e",
+        "plant_id": "59",
+        "taken_on": "2026-11-05",
+        "created_at": "2026-11-06T05:27:46.780429+00:00",
+        "caption": "",
+        "analysis_status": "pending",
+        "analysis_summary": "",
+        "analysis_findings": [],
+        "analyzed_at": null,
+        "snapshot_image": "gaia-reference/photos/59-3e1e967e9b-latest_photo.webp"
+      },
       "previous_photo": null,
-      "photos": [],
+      "photos": [
+        {
+          "id": "2af2d017-6bb5-4834-8eed-f63b6098c15e",
+          "taken_on": "2026-11-05",
+          "created_at": "2026-11-06T05:27:46.780429+00:00",
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/59-3e1e967e9b-latest_photo.webp"
+        }
+      ],
       "pot": null,
       "soil_observations": [],
       "care_events": [],
       "reference_image": "59-fleur-arrival-20261101.webp",
       "comparison": {
-        "ready": false,
-        "latest_image": null,
-        "latest_captured_on": null,
-        "candidates": []
+        "ready": true,
+        "latest_image": "gaia-reference/photos/59-3e1e967e9b-latest_photo.webp",
+        "latest_captured_on": "2026-11-05",
+        "candidates": [
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "59-fleur-arrival-20261101.webp",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
       }
     },
     {
@@ -4833,18 +5257,45 @@
       "name": "Varric",
       "species": "Epipremnum aureum (golden pothos)",
       "reference_photo": "61-varric-arrival-20261101.webp",
-      "latest_photo": null,
+      "latest_photo": {
+        "id": "86792ded-5cae-47c9-a179-218b6a7e6a19",
+        "plant_id": "61",
+        "taken_on": "2026-11-05",
+        "created_at": "2026-11-06T05:28:26.591744+00:00",
+        "caption": "",
+        "analysis_status": "pending",
+        "analysis_summary": "",
+        "analysis_findings": [],
+        "analyzed_at": null,
+        "snapshot_image": "gaia-reference/photos/61-d029fa3a95-latest_photo.webp"
+      },
       "previous_photo": null,
-      "photos": [],
+      "photos": [
+        {
+          "id": "86792ded-5cae-47c9-a179-218b6a7e6a19",
+          "taken_on": "2026-11-05",
+          "created_at": "2026-11-06T05:28:26.591744+00:00",
+          "analysis_status": "pending",
+          "snapshot_image": "gaia-reference/photos/61-d029fa3a95-latest_photo.webp"
+        }
+      ],
       "pot": null,
       "soil_observations": [],
       "care_events": [],
       "reference_image": "61-varric-arrival-20261101.webp",
       "comparison": {
-        "ready": false,
-        "latest_image": null,
-        "latest_captured_on": null,
-        "candidates": []
+        "ready": true,
+        "latest_image": "gaia-reference/photos/61-d029fa3a95-latest_photo.webp",
+        "latest_captured_on": "2026-11-05",
+        "candidates": [
+          {
+            "source": "catalog_reference",
+            "captured_on": null,
+            "image": "61-varric-arrival-20261101.webp",
+            "photo_id": null,
+            "capture_date_known": false
+          }
+        ]
       }
     },
     {
@@ -4896,7 +5347,7 @@
     {
       "plant_id": "64",
       "name": "Meridia",
-      "species": "Variegated Tradescantia (possibly ‘Yellow Hill’; cultivar unverified)",
+      "species": "Scindapsus pictus-type (silver satin pothos; cultivar unverified)",
       "reference_photo": "64-meridia-arrival-20261101.webp",
       "latest_photo": null,
       "previous_photo": null,
