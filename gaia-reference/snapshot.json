@@ -2,8 +2,8 @@
   "schema_version": 1,
   "read_only": true,
   "source": "GAIA owner-approved reference snapshot",
-  "generated_at": "2026-11-06T05:39:12.579Z",
-  "synced_at": "2026-11-06T05:40:33.495537+00:00",
+  "generated_at": "2026-11-06T06:10:09.859Z",
+  "synced_at": "2026-11-06T06:10:09.892275+00:00",
   "plant_count": 66,
   "comparison_ready_count": 52,
   "comparison_candidate_count": 90,
@@ -75,6 +75,13 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [
+        {
+          "plant_id": "01",
+          "action_type": "inspect",
+          "happened_on": "2026-11-05",
+          "note": "Nov 5 chat photo review: Mushu (#01), Codiaeum variegatum Red Banana croton. Directly compared with Oct 12 original GAIA public photo and Oct 18 written review (private photo pixels not inspected). Upright plant with strong dark red/crimson-striped leaves and tall green upper growth already seen in earlier photo. Some narrow developing leaves, isolated older curled or down-pointing leaves and small brown marks; no obvious widespread yellowing, major leaf loss or collapse. Oct 18 review noted curling; current amount cannot be reliably compared across photos. Monitor new leaf pigmentation as it matures, leaf curl, and mites under leaves. Last recorded watering Oct 25; check substrate before watering, drain runoff. No repotting or treatment confirmed. The separate pot held behind Mushu was not assessed as part of this inspection. Chat photo assessed but NOT uploaded to GAIA.",
+          "created_at": "2026-11-06T05:51:23.185744+00:00"
+        },
         {
           "plant_id": "01",
           "action_type": "water",
@@ -548,7 +555,15 @@
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": [],
+      "care_events": [
+        {
+          "plant_id": "05",
+          "action_type": "inspect",
+          "happened_on": "2026-11-05",
+          "note": "Nov 5 chat photo review: Treebeard (#05), likely Chamaedorea elegans parlor palm. Compared with original Oct 11 public GAIA photo and Oct 14 written review (private photo pixels not accessed). Current plant remains full, with many upright and arching green fronds. Several lower leaflets look yellowish/pale, as lighter lower foliage was already noted Oct 14; this alone does not prove a new decline. Tall center shoots may be developing fronds but exact new growth not verified due to angles. No clear widespread collapse or obvious pests visible at photo scale. Placed directly by window; watch for cold drafts and leaves touching cold glass in winter. Check upper inch of substrate before watering and drain; root moisture and pot drainage unverified. Retain green fronds; monitor progressive yellowing and inspect for spider mites if stippling appears. Current chat photo assessed, NOT uploaded to GAIA.",
+          "created_at": "2026-11-06T05:48:58.392548+00:00"
+        }
+      ],
       "reference_image": "05-treebeard-parlor-palm.jpg",
       "comparison": {
         "ready": true,
@@ -1184,6 +1199,13 @@
       },
       "soil_observations": [],
       "care_events": [
+        {
+          "plant_id": "11",
+          "action_type": "inspect",
+          "happened_on": "2026-11-05",
+          "note": "Nov 5 chat review: Karlach (#11), Anthurium. Compared with GAIA cover and Oct 20/28 review notes. Upright green leaves and stems; older reddish spathes now brown, curled and spent, with multiple spadices visible. Flower aging appears expected. Several leaves show pale mottled patches, also reported Oct 20; cause unverified, with past mite history and Nov 4 owner report of no active mites. Monitor undersides and clean new leaf growth rather than diagnosing from photo. Oct 26 repot with draining clear nursery pot recorded and owner-confirmed Oct 28. Root moisture not verified; water by top layer dryness, drain fully. Photo reviewed in chat only, NOT uploaded to GAIA.",
+          "created_at": "2026-11-06T05:53:21.191938+00:00"
+        },
         {
           "plant_id": "11",
           "action_type": "inspect",
@@ -2733,6 +2755,13 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [
+        {
+          "plant_id": "27",
+          "action_type": "inspect",
+          "happened_on": "2026-11-05",
+          "note": "Nov 5 photo review CORRECTED after owner examined plant in person: Yennefer (#27), Alternanthera, has healthy, soft and flexible leaves. What appeared in the backlit photograph as extensive brown crispy damage was a lighting artifact, not actual dry or crispy foliage. Owner explicitly reports she is very healthy. Upright red stems and richly colored foliage; curled leaf shapes had been observed before but no current damage confirmed. Do not diagnose moisture, cold or pest damage based on this misleading photo; no intervention necessary based on current evidence. Last recorded watering Oct 25. Chat photo reviewed, NOT uploaded to GAIA.",
+          "created_at": "2026-11-06T05:55:06.543967+00:00"
+        },
         {
           "plant_id": "27",
           "action_type": "water",
@@ -4620,6 +4649,13 @@
       "care_events": [
         {
           "plant_id": "46",
+          "action_type": "inspect",
+          "happened_on": "2026-11-05",
+          "note": "Nov 5 chat photo review: Tali (#46), Tradescantia Nanouk, originally brought by Amber Oct 21. Compared Nov 5 image with actual Oct 21 public GAIA cover. Full foliage with cream green and pink striped pointed leaves, firm-looking shoots and several small developing tip clusters. More spread in current view but different angles prevent confident growth count. Minor isolated leaf blemishes, no obvious widespread browning, collapse or visible pest infestation. Current pot appears translucent plastic with dark nursery substrate and perlite, sitting on white saucer; drainage and root status not independently established. Last recorded watering Oct 25. Continue bright indirect light; water after upper portion dries and drain runoff; avoid wet leaves/axils. No repotting or pruning documented. New chat photo reviewed only, NOT uploaded to GAIA.",
+          "created_at": "2026-11-06T05:43:52.419583+00:00"
+        },
+        {
+          "plant_id": "46",
           "action_type": "water",
           "happened_on": "2026-10-25",
           "note": "Weekend care reported Oct 26, 2026 for Oct 24–25; exact day unspecified, filed under Oct 25. Tali watered, confirmed by owner.",
@@ -4734,7 +4770,15 @@
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": [],
+      "care_events": [
+        {
+          "plant_id": "48",
+          "action_type": "inspect",
+          "happened_on": "2026-11-05",
+          "note": "Nov 5 photo review: Cole, variegated spider plant, in white ghost pot. Compared with Oct 21 public GAIA arrival photo. Compact striped foliage remains upright with bright central leaves, older leaves arching outward and a minor brown leaf tip on right. No obvious widespread deterioration or pests; exact new growth unconfirmed due to angle differences. Inner nursery pot visible, but moisture and drainage not verified. Keep bright indirect light, water as top inch or two begins drying, drain any runoff from outer pot. No repotting or watering confirmed. Current photo reviewed in chat, not uploaded to GAIA.",
+          "created_at": "2026-11-06T05:46:32.468539+00:00"
+        }
+      ],
       "reference_image": null,
       "comparison": {
         "ready": false,
