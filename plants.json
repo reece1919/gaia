@@ -9951,6 +9951,168 @@
         "Yucca trio",
         "Grog, Duhg and Gahg"
       ]
+    },
+    {
+      "id": "67",
+      "name": "Robert California",
+      "species": "Ocimum basilicum (sweet basil; cultivar unverified)",
+      "searchName": "robert california basil herb sweet basil the office hydroponic transplant",
+      "searchSpecies": "ocimum basilicum sweet basil",
+      "status": "Good",
+      "photo": "",
+      "photoAlt": "Robert California · young basil plant · Nov 5, 2026 chat photo (not uploaded)",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-05",
+      "tags": [
+        {
+          "style": "",
+          "label": "EDIBLE HERB"
+        },
+        {
+          "style": "",
+          "label": "HYDROPONIC TRANSPLANT"
+        },
+        {
+          "style": "",
+          "label": "BRIGHT LIGHT"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Acclimate gently after transfer from hydroponics to a draining perlite-containing potting mix. During the first 1–2 weeks, check moisture frequently and avoid completely drying the root zone; keep evenly lightly moist, not soggy. Allow runoff to drain and monitor leaf turgor and new growth.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "Nov 5, 2026 chat photo: a compact young green basil with broad, glossy leaves and small developing central leaves. Some large leaves arch downward slightly; no widespread yellowing, major tissue necrosis or obvious pests visible. The owner confirms it was recently transplanted from a hydroponic starter into potting mix. Droop could be adjustment to soil, but no cause is established without measuring moisture, roots and growth trends. Plant photo reviewed in chat only; not uploaded to GAIA.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Transition from hydroponics: for the first 1–2 weeks, keep the mix gently and evenly moist, not saturated; don't allow it to become bone dry while water-adapted roots establish in soil. Check frequently, water thoroughly as needed, let excess drain and empty saucer. After active healthy growth resumes, allow the top ~½–1 inch to begin drying before rewatering.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Bright light, ideally a strong grow light roughly 12–14 hours daily or several hours of direct sun after gradual acclimation. Avoid immediately putting a newly transplanted plant under intense close light if wilting; ramp up as it settles.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "TEMPERATURE",
+          "bodyHtml": "Keep warm, ideally around 65–80°F. Protect from cold window glass and drafts; basil dislikes temperatures below about 55°F.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Do not rush fertilizer immediately after transfer. Once established and actively growing, feed lightly with balanced fertilizer according to label instructions for edible plants. Avoid overfeeding or salt buildup.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Nov 5 photo taken indoors on kitchen counter in clear plastic container set on white saucer, near tiled backsplash; exact grow-light placement not confirmed.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Owner confirms a recent move from a hydroponic growing system into a clear plastic pot with visible perlite-containing soil mix. Exact transplant date, drainage-hole presence, pot size and root condition were not confirmed. Avoid another repot during early adjustment unless the current setup cannot drain.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Current mix visibly contains perlite with potting substrate and some bark-like pieces. Exact proportions unconfirmed; basil benefits from moisture-retentive but freely draining soil.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Track leaf firmness morning/evening, whether the central leaves expand, and any yellowing, wilting despite moist soil, or stems softening. Hydrophonic-to-soil transition may temporarily affect water uptake; examine moisture and drainage rather than guessing from droop.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "HARVEST & SHAPING",
+          "bodyHtml": "After healthy active growth resumes and the plant has several strong true-leaf pairs, pinch a growing tip just above a leaf node to encourage bushier side shoots. Leave enough foliage for photosynthesis. Harvest gradually and remove flower buds if prioritizing leaves.",
+          "pClass": "",
+          "style": ""
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Nov 5, 2026",
+            "style": ""
+          },
+          {
+            "label": "Added to collection",
+            "valueHtml": "By Nov 5, 2026; precise acquisition date not recorded",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Robert California · The Office",
+            "style": ""
+          },
+          {
+            "label": "Botanical identity",
+            "valueHtml": "Basil (Ocimum basilicum), cultivar unverified",
+            "style": ""
+          },
+          {
+            "label": "Propagation method",
+            "valueHtml": "Started in hydroponic setup; owner-confirmed",
+            "style": ""
+          },
+          {
+            "label": "Transplant",
+            "valueHtml": "Recently moved from hydroponics to soil; exact date unrecorded",
+            "style": ""
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Clear plastic container on white saucer; drainage holes unverified",
+            "style": ""
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Pest status",
+            "valueHtml": "No infestation confirmed from photo; not inspected directly",
+            "style": ""
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 5, 2026 · </strong>Owner identifies the new basil and suggests the name <strong>Robert California</strong>, inspired by The Office. Plant had recently been transplanted from a hydroponic setup into a clear container with perlite-containing mix. The photo shows glossy green leaves and a small central growing cluster with slight droop of older leaves. New soil roots and drainage were not checked. Chat photo reviewed, not uploaded."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "tropical",
+        "light": "very-bright",
+        "water": "half-one",
+        "waterLabel": "Keep lightly moist during transition",
+        "soil": "well-drained"
+      },
+      "commonNames": [
+        "Sweet basil",
+        "Basil",
+        "Culinary basil"
+      ]
     }
   ],
   "dashboardTasks": [
