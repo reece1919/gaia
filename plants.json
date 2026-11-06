@@ -4076,13 +4076,13 @@
       "sections": [
         {
           "label": "NEXT ACTION",
-          "bodyHtml": "Refresh the water and rinse the vessel/roots now. Keep only the roots and lower cane base submerged.",
+          "bodyHtml": "Keep Stanley in clean water, refreshing it on the normal schedule. Owner confirmed the vessel has a frosted lower section, so do not interpret its cloudy-looking appearance as dirty water. Check the roots and water directly only if there are other signs of trouble.",
           "pClass": "",
           "style": "full next-action"
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "Foliage is green and upright; the water reservoir looks cloudy and is due for cleaning.",
+          "bodyHtml": "Nov 5 photo review: foliage is green and upright with minor older curled or worn tips. The glass tube is intentionally frosted at the bottom, explaining the opaque appearance. Water clarity and root condition have not been visually verified; no evidence of a current water-quality problem from this photograph.",
           "pClass": "",
           "style": "full"
         },
@@ -4124,7 +4124,7 @@
         },
         {
           "label": "WATCH",
-          "bodyHtml": "Watch for yellow tips, soft/yellow cane tissue, algae, or recurring cloudy water.",
+          "bodyHtml": "Watch actual leaf yellowing, soft cane tissue, odors, algae, and unhealthy roots. The frosted base of the vessel should not be mistaken for cloudy or contaminated water.",
           "pClass": "",
           "style": "full"
         }
@@ -4133,12 +4133,12 @@
         "facts": [
           {
             "label": "Last updated",
-            "valueHtml": "Oct 11, 2026",
+            "valueHtml": "Nov 5, 2026",
             "style": ""
           },
           {
             "label": "Last photo review",
-            "valueHtml": "Oct 5, 2026",
+            "valueHtml": "Nov 5, 2026 · photo reviewed in chat; not uploaded",
             "style": ""
           },
           {
@@ -4148,7 +4148,7 @@
           },
           {
             "label": "Pot / container",
-            "valueHtml": "Water-grown display vessel",
+            "valueHtml": "Water-grown in clear tube with frosted glass bottom",
             "style": ""
           },
           {
@@ -4161,6 +4161,10 @@
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Oct 10, 2026 · </strong>Existing collection bathed, as reported Oct 11. This records foliage cleaning; soil watering and any spray product were not confirmed."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 5, 2026 · Correction:</strong> Owner confirms the bottom of Stanley's glass vessel is frosted. Prior photo reviews incorrectly interpreted the glass finish as cloudy water. Water quality and last refresh date remain unverified. No cleaning action is documented."
           }
         ]
       },
