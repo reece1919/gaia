@@ -2,8 +2,8 @@
   "schema_version": 1,
   "read_only": true,
   "source": "GAIA owner-approved reference snapshot",
-  "generated_at": "2026-11-06T04:32:30.424Z",
-  "synced_at": "2026-11-06T04:32:30.464369+00:00",
+  "generated_at": "2026-11-06T04:37:03.227Z",
+  "synced_at": "2026-11-06T04:37:03.454276+00:00",
   "plant_count": 66,
   "comparison_ready_count": 42,
   "comparison_candidate_count": 60,
@@ -3070,7 +3070,7 @@
           "plant_id": "30",
           "action_type": "inspect",
           "happened_on": "2026-11-05",
-          "note": "Nov 5 review: Aloy, Syngonium, has considerably fuller pale-green foliage than original photo and multiple emerging leaves. Owner confirms she was propagated by a friend and reports extremely vigorous growth. Owner doubts previous Oct 10 record of roots emerging from the pot; that root claim is disputed and unverified, not a reason to repot. Check pot/root condition only if actual signs warrant. Last recorded watering Oct 25; moisture not currently measured. Healthy appearance overall, no definite pests. Chat photo not uploaded to GAIA.",
+          "note": "Nov 5 review: Aloy, Syngonium, has considerably fuller pale-green foliage than original photo and multiple emerging leaves. Owner confirms she was propagated by Courtney and reports extremely vigorous growth. Owner doubts previous Oct 10 record of roots emerging from the pot; that root claim is disputed and unverified, not a reason to repot. Check pot/root condition only if actual signs warrant. Last recorded watering Oct 25; moisture not currently measured. Healthy appearance overall, no definite pests. Chat photo not uploaded to GAIA.",
           "created_at": "2026-11-06T02:41:01.863937+00:00"
         },
         {
@@ -4754,7 +4754,15 @@
       "photos": [],
       "pot": null,
       "soil_observations": [],
-      "care_events": [],
+      "care_events": [
+        {
+          "plant_id": "57",
+          "action_type": "inspect",
+          "happened_on": "2026-11-05",
+          "note": "Nov 5 chat photo review: Xemnas (#57), variegated Tradescantia-type (species/cultivar unverified), matched to original Nov 1 GAIA arrival image. Photo shows full trailing foliage with green, cream and yellow longitudinal stripes and several compact shoot tips. Minor isolated brown/tan patches or pale leaves, but no widespread decline, collapse or definite pests. Some mostly yellow leaves are consistent with variegation, not proof of chlorosis. No exact four-day growth quantifiable. CORRECTION: GAIA had misidentified Xemnas as silver Scindapsus and Meridia as striped Tradescantia; their photo-based care identities updated in public catalog. Current soil moisture, roots, drainage and watering date unverified. Bright indirect light, check upper inch before watering, drain well, monitor damage or reversion. Chat image reviewed; NOT uploaded to GAIA.",
+          "created_at": "2026-11-06T04:36:59.25439+00:00"
+        }
+      ],
       "reference_image": "57-xemnas-arrival-20261101.webp",
       "comparison": {
         "ready": false,
