@@ -4206,7 +4206,7 @@
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "Nov 5: noticeably fuller pale-variegated leaves and several emerging shoots compared with the earlier photo. Owner reports vigorous growth from a cutting received from a friend; no root crowding confirmed.",
+          "bodyHtml": "Nov 5: noticeably fuller pale-variegated leaves and several emerging shoots compared with the earlier photo. Owner reports vigorous growth from a cutting received from Courtney; no root crowding confirmed.",
           "pClass": "",
           "style": "full"
         },
@@ -4236,7 +4236,7 @@
         },
         {
           "label": "REPOT",
-          "bodyHtml": "Nov 5 owner correction: the old report of roots coming through the pot is disputed and unverified. Aloy originated as a cutting from a friend and is growing very vigorously. Do not repot based only on the previous root report.",
+          "bodyHtml": "Nov 5 owner correction: the old report of roots coming through the pot is disputed and unverified. Aloy originated as a cutting from Courtney and is growing very vigorously. Do not repot based only on the previous root report.",
           "pClass": "",
           "style": ""
         },
@@ -4288,7 +4288,7 @@
           },
           {
             "style": "care-entry",
-            "bodyHtml": "<strong>Nov 5, 2026 · Correction:</strong> Owner doubts the earlier report of roots emerging from the pot, which is unverified. Aloy was propagated by a friend and is now growing very vigorously. Rootbound status is not established."
+            "bodyHtml": "<strong>Nov 5, 2026 · Correction:</strong> Owner doubts the earlier report of roots emerging from the pot, which is unverified. Aloy was propagated by Courtney and is now growing very vigorously. Rootbound status is not established."
           }
         ]
       },
@@ -8202,9 +8202,9 @@
     {
       "id": "57",
       "name": "Xemnas",
-      "species": "Scindapsus pictus (possibly ‘Exotica’; cultivar unverified)",
-      "searchName": "xemnas satin pothos scindapsus possible exotica",
-      "searchSpecies": "scindapsus pictus (possibly ‘exotica’; cultivar unverified)",
+      "species": "Variegated Tradescantia-type (green, cream and yellow striped; cultivar unverified)",
+      "searchName": "xemnas variegated tradescantia green cream yellow striped",
+      "searchSpecies": "variegated tradescantia type cultivar unverified",
       "status": "Good",
       "photo": "57-xemnas-arrival-20261101.webp",
       "photoAlt": "Xemnas · arrival photo · Nov 1, 2026",
@@ -8214,35 +8214,35 @@
       "tags": [
         {
           "style": "",
-          "label": "AROID"
+          "label": "VARIEGATED"
         },
         {
           "style": "",
-          "label": "SATIN FOLIAGE"
+          "label": "ID TO VERIFY"
         }
       ],
       "sections": [
         {
           "label": "NEXT ACTION",
-          "bodyHtml": "Check for drainage and pest signs, then settle in bright indirect light. Confirm cultivar as foliage matures.",
+          "bodyHtml": "Continue bright indirect light. Monitor variegated tip growth and isolated brown leaves; inspect underside of foliage for pests if damage develops. No urgent intervention.",
           "pClass": "",
           "style": "full next-action"
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "Scindapsus with broad, matte heart-shaped leaves showing extensive silver-gray overlay and green veining. Several leaves extend beyond the pot, with small localized blemishes but no obvious extensive dieback. Exact cultivar remains unverified.",
+          "bodyHtml": "Nov 5 photo compared directly with Nov 1 arrival cover: full trailing plant with green, creamy white and yellow longitudinally striped leaves, many compact growing tips and several long leafy runners. A few pale and tan/brown marks are visible, but no obvious widespread wilt or collapse. Original catalog incorrectly described Xemnas as a silver-leaved Scindapsus; photographic identity is a variegated Tradescantia-type. Specific species/cultivar unverified.",
           "pClass": "",
           "style": "full"
         },
         {
           "label": "WATER",
-          "bodyHtml": "Let roughly the upper 1–2 inches of the mix dry before watering; allow excess to drain.",
+          "bodyHtml": "Check the top inch of substrate before watering; water thoroughly when it begins to dry and let excess drain. Avoid persistent wetness.",
           "pClass": "",
           "style": ""
         },
         {
           "label": "LIGHT",
-          "bodyHtml": "Bright indirect light preserves silver markings without scorching the leaves.",
+          "bodyHtml": "Bright indirect light supports strong variegation and compact foliage. Avoid abrupt scorching direct sun, particularly on cream and yellow leaves.",
           "pClass": "",
           "style": ""
         },
@@ -8266,19 +8266,19 @@
         },
         {
           "label": "SOIL",
-          "bodyHtml": "Use an airy aroid mix with potting mix, bark and perlite, rather than an excessively coarse or waterlogged medium.",
+          "bodyHtml": "Loose, well-draining potting mix with moderate perlite/bark; avoid a saturated root zone.",
           "pClass": "",
           "style": ""
         },
         {
           "label": "WATCH",
-          "bodyHtml": "Curled leaves, dry tips or yellowing can indicate water imbalance. Inspect nodes and leaf backs for pests.",
+          "bodyHtml": "Track new striped foliage, brown edges on pale leaves, stretched internodes, and any loss of variegation. Check leaf backs for pests if marks spread.",
           "pClass": "",
           "style": "full"
         },
         {
           "label": "PROPAGATION",
-          "bodyHtml": "Root stem sections with a node in a moist, airy medium or water; provide support for larger climbing leaves.",
+          "bodyHtml": "Take short healthy node-bearing stem cuttings in water or a lightly moist medium; rooted cuttings can be replanted to increase density.",
           "pClass": "",
           "style": "full"
         },
@@ -8293,7 +8293,7 @@
         "facts": [
           {
             "label": "Last updated",
-            "valueHtml": "Nov 1, 2026",
+            "valueHtml": "Nov 5, 2026",
             "style": ""
           },
           {
@@ -8303,7 +8303,7 @@
           },
           {
             "label": "Last photo review",
-            "valueHtml": "Nov 1, 2026 · arrival cover saved; formal GAIA photo review not recorded",
+            "valueHtml": "Nov 5, 2026 · chat photo reviewed; photo not uploaded",
             "style": ""
           },
           {
@@ -8354,21 +8354,19 @@
           },
           {
             "style": "care-entry",
-            "bodyHtml": "<strong>Nov 1, 2026 · </strong>Arrival photo matched and added to the GAIA catalog. Scindapsus with broad, matte heart-shaped leaves showing extensive silver-gray overlay and green veining. Several leaves extend beyond the pot, with small localized blemishes but no obvious extensive dieback. Exact cultivar remains unverified."
+            "bodyHtml": "<strong>Nov 5, 2026 · Correction and photo review:</strong> Original Nov 1 cover and Nov 5 photo both show a green, yellow and cream-striped trailing Tradescantia-type, not the Scindapsus previously listed for Xemnas. Cultivar unconfirmed; foliage full with minor isolated blemishes. Photo reviewed in chat but not uploaded."
           }
         ]
       },
       "cardCare": {
-        "type": "aroid",
+        "type": "tradescantia",
         "light": "bright-indirect",
-        "water": "one-two",
-        "waterLabel": "1–2″ dry",
-        "soil": "chunky"
+        "water": "one",
+        "waterLabel": "Top 1″ dry",
+        "soil": "well-drained"
       },
       "commonNames": [
-        "Satin pothos",
-        "Scindapsus",
-        "Possible Exotica"
+        "Variegated Tradescantia"
       ],
       "coverPhoto": "57-xemnas-arrival-20261101.webp"
     },
@@ -9428,9 +9426,9 @@
     {
       "id": "64",
       "name": "Meridia",
-      "species": "Variegated Tradescantia (possibly ‘Yellow Hill’; cultivar unverified)",
-      "searchName": "meridia variegated tradescantia possible yellow hill",
-      "searchSpecies": "variegated tradescantia (possibly ‘yellow hill’; cultivar unverified)",
+      "species": "Scindapsus pictus-type (silver satin pothos; cultivar unverified)",
+      "searchName": "meridia silver scindapsus pictus satin pothos",
+      "searchSpecies": "scindapsus pictus type cultivar unverified",
       "status": "Good",
       "photo": "64-meridia-arrival-20261101.webp",
       "photoAlt": "Meridia · arrival photo · Nov 1, 2026",
@@ -9440,35 +9438,35 @@
       "tags": [
         {
           "style": "",
-          "label": "VARIEGATED"
+          "label": "AROID"
         },
         {
           "style": "",
-          "label": "ID TO VERIFY"
+          "label": "SATIN FOLIAGE"
         }
       ],
       "sections": [
         {
           "label": "NEXT ACTION",
-          "bodyHtml": "Start in bright indirect light; monitor pale leaves and confirm the cultivar as new growth develops.",
+          "bodyHtml": "Confirm plant identity from current live foliage when next reviewed; original Nov 1 arrival cover clearly shows silver patterned Scindapsus rather than striped Tradescantia. Maintain bright indirect light and monitor moisture.",
           "pClass": "",
           "style": "full next-action"
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "Trailing Tradescantia with many narrow green leaves striped yellow to cream, including pale new growth. Several leaves have small browned edges or blemishes. The precise cultivar is still provisional; no roots or pest assessment was made.",
+          "bodyHtml": "Original GAIA arrival cover shows broad, heart-shaped green leaves with extensive silver-gray variegation matching a Scindapsus pictus-type, not the yellow-striped Tradescantia originally listed. No current November 5 live photo specifically reviewed for Meridia; condition remains based on Nov 1 arrival image. Exact cultivar unconfirmed.",
           "pClass": "",
           "style": "full"
         },
         {
           "label": "WATER",
-          "bodyHtml": "Water once the top inch of mix starts to dry, then drain well.",
+          "bodyHtml": "Allow approximately upper 1–2 inches of potting mix to dry before watering and drain thoroughly.",
           "pClass": "",
           "style": ""
         },
         {
           "label": "LIGHT",
-          "bodyHtml": "Bright indirect light supports variegation; avoid sudden direct midday sun.",
+          "bodyHtml": "Bright indirect light supports silver markings; avoid harsh direct afternoon sun.",
           "pClass": "",
           "style": ""
         },
@@ -9492,19 +9490,19 @@
         },
         {
           "label": "SOIL",
-          "bodyHtml": "Loose, well-drained potting mix with perlite or bark in moderation.",
+          "bodyHtml": "Loose airy aroid mix with some bark and perlite, retaining modest moisture while draining well.",
           "pClass": "",
           "style": ""
         },
         {
           "label": "WATCH",
-          "bodyHtml": "Watch for scorch on pale areas, weak stretched growth and green reversion; exact cultivar is unconfirmed.",
+          "bodyHtml": "Watch for curled leaf tips, expanding brown patches and signs of moisture imbalance; inspect leaf backs and stems for pests.",
           "pClass": "",
           "style": "full"
         },
         {
           "label": "PROPAGATION",
-          "bodyHtml": "Root variegated node cuttings and pinch established stems to encourage density.",
+          "bodyHtml": "Root healthy node-bearing Scindapsus stem cuttings in water or moist airy substrate.",
           "pClass": "",
           "style": "full"
         },
@@ -9519,7 +9517,7 @@
         "facts": [
           {
             "label": "Last updated",
-            "valueHtml": "Nov 1, 2026",
+            "valueHtml": "Nov 5, 2026",
             "style": ""
           },
           {
@@ -9580,20 +9578,20 @@
           },
           {
             "style": "care-entry",
-            "bodyHtml": "<strong>Nov 1, 2026 · </strong>Arrival photo matched and added to the GAIA catalog. Trailing Tradescantia with many narrow green leaves striped yellow to cream, including pale new growth. Several leaves have small browned edges or blemishes. The precise cultivar is still provisional; no roots or pest assessment was made."
+            "bodyHtml": "<strong>Nov 5, 2026 · Catalog correction:</strong> Inspection of the original Nov 1 arrival photo shows silver Scindapsus pictus-type foliage rather than striped Tradescantia. Species/cultivar remains provisional. No new Meridia photo reviewed on this date."
           }
         ]
       },
       "cardCare": {
-        "type": "tradescantia",
+        "type": "aroid",
         "light": "bright-indirect",
-        "water": "one",
-        "waterLabel": "Top 1″ dry",
-        "soil": "well-drained"
+        "water": "one-two",
+        "waterLabel": "1–2″ dry",
+        "soil": "chunky"
       },
       "commonNames": [
-        "Variegated Tradescantia",
-        "Possible Yellow Hill"
+        "Satin pothos",
+        "Scindapsus"
       ],
       "coverPhoto": "64-meridia-arrival-20261101.webp"
     },
