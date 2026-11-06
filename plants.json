@@ -4200,13 +4200,13 @@
       "sections": [
         {
           "label": "NEXT ACTION",
-          "bodyHtml": "Monitor the new basal shoot and keep care steady while the plant rebuilds foliage.",
+          "bodyHtml": "Continue steady care and watch Aloy’s vigorous new foliage. No immediate repot indicated by the disputed root observation.",
           "pClass": "",
           "style": "full next-action"
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "Sparse and pale; new growth encouraging.",
+          "bodyHtml": "Nov 5: noticeably fuller pale-variegated leaves and several emerging shoots compared with the earlier photo. Owner reports vigorous growth from a cutting received from a friend; no root crowding confirmed.",
           "pClass": "",
           "style": "full"
         },
@@ -4248,7 +4248,7 @@
         },
         {
           "label": "WATCH",
-          "bodyHtml": "Track the new basal shoot and whether new leaves emerge greener and larger.",
+          "bodyHtml": "Track leaf development and coloration. Root crowding is unverified; assess only if growth or watering behavior suggests a problem.",
           "pClass": "",
           "style": "full"
         }
@@ -4257,12 +4257,12 @@
         "facts": [
           {
             "label": "Last updated",
-            "valueHtml": "Oct 11, 2026",
+            "valueHtml": "Nov 5, 2026",
             "style": ""
           },
           {
             "label": "Last photo review",
-            "valueHtml": "Oct 2, 2026",
+            "valueHtml": "Nov 5, 2026 · photo reviewed in chat; image not uploaded",
             "style": ""
           },
           {
@@ -4288,7 +4288,7 @@
           },
           {
             "style": "care-entry",
-            "bodyHtml": "<strong>Oct 10, 2026 · </strong>Roots reported emerging from the bottom of the pot; degree of crowding not yet assessed."
+            "bodyHtml": "<strong>Nov 5, 2026 · Correction:</strong> Owner doubts the earlier report of roots emerging from the pot, which is unverified. Aloy was propagated by a friend and is now growing very vigorously. Rootbound status is not established."
           }
         ]
       },
