@@ -2,8 +2,8 @@
   "schema_version": 1,
   "read_only": true,
   "source": "GAIA owner-approved reference snapshot",
-  "generated_at": "2026-11-05T23:52:24.465Z",
-  "synced_at": "2026-11-05T23:52:24.507285+00:00",
+  "generated_at": "2026-11-06T04:32:12.934Z",
+  "synced_at": "2026-11-06T04:32:12.953800+00:00",
   "plant_count": 66,
   "comparison_ready_count": 42,
   "comparison_candidate_count": 60,
@@ -2133,7 +2133,15 @@
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": [],
+      "care_events": [
+        {
+          "plant_id": "21",
+          "action_type": "inspect",
+          "happened_on": "2026-11-05",
+          "note": "Nov 5 chat photo review: Violet (#21), Tradescantia pallida-type. Current photo directly compared with original GAIA public catalog photo; Oct 14 and 18 private photo review summaries read (private image pixels not accessed). Plant shows numerous upright and trailing stems with dark green-purple elongated leaves, good upper leaf coverage and natural cascading form. Some older bare stem sections and minor edge/tip wear were previously noted; no clear new widespread thinning, decline, rot, or distinct pests. Darker near-black-green impression may reflect lighting/exposure differences; strong supplemental light may support purple pigmentation but intensity unmeasured. No exact growth rate or new leaf count can be established due to different photo angles. Monitor new stem spacing and leaf color, water when upper 1 to 2 inches of mix dry, drain well. Optional future stem cuttings to create fuller pot or new plant; propagation not performed. Current chat photo NOT uploaded to GAIA.",
+          "created_at": "2026-11-06T01:46:35.479736+00:00"
+        }
+      ],
       "reference_image": "21-violet-purple-heart.jpg",
       "comparison": {
         "ready": true,
@@ -3058,6 +3066,13 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [
+        {
+          "plant_id": "30",
+          "action_type": "inspect",
+          "happened_on": "2026-11-05",
+          "note": "Nov 5 review: Aloy, Syngonium, has considerably fuller pale-green foliage than original photo and multiple emerging leaves. Owner confirms she was propagated by a friend and reports extremely vigorous growth. Owner doubts previous Oct 10 record of roots emerging from the pot; that root claim is disputed and unverified, not a reason to repot. Check pot/root condition only if actual signs warrant. Last recorded watering Oct 25; moisture not currently measured. Healthy appearance overall, no definite pests. Chat photo not uploaded to GAIA.",
+          "created_at": "2026-11-06T02:41:01.863937+00:00"
+        },
         {
           "plant_id": "30",
           "action_type": "water",
@@ -4666,7 +4681,15 @@
       "photos": [],
       "pot": null,
       "soil_observations": [],
-      "care_events": [],
+      "care_events": [
+        {
+          "plant_id": "54",
+          "action_type": "inspect",
+          "happened_on": "2026-11-05",
+          "note": "Nov 5 chat photo review: Sheogorath (#54), mixed nursery planting of an upright yellow-green variegated plant (provisionally Euphorbia tithymaloides) and purple-stemmed trailing Tradescantia-type plant, both identities unconfirmed. Compared directly with public Nov 1 arrival photo. Bright upright tips and predominantly firm-looking foliage; a few tan/brown or fading lower leaves similar to those already visible on arrival. Trailing stems extend outward with mostly intact leaves and isolated pale/marked tissue. No confirmed new decline, pest activity, or measurable new growth over four days. Mixed root-zone watering needs may differ; check substrate moisture/drainage and avoid waterlogging. Do not divide or repot without assessing both plants. If Euphorbia ID confirmed, milky sap is irritating when cut. No intervention, watering, or propagation reported. Photo assessed in chat only; NOT uploaded to GAIA.",
+          "created_at": "2026-11-06T02:36:11.936435+00:00"
+        }
+      ],
       "reference_image": "54-sheogorath-arrival-20261101.webp",
       "comparison": {
         "ready": false,
