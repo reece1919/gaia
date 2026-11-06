@@ -2,8 +2,8 @@
   "schema_version": 1,
   "read_only": true,
   "source": "GAIA owner-approved reference snapshot",
-  "generated_at": "2026-11-06T06:10:09.859Z",
-  "synced_at": "2026-11-06T06:10:09.892275+00:00",
+  "generated_at": "2026-11-06T07:18:04.413Z",
+  "synced_at": "2026-11-06T07:18:04.441257+00:00",
   "plant_count": 66,
   "comparison_ready_count": 52,
   "comparison_candidate_count": 90,
@@ -450,6 +450,13 @@
       "care_events": [
         {
           "plant_id": "04",
+          "action_type": "inspect",
+          "happened_on": "2026-11-05",
+          "note": "Nov 5 photo review: Audrey II (#04), Dionaea muscipula. Compared with Oct 12 public cover and Oct 14/16 written assessments. Current plant has fewer conspicuous mature traps but several small central green shoots and some live traps, including large green trap right; older black/brown trap remains. Oct 25 owner reported dead trap pruning, fresh water and improving appearance; reduced canopy may partly reflect trimming. Pale mossy/fibrous areas and tiny stalks on surface could be sphagnum/moss growth or fungal material; photo alone does not confirm mold. Possible onset of winter dormancy, but past severe dryness Oct 13 and unknown water quality are competing factors; do not call dormancy confirmed. Ensure consistently damp low-mineral substrate with distilled/RO/rainwater; do not use fertilizer, do not manually trigger traps. Measure winter location temperature before changing for dormancy. Latest water source and current moisture unverified. Image reviewed in chat only, not uploaded.",
+          "created_at": "2026-11-06T06:10:42.519682+00:00"
+        },
+        {
+          "plant_id": "04",
           "action_type": "water",
           "happened_on": "2026-10-25",
           "note": "Weekend care reported Oct 26, 2026 for Oct 24–25; exact day unspecified, filed under Oct 25. Audrey II received fresh water; water source unspecified. Looking generally better per owner.",
@@ -886,6 +893,13 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [
+        {
+          "plant_id": "08",
+          "action_type": "inspect",
+          "happened_on": "2026-11-05",
+          "note": "Nov 5 chat photo review: Drogo (#08), Costa-tagged Dracaena marginata Magenta. Compared directly with original Oct 11 public GAIA arrival photo and Oct 14/18 written reviews. Dense upright cluster of long green, burgundy/magenta-edged narrow leaves, fanning outward. Central crown firm-looking with no obvious widespread yellowing, leaf loss, or collapse. A few older tips bend or show minor wear; strong sunset backlight affects brown-red color interpretation. Earlier arrival photo shows one root extending below nursery pot, but no evidence establishes rootbound condition; no repot recommended solely from root. Last watering owner-confirmed approx Oct 24-25. Check upper soil for drying before watering, drain and avoid cold window drafts. No mites confirmed in photo; roots and current moisture not checked. Chat photo reviewed, NOT uploaded.",
+          "created_at": "2026-11-06T06:38:37.064383+00:00"
+        },
         {
           "plant_id": "08",
           "action_type": "water",
@@ -1345,6 +1359,13 @@
         {
           "plant_id": "12",
           "action_type": "inspect",
+          "happened_on": "2026-11-05",
+          "note": "Nov 5 chat photo review: GLaDOS (#12), Fittonia nerve plant. Compared with public GAIA catalog photo and Oct 18/28 notes. Full, spreading red-veined foliage with many small tip clusters and arching stems; no obvious overall wilting, yellowing or collapse. Some minor older leaf curl. Growth amount unverified due to different photo angles and lighting. Owner-confirmed Oct 26 repot into clear plastic pot with drainage remains recorded. Soil moisture, roots and recent watering not checked. Maintain moderately moist mix without standing water; avoid cold window drafts and direct hot sun. No new care actions reported. Photo reviewed in chat only, NOT uploaded to GAIA.",
+          "created_at": "2026-11-06T06:26:32.011164+00:00"
+        },
+        {
+          "plant_id": "12",
+          "action_type": "inspect",
           "happened_on": "2026-10-28",
           "note": "Oct 28 photo review (ChatGPT photo; image not uploaded to GAIA): GLaDOS in clear nursery pot with amended substrate. Colorful foliage is fairly full with some curling and minor browning at leaf margins. Water is visible on the tray; do not leave the pot standing in it. Owner confirmed repot completed Monday, Oct 26.",
           "created_at": "2026-10-28T23:49:24.489043+00:00"
@@ -1539,7 +1560,15 @@
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": [],
+      "care_events": [
+        {
+          "plant_id": "14",
+          "action_type": "inspect",
+          "happened_on": "2026-11-05",
+          "note": "Nov 5 photo review: Galadriel (#14), Spathiphyllum peace lily. Compared with public GAIA cover and Oct 18 notes. Very full canopy of large, glossy dark green leaves with lighter green central growth that may be young foliage. A few minor brown tips and localized yellow patches, but no obvious widespread collapse. Original photo showed one badly damaged leaf and prominent yellowing; these are not identifiable in current angle, so removal or recovery cannot be confirmed. Now pictured in tall white textured pot atop wooden cabinet; drainage, repot status and moisture unverified. Keep medium-bright indirect light, check soil before watering and monitor fresh leaves. Chat photo reviewed, NOT uploaded.",
+          "created_at": "2026-11-06T06:59:09.239697+00:00"
+        }
+      ],
       "reference_image": "14-galadriel-peace-lily.jpg",
       "comparison": {
         "ready": true,
@@ -1619,6 +1648,13 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [
+        {
+          "plant_id": "15",
+          "action_type": "inspect",
+          "happened_on": "2026-11-05",
+          "note": "Nov 5 photo review: Tywin (#15), Pachira aquatica. Original GAIA photo had full green canopy; current photo retains many green leaves and small upper growing tips but shows conspicuous yellowing of several middle/lower leaflets and drooping arching foliage. Angle/light differ, so leaf-loss count unverified. Ongoing owner-reported decline despite new growth; recent paper mite test negative. Nov 4 owner described differing soil moisture by probe depth (at times wetter below) and watering/shower. Consider root-zone moisture and substrate aeration as possible factors, not diagnosis. Check drainage and root-zone moisture before more watering; avoid repeat soaking or pest treatment without evidence. Watch new leaves and rate of yellowing. Current photo reviewed in chat, NOT uploaded to GAIA.",
+          "created_at": "2026-11-06T07:04:11.386966+00:00"
+        },
         {
           "plant_id": "15",
           "action_type": "note",
@@ -1751,6 +1787,13 @@
       "care_events": [
         {
           "plant_id": "16",
+          "action_type": "inspect",
+          "happened_on": "2026-11-05",
+          "note": "Nov 5 chat photo review: Morgana (#16), Marble Queen pothos. Compared directly with GAIA public reference photo and Oct 14/18 written photo summaries. Foliage remains full and upright, with strong cream/green variegation. Warm backlit window makes creamy portions look more yellow than earlier nighttime photo; no confirmed widespread chlorosis. Minor brown older patches and small tears observed; original photo also showed damage, though individual leaves not reliably matched. No obvious collapse or clear pests in photo. Spider mites recorded Oct 10; owner reported none active as of Nov 4, not independently verified. Brown terracotta inner pot set inside hanging decorative container; check drainage and do not allow retained water. Last recorded watering Oct 25; present moisture unmeasured. Continue bright indirect light and protect from cold drafts. Growth amount cannot be quantified from angle. Chat photo reviewed but NOT uploaded to GAIA.",
+          "created_at": "2026-11-06T06:20:11.916566+00:00"
+        },
+        {
+          "plant_id": "16",
           "action_type": "water",
           "happened_on": "2026-10-25",
           "note": "Weekend care reported Oct 26, 2026 for Oct 24–25; exact day unspecified, filed under Oct 25. Morgana watered, confirmed by owner.",
@@ -1878,7 +1921,15 @@
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": [],
+      "care_events": [
+        {
+          "plant_id": "17",
+          "action_type": "inspect",
+          "happened_on": "2026-11-05",
+          "note": "Nov 5 photo review: C-3PO Gold Dust Croton. Compared to original public GAIA photo and Oct 14/18 assessments. Upright leaves, healthy-looking gold spotting, tall upper foliage and smaller lower foliage. New photo backlit by warm window light, explaining brighter yellow appearance relative to earlier purple grow-light photograph. No obvious major leaf loss or collapse. Prior Oct 10 mites; owner reported no active mites Nov 4. No current mite infestation confirmed from photo. Avoid cold drafts, continue bright light, check soil moisture before watering. Roots and drainage not checked. Chat photo reviewed, not uploaded.",
+          "created_at": "2026-11-06T06:15:52.06216+00:00"
+        }
+      ],
       "reference_image": "17-c-3po.jpg",
       "comparison": {
         "ready": true,
@@ -1960,6 +2011,13 @@
       "care_events": [
         {
           "plant_id": "18",
+          "action_type": "inspect",
+          "happened_on": "2026-11-05",
+          "note": "Nov 5 chat photo review: Geoffrey (#18), Phalaenopsis moth orchid. Compared with original GAIA cover photo and Oct 18 review. Broad green arching leaves remain present without obvious whole-plant yellowing, wrinkling or collapse. Older tall spent spike pictured in cover is not visible in current framing; do not infer that it was cut. Clear plastic pot contains coarse orchid bark, with roots partly visible but health not accurately assessable through photo. No active flower spike confirmed in current frame. Last recorded watering was an overnight soak Oct 24-25; subsequent moisture not confirmed. In future shorter hydration and complete draining generally preferred; assess roots and bark before watering. Repot recorded Aug 22; no current repot indicated. Window setting appears bright; avoid chilling or leaf contact with cold window. Current photo reviewed in chat, NOT uploaded to GAIA photo journal.",
+          "created_at": "2026-11-06T06:21:50.39993+00:00"
+        },
+        {
+          "plant_id": "18",
           "action_type": "water",
           "happened_on": "2026-10-25",
           "note": "Weekend care reported Oct 26, 2026 for Oct 24–25; exact day unspecified, filed under Oct 25. Geoffrey received a good overnight soak.",
@@ -1992,7 +2050,15 @@
       "photos": [],
       "pot": null,
       "soil_observations": [],
-      "care_events": [],
+      "care_events": [
+        {
+          "plant_id": "19",
+          "action_type": "inspect",
+          "happened_on": "2026-11-05",
+          "note": "Nov 5 photo review: Arya (#19), Goeppertia/Calathea prayer plant, in sage green hanging pot with white macrame. Compared to public GAIA cover photo: old image showed three prominent patterned green leaves plus one small damaged leaf. New photo shows at least two broad leaves, with right leaf folded revealing dark purple underside; a small brown tip on upper right leaf. No reliable leaf count because camera angle and folds obscure rest. Normal nyctinastic movement vs stress curling cannot be distinguished from one image. Rich green pattern remains; no obvious overall yellowing. Earlier GAIA condition was sparse/recovering after repot (date unconfirmed). Pot drainage and current moisture unknown. Recommend keeping moisture lightly even, medium-bright indirect light, avoiding cold drafts, checking drainage and observing leaves at different times before intervening. No repot/pruning confirmed. Chat image reviewed, NOT uploaded.",
+          "created_at": "2026-11-06T06:57:20.213821+00:00"
+        }
+      ],
       "reference_image": "19-arya.jpg",
       "comparison": {
         "ready": false,
@@ -2011,7 +2077,15 @@
       "photos": [],
       "pot": null,
       "soil_observations": [],
-      "care_events": [],
+      "care_events": [
+        {
+          "plant_id": "20",
+          "action_type": "inspect",
+          "happened_on": "2026-11-05",
+          "note": "Nov 5 chat photo review: David (#20), Pilea cadierei aluminum plant. Compared with original public GAIA photo: today appears fuller, more spread and branching, with multiple upright shoots, characteristic silver-green leaf markings, and some minor curling or irregular older leaf edges. Exact new growth and brown patches unconfirmed due to dramatically different evening backlight. Original white decorative pot; now appears in metallic ribbed container; whether it was repotted and whether drainage exists are unconfirmed. No widespread collapse or definite pests visible. Check upper inch of substrate before watering, prevent standing water, and keep bright indirect light away from cold glass. Do not prune or repot solely based on photo. Current image reviewed in chat, NOT uploaded to GAIA.",
+          "created_at": "2026-11-06T06:40:26.14741+00:00"
+        }
+      ],
       "reference_image": "20-david.jpg",
       "comparison": {
         "ready": false,
@@ -3284,6 +3358,13 @@
       "care_events": [
         {
           "plant_id": "32",
+          "action_type": "inspect",
+          "happened_on": "2026-11-05",
+          "note": "Nov 5 chat photo review: Navi (#32), Phlebodium aureum blue star fern. Compared to original public GAIA cover and Oct 18 notes. Current upright green, lobed fronds with several bright lime-green upper fronds that may be newer growth; some tan/brown crispy-looking margins and curled older fronds, also noted in earlier photos. No obvious widespread collapse; precise fresh growth cannot be confirmed from photos at different angles and lighting. Pot appears matte dark nursery container; roots, drainage, soil moisture and repotting unconfirmed. Owner last reported watering Oct 24-25. Keep medium evenly, lightly moist without waterlogging; check upper half inch to inch for drying, maintain moderate humidity and protect from cold window drafts. Do not remove fronds that remain mostly green. Photo reviewed in chat, NOT uploaded to GAIA.",
+          "created_at": "2026-11-06T06:42:44.252131+00:00"
+        },
+        {
+          "plant_id": "32",
           "action_type": "water",
           "happened_on": "2026-10-25",
           "note": "Weekend care reported Oct 26, 2026 for Oct 24–25; exact day unspecified, filed under Oct 25. Navi watered, confirmed by owner.",
@@ -3470,6 +3551,13 @@
       "care_events": [
         {
           "plant_id": "34",
+          "action_type": "inspect",
+          "happened_on": "2026-11-05",
+          "note": "Nov 5 photo review: Farore (#34), Plectranthus ciliatus-type, cultivar Troy's Gold tentative. Compared to original public GAIA image and Nov 4 catalog review. Full branching plant in black square pot, quilted lime-green leaves with burgundy-purple stems/undersides and several upright growing tips. Appears fuller than original; no measurable change since Nov 4. Backlit areas should not be mistaken for confirmed leaf damage. No widespread wilt or collapse seen. Water last recorded Oct 24-25; current moisture, roots and drainage not checked. Bright indirect light, check upper inch of soil before watering; avoid cold drafts. Chat photo reviewed, not uploaded.",
+          "created_at": "2026-11-06T06:45:03.724528+00:00"
+        },
+        {
+          "plant_id": "34",
           "action_type": "water",
           "happened_on": "2026-10-25",
           "note": "Weekend care reported Oct 26, 2026 for Oct 24–25; exact day unspecified, filed under Oct 25. Farore watered, confirmed by owner.",
@@ -3567,6 +3655,13 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [
+        {
+          "plant_id": "35",
+          "action_type": "inspect",
+          "happened_on": "2026-11-05",
+          "note": "Nov 5 photo review: Chewie (#35), Pilea involucrata-type friendship plant. Compared to original public GAIA photo and Oct 18 written assessment. Several upright reddish stems with textured, scalloped, quilted copper/bronze-looking leaves and multiple leafy tips; foliage appears fuller, though warm sunset backlight alters color and angles limit growth comparisons. Some older curled or irregular leaves were also seen before; no evident widespread collapse or confirmed pest damage. Clear plastic pot with airy mix is now pictured. Oct 26 repot was planned, not verified as completed. Last recorded water Oct 24-25; current moisture and drainage not checked. Continue bright indirect light and lightly moist, freely draining soil. Chat photo reviewed only, NOT uploaded.",
+          "created_at": "2026-11-06T06:51:37.584718+00:00"
+        },
         {
           "plant_id": "35",
           "action_type": "note",
@@ -4016,6 +4111,13 @@
       "care_events": [
         {
           "plant_id": "40",
+          "action_type": "inspect",
+          "happened_on": "2026-11-05",
+          "note": "Nov 5 chat photo review: Loki (#40), Plerandra elegantissima false aralia. Compared with public GAIA catalog image and Oct 18 written review. Upright woody-looking stems bear narrow jagged dark bronze-green leaflets, with multiple outward and upward shoots and a layered crown. More foliage is visible than in the older view, but angle and backlighting prevent measured growth conclusions. Some edge wear may be present; backlighting is not evidence of browning or crispy damage. No obvious widespread yellowing, collapse or clear pests. Small nursery pot with decorative skull and black tray; soil moisture, drainage and root state not checked. Last recorded watering Oct 24-25. Keep bright indirect light, check near-surface moisture before watering and avoid cold window drafts. Current photo reviewed in chat only; NOT uploaded to GAIA.",
+          "created_at": "2026-11-06T06:34:32.066859+00:00"
+        },
+        {
+          "plant_id": "40",
           "action_type": "water",
           "happened_on": "2026-10-25",
           "note": "Weekend care reported Oct 26, 2026 for Oct 24–25; exact day unspecified, filed under Oct 25. Loki watered, confirmed by owner.",
@@ -4385,7 +4487,15 @@
       ],
       "pot": null,
       "soil_observations": [],
-      "care_events": [],
+      "care_events": [
+        {
+          "plant_id": "43",
+          "action_type": "inspect",
+          "happened_on": "2026-11-05",
+          "note": "Nov 5 chat photo review: Triss (#43), Aglaonema Siam Aurora Chinese evergreen. Compared directly with original GAIA public catalog photograph and Oct 14/18 written private photo review summaries (private pixels not accessed). Full upright canopy, bright pink-red petioles and leaf margins, olive-to-emerald green centers. Several central leaf clusters look firm and well formed; no clear widespread wilt, yellowing, collapse, or major leaf loss. A few minor curved leaf edges or cosmetic spots; no pests confirmed from this distance. Current warm backlit window makes coloration more vivid than older night photo; exact pigment change or leaf growth unverified. White pot near window with bright indirect/side light, but drainage, root zone moisture and repotting history unverified. Watch for cold nighttime window drafts; water when upper 1–2 inches dry and allow runoff to drain. Chat image reviewed, NOT uploaded to GAIA photo storage.",
+          "created_at": "2026-11-06T06:24:29.315998+00:00"
+        }
+      ],
       "reference_image": "43-triss-red-chinese-evergreen-siam-aurora-aglao.jpg",
       "comparison": {
         "ready": true,
@@ -5122,7 +5232,15 @@
       "photos": [],
       "pot": null,
       "soil_observations": [],
-      "care_events": [],
+      "care_events": [
+        {
+          "plant_id": "56",
+          "action_type": "inspect",
+          "happened_on": "2026-11-05",
+          "note": "Nov 5 photo review: Hurley (#56), Tradescantia chrysophylla Baby Bunny Bellies (tentative). Compared with public GAIA Nov 1 arrival cover. Full fuzzy olive-green oval leaves, purple accents and long leafy trailing stems; no widespread collapse or obvious pests. Similar trails already on arrival, so four-day new growth cannot be measured. Backlighting affects bronze colors. Soil moisture and roots unknown. Bright indirect light; let upper mix begin drying, drain well; avoid regularly wetting fuzzy leaves. Future tip cuttings possible after acclimation. Chat photo reviewed, NOT uploaded.",
+          "created_at": "2026-11-06T06:48:03.324552+00:00"
+        }
+      ],
       "reference_image": "56-hurley-arrival-20261101.webp",
       "comparison": {
         "ready": false,
@@ -5287,7 +5405,15 @@
       "photos": [],
       "pot": null,
       "soil_observations": [],
-      "care_events": [],
+      "care_events": [
+        {
+          "plant_id": "60",
+          "action_type": "inspect",
+          "happened_on": "2026-11-05",
+          "note": "Nov 5 photo review: Ripley (#60), juvenile Monstera deliciosa. Directly compared with Nov 1 public GAIA arrival image. Upright green unfenestrated leaves and firm-looking petioles; one large lime-green upper leaf and slender central leaf spear, apparently developing foliage. Similar slender spear already on Nov 1 arrival image, so cannot prove entire leaf formed in four days. No obvious widespread yellowing, collapse or pest evidence at photo resolution. Potted in small maroon nursery pot on white dish, now receiving overhead grow light; current moisture, drainage and root condition unverified. Leave in current pot to acclimate, give bright indirect light, water when upper 1-2 inches begin to dry and drain fully. Track spear unfurling and gradual leaf maturation; fenestrations not expected at juvenile stage. Photo reviewed in chat only, NOT uploaded to GAIA.",
+          "created_at": "2026-11-06T07:09:52.466798+00:00"
+        }
+      ],
       "reference_image": "60-ripley-arrival-20261101.webp",
       "comparison": {
         "ready": false,
@@ -5352,7 +5478,15 @@
       "photos": [],
       "pot": null,
       "soil_observations": [],
-      "care_events": [],
+      "care_events": [
+        {
+          "plant_id": "62",
+          "action_type": "inspect",
+          "happened_on": "2026-11-05",
+          "note": "Nov 5 chat photo review: Kairi (#62), Tradescantia spathacea Tricolor. Compared with original public GAIA Nov 1 arrival cover. Upright main rosette of long, pointed green striped leaves with burgundy-purple undersides and pink margins; smaller secondary rosette present behind and also visible in arrival photo. Leaves appear firm, no widespread browning, collapse or definite pests visible. Warm backlit window changes apparent green/purple intensity; no reliable four-day growth or variegation change established. Nursery pot with tray; drainage and root moisture unverified. Keep bright indirect light; let upper 1–2 in dry before watering, drain, and avoid water in rosette. No repot or division reported. Current image reviewed in chat only, NOT uploaded to GAIA.",
+          "created_at": "2026-11-06T06:28:12.99213+00:00"
+        }
+      ],
       "reference_image": "62-kairi-arrival-20261101.webp",
       "comparison": {
         "ready": false,
@@ -5398,7 +5532,15 @@
       "photos": [],
       "pot": null,
       "soil_observations": [],
-      "care_events": [],
+      "care_events": [
+        {
+          "plant_id": "64",
+          "action_type": "inspect",
+          "happened_on": "2026-11-05",
+          "note": "Nov 5 chat photo review: likely Meridia (#64), Scindapsus pictus cultivar unconfirmed. Compared with Nov 1 public GAIA arrival images of Meridia and similar Charles (#63); current open, relatively sparse plant with several large predominantly silver mottled leaves and trailing/arching growth matches Meridia better; attribution provisional pending owner confirmation. Firm-looking foliage, bright green upper leaf near grow lamp that may be young, a couple small tan marks on top of right green leaf; no widespread yellowing, collapse or obvious pests. Trailing growth was present at arrival and no four-day growth increment can be proven. Black nursery pot on white dish; watering and drainage not independently verified, no care action reported. Bright indirect light, let upper 1–2 inches dry, drain thoroughly; monitor proximity to overhead grow light and avoid burning; leave in pot during acclimation. Chat photo reviewed only, NOT uploaded.",
+          "created_at": "2026-11-06T07:07:22.355911+00:00"
+        }
+      ],
       "reference_image": "64-meridia-arrival-20261101.webp",
       "comparison": {
         "ready": false,
