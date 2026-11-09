@@ -20,7 +20,7 @@ jobs:
             node --check "$file"
           done
       - name: Verify GAIA learning and stable plant ID associations
-        run: node --test tests/learning-hub.test.cjs tests/daily-inbox.test.cjs tests/photo-review-queue.test.cjs
+        run: node --test tests/learning-hub.test.cjs tests/daily-inbox.test.cjs tests/photo-review-queue.test.cjs tests/propagation-nursery.test.cjs
       - name: Reject obvious embedded secrets
         run: |
           if git grep -nE 'sb_secret_[A-Za-z0-9_-]{10,}|-----BEGIN (RSA |EC |OPENSSH )?PRIVATE KEY-----' -- '*.js' '*.ts' '*.html' '*.json' ':!*.md'; then
