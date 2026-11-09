@@ -1,0 +1,53 @@
+/* GAIA Propagation Nursery: visually matches the botanical field desk. */
+.gaia-nursery-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin:12px 0}
+.gaia-nursery-metrics>div{border:1px solid #57745e;border-radius:8px;background:#1d332b;padding:15px 12px;display:flex;flex-direction:column;gap:4px}
+.gaia-nursery-metrics strong{font:700 26px Georgia,serif;color:#ecd4a4}
+.gaia-nursery-metrics span{font:600 11px/1.4 system-ui,sans-serif;color:#c3d7c4}
+.gaia-nursery-intro,.gaia-nursery-footnote{font:400 12px/1.6 system-ui,sans-serif;color:#c4d4c5;margin:12px 0}
+.gaia-nursery-footnote{border-top:1px solid #425c4c;padding-top:14px}
+.gaia-nursery-status{font:600 12px/1.5 system-ui,sans-serif;color:#d9cf9e;min-height:18px}
+.gaia-nursery-status:empty{min-height:0;margin:0}
+.gaia-nursery-status.error{color:#ffb8aa}
+.gaia-nursery-new,.gaia-nursery-batch{border:1px solid #5b7861;border-radius:9px;background:#20392d;margin:12px 0;overflow:hidden}
+.gaia-nursery-new>summary{cursor:pointer;list-style:inside;color:#edddb4;font:700 15px Georgia,serif;padding:15px;background:#2b4537}
+.gaia-nursery-new[open]>summary{border-bottom:1px solid #56745d}
+.gaia-nursery-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px;padding:15px}
+.gaia-nursery-form label,.gaia-nursery-photo-form label{display:flex;flex-direction:column;gap:5px;font:700 12px system-ui,sans-serif;color:#e8d9b4;min-width:0}
+.gaia-nursery-form label:has(textarea),.gaia-nursery-wide,.gaia-nursery-actions{grid-column:1/-1}
+.gaia-nursery-form input,.gaia-nursery-form select,.gaia-nursery-form textarea,.gaia-nursery-photo-form input{width:100%;box-sizing:border-box;background:#162c26;color:#eff0e6;border:1px solid #67826b;border-radius:6px;min-height:42px;padding:9px 10px;font:400 14px system-ui,sans-serif}
+.gaia-nursery-form textarea{resize:vertical}
+.gaia-nursery-form button,.gaia-nursery-photo-form button,.gaia-nursery-batch-actions button,.gaia-nursery-gallery-heading button{background:#41664c;border:1px solid #a5b48b;color:#fff0cb;font:700 12px system-ui,sans-serif;border-radius:6px;padding:10px 13px;min-height:40px;cursor:pointer;justify-self:start}
+.gaia-nursery-form button:hover,.gaia-nursery-photo-form button:hover,.gaia-nursery-batch-actions button:hover{background:#527c5d}
+.gaia-nursery-form button:focus-visible,.gaia-nursery-photo-form button:focus-visible,.gaia-nursery-cutting:focus-visible{outline:2px solid #ecc88c;outline-offset:2px}
+.gaia-nursery-batch>header{display:flex;align-items:flex-start;justify-content:space-between;gap:15px;padding:15px}
+.gaia-nursery-batch h3{font:700 22px Georgia,serif;color:#eedeb7;margin:0 0 7px}
+.gaia-nursery-batch header p{color:#bfcebd;font:400 12px/1.5 system-ui,sans-serif;margin:0}
+.gaia-nursery-count{border:1px solid #a28c63;border-radius:20px;color:#eddbaf;font:700 11px system-ui,sans-serif;padding:6px 10px;white-space:nowrap}
+.gaia-nursery-batchnote{color:#c7d6c4;font:400 13px/1.6 system-ui,sans-serif;margin:0;padding:0 15px 11px}
+.gaia-nursery-chips{display:flex;gap:6px;flex-wrap:wrap;border-top:1px solid #48664f;padding:10px 15px}
+.gaia-nursery-chips span{font:600 10px system-ui,sans-serif;background:#192d26;border:1px solid #48624c;border-radius:16px;color:#c4d4c4;padding:5px 8px}
+.gaia-nursery-cutting-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,145px),1fr));gap:8px;padding:10px 15px}
+.gaia-nursery-cutting{min-height:65px;background:#1b3027;border:1px solid #58745b;color:#efeddb;border-radius:7px;text-align:left;padding:10px;display:flex;flex-direction:column;gap:5px;cursor:pointer}
+.gaia-nursery-cutting strong{font:700 13px system-ui,sans-serif}
+.gaia-nursery-cutting small{font:500 11px system-ui,sans-serif;color:#bcd0bb}
+.gaia-nursery-cutting.selected{border-color:#e2be7a;background:#3b4f3b;box-shadow:inset 0 -2px 0 #d9b774}
+.gaia-nursery-batch-actions{padding:4px 15px 16px}
+.gaia-nursery-detail{border-top:1px solid #7e8466;padding:16px;background:#182e25}
+.gaia-nursery-detail h4{font:700 22px Georgia,serif;color:#f0dcad;margin:0 0 5px}
+.gaia-nursery-detail>p,.gaia-nursery-help,.gaia-nursery-linked{font:400 12px/1.6 system-ui,sans-serif;color:#c3d3c2}
+.gaia-nursery-detail .gaia-nursery-form{padding:10px 0}
+.gaia-nursery-actions{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.gaia-nursery-actions .gaia-nursery-secondary{background:#283b31;border-color:#947d56}
+.gaia-nursery-link{border:0;background:none;color:#e7c984;text-decoration:underline;cursor:pointer;font:inherit;padding:0}
+.gaia-nursery-gallery-heading{display:flex;justify-content:space-between;align-items:center;gap:9px;border-top:1px solid #506a56;margin-top:18px}
+.gaia-nursery-gallery-heading h5{font:700 18px Georgia,serif;color:#e9d7ac}
+.gaia-nursery-gallery-heading span{font-size:11px;color:#b5cbb7}
+.gaia-nursery-photos{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,160px),1fr));gap:10px}
+.gaia-nursery-photos figure{margin:0;border:1px solid #536b54;border-radius:6px;background:#20392c;padding:7px}
+.gaia-nursery-photos img,.gaia-nursery-photo-absent{width:100%;aspect-ratio:1;object-fit:cover;border-radius:4px;background:#122720}
+.gaia-nursery-photos figcaption{font:400 11px/1.5 system-ui,sans-serif;color:#d0ddcb;margin:6px 0;overflow-wrap:anywhere}
+.gaia-nursery-photos figure button{border:1px solid #705950;background:#3f322d;color:#ffd8c8;border-radius:5px;padding:5px 8px;cursor:pointer}
+.gaia-nursery-photo-form{margin-top:12px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;align-items:end;border:1px solid #4b6952;background:#21392e;border-radius:7px;padding:12px}
+.gaia-nursery-photo-form button{grid-column:1/-1}
+.gaia-nursery-empty{font:400 13px/1.7 system-ui,sans-serif;color:#c0d0c1;padding:11px 0}
+@media(max-width:650px){.gaia-nursery-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.gaia-nursery-form,.gaia-nursery-photo-form{grid-template-columns:1fr}.gaia-nursery-batch>header{flex-wrap:wrap}.gaia-nursery-cutting-list{grid-template-columns:repeat(2,minmax(0,1fr))}.gaia-nursery-form label:has(textarea),.gaia-nursery-actions{grid-column:auto}}
