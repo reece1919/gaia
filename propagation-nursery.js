@@ -51,12 +51,12 @@
       '<button type="submit">Create batch</button></form></details>':"";
     const records=active ? (batches.length?batches.map(b=>{
       const items=cuttings.filter(c=>c.batch_id===b.id);
-      const featured=items.filter(c=>c.stage!=="lost").length;
       return '<article class="gaia-nursery-batch"><header><div><h3>'+esc(b.label)+'</h3>'+
         '<p>'+parentLink(b.parent_plant_id)+' · '+esc(b.method)+' · '+(b.started_on?esc(b.started_on):'Start date not recorded')+'</p>'+
-        '</div><span class="gaia-nursery-count">'+items.length+' '+(items.length===1?'cutting':'cuttings')+'</span></header>'+
+        '</div><span class="gaia-nursery-count">'+(items.length?items.length+' individually logged':'Count pending')+'</span></header>'+
         (b.notes?'<p class="gaia-nursery-batchnote">'+esc(b.notes)+'</p>':'')+
         '<div class="gaia-nursery-chips">'+STAGES.map(s=>'<span>'+esc(s)+': '+items.filter(c=>c.stage===s).length+'</span>').join('')+'</div>'+
+        (items.length?'':'<p class="gaia-nursery-empty gaia-nursery-unlogged">A propagation is recorded here, but its individual cuttings have not yet been counted. Add them when you can identify each one.</p>')+
         '<div class="gaia-nursery-cutting-list">'+items.map((c,i)=>
           '<button type="button" class="gaia-nursery-cutting'+(selected===c.id?' selected':'')+'" data-action="select-cutting" data-id="'+esc(c.id)+'" aria-pressed="'+(selected===c.id)+'">'+
           '<strong>'+esc(c.nickname||'Cutting '+String(i+1).padStart(2,"0"))+'</strong><small>'+esc(c.stage)+' · '+esc(c.destination)+'</small></button>').join('')+'</div>'+
@@ -68,7 +68,7 @@
       '<div class="gaia-hub-section-head"><span class="gaia-eyebrow">THE GROWING GROUNDS</span><h2>Propagation Nursery</h2>'+
       '<p>Follow each cutting from day one, record real milestones, and keep its family tree intact.</p></div>'+
       '<div class="gaia-nursery-metrics"><div><strong>'+batches.length+'</strong><span>Batches</span></div>'+
-      '<div><strong>'+count+'</strong><span>Active cuttings</span></div>'+
+      '<div><strong>'+count+'</strong><span>Individually logged</span></div>'+
       '<div><strong>'+roots+'</strong><span>Rooting / settling</span></div>'+
       '<div><strong>'+reached+'</strong><span>Established</span></div></div>'+
       '<p class="gaia-nursery-intro">'+intro+'</p>'+
