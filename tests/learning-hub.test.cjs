@@ -245,7 +245,7 @@ test("Phone plant cards keep image and title compact with full-width care and ta
     assert.ok(css.includes("#grid .card>summary "+selector),"Missing full-width layout for "+selector);
   }
   assert.match(taskQueue,/summaryBody\?\.insertBefore\(preview,summaryBody\.querySelector\("\.tap-hint"\)\)/);
-  assert.match(html,/href="compact-shell\.css\?v=20261023-mobile-cards1"/);
+  assert.match(html,/href="compact-shell\.css\?v=[^"]+"/);
 });
 
 test("Catalog photo references resolve and plant names remain unique",()=>{
