@@ -14,6 +14,7 @@
   let plants = window.GAIA_DATA?.plants || [];
   const esc = x => String(x ?? "").replace(/[&<>"']/g, c =>
     ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+  const localDay = () => {const d=new Date(), pad=x=>String(x).padStart(2,"0");return d.getFullYear()+"-"+pad(d.getMonth()+1)+"-"+pad(d.getDate());};
   const label = id => plants.find(p => String(p.id)===String(id))?.name || "";
   const opt = (items,value) => items.map(x => '<option value="'+esc(x)+'"'+(x===value?' selected':'')+'>'+esc(x.charAt(0).toUpperCase()+x.slice(1))+'</option>').join("");
   const field = (title,name,value,type="text",attrs="") =>
@@ -102,7 +103,7 @@
       }).join(''):'<p class="gaia-nursery-empty">No private progress photos yet.</p>')+'</div>'+
       '<form data-kind="photo-upload" data-id="'+esc(c.id)+'" class="gaia-nursery-photo-form">'+
       '<label>Choose photo <input name="image" type="file" accept="image/jpeg,image/png,image/webp,image/*" required></label>'+
-      field("Photo date","taken_on",new Date().toLocaleDateString("en-CA"),"date",'required')+
+      field("Photo date","taken_on",localDay(),"date",'required')+
       field("Caption (optional)","caption","","text",'maxlength="350"')+
       '<button type="submit">Upload private photo</button></form></div>';
   }
@@ -132,7 +133,7 @@
     }catch(e){if(current!==generation)return;loading=false;render();status("Could not load Nursery: "+(e?.message||"Please check your connection."),true);}
   }
   async function updateAuth(nextClient,nextUser){
-    const prior=user?.id||null, incoming=nextUser?.id||null;
+    const incoming=nextUser?.id||null;
     client=nextClient||null;user=nextUser||null;verified=false;
     ++generation;batches=[];cuttings=[];photos=[];photoUrls.clear();selected="";notice="";
     if(!client||!user){loading=false;render();return;}
@@ -204,7 +205,7 @@
     const data=new FormData(form),file=data.get("image");
     if(!cuttings.some(c=>c.id===id))throw Error("Cutting not found.");
     const date=String(data.get("taken_on")||"");
-    const today=new Date().toLocaleDateString("en-CA");
+    const today=localDay();
     if(!/^\d{4}-\d{2}-\d{2}$/.test(date)||date>today)throw Error("Select a real photo date, no later than today.");
     if(!globalThis.crypto?.randomUUID)throw Error("A secure browser connection is required for photos.");
     const blob=await jpeg(file);
@@ -222,7 +223,6 @@
   async function deletePhoto(id){
     const p=photos.find(x=>x.id===id);
     if(!p)throw Error("Photo not found.");
-    if(!confirm("Permanently delete this private propagation photo?"))return false;
     const removed=await client.storage.from(BUCKET).remove([p.object_path]);
     if(removed.error)throw removed.error;
     const db=await client.from("gaia_propagation_photos").delete().eq("id",id).eq("user_id",user.id);
@@ -255,7 +255,7 @@
     if(action==="select-cutting"){selected=selected===id?"":id;render();}
     else if(action==="add-cutting")void run(()=>addCutting(id));
     else if(action==="graduation-brief")brief(id);
-    else if(action==="delete-photo")void run(()=>deletePhoto(id));
+    else if(action==="delete-photo" && confirm("Permanently delete this private propagation photo?"))void run(()=>deletePhoto(id));
     else if(action==="open-plant")window.GAIA_LEARNING_HUB?.openPlant?.(id);
   });
   document.addEventListener("gaia:ready",e=>{plants=e.detail?.plants||[];render();});
