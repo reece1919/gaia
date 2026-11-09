@@ -40,7 +40,7 @@
     const intro = !signed
       ? 'Sign in under Care → Tools & reviews → Settings & Backup to access your private nursery.'
       : !verified ? 'Authenticator verification (AAL2) is required before reading or editing Nursery records.'
-      : 'Synced privately to your GAIA account. A cutting only joins the permanent collection after it has its own GAIA catalog record.';
+      : 'Synced privately to your GAIA account. Add only separate cuttings being rooted or established as new plants. Stems put back into their parent pot belong in that plant’s care history; already established plants belong in the collection.';
     const batchForm=active?'<details class="gaia-nursery-new"><summary>+ Start a propagation batch</summary>'+
       '<form id="gaia-nursery-new-form" class="gaia-nursery-form">'+
       field("Batch name","label","","text",'required maxlength="100" placeholder="e.g. Jango cuttings"')+
