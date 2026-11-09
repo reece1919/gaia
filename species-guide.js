@@ -52,6 +52,12 @@
     chrysophylla: {taxon:"Tradescantia chrysophylla (provisional)",family:"Commelinaceae",habit:"Soft-leaved trailing tropical perennial",trait:"Often marketed as Baby Bunny Bellies; hairy, golden-green trailing leaves. Cultivar labeling should be verified rather than presumed.",propagation:"Stem cuttings with nodes"},
     scindapsus: {taxon:"Scindapsus pictus",family:"Araceae",habit:"Climbing or trailing tropical aroid",trait:"Matte heart-shaped leaves have silvery markings. Leaf size and pattern vary between cultivars; these plants’ cultivar labels are not confirmed.",propagation:"Node-bearing stem cuttings"},
     tradescantiagenus: {taxon:"Tradescantia (species/cultivar uncertain)",family:"Commelinaceae",habit:"Trailing or creeping herbaceous perennial",trait:"Variegated trade selections can be difficult to distinguish; cultivar labels on Fleur and Meridia are provisional.",propagation:"Node-bearing stem cuttings"},
+    cornplant: {taxon:"Dracaena fragrans",family:"Asparagaceae",habit:"Woody tropical cane-forming evergreen",native:"Tropical Africa",trait:"Corn plants carry arching, strap-like leaves from canes. Withers is a Massangeana-type form; its cultivar has not been verified.",propagation:"Cane and stem-tip cuttings"},
+    waxivy: {taxon:"Senecio macroglossus (variegated form, provisional)",family:"Asteraceae",habit:"Trailing or climbing semi-succulent vine",native:"Southern Africa",trait:"Glossy, often cream-edged leaves resemble ivy, but the plant belongs to the daisy family, not true ivy.",propagation:"Stem cuttings"},
+    holidaycactus: {taxon:"Schlumbergera (species/hybrid not confirmed)",family:"Cactaceae",habit:"Epiphytic tropical forest cactus",native:"Brazil",trait:"Flattened segmented stems can have pointed or rounded edges; these features help distinguish Thanksgiving and true Christmas cactus types.",propagation:"Root mature stem segments"},
+    kalanchoe: {taxon:"Kalanchoe (species not confirmed)",family:"Crassulaceae",habit:"Succulent perennial, often grown for flowers",trait:"Fleshy leaves store water; many flowering nursery kalanchoes are cultivated hybrids. The exact identity of Magenta needs confirmation.",propagation:"Stem or leaf cuttings, depending on species"},
+    yucca: {taxon:"Yucca (species unconfirmed)",family:"Asparagaceae",habit:"Woody or rosette-forming drought-tolerant perennial",trait:"Yucca have narrow, typically tough leaves; the three cuttings are not species-identified.",propagation:"Stem cuttings, division or offsets, depending on species"},
+    basil: {taxon:"Ocimum basilicum",family:"Lamiaceae",habit:"Aromatic culinary herb",trait:"Tender stems carry opposite leaves that are frequently harvested as a kitchen herb.",propagation:"Seed or stem cuttings"},
     spathacea: {taxon:"Tradescantia spathacea",family:"Commelinaceae",habit:"Rosette-forming tropical perennial",trait:"Sword-like leaves can have purple undersides; Tricolor is grown for green, cream and pink striping.",propagation:"Rooted offsets or stem cuttings"}
   };
   const byPlant = {
@@ -76,7 +82,10 @@
     "61":"pothos",
     "62":"spathacea",
     "63":"scindapsus",
-    "64":"tradescantiagenus"
+    "64":"tradescantiagenus",
+    "65":"pelargonium","66":"yucca","67":"basil",
+    "68":"cornplant","69":"orchid","70":"pothos","71":"waxivy",
+    "72":"holidaycactus","73":"holidaycactus","74":"kalanchoe"
   };
   window.GAIA_SPECIES_GUIDE = Object.freeze({taxa,byPlant});
 })();
