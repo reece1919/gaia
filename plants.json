@@ -11241,13 +11241,13 @@
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "<strong>Shared photo context (Nov 4, 2026):</strong> the three yucca cuttings were pictured together with green narrow leaves, some dried lower leaves and fine curling leaf-edge fibers. This is not a current, individually isolated photo assessment of Duhg. Individual roots, exact species and any later condition changes have not been verified.",
+          "bodyHtml": "<strong>Shared photo context (Nov 4, 2026):</strong> the three yucca cuttings were pictured together with green narrow leaves, some dried lower leaves and fine curling leaf-edge fibers. This is not a current, individually isolated photo assessment of Duhg. Individual roots, exact species and any later condition changes have not been verified. <strong>Owner update, Nov 9:</strong> Duhg is the largest of the three yucca cuttings by overall size. No exact height or measurements recorded.",
           "pClass": "",
           "style": "full"
         },
         {
           "label": "IDENTITY & POT",
-          "bodyHtml": "<strong>Duhg</strong> is back-right cutting in the nov 4 three-pot photograph. Confirmed mapping: <strong>Grog</strong> = back left, <strong>Gahg</strong> = front center with yellow trap, <strong>Duhg</strong> = back right. All three now have their own GAIA cards and separate logs.",
+          "bodyHtml": "<strong>Duhg</strong> is the back-right cutting in the Nov 4 three-pot photograph. Confirmed mapping: <strong>Grog</strong> = back left, <strong>Gahg</strong> = front center with yellow trap, <strong>Duhg</strong> = back right. All three now have their own GAIA cards and separate logs. <strong>Relative size:</strong> largest of the trio (owner-confirmed).",
           "pClass": "",
           "style": "full"
         },
@@ -11323,6 +11323,11 @@
             "style": ""
           },
           {
+            "label": "Relative size",
+            "valueHtml": "Largest of the three yuccas (owner-confirmed Nov 9)",
+            "style": ""
+          },
+          {
             "label": "Last photo review",
             "valueHtml": "Nov 4, 2026 · shared three-pot chat photograph; no individual baseline",
             "style": ""
@@ -11364,6 +11369,10 @@
           }
         ],
         "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 9, 2026 · Size identification:</strong> Owner confirms Duhg (back-right pot) is the <strong>largest of the three</strong> yucca cuttings. No height or pot-size measurements supplied."
+          },
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Nov 9, 2026 · Separate catalog:</strong> Duhg (back right) was separated from the old Grog / Gahg / Duhg group entry. New individual record created; shared Nov 4 group observations retained as context but not attributed specifically to this plant. No individual waterings or photos were assigned retroactively."
