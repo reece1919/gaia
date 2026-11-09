@@ -1,5 +1,18 @@
 # GAIA — Plant Collection Dashboard
 
+## Propagation Nursery (November 9, 2026)
+
+**Nursery** is the fourth GAIA navigation tab, alongside Care, Learn and Botany. It maintains private propagation batches and individually tracked cuttings without inflating the permanent plant catalog. Each batch may reference an existing parent plant. Cuttings have editable names, stages (cutting / rooting / establishing / established / lost), intended destinations (keep / gift / trade / return), optional observed milestone dates, and notes. Neither rooting nor successful establishment is inferred.
+
+Signed-in owners with authenticator verification (AAL2) can add batches, add cuttings, update progress and upload private resized JPEG progress photos. Data lives in owner-protected Supabase tables gaia_propagation_batches, gaia_propagation_cuttings and gaia_propagation_photos; photos are held in private gaia-propagation-photos Storage with owner-only policies. A signed-out or unverified session cannot read them. Migration: supabase/gaia_propagation_nursery.sql. Frontend: propagation-nursery.js / propagation-nursery.css.
+
+**Graduation:** The catalog remains static, versioned plants.json in GitHub. Nursery can link a cutting to an **already existing** GAIA plant ID or copy a graduation brief for a new GitHub catalog record. Marking a cutting established does *not* automatically commit a plant, add a card, or imply a confirmed photo review. A secure server-side GitHub-write workflow would be needed to make automatic catalog graduation possible; no GitHub credentials are stored in the browser.
+
+**Initial migration:** Jango (#45) has one Clone Force 17 batch with 17 individually numbered cuttings. Names, rooting and dates remain unverified, so no Boba-to-pot assignment was invented. The former public collection group #65 was retired and removed from the main plant count, with its complete profile preserved in archive/clone-force-17-legacy-catalog.json; this ID must not be reassigned. The three yuccas Grog (#66), Gahg (#75) and Duhg (#76) remain separate main collection plants, **not** duplicate nursery cuttings.
+
+Test: node --test tests/propagation-nursery.test.cjs tests/learning-hub.test.cjs. Do not include private Nursery rows or photos in the public read-only GAIA reference exporter unless the owner explicitly chooses to publish them.
+
+
 ## Latest photo-review queue (November 3, 2026)
 
 **Care → Tools & reviews → Photo reviews** now shows **Latest photos awaiting review**, based on an owner-authenticated, MFA-verified query to Supabase `plant_photos`. This is a checked-at snapshot, not a live stream. The queue chooses the newest private journal upload per plant by photo date, upload time, then photo ID, matching the existing manual reviewer. Earlier pending photos remain available in the journal as comparison evidence but never appear as separate actionable entries. Catalog cover images are not cloud journal uploads.
