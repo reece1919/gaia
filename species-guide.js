@@ -83,7 +83,7 @@
     "62":"spathacea",
     "63":"scindapsus",
     "64":"tradescantiagenus",
-    "65":"pelargonium","66":"yucca","67":"basil",
+    "66":"yucca","67":"basil",
     "68":"cornplant","69":"orchid","70":"pothos","71":"waxivy",
     "72":"holidaycactus","73":"holidaycactus","74":"kalanchoe",
     "75":"yucca","76":"yucca"
