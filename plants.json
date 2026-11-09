@@ -6,6 +6,10 @@
     "dateLabel": "NOV 9, 2026",
     "tiles": [
       {
+        "title": "Nov 9 · yucca trio tracked separately",
+        "descriptionHtml": "The former single shared yucca catalog card (#66) is now three separate records: Grog (#66, back left), Gahg (#75, front center with yellow sticky trap), and Duhg (#76, back right). Shared Nov 4 photo observations remain marked as group context. Each plant can now have its own watering, photo, pot and growth history; no individual care events were invented."
+      },
+      {
         "title": "Nov 6–8 · seven new named arrivals",
         "descriptionHtml": "Added Withers (corn plant), Columbia (new Phalaenopsis), Garrus (new golden pothos distinct from Varric), Zevran (variegated wax ivy), Merry and Pippin (separate holiday cactuses), and Magenta (Rocky Horror kalanchoe). Names and identities came from weekend conversations. No new journal photos, watering or pest inspections are claimed. Merry/Pippin pot mapping and precise cactus identity are still unconfirmed."
       },
@@ -9788,24 +9792,24 @@
     },
     {
       "id": "66",
-      "name": "Grog, Duhg & Gahg",
-      "species": "Yucca sp. · three propagated cuttings (species unconfirmed)",
-      "searchName": "grog duhg gahg yucca trio dnd cuttings grant",
-      "searchSpecies": "yucca species unconfirmed",
+      "name": "Grog",
+      "species": "Yucca sp. (species unconfirmed; propagated cutting)",
+      "searchName": "grog yucca cutting back-left grant dnd",
+      "searchSpecies": "yucca species unconfirmed cutting",
       "status": "Watch",
       "photo": "",
-      "photoAlt": "Grog, Duhg and Gahg · three young yucca cuttings",
+      "photoAlt": "Grog · back left yucca cutting · no separate catalog image uploaded",
       "newAddition": true,
-      "pest": "",
+      "pest": "unconfirmed",
       "added": "2026-11-04",
       "tags": [
         {
           "style": "",
-          "label": "THREE CUTTINGS"
+          "label": "YUCCA CUTTING"
         },
         {
           "style": "",
-          "label": "D&D NAMES"
+          "label": "INDIVIDUAL PLANT"
         },
         {
           "style": "",
@@ -9815,106 +9819,101 @@
       "sections": [
         {
           "label": "NEXT ACTION",
-          "bodyHtml": "Let all three remain in their current small draining pots while roots establish. Give bright light, acclimating gradually to stronger sun; water individually only when the mix has dried substantially, with complete drainage. Avoid heavy feeding, repotting or pulling up to check roots without reason.",
-          "pClass": "full next-action",
-          "style": ""
+          "bodyHtml": "Track <strong>Grog</strong> on this individual card. Check the soil in the back-left pot before watering and allow it to dry substantially; water with drainage only when needed. Avoid repotting or feeding while roots are still establishing.",
+          "pClass": "",
+          "style": "full next-action"
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "Nov 4, 2026 chat photo shows three individually potted narrow-leaved plants identified by the owner as yucca cuttings. Multiple long green, thin leaves remain upright or arching; several lower leaves are brown and dry near the crowns. Fine curling white fibers appear along leaf margins, potentially normal for filamentous yuccas. Plants look alive and reasonably stable, but root establishment and exact yucca species are not confirmed from a photograph.",
-          "pClass": "full",
-          "style": ""
+          "bodyHtml": "<strong>Shared photo context (Nov 4, 2026):</strong> the three yucca cuttings were pictured together with green narrow leaves, some dried lower leaves and fine curling leaf-edge fibers. This is not a current, individually isolated photo assessment of Grog. Individual roots, exact species and any later condition changes have not been verified.",
+          "pClass": "",
+          "style": "full"
         },
         {
-          "label": "NAMES & POT MAPPING",
-          "bodyHtml": "<strong>Confirmed pot assignments (Nov 4, 2026):</strong> Back left = <strong>Grog</strong>; front center (yellow sticky trap) = <strong>Gahg</strong>; back right = <strong>Duhg</strong>. Three separately potted yucca cuttings tracked within one GAIA record.",
-          "pClass": "full",
-          "style": ""
+          "label": "IDENTITY & POT",
+          "bodyHtml": "<strong>Grog</strong> is back-left cutting in the nov 4 three-pot photograph. Confirmed mapping: <strong>Grog</strong> = back left, <strong>Gahg</strong> = front center with yellow trap, <strong>Duhg</strong> = back right. All three now have their own GAIA cards and separate logs.",
+          "pClass": "",
+          "style": "full"
         },
         {
           "label": "ORIGIN",
-          "bodyHtml": "Three yucca cuttings received from Grant around Oct 27, 2026, previously described as started in perlite and bark. Exact cutting date, rooting stage, method and botanical species remain unverified.",
+          "bodyHtml": "One of three yucca cuttings received from Grant around Oct 27, 2026; earlier propagation medium was described as perlite and bark. Exact species, rooting status and cutting date remain unconfirmed.",
           "pClass": "",
           "style": ""
         },
         {
           "label": "WATER",
-          "bodyHtml": "Avoid keeping the small containers persistently wet. When the mix has dried significantly, water carefully and let all excess escape through drainage holes. Small cuttings may use little water; check each pot rather than watering all on a fixed schedule. Do not leave water in catch trays.",
+          "bodyHtml": "Check the back-left pot separately. Let its propagation mix dry substantially before watering and allow all excess to drain. Small cuttings can use little water, so do not water this plant automatically when its siblings are watered.",
           "pClass": "",
           "style": ""
         },
         {
           "label": "LIGHT",
-          "bodyHtml": "Very bright light and gradual introduction to suitable direct sun after acclimation. Under grow lights, avoid crowding leaves right against LEDs. Protect new cuttings from sudden harsh sun and freezing window drafts.",
+          "bodyHtml": "Bright light, with gradual acclimation to stronger sun as roots establish. Avoid harsh abrupt sunlight, freezing drafts and direct contact with grow-light fixtures.",
           "pClass": "",
           "style": ""
         },
         {
           "label": "FERTILIZER",
-          "bodyHtml": "Do not rush to fertilize newly rooting cuttings. Once root establishment and continued growth are evident, feed sparingly in active growth following product directions.",
+          "bodyHtml": "Wait for clear signs of rooted, active growth before light fertilizer use. Follow a suitable label and do not overfeed a newly establishing cutting.",
           "pClass": "",
           "style": ""
         },
         {
           "label": "LOCATION",
-          "bodyHtml": "Three small pots on a metal grow-light shelf, photographed Nov 4. Final or permanent arrangement not recorded.",
+          "bodyHtml": "Back left in the Nov 4 photo of three small nursery pots on a metal grow-light shelf. Current placement after Nov 4 is not independently confirmed.",
           "pClass": "",
           "style": ""
         },
         {
           "label": "REPOT",
-          "bodyHtml": "All three remain in individual small nursery containers. Pot up individually only after good root establishment and when roots need more room; avoid oversized wet containers.",
+          "bodyHtml": "Keep Grog in its own small draining pot while roots establish; repot only when root development or a verified container problem justifies it. Current root mass and exact pot dimensions not recorded.",
           "pClass": "",
           "style": ""
         },
         {
           "label": "SOIL",
-          "bodyHtml": "Perlite-and-bark propagation material was previously reported. Current pots have coarse, pale material at the surface; exact full mix is not confirmed. Maintain airy, freely draining substrate.",
+          "bodyHtml": "The group was reportedly started in perlite and bark. The exact current mix in this individual pot has not been verified; keep it airy and freely draining.",
           "pClass": "",
           "style": ""
         },
         {
           "label": "WATCH",
-          "bodyHtml": "Check for healthy new leaves at each crown, whether drying stays confined to older basal leaves, and whether stems or bases become soft. Some fibrous curls can be normal yucca leaf filaments. Note progress individually after assigning names to pots.",
+          "bodyHtml": "Watch for growth from the crown, changes in basal leaf drying, and any softening at the base. Leaf-edge threads may be normal on some yucca types. Compare this plant to its own future photos and care entries, not its siblings.",
           "pClass": "",
-          "style": ""
+          "style": "full"
         }
       ],
       "history": {
         "facts": [
           {
             "label": "Last updated",
-            "valueHtml": "Nov 4, 2026",
-            "style": ""
-          },
-          {
-            "label": "Last photo review",
-            "valueHtml": "Nov 4, 2026 (chat image; not uploaded)",
+            "valueHtml": "Nov 9, 2026",
             "style": ""
           },
           {
             "label": "Added to collection",
-            "valueHtml": "Nov 4, 2026 (group record)",
-            "style": ""
-          },
-          {
-            "label": "Number of cuttings",
-            "valueHtml": "3 (owner-reported)",
+            "valueHtml": "Nov 4, 2026 (original shared record; now separate)",
             "style": ""
           },
           {
             "label": "Source",
-            "valueHtml": "Grant, around Oct 27, 2026 (owner-reported)",
+            "valueHtml": "Grant · around Oct 27, 2026",
             "style": ""
           },
           {
-            "label": "Names",
-            "valueHtml": "Grog · Duhg · Gahg",
+            "label": "Individual pot position",
+            "valueHtml": "Back left",
             "style": ""
           },
           {
-            "label": "Individual pot names",
-            "valueHtml": "Back left: Grog · Front center: Gahg · Back right: Duhg",
+            "label": "Last photo review",
+            "valueHtml": "Nov 4, 2026 · shared three-pot chat photograph; no individual baseline",
+            "style": ""
+          },
+          {
+            "label": "Botanical identity",
+            "valueHtml": "Yucca sp. · precise species unconfirmed",
             "style": ""
           },
           {
@@ -9928,19 +9927,34 @@
             "style": "unknown"
           },
           {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
             "label": "Pot / container",
-            "valueHtml": "Three separate small nursery pots",
+            "valueHtml": "Individual small nursery pot; measurements unrecorded",
             "style": ""
+          },
+          {
+            "label": "Separate photo uploaded",
+            "valueHtml": "No",
+            "style": "unknown"
+          },
+          {
+            "label": "Pest status",
+            "valueHtml": "No individual inspection recorded",
+            "style": "unknown"
           }
         ],
         "notes": [
           {
             "style": "care-entry",
-            "bodyHtml": "<strong>Nov 4, 2026 · Pot names confirmed:</strong> Owner assigned <strong>Grog</strong> to the back-left pot, <strong>Gahg</strong> to the front-center pot with the yellow trap, and <strong>Duhg</strong> to the back-right pot. All three remain one shared GAIA entry; no photos uploaded."
+            "bodyHtml": "<strong>Nov 9, 2026 · Separate catalog:</strong> Grog (back left) was separated from the old Grog / Gahg / Duhg group entry. Retains original ID #66 because it was the trio's shared identifier; group-only historical observations remain labeled as such. No individual waterings or photos were assigned retroactively."
           },
           {
             "style": "care-entry",
-            "bodyHtml": "<strong>Nov 4, 2026 · </strong>Owner named the three yucca cuttings Grog, Duhg and Gahg after their D&D game. All three shown in chat photograph. Green narrow leaves remain on each; some lower basal leaves are brown/dry, and white curly leaf-edge filaments are visible. Root establishment unknown. One shared GAIA record created without assigning a name to a specific pot. No photo upload."
+            "bodyHtml": "<strong>Nov 4, 2026 · Names confirmed:</strong> Back left = Grog; front center (yellow sticky trap) = Gahg; back right = Duhg. Three individually potted yucca cuttings shown together with green narrow leaves and some dry basal foliage; root establishment unconfirmed."
           }
         ]
       },
@@ -9952,8 +9966,9 @@
         "soil": "gritty"
       },
       "commonNames": [
-        "Yucca trio",
-        "Grog, Duhg and Gahg"
+        "Grog yucca cutting",
+        "Yucca",
+        "Yucca sp."
       ]
     },
     {
@@ -11008,6 +11023,368 @@
       "commonNames": [
         "Kalanchoe",
         "Florist kalanchoe"
+      ]
+    },
+    {
+      "id": "75",
+      "name": "Gahg",
+      "species": "Yucca sp. (species unconfirmed; propagated cutting)",
+      "searchName": "gahg yucca cutting front-center grant dnd",
+      "searchSpecies": "yucca species unconfirmed cutting",
+      "status": "Watch",
+      "photo": "",
+      "photoAlt": "Gahg · front center (yellow sticky trap) yucca cutting · no separate catalog image uploaded",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-04",
+      "tags": [
+        {
+          "style": "",
+          "label": "YUCCA CUTTING"
+        },
+        {
+          "style": "",
+          "label": "INDIVIDUAL PLANT"
+        },
+        {
+          "style": "",
+          "label": "ROOT ESTABLISHMENT"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Track <strong>Gahg</strong> on this individual card. Check the soil in the front-center pot with the yellow sticky trap before watering and allow it to dry substantially; water with drainage only when needed. Avoid repotting or feeding while roots are still establishing.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "<strong>Shared photo context (Nov 4, 2026):</strong> the three yucca cuttings were pictured together with green narrow leaves, some dried lower leaves and fine curling leaf-edge fibers. This is not a current, individually isolated photo assessment of Gahg. Individual roots, exact species and any later condition changes have not been verified.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "IDENTITY & POT",
+          "bodyHtml": "<strong>Gahg</strong> is front-center cutting marked by a yellow sticky trap in the nov 4 photograph. Confirmed mapping: <strong>Grog</strong> = back left, <strong>Gahg</strong> = front center with yellow trap, <strong>Duhg</strong> = back right. All three now have their own GAIA cards and separate logs.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "ORIGIN",
+          "bodyHtml": "One of three yucca cuttings received from Grant around Oct 27, 2026; earlier propagation medium was described as perlite and bark. Exact species, rooting status and cutting date remain unconfirmed.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Check the front-center pot with the yellow sticky trap separately. Let its propagation mix dry substantially before watering and allow all excess to drain. Small cuttings can use little water, so do not water this plant automatically when its siblings are watered.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Bright light, with gradual acclimation to stronger sun as roots establish. Avoid harsh abrupt sunlight, freezing drafts and direct contact with grow-light fixtures.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Wait for clear signs of rooted, active growth before light fertilizer use. Follow a suitable label and do not overfeed a newly establishing cutting.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Front center (yellow sticky trap) in the Nov 4 photo of three small nursery pots on a metal grow-light shelf. Current placement after Nov 4 is not independently confirmed.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Keep Gahg in its own small draining pot while roots establish; repot only when root development or a verified container problem justifies it. Current root mass and exact pot dimensions not recorded.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "The group was reportedly started in perlite and bark. The exact current mix in this individual pot has not been verified; keep it airy and freely draining.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Watch for growth from the crown, changes in basal leaf drying, and any softening at the base. Leaf-edge threads may be normal on some yucca types. Compare this plant to its own future photos and care entries, not its siblings.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Nov 9, 2026",
+            "style": ""
+          },
+          {
+            "label": "Added to collection",
+            "valueHtml": "Nov 4, 2026 (original shared record; now separate)",
+            "style": ""
+          },
+          {
+            "label": "Source",
+            "valueHtml": "Grant · around Oct 27, 2026",
+            "style": ""
+          },
+          {
+            "label": "Individual pot position",
+            "valueHtml": "Front center (yellow sticky trap)",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Nov 4, 2026 · shared three-pot chat photograph; no individual baseline",
+            "style": ""
+          },
+          {
+            "label": "Botanical identity",
+            "valueHtml": "Yucca sp. · precise species unconfirmed",
+            "style": ""
+          },
+          {
+            "label": "Rooting confirmed",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Individual small nursery pot; measurements unrecorded",
+            "style": ""
+          },
+          {
+            "label": "Separate photo uploaded",
+            "valueHtml": "No",
+            "style": "unknown"
+          },
+          {
+            "label": "Pest status",
+            "valueHtml": "No individual inspection recorded",
+            "style": "unknown"
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 9, 2026 · Separate catalog:</strong> Gahg (front center (yellow sticky trap)) was separated from the old Grog / Gahg / Duhg group entry. New individual record created; shared Nov 4 group observations retained as context but not attributed specifically to this plant. No individual waterings or photos were assigned retroactively."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 4, 2026 · Names confirmed:</strong> Back left = Grog; front center (yellow sticky trap) = Gahg; back right = Duhg. Three individually potted yucca cuttings shown together with green narrow leaves and some dry basal foliage; root establishment unconfirmed."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "succulent",
+        "light": "very-bright",
+        "water": "fully-dry",
+        "waterLabel": "Dry well",
+        "soil": "gritty"
+      },
+      "commonNames": [
+        "Gahg yucca cutting",
+        "Yucca",
+        "Yucca sp."
+      ]
+    },
+    {
+      "id": "76",
+      "name": "Duhg",
+      "species": "Yucca sp. (species unconfirmed; propagated cutting)",
+      "searchName": "duhg yucca cutting back-right grant dnd",
+      "searchSpecies": "yucca species unconfirmed cutting",
+      "status": "Watch",
+      "photo": "",
+      "photoAlt": "Duhg · back right yucca cutting · no separate catalog image uploaded",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-04",
+      "tags": [
+        {
+          "style": "",
+          "label": "YUCCA CUTTING"
+        },
+        {
+          "style": "",
+          "label": "INDIVIDUAL PLANT"
+        },
+        {
+          "style": "",
+          "label": "ROOT ESTABLISHMENT"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Track <strong>Duhg</strong> on this individual card. Check the soil in the back-right pot before watering and allow it to dry substantially; water with drainage only when needed. Avoid repotting or feeding while roots are still establishing.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "<strong>Shared photo context (Nov 4, 2026):</strong> the three yucca cuttings were pictured together with green narrow leaves, some dried lower leaves and fine curling leaf-edge fibers. This is not a current, individually isolated photo assessment of Duhg. Individual roots, exact species and any later condition changes have not been verified.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "IDENTITY & POT",
+          "bodyHtml": "<strong>Duhg</strong> is back-right cutting in the nov 4 three-pot photograph. Confirmed mapping: <strong>Grog</strong> = back left, <strong>Gahg</strong> = front center with yellow trap, <strong>Duhg</strong> = back right. All three now have their own GAIA cards and separate logs.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "ORIGIN",
+          "bodyHtml": "One of three yucca cuttings received from Grant around Oct 27, 2026; earlier propagation medium was described as perlite and bark. Exact species, rooting status and cutting date remain unconfirmed.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Check the back-right pot separately. Let its propagation mix dry substantially before watering and allow all excess to drain. Small cuttings can use little water, so do not water this plant automatically when its siblings are watered.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Bright light, with gradual acclimation to stronger sun as roots establish. Avoid harsh abrupt sunlight, freezing drafts and direct contact with grow-light fixtures.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FERTILIZER",
+          "bodyHtml": "Wait for clear signs of rooted, active growth before light fertilizer use. Follow a suitable label and do not overfeed a newly establishing cutting.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LOCATION",
+          "bodyHtml": "Back right in the Nov 4 photo of three small nursery pots on a metal grow-light shelf. Current placement after Nov 4 is not independently confirmed.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Keep Duhg in its own small draining pot while roots establish; repot only when root development or a verified container problem justifies it. Current root mass and exact pot dimensions not recorded.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "The group was reportedly started in perlite and bark. The exact current mix in this individual pot has not been verified; keep it airy and freely draining.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Watch for growth from the crown, changes in basal leaf drying, and any softening at the base. Leaf-edge threads may be normal on some yucca types. Compare this plant to its own future photos and care entries, not its siblings.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Last updated",
+            "valueHtml": "Nov 9, 2026",
+            "style": ""
+          },
+          {
+            "label": "Added to collection",
+            "valueHtml": "Nov 4, 2026 (original shared record; now separate)",
+            "style": ""
+          },
+          {
+            "label": "Source",
+            "valueHtml": "Grant · around Oct 27, 2026",
+            "style": ""
+          },
+          {
+            "label": "Individual pot position",
+            "valueHtml": "Back right",
+            "style": ""
+          },
+          {
+            "label": "Last photo review",
+            "valueHtml": "Nov 4, 2026 · shared three-pot chat photograph; no individual baseline",
+            "style": ""
+          },
+          {
+            "label": "Botanical identity",
+            "valueHtml": "Yucca sp. · precise species unconfirmed",
+            "style": ""
+          },
+          {
+            "label": "Rooting confirmed",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Pot / container",
+            "valueHtml": "Individual small nursery pot; measurements unrecorded",
+            "style": ""
+          },
+          {
+            "label": "Separate photo uploaded",
+            "valueHtml": "No",
+            "style": "unknown"
+          },
+          {
+            "label": "Pest status",
+            "valueHtml": "No individual inspection recorded",
+            "style": "unknown"
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 9, 2026 · Separate catalog:</strong> Duhg (back right) was separated from the old Grog / Gahg / Duhg group entry. New individual record created; shared Nov 4 group observations retained as context but not attributed specifically to this plant. No individual waterings or photos were assigned retroactively."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 4, 2026 · Names confirmed:</strong> Back left = Grog; front center (yellow sticky trap) = Gahg; back right = Duhg. Three individually potted yucca cuttings shown together with green narrow leaves and some dry basal foliage; root establishment unconfirmed."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "succulent",
+        "light": "very-bright",
+        "water": "fully-dry",
+        "waterLabel": "Dry well",
+        "soil": "gritty"
+      },
+      "commonNames": [
+        "Duhg yucca cutting",
+        "Yucca",
+        "Yucca sp."
       ]
     }
   ],
