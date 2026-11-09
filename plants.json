@@ -1,10 +1,14 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "Nov 5, 2026",
+  "updatedAt": "Nov 9, 2026",
   "summaryNote": "tap for care, priorities & history",
   "recentCare": {
-    "dateLabel": "NOV 1, 2026",
+    "dateLabel": "NOV 9, 2026",
     "tiles": [
+      {
+        "title": "Nov 6–8 · seven new named arrivals",
+        "descriptionHtml": "Added Withers (corn plant), Columbia (new Phalaenopsis), Garrus (new golden pothos distinct from Varric), Zevran (variegated wax ivy), Merry and Pippin (separate holiday cactuses), and Magenta (Rocky Horror kalanchoe). Names and identities came from weekend conversations. No new journal photos, watering or pest inspections are claimed. Merry/Pippin pot mapping and precise cactus identity are still unconfirmed."
+      },
       {
         "title": "Nov 1 · eleven additions",
         "descriptionHtml": "Eleven named plants #54–64 were added. All eleven now have catalog arrival cover photos; these are separate from private journal uploads. Watering, root condition, pot sizes and pests remain unverified."
@@ -10112,6 +10116,898 @@
         "Sweet basil",
         "Basil",
         "Culinary basil"
+      ]
+    },
+    {
+      "id": "68",
+      "name": "Withers",
+      "species": "Dracaena fragrans 'Massangeana'-type (corn plant; cultivar unverified)",
+      "searchName": "withers corn plant dracaena fragrans mass cane big dick b",
+      "searchSpecies": "dracaena fragrans massangeana corn plant",
+      "status": "Watch",
+      "photo": "",
+      "photoAlt": "Withers · catalog image not uploaded",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-06",
+      "tags": [
+        {
+          "style": "",
+          "label": "NEW ARRIVAL"
+        },
+        {
+          "style": "",
+          "label": "NAME CONFIRMED"
+        },
+        {
+          "style": "",
+          "label": "CORN PLANT"
+        },
+        {
+          "style": "",
+          "label": "LOWE’S ARRIVAL"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Establish a baseline in GAIA: add a current plant photo, confirm pot drainage and soil mix, and log the next actual watering. Avoid another unnecessary repot immediately after the Nov 7 move.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "CURRENT RECORD",
+          "bodyHtml": "<strong>Withers</strong> is a distinct new plant added from the Nov 6–8 conversations. Owner described a bath and a repot into a roughly 8-inch container Nov 7; drainage and root condition are not independently documented here. This entry does not imply a fresh visual inspection, pest diagnosis, or confirmed watering event.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Water once the upper 1–2 inches of the potting mix are dry; ensure thorough drainage. After repotting, assess moisture in the actual root zone rather than watering on a strict calendar.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Medium to bright indirect light. Avoid sudden intense direct sun or cold drafts, especially following the move.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "A reasonably airy, well-draining houseplant mix is appropriate. Exact components of the current pot are not recorded.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Owner reported repotting and a bath on Nov 7 into a pot described as about 8 inches. Confirm final inside diameter, drainage holes and actual mix; no additional repot is recommended without cause.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Check for new growth, leaf/stem firmness, unusual spots, or pests as appropriate. Record any actual observations or care events in GAIA rather than assuming them from the new catalog entry.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Catalog entered",
+            "valueHtml": "Nov 9, 2026",
+            "style": ""
+          },
+          {
+            "label": "Acquisition",
+            "valueHtml": "Nov 6, 2026",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Confirmed in conversation by Nov 8, 2026",
+            "style": ""
+          },
+          {
+            "label": "Photo baseline",
+            "valueHtml": "Not uploaded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Pest inspection",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 9, 2026 · Catalog reconciliation:</strong> Added Withers after comparing weekend naming conversations with GAIA's prior 67-record catalog. Owner confirmed Withers as the corn plant formerly jokingly called 'Big Dick B'; purchased at Lowe’s Nov 6. No private journal photo uploaded and no care action marked complete."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "dracaena",
+        "light": "medium",
+        "water": "one-two",
+        "waterLabel": "Top 1–2″ dry",
+        "soil": "well-drained"
+      },
+      "commonNames": [
+        "Corn plant",
+        "Mass cane",
+        "Dracaena fragrans"
+      ]
+    },
+    {
+      "id": "69",
+      "name": "Columbia",
+      "species": "Phalaenopsis sp. (moth orchid; cultivar unverified)",
+      "searchName": "columbia orchid rocky horror moth orchid phalaenopsis lowes new",
+      "searchSpecies": "phalaenopsis orchid moth orchid",
+      "status": "Watch",
+      "photo": "",
+      "photoAlt": "Columbia · catalog image not uploaded",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-06",
+      "tags": [
+        {
+          "style": "",
+          "label": "NEW ARRIVAL"
+        },
+        {
+          "style": "",
+          "label": "NAME CONFIRMED"
+        },
+        {
+          "style": "",
+          "label": "ORCHID"
+        },
+        {
+          "style": "",
+          "label": "LOWE’S ARRIVAL"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Establish a baseline in GAIA: add a current plant photo, confirm pot drainage and soil mix, and log the next actual watering. Use the new pot's actual root and medium moisture rather than a fixed watering day.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "CURRENT RECORD",
+          "bodyHtml": "<strong>Columbia</strong> is a distinct new plant added from the Nov 6–8 conversations. Owner reported repotting the new orchid Nov 7; precise pot size, roots, watering and flower color are not recorded in this catalog update. This entry does not imply a fresh visual inspection, pest diagnosis, or confirmed watering event.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Check visible roots and potting medium. Phalaenopsis roots frequently appear silvery when dry and greener after hydration; water thoroughly when the medium approaches dry, then drain fully. Never leave the crown holding water.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Bright indirect light, protected from strong midday direct sun. A stable location reduces stress to an orchid with buds or flowers.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Use an airy orchid medium such as bark; avoid packing fine, persistently soggy soil around the roots. Actual repotting components are unverified here.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Repot was discussed and performed on Nov 7. Inspect for drainage and settled medium; do not disturb roots again without a specific problem.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "IDENTITY",
+          "bodyHtml": "A newly acquired Phalaenopsis, tracked separately from Geoffrey (GAIA #18). The cultivar and flowering pattern have not been confirmed.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Check for new growth, leaf/stem firmness, unusual spots, or pests as appropriate. Record any actual observations or care events in GAIA rather than assuming them from the new catalog entry.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Catalog entered",
+            "valueHtml": "Nov 9, 2026",
+            "style": ""
+          },
+          {
+            "label": "Acquisition",
+            "valueHtml": "Nov 6, 2026",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Confirmed in conversation by Nov 8, 2026",
+            "style": ""
+          },
+          {
+            "label": "Photo baseline",
+            "valueHtml": "Not uploaded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Pest inspection",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 9, 2026 · Catalog reconciliation:</strong> Added Columbia after comparing weekend naming conversations with GAIA's prior 67-record catalog. Owner retained the name Columbia for the new Lowe’s orchid; this is separate from Geoffrey, the older orchid. No private journal photo uploaded and no care action marked complete."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "orchid",
+        "light": "bright-indirect",
+        "water": "silver-roots",
+        "waterLabel": "Check silver roots",
+        "soil": "orchid"
+      },
+      "commonNames": [
+        "Moth orchid",
+        "Phalaenopsis orchid"
+      ]
+    },
+    {
+      "id": "70",
+      "name": "Garrus",
+      "species": "Epipremnum aureum (golden pothos)",
+      "searchName": "garrus golden pothos mass effect new lowes epipremnum aureum",
+      "searchSpecies": "epipremnum aureum golden pothos",
+      "status": "Watch",
+      "photo": "",
+      "photoAlt": "Garrus · catalog image not uploaded",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-06",
+      "tags": [
+        {
+          "style": "",
+          "label": "NEW ARRIVAL"
+        },
+        {
+          "style": "",
+          "label": "NAME CONFIRMED"
+        },
+        {
+          "style": "",
+          "label": "GOLDEN POTHOS"
+        },
+        {
+          "style": "",
+          "label": "MASS EFFECT"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Establish a baseline in GAIA: add a current plant photo, confirm pot drainage and soil mix, and log the next actual watering. Keep Garrus distinct from Varric in journal/photo matching.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "CURRENT RECORD",
+          "bodyHtml": "<strong>Garrus</strong> is a distinct new plant added from the Nov 6–8 conversations. A repot and root inspection were considered over the weekend, but the completed procedure and final pot are not confirmed. This entry does not imply a fresh visual inspection, pest diagnosis, or confirmed watering event.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Let the upper 1–2 inches of the growing medium dry before a thorough watering. Check deeper moisture if the pot is large or the mix remains damp.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Bright indirect light maintains variegation and compact growth; avoid abrupt intense sun.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "A well-draining, airy aroid mix can include bark, perlite and a moisture-retentive component. Avoid packing it so tightly that water remains trapped.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "IDENTITY",
+          "bodyHtml": "Garrus is the Nov 6 new golden pothos, not a rename of Varric (#61). Keep separate care logs and plant IDs.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Check for new growth, leaf/stem firmness, unusual spots, or pests as appropriate. Record any actual observations or care events in GAIA rather than assuming them from the new catalog entry.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Catalog entered",
+            "valueHtml": "Nov 9, 2026",
+            "style": ""
+          },
+          {
+            "label": "Acquisition",
+            "valueHtml": "Nov 6, 2026",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Confirmed in conversation by Nov 8, 2026",
+            "style": ""
+          },
+          {
+            "label": "Photo baseline",
+            "valueHtml": "Not uploaded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Pest inspection",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 9, 2026 · Catalog reconciliation:</strong> Added Garrus after comparing weekend naming conversations with GAIA's prior 67-record catalog. Owner confirmed Garrus for the newer golden pothos bought Nov 6; do not confuse this separate plant with Varric (GAIA #61), also a golden pothos. No private journal photo uploaded and no care action marked complete."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "aroid",
+        "light": "bright-indirect",
+        "water": "one-two",
+        "waterLabel": "Top 1–2″ dry",
+        "soil": "chunky"
+      },
+      "commonNames": [
+        "Golden pothos",
+        "Devil's ivy"
+      ]
+    },
+    {
+      "id": "71",
+      "name": "Zevran",
+      "species": "Senecio macroglossus 'Variegatus' (variegated wax ivy; label-based identification)",
+      "searchName": "zevran variegated wax ivy senecio macroglossus variegatus dragon age",
+      "searchSpecies": "senecio macroglossus variegatus wax ivy",
+      "status": "Watch",
+      "photo": "",
+      "photoAlt": "Zevran · catalog image not uploaded",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-08",
+      "tags": [
+        {
+          "style": "",
+          "label": "NEW ARRIVAL"
+        },
+        {
+          "style": "",
+          "label": "NAME CONFIRMED"
+        },
+        {
+          "style": "",
+          "label": "VARIEGATED WAX IVY"
+        },
+        {
+          "style": "",
+          "label": "DRAGON AGE"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Establish a baseline in GAIA: add a current plant photo, confirm pot drainage and soil mix, and log the next actual watering. Confirm its nursery label or clear leaves before making the cultivar identification final.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "CURRENT RECORD",
+          "bodyHtml": "<strong>Zevran</strong> is a distinct new plant added from the Nov 6–8 conversations. The common name suggests Senecio macroglossus variegated form; a cultivar label or closer botanical confirmation was not available. This entry does not imply a fresh visual inspection, pest diagnosis, or confirmed watering event.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Let the mix dry somewhat between thorough waterings. The waxy foliage tolerates brief dry periods better than continuously wet roots; adjust to the actual pot and conditions.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Bright indirect light with gentle sun after acclimation is suitable for variegated wax ivy; avoid sudden intense window sun.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Freely draining mix; substantial aeration is helpful. Check existing pot drainage before changing anything.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "IDENTITY",
+          "bodyHtml": "Despite its ivy-like leaf shape, variegated wax ivy is not Hedera (true ivy). Identified provisionally from the common name; botanical identity should be confirmed from a label or clear specimen.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Check for new growth, leaf/stem firmness, unusual spots, or pests as appropriate. Record any actual observations or care events in GAIA rather than assuming them from the new catalog entry.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Catalog entered",
+            "valueHtml": "Nov 9, 2026",
+            "style": ""
+          },
+          {
+            "label": "Acquisition",
+            "valueHtml": "By Nov 8, 2026; exact date unconfirmed",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Confirmed in conversation by Nov 8, 2026",
+            "style": ""
+          },
+          {
+            "label": "Photo baseline",
+            "valueHtml": "Not uploaded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Pest inspection",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 9, 2026 · Catalog reconciliation:</strong> Added Zevran after comparing weekend naming conversations with GAIA's prior 67-record catalog. Owner confirmed the name Zevran for the variegated wax ivy in the Nov 8 naming conversation. No private journal photo uploaded and no care action marked complete."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "vine",
+        "light": "bright-indirect",
+        "water": "half-one",
+        "waterLabel": "Dry between waterings",
+        "soil": "well-drained"
+      },
+      "commonNames": [
+        "Variegated wax ivy",
+        "Wax ivy",
+        "Natal ivy"
+      ]
+    },
+    {
+      "id": "72",
+      "name": "Merry",
+      "species": "Schlumbergera sp. (holiday cactus; exact species or hybrid unconfirmed)",
+      "searchName": "merry christmas thanksgiving holiday cactus schlumbergera lord of the rings",
+      "searchSpecies": "schlumbergera thanksgiving christmas cactus hybrid",
+      "status": "Watch",
+      "photo": "",
+      "photoAlt": "Merry · catalog image not uploaded",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-08",
+      "tags": [
+        {
+          "style": "",
+          "label": "NEW ARRIVAL"
+        },
+        {
+          "style": "",
+          "label": "NAME CONFIRMED"
+        },
+        {
+          "style": "",
+          "label": "HOLIDAY CACTUS"
+        },
+        {
+          "style": "",
+          "label": "LORD OF THE RINGS"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Establish a baseline in GAIA: add a current plant photo, confirm pot drainage and soil mix, and log the next actual watering. Identify which photographed pot is Merry before attaching any of the weekend photos.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "CURRENT RECORD",
+          "bodyHtml": "<strong>Merry</strong> is a distinct new plant added from the Nov 6–8 conversations. The individual Merry/Pippin pot-to-name mapping and the botanical distinction between Thanksgiving cactus and Christmas cactus are not yet established in GAIA. This entry does not imply a fresh visual inspection, pest diagnosis, or confirmed watering event.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Unlike desert cacti, Schlumbergera are forest epiphytes. Water when the upper portion of the mix begins to dry, then drain; avoid both soggy soil and prolonged hard drying.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Bright filtered or indirect light; protect from hot direct sun. Avoid sudden changes of placement or drafts while buds are forming.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Use an airy epiphytic mix that holds some moisture but drains readily, often incorporating small bark and perlite.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "IDENTITY",
+          "bodyHtml": "Exact Schlumbergera species and cultivar unconfirmed. Many commercially sold 'Christmas cactuses' are actually Thanksgiving cactus types. Distinguish by the segments before recording a specific species.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Check for new growth, leaf/stem firmness, unusual spots, or pests as appropriate. Record any actual observations or care events in GAIA rather than assuming them from the new catalog entry.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Catalog entered",
+            "valueHtml": "Nov 9, 2026",
+            "style": ""
+          },
+          {
+            "label": "Acquisition",
+            "valueHtml": "By Nov 8, 2026; exact date unconfirmed",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Confirmed in conversation by Nov 8, 2026",
+            "style": ""
+          },
+          {
+            "label": "Photo baseline",
+            "valueHtml": "Not uploaded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Pest inspection",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 9, 2026 · Catalog reconciliation:</strong> Added Merry after comparing weekend naming conversations with GAIA's prior 67-record catalog. Owner confirmed Merry as one of two separate holiday cactuses, alongside Pippin. No private journal photo uploaded and no care action marked complete."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "cactus",
+        "light": "bright-indirect",
+        "water": "half-one",
+        "waterLabel": "Top inch begins drying",
+        "soil": "airy"
+      },
+      "commonNames": [
+        "Holiday cactus",
+        "Thanksgiving cactus type",
+        "Christmas cactus type"
+      ]
+    },
+    {
+      "id": "73",
+      "name": "Pippin",
+      "species": "Schlumbergera sp. (holiday cactus; exact species or hybrid unconfirmed)",
+      "searchName": "pippin christmas thanksgiving holiday cactus schlumbergera lord of the rings",
+      "searchSpecies": "schlumbergera thanksgiving christmas cactus hybrid",
+      "status": "Watch",
+      "photo": "",
+      "photoAlt": "Pippin · catalog image not uploaded",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-08",
+      "tags": [
+        {
+          "style": "",
+          "label": "NEW ARRIVAL"
+        },
+        {
+          "style": "",
+          "label": "NAME CONFIRMED"
+        },
+        {
+          "style": "",
+          "label": "HOLIDAY CACTUS"
+        },
+        {
+          "style": "",
+          "label": "LORD OF THE RINGS"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Establish a baseline in GAIA: add a current plant photo, confirm pot drainage and soil mix, and log the next actual watering. Identify which photographed pot is Pippin before attaching any of the weekend photos.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "CURRENT RECORD",
+          "bodyHtml": "<strong>Pippin</strong> is a distinct new plant added from the Nov 6–8 conversations. The individual Merry/Pippin pot-to-name mapping and precise Schlumbergera botanical identity are not yet established in GAIA. This entry does not imply a fresh visual inspection, pest diagnosis, or confirmed watering event.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Water when the top portion begins to dry, letting extra water drain away. Holiday cacti are epiphytic forest cacti, so do not keep them bone-dry as you might a desert cactus.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Bright filtered light is ideal. Minimize abrupt temperature and location shifts, especially during flowering.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Use loose, moisture-balancing, freely draining media with some bark or perlite rather than a dense waterlogged mix.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "IDENTITY",
+          "bodyHtml": "Tracked as a separate holiday cactus from Merry. Thanksgiving versus true Christmas cactus species/hybrid has not been verified by foliage details.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Check for new growth, leaf/stem firmness, unusual spots, or pests as appropriate. Record any actual observations or care events in GAIA rather than assuming them from the new catalog entry.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Catalog entered",
+            "valueHtml": "Nov 9, 2026",
+            "style": ""
+          },
+          {
+            "label": "Acquisition",
+            "valueHtml": "By Nov 8, 2026; exact date unconfirmed",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Confirmed in conversation by Nov 8, 2026",
+            "style": ""
+          },
+          {
+            "label": "Photo baseline",
+            "valueHtml": "Not uploaded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Pest inspection",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 9, 2026 · Catalog reconciliation:</strong> Added Pippin after comparing weekend naming conversations with GAIA's prior 67-record catalog. Owner confirmed Pippin as the other holiday cactus, separately from Merry. No private journal photo uploaded and no care action marked complete."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "cactus",
+        "light": "bright-indirect",
+        "water": "half-one",
+        "waterLabel": "Top inch begins drying",
+        "soil": "airy"
+      },
+      "commonNames": [
+        "Holiday cactus",
+        "Thanksgiving cactus type",
+        "Christmas cactus type"
+      ]
+    },
+    {
+      "id": "74",
+      "name": "Magenta",
+      "species": "Kalanchoe sp. (flowering florist kalanchoe; exact species/cultivar unconfirmed)",
+      "searchName": "magenta rocky horror murder mystery kalanchoe flowering succulent",
+      "searchSpecies": "kalanchoe blossfeldiana florist kalanchoe",
+      "status": "Watch",
+      "photo": "",
+      "photoAlt": "Magenta · catalog image not uploaded",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-06",
+      "tags": [
+        {
+          "style": "",
+          "label": "NEW ARRIVAL"
+        },
+        {
+          "style": "",
+          "label": "NAME CONFIRMED"
+        },
+        {
+          "style": "",
+          "label": "FLOWERING SUCCULENT"
+        },
+        {
+          "style": "",
+          "label": "ROCKY HORROR"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Establish a baseline in GAIA: add a current plant photo, confirm pot drainage and soil mix, and log the next actual watering. Confirm current pot drainage and actual soil moisture before watering.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "CURRENT RECORD",
+          "bodyHtml": "<strong>Magenta</strong> is a distinct new plant added from the Nov 6–8 conversations. The plant was identified as a kalanchoe in the Nov 8 conversation; species, soil condition, bloom color and last watering remain unverified in this catalog entry. This entry does not imply a fresh visual inspection, pest diagnosis, or confirmed watering event.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Allow the potting mix to dry substantially between waterings, then water thoroughly and drain. Overly wet soil is a common risk for flowering kalanchoes.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Give very bright light, with gentle direct sun after acclimation if available; protect from cold glass and abrupt exposure.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "A fast-draining succulent mix in a container with drainage is preferred.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "FLOWERING",
+          "bodyHtml": "Remove spent flowers as needed and protect from overnight artificial light if attempting a future short-day rebloom. Do not assume the plant is ready for another bloom cycle yet.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Check for new growth, leaf/stem firmness, unusual spots, or pests as appropriate. Record any actual observations or care events in GAIA rather than assuming them from the new catalog entry.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Catalog entered",
+            "valueHtml": "Nov 9, 2026",
+            "style": ""
+          },
+          {
+            "label": "Acquisition",
+            "valueHtml": "Nov 6, 2026",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Confirmed in conversation by Nov 8, 2026",
+            "style": ""
+          },
+          {
+            "label": "Photo baseline",
+            "valueHtml": "Not uploaded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Pest inspection",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 9, 2026 · Catalog reconciliation:</strong> Added Magenta after comparing weekend naming conversations with GAIA's prior 67-record catalog. Owner received this kalanchoe at the Rocky Horror themed murder mystery and chose the name Magenta, not to be confused with Drogo's 'Magenta' dracaena cultivar. No private journal photo uploaded and no care action marked complete."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "succulent",
+        "light": "very-bright",
+        "water": "fully-dry",
+        "waterLabel": "Dry between waterings",
+        "soil": "gritty"
+      },
+      "commonNames": [
+        "Kalanchoe",
+        "Florist kalanchoe"
       ]
     }
   ],
