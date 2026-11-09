@@ -53,7 +53,7 @@
   .gaia-hero-stat small{font:700 9px/1.2 system-ui,sans-serif!important;letter-spacing:0!important}
   .gaia-hero-stat strong{font-size:19px!important;line-height:1.1}
   .gaia-hero-stat-attention span{display:none!important}
-  /* Only the three primary destinations remain; no duplicate field desk. */
+  /* Four primary destinations, including Nursery; no duplicate field desk. */
   #gaia-hub-tabs{
     position:sticky;top:env(safe-area-inset-top,0px);z-index:60;
     background:#152920;border:1px solid #476450;border-radius:9px;
