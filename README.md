@@ -2,6 +2,8 @@
 
 ## Propagation Nursery (November 9, 2026)
 
+**Scope (confirmed Nov 9):** Use the Nursery only for separate propagation attempts intended to become new plants, not broken stems reinserted into an existing parent plant's own pot, or specimens already independently established. Record those situations in the parent plant’s care history or the permanent collection. Bellatrix's reinserted Tradescantia stems belong in her regular care record; the mistakenly created Nursery batch was deleted on Nov 9. Do not re-create it unless the user actually separates cuttings for propagation.
+
 **Nursery** is the fourth GAIA navigation tab, alongside Care, Learn and Botany. It maintains private propagation batches and individually tracked cuttings without inflating the permanent plant catalog. Each batch may reference an existing parent plant. Cuttings have editable names, stages (cutting / rooting / establishing / established / lost), intended destinations (keep / gift / trade / return), optional observed milestone dates, and notes. Neither rooting nor successful establishment is inferred.
 
 Signed-in owners with authenticator verification (AAL2) can add batches, add cuttings, update progress and upload private resized JPEG progress photos. Data lives in owner-protected Supabase tables gaia_propagation_batches, gaia_propagation_cuttings and gaia_propagation_photos; photos are held in private gaia-propagation-photos Storage with owner-only policies. A signed-out or unverified session cannot read them. Migration: supabase/gaia_propagation_nursery.sql. Frontend: propagation-nursery.js / propagation-nursery.css.
