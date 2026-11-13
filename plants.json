@@ -1,10 +1,14 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "Nov 9, 2026",
+  "updatedAt": "Nov 13, 2026",
   "summaryNote": "tap for care, priorities & history",
   "recentCare": {
-    "dateLabel": "NOV 9, 2026",
+    "dateLabel": "NOV 13, 2026",
     "tiles": [
+      {
+        "title": "Nov 13 · six new named arrivals and light targets",
+        "descriptionHtml": "Added Georgia (variegated Tradescantia), Solas (Starlight Syngonium), Fenris (Silver Fox Syngonium), Azura (Moon Valley Pilea), Nocturnal (purple waffle plant), and Apples (Mini Pixie Syngonium). Their care cards include provisional PPFD targets for 14–15 h grow-light schedules and visible arrival condition notes from chat photos. No GAIA gallery photo, watering, repotting, pest confirmation or root inspection has been invented."
+      },
       {
         "title": "Nov 9 · Clone Force 17 moved to Nursery",
         "descriptionHtml": "The 17 Jango cuttings were migrated from the old combined main-catalog record (#65) into a private, individually trackable propagation batch. Their rooting, pot labels and dates remain unverified. The historical catalog profile was archived in archive/clone-force-17-legacy-catalog.json. Plant #65 is retired and must not be reused for another specimen."
@@ -11215,6 +11219,793 @@
         "Duhg yucca cutting",
         "Yucca",
         "Yucca sp."
+      ]
+    },
+    {
+      "id": "77",
+      "name": "Georgia",
+      "species": "Tradescantia cerinthoides 'Variegata'-type (fuzzy variegated Tradescantia; identification provisional)",
+      "searchName": "georgia tradescantia cerinthoides variegata fuzzy cream striped leaves",
+      "searchSpecies": "tradescantia cerinthoides variegata fuzzy cream striped leaves",
+      "status": "Good",
+      "photo": "",
+      "photoAlt": "Georgia · arrival photographs shared in chat; no GAIA catalog photograph uploaded",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-13",
+      "tags": [
+        {
+          "style": "",
+          "label": "NEW ARRIVAL"
+        },
+        {
+          "style": "",
+          "label": "NAME CONFIRMED"
+        },
+        {
+          "style": "",
+          "label": "VARIEGATED TRADESCANTIA"
+        },
+        {
+          "style": "",
+          "label": "OWNER-CHOSEN NAME"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Keep separately from the existing collection during initial acclimation; inspect foliage and soil/pot drainage. Take a GAIA baseline photo, measure PPFD at leaf level, then log actual care rather than assuming a watering or repot.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "CURRENT RECORD",
+          "bodyHtml": "<strong>Georgia</strong> is one of six new purchases confirmed and named in the Nov 13 conversation. Arrival photograph observation: Full hanging basket with abundant green-and-cream striped, softly hairy foliage and magenta flowers in the owner’s arrival photos. Root condition and any pests are unverified. No private GAIA photo has been uploaded, and no watering, repotting or pest-treatment event is inferred from the photographs.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Bright filtered light; initial grow-light target approximately 110–180 µmol/m²/s PPFD for 14–15 hours daily (roughly DLI 5.5–9.7). Gradually increase from nursery conditions; protect from harsh direct sun.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Let approximately the upper inch of substrate dry, then water thoroughly and drain. Avoid leaving the hanging basket waterlogged or completely desiccated.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Airy, moderately moisture-retentive, well-draining mix. Check existing basket before disturbing roots.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Do not automatically repot a newly purchased plant. Check drainage, pot size and root health first; repot into a suitable substrate if needed after acclimation.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Watch for loss of variegation, stretched stems, leaf-edge scorch, and pests hiding beneath fuzzy foliage. Dense hairs are normal, not by themselves evidence of pests.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Catalog entered",
+            "valueHtml": "Nov 13, 2026",
+            "style": ""
+          },
+          {
+            "label": "Acquisition",
+            "valueHtml": "New purchase confirmed Nov 13, 2026; exact purchase date not recorded",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Confirmed Nov 13, 2026",
+            "style": ""
+          },
+          {
+            "label": "Initial light target",
+            "valueHtml": "110–180 µmol/m²/s PPFD · about 14–15 h/day (starting guideline)",
+            "style": ""
+          },
+          {
+            "label": "GAIA photo baseline",
+            "valueHtml": "Not uploaded; chat photos are not GAIA journal uploads",
+            "style": "unknown"
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Root / pest inspection",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 13, 2026 · New acquisition:</strong> Owner named this plant <strong>Georgia</strong> and provided arrival photos in ChatGPT. Photo impressions are preliminary, not a confirmed diagnosis. Suggested light target 110–180 µmol/m²/s PPFD at leaf level. No physical care event logged."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "tradescantia",
+        "light": "bright-indirect",
+        "water": "one",
+        "waterLabel": "Top 1″ dry",
+        "soil": "well-drained"
+      },
+      "commonNames": [
+        "Variegated Tradescantia",
+        "Fuzzy Tradescantia"
+      ]
+    },
+    {
+      "id": "78",
+      "name": "Solas",
+      "species": "Syngonium podophyllum 'Starlight'-type (white-variegated arrowhead plant; cultivar unverified)",
+      "searchName": "solas syngonium starlight variegated white green arrowhead vine",
+      "searchSpecies": "syngonium starlight variegated white green arrowhead vine",
+      "status": "Watch",
+      "photo": "",
+      "photoAlt": "Solas · arrival photographs shared in chat; no GAIA catalog photograph uploaded",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-13",
+      "tags": [
+        {
+          "style": "",
+          "label": "NEW ARRIVAL"
+        },
+        {
+          "style": "",
+          "label": "NAME CONFIRMED"
+        },
+        {
+          "style": "",
+          "label": "SYNGONIUM"
+        },
+        {
+          "style": "",
+          "label": "DRAGON AGE"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Keep separately from the existing collection during initial acclimation; inspect foliage and soil/pot drainage. Take a GAIA baseline photo, measure PPFD at leaf level, then log actual care rather than assuming a watering or repot.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "CURRENT RECORD",
+          "bodyHtml": "<strong>Solas</strong> is one of six new purchases confirmed and named in the Nov 13 conversation. Arrival photograph observation: White-and-green foliage in arrival photos; some leaves appear curled or dry at the edges. Cause of damage not confirmed. Roots and pests not inspected. No private GAIA photo has been uploaded, and no watering, repotting or pest-treatment event is inferred from the photographs.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Bright, diffuse indirect light to maintain white variegation; initial target approximately 90–150 µmol/m²/s PPFD for 14–15 hours daily (roughly DLI 4.5–8.1). Avoid sudden direct sun.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Allow the upper 1–2 inches to begin drying before watering with drainage. Do not keep the pot constantly saturated or let the whole root ball stay bone dry.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Airy aroid mix that holds some moisture (bark, perlite and organic component), without an excessively coarse mix that dries immediately.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Do not automatically repot a newly purchased plant. Check drainage, pot size and root health first; repot into a suitable substrate if needed after acclimation.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Inspect both leaf surfaces and new growth for pests before grouping with the collection. Browning on existing foliage will not reverse; judge acclimation by healthy new leaves.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Catalog entered",
+            "valueHtml": "Nov 13, 2026",
+            "style": ""
+          },
+          {
+            "label": "Acquisition",
+            "valueHtml": "New purchase confirmed Nov 13, 2026; exact purchase date not recorded",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Confirmed Nov 13, 2026",
+            "style": ""
+          },
+          {
+            "label": "Initial light target",
+            "valueHtml": "90–150 µmol/m²/s PPFD · about 14–15 h/day (starting guideline)",
+            "style": ""
+          },
+          {
+            "label": "GAIA photo baseline",
+            "valueHtml": "Not uploaded; chat photos are not GAIA journal uploads",
+            "style": "unknown"
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Root / pest inspection",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 13, 2026 · New acquisition:</strong> Owner named this plant <strong>Solas</strong> and provided arrival photos in ChatGPT. Photo impressions are preliminary, not a confirmed diagnosis. Suggested light target 90–150 µmol/m²/s PPFD at leaf level. No physical care event logged."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "aroid",
+        "light": "bright-indirect",
+        "water": "one-two",
+        "waterLabel": "Top 1–2″ dry",
+        "soil": "chunky"
+      },
+      "commonNames": [
+        "Starlight Syngonium",
+        "Variegated arrowhead vine"
+      ]
+    },
+    {
+      "id": "79",
+      "name": "Fenris",
+      "species": "Syngonium 'Silver Fox'-type (silvery arrowhead plant; cultivar unverified)",
+      "searchName": "fenris syngonium silver fox silver grey arrowhead plant",
+      "searchSpecies": "syngonium silver fox silver grey arrowhead plant",
+      "status": "Watch",
+      "photo": "",
+      "photoAlt": "Fenris · arrival photographs shared in chat; no GAIA catalog photograph uploaded",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-13",
+      "tags": [
+        {
+          "style": "",
+          "label": "NEW ARRIVAL"
+        },
+        {
+          "style": "",
+          "label": "NAME CONFIRMED"
+        },
+        {
+          "style": "",
+          "label": "SYNGONIUM"
+        },
+        {
+          "style": "",
+          "label": "DRAGON AGE"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Keep separately from the existing collection during initial acclimation; inspect foliage and soil/pot drainage. Take a GAIA baseline photo, measure PPFD at leaf level, then log actual care rather than assuming a watering or repot.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "CURRENT RECORD",
+          "bodyHtml": "<strong>Fenris</strong> is one of six new purchases confirmed and named in the Nov 13 conversation. Arrival photograph observation: Silver-green foliage visible in arrival photo, with some browned tips or edges. Exact cultivar, pest status and root condition not independently verified. No private GAIA photo has been uploaded, and no watering, repotting or pest-treatment event is inferred from the photographs.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Medium-bright filtered light; starting target approximately 80–150 µmol/m²/s PPFD for 14–15 hours daily (roughly DLI 4.0–8.1). Avoid harsh direct afternoon sunlight.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Allow the upper 1–2 inches to begin drying before watering, then drain thoroughly. Adjust to root-zone moisture instead of a calendar.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Well-aerated but not bone-dry aroid mix; coarse perlite and bark balanced with water-holding material.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Do not automatically repot a newly purchased plant. Check drainage, pot size and root health first; repot into a suitable substrate if needed after acclimation.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Monitor silvery new growth, browning and leaf curl. Inspect newly unfolding leaves and undersides for pests; do not diagnose the existing damage from photos alone.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Catalog entered",
+            "valueHtml": "Nov 13, 2026",
+            "style": ""
+          },
+          {
+            "label": "Acquisition",
+            "valueHtml": "New purchase confirmed Nov 13, 2026; exact purchase date not recorded",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Confirmed Nov 13, 2026",
+            "style": ""
+          },
+          {
+            "label": "Initial light target",
+            "valueHtml": "80–150 µmol/m²/s PPFD · about 14–15 h/day (starting guideline)",
+            "style": ""
+          },
+          {
+            "label": "GAIA photo baseline",
+            "valueHtml": "Not uploaded; chat photos are not GAIA journal uploads",
+            "style": "unknown"
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Root / pest inspection",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 13, 2026 · New acquisition:</strong> Owner named this plant <strong>Fenris</strong> and provided arrival photos in ChatGPT. Photo impressions are preliminary, not a confirmed diagnosis. Suggested light target 80–150 µmol/m²/s PPFD at leaf level. No physical care event logged."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "aroid",
+        "light": "bright-indirect",
+        "water": "one-two",
+        "waterLabel": "Top 1–2″ dry",
+        "soil": "chunky"
+      },
+      "commonNames": [
+        "Silver Fox Syngonium",
+        "Silver arrowhead vine"
+      ]
+    },
+    {
+      "id": "80",
+      "name": "Azura",
+      "species": "Pilea mollis 'Moon Valley' (often sold as Pilea involucrata 'Moon Valley')",
+      "searchName": "azura pilea mollis moon valley textured crinkled pilea",
+      "searchSpecies": "pilea mollis moon valley textured crinkled pilea",
+      "status": "Watch",
+      "photo": "",
+      "photoAlt": "Azura · arrival photographs shared in chat; no GAIA catalog photograph uploaded",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-13",
+      "tags": [
+        {
+          "style": "",
+          "label": "NEW ARRIVAL"
+        },
+        {
+          "style": "",
+          "label": "NAME CONFIRMED"
+        },
+        {
+          "style": "",
+          "label": "MOON VALLEY PILEA"
+        },
+        {
+          "style": "",
+          "label": "ELDER SCROLLS"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Keep separately from the existing collection during initial acclimation; inspect foliage and soil/pot drainage. Take a GAIA baseline photo, measure PPFD at leaf level, then log actual care rather than assuming a watering or repot.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "CURRENT RECORD",
+          "bodyHtml": "<strong>Azura</strong> is one of six new purchases confirmed and named in the Nov 13 conversation. Arrival photograph observation: Deeply crinkled, cratered foliage in arrival photos is characteristic of Moon Valley; some older foliage has minor visible damage. Root and pest status unverified. No private GAIA photo has been uploaded, and no watering, repotting or pest-treatment event is inferred from the photographs.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Medium to bright filtered light without direct midday sun. Starting target approximately 75–130 µmol/m²/s PPFD for 14–15 hours daily (roughly DLI 3.8–7.0).",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Keep moderately and evenly moist, but not soggy. Check the upper half-inch to inch of mix; water when it begins to dry, with good drainage.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Moisture-retentive but draining fine-textured houseplant mix; avoid ultra-chunky aroid substrate that dries out too fast.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Do not automatically repot a newly purchased plant. Check drainage, pot size and root health first; repot into a suitable substrate if needed after acclimation.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Watch for wilting, crispy margins, mites or mealybugs; prefer stable moderate humidity away from heaters. Textured leaf surface is normal.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Catalog entered",
+            "valueHtml": "Nov 13, 2026",
+            "style": ""
+          },
+          {
+            "label": "Acquisition",
+            "valueHtml": "New purchase confirmed Nov 13, 2026; exact purchase date not recorded",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Confirmed Nov 13, 2026",
+            "style": ""
+          },
+          {
+            "label": "Initial light target",
+            "valueHtml": "75–130 µmol/m²/s PPFD · about 14–15 h/day (starting guideline)",
+            "style": ""
+          },
+          {
+            "label": "GAIA photo baseline",
+            "valueHtml": "Not uploaded; chat photos are not GAIA journal uploads",
+            "style": "unknown"
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Root / pest inspection",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 13, 2026 · New acquisition:</strong> Owner named this plant <strong>Azura</strong> and provided arrival photos in ChatGPT. Photo impressions are preliminary, not a confirmed diagnosis. Suggested light target 75–130 µmol/m²/s PPFD at leaf level. No physical care event logged."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "pilea",
+        "light": "medium",
+        "water": "one",
+        "waterLabel": "Top ½–1″ dry",
+        "soil": "moisture"
+      },
+      "commonNames": [
+        "Moon Valley Pilea",
+        "Friendship plant"
+      ]
+    },
+    {
+      "id": "81",
+      "name": "Nocturnal",
+      "species": "Strobilanthes alternata (syn. Hemigraphis alternata; purple waffle plant)",
+      "searchName": "nocturnal purple waffle plant strobilanthes alternata hemigraphis",
+      "searchSpecies": "purple waffle plant strobilanthes alternata hemigraphis",
+      "status": "Good",
+      "photo": "",
+      "photoAlt": "Nocturnal · arrival photographs shared in chat; no GAIA catalog photograph uploaded",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-13",
+      "tags": [
+        {
+          "style": "",
+          "label": "NEW ARRIVAL"
+        },
+        {
+          "style": "",
+          "label": "NAME CONFIRMED"
+        },
+        {
+          "style": "",
+          "label": "PURPLE WAFFLE PLANT"
+        },
+        {
+          "style": "",
+          "label": "ELDER SCROLLS"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Keep separately from the existing collection during initial acclimation; inspect foliage and soil/pot drainage. Take a GAIA baseline photo, measure PPFD at leaf level, then log actual care rather than assuming a watering or repot.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "CURRENT RECORD",
+          "bodyHtml": "<strong>Nocturnal</strong> is one of six new purchases confirmed and named in the Nov 13 conversation. Arrival photograph observation: Deep green metallic, crinkled foliage with purple undersides in arrival photo; plant appears comparatively full. No root or hands-on pest inspection documented. No private GAIA photo has been uploaded, and no watering, repotting or pest-treatment event is inferred from the photographs.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Bright indirect light preserves purple coloring; starting target approximately 90–150 µmol/m²/s PPFD for 14–15 hours daily (roughly DLI 4.5–8.1). Shield from harsh direct sun.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Keep substrate consistently lightly moist, never saturated. Water when just the top approximately half-inch begins drying; avoid a full-pot dry-out.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Moisture-retentive but free-draining organic houseplant mix. Do not use extremely chunky, fast-drying aroid mix.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Do not automatically repot a newly purchased plant. Check drainage, pot size and root health first; repot into a suitable substrate if needed after acclimation.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Watch for wilt, crisp edges and fading purple foliage. Keep warm, away from heaters and cold drafts; check for pests on foliage undersides.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Catalog entered",
+            "valueHtml": "Nov 13, 2026",
+            "style": ""
+          },
+          {
+            "label": "Acquisition",
+            "valueHtml": "New purchase confirmed Nov 13, 2026; exact purchase date not recorded",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Confirmed Nov 13, 2026",
+            "style": ""
+          },
+          {
+            "label": "Initial light target",
+            "valueHtml": "90–150 µmol/m²/s PPFD · about 14–15 h/day (starting guideline)",
+            "style": ""
+          },
+          {
+            "label": "GAIA photo baseline",
+            "valueHtml": "Not uploaded; chat photos are not GAIA journal uploads",
+            "style": "unknown"
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Root / pest inspection",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 13, 2026 · New acquisition:</strong> Owner named this plant <strong>Nocturnal</strong> and provided arrival photos in ChatGPT. Photo impressions are preliminary, not a confirmed diagnosis. Suggested light target 90–150 µmol/m²/s PPFD at leaf level. No physical care event logged."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "tropical",
+        "light": "bright-indirect",
+        "water": "moist",
+        "waterLabel": "Keep lightly moist",
+        "soil": "moisture"
+      },
+      "commonNames": [
+        "Purple waffle plant",
+        "Red ivy",
+        "Hemigraphis"
+      ]
+    },
+    {
+      "id": "82",
+      "name": "Apples",
+      "species": "Syngonium podophyllum 'Mini Pixie'-type (miniature arrowhead plant; cultivar unverified)",
+      "searchName": "apples syngonium mini pixie dwarf compact arrowhead plant",
+      "searchSpecies": "syngonium mini pixie dwarf compact arrowhead plant",
+      "status": "Watch",
+      "photo": "",
+      "photoAlt": "Apples · arrival photographs shared in chat; no GAIA catalog photograph uploaded",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-13",
+      "tags": [
+        {
+          "style": "",
+          "label": "NEW ARRIVAL"
+        },
+        {
+          "style": "",
+          "label": "NAME CONFIRMED"
+        },
+        {
+          "style": "",
+          "label": "MINI SYNGONIUM"
+        },
+        {
+          "style": "",
+          "label": "OWNER-CHOSEN NAME"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Keep separately from the existing collection during initial acclimation; inspect foliage and soil/pot drainage. Take a GAIA baseline photo, measure PPFD at leaf level, then log actual care rather than assuming a watering or repot.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "CURRENT RECORD",
+          "bodyHtml": "<strong>Apples</strong> is one of six new purchases confirmed and named in the Nov 13 conversation. Arrival photograph observation: Compact miniaturized arrowhead foliage in arrival photos with some curling/discoloration. Pests and roots not verified; assess new growth after acclimation. No private GAIA photo has been uploaded, and no watering, repotting or pest-treatment event is inferred from the photographs.",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Medium filtered light to bright indirect light. Starting target approximately 75–130 µmol/m²/s PPFD for 14–15 hours daily (roughly DLI 3.8–7.0). Avoid abrupt strong sun.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Allow the upper approximately ½–1 inch to begin drying, then water and drain. Small pots can change moisture quickly; check roots rather than watering on a schedule.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Fine-to-medium airy aroid mix that still holds some moisture. Avoid oversizing the pot or leaving coarse substrate too dry around small roots.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "REPOT",
+          "bodyHtml": "Do not automatically repot a newly purchased plant. Check drainage, pot size and root health first; repot into a suitable substrate if needed after acclimation.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Inspect curled emerging leaves for pests, monitor firm new growth and do not confuse its naturally compact habit with stunted growth.",
+          "pClass": "",
+          "style": "full"
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Catalog entered",
+            "valueHtml": "Nov 13, 2026",
+            "style": ""
+          },
+          {
+            "label": "Acquisition",
+            "valueHtml": "New purchase confirmed Nov 13, 2026; exact purchase date not recorded",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Confirmed Nov 13, 2026",
+            "style": ""
+          },
+          {
+            "label": "Initial light target",
+            "valueHtml": "75–130 µmol/m²/s PPFD · about 14–15 h/day (starting guideline)",
+            "style": ""
+          },
+          {
+            "label": "GAIA photo baseline",
+            "valueHtml": "Not uploaded; chat photos are not GAIA journal uploads",
+            "style": "unknown"
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Root / pest inspection",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 13, 2026 · New acquisition:</strong> Owner named this plant <strong>Apples</strong> and provided arrival photos in ChatGPT. Photo impressions are preliminary, not a confirmed diagnosis. Suggested light target 75–130 µmol/m²/s PPFD at leaf level. No physical care event logged."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "aroid",
+        "light": "medium",
+        "water": "one",
+        "waterLabel": "Top ½–1″ dry",
+        "soil": "chunky"
+      },
+      "commonNames": [
+        "Mini Pixie Syngonium",
+        "Miniature arrowhead plant"
       ]
     }
   ],
