@@ -7,7 +7,7 @@
     "tiles": [
       {
         "title": "Nov 13 · six new named arrivals and light targets",
-        "descriptionHtml": "Added Georgia (variegated Tradescantia), Solas (Starlight Syngonium), Fenris (Silver Fox Syngonium), Azura (Moon Valley Pilea), Nocturnal (purple waffle plant), and Apples (Mini Pixie Syngonium). Their care cards include provisional PPFD targets for 14–15 h grow-light schedules and visible arrival condition notes from chat photos. No GAIA gallery photo, watering, repotting, pest confirmation or root inspection has been invented."
+        "descriptionHtml": "Added Georgia (variegated Tradescantia), Solas (Starlight Syngonium), Fenris (Silver Fox Syngonium), Azura (Moon Valley Pilea), Nocturnal (purple waffle plant), and Apples (Mini Pixie Syngonium). Their care cards include provisional PPFD targets for 14–15 h grow-light schedules and visible arrival condition notes from chat photos. No GAIA gallery photo, watering, repotting, pest confirmation or root inspection has been invented. Optimized user-provided arrival photos have now also been attached as catalog covers for all six cards; private photo journals remain separate."
       },
       {
         "title": "Nov 9 · Clone Force 17 moved to Nursery",
@@ -11228,8 +11228,8 @@
       "searchName": "georgia tradescantia cerinthoides variegata fuzzy cream striped leaves",
       "searchSpecies": "tradescantia cerinthoides variegata fuzzy cream striped leaves",
       "status": "Good",
-      "photo": "",
-      "photoAlt": "Georgia · arrival photographs shared in chat; no GAIA catalog photograph uploaded",
+      "photo": "77-georgia-arrival-20261113.webp",
+      "photoAlt": "Georgia · arrival photograph provided by owner Nov 13, 2026",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-11-13",
@@ -11318,9 +11318,9 @@
             "style": ""
           },
           {
-            "label": "GAIA photo baseline",
-            "valueHtml": "Not uploaded; chat photos are not GAIA journal uploads",
-            "style": "unknown"
+            "label": "Catalog photo",
+            "valueHtml": "Arrival catalog cover uploaded Nov 13, 2026; no private photo-journal entry yet",
+            "style": ""
           },
           {
             "label": "Last watered",
@@ -11337,6 +11337,10 @@
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Nov 13, 2026 · New acquisition:</strong> Owner named this plant <strong>Georgia</strong> and provided arrival photos in ChatGPT. Photo impressions are preliminary, not a confirmed diagnosis. Suggested light target 110–180 µmol/m²/s PPFD at leaf level. No physical care event logged."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 13, 2026 · Catalog cover photo:</strong> User-provided arrival image added to GAIA's main catalog as an optimized WebP cover. This is distinct from the private photo journal; no care events were inferred."
           }
         ]
       },
@@ -11359,8 +11363,8 @@
       "searchName": "solas syngonium starlight variegated white green arrowhead vine",
       "searchSpecies": "syngonium starlight variegated white green arrowhead vine",
       "status": "Watch",
-      "photo": "",
-      "photoAlt": "Solas · arrival photographs shared in chat; no GAIA catalog photograph uploaded",
+      "photo": "78-solas-arrival-20261113.webp",
+      "photoAlt": "Solas · arrival photograph provided by owner Nov 13, 2026",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-11-13",
@@ -11449,9 +11453,9 @@
             "style": ""
           },
           {
-            "label": "GAIA photo baseline",
-            "valueHtml": "Not uploaded; chat photos are not GAIA journal uploads",
-            "style": "unknown"
+            "label": "Catalog photo",
+            "valueHtml": "Arrival catalog cover uploaded Nov 13, 2026; no private photo-journal entry yet",
+            "style": ""
           },
           {
             "label": "Last watered",
@@ -11468,6 +11472,10 @@
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Nov 13, 2026 · New acquisition:</strong> Owner named this plant <strong>Solas</strong> and provided arrival photos in ChatGPT. Photo impressions are preliminary, not a confirmed diagnosis. Suggested light target 90–150 µmol/m²/s PPFD at leaf level. No physical care event logged."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 13, 2026 · Catalog cover photo:</strong> User-provided arrival image added to GAIA's main catalog as an optimized WebP cover. This is distinct from the private photo journal; no care events were inferred."
           }
         ]
       },
@@ -11490,8 +11498,8 @@
       "searchName": "fenris syngonium silver fox silver grey arrowhead plant",
       "searchSpecies": "syngonium silver fox silver grey arrowhead plant",
       "status": "Watch",
-      "photo": "",
-      "photoAlt": "Fenris · arrival photographs shared in chat; no GAIA catalog photograph uploaded",
+      "photo": "79-fenris-arrival-20261113.webp",
+      "photoAlt": "Fenris · arrival photograph provided by owner Nov 13, 2026",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-11-13",
@@ -11580,9 +11588,9 @@
             "style": ""
           },
           {
-            "label": "GAIA photo baseline",
-            "valueHtml": "Not uploaded; chat photos are not GAIA journal uploads",
-            "style": "unknown"
+            "label": "Catalog photo",
+            "valueHtml": "Arrival catalog cover uploaded Nov 13, 2026; no private photo-journal entry yet",
+            "style": ""
           },
           {
             "label": "Last watered",
@@ -11599,6 +11607,10 @@
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Nov 13, 2026 · New acquisition:</strong> Owner named this plant <strong>Fenris</strong> and provided arrival photos in ChatGPT. Photo impressions are preliminary, not a confirmed diagnosis. Suggested light target 80–150 µmol/m²/s PPFD at leaf level. No physical care event logged."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 13, 2026 · Catalog cover photo:</strong> User-provided arrival image added to GAIA's main catalog as an optimized WebP cover. This is distinct from the private photo journal; no care events were inferred."
           }
         ]
       },
@@ -11621,8 +11633,8 @@
       "searchName": "azura pilea mollis moon valley textured crinkled pilea",
       "searchSpecies": "pilea mollis moon valley textured crinkled pilea",
       "status": "Watch",
-      "photo": "",
-      "photoAlt": "Azura · arrival photographs shared in chat; no GAIA catalog photograph uploaded",
+      "photo": "80-azura-arrival-20261113.webp",
+      "photoAlt": "Azura · arrival photograph provided by owner Nov 13, 2026",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-11-13",
@@ -11711,9 +11723,9 @@
             "style": ""
           },
           {
-            "label": "GAIA photo baseline",
-            "valueHtml": "Not uploaded; chat photos are not GAIA journal uploads",
-            "style": "unknown"
+            "label": "Catalog photo",
+            "valueHtml": "Arrival catalog cover uploaded Nov 13, 2026; no private photo-journal entry yet",
+            "style": ""
           },
           {
             "label": "Last watered",
@@ -11730,6 +11742,10 @@
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Nov 13, 2026 · New acquisition:</strong> Owner named this plant <strong>Azura</strong> and provided arrival photos in ChatGPT. Photo impressions are preliminary, not a confirmed diagnosis. Suggested light target 75–130 µmol/m²/s PPFD at leaf level. No physical care event logged."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 13, 2026 · Catalog cover photo:</strong> User-provided arrival image added to GAIA's main catalog as an optimized WebP cover. This is distinct from the private photo journal; no care events were inferred."
           }
         ]
       },
@@ -11752,8 +11768,8 @@
       "searchName": "nocturnal purple waffle plant strobilanthes alternata hemigraphis",
       "searchSpecies": "purple waffle plant strobilanthes alternata hemigraphis",
       "status": "Good",
-      "photo": "",
-      "photoAlt": "Nocturnal · arrival photographs shared in chat; no GAIA catalog photograph uploaded",
+      "photo": "81-nocturnal-arrival-20261113.webp",
+      "photoAlt": "Nocturnal · arrival photograph provided by owner Nov 13, 2026",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-11-13",
@@ -11842,9 +11858,9 @@
             "style": ""
           },
           {
-            "label": "GAIA photo baseline",
-            "valueHtml": "Not uploaded; chat photos are not GAIA journal uploads",
-            "style": "unknown"
+            "label": "Catalog photo",
+            "valueHtml": "Arrival catalog cover uploaded Nov 13, 2026; no private photo-journal entry yet",
+            "style": ""
           },
           {
             "label": "Last watered",
@@ -11861,6 +11877,10 @@
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Nov 13, 2026 · New acquisition:</strong> Owner named this plant <strong>Nocturnal</strong> and provided arrival photos in ChatGPT. Photo impressions are preliminary, not a confirmed diagnosis. Suggested light target 90–150 µmol/m²/s PPFD at leaf level. No physical care event logged."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 13, 2026 · Catalog cover photo:</strong> User-provided arrival image added to GAIA's main catalog as an optimized WebP cover. This is distinct from the private photo journal; no care events were inferred."
           }
         ]
       },
@@ -11884,8 +11904,8 @@
       "searchName": "apples syngonium mini pixie dwarf compact arrowhead plant",
       "searchSpecies": "syngonium mini pixie dwarf compact arrowhead plant",
       "status": "Watch",
-      "photo": "",
-      "photoAlt": "Apples · arrival photographs shared in chat; no GAIA catalog photograph uploaded",
+      "photo": "82-apples-arrival-20261113.webp",
+      "photoAlt": "Apples · arrival photograph provided by owner Nov 13, 2026",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-11-13",
@@ -11974,9 +11994,9 @@
             "style": ""
           },
           {
-            "label": "GAIA photo baseline",
-            "valueHtml": "Not uploaded; chat photos are not GAIA journal uploads",
-            "style": "unknown"
+            "label": "Catalog photo",
+            "valueHtml": "Arrival catalog cover uploaded Nov 13, 2026; no private photo-journal entry yet",
+            "style": ""
           },
           {
             "label": "Last watered",
@@ -11993,6 +12013,10 @@
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Nov 13, 2026 · New acquisition:</strong> Owner named this plant <strong>Apples</strong> and provided arrival photos in ChatGPT. Photo impressions are preliminary, not a confirmed diagnosis. Suggested light target 75–130 µmol/m²/s PPFD at leaf level. No physical care event logged."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 13, 2026 · Catalog cover photo:</strong> User-provided arrival image added to GAIA's main catalog as an optimized WebP cover. This is distinct from the private photo journal; no care events were inferred."
           }
         ]
       },
