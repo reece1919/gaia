@@ -1,10 +1,14 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "Nov 13, 2026",
+  "updatedAt": "Nov 16, 2026",
   "summaryNote": "tap for care, priorities & history",
   "recentCare": {
-    "dateLabel": "NOV 13, 2026",
+    "dateLabel": "NOV 16, 2026",
     "tiles": [
+      {
+        "title": "Nov 16 · 29 rooted/establishing swap residents named",
+        "descriptionHtml": "Added 29 individually named, photographed-in-chat plant swap arrivals (#1–28 and #30) to the permanent GAIA catalog with provisional IDs, health notes, light targets and outstanding care priorities. #29 Flitwick has no roots and belongs in the private Nursery instead. Photos referenced by filename in source notes but their actual image files have NOT been uploaded to this GitHub catalog or private photo journal. No watering, repotting, rootedness or pest-clearance events were fabricated."
+      },
       {
         "title": "Nov 13 · six new named arrivals and light targets",
         "descriptionHtml": "Added Georgia (variegated Tradescantia), Solas (Starlight Syngonium), Fenris (Silver Fox Syngonium), Azura (Moon Valley Pilea), Nocturnal (purple waffle plant), and Apples (Mini Pixie Syngonium). Their care cards include provisional PPFD targets for 14–15 h grow-light schedules and visible arrival condition notes from chat photos. No GAIA gallery photo, watering, repotting, pest confirmation or root inspection has been invented. Optimized user-provided arrival photos have now also been attached as catalog covers for all six cards; private photo journals remain separate."
@@ -12031,6 +12035,4086 @@
         "Mini Pixie Syngonium",
         "Miniature arrowhead plant"
       ]
+    },
+    {
+      "id": "83",
+      "name": "Pelor",
+      "species": "Sedum adolphi / S. nussbaumerianum group (provisional)",
+      "searchName": "pelor golden sedum 2026 plant swap",
+      "searchSpecies": "Sedum adolphi / S. nussbaumerianum group (provisional)",
+      "status": "Watch",
+      "photo": "",
+      "photoAlt": "Pelor · Golden sedum · owner chat image IMG_9313.jpeg, catalog photo pending",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-14",
+      "tags": [
+        {
+          "style": "",
+          "label": "NOV 2026 SWAP"
+        },
+        {
+          "style": "",
+          "label": "NAME CONFIRMED"
+        },
+        {
+          "style": "",
+          "label": "SUCCULENT"
+        },
+        {
+          "style": "",
+          "label": "GOLDEN SEDUM"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Keep separated from existing collection while checking pests and acclimating. Inspect lower leaves and stem base for softness; check pot drainage before watering.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Upper rosette plump and copper-orange; several older lower leaves yellowing. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9313.jpeg (not yet uploaded to GAIA).",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Gradually acclimate to strong light. Provisional starting target 200–400 µmol/m²/s PPFD at leaf level; measure rather than assume output, and adjust for species, duration and acclimation.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Allow the mix to dry fully before thorough watering; check actual pot and leaf condition first.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Preferred medium after confirming roots and drainage: mineral-rich, free-draining succulent/cactus mix. Existing medium has not been fully inspected; do not repot solely to match a recipe.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Lower-leaf decline, softness or rot at the stem base.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "ID CONFIDENCE",
+          "bodyHtml": "Visual identification from chat, provisional; confirm from label, closer photo or new growth.",
+          "pClass": "",
+          "style": ""
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Catalog entered",
+            "valueHtml": "Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Source",
+            "valueHtml": "Plant swap · Nov 14, 2026 (reported)",
+            "style": ""
+          },
+          {
+            "label": "Swap photo number",
+            "valueHtml": "#1 of 30",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Pelor · chosen by owner Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Original photo",
+            "valueHtml": "IMG_9313.jpeg (chat only; not uploaded to catalog)",
+            "style": ""
+          },
+          {
+            "label": "Individual roots checked",
+            "valueHtml": "Not confirmed in this conversation",
+            "style": "unknown"
+          },
+          {
+            "label": "Pest inspection",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#1):</strong> The owner confirmed <strong>Pelor</strong>. User-supplied chat photo IMG_9313.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "succulent",
+        "light": "very-bright",
+        "water": "fully-dry",
+        "waterLabel": "Fully dry",
+        "soil": "gritty"
+      },
+      "commonNames": [
+        "Golden sedum"
+      ]
+    },
+    {
+      "id": "84",
+      "name": "Strahd",
+      "species": "Haworthiopsis sp. (reinwardtii / coarctata group, provisional)",
+      "searchName": "strahd zebra-type haworthiopsis 2026 plant swap",
+      "searchSpecies": "Haworthiopsis sp. (reinwardtii / coarctata group, provisional)",
+      "status": "Watch",
+      "photo": "",
+      "photoAlt": "Strahd · Zebra-type Haworthiopsis · owner chat image IMG_9314.jpeg, catalog photo pending",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-14",
+      "tags": [
+        {
+          "style": "",
+          "label": "NOV 2026 SWAP"
+        },
+        {
+          "style": "",
+          "label": "NAME CONFIRMED"
+        },
+        {
+          "style": "",
+          "label": "SUCCULENT"
+        },
+        {
+          "style": "",
+          "label": "IDENTITY PENDING"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Keep separated from existing collection while checking pests and acclimating. Check drainage and root firmness; avoid intense light while acclimating.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Living, clustered textured stems with several browned or dry tips. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9314.jpeg (not yet uploaded to GAIA).",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Gradually acclimate to bright filtered/indirect light. Provisional starting target 80–180 µmol/m²/s PPFD at leaf level; measure rather than assume output, and adjust for species, duration and acclimation.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Allow the mix to dry fully before thorough watering; check actual pot and leaf condition first.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Preferred medium after confirming roots and drainage: mineral-rich, free-draining succulent/cactus mix. Existing medium has not been fully inspected; do not repot solely to match a recipe.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Drying tips, leaf base softness and root condition.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "ID CONFIDENCE",
+          "bodyHtml": "Visual identification from chat, provisional; confirm from label, closer photo or new growth.",
+          "pClass": "",
+          "style": ""
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Catalog entered",
+            "valueHtml": "Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Source",
+            "valueHtml": "Plant swap · Nov 14, 2026 (reported)",
+            "style": ""
+          },
+          {
+            "label": "Swap photo number",
+            "valueHtml": "#2 of 30",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Strahd · chosen by owner Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Original photo",
+            "valueHtml": "IMG_9314.jpeg (chat only; not uploaded to catalog)",
+            "style": ""
+          },
+          {
+            "label": "Individual roots checked",
+            "valueHtml": "Not confirmed in this conversation",
+            "style": "unknown"
+          },
+          {
+            "label": "Pest inspection",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#2):</strong> The owner confirmed <strong>Strahd</strong>. User-supplied chat photo IMG_9314.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "succulent",
+        "light": "bright-indirect",
+        "water": "fully-dry",
+        "waterLabel": "Fully dry",
+        "soil": "gritty"
+      },
+      "commonNames": [
+        "Zebra-type Haworthiopsis"
+      ]
+    },
+    {
+      "id": "85",
+      "name": "Yzma",
+      "species": "Begonia rex-cultorum hybrid (provisional)",
+      "searchName": "yzma rex begonia 2026 plant swap",
+      "searchSpecies": "Begonia rex-cultorum hybrid (provisional)",
+      "status": "Watch",
+      "photo": "",
+      "photoAlt": "Yzma · Rex Begonia · owner chat image IMG_9316.jpeg, catalog photo pending",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-14",
+      "tags": [
+        {
+          "style": "",
+          "label": "NOV 2026 SWAP"
+        },
+        {
+          "style": "",
+          "label": "NAME CONFIRMED"
+        },
+        {
+          "style": "",
+          "label": "BEGONIA"
+        },
+        {
+          "style": "",
+          "label": "RESCUE"
+        },
+        {
+          "style": "",
+          "label": "IDENTITY PENDING"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Keep separated from existing collection while checking pests and acclimating. Prioritize root and moisture inspection; remove only dead tissue, keep away from heater drafts.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Burgundy foliage severely curled and crispy; stems and some younger growth remain visible. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9316.jpeg (not yet uploaded to GAIA).",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Gradually acclimate to bright filtered/indirect light. Provisional starting target 60–140 µmol/m²/s PPFD at leaf level; measure rather than assume output, and adjust for species, duration and acclimation.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Allow the upper inch or so to begin drying; avoid both soggy soil and prolonged drought.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Preferred medium after confirming roots and drainage: light, well-draining mix retaining modest moisture. Existing medium has not been fully inspected; do not repot solely to match a recipe.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Firmness of rhizome and stems, spread of crispy tissue, and new leaf growth.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "ID CONFIDENCE",
+          "bodyHtml": "Visual identification from chat, provisional; confirm from label, closer photo or new growth.",
+          "pClass": "",
+          "style": ""
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Catalog entered",
+            "valueHtml": "Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Source",
+            "valueHtml": "Plant swap · Nov 14, 2026 (reported)",
+            "style": ""
+          },
+          {
+            "label": "Swap photo number",
+            "valueHtml": "#3 of 30",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Yzma · chosen by owner Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Original photo",
+            "valueHtml": "IMG_9316.jpeg (chat only; not uploaded to catalog)",
+            "style": ""
+          },
+          {
+            "label": "Individual roots checked",
+            "valueHtml": "Not confirmed in this conversation",
+            "style": "unknown"
+          },
+          {
+            "label": "Pest inspection",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#3):</strong> The owner confirmed <strong>Yzma</strong>. User-supplied chat photo IMG_9316.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "tropical",
+        "light": "medium",
+        "water": "one",
+        "waterLabel": "Top ~1″ dry",
+        "soil": "moisture"
+      },
+      "commonNames": [
+        "Rex Begonia"
+      ]
+    },
+    {
+      "id": "86",
+      "name": "Ophelia",
+      "species": "Variegated Stromanthe / prayer-plant relative (Triostar-type; provisional)",
+      "searchName": "ophelia variegated prayer plant 2026 plant swap",
+      "searchSpecies": "Variegated Stromanthe / prayer-plant relative (Triostar-type; provisional)",
+      "status": "Watch",
+      "photo": "",
+      "photoAlt": "Ophelia · Variegated prayer plant · owner chat image IMG_9317.jpeg, catalog photo pending",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-14",
+      "tags": [
+        {
+          "style": "",
+          "label": "NOV 2026 SWAP"
+        },
+        {
+          "style": "",
+          "label": "NAME CONFIRMED"
+        },
+        {
+          "style": "",
+          "label": "PRAYER PLANT"
+        },
+        {
+          "style": "",
+          "label": "IDENTITY PENDING"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Keep separated from existing collection while checking pests and acclimating. Inspect roots and moisture, place away from drying heat and direct intense grow lights.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Variegated foliage with several curled, yellowed or browned leaves. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9317.jpeg (not yet uploaded to GAIA).",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Gradually acclimate to bright filtered/indirect light. Provisional starting target 80–160 µmol/m²/s PPFD at leaf level; measure rather than assume output, and adjust for species, duration and acclimation.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Allow the upper inch or so to begin drying; avoid both soggy soil and prolonged drought.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Preferred medium after confirming roots and drainage: light, well-draining mix retaining modest moisture. Existing medium has not been fully inspected; do not repot solely to match a recipe.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Continued leaf curl, browning, new leaf quality and moisture stability.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "ID CONFIDENCE",
+          "bodyHtml": "Visual identification from chat, provisional; confirm from label, closer photo or new growth.",
+          "pClass": "",
+          "style": ""
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Catalog entered",
+            "valueHtml": "Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Source",
+            "valueHtml": "Plant swap · Nov 14, 2026 (reported)",
+            "style": ""
+          },
+          {
+            "label": "Swap photo number",
+            "valueHtml": "#4 of 30",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Ophelia · chosen by owner Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Original photo",
+            "valueHtml": "IMG_9317.jpeg (chat only; not uploaded to catalog)",
+            "style": ""
+          },
+          {
+            "label": "Individual roots checked",
+            "valueHtml": "Not confirmed in this conversation",
+            "style": "unknown"
+          },
+          {
+            "label": "Pest inspection",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#4):</strong> The owner confirmed <strong>Ophelia</strong>. User-supplied chat photo IMG_9317.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "prayer",
+        "light": "bright-indirect",
+        "water": "one",
+        "waterLabel": "Top ~1″ dry",
+        "soil": "moisture"
+      },
+      "commonNames": [
+        "Variegated prayer plant"
+      ]
+    },
+    {
+      "id": "87",
+      "name": "Rauru",
+      "species": "Silver-leaved aroid, possibly Monstera siltepecana (unverified)",
+      "searchName": "rauru silver aroid 2026 plant swap",
+      "searchSpecies": "Silver-leaved aroid, possibly Monstera siltepecana (unverified)",
+      "status": "Good",
+      "photo": "",
+      "photoAlt": "Rauru · Silver aroid · owner chat image IMG_9318.jpeg, catalog photo pending",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-14",
+      "tags": [
+        {
+          "style": "",
+          "label": "NOV 2026 SWAP"
+        },
+        {
+          "style": "",
+          "label": "NAME CONFIRMED"
+        },
+        {
+          "style": "",
+          "label": "AROID"
+        },
+        {
+          "style": "",
+          "label": "IDENTITY PENDING"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Keep separated from existing collection while checking pests and acclimating. Confirm species and rooted nodes; check drainage and avoid overwatering.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Most leaves intact; one pale lower leaf declining. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9318.jpeg (not yet uploaded to GAIA).",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Gradually acclimate to bright filtered/indirect light. Provisional starting target 100–200 µmol/m²/s PPFD at leaf level; measure rather than assume output, and adjust for species, duration and acclimation.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Let roughly the upper 1–2 inches begin drying before watering and draining.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Preferred medium after confirming roots and drainage: airy aroid/bark-perlite mix. Existing medium has not been fully inspected; do not repot solely to match a recipe.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Yellowing lower foliage, stem firmness and new growth.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "ID CONFIDENCE",
+          "bodyHtml": "Visual identification from chat, provisional; confirm from label, closer photo or new growth.",
+          "pClass": "",
+          "style": ""
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Catalog entered",
+            "valueHtml": "Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Source",
+            "valueHtml": "Plant swap · Nov 14, 2026 (reported)",
+            "style": ""
+          },
+          {
+            "label": "Swap photo number",
+            "valueHtml": "#5 of 30",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Rauru · chosen by owner Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Original photo",
+            "valueHtml": "IMG_9318.jpeg (chat only; not uploaded to catalog)",
+            "style": ""
+          },
+          {
+            "label": "Individual roots checked",
+            "valueHtml": "Not confirmed in this conversation",
+            "style": "unknown"
+          },
+          {
+            "label": "Pest inspection",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#5):</strong> The owner confirmed <strong>Rauru</strong>. User-supplied chat photo IMG_9318.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "aroid",
+        "light": "bright-indirect",
+        "water": "one-two",
+        "waterLabel": "Top 1–2″ dry",
+        "soil": "chunky"
+      },
+      "commonNames": [
+        "Silver aroid"
+      ]
+    },
+    {
+      "id": "88",
+      "name": "Éowyn",
+      "species": "Scindapsus pictus (possibly 'Exotica'; cultivar unverified)",
+      "searchName": "éowyn satin pothos 2026 plant swap",
+      "searchSpecies": "Scindapsus pictus (possibly 'Exotica'; cultivar unverified)",
+      "status": "Good",
+      "photo": "",
+      "photoAlt": "Éowyn · Satin pothos · owner chat image IMG_9319.jpeg, catalog photo pending",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-14",
+      "tags": [
+        {
+          "style": "",
+          "label": "NOV 2026 SWAP"
+        },
+        {
+          "style": "",
+          "label": "NAME CONFIRMED"
+        },
+        {
+          "style": "",
+          "label": "AROID"
+        },
+        {
+          "style": "",
+          "label": "SILVER FOLIAGE"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Keep separated from existing collection while checking pests and acclimating. Confirm rooting and well-draining medium; allow partial drying between waterings.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Silver-variegated leaves appear fairly firm and healthy. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9319.jpeg (not yet uploaded to GAIA).",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Gradually acclimate to bright filtered/indirect light. Provisional starting target 80–180 µmol/m²/s PPFD at leaf level; measure rather than assume output, and adjust for species, duration and acclimation.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Let roughly the upper 1–2 inches begin drying before watering and draining.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Preferred medium after confirming roots and drainage: airy aroid/bark-perlite mix. Existing medium has not been fully inspected; do not repot solely to match a recipe.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Leaf curl, root condition and growth-point activity.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "ID CONFIDENCE",
+          "bodyHtml": "Visual identification from chat, provisional; confirm from label, closer photo or new growth.",
+          "pClass": "",
+          "style": ""
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Catalog entered",
+            "valueHtml": "Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Source",
+            "valueHtml": "Plant swap · Nov 14, 2026 (reported)",
+            "style": ""
+          },
+          {
+            "label": "Swap photo number",
+            "valueHtml": "#6 of 30",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Éowyn · chosen by owner Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Original photo",
+            "valueHtml": "IMG_9319.jpeg (chat only; not uploaded to catalog)",
+            "style": ""
+          },
+          {
+            "label": "Individual roots checked",
+            "valueHtml": "Not confirmed in this conversation",
+            "style": "unknown"
+          },
+          {
+            "label": "Pest inspection",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#6):</strong> The owner confirmed <strong>Éowyn</strong>. User-supplied chat photo IMG_9319.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "aroid",
+        "light": "bright-indirect",
+        "water": "one-two",
+        "waterLabel": "Top 1–2″ dry",
+        "soil": "chunky"
+      },
+      "commonNames": [
+        "Satin pothos"
+      ]
+    },
+    {
+      "id": "89",
+      "name": "Carmilla",
+      "species": "Strobilanthes dyerianus",
+      "searchName": "carmilla persian shield 2026 plant swap",
+      "searchSpecies": "Strobilanthes dyerianus",
+      "status": "Watch",
+      "photo": "",
+      "photoAlt": "Carmilla · Persian shield · owner chat image IMG_9320.jpeg, catalog photo pending",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-14",
+      "tags": [
+        {
+          "style": "",
+          "label": "NOV 2026 SWAP"
+        },
+        {
+          "style": "",
+          "label": "NAME CONFIRMED"
+        },
+        {
+          "style": "",
+          "label": "PERSIAN SHIELD"
+        },
+        {
+          "style": "",
+          "label": "PURPLE FOLIAGE"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Keep separated from existing collection while checking pests and acclimating. Check moisture before watering; let acclimate before shaping or pruning.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Purple foliage largely intact, with slight droop and curl. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9320.jpeg (not yet uploaded to GAIA).",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Gradually acclimate to bright filtered/indirect light. Provisional starting target 100–200 µmol/m²/s PPFD at leaf level; measure rather than assume output, and adjust for species, duration and acclimation.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Allow the upper inch or so to begin drying; avoid both soggy soil and prolonged drought.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Preferred medium after confirming roots and drainage: light, well-draining mix retaining modest moisture. Existing medium has not been fully inspected; do not repot solely to match a recipe.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Wilting, leaf-edge damage and underside pests.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "ID CONFIDENCE",
+          "bodyHtml": "Visual identification from chat, reasonably characteristic but not laboratory-verified.",
+          "pClass": "",
+          "style": ""
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Catalog entered",
+            "valueHtml": "Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Source",
+            "valueHtml": "Plant swap · Nov 14, 2026 (reported)",
+            "style": ""
+          },
+          {
+            "label": "Swap photo number",
+            "valueHtml": "#7 of 30",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Carmilla · chosen by owner Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Original photo",
+            "valueHtml": "IMG_9320.jpeg (chat only; not uploaded to catalog)",
+            "style": ""
+          },
+          {
+            "label": "Individual roots checked",
+            "valueHtml": "Not confirmed in this conversation",
+            "style": "unknown"
+          },
+          {
+            "label": "Pest inspection",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#7):</strong> The owner confirmed <strong>Carmilla</strong>. User-supplied chat photo IMG_9320.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "tropical",
+        "light": "bright-indirect",
+        "water": "one",
+        "waterLabel": "Top ~1″ dry",
+        "soil": "moisture"
+      },
+      "commonNames": [
+        "Persian shield"
+      ]
+    },
+    {
+      "id": "90",
+      "name": "Molesley",
+      "species": "Heptapleurum arboricola (syn. Schefflera arboricola)",
+      "searchName": "molesley dwarf umbrella tree 2026 plant swap",
+      "searchSpecies": "Heptapleurum arboricola (syn. Schefflera arboricola)",
+      "status": "Watch",
+      "photo": "",
+      "photoAlt": "Molesley · Dwarf umbrella tree · owner chat image IMG_9321.jpeg, catalog photo pending",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-14",
+      "tags": [
+        {
+          "style": "",
+          "label": "NOV 2026 SWAP"
+        },
+        {
+          "style": "",
+          "label": "NAME CONFIRMED"
+        },
+        {
+          "style": "",
+          "label": "UMBRELLA TREE"
+        },
+        {
+          "style": "",
+          "label": "SHAPING CANDIDATE"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Keep separated from existing collection while checking pests and acclimating. Give stable bright indirect light; defer pruning until acclimated and roots confirmed.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Vigorous, long branching growth; plant is relatively leggy and spreads widely. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9321.jpeg (not yet uploaded to GAIA).",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Gradually acclimate to bright filtered/indirect light. Provisional starting target 120–250 µmol/m²/s PPFD at leaf level; measure rather than assume output, and adjust for species, duration and acclimation.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Let roughly the upper 1–2 inches begin drying before watering and draining.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Preferred medium after confirming roots and drainage: airy, freely draining potting mix. Existing medium has not been fully inspected; do not repot solely to match a recipe.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Root congestion, branch balance and new compact growth.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "ID CONFIDENCE",
+          "bodyHtml": "Visual identification from chat, reasonably characteristic but not laboratory-verified.",
+          "pClass": "",
+          "style": ""
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Catalog entered",
+            "valueHtml": "Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Source",
+            "valueHtml": "Plant swap · Nov 14, 2026 (reported)",
+            "style": ""
+          },
+          {
+            "label": "Swap photo number",
+            "valueHtml": "#8 of 30",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Molesley · chosen by owner Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Original photo",
+            "valueHtml": "IMG_9321.jpeg (chat only; not uploaded to catalog)",
+            "style": ""
+          },
+          {
+            "label": "Individual roots checked",
+            "valueHtml": "Not confirmed in this conversation",
+            "style": "unknown"
+          },
+          {
+            "label": "Pest inspection",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#8):</strong> The owner confirmed <strong>Molesley</strong>. User-supplied chat photo IMG_9321.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "tropical",
+        "light": "bright-indirect",
+        "water": "one-two",
+        "waterLabel": "Top 1–2″ dry",
+        "soil": "well-drained"
+      },
+      "commonNames": [
+        "Dwarf umbrella tree"
+      ]
+    },
+    {
+      "id": "91",
+      "name": "Hestu",
+      "species": "Crassula ovata",
+      "searchName": "hestu jade plant (multiple stems) 2026 plant swap",
+      "searchSpecies": "Crassula ovata",
+      "status": "Good",
+      "photo": "",
+      "photoAlt": "Hestu · Jade plant (multiple stems) · owner chat image IMG_9322.jpeg, catalog photo pending",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-14",
+      "tags": [
+        {
+          "style": "",
+          "label": "NOV 2026 SWAP"
+        },
+        {
+          "style": "",
+          "label": "NAME CONFIRMED"
+        },
+        {
+          "style": "",
+          "label": "SUCCULENT"
+        },
+        {
+          "style": "",
+          "label": "JADE"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Keep separated from existing collection while checking pests and acclimating. Check if stems have independent roots and confirm drainage; avoid oversaturation.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Multiple stems with fairly plump leaves and growing tips. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9322.jpeg (not yet uploaded to GAIA).",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Gradually acclimate to strong light. Provisional starting target 200–400 µmol/m²/s PPFD at leaf level; measure rather than assume output, and adjust for species, duration and acclimation.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Allow the mix to dry fully before thorough watering; check actual pot and leaf condition first.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Preferred medium after confirming roots and drainage: mineral-rich, free-draining succulent/cactus mix. Existing medium has not been fully inspected; do not repot solely to match a recipe.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Soft stems, leaf drop and elongation.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "ID CONFIDENCE",
+          "bodyHtml": "Visual identification from chat, reasonably characteristic but not laboratory-verified.",
+          "pClass": "",
+          "style": ""
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Catalog entered",
+            "valueHtml": "Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Source",
+            "valueHtml": "Plant swap · Nov 14, 2026 (reported)",
+            "style": ""
+          },
+          {
+            "label": "Swap photo number",
+            "valueHtml": "#9 of 30",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Hestu · chosen by owner Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Original photo",
+            "valueHtml": "IMG_9322.jpeg (chat only; not uploaded to catalog)",
+            "style": ""
+          },
+          {
+            "label": "Individual roots checked",
+            "valueHtml": "Not confirmed in this conversation",
+            "style": "unknown"
+          },
+          {
+            "label": "Pest inspection",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#9):</strong> The owner confirmed <strong>Hestu</strong>. User-supplied chat photo IMG_9322.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "succulent",
+        "light": "very-bright",
+        "water": "fully-dry",
+        "waterLabel": "Fully dry",
+        "soil": "gritty"
+      },
+      "commonNames": [
+        "Jade plant (multiple stems)"
+      ]
+    },
+    {
+      "id": "92",
+      "name": "Puck",
+      "species": "Unidentified aroid-like single-leaf specimen (identity and viable growth point unverified)",
+      "searchName": "puck mystery single-leaf aroid 2026 plant swap",
+      "searchSpecies": "Unidentified aroid-like single-leaf specimen (identity and viable growth point unverified)",
+      "status": "Watch",
+      "photo": "",
+      "photoAlt": "Puck · Mystery single-leaf aroid · owner chat image IMG_9323.jpeg, catalog photo pending",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-14",
+      "tags": [
+        {
+          "style": "",
+          "label": "NOV 2026 SWAP"
+        },
+        {
+          "style": "",
+          "label": "NAME CONFIRMED"
+        },
+        {
+          "style": "",
+          "label": "IDENTITY PENDING"
+        },
+        {
+          "style": "",
+          "label": "GROWTH POINT CHECK"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Keep separated from existing collection while checking pests and acclimating. Urgently verify presence of a rooted node/rhizome and a viable growth point without unnecessary root disturbance.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> A single blue-green leaf with no verified active growth point. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9323.jpeg (not yet uploaded to GAIA).",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Gradually acclimate to bright filtered/indirect light. Provisional starting target 60–120 µmol/m²/s PPFD at leaf level; measure rather than assume output, and adjust for species, duration and acclimation.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Allow the upper inch or so to begin drying; avoid both soggy soil and prolonged drought.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Preferred medium after confirming roots and drainage: light, well-draining mix retaining modest moisture. Existing medium has not been fully inspected; do not repot solely to match a recipe.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Leaf and petiole firmness; whether new growth emerges. A detached leaf without viable growth point may not form a new plant.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "ID CONFIDENCE",
+          "bodyHtml": "Visual identification from chat, provisional; confirm from label, closer photo or new growth.",
+          "pClass": "",
+          "style": ""
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Catalog entered",
+            "valueHtml": "Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Source",
+            "valueHtml": "Plant swap · Nov 14, 2026 (reported)",
+            "style": ""
+          },
+          {
+            "label": "Swap photo number",
+            "valueHtml": "#10 of 30",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Puck · chosen by owner Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Original photo",
+            "valueHtml": "IMG_9323.jpeg (chat only; not uploaded to catalog)",
+            "style": ""
+          },
+          {
+            "label": "Individual roots checked",
+            "valueHtml": "Not confirmed in this conversation",
+            "style": "unknown"
+          },
+          {
+            "label": "Pest inspection",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#10):</strong> The owner confirmed <strong>Puck</strong>. User-supplied chat photo IMG_9323.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "aroid",
+        "light": "medium",
+        "water": "one",
+        "waterLabel": "Top ~1″ dry",
+        "soil": "moisture"
+      },
+      "commonNames": [
+        "Mystery single-leaf aroid"
+      ]
+    },
+    {
+      "id": "93",
+      "name": "Lady Mary",
+      "species": "Begonia hybrid (rex-type, cultivar unverified)",
+      "searchName": "lady mary red-leaved begonia 2026 plant swap",
+      "searchSpecies": "Begonia hybrid (rex-type, cultivar unverified)",
+      "status": "Watch",
+      "photo": "",
+      "photoAlt": "Lady Mary · Red-leaved Begonia · owner chat image IMG_9324.jpeg, catalog photo pending",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-14",
+      "tags": [
+        {
+          "style": "",
+          "label": "NOV 2026 SWAP"
+        },
+        {
+          "style": "",
+          "label": "NAME CONFIRMED"
+        },
+        {
+          "style": "",
+          "label": "BEGONIA"
+        },
+        {
+          "style": "",
+          "label": "RED FOLIAGE"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Keep separated from existing collection while checking pests and acclimating. Confirm soil moisture and drainage; keep out of direct hot light.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Vibrant red serrated leaves; minor edge damage. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9324.jpeg (not yet uploaded to GAIA).",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Gradually acclimate to bright filtered/indirect light. Provisional starting target 70–150 µmol/m²/s PPFD at leaf level; measure rather than assume output, and adjust for species, duration and acclimation.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Allow the upper inch or so to begin drying; avoid both soggy soil and prolonged drought.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Preferred medium after confirming roots and drainage: light, well-draining mix retaining modest moisture. Existing medium has not been fully inspected; do not repot solely to match a recipe.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Crispy margins, wilting and pest activity.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "ID CONFIDENCE",
+          "bodyHtml": "Visual identification from chat, provisional; confirm from label, closer photo or new growth.",
+          "pClass": "",
+          "style": ""
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Catalog entered",
+            "valueHtml": "Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Source",
+            "valueHtml": "Plant swap · Nov 14, 2026 (reported)",
+            "style": ""
+          },
+          {
+            "label": "Swap photo number",
+            "valueHtml": "#11 of 30",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Lady Mary · chosen by owner Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Original photo",
+            "valueHtml": "IMG_9324.jpeg (chat only; not uploaded to catalog)",
+            "style": ""
+          },
+          {
+            "label": "Individual roots checked",
+            "valueHtml": "Not confirmed in this conversation",
+            "style": "unknown"
+          },
+          {
+            "label": "Pest inspection",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#11):</strong> The owner confirmed <strong>Lady Mary</strong>. User-supplied chat photo IMG_9324.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "tropical",
+        "light": "bright-indirect",
+        "water": "one",
+        "waterLabel": "Top ~1″ dry",
+        "soil": "moisture"
+      },
+      "commonNames": [
+        "Red-leaved Begonia"
+      ]
+    },
+    {
+      "id": "94",
+      "name": "Gibbs",
+      "species": "Hoya sp. (wayetii-type; unverified)",
+      "searchName": "gibbs narrow-leaf hoya 2026 plant swap",
+      "searchSpecies": "Hoya sp. (wayetii-type; unverified)",
+      "status": "Good",
+      "photo": "",
+      "photoAlt": "Gibbs · Narrow-leaf Hoya · owner chat image IMG_9325.jpeg, catalog photo pending",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-14",
+      "tags": [
+        {
+          "style": "",
+          "label": "NOV 2026 SWAP"
+        },
+        {
+          "style": "",
+          "label": "NAME CONFIRMED"
+        },
+        {
+          "style": "",
+          "label": "HOYA"
+        },
+        {
+          "style": "",
+          "label": "IDENTITY PENDING"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Keep separated from existing collection while checking pests and acclimating. Verify roots and keep airy medium; avoid repeated wettings while rooting.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Compact narrow dark-green waxy leaves with relatively firm growth. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9325.jpeg (not yet uploaded to GAIA).",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Gradually acclimate to bright filtered/indirect light. Provisional starting target 100–200 µmol/m²/s PPFD at leaf level; measure rather than assume output, and adjust for species, duration and acclimation.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Let most of the medium dry, then water and drain, adjusting to verified root strength.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Preferred medium after confirming roots and drainage: airy aroid/bark-perlite mix. Existing medium has not been fully inspected; do not repot solely to match a recipe.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Leaf wrinkling, stem softness and root expansion.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "ID CONFIDENCE",
+          "bodyHtml": "Visual identification from chat, provisional; confirm from label, closer photo or new growth.",
+          "pClass": "",
+          "style": ""
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Catalog entered",
+            "valueHtml": "Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Source",
+            "valueHtml": "Plant swap · Nov 14, 2026 (reported)",
+            "style": ""
+          },
+          {
+            "label": "Swap photo number",
+            "valueHtml": "#12 of 30",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Gibbs · chosen by owner Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Original photo",
+            "valueHtml": "IMG_9325.jpeg (chat only; not uploaded to catalog)",
+            "style": ""
+          },
+          {
+            "label": "Individual roots checked",
+            "valueHtml": "Not confirmed in this conversation",
+            "style": "unknown"
+          },
+          {
+            "label": "Pest inspection",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#12):</strong> The owner confirmed <strong>Gibbs</strong>. User-supplied chat photo IMG_9325.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "vine",
+        "light": "bright-indirect",
+        "water": "almost-dry",
+        "waterLabel": "Mostly dry",
+        "soil": "chunky"
+      },
+      "commonNames": [
+        "Narrow-leaf Hoya"
+      ]
+    },
+    {
+      "id": "95",
+      "name": "Sybil",
+      "species": "Hoya carnosa 'Krimson Queen'-type (provisional)",
+      "searchName": "sybil variegated hoya 2026 plant swap",
+      "searchSpecies": "Hoya carnosa 'Krimson Queen'-type (provisional)",
+      "status": "Good",
+      "photo": "",
+      "photoAlt": "Sybil · Variegated Hoya · owner chat image IMG_9326.jpeg, catalog photo pending",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-14",
+      "tags": [
+        {
+          "style": "",
+          "label": "NOV 2026 SWAP"
+        },
+        {
+          "style": "",
+          "label": "NAME CONFIRMED"
+        },
+        {
+          "style": "",
+          "label": "HOYA"
+        },
+        {
+          "style": "",
+          "label": "VARIEGATED"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Keep separated from existing collection while checking pests and acclimating. Confirm cultivar from label if present and verify root establishment.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Compact firm leaves with cream edges and pink-toned margins. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9326.jpeg (not yet uploaded to GAIA).",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Gradually acclimate to bright filtered/indirect light. Provisional starting target 120–220 µmol/m²/s PPFD at leaf level; measure rather than assume output, and adjust for species, duration and acclimation.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Let most of the medium dry, then water and drain, adjusting to verified root strength.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Preferred medium after confirming roots and drainage: airy aroid/bark-perlite mix. Existing medium has not been fully inspected; do not repot solely to match a recipe.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "New variegation, excessive leaf loss and moisture retention.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "ID CONFIDENCE",
+          "bodyHtml": "Visual identification from chat, provisional; confirm from label, closer photo or new growth.",
+          "pClass": "",
+          "style": ""
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Catalog entered",
+            "valueHtml": "Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Source",
+            "valueHtml": "Plant swap · Nov 14, 2026 (reported)",
+            "style": ""
+          },
+          {
+            "label": "Swap photo number",
+            "valueHtml": "#13 of 30",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Sybil · chosen by owner Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Original photo",
+            "valueHtml": "IMG_9326.jpeg (chat only; not uploaded to catalog)",
+            "style": ""
+          },
+          {
+            "label": "Individual roots checked",
+            "valueHtml": "Not confirmed in this conversation",
+            "style": "unknown"
+          },
+          {
+            "label": "Pest inspection",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#13):</strong> The owner confirmed <strong>Sybil</strong>. User-supplied chat photo IMG_9326.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "vine",
+        "light": "bright-indirect",
+        "water": "almost-dry",
+        "waterLabel": "Mostly dry",
+        "soil": "chunky"
+      },
+      "commonNames": [
+        "Variegated Hoya"
+      ]
+    },
+    {
+      "id": "96",
+      "name": "Calypso",
+      "species": "Hoya sp. (possibly H. pubicalyx; unverified)",
+      "searchName": "calypso silver-splashed hoya 2026 plant swap",
+      "searchSpecies": "Hoya sp. (possibly H. pubicalyx; unverified)",
+      "status": "Good",
+      "photo": "",
+      "photoAlt": "Calypso · Silver-splashed Hoya · owner chat image IMG_9327.jpeg, catalog photo pending",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-14",
+      "tags": [
+        {
+          "style": "",
+          "label": "NOV 2026 SWAP"
+        },
+        {
+          "style": "",
+          "label": "NAME CONFIRMED"
+        },
+        {
+          "style": "",
+          "label": "HOYA"
+        },
+        {
+          "style": "",
+          "label": "SILVER SPLASH"
+        },
+        {
+          "style": "",
+          "label": "IDENTITY PENDING"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Keep separated from existing collection while checking pests and acclimating. Verify identification, roots and node health; leave vine supported or trailing.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Trailing vine with green leaves and sparse silver splash. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9327.jpeg (not yet uploaded to GAIA).",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Gradually acclimate to bright filtered/indirect light. Provisional starting target 100–200 µmol/m²/s PPFD at leaf level; measure rather than assume output, and adjust for species, duration and acclimation.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Let most of the medium dry, then water and drain, adjusting to verified root strength.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Preferred medium after confirming roots and drainage: airy aroid/bark-perlite mix. Existing medium has not been fully inspected; do not repot solely to match a recipe.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Silver-splash pattern in new leaves, root moisture and mealybugs.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "ID CONFIDENCE",
+          "bodyHtml": "Visual identification from chat, provisional; confirm from label, closer photo or new growth.",
+          "pClass": "",
+          "style": ""
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Catalog entered",
+            "valueHtml": "Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Source",
+            "valueHtml": "Plant swap · Nov 14, 2026 (reported)",
+            "style": ""
+          },
+          {
+            "label": "Swap photo number",
+            "valueHtml": "#14 of 30",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Calypso · chosen by owner Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Original photo",
+            "valueHtml": "IMG_9327.jpeg (chat only; not uploaded to catalog)",
+            "style": ""
+          },
+          {
+            "label": "Individual roots checked",
+            "valueHtml": "Not confirmed in this conversation",
+            "style": "unknown"
+          },
+          {
+            "label": "Pest inspection",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#14):</strong> The owner confirmed <strong>Calypso</strong>. User-supplied chat photo IMG_9327.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "vine",
+        "light": "bright-indirect",
+        "water": "almost-dry",
+        "waterLabel": "Mostly dry",
+        "soil": "chunky"
+      },
+      "commonNames": [
+        "Silver-splashed Hoya"
+      ]
+    },
+    {
+      "id": "97",
+      "name": "Viago",
+      "species": "Coleus scutellarioides (burgundy cultivar unconfirmed)",
+      "searchName": "viago burgundy coleus 2026 plant swap",
+      "searchSpecies": "Coleus scutellarioides (burgundy cultivar unconfirmed)",
+      "status": "Good",
+      "photo": "",
+      "photoAlt": "Viago · Burgundy Coleus · owner chat image IMG_9328.jpeg, catalog photo pending",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-14",
+      "tags": [
+        {
+          "style": "",
+          "label": "NOV 2026 SWAP"
+        },
+        {
+          "style": "",
+          "label": "NAME CONFIRMED"
+        },
+        {
+          "style": "",
+          "label": "COLEUS"
+        },
+        {
+          "style": "",
+          "label": "BURGUNDY"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Keep separated from existing collection while checking pests and acclimating. Keep evenly lightly moist and give bright filtered light; pinch tips only after settling.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Vivid burgundy, textured foliage and active upper growth. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9328.jpeg (not yet uploaded to GAIA).",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Gradually acclimate to bright filtered/indirect light. Provisional starting target 120–250 µmol/m²/s PPFD at leaf level; measure rather than assume output, and adjust for species, duration and acclimation.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Allow the upper inch or so to begin drying; avoid both soggy soil and prolonged drought.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Preferred medium after confirming roots and drainage: light, well-draining mix retaining modest moisture. Existing medium has not been fully inspected; do not repot solely to match a recipe.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Drooping from dry soil, stretching and leaf-edge scorch.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "ID CONFIDENCE",
+          "bodyHtml": "Visual identification from chat, reasonably characteristic but not laboratory-verified.",
+          "pClass": "",
+          "style": ""
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Catalog entered",
+            "valueHtml": "Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Source",
+            "valueHtml": "Plant swap · Nov 14, 2026 (reported)",
+            "style": ""
+          },
+          {
+            "label": "Swap photo number",
+            "valueHtml": "#15 of 30",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Viago · chosen by owner Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Original photo",
+            "valueHtml": "IMG_9328.jpeg (chat only; not uploaded to catalog)",
+            "style": ""
+          },
+          {
+            "label": "Individual roots checked",
+            "valueHtml": "Not confirmed in this conversation",
+            "style": "unknown"
+          },
+          {
+            "label": "Pest inspection",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#15):</strong> The owner confirmed <strong>Viago</strong>. User-supplied chat photo IMG_9328.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "tropical",
+        "light": "bright-indirect",
+        "water": "one",
+        "waterLabel": "Top ~1″ dry",
+        "soil": "moisture"
+      },
+      "commonNames": [
+        "Burgundy Coleus"
+      ]
+    },
+    {
+      "id": "98",
+      "name": "Fester",
+      "species": "Portulacaria afra (provisional)",
+      "searchName": "fester elephant bush / dwarf jade 2026 plant swap",
+      "searchSpecies": "Portulacaria afra (provisional)",
+      "status": "Watch",
+      "photo": "",
+      "photoAlt": "Fester · Elephant bush / Dwarf jade · owner chat image IMG_9329.jpeg, catalog photo pending",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-14",
+      "tags": [
+        {
+          "style": "",
+          "label": "NOV 2026 SWAP"
+        },
+        {
+          "style": "",
+          "label": "NAME CONFIRMED"
+        },
+        {
+          "style": "",
+          "label": "SUCCULENT"
+        },
+        {
+          "style": "",
+          "label": "SHAPING CANDIDATE"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Keep separated from existing collection while checking pests and acclimating. Improve light gradually and verify healthy roots before pruning or transplanting.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Long woody stems with sparse, small rounded leaves; appears leggy. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9329.jpeg (not yet uploaded to GAIA).",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Gradually acclimate to strong light. Provisional starting target 200–400 µmol/m²/s PPFD at leaf level; measure rather than assume output, and adjust for species, duration and acclimation.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Allow the mix to dry fully before thorough watering; check actual pot and leaf condition first.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Preferred medium after confirming roots and drainage: mineral-rich, free-draining succulent/cactus mix. Existing medium has not been fully inspected; do not repot solely to match a recipe.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Stem softness, leaf drop and new branch growth.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "ID CONFIDENCE",
+          "bodyHtml": "Visual identification from chat, provisional; confirm from label, closer photo or new growth.",
+          "pClass": "",
+          "style": ""
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Catalog entered",
+            "valueHtml": "Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Source",
+            "valueHtml": "Plant swap · Nov 14, 2026 (reported)",
+            "style": ""
+          },
+          {
+            "label": "Swap photo number",
+            "valueHtml": "#16 of 30",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Fester · chosen by owner Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Original photo",
+            "valueHtml": "IMG_9329.jpeg (chat only; not uploaded to catalog)",
+            "style": ""
+          },
+          {
+            "label": "Individual roots checked",
+            "valueHtml": "Not confirmed in this conversation",
+            "style": "unknown"
+          },
+          {
+            "label": "Pest inspection",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#16):</strong> The owner confirmed <strong>Fester</strong>. User-supplied chat photo IMG_9329.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "succulent",
+        "light": "very-bright",
+        "water": "fully-dry",
+        "waterLabel": "Fully dry",
+        "soil": "gritty"
+      },
+      "commonNames": [
+        "Elephant bush / Dwarf jade"
+      ]
+    },
+    {
+      "id": "99",
+      "name": "Daisy",
+      "species": "Chlorophytum comosum (variegated cultivar)",
+      "searchName": "daisy young spider plant 2026 plant swap",
+      "searchSpecies": "Chlorophytum comosum (variegated cultivar)",
+      "status": "Watch",
+      "photo": "",
+      "photoAlt": "Daisy · Young spider plant · owner chat image IMG_9330.jpeg, catalog photo pending",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-14",
+      "tags": [
+        {
+          "style": "",
+          "label": "NOV 2026 SWAP"
+        },
+        {
+          "style": "",
+          "label": "NAME CONFIRMED"
+        },
+        {
+          "style": "",
+          "label": "SPIDER PLANT"
+        },
+        {
+          "style": "",
+          "label": "YOUNG"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Keep separated from existing collection while checking pests and acclimating. Confirm draining pot and root establishment; avoid unnecessary repotting.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Young striped spider plant with a few damaged tips and center growth. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9330.jpeg (not yet uploaded to GAIA).",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Gradually acclimate to bright filtered/indirect light. Provisional starting target 80–180 µmol/m²/s PPFD at leaf level; measure rather than assume output, and adjust for species, duration and acclimation.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Allow the upper inch or so to begin drying; avoid both soggy soil and prolonged drought.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Preferred medium after confirming roots and drainage: airy, freely draining potting mix. Existing medium has not been fully inspected; do not repot solely to match a recipe.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Leaf tip browning, crown firmness and fresh growth.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "ID CONFIDENCE",
+          "bodyHtml": "Visual identification from chat, reasonably characteristic but not laboratory-verified.",
+          "pClass": "",
+          "style": ""
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Catalog entered",
+            "valueHtml": "Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Source",
+            "valueHtml": "Plant swap · Nov 14, 2026 (reported)",
+            "style": ""
+          },
+          {
+            "label": "Swap photo number",
+            "valueHtml": "#17 of 30",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Daisy · chosen by owner Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Original photo",
+            "valueHtml": "IMG_9330.jpeg (chat only; not uploaded to catalog)",
+            "style": ""
+          },
+          {
+            "label": "Individual roots checked",
+            "valueHtml": "Not confirmed in this conversation",
+            "style": "unknown"
+          },
+          {
+            "label": "Pest inspection",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#17):</strong> The owner confirmed <strong>Daisy</strong>. User-supplied chat photo IMG_9330.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "tropical",
+        "light": "bright-indirect",
+        "water": "one",
+        "waterLabel": "Top ~1″ dry",
+        "soil": "well-drained"
+      },
+      "commonNames": [
+        "Young spider plant"
+      ]
+    },
+    {
+      "id": "100",
+      "name": "Carson",
+      "species": "Crassula ovata",
+      "searchName": "carson upright jade plant 2026 plant swap",
+      "searchSpecies": "Crassula ovata",
+      "status": "Good",
+      "photo": "",
+      "photoAlt": "Carson · Upright Jade plant · owner chat image IMG_9331.jpeg, catalog photo pending",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-14",
+      "tags": [
+        {
+          "style": "",
+          "label": "NOV 2026 SWAP"
+        },
+        {
+          "style": "",
+          "label": "NAME CONFIRMED"
+        },
+        {
+          "style": "",
+          "label": "SUCCULENT"
+        },
+        {
+          "style": "",
+          "label": "JADE"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Keep separated from existing collection while checking pests and acclimating. Check drainage and gradually acclimate to strong grow lighting.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Substantial upright stem with plump, glossy leaves and active tips. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9331.jpeg (not yet uploaded to GAIA).",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Gradually acclimate to strong light. Provisional starting target 200–400 µmol/m²/s PPFD at leaf level; measure rather than assume output, and adjust for species, duration and acclimation.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Allow the mix to dry fully before thorough watering; check actual pot and leaf condition first.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Preferred medium after confirming roots and drainage: mineral-rich, free-draining succulent/cactus mix. Existing medium has not been fully inspected; do not repot solely to match a recipe.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Stretching, soft stems and leaf loss.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "ID CONFIDENCE",
+          "bodyHtml": "Visual identification from chat, reasonably characteristic but not laboratory-verified.",
+          "pClass": "",
+          "style": ""
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Catalog entered",
+            "valueHtml": "Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Source",
+            "valueHtml": "Plant swap · Nov 14, 2026 (reported)",
+            "style": ""
+          },
+          {
+            "label": "Swap photo number",
+            "valueHtml": "#18 of 30",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Carson · chosen by owner Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Original photo",
+            "valueHtml": "IMG_9331.jpeg (chat only; not uploaded to catalog)",
+            "style": ""
+          },
+          {
+            "label": "Individual roots checked",
+            "valueHtml": "Not confirmed in this conversation",
+            "style": "unknown"
+          },
+          {
+            "label": "Pest inspection",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#18):</strong> The owner confirmed <strong>Carson</strong>. User-supplied chat photo IMG_9331.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "succulent",
+        "light": "very-bright",
+        "water": "fully-dry",
+        "waterLabel": "Fully dry",
+        "soil": "gritty"
+      },
+      "commonNames": [
+        "Upright Jade plant"
+      ]
+    },
+    {
+      "id": "101",
+      "name": "Deacon",
+      "species": "Coleus scutellarioides (green-burgundy cultivar unverified)",
+      "searchName": "deacon green and burgundy coleus 2026 plant swap",
+      "searchSpecies": "Coleus scutellarioides (green-burgundy cultivar unverified)",
+      "status": "Good",
+      "photo": "",
+      "photoAlt": "Deacon · Green and Burgundy Coleus · owner chat image IMG_9332.jpeg, catalog photo pending",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-14",
+      "tags": [
+        {
+          "style": "",
+          "label": "NOV 2026 SWAP"
+        },
+        {
+          "style": "",
+          "label": "NAME CONFIRMED"
+        },
+        {
+          "style": "",
+          "label": "COLEUS"
+        },
+        {
+          "style": "",
+          "label": "GREEN AND RED"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Keep separated from existing collection while checking pests and acclimating. Allow acclimation; monitor moisture closely and pinch when growing strongly.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Bright chartreuse leaves with burgundy patches; relatively compact new growth. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9332.jpeg (not yet uploaded to GAIA).",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Gradually acclimate to bright filtered/indirect light. Provisional starting target 120–250 µmol/m²/s PPFD at leaf level; measure rather than assume output, and adjust for species, duration and acclimation.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Allow the upper inch or so to begin drying; avoid both soggy soil and prolonged drought.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Preferred medium after confirming roots and drainage: light, well-draining mix retaining modest moisture. Existing medium has not been fully inspected; do not repot solely to match a recipe.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Wilting, stretching and leaf-edge burn.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "ID CONFIDENCE",
+          "bodyHtml": "Visual identification from chat, provisional; confirm from label, closer photo or new growth.",
+          "pClass": "",
+          "style": ""
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Catalog entered",
+            "valueHtml": "Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Source",
+            "valueHtml": "Plant swap · Nov 14, 2026 (reported)",
+            "style": ""
+          },
+          {
+            "label": "Swap photo number",
+            "valueHtml": "#19 of 30",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Deacon · chosen by owner Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Original photo",
+            "valueHtml": "IMG_9332.jpeg (chat only; not uploaded to catalog)",
+            "style": ""
+          },
+          {
+            "label": "Individual roots checked",
+            "valueHtml": "Not confirmed in this conversation",
+            "style": "unknown"
+          },
+          {
+            "label": "Pest inspection",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#19):</strong> The owner confirmed <strong>Deacon</strong>. User-supplied chat photo IMG_9332.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "tropical",
+        "light": "bright-indirect",
+        "water": "one",
+        "waterLabel": "Top ~1″ dry",
+        "soil": "moisture"
+      },
+      "commonNames": [
+        "Green and Burgundy Coleus"
+      ]
+    },
+    {
+      "id": "102",
+      "name": "Loops",
+      "species": "Peperomia sp. (possibly P. prostrata; unverified)",
+      "searchName": "loops trailing patterned peperomia / string of turtles-type 2026 plant swap",
+      "searchSpecies": "Peperomia sp. (possibly P. prostrata; unverified)",
+      "status": "Watch",
+      "photo": "",
+      "photoAlt": "Loops · Trailing patterned Peperomia / String of Turtles-type · owner chat image IMG_9333.jpeg, catalog photo pending",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-14",
+      "tags": [
+        {
+          "style": "",
+          "label": "NOV 2026 SWAP"
+        },
+        {
+          "style": "",
+          "label": "NAME CONFIRMED"
+        },
+        {
+          "style": "",
+          "label": "PEPEROMIA"
+        },
+        {
+          "style": "",
+          "label": "TRAILING"
+        },
+        {
+          "style": "",
+          "label": "IDENTITY PENDING"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Keep separated from existing collection while checking pests and acclimating. Confirm species, roots and drainage; avoid constantly wet shallow root zone.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Trailing red stems and small patterned leaves; some yellow-green foliage. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9333.jpeg (not yet uploaded to GAIA).",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Gradually acclimate to bright filtered/indirect light. Provisional starting target 80–160 µmol/m²/s PPFD at leaf level; measure rather than assume output, and adjust for species, duration and acclimation.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Allow the upper inch or so to begin drying; avoid both soggy soil and prolonged drought.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Preferred medium after confirming roots and drainage: airy, freely draining potting mix. Existing medium has not been fully inspected; do not repot solely to match a recipe.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Stem rot, yellowing leaves and emerging trailing growth.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "ID CONFIDENCE",
+          "bodyHtml": "Visual identification from chat, provisional; confirm from label, closer photo or new growth.",
+          "pClass": "",
+          "style": ""
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Catalog entered",
+            "valueHtml": "Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Source",
+            "valueHtml": "Plant swap · Nov 14, 2026 (reported)",
+            "style": ""
+          },
+          {
+            "label": "Swap photo number",
+            "valueHtml": "#20 of 30",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Loops · chosen by owner Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Original photo",
+            "valueHtml": "IMG_9333.jpeg (chat only; not uploaded to catalog)",
+            "style": ""
+          },
+          {
+            "label": "Individual roots checked",
+            "valueHtml": "Not confirmed in this conversation",
+            "style": "unknown"
+          },
+          {
+            "label": "Pest inspection",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#20):</strong> The owner confirmed <strong>Loops</strong>. User-supplied chat photo IMG_9333.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "tropical",
+        "light": "medium",
+        "water": "one",
+        "waterLabel": "Top ~1″ dry",
+        "soil": "airy"
+      },
+      "commonNames": [
+        "Trailing patterned Peperomia / String of Turtles-type"
+      ]
+    },
+    {
+      "id": "103",
+      "name": "Mrs. Patmore",
+      "species": "Chlorophytum comosum (variegated)",
+      "searchName": "mrs. patmore mature spider plant 2026 plant swap",
+      "searchSpecies": "Chlorophytum comosum (variegated)",
+      "status": "Watch",
+      "photo": "",
+      "photoAlt": "Mrs. Patmore · Mature spider plant · owner chat image IMG_9334.jpeg, catalog photo pending",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-14",
+      "tags": [
+        {
+          "style": "",
+          "label": "NOV 2026 SWAP"
+        },
+        {
+          "style": "",
+          "label": "NAME CONFIRMED"
+        },
+        {
+          "style": "",
+          "label": "SPIDER PLANT"
+        },
+        {
+          "style": "",
+          "label": "MATURE"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Keep separated from existing collection while checking pests and acclimating. Provide space and check root congestion; do not repot unless roots or pot demand it.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Very large and full arching leaf mass with minor tip damage. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9334.jpeg (not yet uploaded to GAIA).",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Gradually acclimate to bright filtered/indirect light. Provisional starting target 100–200 µmol/m²/s PPFD at leaf level; measure rather than assume output, and adjust for species, duration and acclimation.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Let roughly the upper 1–2 inches begin drying before watering and draining.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Preferred medium after confirming roots and drainage: airy, freely draining potting mix. Existing medium has not been fully inspected; do not repot solely to match a recipe.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Brown tips, watering changes and developing plantlets.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "ID CONFIDENCE",
+          "bodyHtml": "Visual identification from chat, reasonably characteristic but not laboratory-verified.",
+          "pClass": "",
+          "style": ""
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Catalog entered",
+            "valueHtml": "Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Source",
+            "valueHtml": "Plant swap · Nov 14, 2026 (reported)",
+            "style": ""
+          },
+          {
+            "label": "Swap photo number",
+            "valueHtml": "#21 of 30",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Mrs. Patmore · chosen by owner Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Original photo",
+            "valueHtml": "IMG_9334.jpeg (chat only; not uploaded to catalog)",
+            "style": ""
+          },
+          {
+            "label": "Individual roots checked",
+            "valueHtml": "Not confirmed in this conversation",
+            "style": "unknown"
+          },
+          {
+            "label": "Pest inspection",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#21):</strong> The owner confirmed <strong>Mrs. Patmore</strong>. User-supplied chat photo IMG_9334.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "tropical",
+        "light": "bright-indirect",
+        "water": "one-two",
+        "waterLabel": "Top 1–2″ dry",
+        "soil": "well-drained"
+      },
+      "commonNames": [
+        "Mature spider plant"
+      ]
+    },
+    {
+      "id": "104",
+      "name": "Wellington",
+      "species": "Chlorophytum comosum (variegated)",
+      "searchName": "wellington small spider plant 2026 plant swap",
+      "searchSpecies": "Chlorophytum comosum (variegated)",
+      "status": "Watch",
+      "photo": "",
+      "photoAlt": "Wellington · Small spider plant · owner chat image IMG_9335.jpeg, catalog photo pending",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-14",
+      "tags": [
+        {
+          "style": "",
+          "label": "NOV 2026 SWAP"
+        },
+        {
+          "style": "",
+          "label": "NAME CONFIRMED"
+        },
+        {
+          "style": "",
+          "label": "SPIDER PLANT"
+        },
+        {
+          "style": "",
+          "label": "YOUNG"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Keep separated from existing collection while checking pests and acclimating. Check drainage and rooting before moving to larger pot.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Young green-and-cream leaves, some curling or tip damage. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9335.jpeg (not yet uploaded to GAIA).",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Gradually acclimate to bright filtered/indirect light. Provisional starting target 80–180 µmol/m²/s PPFD at leaf level; measure rather than assume output, and adjust for species, duration and acclimation.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Allow the upper inch or so to begin drying; avoid both soggy soil and prolonged drought.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Preferred medium after confirming roots and drainage: airy, freely draining potting mix. Existing medium has not been fully inspected; do not repot solely to match a recipe.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "New center growth, brown tips and medium drying.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "ID CONFIDENCE",
+          "bodyHtml": "Visual identification from chat, reasonably characteristic but not laboratory-verified.",
+          "pClass": "",
+          "style": ""
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Catalog entered",
+            "valueHtml": "Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Source",
+            "valueHtml": "Plant swap · Nov 14, 2026 (reported)",
+            "style": ""
+          },
+          {
+            "label": "Swap photo number",
+            "valueHtml": "#22 of 30",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Wellington · chosen by owner Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Original photo",
+            "valueHtml": "IMG_9335.jpeg (chat only; not uploaded to catalog)",
+            "style": ""
+          },
+          {
+            "label": "Individual roots checked",
+            "valueHtml": "Not confirmed in this conversation",
+            "style": "unknown"
+          },
+          {
+            "label": "Pest inspection",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#22):</strong> The owner confirmed <strong>Wellington</strong>. User-supplied chat photo IMG_9335.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "tropical",
+        "light": "bright-indirect",
+        "water": "one",
+        "waterLabel": "Top ~1″ dry",
+        "soil": "well-drained"
+      },
+      "commonNames": [
+        "Small spider plant"
+      ]
+    },
+    {
+      "id": "105",
+      "name": "Robin",
+      "species": "Syngonium podophyllum 'White Butterfly'-type (cultivar unconfirmed)",
+      "searchName": "robin pale arrowhead vine 2026 plant swap",
+      "searchSpecies": "Syngonium podophyllum 'White Butterfly'-type (cultivar unconfirmed)",
+      "status": "Watch",
+      "photo": "",
+      "photoAlt": "Robin · Pale arrowhead vine · owner chat image IMG_9336.jpeg, catalog photo pending",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-14",
+      "tags": [
+        {
+          "style": "",
+          "label": "NOV 2026 SWAP"
+        },
+        {
+          "style": "",
+          "label": "NAME CONFIRMED"
+        },
+        {
+          "style": "",
+          "label": "SYNGONIUM"
+        },
+        {
+          "style": "",
+          "label": "PALE FOLIAGE"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Keep separated from existing collection while checking pests and acclimating. Check root establishment and choose diffuse light; avoid dry heater air.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Several pale arrow-shaped leaves with green patterning; slight curl and discoloration. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9336.jpeg (not yet uploaded to GAIA).",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Gradually acclimate to bright filtered/indirect light. Provisional starting target 100–180 µmol/m²/s PPFD at leaf level; measure rather than assume output, and adjust for species, duration and acclimation.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Allow the upper inch or so to begin drying; avoid both soggy soil and prolonged drought.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Preferred medium after confirming roots and drainage: airy aroid/bark-perlite mix. Existing medium has not been fully inspected; do not repot solely to match a recipe.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Leaf curl, water stress and new foliage.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "ID CONFIDENCE",
+          "bodyHtml": "Visual identification from chat, reasonably characteristic but not laboratory-verified.",
+          "pClass": "",
+          "style": ""
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Catalog entered",
+            "valueHtml": "Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Source",
+            "valueHtml": "Plant swap · Nov 14, 2026 (reported)",
+            "style": ""
+          },
+          {
+            "label": "Swap photo number",
+            "valueHtml": "#23 of 30",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Robin · chosen by owner Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Original photo",
+            "valueHtml": "IMG_9336.jpeg (chat only; not uploaded to catalog)",
+            "style": ""
+          },
+          {
+            "label": "Individual roots checked",
+            "valueHtml": "Not confirmed in this conversation",
+            "style": "unknown"
+          },
+          {
+            "label": "Pest inspection",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#23):</strong> The owner confirmed <strong>Robin</strong>. User-supplied chat photo IMG_9336.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "aroid",
+        "light": "bright-indirect",
+        "water": "one",
+        "waterLabel": "Top ~1″ dry",
+        "soil": "chunky"
+      },
+      "commonNames": [
+        "Pale arrowhead vine"
+      ]
+    },
+    {
+      "id": "106",
+      "name": "Daphne",
+      "species": "Episcia sp. (species/cultivar unverified)",
+      "searchName": "daphne flame violet 2026 plant swap",
+      "searchSpecies": "Episcia sp. (species/cultivar unverified)",
+      "status": "Watch",
+      "photo": "",
+      "photoAlt": "Daphne · Flame violet · owner chat image IMG_9337.jpeg, catalog photo pending",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-14",
+      "tags": [
+        {
+          "style": "",
+          "label": "NOV 2026 SWAP"
+        },
+        {
+          "style": "",
+          "label": "NAME CONFIRMED"
+        },
+        {
+          "style": "",
+          "label": "EPISCIA"
+        },
+        {
+          "style": "",
+          "label": "RESCUE WATCH"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Keep separated from existing collection while checking pests and acclimating. Inspect crown and roots gently; protect from drying out while avoiding stagnant wet soil.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Small plant with one prominent velvety, dark-green leaf and some edge damage. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9337.jpeg (not yet uploaded to GAIA).",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Gradually acclimate to bright filtered/indirect light. Provisional starting target 60–120 µmol/m²/s PPFD at leaf level; measure rather than assume output, and adjust for species, duration and acclimation.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Allow the upper inch or so to begin drying; avoid both soggy soil and prolonged drought.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Preferred medium after confirming roots and drainage: light, well-draining mix retaining modest moisture. Existing medium has not been fully inspected; do not repot solely to match a recipe.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Crown firmness, expansion of damage and new shoots.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "ID CONFIDENCE",
+          "bodyHtml": "Visual identification from chat, provisional; confirm from label, closer photo or new growth.",
+          "pClass": "",
+          "style": ""
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Catalog entered",
+            "valueHtml": "Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Source",
+            "valueHtml": "Plant swap · Nov 14, 2026 (reported)",
+            "style": ""
+          },
+          {
+            "label": "Swap photo number",
+            "valueHtml": "#24 of 30",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Daphne · chosen by owner Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Original photo",
+            "valueHtml": "IMG_9337.jpeg (chat only; not uploaded to catalog)",
+            "style": ""
+          },
+          {
+            "label": "Individual roots checked",
+            "valueHtml": "Not confirmed in this conversation",
+            "style": "unknown"
+          },
+          {
+            "label": "Pest inspection",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#24):</strong> The owner confirmed <strong>Daphne</strong>. User-supplied chat photo IMG_9337.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "tropical",
+        "light": "medium",
+        "water": "one",
+        "waterLabel": "Top ~1″ dry",
+        "soil": "moisture"
+      },
+      "commonNames": [
+        "Flame violet"
+      ]
+    },
+    {
+      "id": "107",
+      "name": "Daruk",
+      "species": "Alocasia sp. or related aroid (unverified)",
+      "searchName": "daruk elephant-ear-type single-leaf plant 2026 plant swap",
+      "searchSpecies": "Alocasia sp. or related aroid (unverified)",
+      "status": "Watch",
+      "photo": "",
+      "photoAlt": "Daruk · Elephant-ear-type single-leaf plant · owner chat image IMG_9338.jpeg, catalog photo pending",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-14",
+      "tags": [
+        {
+          "style": "",
+          "label": "NOV 2026 SWAP"
+        },
+        {
+          "style": "",
+          "label": "NAME CONFIRMED"
+        },
+        {
+          "style": "",
+          "label": "AROID"
+        },
+        {
+          "style": "",
+          "label": "IDENTITY PENDING"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Keep separated from existing collection while checking pests and acclimating. Inspect pot walls, corm/rhizome and roots without disturbing unnecessarily; confirm identity.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Single large dark-green leaf appears generally intact; underground corm/rhizome unverified. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9338.jpeg (not yet uploaded to GAIA).",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Gradually acclimate to bright filtered/indirect light. Provisional starting target 100–180 µmol/m²/s PPFD at leaf level; measure rather than assume output, and adjust for species, duration and acclimation.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Allow the upper inch or so to begin drying; avoid both soggy soil and prolonged drought.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Preferred medium after confirming roots and drainage: airy aroid/bark-perlite mix. Existing medium has not been fully inspected; do not repot solely to match a recipe.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Softening at petiole base, leaf yellowing and new shoot emergence.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "ID CONFIDENCE",
+          "bodyHtml": "Visual identification from chat, provisional; confirm from label, closer photo or new growth.",
+          "pClass": "",
+          "style": ""
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Catalog entered",
+            "valueHtml": "Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Source",
+            "valueHtml": "Plant swap · Nov 14, 2026 (reported)",
+            "style": ""
+          },
+          {
+            "label": "Swap photo number",
+            "valueHtml": "#25 of 30",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Daruk · chosen by owner Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Original photo",
+            "valueHtml": "IMG_9338.jpeg (chat only; not uploaded to catalog)",
+            "style": ""
+          },
+          {
+            "label": "Individual roots checked",
+            "valueHtml": "Not confirmed in this conversation",
+            "style": "unknown"
+          },
+          {
+            "label": "Pest inspection",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#25):</strong> The owner confirmed <strong>Daruk</strong>. User-supplied chat photo IMG_9338.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "aroid",
+        "light": "bright-indirect",
+        "water": "one",
+        "waterLabel": "Top ~1″ dry",
+        "soil": "chunky"
+      },
+      "commonNames": [
+        "Elephant-ear-type single-leaf plant"
+      ]
+    },
+    {
+      "id": "108",
+      "name": "Kronk",
+      "species": "Sympodial orchid, possibly Catasetinae (genus unverified)",
+      "searchName": "kronk mystery pseudobulb orchid 2026 plant swap",
+      "searchSpecies": "Sympodial orchid, possibly Catasetinae (genus unverified)",
+      "status": "Watch",
+      "photo": "",
+      "photoAlt": "Kronk · Mystery pseudobulb orchid · owner chat image IMG_9339.jpeg, catalog photo pending",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-14",
+      "tags": [
+        {
+          "style": "",
+          "label": "NOV 2026 SWAP"
+        },
+        {
+          "style": "",
+          "label": "NAME CONFIRMED"
+        },
+        {
+          "style": "",
+          "label": "ORCHID"
+        },
+        {
+          "style": "",
+          "label": "ID INVESTIGATION"
+        },
+        {
+          "style": "",
+          "label": "WATERING PENDING"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Keep separated from existing collection while checking pests and acclimating. Priority: photograph pseudobulb bases, emerging growth, roots through clear pot, and any labels. Identify genus before deciding water regimen; some Catasetinae need dry dormancy and delayed spring watering.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Two large green pseudobulbs, somewhat wrinkled, with fresh straplike leaf growth at base. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9339.jpeg (not yet uploaded to GAIA).",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Gradually acclimate to bright filtered/indirect light. Provisional starting target 100–200 µmol/m²/s PPFD at leaf level; measure rather than assume output, and adjust for species, duration and acclimation.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Watering schedule unconfirmed until genus and active root stage are verified. Do not automatically follow Phalaenopsis or general orchid watering rules.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Preferred medium after confirming roots and drainage: well-ventilated orchid bark, genus-dependent. Existing medium has not been fully inspected; do not repot solely to match a recipe.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "New root tips and growth stage, pseudobulb firmness, possible root rot.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "ID CONFIDENCE",
+          "bodyHtml": "Visual identification from chat, provisional; confirm from label, closer photo or new growth.",
+          "pClass": "",
+          "style": ""
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Catalog entered",
+            "valueHtml": "Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Source",
+            "valueHtml": "Plant swap · Nov 14, 2026 (reported)",
+            "style": ""
+          },
+          {
+            "label": "Swap photo number",
+            "valueHtml": "#26 of 30",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Kronk · chosen by owner Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Original photo",
+            "valueHtml": "IMG_9339.jpeg (chat only; not uploaded to catalog)",
+            "style": ""
+          },
+          {
+            "label": "Individual roots checked",
+            "valueHtml": "Not confirmed in this conversation",
+            "style": "unknown"
+          },
+          {
+            "label": "Pest inspection",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#26):</strong> The owner confirmed <strong>Kronk</strong>. User-supplied chat photo IMG_9339.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "orchid",
+        "light": "bright-indirect",
+        "water": "almost-dry",
+        "waterLabel": "Mostly dry",
+        "soil": "orchid"
+      },
+      "commonNames": [
+        "Mystery pseudobulb orchid"
+      ]
+    },
+    {
+      "id": "109",
+      "name": "Smeagol",
+      "species": "Crassula ovata 'Gollum'",
+      "searchName": "smeagol gollum jade 2026 plant swap",
+      "searchSpecies": "Crassula ovata 'Gollum'",
+      "status": "Watch",
+      "photo": "",
+      "photoAlt": "Smeagol · Gollum jade · owner chat image IMG_9340.jpeg, catalog photo pending",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-14",
+      "tags": [
+        {
+          "style": "",
+          "label": "NOV 2026 SWAP"
+        },
+        {
+          "style": "",
+          "label": "NAME CONFIRMED"
+        },
+        {
+          "style": "",
+          "label": "SUCCULENT"
+        },
+        {
+          "style": "",
+          "label": "GOLLUM JADE"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Keep separated from existing collection while checking pests and acclimating. Check small pot drainage and dry-down; provide strong but gradually increased light.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Small compact tubular green leaves with a little minor damage. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9340.jpeg (not yet uploaded to GAIA).",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Gradually acclimate to strong light. Provisional starting target 200–400 µmol/m²/s PPFD at leaf level; measure rather than assume output, and adjust for species, duration and acclimation.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Allow the mix to dry fully before thorough watering; check actual pot and leaf condition first.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Preferred medium after confirming roots and drainage: mineral-rich, free-draining succulent/cactus mix. Existing medium has not been fully inspected; do not repot solely to match a recipe.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Tube-leaf firmness, overwatering symptoms and new branches.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "ID CONFIDENCE",
+          "bodyHtml": "Visual identification from chat, reasonably characteristic but not laboratory-verified.",
+          "pClass": "",
+          "style": ""
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Catalog entered",
+            "valueHtml": "Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Source",
+            "valueHtml": "Plant swap · Nov 14, 2026 (reported)",
+            "style": ""
+          },
+          {
+            "label": "Swap photo number",
+            "valueHtml": "#27 of 30",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Smeagol · chosen by owner Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Original photo",
+            "valueHtml": "IMG_9340.jpeg (chat only; not uploaded to catalog)",
+            "style": ""
+          },
+          {
+            "label": "Individual roots checked",
+            "valueHtml": "Not confirmed in this conversation",
+            "style": "unknown"
+          },
+          {
+            "label": "Pest inspection",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#27):</strong> The owner confirmed <strong>Smeagol</strong>. User-supplied chat photo IMG_9340.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "succulent",
+        "light": "very-bright",
+        "water": "fully-dry",
+        "waterLabel": "Fully dry",
+        "soil": "gritty"
+      },
+      "commonNames": [
+        "Gollum jade"
+      ]
+    },
+    {
+      "id": "110",
+      "name": "Revenant",
+      "species": "Unidentified distressed tropical aroid (Syngonium-type possible)",
+      "searchName": "revenant mystery tropical rescue 2026 plant swap",
+      "searchSpecies": "Unidentified distressed tropical aroid (Syngonium-type possible)",
+      "status": "Watch",
+      "photo": "",
+      "photoAlt": "Revenant · Mystery tropical rescue · owner chat image IMG_9341.jpeg, catalog photo pending",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-14",
+      "tags": [
+        {
+          "style": "",
+          "label": "NOV 2026 SWAP"
+        },
+        {
+          "style": "",
+          "label": "NAME CONFIRMED"
+        },
+        {
+          "style": "",
+          "label": "RESCUE"
+        },
+        {
+          "style": "",
+          "label": "IDENTITY PENDING"
+        },
+        {
+          "style": "",
+          "label": "ROOT CHECK"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Keep separated from existing collection while checking pests and acclimating. Urgent recovery triage: check roots and stem bases for softness or decay, current substrate moisture and viable buds before any watering or repotting.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Extensive dry curled yellow leaves; stems retain some green tissue. Severe stress evident. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9341.jpeg (not yet uploaded to GAIA).",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Gradually acclimate to bright filtered/indirect light. Provisional starting target 60–120 µmol/m²/s PPFD at leaf level; measure rather than assume output, and adjust for species, duration and acclimation.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Allow the upper inch or so to begin drying; avoid both soggy soil and prolonged drought.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Preferred medium after confirming roots and drainage: airy aroid/bark-perlite mix. Existing medium has not been fully inspected; do not repot solely to match a recipe.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Rot, stem firmness, surviving nodes and new shoots. Do not infer cause from appearance alone.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "ID CONFIDENCE",
+          "bodyHtml": "Visual identification from chat, provisional; confirm from label, closer photo or new growth.",
+          "pClass": "",
+          "style": ""
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Catalog entered",
+            "valueHtml": "Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Source",
+            "valueHtml": "Plant swap · Nov 14, 2026 (reported)",
+            "style": ""
+          },
+          {
+            "label": "Swap photo number",
+            "valueHtml": "#28 of 30",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Revenant · chosen by owner Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Original photo",
+            "valueHtml": "IMG_9341.jpeg (chat only; not uploaded to catalog)",
+            "style": ""
+          },
+          {
+            "label": "Individual roots checked",
+            "valueHtml": "Not confirmed in this conversation",
+            "style": "unknown"
+          },
+          {
+            "label": "Pest inspection",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#28):</strong> The owner confirmed <strong>Revenant</strong>. User-supplied chat photo IMG_9341.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "aroid",
+        "light": "medium",
+        "water": "one",
+        "waterLabel": "Top ~1″ dry",
+        "soil": "chunky"
+      },
+      "commonNames": [
+        "Mystery tropical rescue"
+      ]
+    },
+    {
+      "id": "111",
+      "name": "Zoidberg",
+      "species": "Unidentified shrubby/trailing succulent (Sedum-type, unverified)",
+      "searchName": "zoidberg trailing starburst succulent 2026 plant swap",
+      "searchSpecies": "Unidentified shrubby/trailing succulent (Sedum-type, unverified)",
+      "status": "Good",
+      "photo": "",
+      "photoAlt": "Zoidberg · Trailing starburst succulent · owner chat image IMG_EE96918D-7778-4A8C-8318-032E50485C04.jpeg, catalog photo pending",
+      "newAddition": true,
+      "pest": "unconfirmed",
+      "added": "2026-11-14",
+      "tags": [
+        {
+          "style": "",
+          "label": "NOV 2026 SWAP"
+        },
+        {
+          "style": "",
+          "label": "NAME CONFIRMED"
+        },
+        {
+          "style": "",
+          "label": "SUCCULENT"
+        },
+        {
+          "style": "",
+          "label": "IDENTITY PENDING"
+        }
+      ],
+      "sections": [
+        {
+          "label": "NEXT ACTION",
+          "bodyHtml": "Keep separated from existing collection while checking pests and acclimating. Confirm species in natural light and check whether all stems and roots are sound; allow medium to dry before watering.",
+          "pClass": "",
+          "style": "full next-action"
+        },
+        {
+          "label": "CURRENT CONDITION",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Branching succulent with clusters of narrow fleshy gray-green leaves and a long dangling stem; some pallor. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_EE96918D-7778-4A8C-8318-032E50485C04.jpeg (not yet uploaded to GAIA).",
+          "pClass": "",
+          "style": "full"
+        },
+        {
+          "label": "LIGHT",
+          "bodyHtml": "Gradually acclimate to strong light. Provisional starting target 200–400 µmol/m²/s PPFD at leaf level; measure rather than assume output, and adjust for species, duration and acclimation.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATER",
+          "bodyHtml": "Allow the mix to dry fully before thorough watering; check actual pot and leaf condition first.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "SOIL",
+          "bodyHtml": "Preferred medium after confirming roots and drainage: mineral-rich, free-draining succulent/cactus mix. Existing medium has not been fully inspected; do not repot solely to match a recipe.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "WATCH",
+          "bodyHtml": "Stem stretch, softening, leaf pallor and root condition.",
+          "pClass": "",
+          "style": ""
+        },
+        {
+          "label": "ID CONFIDENCE",
+          "bodyHtml": "Visual identification from chat, provisional; confirm from label, closer photo or new growth.",
+          "pClass": "",
+          "style": ""
+        }
+      ],
+      "history": {
+        "facts": [
+          {
+            "label": "Catalog entered",
+            "valueHtml": "Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Source",
+            "valueHtml": "Plant swap · Nov 14, 2026 (reported)",
+            "style": ""
+          },
+          {
+            "label": "Swap photo number",
+            "valueHtml": "#30 of 30",
+            "style": ""
+          },
+          {
+            "label": "Name",
+            "valueHtml": "Zoidberg · chosen by owner Nov 16, 2026",
+            "style": ""
+          },
+          {
+            "label": "Original photo",
+            "valueHtml": "IMG_EE96918D-7778-4A8C-8318-032E50485C04.jpeg (chat only; not uploaded to catalog)",
+            "style": ""
+          },
+          {
+            "label": "Individual roots checked",
+            "valueHtml": "Not confirmed in this conversation",
+            "style": "unknown"
+          },
+          {
+            "label": "Pest inspection",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last watered",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          },
+          {
+            "label": "Last repotted",
+            "valueHtml": "Not recorded",
+            "style": "unknown"
+          }
+        ],
+        "notes": [
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#30):</strong> The owner confirmed <strong>Zoidberg</strong>. User-supplied chat photo IMG_EE96918D-7778-4A8C-8318-032E50485C04.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          }
+        ]
+      },
+      "cardCare": {
+        "type": "succulent",
+        "light": "very-bright",
+        "water": "fully-dry",
+        "waterLabel": "Fully dry",
+        "soil": "gritty"
+      },
+      "commonNames": [
+        "Trailing starburst succulent"
+      ]
     }
   ],
   "dashboardTasks": [
@@ -12075,6 +16159,24 @@
       "category": "Seasonal care",
       "title": "Measure Audrey II’s bedroom windowsill temperature",
       "detail": "Check the east-facing bedroom sill overnight before relocating Audrey II for winter. A cool spot (~35–55°F) may support dormancy; if it stays near room temperature, continue strong supplemental lighting and reassess. Protect the pot from freezing."
+    },
+    {
+      "id": "swap-20261116-revenant-triage",
+      "category": "New arrivals",
+      "title": "Check Revenant's roots, stem bases and moisture",
+      "detail": "Severely distressed swap #28. Inspect roots/stems for firmness or decay and assess current soil moisture before watering or pruning."
+    },
+    {
+      "id": "swap-20261116-kronk-identity",
+      "category": "New arrivals",
+      "title": "Photograph Kronk's orchid bases and roots for identification",
+      "detail": "Inspect #26 pseudobulbs, emerging leaves, clear-pot roots and any label. Confirm orchid group before setting a watering schedule."
+    },
+    {
+      "id": "swap-20261116-swap-quarantine",
+      "category": "New arrivals",
+      "title": "Quarantine and inspect 29 new swap arrivals",
+      "detail": "Inspect undersides, petiole joints and medium for thrips, mites and mealybugs before mingling with existing GAIA plants."
     }
   ]
 }
