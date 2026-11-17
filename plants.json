@@ -1,13 +1,17 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "Nov 16, 2026",
+  "updatedAt": "Nov 17, 2026",
   "summaryNote": "tap for care, priorities & history",
   "recentCare": {
-    "dateLabel": "NOV 16, 2026",
+    "dateLabel": "NOV 17, 2026",
     "tiles": [
       {
+        "title": "Nov 17 · 29 swap photo covers uploaded",
+        "descriptionHtml": "Uploaded and verified 29 named plant-swap catalog cover images from user-supplied photographs, mapped precisely to GAIA IDs 83–111. Five newer mixed-propagation photos were stored separately in swap-reference-2026 without creating duplicate plants or claiming a specific plant match. Flitwick remains in the private Propagation Nursery; his private photo upload is pending. No care activities were inferred from photos."
+      },
+      {
         "title": "Nov 16 · 29 rooted/establishing swap residents named",
-        "descriptionHtml": "Added 29 individually named, photographed-in-chat plant swap arrivals (#1–28 and #30) to the permanent GAIA catalog with provisional IDs, health notes, light targets and outstanding care priorities. #29 Flitwick has no roots and belongs in the private Nursery instead. Photos referenced by filename in source notes but their actual image files have NOT been uploaded to this GitHub catalog or private photo journal. No watering, repotting, rootedness or pest-clearance events were fabricated."
+        "descriptionHtml": "Added 29 individually named, photographed-in-chat plant swap arrivals (#1–28 and #30) to the permanent GAIA catalog with provisional IDs, health notes, light targets and outstanding care priorities. #29 Flitwick has no roots and belongs in the private Nursery instead. Optimized source photos were uploaded to the public GitHub catalog on Nov 17, 2026; private GAIA photo journals remain separate. No watering, repotting, rootedness or pest-clearance events were fabricated."
       },
       {
         "title": "Nov 13 · six new named arrivals and light targets",
@@ -12043,8 +12047,8 @@
       "searchName": "pelor golden sedum 2026 plant swap",
       "searchSpecies": "Sedum adolphi / S. nussbaumerianum group (provisional)",
       "status": "Watch",
-      "photo": "",
-      "photoAlt": "Pelor · Golden sedum · owner chat image IMG_9313.jpeg, catalog photo pending",
+      "photo": "swap-covers-2026/83-pelor-swap-20261114.webp",
+      "photoAlt": "Pelor · photographed at November 2026 plant swap",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-11-14",
@@ -12075,7 +12079,7 @@
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Upper rosette plump and copper-orange; several older lower leaves yellowing. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9313.jpeg (not yet uploaded to GAIA).",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Upper rosette plump and copper-orange; several older lower leaves yellowing. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9313.jpeg (catalog cover uploaded Nov 17, 2026; private journal remains separate).",
           "pClass": "",
           "style": "full"
         },
@@ -12133,8 +12137,8 @@
             "style": ""
           },
           {
-            "label": "Original photo",
-            "valueHtml": "IMG_9313.jpeg (chat only; not uploaded to catalog)",
+            "label": "Swap arrival photo",
+            "valueHtml": "IMG_9313.jpeg (optimized cover uploaded Nov 17, 2026)",
             "style": ""
           },
           {
@@ -12162,6 +12166,10 @@
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#1):</strong> The owner confirmed <strong>Pelor</strong>. User-supplied chat photo IMG_9313.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 17, 2026 · Catalog photo uploaded:</strong> Original user-supplied swap portrait resized to a web-optimized WebP and linked as this catalog cover. No private photo-journal record or care activity was inferred."
           }
         ]
       },
@@ -12183,8 +12191,8 @@
       "searchName": "strahd zebra-type haworthiopsis 2026 plant swap",
       "searchSpecies": "Haworthiopsis sp. (reinwardtii / coarctata group, provisional)",
       "status": "Watch",
-      "photo": "",
-      "photoAlt": "Strahd · Zebra-type Haworthiopsis · owner chat image IMG_9314.jpeg, catalog photo pending",
+      "photo": "swap-covers-2026/84-strahd-swap-20261114.webp",
+      "photoAlt": "Strahd · photographed at November 2026 plant swap",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-11-14",
@@ -12215,7 +12223,7 @@
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Living, clustered textured stems with several browned or dry tips. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9314.jpeg (not yet uploaded to GAIA).",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Living, clustered textured stems with several browned or dry tips. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9314.jpeg (catalog cover uploaded Nov 17, 2026; private journal remains separate).",
           "pClass": "",
           "style": "full"
         },
@@ -12273,8 +12281,8 @@
             "style": ""
           },
           {
-            "label": "Original photo",
-            "valueHtml": "IMG_9314.jpeg (chat only; not uploaded to catalog)",
+            "label": "Swap arrival photo",
+            "valueHtml": "IMG_9314.jpeg (optimized cover uploaded Nov 17, 2026)",
             "style": ""
           },
           {
@@ -12302,6 +12310,10 @@
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#2):</strong> The owner confirmed <strong>Strahd</strong>. User-supplied chat photo IMG_9314.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 17, 2026 · Catalog photo uploaded:</strong> Original user-supplied swap portrait resized to a web-optimized WebP and linked as this catalog cover. No private photo-journal record or care activity was inferred."
           }
         ]
       },
@@ -12323,8 +12335,8 @@
       "searchName": "yzma rex begonia 2026 plant swap",
       "searchSpecies": "Begonia rex-cultorum hybrid (provisional)",
       "status": "Watch",
-      "photo": "",
-      "photoAlt": "Yzma · Rex Begonia · owner chat image IMG_9316.jpeg, catalog photo pending",
+      "photo": "swap-covers-2026/85-yzma-swap-20261114.webp",
+      "photoAlt": "Yzma · photographed at November 2026 plant swap",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-11-14",
@@ -12359,7 +12371,7 @@
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Burgundy foliage severely curled and crispy; stems and some younger growth remain visible. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9316.jpeg (not yet uploaded to GAIA).",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Burgundy foliage severely curled and crispy; stems and some younger growth remain visible. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9316.jpeg (catalog cover uploaded Nov 17, 2026; private journal remains separate).",
           "pClass": "",
           "style": "full"
         },
@@ -12417,8 +12429,8 @@
             "style": ""
           },
           {
-            "label": "Original photo",
-            "valueHtml": "IMG_9316.jpeg (chat only; not uploaded to catalog)",
+            "label": "Swap arrival photo",
+            "valueHtml": "IMG_9316.jpeg (optimized cover uploaded Nov 17, 2026)",
             "style": ""
           },
           {
@@ -12446,6 +12458,10 @@
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#3):</strong> The owner confirmed <strong>Yzma</strong>. User-supplied chat photo IMG_9316.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 17, 2026 · Catalog photo uploaded:</strong> Original user-supplied swap portrait resized to a web-optimized WebP and linked as this catalog cover. No private photo-journal record or care activity was inferred."
           }
         ]
       },
@@ -12467,8 +12483,8 @@
       "searchName": "ophelia variegated prayer plant 2026 plant swap",
       "searchSpecies": "Variegated Stromanthe / prayer-plant relative (Triostar-type; provisional)",
       "status": "Watch",
-      "photo": "",
-      "photoAlt": "Ophelia · Variegated prayer plant · owner chat image IMG_9317.jpeg, catalog photo pending",
+      "photo": "swap-covers-2026/86-ophelia-swap-20261114.webp",
+      "photoAlt": "Ophelia · photographed at November 2026 plant swap",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-11-14",
@@ -12499,7 +12515,7 @@
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Variegated foliage with several curled, yellowed or browned leaves. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9317.jpeg (not yet uploaded to GAIA).",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Variegated foliage with several curled, yellowed or browned leaves. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9317.jpeg (catalog cover uploaded Nov 17, 2026; private journal remains separate).",
           "pClass": "",
           "style": "full"
         },
@@ -12557,8 +12573,8 @@
             "style": ""
           },
           {
-            "label": "Original photo",
-            "valueHtml": "IMG_9317.jpeg (chat only; not uploaded to catalog)",
+            "label": "Swap arrival photo",
+            "valueHtml": "IMG_9317.jpeg (optimized cover uploaded Nov 17, 2026)",
             "style": ""
           },
           {
@@ -12586,6 +12602,10 @@
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#4):</strong> The owner confirmed <strong>Ophelia</strong>. User-supplied chat photo IMG_9317.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 17, 2026 · Catalog photo uploaded:</strong> Original user-supplied swap portrait resized to a web-optimized WebP and linked as this catalog cover. No private photo-journal record or care activity was inferred."
           }
         ]
       },
@@ -12607,8 +12627,8 @@
       "searchName": "rauru silver aroid 2026 plant swap",
       "searchSpecies": "Silver-leaved aroid, possibly Monstera siltepecana (unverified)",
       "status": "Good",
-      "photo": "",
-      "photoAlt": "Rauru · Silver aroid · owner chat image IMG_9318.jpeg, catalog photo pending",
+      "photo": "swap-covers-2026/87-rauru-swap-20261114.webp",
+      "photoAlt": "Rauru · photographed at November 2026 plant swap",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-11-14",
@@ -12639,7 +12659,7 @@
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Most leaves intact; one pale lower leaf declining. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9318.jpeg (not yet uploaded to GAIA).",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Most leaves intact; one pale lower leaf declining. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9318.jpeg (catalog cover uploaded Nov 17, 2026; private journal remains separate).",
           "pClass": "",
           "style": "full"
         },
@@ -12697,8 +12717,8 @@
             "style": ""
           },
           {
-            "label": "Original photo",
-            "valueHtml": "IMG_9318.jpeg (chat only; not uploaded to catalog)",
+            "label": "Swap arrival photo",
+            "valueHtml": "IMG_9318.jpeg (optimized cover uploaded Nov 17, 2026)",
             "style": ""
           },
           {
@@ -12726,6 +12746,10 @@
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#5):</strong> The owner confirmed <strong>Rauru</strong>. User-supplied chat photo IMG_9318.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 17, 2026 · Catalog photo uploaded:</strong> Original user-supplied swap portrait resized to a web-optimized WebP and linked as this catalog cover. No private photo-journal record or care activity was inferred."
           }
         ]
       },
@@ -12747,8 +12771,8 @@
       "searchName": "éowyn satin pothos 2026 plant swap",
       "searchSpecies": "Scindapsus pictus (possibly 'Exotica'; cultivar unverified)",
       "status": "Good",
-      "photo": "",
-      "photoAlt": "Éowyn · Satin pothos · owner chat image IMG_9319.jpeg, catalog photo pending",
+      "photo": "swap-covers-2026/88-owyn-swap-20261114.webp",
+      "photoAlt": "Éowyn · photographed at November 2026 plant swap",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-11-14",
@@ -12779,7 +12803,7 @@
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Silver-variegated leaves appear fairly firm and healthy. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9319.jpeg (not yet uploaded to GAIA).",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Silver-variegated leaves appear fairly firm and healthy. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9319.jpeg (catalog cover uploaded Nov 17, 2026; private journal remains separate).",
           "pClass": "",
           "style": "full"
         },
@@ -12837,8 +12861,8 @@
             "style": ""
           },
           {
-            "label": "Original photo",
-            "valueHtml": "IMG_9319.jpeg (chat only; not uploaded to catalog)",
+            "label": "Swap arrival photo",
+            "valueHtml": "IMG_9319.jpeg (optimized cover uploaded Nov 17, 2026)",
             "style": ""
           },
           {
@@ -12866,6 +12890,10 @@
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#6):</strong> The owner confirmed <strong>Éowyn</strong>. User-supplied chat photo IMG_9319.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 17, 2026 · Catalog photo uploaded:</strong> Original user-supplied swap portrait resized to a web-optimized WebP and linked as this catalog cover. No private photo-journal record or care activity was inferred."
           }
         ]
       },
@@ -12887,8 +12915,8 @@
       "searchName": "carmilla persian shield 2026 plant swap",
       "searchSpecies": "Strobilanthes dyerianus",
       "status": "Watch",
-      "photo": "",
-      "photoAlt": "Carmilla · Persian shield · owner chat image IMG_9320.jpeg, catalog photo pending",
+      "photo": "swap-covers-2026/89-carmilla-swap-20261114.webp",
+      "photoAlt": "Carmilla · photographed at November 2026 plant swap",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-11-14",
@@ -12919,7 +12947,7 @@
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Purple foliage largely intact, with slight droop and curl. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9320.jpeg (not yet uploaded to GAIA).",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Purple foliage largely intact, with slight droop and curl. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9320.jpeg (catalog cover uploaded Nov 17, 2026; private journal remains separate).",
           "pClass": "",
           "style": "full"
         },
@@ -12977,8 +13005,8 @@
             "style": ""
           },
           {
-            "label": "Original photo",
-            "valueHtml": "IMG_9320.jpeg (chat only; not uploaded to catalog)",
+            "label": "Swap arrival photo",
+            "valueHtml": "IMG_9320.jpeg (optimized cover uploaded Nov 17, 2026)",
             "style": ""
           },
           {
@@ -13006,6 +13034,10 @@
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#7):</strong> The owner confirmed <strong>Carmilla</strong>. User-supplied chat photo IMG_9320.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 17, 2026 · Catalog photo uploaded:</strong> Original user-supplied swap portrait resized to a web-optimized WebP and linked as this catalog cover. No private photo-journal record or care activity was inferred."
           }
         ]
       },
@@ -13027,8 +13059,8 @@
       "searchName": "molesley dwarf umbrella tree 2026 plant swap",
       "searchSpecies": "Heptapleurum arboricola (syn. Schefflera arboricola)",
       "status": "Watch",
-      "photo": "",
-      "photoAlt": "Molesley · Dwarf umbrella tree · owner chat image IMG_9321.jpeg, catalog photo pending",
+      "photo": "swap-covers-2026/90-molesley-swap-20261114.webp",
+      "photoAlt": "Molesley · photographed at November 2026 plant swap",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-11-14",
@@ -13059,7 +13091,7 @@
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Vigorous, long branching growth; plant is relatively leggy and spreads widely. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9321.jpeg (not yet uploaded to GAIA).",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Vigorous, long branching growth; plant is relatively leggy and spreads widely. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9321.jpeg (catalog cover uploaded Nov 17, 2026; private journal remains separate).",
           "pClass": "",
           "style": "full"
         },
@@ -13117,8 +13149,8 @@
             "style": ""
           },
           {
-            "label": "Original photo",
-            "valueHtml": "IMG_9321.jpeg (chat only; not uploaded to catalog)",
+            "label": "Swap arrival photo",
+            "valueHtml": "IMG_9321.jpeg (optimized cover uploaded Nov 17, 2026)",
             "style": ""
           },
           {
@@ -13146,6 +13178,10 @@
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#8):</strong> The owner confirmed <strong>Molesley</strong>. User-supplied chat photo IMG_9321.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 17, 2026 · Catalog photo uploaded:</strong> Original user-supplied swap portrait resized to a web-optimized WebP and linked as this catalog cover. No private photo-journal record or care activity was inferred."
           }
         ]
       },
@@ -13167,8 +13203,8 @@
       "searchName": "hestu jade plant (multiple stems) 2026 plant swap",
       "searchSpecies": "Crassula ovata",
       "status": "Good",
-      "photo": "",
-      "photoAlt": "Hestu · Jade plant (multiple stems) · owner chat image IMG_9322.jpeg, catalog photo pending",
+      "photo": "swap-covers-2026/91-hestu-swap-20261114.webp",
+      "photoAlt": "Hestu · photographed at November 2026 plant swap",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-11-14",
@@ -13199,7 +13235,7 @@
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Multiple stems with fairly plump leaves and growing tips. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9322.jpeg (not yet uploaded to GAIA).",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Multiple stems with fairly plump leaves and growing tips. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9322.jpeg (catalog cover uploaded Nov 17, 2026; private journal remains separate).",
           "pClass": "",
           "style": "full"
         },
@@ -13257,8 +13293,8 @@
             "style": ""
           },
           {
-            "label": "Original photo",
-            "valueHtml": "IMG_9322.jpeg (chat only; not uploaded to catalog)",
+            "label": "Swap arrival photo",
+            "valueHtml": "IMG_9322.jpeg (optimized cover uploaded Nov 17, 2026)",
             "style": ""
           },
           {
@@ -13286,6 +13322,10 @@
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#9):</strong> The owner confirmed <strong>Hestu</strong>. User-supplied chat photo IMG_9322.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 17, 2026 · Catalog photo uploaded:</strong> Original user-supplied swap portrait resized to a web-optimized WebP and linked as this catalog cover. No private photo-journal record or care activity was inferred."
           }
         ]
       },
@@ -13307,8 +13347,8 @@
       "searchName": "puck mystery single-leaf aroid 2026 plant swap",
       "searchSpecies": "Unidentified aroid-like single-leaf specimen (identity and viable growth point unverified)",
       "status": "Watch",
-      "photo": "",
-      "photoAlt": "Puck · Mystery single-leaf aroid · owner chat image IMG_9323.jpeg, catalog photo pending",
+      "photo": "swap-covers-2026/92-puck-swap-20261114.webp",
+      "photoAlt": "Puck · photographed at November 2026 plant swap",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-11-14",
@@ -13339,7 +13379,7 @@
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> A single blue-green leaf with no verified active growth point. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9323.jpeg (not yet uploaded to GAIA).",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> A single blue-green leaf with no verified active growth point. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9323.jpeg (catalog cover uploaded Nov 17, 2026; private journal remains separate).",
           "pClass": "",
           "style": "full"
         },
@@ -13397,8 +13437,8 @@
             "style": ""
           },
           {
-            "label": "Original photo",
-            "valueHtml": "IMG_9323.jpeg (chat only; not uploaded to catalog)",
+            "label": "Swap arrival photo",
+            "valueHtml": "IMG_9323.jpeg (optimized cover uploaded Nov 17, 2026)",
             "style": ""
           },
           {
@@ -13426,6 +13466,10 @@
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#10):</strong> The owner confirmed <strong>Puck</strong>. User-supplied chat photo IMG_9323.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 17, 2026 · Catalog photo uploaded:</strong> Original user-supplied swap portrait resized to a web-optimized WebP and linked as this catalog cover. No private photo-journal record or care activity was inferred."
           }
         ]
       },
@@ -13447,8 +13491,8 @@
       "searchName": "lady mary red-leaved begonia 2026 plant swap",
       "searchSpecies": "Begonia hybrid (rex-type, cultivar unverified)",
       "status": "Watch",
-      "photo": "",
-      "photoAlt": "Lady Mary · Red-leaved Begonia · owner chat image IMG_9324.jpeg, catalog photo pending",
+      "photo": "swap-covers-2026/93-lady-mary-swap-20261114.webp",
+      "photoAlt": "Lady Mary · photographed at November 2026 plant swap",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-11-14",
@@ -13479,7 +13523,7 @@
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Vibrant red serrated leaves; minor edge damage. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9324.jpeg (not yet uploaded to GAIA).",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Vibrant red serrated leaves; minor edge damage. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9324.jpeg (catalog cover uploaded Nov 17, 2026; private journal remains separate).",
           "pClass": "",
           "style": "full"
         },
@@ -13537,8 +13581,8 @@
             "style": ""
           },
           {
-            "label": "Original photo",
-            "valueHtml": "IMG_9324.jpeg (chat only; not uploaded to catalog)",
+            "label": "Swap arrival photo",
+            "valueHtml": "IMG_9324.jpeg (optimized cover uploaded Nov 17, 2026)",
             "style": ""
           },
           {
@@ -13566,6 +13610,10 @@
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#11):</strong> The owner confirmed <strong>Lady Mary</strong>. User-supplied chat photo IMG_9324.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 17, 2026 · Catalog photo uploaded:</strong> Original user-supplied swap portrait resized to a web-optimized WebP and linked as this catalog cover. No private photo-journal record or care activity was inferred."
           }
         ]
       },
@@ -13587,8 +13635,8 @@
       "searchName": "gibbs narrow-leaf hoya 2026 plant swap",
       "searchSpecies": "Hoya sp. (wayetii-type; unverified)",
       "status": "Good",
-      "photo": "",
-      "photoAlt": "Gibbs · Narrow-leaf Hoya · owner chat image IMG_9325.jpeg, catalog photo pending",
+      "photo": "swap-covers-2026/94-gibbs-swap-20261114.webp",
+      "photoAlt": "Gibbs · photographed at November 2026 plant swap",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-11-14",
@@ -13619,7 +13667,7 @@
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Compact narrow dark-green waxy leaves with relatively firm growth. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9325.jpeg (not yet uploaded to GAIA).",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Compact narrow dark-green waxy leaves with relatively firm growth. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9325.jpeg (catalog cover uploaded Nov 17, 2026; private journal remains separate).",
           "pClass": "",
           "style": "full"
         },
@@ -13677,8 +13725,8 @@
             "style": ""
           },
           {
-            "label": "Original photo",
-            "valueHtml": "IMG_9325.jpeg (chat only; not uploaded to catalog)",
+            "label": "Swap arrival photo",
+            "valueHtml": "IMG_9325.jpeg (optimized cover uploaded Nov 17, 2026)",
             "style": ""
           },
           {
@@ -13706,6 +13754,10 @@
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#12):</strong> The owner confirmed <strong>Gibbs</strong>. User-supplied chat photo IMG_9325.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 17, 2026 · Catalog photo uploaded:</strong> Original user-supplied swap portrait resized to a web-optimized WebP and linked as this catalog cover. No private photo-journal record or care activity was inferred."
           }
         ]
       },
@@ -13727,8 +13779,8 @@
       "searchName": "sybil variegated hoya 2026 plant swap",
       "searchSpecies": "Hoya carnosa 'Krimson Queen'-type (provisional)",
       "status": "Good",
-      "photo": "",
-      "photoAlt": "Sybil · Variegated Hoya · owner chat image IMG_9326.jpeg, catalog photo pending",
+      "photo": "swap-covers-2026/95-sybil-swap-20261114.webp",
+      "photoAlt": "Sybil · photographed at November 2026 plant swap",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-11-14",
@@ -13759,7 +13811,7 @@
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Compact firm leaves with cream edges and pink-toned margins. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9326.jpeg (not yet uploaded to GAIA).",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Compact firm leaves with cream edges and pink-toned margins. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9326.jpeg (catalog cover uploaded Nov 17, 2026; private journal remains separate).",
           "pClass": "",
           "style": "full"
         },
@@ -13817,8 +13869,8 @@
             "style": ""
           },
           {
-            "label": "Original photo",
-            "valueHtml": "IMG_9326.jpeg (chat only; not uploaded to catalog)",
+            "label": "Swap arrival photo",
+            "valueHtml": "IMG_9326.jpeg (optimized cover uploaded Nov 17, 2026)",
             "style": ""
           },
           {
@@ -13846,6 +13898,10 @@
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#13):</strong> The owner confirmed <strong>Sybil</strong>. User-supplied chat photo IMG_9326.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 17, 2026 · Catalog photo uploaded:</strong> Original user-supplied swap portrait resized to a web-optimized WebP and linked as this catalog cover. No private photo-journal record or care activity was inferred."
           }
         ]
       },
@@ -13867,8 +13923,8 @@
       "searchName": "calypso silver-splashed hoya 2026 plant swap",
       "searchSpecies": "Hoya sp. (possibly H. pubicalyx; unverified)",
       "status": "Good",
-      "photo": "",
-      "photoAlt": "Calypso · Silver-splashed Hoya · owner chat image IMG_9327.jpeg, catalog photo pending",
+      "photo": "swap-covers-2026/96-calypso-swap-20261114.webp",
+      "photoAlt": "Calypso · photographed at November 2026 plant swap",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-11-14",
@@ -13903,7 +13959,7 @@
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Trailing vine with green leaves and sparse silver splash. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9327.jpeg (not yet uploaded to GAIA).",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Trailing vine with green leaves and sparse silver splash. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9327.jpeg (catalog cover uploaded Nov 17, 2026; private journal remains separate).",
           "pClass": "",
           "style": "full"
         },
@@ -13961,8 +14017,8 @@
             "style": ""
           },
           {
-            "label": "Original photo",
-            "valueHtml": "IMG_9327.jpeg (chat only; not uploaded to catalog)",
+            "label": "Swap arrival photo",
+            "valueHtml": "IMG_9327.jpeg (optimized cover uploaded Nov 17, 2026)",
             "style": ""
           },
           {
@@ -13990,6 +14046,10 @@
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#14):</strong> The owner confirmed <strong>Calypso</strong>. User-supplied chat photo IMG_9327.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 17, 2026 · Catalog photo uploaded:</strong> Original user-supplied swap portrait resized to a web-optimized WebP and linked as this catalog cover. No private photo-journal record or care activity was inferred."
           }
         ]
       },
@@ -14011,8 +14071,8 @@
       "searchName": "viago burgundy coleus 2026 plant swap",
       "searchSpecies": "Coleus scutellarioides (burgundy cultivar unconfirmed)",
       "status": "Good",
-      "photo": "",
-      "photoAlt": "Viago · Burgundy Coleus · owner chat image IMG_9328.jpeg, catalog photo pending",
+      "photo": "swap-covers-2026/97-viago-swap-20261114.webp",
+      "photoAlt": "Viago · photographed at November 2026 plant swap",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-11-14",
@@ -14043,7 +14103,7 @@
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Vivid burgundy, textured foliage and active upper growth. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9328.jpeg (not yet uploaded to GAIA).",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Vivid burgundy, textured foliage and active upper growth. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9328.jpeg (catalog cover uploaded Nov 17, 2026; private journal remains separate).",
           "pClass": "",
           "style": "full"
         },
@@ -14101,8 +14161,8 @@
             "style": ""
           },
           {
-            "label": "Original photo",
-            "valueHtml": "IMG_9328.jpeg (chat only; not uploaded to catalog)",
+            "label": "Swap arrival photo",
+            "valueHtml": "IMG_9328.jpeg (optimized cover uploaded Nov 17, 2026)",
             "style": ""
           },
           {
@@ -14130,6 +14190,10 @@
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#15):</strong> The owner confirmed <strong>Viago</strong>. User-supplied chat photo IMG_9328.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 17, 2026 · Catalog photo uploaded:</strong> Original user-supplied swap portrait resized to a web-optimized WebP and linked as this catalog cover. No private photo-journal record or care activity was inferred."
           }
         ]
       },
@@ -14151,8 +14215,8 @@
       "searchName": "fester elephant bush / dwarf jade 2026 plant swap",
       "searchSpecies": "Portulacaria afra (provisional)",
       "status": "Watch",
-      "photo": "",
-      "photoAlt": "Fester · Elephant bush / Dwarf jade · owner chat image IMG_9329.jpeg, catalog photo pending",
+      "photo": "swap-covers-2026/98-fester-swap-20261114.webp",
+      "photoAlt": "Fester · photographed at November 2026 plant swap",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-11-14",
@@ -14183,7 +14247,7 @@
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Long woody stems with sparse, small rounded leaves; appears leggy. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9329.jpeg (not yet uploaded to GAIA).",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Long woody stems with sparse, small rounded leaves; appears leggy. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9329.jpeg (catalog cover uploaded Nov 17, 2026; private journal remains separate).",
           "pClass": "",
           "style": "full"
         },
@@ -14241,8 +14305,8 @@
             "style": ""
           },
           {
-            "label": "Original photo",
-            "valueHtml": "IMG_9329.jpeg (chat only; not uploaded to catalog)",
+            "label": "Swap arrival photo",
+            "valueHtml": "IMG_9329.jpeg (optimized cover uploaded Nov 17, 2026)",
             "style": ""
           },
           {
@@ -14270,6 +14334,10 @@
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#16):</strong> The owner confirmed <strong>Fester</strong>. User-supplied chat photo IMG_9329.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 17, 2026 · Catalog photo uploaded:</strong> Original user-supplied swap portrait resized to a web-optimized WebP and linked as this catalog cover. No private photo-journal record or care activity was inferred."
           }
         ]
       },
@@ -14291,8 +14359,8 @@
       "searchName": "daisy young spider plant 2026 plant swap",
       "searchSpecies": "Chlorophytum comosum (variegated cultivar)",
       "status": "Watch",
-      "photo": "",
-      "photoAlt": "Daisy · Young spider plant · owner chat image IMG_9330.jpeg, catalog photo pending",
+      "photo": "swap-covers-2026/99-daisy-swap-20261114.webp",
+      "photoAlt": "Daisy · photographed at November 2026 plant swap",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-11-14",
@@ -14323,7 +14391,7 @@
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Young striped spider plant with a few damaged tips and center growth. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9330.jpeg (not yet uploaded to GAIA).",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Young striped spider plant with a few damaged tips and center growth. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9330.jpeg (catalog cover uploaded Nov 17, 2026; private journal remains separate).",
           "pClass": "",
           "style": "full"
         },
@@ -14381,8 +14449,8 @@
             "style": ""
           },
           {
-            "label": "Original photo",
-            "valueHtml": "IMG_9330.jpeg (chat only; not uploaded to catalog)",
+            "label": "Swap arrival photo",
+            "valueHtml": "IMG_9330.jpeg (optimized cover uploaded Nov 17, 2026)",
             "style": ""
           },
           {
@@ -14410,6 +14478,10 @@
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#17):</strong> The owner confirmed <strong>Daisy</strong>. User-supplied chat photo IMG_9330.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 17, 2026 · Catalog photo uploaded:</strong> Original user-supplied swap portrait resized to a web-optimized WebP and linked as this catalog cover. No private photo-journal record or care activity was inferred."
           }
         ]
       },
@@ -14431,8 +14503,8 @@
       "searchName": "carson upright jade plant 2026 plant swap",
       "searchSpecies": "Crassula ovata",
       "status": "Good",
-      "photo": "",
-      "photoAlt": "Carson · Upright Jade plant · owner chat image IMG_9331.jpeg, catalog photo pending",
+      "photo": "swap-covers-2026/100-carson-swap-20261114.webp",
+      "photoAlt": "Carson · photographed at November 2026 plant swap",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-11-14",
@@ -14463,7 +14535,7 @@
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Substantial upright stem with plump, glossy leaves and active tips. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9331.jpeg (not yet uploaded to GAIA).",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Substantial upright stem with plump, glossy leaves and active tips. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9331.jpeg (catalog cover uploaded Nov 17, 2026; private journal remains separate).",
           "pClass": "",
           "style": "full"
         },
@@ -14521,8 +14593,8 @@
             "style": ""
           },
           {
-            "label": "Original photo",
-            "valueHtml": "IMG_9331.jpeg (chat only; not uploaded to catalog)",
+            "label": "Swap arrival photo",
+            "valueHtml": "IMG_9331.jpeg (optimized cover uploaded Nov 17, 2026)",
             "style": ""
           },
           {
@@ -14550,6 +14622,10 @@
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#18):</strong> The owner confirmed <strong>Carson</strong>. User-supplied chat photo IMG_9331.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 17, 2026 · Catalog photo uploaded:</strong> Original user-supplied swap portrait resized to a web-optimized WebP and linked as this catalog cover. No private photo-journal record or care activity was inferred."
           }
         ]
       },
@@ -14571,8 +14647,8 @@
       "searchName": "deacon green and burgundy coleus 2026 plant swap",
       "searchSpecies": "Coleus scutellarioides (green-burgundy cultivar unverified)",
       "status": "Good",
-      "photo": "",
-      "photoAlt": "Deacon · Green and Burgundy Coleus · owner chat image IMG_9332.jpeg, catalog photo pending",
+      "photo": "swap-covers-2026/101-deacon-swap-20261114.webp",
+      "photoAlt": "Deacon · photographed at November 2026 plant swap",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-11-14",
@@ -14603,7 +14679,7 @@
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Bright chartreuse leaves with burgundy patches; relatively compact new growth. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9332.jpeg (not yet uploaded to GAIA).",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Bright chartreuse leaves with burgundy patches; relatively compact new growth. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9332.jpeg (catalog cover uploaded Nov 17, 2026; private journal remains separate).",
           "pClass": "",
           "style": "full"
         },
@@ -14661,8 +14737,8 @@
             "style": ""
           },
           {
-            "label": "Original photo",
-            "valueHtml": "IMG_9332.jpeg (chat only; not uploaded to catalog)",
+            "label": "Swap arrival photo",
+            "valueHtml": "IMG_9332.jpeg (optimized cover uploaded Nov 17, 2026)",
             "style": ""
           },
           {
@@ -14690,6 +14766,10 @@
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#19):</strong> The owner confirmed <strong>Deacon</strong>. User-supplied chat photo IMG_9332.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 17, 2026 · Catalog photo uploaded:</strong> Original user-supplied swap portrait resized to a web-optimized WebP and linked as this catalog cover. No private photo-journal record or care activity was inferred."
           }
         ]
       },
@@ -14711,8 +14791,8 @@
       "searchName": "loops trailing patterned peperomia / string of turtles-type 2026 plant swap",
       "searchSpecies": "Peperomia sp. (possibly P. prostrata; unverified)",
       "status": "Watch",
-      "photo": "",
-      "photoAlt": "Loops · Trailing patterned Peperomia / String of Turtles-type · owner chat image IMG_9333.jpeg, catalog photo pending",
+      "photo": "swap-covers-2026/102-loops-swap-20261114.webp",
+      "photoAlt": "Loops · photographed at November 2026 plant swap",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-11-14",
@@ -14747,7 +14827,7 @@
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Trailing red stems and small patterned leaves; some yellow-green foliage. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9333.jpeg (not yet uploaded to GAIA).",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Trailing red stems and small patterned leaves; some yellow-green foliage. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9333.jpeg (catalog cover uploaded Nov 17, 2026; private journal remains separate).",
           "pClass": "",
           "style": "full"
         },
@@ -14805,8 +14885,8 @@
             "style": ""
           },
           {
-            "label": "Original photo",
-            "valueHtml": "IMG_9333.jpeg (chat only; not uploaded to catalog)",
+            "label": "Swap arrival photo",
+            "valueHtml": "IMG_9333.jpeg (optimized cover uploaded Nov 17, 2026)",
             "style": ""
           },
           {
@@ -14834,6 +14914,10 @@
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#20):</strong> The owner confirmed <strong>Loops</strong>. User-supplied chat photo IMG_9333.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 17, 2026 · Catalog photo uploaded:</strong> Original user-supplied swap portrait resized to a web-optimized WebP and linked as this catalog cover. No private photo-journal record or care activity was inferred."
           }
         ]
       },
@@ -14855,8 +14939,8 @@
       "searchName": "mrs. patmore mature spider plant 2026 plant swap",
       "searchSpecies": "Chlorophytum comosum (variegated)",
       "status": "Watch",
-      "photo": "",
-      "photoAlt": "Mrs. Patmore · Mature spider plant · owner chat image IMG_9334.jpeg, catalog photo pending",
+      "photo": "swap-covers-2026/103-mrs--patmore-swap-20261114.webp",
+      "photoAlt": "Mrs. Patmore · photographed at November 2026 plant swap",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-11-14",
@@ -14887,7 +14971,7 @@
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Very large and full arching leaf mass with minor tip damage. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9334.jpeg (not yet uploaded to GAIA).",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Very large and full arching leaf mass with minor tip damage. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9334.jpeg (catalog cover uploaded Nov 17, 2026; private journal remains separate).",
           "pClass": "",
           "style": "full"
         },
@@ -14945,8 +15029,8 @@
             "style": ""
           },
           {
-            "label": "Original photo",
-            "valueHtml": "IMG_9334.jpeg (chat only; not uploaded to catalog)",
+            "label": "Swap arrival photo",
+            "valueHtml": "IMG_9334.jpeg (optimized cover uploaded Nov 17, 2026)",
             "style": ""
           },
           {
@@ -14974,6 +15058,10 @@
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#21):</strong> The owner confirmed <strong>Mrs. Patmore</strong>. User-supplied chat photo IMG_9334.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 17, 2026 · Catalog photo uploaded:</strong> Original user-supplied swap portrait resized to a web-optimized WebP and linked as this catalog cover. No private photo-journal record or care activity was inferred."
           }
         ]
       },
@@ -14995,8 +15083,8 @@
       "searchName": "wellington small spider plant 2026 plant swap",
       "searchSpecies": "Chlorophytum comosum (variegated)",
       "status": "Watch",
-      "photo": "",
-      "photoAlt": "Wellington · Small spider plant · owner chat image IMG_9335.jpeg, catalog photo pending",
+      "photo": "swap-covers-2026/104-wellington-swap-20261114.webp",
+      "photoAlt": "Wellington · photographed at November 2026 plant swap",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-11-14",
@@ -15027,7 +15115,7 @@
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Young green-and-cream leaves, some curling or tip damage. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9335.jpeg (not yet uploaded to GAIA).",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Young green-and-cream leaves, some curling or tip damage. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9335.jpeg (catalog cover uploaded Nov 17, 2026; private journal remains separate).",
           "pClass": "",
           "style": "full"
         },
@@ -15085,8 +15173,8 @@
             "style": ""
           },
           {
-            "label": "Original photo",
-            "valueHtml": "IMG_9335.jpeg (chat only; not uploaded to catalog)",
+            "label": "Swap arrival photo",
+            "valueHtml": "IMG_9335.jpeg (optimized cover uploaded Nov 17, 2026)",
             "style": ""
           },
           {
@@ -15114,6 +15202,10 @@
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#22):</strong> The owner confirmed <strong>Wellington</strong>. User-supplied chat photo IMG_9335.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 17, 2026 · Catalog photo uploaded:</strong> Original user-supplied swap portrait resized to a web-optimized WebP and linked as this catalog cover. No private photo-journal record or care activity was inferred."
           }
         ]
       },
@@ -15135,8 +15227,8 @@
       "searchName": "robin pale arrowhead vine 2026 plant swap",
       "searchSpecies": "Syngonium podophyllum 'White Butterfly'-type (cultivar unconfirmed)",
       "status": "Watch",
-      "photo": "",
-      "photoAlt": "Robin · Pale arrowhead vine · owner chat image IMG_9336.jpeg, catalog photo pending",
+      "photo": "swap-covers-2026/105-robin-swap-20261114.webp",
+      "photoAlt": "Robin · photographed at November 2026 plant swap",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-11-14",
@@ -15167,7 +15259,7 @@
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Several pale arrow-shaped leaves with green patterning; slight curl and discoloration. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9336.jpeg (not yet uploaded to GAIA).",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Several pale arrow-shaped leaves with green patterning; slight curl and discoloration. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9336.jpeg (catalog cover uploaded Nov 17, 2026; private journal remains separate).",
           "pClass": "",
           "style": "full"
         },
@@ -15225,8 +15317,8 @@
             "style": ""
           },
           {
-            "label": "Original photo",
-            "valueHtml": "IMG_9336.jpeg (chat only; not uploaded to catalog)",
+            "label": "Swap arrival photo",
+            "valueHtml": "IMG_9336.jpeg (optimized cover uploaded Nov 17, 2026)",
             "style": ""
           },
           {
@@ -15254,6 +15346,10 @@
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#23):</strong> The owner confirmed <strong>Robin</strong>. User-supplied chat photo IMG_9336.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 17, 2026 · Catalog photo uploaded:</strong> Original user-supplied swap portrait resized to a web-optimized WebP and linked as this catalog cover. No private photo-journal record or care activity was inferred."
           }
         ]
       },
@@ -15275,8 +15371,8 @@
       "searchName": "daphne flame violet 2026 plant swap",
       "searchSpecies": "Episcia sp. (species/cultivar unverified)",
       "status": "Watch",
-      "photo": "",
-      "photoAlt": "Daphne · Flame violet · owner chat image IMG_9337.jpeg, catalog photo pending",
+      "photo": "swap-covers-2026/106-daphne-swap-20261114.webp",
+      "photoAlt": "Daphne · photographed at November 2026 plant swap",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-11-14",
@@ -15307,7 +15403,7 @@
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Small plant with one prominent velvety, dark-green leaf and some edge damage. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9337.jpeg (not yet uploaded to GAIA).",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Small plant with one prominent velvety, dark-green leaf and some edge damage. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9337.jpeg (catalog cover uploaded Nov 17, 2026; private journal remains separate).",
           "pClass": "",
           "style": "full"
         },
@@ -15365,8 +15461,8 @@
             "style": ""
           },
           {
-            "label": "Original photo",
-            "valueHtml": "IMG_9337.jpeg (chat only; not uploaded to catalog)",
+            "label": "Swap arrival photo",
+            "valueHtml": "IMG_9337.jpeg (optimized cover uploaded Nov 17, 2026)",
             "style": ""
           },
           {
@@ -15394,6 +15490,10 @@
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#24):</strong> The owner confirmed <strong>Daphne</strong>. User-supplied chat photo IMG_9337.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 17, 2026 · Catalog photo uploaded:</strong> Original user-supplied swap portrait resized to a web-optimized WebP and linked as this catalog cover. No private photo-journal record or care activity was inferred."
           }
         ]
       },
@@ -15415,8 +15515,8 @@
       "searchName": "daruk elephant-ear-type single-leaf plant 2026 plant swap",
       "searchSpecies": "Alocasia sp. or related aroid (unverified)",
       "status": "Watch",
-      "photo": "",
-      "photoAlt": "Daruk · Elephant-ear-type single-leaf plant · owner chat image IMG_9338.jpeg, catalog photo pending",
+      "photo": "swap-covers-2026/107-daruk-swap-20261114.webp",
+      "photoAlt": "Daruk · photographed at November 2026 plant swap",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-11-14",
@@ -15447,7 +15547,7 @@
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Single large dark-green leaf appears generally intact; underground corm/rhizome unverified. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9338.jpeg (not yet uploaded to GAIA).",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Single large dark-green leaf appears generally intact; underground corm/rhizome unverified. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9338.jpeg (catalog cover uploaded Nov 17, 2026; private journal remains separate).",
           "pClass": "",
           "style": "full"
         },
@@ -15505,8 +15605,8 @@
             "style": ""
           },
           {
-            "label": "Original photo",
-            "valueHtml": "IMG_9338.jpeg (chat only; not uploaded to catalog)",
+            "label": "Swap arrival photo",
+            "valueHtml": "IMG_9338.jpeg (optimized cover uploaded Nov 17, 2026)",
             "style": ""
           },
           {
@@ -15534,6 +15634,10 @@
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#25):</strong> The owner confirmed <strong>Daruk</strong>. User-supplied chat photo IMG_9338.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 17, 2026 · Catalog photo uploaded:</strong> Original user-supplied swap portrait resized to a web-optimized WebP and linked as this catalog cover. No private photo-journal record or care activity was inferred."
           }
         ]
       },
@@ -15555,8 +15659,8 @@
       "searchName": "kronk mystery pseudobulb orchid 2026 plant swap",
       "searchSpecies": "Sympodial orchid, possibly Catasetinae (genus unverified)",
       "status": "Watch",
-      "photo": "",
-      "photoAlt": "Kronk · Mystery pseudobulb orchid · owner chat image IMG_9339.jpeg, catalog photo pending",
+      "photo": "swap-covers-2026/108-kronk-swap-20261114.webp",
+      "photoAlt": "Kronk · photographed at November 2026 plant swap",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-11-14",
@@ -15591,7 +15695,7 @@
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Two large green pseudobulbs, somewhat wrinkled, with fresh straplike leaf growth at base. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9339.jpeg (not yet uploaded to GAIA).",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Two large green pseudobulbs, somewhat wrinkled, with fresh straplike leaf growth at base. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9339.jpeg (catalog cover uploaded Nov 17, 2026; private journal remains separate).",
           "pClass": "",
           "style": "full"
         },
@@ -15649,8 +15753,8 @@
             "style": ""
           },
           {
-            "label": "Original photo",
-            "valueHtml": "IMG_9339.jpeg (chat only; not uploaded to catalog)",
+            "label": "Swap arrival photo",
+            "valueHtml": "IMG_9339.jpeg (optimized cover uploaded Nov 17, 2026)",
             "style": ""
           },
           {
@@ -15678,6 +15782,10 @@
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#26):</strong> The owner confirmed <strong>Kronk</strong>. User-supplied chat photo IMG_9339.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 17, 2026 · Catalog photo uploaded:</strong> Original user-supplied swap portrait resized to a web-optimized WebP and linked as this catalog cover. No private photo-journal record or care activity was inferred."
           }
         ]
       },
@@ -15699,8 +15807,8 @@
       "searchName": "smeagol gollum jade 2026 plant swap",
       "searchSpecies": "Crassula ovata 'Gollum'",
       "status": "Watch",
-      "photo": "",
-      "photoAlt": "Smeagol · Gollum jade · owner chat image IMG_9340.jpeg, catalog photo pending",
+      "photo": "swap-covers-2026/109-smeagol-swap-20261114.webp",
+      "photoAlt": "Smeagol · photographed at November 2026 plant swap",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-11-14",
@@ -15731,7 +15839,7 @@
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Small compact tubular green leaves with a little minor damage. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9340.jpeg (not yet uploaded to GAIA).",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Small compact tubular green leaves with a little minor damage. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9340.jpeg (catalog cover uploaded Nov 17, 2026; private journal remains separate).",
           "pClass": "",
           "style": "full"
         },
@@ -15789,8 +15897,8 @@
             "style": ""
           },
           {
-            "label": "Original photo",
-            "valueHtml": "IMG_9340.jpeg (chat only; not uploaded to catalog)",
+            "label": "Swap arrival photo",
+            "valueHtml": "IMG_9340.jpeg (optimized cover uploaded Nov 17, 2026)",
             "style": ""
           },
           {
@@ -15818,6 +15926,10 @@
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#27):</strong> The owner confirmed <strong>Smeagol</strong>. User-supplied chat photo IMG_9340.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 17, 2026 · Catalog photo uploaded:</strong> Original user-supplied swap portrait resized to a web-optimized WebP and linked as this catalog cover. No private photo-journal record or care activity was inferred."
           }
         ]
       },
@@ -15839,8 +15951,8 @@
       "searchName": "revenant mystery tropical rescue 2026 plant swap",
       "searchSpecies": "Unidentified distressed tropical aroid (Syngonium-type possible)",
       "status": "Watch",
-      "photo": "",
-      "photoAlt": "Revenant · Mystery tropical rescue · owner chat image IMG_9341.jpeg, catalog photo pending",
+      "photo": "swap-covers-2026/110-revenant-swap-20261114.webp",
+      "photoAlt": "Revenant · photographed at November 2026 plant swap",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-11-14",
@@ -15875,7 +15987,7 @@
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Extensive dry curled yellow leaves; stems retain some green tissue. Severe stress evident. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9341.jpeg (not yet uploaded to GAIA).",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Extensive dry curled yellow leaves; stems retain some green tissue. Severe stress evident. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_9341.jpeg (catalog cover uploaded Nov 17, 2026; private journal remains separate).",
           "pClass": "",
           "style": "full"
         },
@@ -15933,8 +16045,8 @@
             "style": ""
           },
           {
-            "label": "Original photo",
-            "valueHtml": "IMG_9341.jpeg (chat only; not uploaded to catalog)",
+            "label": "Swap arrival photo",
+            "valueHtml": "IMG_9341.jpeg (optimized cover uploaded Nov 17, 2026)",
             "style": ""
           },
           {
@@ -15962,6 +16074,10 @@
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#28):</strong> The owner confirmed <strong>Revenant</strong>. User-supplied chat photo IMG_9341.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 17, 2026 · Catalog photo uploaded:</strong> Original user-supplied swap portrait resized to a web-optimized WebP and linked as this catalog cover. No private photo-journal record or care activity was inferred."
           }
         ]
       },
@@ -15983,8 +16099,8 @@
       "searchName": "zoidberg trailing starburst succulent 2026 plant swap",
       "searchSpecies": "Unidentified shrubby/trailing succulent (Sedum-type, unverified)",
       "status": "Good",
-      "photo": "",
-      "photoAlt": "Zoidberg · Trailing starburst succulent · owner chat image IMG_EE96918D-7778-4A8C-8318-032E50485C04.jpeg, catalog photo pending",
+      "photo": "swap-covers-2026/111-zoidberg-swap-20261114.webp",
+      "photoAlt": "Zoidberg · photographed at November 2026 plant swap",
       "newAddition": true,
       "pest": "unconfirmed",
       "added": "2026-11-14",
@@ -16015,7 +16131,7 @@
         },
         {
           "label": "CURRENT CONDITION",
-          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Branching succulent with clusters of narrow fleshy gray-green leaves and a long dangling stem; some pallor. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_EE96918D-7778-4A8C-8318-032E50485C04.jpeg (not yet uploaded to GAIA).",
+          "bodyHtml": "<strong>Nov 16, 2026 photo review:</strong> Branching succulent with clusters of narrow fleshy gray-green leaves and a long dangling stem; some pallor. The owner reported most swap additions have at least some established rooting, but individual root development was not verified during this chat. Exact species/cultivar noted as provisional where applicable. This is a visual assessment, not evidence of watering, repotting, pest treatment or a completed root inspection. Source chat photo: IMG_EE96918D-7778-4A8C-8318-032E50485C04.jpeg (catalog cover uploaded Nov 17, 2026; private journal remains separate).",
           "pClass": "",
           "style": "full"
         },
@@ -16073,8 +16189,8 @@
             "style": ""
           },
           {
-            "label": "Original photo",
-            "valueHtml": "IMG_EE96918D-7778-4A8C-8318-032E50485C04.jpeg (chat only; not uploaded to catalog)",
+            "label": "Swap arrival photo",
+            "valueHtml": "IMG_EE96918D-7778-4A8C-8318-032E50485C04.jpeg (optimized cover uploaded Nov 17, 2026)",
             "style": ""
           },
           {
@@ -16102,6 +16218,10 @@
           {
             "style": "care-entry",
             "bodyHtml": "<strong>Nov 16, 2026 · New swap accession (#30):</strong> The owner confirmed <strong>Zoidberg</strong>. User-supplied chat photo IMG_EE96918D-7778-4A8C-8318-032E50485C04.jpeg was reviewed. Species and health notes above are visual and preliminary. No physical actions marked complete."
+          },
+          {
+            "style": "care-entry",
+            "bodyHtml": "<strong>Nov 17, 2026 · Catalog photo uploaded:</strong> Original user-supplied swap portrait resized to a web-optimized WebP and linked as this catalog cover. No private photo-journal record or care activity was inferred."
           }
         ]
       },
