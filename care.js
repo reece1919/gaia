@@ -23,6 +23,7 @@
   let local = [];
   let remote = [];
   let busy = false;
+  let syncQueued = false;
   let notice = "";
   let noticeError = false;
 
@@ -95,7 +96,7 @@
       '" aria-label="Remove care entry">Undo</button></li>';
   }
   function panelHtml(p) {
-    const quick = ["water", "fertilize", "repot", "pest"].map(action =>
+    const quick = ["prune", "fertilize", "repot", "pest"].map(action =>
       '<button type="button" data-care-quick="' + action + '">' + esc(ACTIONS[action]) + '</button>').join("");
     const opts = Object.entries(ACTIONS).map(([action, label]) =>
       '<option value="' + action + '">' + esc(label) + '</option>').join("");
@@ -170,11 +171,13 @@
     };
     local.push(entry);
     const saved = saveLocal();
+    // Do not show an in-memory event as saved if persistent storage rejected it.
+    if (!saved) local = local.filter(e => e.id !== entry.id);
     alertNotice(ACTIONS[action] + " on " + dateLabel(date) +
       (saved ? user ? " · saved, syncing…" : " · saved on this device." : " · unable to store reliably."), !saved);
     renderJournal();
-    if (user && cloudReady) await sync();
-    return true;
+    if (saved && user && cloudReady) await sync();
+    return saved ? entry.id : null;
   }
   async function removeEntry(id) {
     const target = allEvents().find(e => e.id === id);
@@ -195,7 +198,8 @@
     renderJournal();
   }
   async function sync() {
-    if (!cloudReady || !user || busy) return;
+    if (!cloudReady || !user) return;
+    if (busy) { syncQueued = true; return; }
     busy = true;
     renderJournal();
     try {
@@ -207,9 +211,7 @@
         }));
         const { error } = await db.from("plant_care_events").upsert(records, {onConflict: "id"});
         if (error) throw error;
-        const ids = new Set(pending.map(e => e.id));
-        local.forEach(e => { if (ids.has(e.id)) e.synced = true; });
-        saveLocal();
+        // Do not mark entries synced until a SELECT confirms them below.
       }
       const {data, error} = await db.from("plant_care_events")
         .select("id,plant_id,action_type,happened_on,note,created_at")
@@ -225,7 +227,11 @@
         local = local.filter(e => !e.synced || cloudIds.has(e.id));
       }
       saveLocal();
-      alertNotice("Care journal synced across your signed-in devices.");
+      if (pending.length && pending.some(e => !cloudIds.has(e.id))) {
+        alertNotice("Some new events could not be verified in the cloud. They remain pending on this device.", true);
+      } else {
+        alertNotice("Care journal synced across your signed-in devices.");
+      }
     } catch (e) {
       console.error("GAIA care sync", e);
       alertNotice("Cloud sync did not complete: " + (e.message || "Check your connection.") +
@@ -234,6 +240,8 @@
       busy = false;
       renderJournal();
       document.dispatchEvent(new Event("gaia:care-synced"));
+      // If an entry was created while an earlier batch was uploading, flush it too.
+      if (syncQueued) { syncQueued = false; void sync(); }
     }
   }
   async function handleAuth(session) {
@@ -263,7 +271,7 @@
   async function setupCloud() {
     if (!config.url || !config.anonKey) {
       connecting = false;
-      alertNotice("The GAIA cloud settings have not loaded. Refresh this page to activate email sign-in.", true);
+      alertNotice("The Conservatory cloud settings have not loaded. Refresh this page to activate email sign-in.", true);
       renderJournal();
       return;
     }
@@ -289,6 +297,52 @@
       alertNotice("Cloud connection unavailable. Refresh this page, or check whether the browser blocked the Supabase script. Device-only care logging still works.", true);
       renderJournal();
     }
+  }
+
+  // Dictation is a reviewed draft, never an automatic write.
+  let dictationDraft = null;
+  const dictationForm = document.getElementById("conservatory-dictation-form");
+  const dictationReview = document.getElementById("conservatory-dictation-review");
+  const dictationSummary = document.getElementById("conservatory-dictation-summary");
+  const dictationStatus = document.getElementById("conservatory-dictation-status");
+  const dictationSave = document.getElementById("conservatory-dictation-save");
+  function clearDictation() {
+    dictationDraft = null;
+    if (dictationReview) dictationReview.hidden = true;
+  }
+  if (dictationForm && window.CONSERVATORY_DICTATION) {
+    dictationForm.addEventListener("input", clearDictation);
+    dictationForm.addEventListener("submit", event => {
+      event.preventDefault();
+      clearDictation();
+      const result = window.CONSERVATORY_DICTATION.parse(dictationForm.elements.dictation.value, plants, today());
+      if (result.error) { dictationStatus.textContent = result.error; return; }
+      dictationDraft = result;
+      dictationSummary.textContent = ACTIONS[result.action] + " · " + result.plantName +
+        " · " + dateLabel(result.date) + " · " + result.note;
+      dictationReview.hidden = false;
+      dictationStatus.textContent = "Check the plant, action, and date before saving.";
+    });
+    document.getElementById("conservatory-dictation-cancel").addEventListener("click", () => {
+      clearDictation();
+      dictationStatus.textContent = "Draft discarded.";
+    });
+    dictationSave.addEventListener("click", async () => {
+      if (!dictationDraft || dictationSave.disabled) return;
+      const draft = dictationDraft;
+      dictationSave.disabled = true;
+      try {
+        const savedId = await addEntry(draft.plantId, draft.action, draft.date, draft.note);
+        if (savedId) {
+          clearDictation();
+          dictationForm.reset();
+          const persisted = allEvents().find(e => e.id === savedId);
+          dictationStatus.textContent = persisted
+            ? (remote.some(e => e.id === persisted.id) ? "Event saved and verified in cloud journal." : "Event saved locally; cloud sync may still be pending.")
+            : "Save was attempted; please verify the care journal.";
+        } else dictationStatus.textContent = "Could not save the event.";
+      } finally { dictationSave.disabled = false; }
+    });
   }
 
   root.addEventListener("click", async event => {
@@ -362,9 +416,9 @@
         if (error) {
           const rateLimited = /rate limit|too many|429/i.test(error.message || "");
           alertNotice(rateLimited
-            ? "Supabase email limit reached. Wait before requesting another link, or sign in using a GAIA password."
+            ? "Supabase email limit reached. Wait before requesting another link, or sign in using a Conservatory password."
             : "Could not send sign-in email: " + error.message, true);
-        } else alertNotice("Check your email for a GAIA sign-in link.");
+        } else alertNotice("Check your email for a Conservatory sign-in link.");
       } else if (form.id === "care-password-login") {
         const email = form.elements.email.value.trim();
         const password = form.elements.password.value;
@@ -379,7 +433,7 @@
         }
       } else if (form.id === "care-password-set") {
         if (!user) {
-          alertNotice("You must first be signed in to set a GAIA password.", true);
+          alertNotice("You must first be signed in to set a Conservatory password.", true);
           return;
         }
         const password = form.elements.newPassword.value;
@@ -397,7 +451,7 @@
           alertNotice("Could not set password: " + error.message, true);
         } else {
           form.reset();
-          alertNotice("GAIA password set. You can now sign in on your iPhone with your email and this password.");
+          alertNotice("Conservatory password set. You can now sign in on your iPhone with your email and this password.");
         }
       }
     } catch (error) {

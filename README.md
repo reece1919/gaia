@@ -1,4 +1,16 @@
-# GAIA — Plant Collection Dashboard
+# The Conservatory | Grimoire
+
+The Conservatory is the user-facing identity of the existing GAIA botanical application. The
+GitHub repository, GitHub Pages path, database tables, application IDs, and integration
+identifiers remain `gaia` where changing them would break working connections.
+
+**Development status (November 19, 2026):** The rename, reviewed care-note entry,
+and a staged (not deployed) future ChatGPT care API live on the
+`feature/conservatory-foundation` branch. Production still serves the existing GAIA.
+Routine watering logs are optional; pruning, fertilizing, and repotting are the new
+focus. See `docs/conservatory-conversational-care.md` for tests, scope and release gates.
+
+## GAIA technical history
 
 ## Propagation Nursery (November 9, 2026)
 

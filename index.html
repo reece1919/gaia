@@ -7,13 +7,13 @@
 <meta name="theme-color" content="#111f23">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; img-src 'self' https: data: blob:; connect-src 'self' https://zdurujqwhxqrwbhwzzxg.supabase.co wss://zdurujqwhxqrwbhwzzxg.supabase.co https://api.todoist.com https://reece1919.github.io; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
-<meta name="description" content="GAIA — personal plant collection dashboard, care and history">
+<meta name="description" content="The Conservatory — plant collection, care, propagation, and botanical knowledge within Grimoire">
 <link rel="stylesheet" href="clipboard.css?v=20261023-v1">
-<title>GAIA — The Midnight Herbarium</title>
+<title>The Conservatory | Grimoire</title>
 <link rel="icon" type="image/svg+xml" href="gaia-metal-crest.svg?v=2.0.0">
 <link rel="apple-touch-icon" sizes="180x180" type="image/png" href="apple-touch-icon.png?v=2.0.0">
 <link rel="manifest" href="manifest.webmanifest?v=20261015-search-only2">
-<meta name="apple-mobile-web-app-title" content="GAIA">
+<meta name="apple-mobile-web-app-title" content="Conservatory">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <style>
 /* Automated private photo reviews: small, collapsible, mobile-friendly */
@@ -1001,6 +1001,13 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
  .gaia-hero-stat-attention{flex:1.4 1 0}
  .gaia-hero-stat-attention span{font-size:9px}
 }
+.conservatory-dictation{padding:12px;margin:0 0 14px;background:#fff;border:1px solid #cfe0d3;border-radius:11px}
+.conservatory-dictation h3{margin:0 0 5px;color:#285737;font-size:15px}
+.conservatory-dictation p{font-size:12px;line-height:1.5}
+.conservatory-dictation label{display:block;font-size:12px;font-weight:700;margin-bottom:5px}
+.conservatory-dictation textarea{display:block;width:100%;font:inherit;padding:10px;border:1px solid #cfe0d3;border-radius:8px;resize:vertical}
+.conservatory-dictation button{margin:8px 6px 0 0}
+#conservatory-dictation-status:not(:empty){padding-top:5px}
 </style>
 <link rel="stylesheet" href="propagation-nursery.css?v=20261109-v1">
 <link rel="stylesheet" href="plant-order.css?v=20261015-v1">
@@ -1017,8 +1024,8 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
       <div class="hero-crest" aria-hidden="true"><img src="gaia-metal-crest.svg?v=2.0.0" alt="" width="73" height="91"></div>
       <div class="hero-titles">
         <div class="hero-eyebrow">THE LIVING COLLECTION</div>
-        <h1>GAIA</h1>
-        <div class="hero-tagline">The Midnight Herbarium</div>
+        <h1>The Conservatory</h1>
+        <div class="hero-tagline">A living collection within Grimoire</div>
         <div class="gaia-hero-stats" aria-label="Plant collection health overview">
           <div class="gaia-hero-stat"><small>TOTAL COLLECTION</small><strong id="gaia-total-count">45</strong></div>
           <div class="gaia-hero-stat"><small>GOOD / EXCELLENT</small><strong id="gaia-good-count">26</strong></div>
@@ -1028,10 +1035,10 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
     </div>
     <div class="hero-divider" aria-hidden="true"><span>✧</span></div>
     <p class="hero-description">A record of rooted things, under glass and gathering weather.</p>
-    <div class="sub">45 plants · updated Oct 12, 2026 · tap for care, priorities &amp; history</div>
-    <a class="hero-ask-link" href="https://chatgpt.com/g/g-p-6a68d01f4a088191820e9381dd3d14c8/project" target="_blank" rel="noopener noreferrer" aria-label="Ask GAIA in ChatGPT (opens in a new tab)">
+    <div class="sub">Your living collection · tap for care, priorities &amp; history</div>
+    <a class="hero-ask-link" href="https://chatgpt.com/g/g-p-6a68d01f4a088191820e9381dd3d14c8/project" target="_blank" rel="noopener noreferrer" aria-label="Open plant chat in ChatGPT (opens in a new tab)">
       <span class="gaia-link-star" aria-hidden="true">✦</span>
-      <span>Ask GAIA</span>
+      <span>Open plant chat</span>
       <span class="gaia-link-arrow" aria-hidden="true">↗</span>
     </a>
     <div class="gaia-review-launch">
@@ -1058,8 +1065,8 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
   <a href="#gaia-tasks">Tasks</a>
   <a href="#gaia-insights">Insights</a>
   <a href="#search">Find a plant</a>
-  <a href="#care-overview">Care journal</a>
-  <a href="https://chatgpt.com/g/g-p-6a68d01f4a088191820e9381dd3d14c8/project" target="_blank" rel="noopener noreferrer" aria-label="Ask GAIA in ChatGPT (opens in a new tab)">Ask GAIA <span aria-hidden="true">↗</span></a>
+  <a href="#conservatory-dictation-panel">Log care</a>
+  <a href="https://chatgpt.com/g/g-p-6a68d01f4a088191820e9381dd3d14c8/project" target="_blank" rel="noopener noreferrer" aria-label="Open plant chat in ChatGPT (opens in a new tab)">Open plant chat <span aria-hidden="true">↗</span></a>
 </nav>
 
 <section id="gaia-clipboard" aria-label="Plant care clipboard">
@@ -1072,7 +1079,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
     <span id="gaia-task-progress" class="gaia-task-progress" aria-live="polite" hidden></span>
   </summary>
   <div class="gaia-task-content">
-    <div class="gaia-unified-todoist"><section class="system-todoist" data-system-todoist="gaia" aria-label="GAIA Todoist tasks"></section></div><details id="gaia-checklist-section" class="gaia-legacy-tasks" hidden aria-hidden="true"><summary>Previously saved GAIA-only tasks (legacy)</summary><p>These older tasks are retained for migration. New tasks are created in Todoist only.</p><div id="gaia-checklist-heading" class="gaia-checklist-heading" hidden>Previously saved GAIA tasks</div>
+    <div class="gaia-unified-todoist"><section class="system-todoist" data-system-todoist="gaia" aria-label="Plant Todoist tasks"></section></div><details id="gaia-checklist-section" class="gaia-legacy-tasks" hidden aria-hidden="true"><summary>Previously saved GAIA-only tasks (legacy)</summary><p>These older tasks are retained for migration. New tasks are created in Todoist only.</p><div id="gaia-checklist-heading" class="gaia-checklist-heading" hidden>Previously saved GAIA tasks</div>
     <details id="gaia-task-add" class="gaia-task-add" hidden>
       <summary><span aria-hidden="true">＋</span> Add a task</summary>
       <form id="gaia-task-create" class="gaia-task-create-form">
@@ -1095,13 +1102,13 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
       </form>
     </details>
     <div id="gaia-task-list" class="gaia-task-list" role="group" aria-label="Plant care follow-up checklist"></div>
-    <p id="gaia-task-status" class="gaia-task-status" role="status" aria-live="polite"></p></details><div class="gaia-unified-priorities"><h3>Suggested priorities <small>· recommendations only</small></h3><div id="gaia-unified-priority-list" aria-live="polite">Loading latest GAIA review…</div></div>
+    <p id="gaia-task-status" class="gaia-task-status" role="status" aria-live="polite"></p></details><div class="gaia-unified-priorities"><h3>Suggested priorities <small>· recommendations only</small></h3><div id="gaia-unified-priority-list" aria-live="polite">Loading latest plant review…</div></div>
   </div>
 
 </details>
-<details id="gaia-insights" class="gaia-insights" aria-label="GAIA AI insights">
+<details id="gaia-insights" class="gaia-insights" aria-label="Conservatory insights">
   <summary>
-    <span class="gaia-insights-heading"><span class="gaia-insights-mark" aria-hidden="true">✧</span> GAIA Insights</span>
+    <span class="gaia-insights-heading"><span class="gaia-insights-mark" aria-hidden="true">✧</span> Conservatory insights</span>
     <span id="gaia-insights-stamp" class="gaia-insights-stamp">Private AI notes</span>
   </summary>
   <div class="gaia-insights-content">
@@ -1114,23 +1121,39 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
     <div class="gaia-insights-actions">
       <button type="button" id="gaia-insights-refresh" disabled>Refresh notes</button>
       <button type="button" id="gaia-photo-review-now" disabled>Refresh saved assessments</button>
-      <p id="gaia-insights-status" role="status" aria-live="polite">Requires your GAIA sign-in to read private reviews.</p>
+      <p id="gaia-insights-status" role="status" aria-live="polite">Requires your Conservatory sign-in to read private reviews.</p>
     </div>
   </div>
 </details>
+<section id="conservatory-dictation-panel" class="conservatory-dictation" aria-label="Quick care note">
+  <h3>Quick care note</h3>
+  <p>Type or dictate one event, for example: “I pruned Sovereign today and removed two damaged leaves.” Review before saving. Watering is optional.</p>
+  <form id="conservatory-dictation-form">
+   <label for="conservatory-dictation-text">What happened?</label>
+   <textarea id="conservatory-dictation-text" name="dictation" rows="2" maxlength="1000" required placeholder="I fertilized Garrus today…"></textarea>
+   <button type="submit">Review care note</button>
+  </form>
+  <div id="conservatory-dictation-review" hidden aria-live="polite">
+   <p id="conservatory-dictation-summary"></p>
+   <button type="button" id="conservatory-dictation-save">Save event</button>
+   <button type="button" id="conservatory-dictation-cancel">Cancel</button>
+  </div>
+  <p id="conservatory-dictation-status" role="status" aria-live="polite"></p>
+ </section>
 <div class="controls" id="controls">
 <input autocomplete="off" id="search" placeholder="Search name or species…" type="search" aria-label="Search plant name or species">
 </div>
 <div class="grid" id="grid">
-<div id="loading" role="status" style="grid-column:1/-1;padding:24px;text-align:center;color:var(--muted)">Loading GAIA plant records…</div>
+<div id="loading" role="status" style="grid-column:1/-1;padding:24px;text-align:center;color:var(--muted)">Loading plant records…</div>
 </div>
 <div class="empty" id="empty">No plants match those filters.</div>
 
 <!-- Older activity and account settings stay below the plant collection. -->
 <section aria-label="Recent care and follow-up" class="activity" id="recent-care"><div class="activity-heading"><h2>Recent care &amp; follow-up</h2></div></section>
 
-<section id="gaia-task-approvals" class="care-overview" aria-label="GAIA task approval queue"><h2>GAIA task approval queue</h2><p>Uncertain care actions wait for your decision. Photo updates are due every 14 days.</p><div id="gaia-task-queue-content">Sign in to load suggestions.</div></section>
+<section id="gaia-task-approvals" class="care-overview" aria-label="Plant task approval queue"><h2>Plant task approval queue</h2><p>Uncertain care actions wait for your decision. Photo updates are due every 14 days.</p><div id="gaia-task-queue-content">Sign in to load suggestions.</div></section>
 <section id="care-overview" class="care-overview" aria-label="Care journal overview">
+ 
  <div class="care-overview-head">
   <div><h2>Care journal</h2><p id="care-action-count">0 actions logged</p></div>
   <div class="care-sync-status" id="care-sync-status">Stored on this device only</div>
@@ -1141,7 +1164,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
    <p>Quick care buttons save an entry immediately. Entries stay on this device unless you sign in to configured cloud sync. Use Export for a backup.</p>
    <div class="care-settings-actions"><button id="care-export" type="button">Export journal backup</button></div>
    <div id="care-login-area" hidden>
-    <p><strong>Sign in with your GAIA password</strong></p>
+    <p><strong>Sign in with your Conservatory password</strong></p>
     <form id="care-password-login" class="care-signin-form">
      <label>Email <input name="email" type="email" autocomplete="email" placeholder="you@example.com" required></label>
      <label>Password <input name="password" type="password" autocomplete="current-password" required></label>
@@ -1165,12 +1188,12 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
      <button id="care-signout" type="button">Sign out</button>
     </div>
     <details class="care-email-option">
-     <summary>Set or change your GAIA password</summary>
+     <summary>Set or change your Conservatory password</summary>
      <p>Use a password to sign in on other devices without waiting for another email link. Do not use your Supabase database password.</p>
      <form id="care-password-set" class="care-signin-form">
       <label>New password <input name="newPassword" type="password" minlength="12" autocomplete="new-password" required></label>
       <label>Confirm password <input name="confirmPassword" type="password" minlength="12" autocomplete="new-password" required></label>
-      <button type="submit">Save GAIA password</button>
+      <button type="submit">Save Conservatory password</button>
      </form>
     </details>
    </div>
@@ -1187,7 +1210,8 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 <script src="app.js?v=20261023-card-covers1" defer></script>
 <script src="group-learning.js?v=20261023-v1" defer></script>
 <script src="collection-grouping.js?v=20261023-care-center1" defer></script>
-<script src="care.js?v=20261023-stable-plant-id1" defer></script>
+<script src="conservatory-dictation.js?v=2" defer></script>
+<script src="care.js?v=20261119-conservatory-v1" defer></script>
 <script src="pot-soil.js?v=20261023-stable-plant-id1" defer></script>
 <script src="gaia-todoist-checkable.js?v=1" defer></script>
 <script src="security-mfa.js?v=1.3.1" defer></script>
@@ -1226,7 +1250,7 @@ window.addEventListener("load",function(){
 <script src="plant-order.js?v=20261023-ux-audit1" defer></script>
 <script src="learning-hub.js?v=20261109-nursery1" defer></script>
 <script src="propagation-nursery.js?v=20261109-v4" defer></script>
-<script src="compact-shell.js?v=20261023-ux-cleanup1" defer></script>
+<script src="compact-shell.js?v=20261119-conservatory-layout2" defer></script>
 <script src="daily-care-inbox.js?v=20261103-v1" defer></script>
 <script src="photo-review-queue-core.js?v=20261103-v1" defer></script>
 <script src="photo-review-queue.js?v=20261103-v1" defer></script>
