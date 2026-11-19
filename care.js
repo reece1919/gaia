@@ -170,11 +170,13 @@
     };
     local.push(entry);
     const saved = saveLocal();
+    // Do not show an in-memory event as saved if persistent storage rejected it.
+    if (!saved) local = local.filter(e => e.id !== entry.id);
     alertNotice(ACTIONS[action] + " on " + dateLabel(date) +
       (saved ? user ? " · saved, syncing…" : " · saved on this device." : " · unable to store reliably."), !saved);
     renderJournal();
     if (saved && user && cloudReady) await sync();
-    return saved;
+    return saved ? entry.id : null;
   }
   async function removeEntry(id) {
     const target = allEvents().find(e => e.id === id);
@@ -207,9 +209,7 @@
         }));
         const { error } = await db.from("plant_care_events").upsert(records, {onConflict: "id"});
         if (error) throw error;
-        const ids = new Set(pending.map(e => e.id));
-        local.forEach(e => { if (ids.has(e.id)) e.synced = true; });
-        saveLocal();
+        // Do not mark entries synced until a SELECT confirms them below.
       }
       const {data, error} = await db.from("plant_care_events")
         .select("id,plant_id,action_type,happened_on,note,created_at")
@@ -225,7 +225,11 @@
         local = local.filter(e => !e.synced || cloudIds.has(e.id));
       }
       saveLocal();
-      alertNotice("Care journal synced across your signed-in devices.");
+      if (pending.length && pending.some(e => !cloudIds.has(e.id))) {
+        alertNotice("Some new events could not be verified in the cloud. They remain pending on this device.", true);
+      } else {
+        alertNotice("Care journal synced across your signed-in devices.");
+      }
     } catch (e) {
       console.error("GAIA care sync", e);
       alertNotice("Cloud sync did not complete: " + (e.message || "Check your connection.") +
@@ -324,12 +328,11 @@
       const draft = dictationDraft;
       dictationSave.disabled = true;
       try {
-        const saved = await addEntry(draft.plantId, draft.action, draft.date, draft.note);
-        if (saved) {
+        const savedId = await addEntry(draft.plantId, draft.action, draft.date, draft.note);
+        if (savedId) {
           clearDictation();
           dictationForm.reset();
-          const persisted = allEvents().find(e => e.plant_id === draft.plantId &&
-            e.action_type === draft.action && e.happened_on === draft.date && e.note === draft.note);
+          const persisted = allEvents().find(e => e.id === savedId);
           dictationStatus.textContent = persisted
             ? (remote.some(e => e.id === persisted.id) ? "Event saved and verified in cloud journal." : "Event saved locally; cloud sync may still be pending.")
             : "Save was attempted; please verify the care journal.";
