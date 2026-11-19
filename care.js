@@ -267,7 +267,7 @@
   async function setupCloud() {
     if (!config.url || !config.anonKey) {
       connecting = false;
-      alertNotice("The GAIA cloud settings have not loaded. Refresh this page to activate email sign-in.", true);
+      alertNotice("The Conservatory cloud settings have not loaded. Refresh this page to activate email sign-in.", true);
       renderJournal();
       return;
     }
@@ -412,9 +412,9 @@
         if (error) {
           const rateLimited = /rate limit|too many|429/i.test(error.message || "");
           alertNotice(rateLimited
-            ? "Supabase email limit reached. Wait before requesting another link, or sign in using a GAIA password."
+            ? "Supabase email limit reached. Wait before requesting another link, or sign in using a Conservatory password."
             : "Could not send sign-in email: " + error.message, true);
-        } else alertNotice("Check your email for a GAIA sign-in link.");
+        } else alertNotice("Check your email for a Conservatory sign-in link.");
       } else if (form.id === "care-password-login") {
         const email = form.elements.email.value.trim();
         const password = form.elements.password.value;
@@ -429,7 +429,7 @@
         }
       } else if (form.id === "care-password-set") {
         if (!user) {
-          alertNotice("You must first be signed in to set a GAIA password.", true);
+          alertNotice("You must first be signed in to set a Conservatory password.", true);
           return;
         }
         const password = form.elements.newPassword.value;
@@ -447,7 +447,7 @@
           alertNotice("Could not set password: " + error.message, true);
         } else {
           form.reset();
-          alertNotice("GAIA password set. You can now sign in on your iPhone with your email and this password.");
+          alertNotice("Conservatory password set. You can now sign in on your iPhone with your email and this password.");
         }
       }
     } catch (error) {
