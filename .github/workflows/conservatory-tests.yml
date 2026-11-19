@@ -7,6 +7,8 @@ on:
       - "index.html"
       - "tests/conservatory-dictation.test.cjs"
       - "tests/conservatory-care-flow.test.cjs"
+      - "compact-shell.js"
+      - "tests/conservatory-browser-smoke.cjs"
       - ".github/workflows/conservatory-tests.yml"
   push:
     branches: [feature/conservatory-foundation]
@@ -15,6 +17,8 @@ on:
       - "care.js"
       - "index.html"
       - "tests/conservatory-dictation.test.cjs"
+      - "compact-shell.js"
+      - "tests/conservatory-browser-smoke.cjs"
       - ".github/workflows/conservatory-tests.yml"
 permissions:
   contents: read
@@ -29,3 +33,15 @@ jobs:
       - run: node --check conservatory-dictation.js
       - run: node --check care.js
       - run: node --test tests/conservatory-dictation.test.cjs tests/conservatory-care-flow.test.cjs
+
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: npm install --no-save --package-lock=false playwright@1.56.1
+      - run: npx playwright install --with-deps chromium
+      - run: node tests/conservatory-browser-smoke.cjs
