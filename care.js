@@ -331,7 +331,7 @@
           const persisted = allEvents().find(e => e.plant_id === draft.plantId &&
             e.action_type === draft.action && e.happened_on === draft.date && e.note === draft.note);
           dictationStatus.textContent = persisted
-            ? (persisted.synced ? "Event saved and synchronized." : "Event saved locally; cloud sync may still be pending.")
+            ? (remote.some(e => e.id === persisted.id) ? "Event saved and verified in cloud journal." : "Event saved locally; cloud sync may still be pending.")
             : "Save was attempted; please verify the care journal.";
         } else dictationStatus.textContent = "Could not save the event.";
       } finally { dictationSave.disabled = false; }
