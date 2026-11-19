@@ -1,7 +1,10 @@
 # The Conservatory: user-authenticated MCP connection
 
-Status: **development branch only**. No OAuth settings, Edge Function, plugin connection,
-database policy, or site routing changed in production by this proposal.
+Status (November 19, 2026): **Read-only endpoint deployed; OAuth sign-in not active yet.**
+The GitHub Pages consent route is public, the Supabase Edge Function is ACTIVE, and
+the existing private ChatGPT plugin has been updated to version 0.2.0 with an OAuth
+MCP connection. The Supabase OAuth server itself is not enabled, so user-linked
+reads are **not yet verified or available**. There is no care-writing MCP tool.
 
 ## Existing resources to reuse
 - Supabase project `GAIA` (`zdurujqwhxqrwbhwzzxg`).
@@ -22,29 +25,39 @@ OAuth discovery. The server middleware authenticates the caller and supplies a
 
 This avoids a separate OAuth database or user identity system.
 
-## Prerequisites (NOT verified or enabled yet)
-1. Confirm Supabase Auth has **asymmetric JWT signing keys** (JWKS; ES256 or RS256);
-   the documented `withSupabase` middleware rejects legacy HS256-only credentials.
-2. Review the staged static consent route at `oauth/consent/index.html`
-   and `oauth/consent/consent.js`. It requires the existing signed-in session
-   and AAL2 MFA before showing the client, requested identity scopes and
-   explicit Approve/Deny buttons. The route is **not yet live**.
-   Confirm the Supabase Auth Site URL and authorization path resolve to
-   `https://reece1919.github.io/gaia/oauth/consent/` before enabling OAuth.
-   A real sign-in/OAuth handshake is not yet verified.
-3. Only after route verification, configure Supabase Authentication > OAuth Server:
-   authorize path, OAuth 2.1 enablement, and carefully controlled dynamic client
-   registration. This modifies authentication behavior and needs explicit approval.
-4. Deploy the Edge Function with `verify_jwt=false` so **OAuth discovery** works.
-   The endpoint's `withSupabase({auth:'user'})` performs token verification and
-   RLS-scoped queries. Never deploy unauthenticated data tools.
-5. Verify unauthenticated requests yield 401 with a metadata challenge, and
-   authenticated `aal1` users cannot read private care events.
-6. Test `search_plants` and `get_care_history` using an authorized owner session.
-7. Add `record_care_event` later, with explicit user authorization, a stable UUID,
-   no caller-supplied `user_id`, exact-ID read-back, and replay protection.
-8. Update the **existing private plugin** to point at the verified MCP endpoint.
-   Do not recreate a plugin and do not claim the existing plugin has live access yet.
+## Verified production status
+- Consent page: https://reece1919.github.io/gaia/oauth/consent/ (HTTP 200).
+- MCP endpoint: https://zdurujqwhxqrwbhwzzxg.supabase.co/functions/v1/conservatory-mcp
+  deployed with gateway JWT precheck disabled **only** to allow OAuth metadata;
+  user authorization is enforced by the endpoint's `withSupabase({auth:'user'})`.
+- Public JWKS publishes an ES256 asymmetric signing key.
+- OAuth resource metadata reports the correct Supabase Auth issuer.
+- Anonymous and malformed-bearer MCP requests both return HTTP 401.
+- OAuth authorization-server discovery currently returns HTTP 404 until the
+  Supabase dashboard OAuth server is enabled.
+- Live test: https://github.com/reece1919/gaia/actions/runs/44638832844
+
+## Remaining account configuration
+The owner has approved production read-only deployment. The connected Supabase
+management tools cannot change OAuth server settings in the Auth dashboard.
+
+1. Open the existing GAIA project in Supabase: **Authentication > URL Configuration**.
+   Inspect and retain the current Site URL; do not change existing login redirects
+   without verifying dependent flows.
+2. Open **Authentication > OAuth Server**, enable OAuth 2.1, configure the Authorization
+   Path so **Site URL + path** resolves to
+   `https://reece1919.github.io/gaia/oauth/consent/`, and enable
+   **Dynamic Client Registration** for ChatGPT.
+3. Confirm the OAuth authorization-server discovery endpoint returns a valid
+   issuer document, then sign into GAIA with the owner's AAL2 MFA session.
+4. Open the existing private **The Conservatory** plugin and complete its OAuth
+   connection. Test that read-only plant lookup and private care-history reads work.
+   Verify AAL1 and other users cannot read the owner's records.
+5. Only then plan the separate explicitly authorized care-writing MCP tool with
+   stable UUIDs, retry handling, and read-back verification.
+
+Do not paste account credentials or session tokens into ChatGPT or GitHub.
+No extra database, new user identity, or service-role token is needed.
 
 ## CI coverage
 - `deno check supabase/functions/conservatory-mcp/index.ts` verifies the MCP
@@ -55,7 +68,7 @@ This avoids a separate OAuth database or user identity system.
 - Browser interaction with a real Supabase Auth OAuth request still needs
   an isolated authenticated test, not an administrative SQL shortcut.
 
-## Scope of the staged server
+## Scope of the deployed read-only server
 - `search_plants`: read-only, selected ID/name/species fields from the existing
   static catalog. No history, images or private data are returned.
 - `get_care_history`: read-only, private events through RLS.
@@ -70,7 +83,8 @@ from the inspected catalog file establishes that synced private
 Audit other export paths and user intention before altering or deleting public
 history/photos. MFA never retroactively protects data committed publicly.
 
-## Release gate
-No deployment or Auth configuration changes until the consent UI and OAuth
-prerequisites have been reviewed, tests passed, and the owner explicitly
-authorizes deployment. Avoid producing extra databases, credentials, or services.
+## Next release gate
+The current deployment is read-only. Adding care writes, changing existing
+Supabase policy, or exposing private photos requires separate review and
+authorization. OAuth consent must be tested with a real owner's AAL2 session
+before saying the plugin is connected.
