@@ -59,7 +59,7 @@ Deno.serve(
           title: "Read private care history",
           description: "Read care entries for an exact plant ID, using the signed-in owner's Supabase permissions and AAL2 MFA protection.",
           inputSchema: z.object({
-            plant_id: z.string().regex(/^\\d{2,3}$/),
+            plant_id: z.string().regex(/^\d{2,3}$/),
             limit: z.number().int().min(1).max(100).default(20),
           }),
           annotations: { readOnlyHint: true },
