@@ -9,6 +9,10 @@ on:
       - "tests/conservatory-care-flow.test.cjs"
       - "tests/conservatory-care-api.test.mjs"
       - "supabase/functions/conservatory-care/**"
+      - "supabase/functions/conservatory-mcp/**"
+      - "oauth/consent/**"
+      - "tests/conservatory-oauth-consent.test.cjs"
+      - "tests/conservatory-oauth-readiness.mjs"
       - "compact-shell.js"
       - "tests/conservatory-browser-smoke.cjs"
       - ".github/workflows/conservatory-tests.yml"
@@ -27,11 +31,22 @@ jobs:
           node-version: "22"
       - run: node --check conservatory-dictation.js
       - run: node --check care.js
-      - run: node --test tests/conservatory-dictation.test.cjs tests/conservatory-care-flow.test.cjs tests/conservatory-care-api.test.mjs
+      - run: node --check oauth/consent/consent.js
+      - run: node --test tests/conservatory-dictation.test.cjs tests/conservatory-care-flow.test.cjs tests/conservatory-care-api.test.mjs tests/conservatory-oauth-consent.test.cjs
       - uses: denoland/setup-deno@v2
         with:
           deno-version: v2.5.0
       - run: deno check supabase/functions/conservatory-care/index.ts
+      - run: deno check supabase/functions/conservatory-mcp/index.ts
+
+  oauth-readiness:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: node tests/conservatory-oauth-readiness.mjs
 
   browser:
     runs-on: ubuntu-24.04

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self'; connect-src https://zdurujqwhxqrwbhwzzxg.supabase.co; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <title>Authorize The Conservatory | Grimoire</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="../../gaia-config.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.119.1" defer></script>
+  <script src="./consent.js" defer></script>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">THE GRIMOIRE · THE CONSERVATORY</p>
+    <h1>Authorize a connection</h1>
+    <p>Connect a trusted app to your botanical records using your own sign-in and MFA.</p>
+    <p id="status" role="status" aria-live="polite">Checking your session…</p>
+    <section id="login-needed" hidden>
+      <h2>Sign-in required</h2>
+      <p id="login-help">Open The Conservatory and complete sign-in and authenticator verification, then return to this tab.</p>
+      <p><a href="../../" target="_blank" rel="noopener noreferrer">Open The Conservatory</a></p>
+      <button id="retry" type="button">Check sign-in again</button>
+    </section>
+    <section id="decision" hidden>
+      <h2>Review access request</h2>
+      <p><strong id="client-name"></strong> is requesting permission to connect.</p>
+      <dl>
+        <dt>Requested identity scopes</dt><dd id="scope"></dd>
+        <dt>Return address</dt><dd id="return-uri"></dd>
+      </dl>
+      <p>Botanical data remains subject to your account permissions and MFA. Identity scopes do not grant unrestricted database privileges.</p>
+      <div class="actions"><button id="approve" type="button">Approve connection</button><button id="deny" type="button">Deny</button></div>
+    </section>
+  </main>
+</body>
+</html>
