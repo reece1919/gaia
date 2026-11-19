@@ -1125,20 +1125,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
     </div>
   </div>
 </details>
-<div class="controls" id="controls">
-<input autocomplete="off" id="search" placeholder="Search name or species…" type="search" aria-label="Search plant name or species">
-</div>
-<div class="grid" id="grid">
-<div id="loading" role="status" style="grid-column:1/-1;padding:24px;text-align:center;color:var(--muted)">Loading GAIA plant records…</div>
-</div>
-<div class="empty" id="empty">No plants match those filters.</div>
-
-<!-- Older activity and account settings stay below the plant collection. -->
-<section aria-label="Recent care and follow-up" class="activity" id="recent-care"><div class="activity-heading"><h2>Recent care &amp; follow-up</h2></div></section>
-
-<section id="gaia-task-approvals" class="care-overview" aria-label="GAIA task approval queue"><h2>GAIA task approval queue</h2><p>Uncertain care actions wait for your decision. Photo updates are due every 14 days.</p><div id="gaia-task-queue-content">Sign in to load suggestions.</div></section>
-<section id="care-overview" class="care-overview" aria-label="Care journal overview">
- <div class="conservatory-dictation">
+<div class="conservatory-dictation">
   <h3>Quick care note</h3>
   <p>Type or dictate one event, for example: “I pruned Sovereign today and removed two damaged leaves.” Review before saving. Watering is optional.</p>
   <form id="conservatory-dictation-form">
@@ -1153,6 +1140,20 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
   </div>
   <p id="conservatory-dictation-status" role="status" aria-live="polite"></p>
  </div>
+<div class="controls" id="controls">
+<input autocomplete="off" id="search" placeholder="Search name or species…" type="search" aria-label="Search plant name or species">
+</div>
+<div class="grid" id="grid">
+<div id="loading" role="status" style="grid-column:1/-1;padding:24px;text-align:center;color:var(--muted)">Loading GAIA plant records…</div>
+</div>
+<div class="empty" id="empty">No plants match those filters.</div>
+
+<!-- Older activity and account settings stay below the plant collection. -->
+<section aria-label="Recent care and follow-up" class="activity" id="recent-care"><div class="activity-heading"><h2>Recent care &amp; follow-up</h2></div></section>
+
+<section id="gaia-task-approvals" class="care-overview" aria-label="GAIA task approval queue"><h2>GAIA task approval queue</h2><p>Uncertain care actions wait for your decision. Photo updates are due every 14 days.</p><div id="gaia-task-queue-content">Sign in to load suggestions.</div></section>
+<section id="care-overview" class="care-overview" aria-label="Care journal overview">
+ 
  <div class="care-overview-head">
   <div><h2>Care journal</h2><p id="care-action-count">0 actions logged</p></div>
   <div class="care-sync-status" id="care-sync-status">Stored on this device only</div>
@@ -1209,7 +1210,8 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 <script src="app.js?v=20261023-card-covers1" defer></script>
 <script src="group-learning.js?v=20261023-v1" defer></script>
 <script src="collection-grouping.js?v=20261023-care-center1" defer></script>
-<script src="conservatory-dictation.js?v=1" defer></script>\n<script src="care.js?v=20261119-conservatory-v1" defer></script>
+<script src="conservatory-dictation.js?v=2" defer></script>
+<script src="care.js?v=20261119-conservatory-v1" defer></script>
 <script src="pot-soil.js?v=20261023-stable-plant-id1" defer></script>
 <script src="gaia-todoist-checkable.js?v=1" defer></script>
 <script src="security-mfa.js?v=1.3.1" defer></script>
