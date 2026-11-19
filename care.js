@@ -173,8 +173,8 @@
     alertNotice(ACTIONS[action] + " on " + dateLabel(date) +
       (saved ? user ? " · saved, syncing…" : " · saved on this device." : " · unable to store reliably."), !saved);
     renderJournal();
-    if (user && cloudReady) await sync();
-    return true;
+    if (saved && user && cloudReady) await sync();
+    return saved;
   }
   async function removeEntry(id) {
     const target = allEvents().find(e => e.id === id);
