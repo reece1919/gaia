@@ -12,18 +12,11 @@ on:
       - "compact-shell.js"
       - "tests/conservatory-browser-smoke.cjs"
       - ".github/workflows/conservatory-tests.yml"
-  push:
-    branches: [feature/conservatory-foundation]
-    paths:
-      - "conservatory-dictation.js"
-      - "care.js"
-      - "index.html"
-      - "tests/conservatory-dictation.test.cjs"
-      - "compact-shell.js"
-      - "tests/conservatory-browser-smoke.cjs"
-      - ".github/workflows/conservatory-tests.yml"
 permissions:
   contents: read
+concurrency:
+  group: conservatory-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
 jobs:
   test:
     runs-on: ubuntu-latest
