@@ -1,0 +1,30 @@
+name: Conservatory dictation tests
+on:
+  pull_request:
+    paths:
+      - "conservatory-dictation.js"
+      - "care.js"
+      - "index.html"
+      - "tests/conservatory-dictation.test.cjs"
+      - ".github/workflows/conservatory-tests.yml"
+  push:
+    branches: [feature/conservatory-foundation]
+    paths:
+      - "conservatory-dictation.js"
+      - "care.js"
+      - "index.html"
+      - "tests/conservatory-dictation.test.cjs"
+      - ".github/workflows/conservatory-tests.yml"
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: node --check conservatory-dictation.js
+      - run: node --check care.js
+      - run: node --test tests/conservatory-dictation.test.cjs
