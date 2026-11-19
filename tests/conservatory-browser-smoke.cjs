@@ -45,6 +45,14 @@ async function run(){
     await page.locator('#conservatory-dictation-form button[type="submit"]').click();
     await page.locator("#conservatory-dictation-review").waitFor({state:"visible"});
     assert.match(await page.locator("#conservatory-dictation-summary").innerText(),/Sovereign/);
+    fs.mkdirSync(path.join(root,"artifacts"),{recursive:true});
+    await panel.scrollIntoViewIfNeeded();
+    await page.screenshot({path:path.join(root,"artifacts/conservatory-mobile.png")});
+    await page.setViewportSize({width:1440,height:900});
+    assert.equal(await panel.isVisible(),true,"Quick care note is not visible on desktop");
+    await panel.scrollIntoViewIfNeeded();
+    await page.screenshot({path:path.join(root,"artifacts/conservatory-desktop.png")});
+    await page.setViewportSize({width:390,height:844});
     await page.locator("#conservatory-dictation-save").click();
     await page.waitForFunction(()=>document.getElementById("conservatory-dictation-status").textContent.includes("saved locally"),{timeout:5000});
     const rows=await page.evaluate(()=>window.GAIA_CARE.events());
