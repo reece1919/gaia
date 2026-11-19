@@ -5,6 +5,7 @@
   if (!care || document.getElementById("gaia-care-utilities")) return;
   const tasks = document.getElementById("gaia-tasks");
   const controls = document.getElementById("controls");
+  const dictation = document.querySelector(".conservatory-dictation");
   const grid = document.getElementById("grid");
   const empty = document.getElementById("empty");
   const grouping = document.querySelector(".gaia-collection-toolbar");
@@ -109,4 +110,6 @@
   drawer.append(summary, body);
   // One compact row before the plant search, collapsed unless the user opens it.
   tasks.after(drawer);
+  // Keep conversational care visible, not buried inside Settings & Backup.
+  if (dictation) drawer.after(dictation);
 })();
