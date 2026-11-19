@@ -5,6 +5,9 @@ const urls = {
   jwks: root + "/auth/v1/.well-known/jwks.json",
   discovery: root + "/.well-known/oauth-authorization-server/auth/v1",
   consent: "https://reece1919.github.io/gaia/oauth/consent/",
+  home: "https://reece1919.github.io/gaia/",
+  sdk: "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.119.1",
+  mcpMetadata: root + "/functions/v1/conservatory-mcp/oauth-protected-resource",
 };
 async function check(name, url) {
   try {
@@ -28,3 +31,28 @@ async function check(name, url) {
   }
 }
 await Promise.all(Object.entries(urls).map(([name,url])=>check(name,url)));
+
+// Verify the deployed function rejects unauthenticated MCP tool traffic.
+// The gateway must allow discovery through, but middleware must never expose tools.
+const endpoint = root + "/functions/v1/conservatory-mcp";
+try {
+  const response = await fetch(endpoint, {
+    method: "POST",
+    headers: {"content-type":"application/json","accept":"application/json, text/event-stream"},
+    body: JSON.stringify({
+      jsonrpc:"2.0",id:1,method:"initialize",
+      params:{protocolVersion:"2025-06-18",capabilities:{},clientInfo:{name:"security-probe",version:"1"}}
+    }),
+    signal: AbortSignal.timeout(12000)
+  });
+  const challenge=response.headers.get("www-authenticate") || "";
+  console.log("unauthenticated_mcp: HTTP "+response.status+", challenge="+(challenge ? "present" : "missing"));
+  if(response.status!==401 || !challenge.toLowerCase().includes("bearer")) {
+    console.error("SECURITY CHECK FAILED: protected MCP endpoint did not return a bearer 401.");
+    process.exitCode=1;
+  }
+}catch(e){
+  console.error("SECURITY CHECK FAILED: MCP endpoint unreachable ("+e.name+").");
+  process.exitCode=1;
+}
+
