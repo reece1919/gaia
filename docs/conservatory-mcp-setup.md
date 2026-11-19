@@ -25,9 +25,13 @@ This avoids a separate OAuth database or user identity system.
 ## Prerequisites (NOT verified or enabled yet)
 1. Confirm Supabase Auth has **asymmetric JWT signing keys** (JWKS; ES256 or RS256);
    the documented `withSupabase` middleware rejects legacy HS256-only credentials.
-2. Create and test a consent route on the **existing GAIA GitHub Pages origin**,
-   preserving existing sign-in and AAL2 MFA. Supabase OAuth needs the user to
-   view the requesting client and approve or deny it.
+2. Review the staged static consent route at `oauth/consent/index.html`
+   and `oauth/consent/consent.js`. It requires the existing signed-in session
+   and AAL2 MFA before showing the client, requested identity scopes and
+   explicit Approve/Deny buttons. The route is **not yet live**.
+   Confirm the Supabase Auth Site URL and authorization path resolve to
+   `https://reece1919.github.io/gaia/oauth/consent/` before enabling OAuth.
+   A real sign-in/OAuth handshake is not yet verified.
 3. Only after route verification, configure Supabase Authentication > OAuth Server:
    authorize path, OAuth 2.1 enablement, and carefully controlled dynamic client
    registration. This modifies authentication behavior and needs explicit approval.
@@ -41,6 +45,15 @@ This avoids a separate OAuth database or user identity system.
    no caller-supplied `user_id`, exact-ID read-back, and replay protection.
 8. Update the **existing private plugin** to point at the verified MCP endpoint.
    Do not recreate a plugin and do not claim the existing plugin has live access yet.
+
+## CI coverage
+- `deno check supabase/functions/conservatory-mcp/index.ts` verifies the MCP
+  server's type contract.
+- `node --test tests/conservatory-oauth-consent.test.cjs` checks that signed-out
+  and AAL1 sessions cannot approve, that approval requires a user click, and
+  that denial uses the deny API.
+- Browser interaction with a real Supabase Auth OAuth request still needs
+  an isolated authenticated test, not an administrative SQL shortcut.
 
 ## Scope of the staged server
 - `search_plants`: read-only, selected ID/name/species fields from the existing
