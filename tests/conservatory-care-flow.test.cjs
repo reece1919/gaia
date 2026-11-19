@@ -8,10 +8,11 @@ const source = fs.readFileSync(path.join(__dirname, "../care.js"), "utf8");
 const parser = require("../conservatory-dictation.js");
 const plants = [{id:"50",name:"Sovereign",commonNames:[]},{id:"70",name:"Garrus",commonNames:[]}];
 
-function build({signedIn=false, failStorage=false, invisibleCloud=false}={}) {
+function build({signedIn=false, failStorage=false, invisibleCloud=false, cloudLatency=false}={}) {
   const local = new Map();
   const cloud = [];
   const nodes = new Map();
+  const globalHandlers = new Map();
   function element(id) {
     if (!nodes.has(id)) {
       const handlers = {};
@@ -36,7 +37,10 @@ function build({signedIn=false, failStorage=false, invisibleCloud=false}={}) {
     from(table){
       assert.equal(table,"plant_care_events");
       return {
-        async upsert(records){cloud.push(...records);return {error:null};},
+        async upsert(records){
+          if(cloudLatency) await new Promise(resolve=>setTimeout(resolve,15));
+          cloud.push(...records);return {error:null};
+        },
         select(){return {order(){return {async limit(){return {data:invisibleCloud?[]:cloud,error:null};}};}};}
       };
     }
@@ -50,7 +54,10 @@ function build({signedIn=false, failStorage=false, invisibleCloud=false}={}) {
   const document={
     getElementById:element,
     querySelectorAll(){return [];},
-    addEventListener(){},
+    addEventListener(name,fn){
+      if(!globalHandlers.has(name))globalHandlers.set(name,[]);
+      globalHandlers.get(name).push(fn);
+    },
     dispatchEvent(){}
   };
   const localStorage={
@@ -64,7 +71,13 @@ function build({signedIn=false, failStorage=false, invisibleCloud=false}={}) {
     form.fire("submit",{preventDefault(){}});
     return element("conservatory-dictation-save").fire("click");
   }
-  return {window,local,cloud,element,form,submit};
+  function quick(action,plantId="50") {
+    const panel={dataset:{carePlant:plantId}};
+    const button={dataset:{careQuick:action},hasAttribute:attr=>attr==="data-care-quick",closest:()=>panel};
+    const event={target:{closest:()=>button}};
+    return Promise.all((globalHandlers.get("click")||[]).map(fn=>fn(event)));
+  }
+  return {window,local,cloud,element,form,submit,quick};
 }
 const tick=()=>new Promise(resolve=>setImmediate(resolve));
 
@@ -127,4 +140,13 @@ test("changing the text clears stale approval",async()=>{
   assert.equal(h.element("conservatory-dictation-review").hidden,true);
   await h.element("conservatory-dictation-save").fire("click");
   assert.equal(h.window.GAIA_CARE.events().length,0);
+});
+
+test("care entries arriving during an upload are queued for a second cloud sync",async()=>{
+  const h=build({signedIn:true,cloudLatency:true});
+  await new Promise(resolve=>setTimeout(resolve,30));
+  await Promise.all([h.quick("prune"),h.quick("fertilize")]);
+  await new Promise(resolve=>setTimeout(resolve,65));
+  assert.equal(h.cloud.length,2,"both entries should sync without a manual retry");
+  assert.equal(JSON.parse(h.local.get("gaia-care-journal-v1-user-owner-1")).filter(e=>e.synced).length,2);
 });
