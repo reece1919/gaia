@@ -1001,6 +1001,13 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
  .gaia-hero-stat-attention{flex:1.4 1 0}
  .gaia-hero-stat-attention span{font-size:9px}
 }
+.conservatory-dictation{padding:12px;margin:0 0 14px;background:#fff;border:1px solid #cfe0d3;border-radius:11px}
+.conservatory-dictation h3{margin:0 0 5px;color:#285737;font-size:15px}
+.conservatory-dictation p{font-size:12px;line-height:1.5}
+.conservatory-dictation label{display:block;font-size:12px;font-weight:700;margin-bottom:5px}
+.conservatory-dictation textarea{display:block;width:100%;font:inherit;padding:10px;border:1px solid #cfe0d3;border-radius:8px;resize:vertical}
+.conservatory-dictation button{margin:8px 6px 0 0}
+#conservatory-dictation-status:not(:empty){padding-top:5px}
 </style>
 <link rel="stylesheet" href="propagation-nursery.css?v=20261109-v1">
 <link rel="stylesheet" href="plant-order.css?v=20261015-v1">
@@ -1131,6 +1138,21 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 
 <section id="gaia-task-approvals" class="care-overview" aria-label="GAIA task approval queue"><h2>GAIA task approval queue</h2><p>Uncertain care actions wait for your decision. Photo updates are due every 14 days.</p><div id="gaia-task-queue-content">Sign in to load suggestions.</div></section>
 <section id="care-overview" class="care-overview" aria-label="Care journal overview">
+ <div class="conservatory-dictation">
+  <h3>Quick care note</h3>
+  <p>Type or dictate one event, for example: “I pruned Sovereign today and removed two damaged leaves.” Review before saving. Watering is optional.</p>
+  <form id="conservatory-dictation-form">
+   <label for="conservatory-dictation-text">What happened?</label>
+   <textarea id="conservatory-dictation-text" name="dictation" rows="2" maxlength="1000" required placeholder="I fertilized Garrus today…"></textarea>
+   <button type="submit">Review care note</button>
+  </form>
+  <div id="conservatory-dictation-review" hidden aria-live="polite">
+   <p id="conservatory-dictation-summary"></p>
+   <button type="button" id="conservatory-dictation-save">Save event</button>
+   <button type="button" id="conservatory-dictation-cancel">Cancel</button>
+  </div>
+  <p id="conservatory-dictation-status" role="status" aria-live="polite"></p>
+ </div>
  <div class="care-overview-head">
   <div><h2>Care journal</h2><p id="care-action-count">0 actions logged</p></div>
   <div class="care-sync-status" id="care-sync-status">Stored on this device only</div>
@@ -1187,7 +1209,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 <script src="app.js?v=20261023-card-covers1" defer></script>
 <script src="group-learning.js?v=20261023-v1" defer></script>
 <script src="collection-grouping.js?v=20261023-care-center1" defer></script>
-<script src="care.js?v=20261023-stable-plant-id1" defer></script>
+<script src="conservatory-dictation.js?v=1" defer></script>\n<script src="care.js?v=20261119-conservatory-v1" defer></script>
 <script src="pot-soil.js?v=20261023-stable-plant-id1" defer></script>
 <script src="gaia-todoist-checkable.js?v=1" defer></script>
 <script src="security-mfa.js?v=1.3.1" defer></script>
