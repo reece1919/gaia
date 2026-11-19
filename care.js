@@ -95,7 +95,7 @@
       '" aria-label="Remove care entry">Undo</button></li>';
   }
   function panelHtml(p) {
-    const quick = ["water", "fertilize", "repot", "pest"].map(action =>
+    const quick = ["prune", "fertilize", "repot", "pest"].map(action =>
       '<button type="button" data-care-quick="' + action + '">' + esc(ACTIONS[action]) + '</button>').join("");
     const opts = Object.entries(ACTIONS).map(([action, label]) =>
       '<option value="' + action + '">' + esc(label) + '</option>').join("");
