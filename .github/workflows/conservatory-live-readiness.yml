@@ -1,0 +1,23 @@
+name: Conservatory live OAuth readiness
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/conservatory-live-readiness.yml"
+      - "tests/conservatory-oauth-readiness.mjs"
+      - "oauth/consent/**"
+      - "supabase/functions/conservatory-mcp/**"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: node --check tests/conservatory-oauth-readiness.mjs
+      - run: node tests/conservatory-oauth-readiness.mjs
