@@ -18,6 +18,15 @@
   function parse(text, plants, today) {
     const raw = String(text || "").trim();
     if (!raw || raw.length > 1000) return {error:"Enter a short care note (up to 1,000 characters)."};
+    // A note about future work or something not done must never become a care event.
+    if (/\b(?:did(?:n't| not)|have(?:n't| not)|has(?:n't| not)|not yet|never|will|going to|planning to|plan to|need to|want to|should|might|could|about to|tomorrow|next week)\b/i.test(raw)) {
+      return {error:"This sounds like a plan or something not completed. Only record actions that already happened."};
+    }
+    // Explicit dates outside today/yesterday need the date picker; do not silently
+    // recast them as today's care.
+    if (/\b(?:last\s+(?!night\b)|next\s+|earlier\b|\d{4}-\d{2}-\d{2}\b|\d{1,2}\/\d{1,2}(?:\/\d{2,4})?\b|(?:on\s+)?(?:mon|tues|wednes|thurs|fri|satur|sun)day\b|(?:on\s+)?(?:jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|jun(?:e)?|jul(?:y)?|aug(?:ust)?|sep(?:tember)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)\s+\d{1,2}\b|(?:a few|several|two|three|four|five|\d+)\s+days?\s+ago\b)/i.test(raw)) {
+      return {error:"Date is ambiguous. Use today or yesterday, or record this in the dated journal."};
+    }
     const matches = ACTIONS.filter(([, re]) => re.test(raw));
     if (matches.length > 1) return {error:"Multiple care actions detected. Record one event at a time."};
     const action = matches.length ? matches[0][0] : "note";
@@ -37,7 +46,7 @@
       d.setUTCDate(d.getUTCDate() - 1);
       return {plantId:matched[0].id,plantName:matched[0].name,action,date:d.toISOString().slice(0,10),note:raw};
     }
-    if (/\b(last (?:week|month)|tomorrow|next (?:week|month)|\d{1,2}\/\d{1,2})\b/i.test(raw)) return {error:"Date is ambiguous. Use today or yesterday, or record this in the dated journal."};
+
     return {plantId:matched[0].id,plantName:matched[0].name,action,date:day,note:raw};
   }
   return {parse};
