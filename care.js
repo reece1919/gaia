@@ -23,6 +23,7 @@
   let local = [];
   let remote = [];
   let busy = false;
+  let syncQueued = false;
   let notice = "";
   let noticeError = false;
 
@@ -197,7 +198,8 @@
     renderJournal();
   }
   async function sync() {
-    if (!cloudReady || !user || busy) return;
+    if (!cloudReady || !user) return;
+    if (busy) { syncQueued = true; return; }
     busy = true;
     renderJournal();
     try {
@@ -238,6 +240,8 @@
       busy = false;
       renderJournal();
       document.dispatchEvent(new Event("gaia:care-synced"));
+      // If an entry was created while an earlier batch was uploading, flush it too.
+      if (syncQueued) { syncQueued = false; void sync(); }
     }
   }
   async function handleAuth(session) {
