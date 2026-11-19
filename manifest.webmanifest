@@ -1,7 +1,7 @@
 {
-  "name": "GAIA — The Midnight Herbarium",
-  "short_name": "GAIA",
-  "description": "Personal plant collection, care journal, and tasks",
+  "name": "The Conservatory | Grimoire",
+  "short_name": "Conservatory",
+  "description": "Plant collection, care, propagation, and botanical knowledge within Grimoire",
   "start_url": "/gaia/?v=20261015-search-only2",
   "scope": "/gaia/",
   "display": "standalone",
