@@ -291,6 +291,53 @@
     }
   }
 
+  // Dictation is a reviewed draft, never an automatic write.
+  let dictationDraft = null;
+  const dictationForm = document.getElementById("conservatory-dictation-form");
+  const dictationReview = document.getElementById("conservatory-dictation-review");
+  const dictationSummary = document.getElementById("conservatory-dictation-summary");
+  const dictationStatus = document.getElementById("conservatory-dictation-status");
+  const dictationSave = document.getElementById("conservatory-dictation-save");
+  function clearDictation() {
+    dictationDraft = null;
+    if (dictationReview) dictationReview.hidden = true;
+  }
+  if (dictationForm && window.CONSERVATORY_DICTATION) {
+    dictationForm.addEventListener("input", clearDictation);
+    dictationForm.addEventListener("submit", event => {
+      event.preventDefault();
+      clearDictation();
+      const result = window.CONSERVATORY_DICTATION.parse(dictationForm.elements.dictation.value, plants, today());
+      if (result.error) { dictationStatus.textContent = result.error; return; }
+      dictationDraft = result;
+      dictationSummary.textContent = ACTIONS[result.action] + " · " + result.plantName +
+        " · " + dateLabel(result.date) + " · " + result.note;
+      dictationReview.hidden = false;
+      dictationStatus.textContent = "Check the plant, action, and date before saving.";
+    });
+    document.getElementById("conservatory-dictation-cancel").addEventListener("click", () => {
+      clearDictation();
+      dictationStatus.textContent = "Draft discarded.";
+    });
+    dictationSave.addEventListener("click", async () => {
+      if (!dictationDraft || dictationSave.disabled) return;
+      const draft = dictationDraft;
+      dictationSave.disabled = true;
+      try {
+        const saved = await addEntry(draft.plantId, draft.action, draft.date, draft.note);
+        if (saved) {
+          clearDictation();
+          dictationForm.reset();
+          const persisted = allEvents().find(e => e.plant_id === draft.plantId &&
+            e.action_type === draft.action && e.happened_on === draft.date && e.note === draft.note);
+          dictationStatus.textContent = persisted
+            ? (persisted.synced ? "Event saved and synchronized." : "Event saved locally; cloud sync may still be pending.")
+            : "Save was attempted; please verify the care journal.";
+        } else dictationStatus.textContent = "Could not save the event.";
+      } finally { dictationSave.disabled = false; }
+    });
+  }
+
   root.addEventListener("click", async event => {
     if (event.target.id === "care-export") {
       const payload = JSON.stringify({format: "gaia-care-v1", exported_at: new Date().toISOString(), events: allEvents()}, null, 2);
