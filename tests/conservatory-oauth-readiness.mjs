@@ -21,6 +21,15 @@ async function check(name, url) {
     } else if(name==="discovery" && result.ok){
       const body=await result.json();
       detail="issuer="+String(body.issuer || "not supplied");
+    } else if(name==="mcpMetadata" && result.ok){
+      const body=await result.json();
+      const issuers=body.authorization_servers || [];
+      detail="authorization_servers="+JSON.stringify(issuers);
+      const expected=root+"/auth/v1";
+      if(!issuers.includes(expected)){
+        console.error("SECURITY CHECK FAILED: MCP advertised unexpected OAuth issuer.");
+        process.exitCode=1;
+      }
     } else if(name==="consent" && result.ok){
       const body=await result.text();
       detail=body.includes("Authorize a connection") ? "CONSENT PAGE PUBLISHED" : "PAGE FOUND, CONTENT NOT VERIFIED";
@@ -56,3 +65,23 @@ try {
   process.exitCode=1;
 }
 
+try {
+  const invalid=await fetch(endpoint,{
+    method:"POST",
+    headers:{
+      "content-type":"application/json",
+      "accept":"application/json, text/event-stream",
+      "authorization":"Bearer definitely-not-a-valid-supabase-access-token"
+    },
+    body:JSON.stringify({jsonrpc:"2.0",id:2,method:"tools/list",params:{}}),
+    signal:AbortSignal.timeout(12000)
+  });
+  console.log("invalid_token_mcp: HTTP "+invalid.status);
+  if(invalid.status!==401){
+    console.error("SECURITY CHECK FAILED: invalid bearer token was not rejected.");
+    process.exitCode=1;
+  }
+}catch(err){
+  console.error("SECURITY CHECK FAILED: invalid token request failed ("+err.name+").");
+  process.exitCode=1;
+}
