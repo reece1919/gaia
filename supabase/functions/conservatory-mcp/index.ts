@@ -1,6 +1,6 @@
-/* Conservatory MCP: read-only OAuth server.
- * Private care requires Supabase Auth and AAL2 MFA; catalog lookup is public data.
- * The middleware uses the caller's JWT and Row Level Security, never a service key.
+/* Conservatory MCP: user-scoped OAuth server.
+ * Private care uses Supabase Auth and owner-only PostgreSQL RLS.
+ * The middleware uses the caller's JWT, never a service key.
  */
 import "jsr:@supabase/functions-js/edge-runtime.d.ts";
 import { createMcpHandler, McpServer } from "npm:@modelcontextprotocol/server@^2.0.0";
@@ -8,6 +8,7 @@ import { pipeline } from "npm:@supabase/middleware@1";
 import { withOAuthProtectedResource, withSupabase } from "npm:@supabase/server@1";
 import { z } from "npm:zod@^4.3.6";
 import { describeBearerSession } from "./auth-status.mjs";
+import { saveVerifiedCareEvent } from "./write-care.mjs";
 
 const catalogUrl = "https://reece1919.github.io/gaia/plants.json";
 type PublicPlant = { id?: string; name?: string; species?: string };
@@ -36,12 +37,12 @@ Deno.serve(
     [withOAuthProtectedResource(), withSupabase({ auth: "user" })],
     async (request, { supabase }) => {
       const handler = createMcpHandler(() => {
-        const mcp = new McpServer({ name: "conservatory", version: "0.2.0" });
+        const mcp = new McpServer({ name: "conservatory", version: "0.3.0" });
         // Read-only diagnostic. Never expose bearer tokens, user IDs, emails,
         // MFA factors, or session IDs through this tool.
         mcp.registerTool("get_connection_status", {
-          title: "Check Conservatory sign-in and MFA",
-          description: "Diagnose whether this OAuth connection is signed in and has the MFA assurance level required for private plant care. Returns no personal records.",
+          title: "Check Conservatory sign-in",
+          description: "Reports whether the OAuth connection has a verified Supabase user session. MFA is optional for plant-care records. Returns no personal records.",
           inputSchema: z.object({}),
           annotations: { readOnlyHint: true },
         }, async () => {
@@ -57,7 +58,7 @@ Deno.serve(
             content: [{ type: "text", text: JSON.stringify({
               authenticated: true,
               assurance_level: state.assuranceLevel,
-              mfa_required_for_private_care: state.assuranceLevel !== "aal2",
+              mfa_required_for_private_care: false,
               signed_in_identity_present: state.hasSubject,
             }) }],
           };
@@ -84,27 +85,60 @@ Deno.serve(
 
         mcp.registerTool("get_care_history", {
           title: "Read private care history",
-          description: "Read care entries for an exact plant ID, using the signed-in owner's Supabase permissions and AAL2 MFA protection.",
+          description: "Read private care history for an exact plant ID using the signed-in user's owner-only Supabase row-level permissions.",
           inputSchema: z.object({
             plant_id: z.string().regex(/^\d{2,3}$/),
             limit: z.number().int().min(1).max(100).default(20),
           }),
           annotations: { readOnlyHint: true },
         }, async ({ plant_id, limit }) => {
-          const state = describeBearerSession(request.headers.get("authorization") || "");
-          if (state.assuranceLevel !== "aal2") return {
-            isError: true,
-            content: [{ type: "text", text: "Private care access is blocked: this Supabase OAuth token reports " + state.assuranceLevel + " but private records require AAL2. Supabase OAuth currently issues AAL1 tokens to third-party clients even after MFA consent (upstream issue supabase/auth#2838), so reconnecting alone will not resolve it. Use the signed-in Conservatory website for private care until a supported AAL2-capable connection is available. No private records were read." }],
-          };
           const { data, error } = await supabase
             .from("plant_care_events")
             .select("id,plant_id,action_type,happened_on,note,created_at")
             .eq("plant_id", plant_id)
             .order("happened_on", { ascending: false })
             .limit(limit);
-          if (error) throw new Error("Private care history is unavailable. Check sign-in and MFA.");
+          if (error) throw new Error("Private care history is unavailable. Check the signed-in account and owner permissions.");
           return { content: [{ type: "text", text: JSON.stringify(data ?? []) }] };
         });
+        // Only explicit, completed-care requests should invoke this tool.
+        // The stable caller-provided UUID makes retries idempotent. Ownership
+        // comes only from the verified Supabase Auth session, never the model.
+        mcp.registerTool("record_care_event", {
+          title: "Record a plant care event",
+          description: "Record ONE completed action in the signed-in owner's Conservatory journal. Only invoke when the user explicitly asks to log completed care. Confirm the plant ID and date; do not log future plans. Provide a unique v4 UUID as id for each new action and reuse it for retries. Returns the exact saved record after a database read-back. Requires login; MFA is optional for plant care.",
+          inputSchema: z.object({
+            id: z.string().uuid(),
+            plant_id: z.string().regex(/^\d{2,3}$/),
+            action_type: z.enum(["prune","fertilize","repot","pest","bath","inspect","water","note"]),
+            happened_on: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+            note: z.string().max(1000).default(""),
+          }),
+          annotations: { readOnlyHint: false, destructiveHint: false, idempotentHint: true },
+        }, async ({ id, plant_id, action_type, happened_on, note }) => {
+          // en-CA is ordinarily YYYY-MM-DD; build explicitly to avoid runtime
+          // locale-dependent variations when checking the date.
+          const parts = new Intl.DateTimeFormat("en-US", {
+            timeZone: "America/Los_Angeles", year: "numeric",
+            month: "2-digit", day: "2-digit",
+          }).formatToParts(new Date());
+          const part = (type: string) => parts.find(p => p.type === type)?.value ?? "";
+          const today = part("year") + "-" + part("month") + "-" + part("day");
+          const bearer = /^Bearer\s+(\S+)$/i.exec(request.headers.get("authorization") || "")?.[1];
+          if (!bearer) throw new Error("A signed-in Conservatory session is required.");
+          const {data: identity, error: identityError} = await supabase.auth.getUser(bearer);
+          if (identityError || !identity?.user) throw new Error("The connected account session could not be verified.");
+
+          const saved = await saveVerifiedCareEvent({
+            entry: {id, plant_id, action_type, happened_on, note},
+            today,
+            userId: identity.user.id,
+            catalog: await readCatalog(),
+            db: supabase,
+          });
+          return {content:[{type:"text",text:JSON.stringify(saved)}]};
+        });
+
         return mcp;
       });
       return handler.fetch(request);
