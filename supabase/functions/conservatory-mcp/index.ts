@@ -1,5 +1,5 @@
-/* Conservatory MCP: staged read-only prototype.
- * Deploy only after Supabase OAuth server, consent screen, and AAL2 checks are verified.
+/* Conservatory MCP: read-only OAuth server.
+ * Private care requires Supabase Auth and AAL2 MFA; catalog lookup is public data.
  * The middleware uses the caller's JWT and Row Level Security, never a service key.
  */
 import "jsr:@supabase/functions-js/edge-runtime.d.ts";
@@ -46,7 +46,7 @@ Deno.serve(
           annotations: { readOnlyHint: true },
         }, async () => {
           const authorization = request.headers.get("authorization") || "";
-          const jwt = /^Bearer\\s+([^\\s]+)$/i.exec(authorization)?.[1];
+          const jwt = /^Bearer\s+([^\s]+)$/i.exec(authorization)?.[1];
           if (!jwt) throw new Error("No OAuth bearer session was provided.");
           // Verify the supplied bearer against Supabase Auth. The decoded claims
           // are descriptive only and are never used as authorization.
