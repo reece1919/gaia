@@ -34,3 +34,10 @@ create policy "care_update_own" on public.plant_care_events
 drop policy if exists "care_delete_own" on public.plant_care_events;
 create policy "care_delete_own" on public.plant_care_events
   for delete to authenticated using ((select auth.uid()) = user_id);
+
+-- 2026-11-20: Owner approved removing the former AAL2-only restriction
+-- for *plant_care_events* specifically. This is an owner-scoped botanical
+-- journal, not a financial or personal security database.
+-- Existing care_{select,insert,update,delete}_own RLS policies remain.
+-- Idempotent for fresh installs or already-updated production projects.
+drop policy if exists "require_verified_totp_aal2" on public.plant_care_events;
