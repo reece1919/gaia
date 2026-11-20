@@ -8,7 +8,7 @@ import { pipeline } from "npm:@supabase/middleware@1";
 import { withOAuthProtectedResource, withSupabase } from "npm:@supabase/server@1";
 import { z } from "npm:zod@^4.3.6";
 import { describeBearerSession } from "./auth-status.mjs";
-import { validateCareEntry } from "./validation.mjs";
+import { saveVerifiedCareEvent } from "./write-care.mjs";
 
 const catalogUrl = "https://reece1919.github.io/gaia/plants.json";
 type PublicPlant = { id?: string; name?: string; species?: string };
@@ -124,36 +124,19 @@ Deno.serve(
           }).formatToParts(new Date());
           const part = (type: string) => parts.find(p => p.type === type)?.value ?? "";
           const today = part("year") + "-" + part("month") + "-" + part("day");
-          const checked = validateCareEntry({id, plant_id, action_type, happened_on, note}, today);
-          if (checked.error || !checked.value) throw new Error(checked.error || "Invalid care event.");
-          const event = checked.value;
           const bearer = /^Bearer\s+(\S+)$/i.exec(request.headers.get("authorization") || "")?.[1];
           if (!bearer) throw new Error("A signed-in Conservatory session is required.");
           const {data: identity, error: identityError} = await supabase.auth.getUser(bearer);
           if (identityError || !identity?.user) throw new Error("The connected account session could not be verified.");
 
-          const plant = (await readCatalog()).some(p => p.id === event.plant_id);
-          if (!plant) throw new Error("Unknown plant ID; search the catalog before recording.");
-          const record = {...event, user_id: identity.user.id};
-          const {error: insertError} = await supabase.from("plant_care_events").insert(record);
-          if (insertError && insertError.code !== "23505")
-            throw new Error("The care event could not be saved under the current account permissions.");
-
-          const {data: saved, error: readError} = await supabase
-            .from("plant_care_events")
-            .select("id,plant_id,action_type,happened_on,note,created_at")
-            .eq("id", event.id)
-            .eq("user_id", identity.user.id)
-            .maybeSingle();
-          if (readError || !saved) throw new Error("The event could not be verified in your private care journal.");
-          if (saved.plant_id !== event.plant_id ||
-              saved.action_type !== event.action_type ||
-              saved.happened_on !== event.happened_on ||
-              saved.note !== event.note)
-            throw new Error("This event ID is already associated with a different record. Use a new ID for a distinct action.");
-          return { content: [{type:"text", text:JSON.stringify({
-            saved: true, verified: true, already_recorded: !!insertError, event: saved,
-          })}] };
+          const saved = await saveVerifiedCareEvent({
+            entry: {id, plant_id, action_type, happened_on, note},
+            today,
+            userId: identity.user.id,
+            catalog: await readCatalog(),
+            db: supabase,
+          });
+          return {content:[{type:"text",text:JSON.stringify(saved)}]};
         });
 
         return mcp;
