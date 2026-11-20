@@ -94,7 +94,7 @@ Deno.serve(
           const state = describeBearerSession(request.headers.get("authorization") || "");
           if (state.assuranceLevel !== "aal2") return {
             isError: true,
-            content: [{ type: "text", text: "Private care history requires an AAL2 MFA session. This OAuth token reports " + state.assuranceLevel + ". Complete MFA in The Conservatory and reconnect the plugin; no record lookup was performed." }],
+            content: [{ type: "text", text: "Private care access is blocked: this Supabase OAuth token reports " + state.assuranceLevel + " but private records require AAL2. Supabase OAuth currently issues AAL1 tokens to third-party clients even after MFA consent (upstream issue supabase/auth#2838), so reconnecting alone will not resolve it. Use the signed-in Conservatory website for private care until a supported AAL2-capable connection is available. No private records were read." }],
           };
           const { data, error } = await supabase
             .from("plant_care_events")

@@ -1,10 +1,11 @@
 # The Conservatory: user-authenticated MCP connection
 
-Status (November 19, 2026): **Read-only endpoint deployed; OAuth sign-in not active yet.**
-The GitHub Pages consent route is public, the Supabase Edge Function is ACTIVE, and
-the existing private ChatGPT plugin has been updated to version 0.2.0 with an OAuth
-MCP connection. The Supabase OAuth server itself is not enabled, so user-linked
-reads are **not yet verified or available**. There is no care-writing MCP tool.
+Status (November 20, 2026): **MCP catalog lookup works in ordinary ChatGPT web Chat.**
+The custom `Conservatory MCP Bridge` is connected to the deployed Supabase
+Edge Function. The signed-in OAuth bearer token is currently `aal1` even when
+consent was given from an MFA-verified browser session. The private journal has
+a restrictive `aal2` RLS policy, so private care reads and writes remain blocked.
+The connection does not have a care-writing tool.
 
 ## Existing resources to reuse
 - Supabase project `GAIA` (`zdurujqwhxqrwbhwzzxg`).
@@ -27,37 +28,36 @@ This avoids a separate OAuth database or user identity system.
 
 ## Verified production status
 - Consent page: https://reece1919.github.io/gaia/oauth/consent/ (HTTP 200).
+- OAuth discovery, ES256 signing, and MCP resource metadata are working.
 - MCP endpoint: https://zdurujqwhxqrwbhwzzxg.supabase.co/functions/v1/conservatory-mcp
-  deployed with gateway JWT precheck disabled **only** to allow OAuth metadata;
-  user authorization is enforced by the endpoint's `withSupabase({auth:'user'})`.
-- Public JWKS publishes an ES256 asymmetric signing key.
-- OAuth resource metadata reports the correct Supabase Auth issuer.
-- Anonymous and malformed-bearer MCP requests both return HTTP 401.
-- OAuth authorization-server discovery currently returns HTTP 404 until the
-  Supabase dashboard OAuth server is enabled.
-- Live test: https://github.com/reece1919/gaia/actions/runs/44638832844
+  (ACTIVE). The public OAuth metadata is accessible without a JWT, but the
+  actual MCP middleware validates the caller's Supabase OAuth token.
+- Anonymous and malformed-token MCP calls are rejected with HTTP 401.
+- The web Chat custom plugin `Conservatory MCP Bridge` successfully called
+  `search_plants` for Sovereign (plant ID 50), without GitHub or desktop mode.
+- `get_care_history` correctly blocks private records on AAL1. The diagnostic
+  read-only `get_connection_status` tool reports AAL without disclosing user
+  identity, tokens or account details.
+- Node regression suite (36 tests), Deno type-checks and Chromium smoke tests
+  passed before the diagnostic deployment. Plant records were not changed.
 
-## Remaining account configuration
-The owner has approved production read-only deployment. The connected Supabase
-management tools cannot change OAuth server settings in the Auth dashboard.
+## Confirmed Supabase OAuth limitation
+A real OAuth session returned `aal1` when queried through the connected
+ChatGPT MCP tool. Even though the consent page insists on an existing AAL2
+browser session, the Supabase OAuth authorization-code exchange mints **new
+AAL1 client sessions**. Supabase Auth upstream issue
+https://github.com/supabase/auth/issues/2838 describes this behavior and is
+still open as of November 20, 2026. Reconnecting or completing MFA again does
+not upgrade the OAuth client's token.
 
-1. Open the existing GAIA project in Supabase: **Authentication > URL Configuration**.
-   Inspect and retain the current Site URL; do not change existing login redirects
-   without verifying dependent flows.
-2. Open **Authentication > OAuth Server**, enable OAuth 2.1, configure the Authorization
-   Path so **Site URL + path** resolves to
-   `https://reece1919.github.io/gaia/oauth/consent/`, and enable
-   **Dynamic Client Registration** for ChatGPT.
-3. Confirm the OAuth authorization-server discovery endpoint returns a valid
-   issuer document, then sign into GAIA with the owner's AAL2 MFA session.
-4. Open the existing private **The Conservatory** plugin and complete its OAuth
-   connection. Test that read-only plant lookup and private care-history reads work.
-   Verify AAL1 and other users cannot read the owner's records.
-5. Only then plan the separate explicitly authorized care-writing MCP tool with
-   stable UUIDs, retry handling, and read-back verification.
+**Do not weaken existing AAL2 restrictive RLS**, trust only `client_id` as an
+MFA substitute, or use a privileged service-role connection for ordinary care.
+A supported mechanism to issue delegated AAL2 tokens or a carefully reviewed
+second proof of MFA would be required for private care. The latter would be a
+new security architecture and requires separate design and owner approval.
 
-Do not paste account credentials or session tokens into ChatGPT or GitHub.
-No extra database, new user identity, or service-role token is needed.
+Until then, use the signed-in Conservatory website to read/write private care.
+Public plant catalog lookup remains available from ordinary ChatGPT Chat.
 
 ## CI coverage
 - `deno check supabase/functions/conservatory-mcp/index.ts` verifies the MCP
@@ -86,5 +86,6 @@ history/photos. MFA never retroactively protects data committed publicly.
 ## Next release gate
 The current deployment is read-only. Adding care writes, changing existing
 Supabase policy, or exposing private photos requires separate review and
-authorization. OAuth consent must be tested with a real owner's AAL2 session
-before saying the plugin is connected.
+authorization. The public catalog MCP is connected, but private record tools must not be
+represented as working until an AAL2-capable delegated authentication mechanism
+is verified.
