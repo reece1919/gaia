@@ -1,6 +1,6 @@
-/* Conservatory MCP: read-only OAuth server.
- * Private care requires Supabase Auth and AAL2 MFA; catalog lookup is public data.
- * The middleware uses the caller's JWT and Row Level Security, never a service key.
+/* Conservatory MCP: user-scoped OAuth server.
+ * Private care uses Supabase Auth and owner-only PostgreSQL RLS.
+ * The middleware uses the caller's JWT, never a service key.
  */
 import "jsr:@supabase/functions-js/edge-runtime.d.ts";
 import { createMcpHandler, McpServer } from "npm:@modelcontextprotocol/server@^2.0.0";
@@ -40,8 +40,8 @@ Deno.serve(
         // Read-only diagnostic. Never expose bearer tokens, user IDs, emails,
         // MFA factors, or session IDs through this tool.
         mcp.registerTool("get_connection_status", {
-          title: "Check Conservatory sign-in and MFA",
-          description: "Diagnose whether this OAuth connection is signed in and has the MFA assurance level required for private plant care. Returns no personal records.",
+          title: "Check Conservatory sign-in",
+          description: "Reports whether the OAuth connection has a verified Supabase user session. MFA is optional for plant-care records. Returns no personal records.",
           inputSchema: z.object({}),
           annotations: { readOnlyHint: true },
         }, async () => {
@@ -57,7 +57,7 @@ Deno.serve(
             content: [{ type: "text", text: JSON.stringify({
               authenticated: true,
               assurance_level: state.assuranceLevel,
-              mfa_required_for_private_care: state.assuranceLevel !== "aal2",
+              mfa_required_for_private_care: false,
               signed_in_identity_present: state.hasSubject,
             }) }],
           };
@@ -84,25 +84,20 @@ Deno.serve(
 
         mcp.registerTool("get_care_history", {
           title: "Read private care history",
-          description: "Read care entries for an exact plant ID, using the signed-in owner's Supabase permissions and AAL2 MFA protection.",
+          description: "Read private care history for an exact plant ID using the signed-in user's owner-only Supabase row-level permissions.",
           inputSchema: z.object({
             plant_id: z.string().regex(/^\d{2,3}$/),
             limit: z.number().int().min(1).max(100).default(20),
           }),
           annotations: { readOnlyHint: true },
         }, async ({ plant_id, limit }) => {
-          const state = describeBearerSession(request.headers.get("authorization") || "");
-          if (state.assuranceLevel !== "aal2") return {
-            isError: true,
-            content: [{ type: "text", text: "Private care access is blocked: this Supabase OAuth token reports " + state.assuranceLevel + " but private records require AAL2. Supabase OAuth currently issues AAL1 tokens to third-party clients even after MFA consent (upstream issue supabase/auth#2838), so reconnecting alone will not resolve it. Use the signed-in Conservatory website for private care until a supported AAL2-capable connection is available. No private records were read." }],
-          };
           const { data, error } = await supabase
             .from("plant_care_events")
             .select("id,plant_id,action_type,happened_on,note,created_at")
             .eq("plant_id", plant_id)
             .order("happened_on", { ascending: false })
             .limit(limit);
-          if (error) throw new Error("Private care history is unavailable. Check sign-in and MFA.");
+          if (error) throw new Error("Private care history is unavailable. Check the signed-in account and owner permissions.");
           return { content: [{ type: "text", text: JSON.stringify(data ?? []) }] };
         });
         return mcp;
