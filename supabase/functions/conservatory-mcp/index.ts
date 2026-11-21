@@ -9,6 +9,7 @@ import { withOAuthProtectedResource, withSupabase } from "npm:@supabase/server@1
 import { z } from "npm:zod@^4.3.6";
 import { describeBearerSession } from "./auth-status.mjs";
 import { saveVerifiedCareEvent } from "./write-care.mjs";
+import { getPropagationNursery, createPropagationBatch, createPropagationCutting, updatePropagationCutting, METHODS, STAGES, DESTINATIONS } from "./propagation-tools.mjs";
 
 const catalogUrl = "https://reece1919.github.io/gaia/plants.json";
 type PublicPlant = { id?: string; name?: string; species?: string };
@@ -37,7 +38,7 @@ Deno.serve(
     [withOAuthProtectedResource(), withSupabase({ auth: "user" })],
     async (request, { supabase }) => {
       const handler = createMcpHandler(() => {
-        const mcp = new McpServer({ name: "conservatory", version: "0.3.0" });
+        const mcp = new McpServer({ name: "conservatory", version: "0.4.0" });
         // Read-only diagnostic. Never expose bearer tokens, user IDs, emails,
         // MFA factors, or session IDs through this tool.
         mcp.registerTool("get_connection_status", {
@@ -137,6 +138,98 @@ Deno.serve(
             db: supabase,
           });
           return {content:[{type:"text",text:JSON.stringify(saved)}]};
+        });
+
+
+        // The Nursery already exists in GAIA. Keep its existing owner + AAL2
+        // RLS policies intact, unlike the lower-sensitivity care journal.
+        // The decoded assurance label is only an early UX check; PostgreSQL
+        // RLS is the authorization boundary for all Nursery reads/writes.
+        async function nurseryOwner() {
+          const authorization=request.headers.get("authorization")||"";
+          const bearer=/^Bearer\s+(\S+)$/i.exec(authorization)?.[1];
+          if(!bearer) throw Error("Sign in to The Conservatory to access the private Nursery.");
+          const {data,error}=await supabase.auth.getUser(bearer);
+          if(error||!data?.user) throw Error("The Conservatory session could not be verified.");
+          if(describeBearerSession(authorization).assuranceLevel!=="aal2")
+            throw Error("The private Propagation Nursery still requires authenticator MFA (AAL2). Complete verification in your Conservatory account.");
+          return data.user.id;
+        }
+        function localToday() {
+          const parts=new Intl.DateTimeFormat("en-US",{
+            timeZone:"America/Los_Angeles",year:"numeric",month:"2-digit",day:"2-digit"
+          }).formatToParts(new Date());
+          const get=(key:string)=>parts.find(p=>p.type===key)?.value??"";
+          return get("year")+"-"+get("month")+"-"+get("day");
+        }
+
+        mcp.registerTool("get_propagation_nursery",{
+          title:"Read the private propagation nursery",
+          description:"Read the signed-in owner's existing propagation batches and individually tracked cuttings, including exact IDs and timestamps needed for safe updates. Requires AAL2 authenticator MFA. An empty result must not be interpreted as an empty Nursery when MFA has not been verified.",
+          inputSchema:z.object({limit:z.number().int().min(1).max(100).default(30)}),
+          annotations:{readOnlyHint:true}
+        },async({limit})=>{
+          const result=await getPropagationNursery({db:supabase,userId:await nurseryOwner(),limit});
+          return {content:[{type:"text",text:JSON.stringify(result)}]};
+        });
+
+        mcp.registerTool("start_propagation_batch",{
+          title:"Record a propagation batch",
+          description:"Record ONE propagation batch the owner already started; not a future plan. Use a new UUID v4 id for each distinct batch and reuse it on retries. The optional parent ID must already exist in the permanent plant catalog. Saves to the existing GAIA Nursery, not the permanent collection. Requires AAL2 authenticator MFA and database read-back.",
+          inputSchema:z.object({
+            id:z.string().uuid(),
+            label:z.string().trim().min(1).max(100),
+            parent_plant_id:z.string().regex(/^\d{2,3}$/).nullable().optional(),
+            method:z.enum(METHODS).default("soil"),
+            started_on:z.string().regex(/^\d{4}-\d{2}-\d{2}$/).nullable().optional(),
+            notes:z.string().max(1500).default("")
+          }),
+          annotations:{readOnlyHint:false,destructiveHint:false,idempotentHint:true}
+        },async(entry)=>{
+          const result=await createPropagationBatch({
+            db:supabase,userId:await nurseryOwner(),entry,today:localToday(),catalog:await readCatalog()
+          });
+          return {content:[{type:"text",text:JSON.stringify(result)}]};
+        });
+
+        mcp.registerTool("add_propagation_cutting",{
+          title:"Record one cutting in an existing batch",
+          description:"Record ONE real cutting in an existing, owner-owned propagation batch. A cutting is not a new permanent plant. Use a new UUID v4 id, reuse on retries, and never invent roots or stages. Requires AAL2 authenticator MFA and read-back verification.",
+          inputSchema:z.object({
+            id:z.string().uuid(),
+            batch_id:z.string().uuid(),
+            nickname:z.string().max(100).default(""),
+            stage:z.enum(STAGES).default("cutting"),
+            destination:z.enum(DESTINATIONS).default("undecided"),
+            notes:z.string().max(1500).default("")
+          }),
+          annotations:{readOnlyHint:false,destructiveHint:false,idempotentHint:true}
+        },async(entry)=>{
+          const result=await createPropagationCutting({db:supabase,userId:await nurseryOwner(),entry});
+          return {content:[{type:"text",text:JSON.stringify(result)}]};
+        });
+
+        mcp.registerTool("update_propagation_cutting",{
+          title:"Update an existing cutting's observed progress",
+          description:"Update one existing cutting's actual stage, destination, dates or notes. Read the Nursery first and supply the exact expected_updated_at to prevent overwriting newer changes. Never infer rooting or establish a permanent collection plant automatically. Reuse the same input on retry. Requires AAL2 authenticator MFA and read-back verification.",
+          inputSchema:z.object({
+            id:z.string().uuid(),
+            expected_updated_at:z.string(),
+            nickname:z.string().max(100).optional(),
+            stage:z.enum(STAGES).optional(),
+            destination:z.enum(DESTINATIONS).optional(),
+            rooted_on:z.string().regex(/^\d{4}-\d{2}-\d{2}$/).nullable().optional(),
+            potted_on:z.string().regex(/^\d{4}-\d{2}-\d{2}$/).nullable().optional(),
+            established_on:z.string().regex(/^\d{4}-\d{2}-\d{2}$/).nullable().optional(),
+            linked_plant_id:z.string().regex(/^\d{2,3}$/).nullable().optional(),
+            notes:z.string().max(1500).optional()
+          }),
+          annotations:{readOnlyHint:false,destructiveHint:false,idempotentHint:true}
+        },async(entry)=>{
+          const result=await updatePropagationCutting({
+            db:supabase,userId:await nurseryOwner(),entry,today:localToday(),catalog:await readCatalog()
+          });
+          return {content:[{type:"text",text:JSON.stringify(result)}]};
         });
 
         return mcp;
