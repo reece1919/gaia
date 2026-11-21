@@ -4,16 +4,21 @@ The Conservatory is the user-facing identity of the existing GAIA botanical appl
 GitHub repository, GitHub Pages path, database tables, application IDs, and integration
 identifiers remain `gaia` where changing them would break working connections.
 
-**Production status (November 20, 2026):** The Conservatory website,
-reviewed care note, and browser-based ChatGPT MCP bridge are deployed.
-Public plant lookups and authenticated private care-history reads have been
-verified in regular Chat. A new validated owner-only `record_care_event` MCP
-tool is deployed and has passed automated tests; the first real care write is
-still pending verification. Plant-care events no longer require MFA, but remain
-private to each signed-in account through PostgreSQL row-level security.
+**Production status (November 20, 2026):** The Conservatory website
+and browser-based ChatGPT MCP bridge are deployed. Public plant searches,
+owner-authenticated private care-history reads, and the first real verified
+conversational care write are working in regular Chat (also tested on mobile).
+The first confirmed write was Sovereign (#50), fertilized November 20, 2026.
+Plant-care events no longer require MFA, but retain owner-only RLS.
 No other tables' MFA settings were changed.
 
-See `docs/conservatory-mcp-setup.md` for architecture and acceptance status.
+**Phase II is in draft only:** propagation and catalog-integrity changes are
+prepared in [PR #16](https://github.com/reece1919/gaia/pull/16), not deployed.
+The Propagation Nursery still requires AAL2 MFA and the permanent collection
+still lives in GitHub `plants.json`.
+
+See `docs/conservatory-mcp-setup.md` for the verified production state and
+`docs/conservatory-phase-2.md` for the next architecture and rollout.
 
 ## GAIA technical history
 
