@@ -1,0 +1,27 @@
+name: Conservatory catalog integrity
+on:
+  pull_request:
+    paths:
+      - "plants.json"
+      - "scripts/conservatory-catalog-guard.mjs"
+      - "tests/conservatory-catalog-guard.test.mjs"
+      - ".github/workflows/conservatory-catalog-guard.yml"
+permissions:
+  contents: read
+jobs:
+  catalog-integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: node --test tests/conservatory-catalog-guard.test.mjs
+      - name: Validate catalog edits relative to base
+        env:
+          BASE_REF: ${{ github.base_ref }}
+        run: |
+          git show "origin/$BASE_REF:plants.json" > /tmp/conservatory-base-plants.json
+          node scripts/conservatory-catalog-guard.mjs /tmp/conservatory-base-plants.json plants.json
