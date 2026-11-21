@@ -8,9 +8,10 @@ connection. Supabase Edge Function `conservatory-mcp` **version 4 is active**.
 - `search_plants`: **verified live** through regular ChatGPT Chat, no GitHub fallback.
 - `get_care_history`: **verified live** with owner-scoped OAuth, retrieving real
   records for plant 04 (Audrey II) after the approved policy change.
-- `record_care_event`: **deployed**, but the first genuine in-chat write has not
-  yet been performed. All 44 automated Node tests, Deno typecheck, and Chromium
-  smoke tests passed; tests use mock DB records instead of adding dummy care.
+- `record_care_event`: **deployed and verified in an ordinary ChatGPT conversation.**
+  Sovereign (#50) was fertilized November 20, 2026, and the owner-authenticated
+  write was independently verified. The existing action remains available
+  without AAL2 while retaining owner-only RLS.
 - `get_connection_status`: reports signed-in session; MFA is optional for plant
   care. The connected ChatGPT tool discovery may need a fresh conversation to
   expose newly added tools.
@@ -49,8 +50,8 @@ existing workflows and must not be silently misclassified as other actions.
 - [OAuth upstream issue, no longer a blocker for plant care](https://github.com/supabase/auth/issues/2838)
 - The owner-scoped live read from plant 04 returned historical inspection,
   watering and pruning entries, without administrative SQL access.
-- A genuine care-write request is the next acceptance test; do not create
-  imaginary events to simulate user activity.
+- The first genuine care write to Sovereign (#50) was verified on
+  November 20, 2026. Do not create imaginary events to simulate user activity.
 
 ## Privacy considerations
 
@@ -63,11 +64,15 @@ Audit other export paths and user intention before altering or deleting public
 history/photos. MFA never retroactively protects data committed publicly.
 
 
-## Remaining work
+## Phase II (not deployed)
 
-- Have ChatGPT reload the updated MCP tool list and perform one **real**
-  completed care event when the user naturally has something to record.
-- Read back the same event ID and verify it appears in the existing Conservatory
-  web journal; do not add a second database.
-- Consider connecting the existing botanical skill plugin to the browser MCP
-  bridge so there is only one clear user-facing entrypoint.
+- [Draft PR #16](https://github.com/reece1919/gaia/pull/16) adds propagation
+  reads, verified batch/cutting creation, and concurrency-safe cutting updates.
+  The existing care tool remains unchanged.
+- Propagation tables still require AAL2 MFA. The active bridge currently reports
+  AAL1. Do not weaken Nursery permissions without a separate approved change.
+- The permanent plant catalog remains versioned `plants.json`; a new
+  catalog-integrity check protects GitHub-based acquisitions and edits.
+- Review `docs/conservatory-phase-2.md` before plugin consolidation or any
+  production deployment. Never replace the working OAuth connection merely
+  to clean up duplicate plugin labels.
