@@ -8,8 +8,8 @@
   if (!first || !last || first.parentElement !== last.parentElement) return;
   const parent = first.parentElement;
   const plantMap = new Map();
-  const collections = {care:null,nursery:null,academy:null,botany:null};
-  const titles = {care:"Care Center",nursery:"Propagation Nursery",academy:"Care Academy",botany:"Botanical Library"};
+  const collections = {care:null,academy:null,botany:null};
+  const titles = {care:"Care Center",academy:"Care Academy",botany:"Botanical Library"};
   let data = [];
   let active = "care";
 
@@ -71,20 +71,12 @@
   }
   collections.care=care;
 
-  const nursery = el("section","gaia-hub-panel gaia-hub-education");
-  nursery.id="gaia-propagation-nursery";
-  nursery.setAttribute("role","tabpanel");
-  nursery.setAttribute("aria-labelledby","gaia-tab-nursery");
-  nursery.hidden=true;
-  parent.insertBefore(nursery,care.nextSibling);
-  collections.nursery=nursery;
-
   const academy = el("section","gaia-hub-panel gaia-hub-education");
   academy.id="gaia-care-academy";
   academy.setAttribute("role","tabpanel");
   academy.setAttribute("aria-labelledby","gaia-tab-academy");
   academy.hidden=true;
-  parent.insertBefore(academy,nursery.nextSibling);
+  parent.insertBefore(academy,care.nextSibling);
   collections.academy=academy;
 
   const botany = el("section","gaia-hub-panel gaia-hub-education");
@@ -96,10 +88,10 @@
   collections.botany=botany;
 
   const buttons={};
-  [["care","clipboard-check"],["nursery","sprout"],["academy","book-open"],["botany","leaf"]].forEach(([key])=>{
+  [["care","clipboard-check"],["academy","book-open"],["botany","leaf"]].forEach(([key])=>{
     const b=el("button","gaia-hub-tab");
     const full=el("span","gaia-hub-tab-full",titles[key]);
-    const short=el("span","gaia-hub-tab-short",{care:"Care",nursery:"Nursery",academy:"Learn",botany:"Botany"}[key]);
+    const short=el("span","gaia-hub-tab-short",{care:"Care",academy:"Learn",botany:"Botany"}[key]);
     b.append(full,short);
     b.setAttribute("aria-label", titles[key]);
     b.id="gaia-tab-"+key;
@@ -114,7 +106,7 @@
   });
   tabs.addEventListener("keydown",e=>{
     if (!["ArrowRight","ArrowLeft","Home","End"].includes(e.key))return;
-    const order=["care","nursery","academy","botany"];
+    const order=["care","academy","botany"];
     const current=order.findIndex(x=>buttons[x]===document.activeElement);
     if (current<0)return;
     e.preventDefault();
