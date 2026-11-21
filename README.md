@@ -17,20 +17,13 @@ See `docs/conservatory-mcp-setup.md` for architecture and acceptance status.
 
 ## GAIA technical history
 
-## Propagation Nursery (November 9, 2026)
+## Propagation Nursery (retired November 20, 2026)
 
-**Scope (confirmed Nov 9):** Use the Nursery only for separate propagation attempts intended to become new plants, not broken stems reinserted into an existing parent plant's own pot, or specimens already independently established. Record those situations in the parent plant’s care history or the permanent collection. Bellatrix's reinserted Tradescantia stems belong in her regular care record; the mistakenly created Nursery batch was deleted on Nov 9. Do not re-create it unless the user actually separates cuttings for propagation.
+The owner chose to remove the separate Propagation Nursery from the GAIA interface and cancel the proposed ChatGPT/MCP Nursery integration. GAIA now has three main tabs: Care, Learn and Botany. Routine propagation observations and care events can be logged on the relevant parent plant's existing care journal, and independently established plants can be added to the permanent, versioned `plants.json` catalog.
 
-**Nursery** is the fourth GAIA navigation tab, alongside Care, Learn and Botany. It maintains private propagation batches and individually tracked cuttings without inflating the permanent plant catalog. Each batch may reference an existing parent plant. Cuttings have editable names, stages (cutting / rooting / establishing / established / lost), intended destinations (keep / gift / trade / return), optional observed milestone dates, and notes. Neither rooting nor successful establishment is inferred.
+This is an application-feature retirement, **not a data deletion or security-policy migration**. Historical `gaia_propagation_batches`, `gaia_propagation_cuttings`, `gaia_propagation_photos`, their private storage bucket and existing owner-only RLS/MFA safeguards remain intact. The historical SQL in `supabase/gaia_propagation_nursery.sql` is retained for provenance and must not be rerun on the existing database. Historical records may be exported or deleted only on a separate explicit request.
 
-Signed-in owners with authenticator verification (AAL2) can add batches, add cuttings, update progress and upload private resized JPEG progress photos. Data lives in owner-protected Supabase tables gaia_propagation_batches, gaia_propagation_cuttings and gaia_propagation_photos; photos are held in private gaia-propagation-photos Storage with owner-only policies. A signed-out or unverified session cannot read them. Migration: supabase/gaia_propagation_nursery.sql. Frontend: propagation-nursery.js / propagation-nursery.css.
-
-**Graduation:** The catalog remains static, versioned plants.json in GitHub. Nursery can link a cutting to an **already existing** GAIA plant ID or copy a graduation brief for a new GitHub catalog record. Marking a cutting established does *not* automatically commit a plant, add a card, or imply a confirmed photo review. A secure server-side GitHub-write workflow would be needed to make automatic catalog graduation possible; no GitHub credentials are stored in the browser.
-
-**Initial migration:** Jango (#45) has one Clone Force 17 batch with 17 individually numbered cuttings. Names, rooting and dates remain unverified, so no Boba-to-pot assignment was invented. The former public collection group #65 was retired and removed from the main plant count, with its complete profile preserved in archive/clone-force-17-legacy-catalog.json; this ID must not be reassigned. The three yuccas Grog (#66), Gahg (#75) and Duhg (#76) remain separate main collection plants, **not** duplicate nursery cuttings.
-
-Test: node --test tests/propagation-nursery.test.cjs tests/learning-hub.test.cjs. Do not include private Nursery rows or photos in the public read-only GAIA reference exporter unless the owner explicitly chooses to publish them.
-
+The retired public catalog ID #65 remains reserved; its historical profile is in `archive/clone-force-17-legacy-catalog.json` and must not be reassigned. Do not silently reintroduce the Nursery as part of an MCP integration or plant-catalog edit.
 
 ## Latest photo-review queue (November 3, 2026)
 
