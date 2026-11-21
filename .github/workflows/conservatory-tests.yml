@@ -11,6 +11,7 @@ on:
       - "supabase/functions/conservatory-care/**"
       - "supabase/functions/conservatory-mcp/**"
       - "tests/conservatory-mcp-write.test.mjs"
+      - "tests/conservatory-propagation-mcp.test.mjs"
       - "supabase/gaia_care_events.sql"
       - "tests/conservatory-mcp-auth-status.test.mjs"
       - "oauth/consent/**"
@@ -35,7 +36,7 @@ jobs:
       - run: node --check conservatory-dictation.js
       - run: node --check care.js
       - run: node --check oauth/consent/consent.js
-      - run: node --test tests/conservatory-dictation.test.cjs tests/conservatory-care-flow.test.cjs tests/conservatory-care-api.test.mjs tests/conservatory-oauth-consent.test.cjs tests/conservatory-mcp-auth-status.test.mjs tests/conservatory-mcp-write.test.mjs
+      - run: node --test tests/conservatory-dictation.test.cjs tests/conservatory-care-flow.test.cjs tests/conservatory-care-api.test.mjs tests/conservatory-oauth-consent.test.cjs tests/conservatory-mcp-auth-status.test.mjs tests/conservatory-mcp-write.test.mjs tests/conservatory-propagation-mcp.test.mjs
       - uses: denoland/setup-deno@v2
         with:
           deno-version: v2.5.0
