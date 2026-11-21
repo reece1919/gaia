@@ -2,8 +2,8 @@
   "schema_version": 1,
   "read_only": true,
   "source": "GAIA owner-approved reference snapshot",
-  "generated_at": "2026-11-20T23:05:23.389Z",
-  "synced_at": "2026-11-20T23:05:23.417978+00:00",
+  "generated_at": "2026-11-21T03:58:53.276Z",
+  "synced_at": "2026-11-21T03:58:53.314642+00:00",
   "plant_count": 110,
   "comparison_ready_count": 52,
   "comparison_candidate_count": 90,
@@ -4965,6 +4965,13 @@
       "pot": null,
       "soil_observations": [],
       "care_events": [
+        {
+          "plant_id": "50",
+          "action_type": "fertilize",
+          "happened_on": "2026-11-20",
+          "note": "",
+          "created_at": "2026-11-20T23:48:43.454583+00:00"
+        },
         {
           "plant_id": "50",
           "action_type": "note",
