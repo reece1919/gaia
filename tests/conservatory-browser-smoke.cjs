@@ -70,6 +70,11 @@ async function run(){
     assert.ok(originalImage,"The first specimen should include a photograph");
     await page.getByRole("button",{name:"Photo",exact:true}).click();
     assert.equal(await journalSection.getAttribute("data-image-style"),"photo");
+    // The image has a short CSS transition. Wait for the actual computed
+    // unfiltered state rather than asserting during the previous frame.
+    await page.waitForFunction(()=>
+      getComputedStyle(document.querySelector(".gaia-journal-photo")).filter==="none",
+      {timeout:3000});
     assert.equal(await page.locator(".gaia-journal-photo").evaluate(e=>getComputedStyle(e).filter),"none",
       "Photo must show the unchanged source");
     assert.equal(await page.locator(".gaia-journal-sketch-layer").isVisible(),false);
