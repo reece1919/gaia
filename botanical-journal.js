@@ -131,18 +131,14 @@
       figure.appendChild(node("p","gaia-journal-photo-placeholder","Illustration pending\nNo photograph recorded"));
     }
     const plateLabel=node("figcaption","gaia-journal-plate-caption");
-    plateLabel.append(
-      node("span","","PLATE "+currentId),
-      node("span","","PRIVATE COLLECTION · CATALOG SPECIMEN")
-    );
+    plateLabel.appendChild(node("span","","PLATE "+currentId));
     artwork.append(figure,plateLabel);
 
     const profile=node("div","gaia-journal-specimen");
-    profile.appendChild(node("span","gaia-journal-kicker","SPECIMEN "+currentId+" · "+(position+1)+" / "+plants.length));
-    const heading=node("h3","gaia-journal-common-name",name);
+    const heading=node("h3","gaia-journal-given-name",p.name);
     heading.id="gaia-journal-title";
     leaf.setAttribute("aria-labelledby",heading.id);
-    profile.append(heading,node("p","gaia-journal-nickname","Known as "+p.name));
+    profile.append(heading,node("p","gaia-journal-common-subtitle",name));
     profile.appendChild(node("p","gaia-journal-latin",p.species||"Identification pending"));
 
     const details=node("dl","gaia-journal-taxonomy");
