@@ -37,6 +37,16 @@
     "water-grown":"Water grown","no-soil":"Air plant"
   };
   let plants=[],position=0;
+  // Display preference only. Never mutate a catalog photo or saved journal image.
+  const IMAGE_STYLE_KEY="gaiaJournalImageStyle";
+  const imageStyles=["photo","botanical","sketch"];
+  function readImageStyle(){
+    try{
+      const value=localStorage.getItem(IMAGE_STYLE_KEY);
+      return imageStyles.includes(value)?value:"botanical";
+    }catch(_){return "botanical";}
+  }
+  let imageStyle=readImageStyle();
   const section=node("section","gaia-botanical-journal");
   section.id="gaia-botanical-journal";
   section.setAttribute("aria-label","My botanical field journal");
@@ -52,7 +62,24 @@
   const journalMode=button("Journal",()=>setView("journal"),"gaia-journal-mode-button");
   const cardsMode=button("All plant cards",()=>setView("cards"),"gaia-journal-mode-button");
   modes.append(journalMode,cardsMode);
-  top.append(intro,modes);
+  const headerControls=node("div","gaia-journal-header-controls");
+  const styles=node("div","gaia-journal-style-switch");
+  styles.setAttribute("role","group");
+  styles.setAttribute("aria-label","Journal image style. Original photos are unchanged.");
+  const styleButtons=new Map();
+  for(const [style,label,description] of [
+    ["photo","Photo","Unfiltered original photograph"],
+    ["botanical","Botanical","Warm, softly toned botanical plate effect"],
+    ["sketch","Sketch","Pencil-like high-contrast drawing effect"]
+  ]){
+    const control=button(label,()=>setImageStyle(style,true),"gaia-journal-style-button");
+    control.title=description;
+    control.setAttribute("aria-pressed","false");
+    styles.appendChild(control);
+    styleButtons.set(style,control);
+  }
+  headerControls.append(modes,styles);
+  top.append(intro,headerControls);
 
   const indexBar=node("div","gaia-journal-index-bar");
   const indexLabel=node("label","gaia-journal-index-label","Common-name index · A–Z");
@@ -78,6 +105,21 @@
   section.append(top,indexBar,leaf,pagination);
   const overview=care.querySelector(".gaia-care-overview-panel");
   if(overview)overview.after(section);else care.prepend(section);
+
+  function setImageStyle(style,persist=false){
+    imageStyle=imageStyles.includes(style)?style:"botanical";
+    for(const name of imageStyles){
+      section.classList.toggle("gaia-journal-style-"+name,name===imageStyle);
+      styleButtons.get(name).setAttribute("aria-pressed",String(name===imageStyle));
+    }
+    section.dataset.imageStyle=imageStyle;
+    if(persist){
+      try{localStorage.setItem(IMAGE_STYLE_KEY,imageStyle);}catch(_){
+        // Private browsing or storage restrictions should never break the journal.
+      }
+    }
+  }
+  setImageStyle(imageStyle);
 
   function setView(view){
     const isJournal=view==="journal";
@@ -127,6 +169,13 @@
       img.alt=p.photoAlt||("Portrait of "+p.name+", "+name);
       img.loading="lazy";img.decoding="async";
       figure.appendChild(img);
+      // Sketch mode overlays the same cached image with a blurred inverted
+      // luminance layer. Color-dodge blending emphasizes contours without
+      // altering the source file, photo journal, or private signed URL.
+      const sketch=node("img","gaia-journal-sketch-layer");
+      sketch.src=imageUrl;sketch.alt="";sketch.setAttribute("aria-hidden","true");
+      sketch.loading="lazy";sketch.decoding="async";
+      figure.appendChild(sketch);
     }else{
       figure.appendChild(node("p","gaia-journal-photo-placeholder","Illustration pending\nNo photograph recorded"));
     }
