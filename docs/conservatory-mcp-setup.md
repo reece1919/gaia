@@ -8,9 +8,10 @@ connection. Supabase Edge Function `conservatory-mcp` **version 4 is active**.
 - `search_plants`: **verified live** through regular ChatGPT Chat, no GitHub fallback.
 - `get_care_history`: **verified live** with owner-scoped OAuth, retrieving real
   records for plant 04 (Audrey II) after the approved policy change.
-- `record_care_event`: **deployed**, but the first genuine in-chat write has not
-  yet been performed. All 44 automated Node tests, Deno typecheck, and Chromium
-  smoke tests passed; tests use mock DB records instead of adding dummy care.
+- `record_care_event`: **deployed and verified with a genuine owner action**.
+  Sovereign (#50) was fertilized on November 20, 2026; the resulting event
+  `1d20e54e-cbb5-4e01-94e7-c70730ea7acc` is independently readable via
+  `get_care_history`. Automated tests use fixtures, not fabricated personal care.
 - `get_connection_status`: reports signed-in session; MFA is optional for plant
   care. The connected ChatGPT tool discovery may need a fresh conversation to
   expose newly added tools.
@@ -40,8 +41,7 @@ connection. Supabase Edge Function `conservatory-mcp` **version 4 is active**.
 
 `prune`, `fertilize`, `repot`, `pest`, `bath`, `inspect`, `water`, `note`.
 
-Routine watering is optional. Propagation and acquisitions have dedicated
-existing workflows and must not be silently misclassified as other actions.
+Routine watering is optional. The separate Propagation Nursery feature has been retired. Permanent collection acquisitions and edits are handled through guarded GitHub PRs, not care-event writes; they must never be silently classified as completed care.
 
 ## Verification
 
