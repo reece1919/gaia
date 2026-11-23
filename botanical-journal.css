@@ -60,14 +60,12 @@
 }
 .gaia-journal-spread{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:clamp(22px,3.7vw,56px);align-items:start;position:relative;z-index:1}
 .gaia-journal-plate{margin:0;min-width:0}
+/* Borderless botanical image: the feathered photo blends directly into the
+   parchment journal page, with no separate mount, shadow, or inset outline. */
 .gaia-journal-image-frame{
   position:relative;display:grid;place-items:center;overflow:hidden;
-  aspect-ratio:4/5;max-height:570px;padding:13px;
-  background:linear-gradient(145deg,#d7cbb2,#eee5cf 60%,#c4b292);
-  border:1px solid #ab9875;box-shadow:0 6px 15px rgba(56,42,26,.12)
-}
-.gaia-journal-image-frame:before{
-  content:"";pointer-events:none;position:absolute;inset:8px;border:1px solid rgba(74,90,65,.29);z-index:2
+  aspect-ratio:4/5;max-height:570px;padding:0;
+  background:transparent;border:0;box-shadow:none
 }
 .gaia-journal-photo{
   width:100%;height:100%;object-fit:contain;
@@ -76,8 +74,8 @@
 /* Sketch uses a color-dodge overlay of the same photo, a CSS-only
    pencil-like effect. The original image remains available with Photo mode. */
 .gaia-journal-sketch-layer{
-  display:none;pointer-events:none;position:absolute;inset:13px;
-  width:calc(100% - 26px);height:calc(100% - 26px);object-fit:contain
+  display:none;pointer-events:none;position:absolute;inset:0;
+  width:100%;height:100%;object-fit:contain
 }
 /* Feather the display layers into their plate without touching original files.
    The ellipse reaches the midpoint of EVERY edge, unlike a default radial
@@ -97,19 +95,10 @@
   -webkit-mask-size:100% 100%;
   mask-size:100% 100%
 }
-/* Match the surrounding parchment so the translucent photo edge reads like
-   ink fading into the journal paper rather than an opaque rectangular mount. */
-#gaia-botanical-journal.gaia-journal-style-botanical .gaia-journal-image-frame{
-  background:linear-gradient(135deg,#ede2cb,#f8f1e1 60%,#e9dec6)
-}
-
 #gaia-botanical-journal.gaia-journal-style-photo .gaia-journal-photo{filter:none;mix-blend-mode:normal}
 #gaia-botanical-journal.gaia-journal-style-botanical .gaia-journal-photo{
   filter:sepia(.28) saturate(.74) contrast(1.08) brightness(1.035);
   mix-blend-mode:multiply
-}
-#gaia-botanical-journal.gaia-journal-style-sketch .gaia-journal-image-frame{
-  background:#f5eedf
 }
 #gaia-botanical-journal.gaia-journal-style-sketch .gaia-journal-photo{
   filter:grayscale(1) contrast(1.12) brightness(1.035)

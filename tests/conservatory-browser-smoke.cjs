@@ -76,6 +76,29 @@ async function run(){
     });
     assert.equal((await getEdgeStyle()).start,"72%","Botanical mode needs a soft medium feather");
     assert.match((await getEdgeStyle()).mask,/radial-gradient/,"Photo should have a radial feather mask");
+    // The plant photo should be part of the paper, not mounted in a box.
+    const getImageFrame=()=>page.locator(".gaia-journal-image-frame").evaluate(e=>{
+      const style=getComputedStyle(e);
+      return {
+        background:style.backgroundImage,
+        backgroundColor:style.backgroundColor,
+        borderTop:style.borderTopWidth,
+        shadow:style.boxShadow,
+        padding:style.paddingTop,
+        insetBorder:getComputedStyle(e,"::before").content
+      };
+    });
+    for(const mode of ["botanical","photo","sketch"]){
+      await page.getByRole("button",{name:mode[0].toUpperCase()+mode.slice(1),exact:true}).click();
+      const frame=await getImageFrame();
+      assert.equal(frame.background,"none",mode+" should have no rectangular backing");
+      assert.equal(frame.backgroundColor,"rgba(0, 0, 0, 0)",mode+" should blend into the page");
+      assert.equal(frame.borderTop,"0px",mode+" should have no photo mount border");
+      assert.equal(frame.shadow,"none",mode+" should have no frame drop shadow");
+      assert.equal(frame.padding,"0px",mode+" should not leave a mount inset");
+      assert.equal(frame.insetBorder,"none",mode+" should have no pseudo-element border");
+    }
+    await page.getByRole("button",{name:"Botanical",exact:true}).click();
     const originalImage=await page.locator(".gaia-journal-photo").getAttribute("src");
     assert.ok(originalImage,"The first specimen should include a photograph");
     await page.getByRole("button",{name:"Photo",exact:true}).click();
