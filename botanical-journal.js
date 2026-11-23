@@ -36,7 +36,7 @@
     "orchid":"Orchid bark","carnivorous":"Nutrient-poor carnivorous mix",
     "water-grown":"Water grown","no-soil":"Air plant"
   };
-  let plants=[],position=0,record=null;
+  let plants=[],position=0;
   const section=node("section","gaia-botanical-journal");
   section.id="gaia-botanical-journal";
   section.setAttribute("aria-label","My botanical field journal");
@@ -191,7 +191,6 @@
   }
   function load(data){
     if(plants.length||!Array.isArray(data?.plants)||!data.plants.length)return;
-    record=data;
     plants=core.sortedPlants(data.plants);
     const fragment=document.createDocumentFragment();
     for(const p of plants){
@@ -239,5 +238,5 @@
     showJournal(){setView("journal");}
   });
   document.addEventListener("gaia:ready",event=>load({plants:event.detail?.plants}));
-  if(window.GAIA_DATA?.plants)load(window.GAIA_DATA);
+  if(window.GAIA_DATA?.plants&&grid.querySelector(":scope > .card[data-plant-id]"))load(window.GAIA_DATA);
 })();
