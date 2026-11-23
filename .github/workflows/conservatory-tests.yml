@@ -6,6 +6,9 @@ on:
       - "care.js"
       - "index.html"
       - "learning-hub.js"
+      - "species-guide.js"
+      - "group-learning.js"
+      - "tests/learning-hub.test.cjs"
       - "learning-hub.css"
       - "compact-shell.css"
       - "tests/nursery-retirement.test.cjs"
@@ -38,6 +41,7 @@ jobs:
           node-version: "22"
       - run: node --check conservatory-dictation.js
       - run: node --test tests/nursery-retirement.test.cjs
+      - run: node --test tests/learning-hub.test.cjs
       - run: node --check care.js
       - run: node --check oauth/consent/consent.js
       - run: node --test tests/conservatory-dictation.test.cjs tests/conservatory-care-flow.test.cjs tests/conservatory-care-api.test.mjs tests/conservatory-oauth-consent.test.cjs tests/conservatory-mcp-auth-status.test.mjs tests/conservatory-mcp-write.test.mjs
