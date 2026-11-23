@@ -98,6 +98,20 @@ test("Journal photographs feather into parchment without modifying images",()=>{
   assert.match(css,/gaia-journal-style-sketch \.gaia-journal-sketch-layer/);
 });
 
+test("Botanical image floats without a photo mount or rectangular frame",()=>{
+  const css=read("botanical-journal.css"),html=read("index.html");
+  assert.match(css,/\.gaia-journal-image-frame\{[\s\S]*?background:transparent;border:0;box-shadow:none/);
+  assert.doesNotMatch(css,/\.gaia-journal-image-frame:before\{/);
+  assert.doesNotMatch(css,/gaia-journal-style-(?:botanical|sketch) \.gaia-journal-image-frame\{/);
+  assert.match(css,/\.gaia-journal-sketch-layer\{[\s\S]*?inset:0;[\s\S]*?width:100%;height:100%/);
+  assert.match(css,/-webkit-mask-image:radial-gradient/);
+  assert.ok(html.includes("botanical-journal.css?v=20261123-unframed1"),
+    "Removing the old image mount must invalidate cached CSS");
+  // Keep the paper itself and the original catalog plate label.
+  assert.match(css,/\.gaia-journal-leaf\{/);
+  assert.match(css,/\.gaia-journal-plate-caption\{/);
+});
+
 test("Journal is a presentation layer; original care, collection controls and IDs survive",()=>{
   const html=read("index.html"),js=read("botanical-journal.js"),css=read("botanical-journal.css");
   assert.ok(html.includes('src="botanical-journal-core.js'));
