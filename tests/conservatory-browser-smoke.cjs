@@ -97,6 +97,23 @@ async function run(){
     assert.equal(await page.locator("#gaia-hub-tabs [role=tab]").count(),3,"Desktop must keep three tabs");
     await panel.scrollIntoViewIfNeeded();
     await page.screenshot({path:path.join(root,"artifacts/conservatory-desktop.png")});
+    // Actual iPad-sized screenshots in both orientations.
+    // A tablet uses a two-column botanical plate, not the narrow phone stack.
+    for(const device of [
+      {name:"ipad-portrait",width:820,height:1180},
+      {name:"ipad-landscape",width:1180,height:820}
+    ]){
+      await page.setViewportSize({width:device.width,height:device.height});
+      assert.equal(await journal.isVisible(),true,device.name+" journal view missing");
+      const image=await page.locator(".gaia-journal-plate").boundingBox();
+      const profile=await page.locator(".gaia-journal-specimen").boundingBox();
+      assert.ok(image&&profile,device.name+" missing botanical content");
+      assert.ok(profile.x>=image.x+image.width-3,device.name+" should place plant profile to the right of the plate");
+      assert.ok(Math.abs(profile.y-image.y)<10,device.name+" should keep plate and profile aligned in two columns");
+      assert.equal(await page.locator(".gaia-journal-given-name").count(),1,device.name+" given name title missing");
+      await journal.scrollIntoViewIfNeeded();
+      await page.screenshot({path:path.join(root,"artifacts/conservatory-journal-"+device.name+".png")});
+    }
     await page.setViewportSize({width:390,height:844});
     await page.locator("#conservatory-dictation-save").click();
     await page.waitForFunction(()=>document.getElementById("conservatory-dictation-status").textContent.includes("saved locally"),{timeout:5000});
