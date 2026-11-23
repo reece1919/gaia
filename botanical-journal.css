@@ -79,13 +79,37 @@
   display:none;pointer-events:none;position:absolute;inset:13px;
   width:calc(100% - 26px);height:calc(100% - 26px);object-fit:contain
 }
+/* Feather the display layers into their plate without touching original files.
+   The ellipse reaches the midpoint of EVERY edge, unlike a default radial
+   gradient which can leave hard top/bottom or side boundaries. */
+#gaia-botanical-journal{--gaia-feather-start:72%}
+#gaia-botanical-journal.gaia-journal-style-photo{--gaia-feather-start:92%}
+#gaia-botanical-journal.gaia-journal-style-botanical{--gaia-feather-start:72%}
+#gaia-botanical-journal.gaia-journal-style-sketch{--gaia-feather-start:62%}
+#gaia-botanical-journal .gaia-journal-photo,
+#gaia-botanical-journal .gaia-journal-sketch-layer{
+  -webkit-mask-image:radial-gradient(ellipse closest-side at center,
+    #000 var(--gaia-feather-start),transparent 100%);
+  mask-image:radial-gradient(ellipse closest-side at center,
+    #000 var(--gaia-feather-start),transparent 100%);
+  -webkit-mask-repeat:no-repeat;
+  mask-repeat:no-repeat;
+  -webkit-mask-size:100% 100%;
+  mask-size:100% 100%
+}
+/* Match the surrounding parchment so the translucent photo edge reads like
+   ink fading into the journal paper rather than an opaque rectangular mount. */
+#gaia-botanical-journal.gaia-journal-style-botanical .gaia-journal-image-frame{
+  background:linear-gradient(135deg,#ede2cb,#f8f1e1 60%,#e9dec6)
+}
+
 #gaia-botanical-journal.gaia-journal-style-photo .gaia-journal-photo{filter:none;mix-blend-mode:normal}
 #gaia-botanical-journal.gaia-journal-style-botanical .gaia-journal-photo{
   filter:sepia(.28) saturate(.74) contrast(1.08) brightness(1.035);
   mix-blend-mode:multiply
 }
 #gaia-botanical-journal.gaia-journal-style-sketch .gaia-journal-image-frame{
-  background:#f2eddf
+  background:#f5eedf
 }
 #gaia-botanical-journal.gaia-journal-style-sketch .gaia-journal-photo{
   filter:grayscale(1) contrast(1.12) brightness(1.035)
