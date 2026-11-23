@@ -59,6 +59,29 @@ async function run(){
     assert.equal(await journal.locator(".gaia-journal-common-subtitle").count(),1,"Common name should appear as the subtitle");
     assert.equal(await journal.locator(".gaia-journal-kicker").count(),0,"Remove redundant specimen counter above title");
     assert.doesNotMatch(await journal.innerText(),/PRIVATE COLLECTION · CATALOG SPECIMEN|SPECIMEN \d+ · \d+ \/ \d+/);
+    // Journal image modes are CSS-only: preserve the source photograph and
+    // remember the preference when the page reloads.
+    const journalSection=page.locator("#gaia-botanical-journal");
+    assert.equal(await page.locator(".gaia-journal-style-button").count(),3,
+      "The journal needs Photo, Botanical and Sketch controls");
+    assert.equal(await journalSection.getAttribute("data-image-style"),"botanical",
+      "Botanical illustration should be the first-visit default");
+    const originalImage=await page.locator(".gaia-journal-photo").getAttribute("src");
+    assert.ok(originalImage,"The first specimen should include a photograph");
+    await page.getByRole("button",{name:"Photo",exact:true}).click();
+    assert.equal(await journalSection.getAttribute("data-image-style"),"photo");
+    assert.equal(await page.locator(".gaia-journal-photo").evaluate(e=>getComputedStyle(e).filter),"none",
+      "Photo must show the unchanged source");
+    assert.equal(await page.locator(".gaia-journal-sketch-layer").isVisible(),false);
+    await page.getByRole("button",{name:"Sketch",exact:true}).click();
+    assert.equal(await journalSection.getAttribute("data-image-style"),"sketch");
+    assert.equal(await page.locator(".gaia-journal-sketch-layer").isVisible(),true,
+      "Sketch should apply its illustration layer");
+    assert.equal(await page.locator(".gaia-journal-photo").getAttribute("src"),originalImage,
+      "Styling must not modify the original photo URL");
+    await page.getByRole("button",{name:"Botanical",exact:true}).click();
+    assert.equal(await journalSection.getAttribute("data-image-style"),"botanical");
+    assert.equal(await page.locator(".gaia-journal-sketch-layer").isVisible(),false);
     assert.equal(await page.locator("#grid").isVisible(),false,"The old long card grid must not dominate journal mode");
     const oldCards=await page.locator("#grid > .card[data-plant-id]").count();
     assert.ok(oldCards>0,"Original plant cards must remain intact");
@@ -113,6 +136,15 @@ async function run(){
       assert.equal(await page.locator(".gaia-journal-given-name").count(),1,device.name+" given name title missing");
       await journal.scrollIntoViewIfNeeded();
       await page.screenshot({path:path.join(root,"artifacts/conservatory-journal-"+device.name+".png")});
+      if(device.name==="ipad-portrait"){
+        await page.getByRole("button",{name:"Sketch",exact:true}).click();
+        await journal.scrollIntoViewIfNeeded();
+        await page.screenshot({path:path.join(root,"artifacts/conservatory-journal-ipad-sketch.png")});
+        await page.getByRole("button",{name:"Photo",exact:true}).click();
+        await journal.scrollIntoViewIfNeeded();
+        await page.screenshot({path:path.join(root,"artifacts/conservatory-journal-ipad-photo.png")});
+        await page.getByRole("button",{name:"Botanical",exact:true}).click();
+      }
     }
     await page.setViewportSize({width:390,height:844});
     await page.locator("#conservatory-dictation-save").click();
@@ -121,6 +153,8 @@ async function run(){
     assert.ok(rows.some(e=>e.plant_id==="50"&&e.action_type==="prune"),"Saved entry absent from journal");
     await page.reload({waitUntil:"domcontentloaded"});
     await page.waitForFunction(()=>Boolean(window.GAIA_CARE),{timeout:20000});
+    await page.waitForFunction(()=>document.getElementById("gaia-botanical-journal")?.dataset.imageStyle==="botanical",
+      {timeout:20000});
     const afterReload=await page.evaluate(()=>window.GAIA_CARE.events());
     assert.ok(afterReload.some(e=>e.plant_id==="50"&&e.action_type==="prune"),"Offline entry missing after reload");
     if(errors.length) console.log("Non-blocking application errors (external services disabled):",errors.slice(0,4));
