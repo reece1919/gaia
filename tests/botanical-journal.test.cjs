@@ -34,6 +34,24 @@ test("Journal labels the given name as the headline but still files by common na
   assert.match(js,/PLATE "\+currentId/);
 });
 
+test("Journal image modes are cosmetic, restorable and do not mutate image data",()=>{
+  const js=read("botanical-journal.js");
+  const css=read("botanical-journal.css");
+  assert.match(js,/IMAGE_STYLE_KEY="gaiaJournalImageStyle"/);
+  assert.match(js,/localStorage\.getItem\(IMAGE_STYLE_KEY\)/);
+  assert.match(js,/localStorage\.setItem\(IMAGE_STYLE_KEY,imageStyle\)/);
+  for(const value of ["photo","botanical","sketch"]){
+    assert.match(js,new RegExp('"'+value+'","(?:Photo|Botanical|Sketch)"'));
+    assert.match(css,new RegExp('gaia-journal-style-'+value));
+  }
+  assert.match(js,/setImageStyle\(imageStyle\)/);
+  assert.match(js,/gaia-journal-sketch-layer/);
+  assert.match(css,/mix-blend-mode:color-dodge/);
+  assert.match(css,/gaia-journal-style-photo \.gaia-journal-photo\{filter:none/);
+  assert.match(js,/plants=core\.sortedPlants\(data\.plants\)/);
+  assert.doesNotMatch(js,/\.from\(|\.upload\(|\.insert\(|\.update\(/);
+});
+
 test("Recent field note uses explicitly dated observed growth, not species trivia",()=>{
   const sample={
     history:{notes:[
