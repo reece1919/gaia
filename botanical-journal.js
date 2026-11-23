@@ -201,7 +201,6 @@
     index.replaceChildren(fragment);
     filing.textContent=plants.length+" specimens · alphabetized by common name";
     setView("journal");
-    render();
   }
   index.addEventListener("change",()=>{
     const at=plants.findIndex(p=>String(p.id)===index.value);
@@ -237,6 +236,7 @@
     showCards(){setView("cards");},
     showJournal(){setView("journal");}
   });
+  document.addEventListener("gaia:photos-changed",()=>{if(care.classList.contains("gaia-journal-mode"))render();});
   document.addEventListener("gaia:ready",event=>load({plants:event.detail?.plants}));
   if(window.GAIA_DATA?.plants&&grid.querySelector(":scope > .card[data-plant-id]"))load(window.GAIA_DATA);
 })();
