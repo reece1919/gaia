@@ -83,14 +83,20 @@ test("Plans, catalog uploads and unverified or stale growth notes never become c
 test("Journal photographs feather into parchment without modifying images",()=>{
   const css=read("botanical-journal.css");
   const html=read("index.html");
-  assert.match(css,/-webkit-mask-image:radial-gradient\(ellipse closest-side at center/);
-  assert.match(css,/\bmask-image:radial-gradient\(ellipse closest-side at center/);
+  assert.match(css,/-webkit-mask-image:\s*linear-gradient\(to bottom/);
+  assert.match(css,/\bmask-image:\s*linear-gradient\(to bottom/);
+  assert.match(css,/linear-gradient\(to right/);
+  assert.match(css,/-webkit-mask-composite:source-in/);
+  assert.match(css,/mask-composite:intersect/);
+  assert.doesNotMatch(css,/radial-gradient\(ellipse closest-side/);
   assert.match(css,/\.gaia-journal-photo,\s*#gaia-botanical-journal \.gaia-journal-sketch-layer/);
-  for(const [mode,strength] of [["photo",92],["botanical",72],["sketch",62]]){
-    assert.ok(css.includes(".gaia-journal-style-"+mode+"{--gaia-feather-start:"+strength+"%}"),
-      mode+" edge fade missing or not calibrated");
+  for(const [mode,strength] of [["photo",4],["botanical",7],["sketch",9]]){
+    const rule=".gaia-journal-style-"+mode+"{";
+    const area=css.split(rule)[1]?.split("}")[0]||"";
+    assert.ok(area.includes("--gaia-feather-x:"+strength+"%"),mode+" horizontal fade missing");
+    assert.ok(area.includes("--gaia-feather-y:"+strength+"%"),mode+" vertical fade missing");
   }
-  assert.ok(html.includes("botanical-journal.css?v=20261123-unframed1"),
+  assert.ok(html.includes("botanical-journal.css?v=20261123-perimeter2"),
     "Changed styles should use a new cache-busting version");
   // Styling is purely CSS: the original catalog and Supabase photo records
   // stay untouched and can always be viewed in Photo mode.
@@ -104,8 +110,8 @@ test("Botanical image floats without a photo mount or rectangular frame",()=>{
   assert.doesNotMatch(css,/\.gaia-journal-image-frame:before\{/);
   assert.doesNotMatch(css,/gaia-journal-style-(?:botanical|sketch) \.gaia-journal-image-frame\{/);
   assert.match(css,/\.gaia-journal-sketch-layer\{[\s\S]*?inset:0;[\s\S]*?width:100%;height:100%/);
-  assert.match(css,/-webkit-mask-image:radial-gradient/);
-  assert.ok(html.includes("botanical-journal.css?v=20261123-unframed1"),
+  assert.match(css,/-webkit-mask-image:\s*linear-gradient/);
+  assert.ok(html.includes("botanical-journal.css?v=20261123-perimeter2"),
     "Removing the old image mount must invalidate cached CSS");
   // Keep the paper itself and the original catalog plate label.
   assert.match(css,/\.gaia-journal-leaf\{/);
