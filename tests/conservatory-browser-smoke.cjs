@@ -66,10 +66,21 @@ async function run(){
       "The journal needs Photo, Botanical and Sketch controls");
     assert.equal(await journalSection.getAttribute("data-image-style"),"botanical",
       "Botanical illustration should be the first-visit default");
+    const getEdgeStyle=()=>page.locator(".gaia-journal-photo").evaluate(e=>{
+      const image=getComputedStyle(e);
+      const section=getComputedStyle(document.getElementById("gaia-botanical-journal"));
+      return {
+        mask:image.maskImage||image.webkitMaskImage,
+        start:section.getPropertyValue("--gaia-feather-start").trim()
+      };
+    });
+    assert.equal((await getEdgeStyle()).start,"72%","Botanical mode needs a soft medium feather");
+    assert.match((await getEdgeStyle()).mask,/radial-gradient/,"Photo should have a radial feather mask");
     const originalImage=await page.locator(".gaia-journal-photo").getAttribute("src");
     assert.ok(originalImage,"The first specimen should include a photograph");
     await page.getByRole("button",{name:"Photo",exact:true}).click();
     assert.equal(await journalSection.getAttribute("data-image-style"),"photo");
+    assert.equal((await getEdgeStyle()).start,"92%","Photo mode should feather minimally");
     // The image has a short CSS transition. Wait for the actual computed
     // unfiltered state rather than asserting during the previous frame.
     await page.waitForFunction(()=>
@@ -80,12 +91,15 @@ async function run(){
     assert.equal(await page.locator(".gaia-journal-sketch-layer").isVisible(),false);
     await page.getByRole("button",{name:"Sketch",exact:true}).click();
     assert.equal(await journalSection.getAttribute("data-image-style"),"sketch");
+    assert.equal((await getEdgeStyle()).start,"62%","Sketch mode needs the stronger ink-edge fade");
+    assert.match(await page.locator(".gaia-journal-sketch-layer").evaluate(e=>getComputedStyle(e).maskImage||getComputedStyle(e).webkitMaskImage),/radial-gradient/,"Sketch overlay should fade with photo");
     assert.equal(await page.locator(".gaia-journal-sketch-layer").isVisible(),true,
       "Sketch should apply its illustration layer");
     assert.equal(await page.locator(".gaia-journal-photo").getAttribute("src"),originalImage,
       "Styling must not modify the original photo URL");
     await page.getByRole("button",{name:"Botanical",exact:true}).click();
     assert.equal(await journalSection.getAttribute("data-image-style"),"botanical");
+    assert.equal((await getEdgeStyle()).start,"72%","Botanical mask should return after switching styles");
     assert.equal(await page.locator(".gaia-journal-sketch-layer").isVisible(),false);
     assert.equal(await page.locator("#grid").isVisible(),false,"The old long card grid must not dominate journal mode");
     const oldCards=await page.locator("#grid > .card[data-plant-id]").count();

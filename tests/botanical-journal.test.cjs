@@ -80,6 +80,24 @@ test("Plans, catalog uploads and unverified or stale growth notes never become c
   assert.equal(core.recentObservation({history:{notes:[]}},now),null);
 });
 
+test("Journal photographs feather into parchment without modifying images",()=>{
+  const css=read("botanical-journal.css");
+  const html=read("index.html");
+  assert.match(css,/-webkit-mask-image:radial-gradient\(ellipse closest-side at center/);
+  assert.match(css,/\bmask-image:radial-gradient\(ellipse closest-side at center/);
+  assert.match(css,/\.gaia-journal-photo,\s*#gaia-botanical-journal \.gaia-journal-sketch-layer/);
+  for(const [mode,strength] of [["photo",92],["botanical",72],["sketch",62]]){
+    assert.ok(css.includes(".gaia-journal-style-"+mode+"{--gaia-feather-start:"+strength+"%}"),
+      mode+" edge fade missing or not calibrated");
+  }
+  assert.ok(html.includes("botanical-journal.css?v=20261123-feather1"),
+    "Changed styles should use a new cache-busting version");
+  // Styling is purely CSS: the original catalog and Supabase photo records
+  // stay untouched and can always be viewed in Photo mode.
+  assert.match(css,/gaia-journal-style-photo \.gaia-journal-photo\{filter:none/);
+  assert.match(css,/gaia-journal-style-sketch \.gaia-journal-sketch-layer/);
+});
+
 test("Journal is a presentation layer; original care, collection controls and IDs survive",()=>{
   const html=read("index.html"),js=read("botanical-journal.js"),css=read("botanical-journal.css");
   assert.ok(html.includes('src="botanical-journal-core.js'));
