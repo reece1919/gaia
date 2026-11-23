@@ -24,6 +24,16 @@ test("Journal indexes all plants by common name, not their personal nickname",()
   assert.equal(core.commonName({name:"Mystery",commonNames:[]}),"Unidentified specimen");
 });
 
+test("Journal labels the given name as the headline but still files by common name",()=>{
+  const js=read("botanical-journal.js");
+  assert.match(js,/const heading=node\("h3","gaia-journal-given-name",p\.name\)/);
+  assert.match(js,/node\("p","gaia-journal-common-subtitle",name\)/);
+  assert.match(js,/plants=core\.sortedPlants\(data\.plants\)/);
+  assert.doesNotMatch(js,/PRIVATE COLLECTION · CATALOG SPECIMEN/);
+  assert.doesNotMatch(js,/"SPECIMEN "\+currentId/);
+  assert.match(js,/PLATE "\+currentId/);
+});
+
 test("Recent field note uses explicitly dated observed growth, not species trivia",()=>{
   const sample={
     history:{notes:[
