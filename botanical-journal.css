@@ -77,19 +77,44 @@
   display:none;pointer-events:none;position:absolute;inset:0;
   width:100%;height:100%;object-fit:contain
 }
-/* Feather the display layers into their plate without touching original files.
-   The ellipse reaches the midpoint of EVERY edge, unlike a default radial
-   gradient which can leave hard top/bottom or side boundaries. */
-#gaia-botanical-journal{--gaia-feather-start:72%}
-#gaia-botanical-journal.gaia-journal-style-photo{--gaia-feather-start:92%}
-#gaia-botanical-journal.gaia-journal-style-botanical{--gaia-feather-start:72%}
-#gaia-botanical-journal.gaia-journal-style-sketch{--gaia-feather-start:62%}
+/* Perimeter feather: unlike a radial vignette, this keeps the full
+   rectangular center untouched and fades only the last few percent of
+   each edge. Intersect horizontal and vertical masks, including on iPad
+   Safari. Both image layers share the same mask for aligned Sketch mode. */
+#gaia-botanical-journal{
+  --gaia-feather-x:7%;
+  --gaia-feather-y:7%;
+}
+#gaia-botanical-journal.gaia-journal-style-photo{
+  --gaia-feather-x:4%;
+  --gaia-feather-y:4%;
+}
+#gaia-botanical-journal.gaia-journal-style-botanical{
+  --gaia-feather-x:7%;
+  --gaia-feather-y:7%;
+}
+#gaia-botanical-journal.gaia-journal-style-sketch{
+  --gaia-feather-x:9%;
+  --gaia-feather-y:9%;
+}
 #gaia-botanical-journal .gaia-journal-photo,
 #gaia-botanical-journal .gaia-journal-sketch-layer{
-  -webkit-mask-image:radial-gradient(ellipse closest-side at center,
-    #000 var(--gaia-feather-start),transparent 100%);
-  mask-image:radial-gradient(ellipse closest-side at center,
-    #000 var(--gaia-feather-start),transparent 100%);
+  -webkit-mask-image:
+    linear-gradient(to bottom,
+      transparent 0%,#000 var(--gaia-feather-y),
+      #000 calc(100% - var(--gaia-feather-y)),transparent 100%),
+    linear-gradient(to right,
+      transparent 0%,#000 var(--gaia-feather-x),
+      #000 calc(100% - var(--gaia-feather-x)),transparent 100%);
+  mask-image:
+    linear-gradient(to bottom,
+      transparent 0%,#000 var(--gaia-feather-y),
+      #000 calc(100% - var(--gaia-feather-y)),transparent 100%),
+    linear-gradient(to right,
+      transparent 0%,#000 var(--gaia-feather-x),
+      #000 calc(100% - var(--gaia-feather-x)),transparent 100%);
+  -webkit-mask-composite:source-in;
+  mask-composite:intersect;
   -webkit-mask-repeat:no-repeat;
   mask-repeat:no-repeat;
   -webkit-mask-size:100% 100%;
