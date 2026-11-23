@@ -60,7 +60,7 @@ test("Journal is a presentation layer; original care, collection controls and ID
   assert.ok(html.indexOf('src="botanical-journal-core.js')<html.indexOf('src="botanical-journal.js'));
   assert.match(js,/gaia:ready/);
   assert.match(js,/GAIA_COLLECTION_BROWSER/);
-  assert.match(js,/\.gaia-journal-card-mode/);
+  assert.match(js,/gaia-journal-card-mode/);
   assert.match(js,/openFullRecord/);
   assert.doesNotMatch(js,/\.from\(["']plant_care_events/);
   assert.doesNotMatch(js,/appendChild\(card\)/);
