@@ -6,6 +6,10 @@ on:
       - "care.js"
       - "index.html"
       - "learning-hub.js"
+      - "botanical-journal.js"
+      - "botanical-journal-core.js"
+      - "botanical-journal.css"
+      - "tests/botanical-journal.test.cjs"
       - "species-guide.js"
       - "group-learning.js"
       - "tests/learning-hub.test.cjs"
@@ -42,6 +46,9 @@ jobs:
       - run: node --check conservatory-dictation.js
       - run: node --test tests/nursery-retirement.test.cjs
       - run: node --test tests/learning-hub.test.cjs
+      - run: node --check botanical-journal.js
+      - run: node --check botanical-journal-core.js
+      - run: node --test tests/botanical-journal.test.cjs
       - run: node --check care.js
       - run: node --check oauth/consent/consent.js
       - run: node --test tests/conservatory-dictation.test.cjs tests/conservatory-care-flow.test.cjs tests/conservatory-care-api.test.mjs tests/conservatory-oauth-consent.test.cjs tests/conservatory-mcp-auth-status.test.mjs tests/conservatory-mcp-write.test.mjs

@@ -15,6 +15,16 @@ No other tables' MFA settings were changed.
 
 See `docs/conservatory-mcp-setup.md` for architecture and acceptance status.
 
+## Botanical field journal (design preview; not yet live)
+
+The proposed new **collection-first** view uses the existing public plant catalog and full original cards. The first common name in each `commonNames[]` entry is the alphabetic filing label; familiar individual nicknames and scientific species labels remain prominent on each leaf of the journal.
+
+One specimen appears at a time in a two-column botanical plate on desktop and a stacked field-journal page on mobile. Turn pages with Previous/Next, keyboard arrows or horizontal swipe; use the alphabetical index to jump directly to a plant. Each page includes a photo, family and botanical information where supported, care cues from the actual catalog, and **dated** recorded growth notes when a recent trustworthy observation exists. General species characteristics are not presented as observations of a particular plant. Unknown taxonomic identities remain explicitly unresolved.
+
+The `All plant cards` toggle reveals the **original** functional cards, private photo forms, custom ordering, care events and controls. The journal does not clone or mutate those records, alter Supabase or create another database. The old grid stays mounted and available, simply hidden in journal mode. No change is made to owner-only access, the MCP connection or the retired Nursery.
+
+Regression coverage: `node --test tests/botanical-journal.test.cjs`, `node --check botanical-journal*.js`, and the existing Chromium care/browser smoke workflow. Design preview changes live only on a feature branch until expressly approved for merge.
+
 ## Conversational collection maintenance (proposed)
 
 The user-authorized conversational acquisition/edit path reuses the **existing GitHub** connector and permanent `plants.json` catalog. The additional catalog integrity guard and automation are staged for review, not yet deployed. New records are not committed on conversation alone: prepare a feature branch and PR, verify the new/changed public plant fields, and obtain approval before publishing. See `docs/conservatory-catalog-conversation.md`. Unknown botanical identities must remain explicitly unknown.

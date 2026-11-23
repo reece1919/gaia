@@ -1,0 +1,188 @@
+/* Field-journal presentation only. Original plant cards remain authoritative DOM. */
+#gaia-botanical-journal{
+  --journal-ink:#243d32;
+  --journal-soft:#58685a;
+  --journal-paper:#f4edda;
+  --journal-edge:#cfbd9d;
+  color:#e7e5d5;
+  margin:0 0 16px;
+}
+.gaia-journal-header{display:flex;align-items:end;justify-content:space-between;gap:18px;margin-bottom:12px}
+.gaia-journal-intro h2{
+  margin:5px 0 4px;font:normal clamp(28px,3.5vw,44px)/1.1 Georgia,"Times New Roman",serif;
+  letter-spacing:.025em;color:#efe7cc
+}
+.gaia-journal-intro p{margin:0;color:#c6cbbd;font-size:12px;line-height:1.6;max-width:580px}
+.gaia-journal-overline{color:#cbb484;font:700 10px/1.4 system-ui,sans-serif;letter-spacing:.18em}
+.gaia-journal-header{flex-wrap:wrap}
+.gaia-journal-intro{flex:1 1 300px;min-width:0}
+.gaia-journal-header-controls{display:flex;flex-wrap:wrap;justify-content:flex-end;align-items:center;gap:8px}
+.gaia-journal-view-switch{display:flex;flex-wrap:wrap;gap:5px;padding:4px;border:1px solid #667969;border-radius:9px;background:#22362d}
+.gaia-journal-style-switch{display:flex;flex-wrap:wrap;gap:5px;padding:4px;border:1px solid #667969;border-radius:9px;background:#22362d}
+.gaia-journal-style-button{
+  border:1px solid transparent;border-radius:6px;padding:9px 12px;background:transparent;
+  color:#dedecb;font:700 12px/1.3 system-ui,sans-serif;cursor:pointer
+}
+.gaia-journal-style-button[aria-pressed="true"]{color:#21382c;background:#e6d4ad;border-color:#e6d4ad}
+.gaia-journal-style-button:hover:not([aria-pressed="true"]){border-color:#8e9d88}
+.gaia-journal-mode-button{
+  border:1px solid transparent;border-radius:6px;padding:9px 12px;background:transparent;
+  color:#dedecb;font:700 12px/1.3 system-ui,sans-serif;cursor:pointer
+}
+.gaia-journal-mode-button[aria-pressed=true]{color:#21382c;background:#e6d4ad;border-color:#e6d4ad}
+.gaia-journal-index-bar{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:13px}
+.gaia-journal-index-label{
+  display:flex;align-items:center;gap:12px;color:#d9d6bc;
+  font:700 11px/1.4 system-ui,sans-serif;letter-spacing:.055em
+}
+.gaia-journal-index{
+  min-height:43px;max-width:min(390px,55vw);width:345px;border:1px solid #b2a07b;
+  color:#223b31;background:#f1ead7;border-radius:6px;padding:9px 11px;
+  font:600 13px/1.3 system-ui,sans-serif
+}
+.gaia-journal-filing{font:600 11px/1.3 system-ui,sans-serif;color:#b4c6af}
+.gaia-journal-leaf{
+  position:relative;isolation:isolate;
+  border:1px solid var(--journal-edge);
+  border-radius:4px 13px 13px 4px;
+  background:
+    radial-gradient(ellipse at 15% 12%,rgba(255,255,255,.79),transparent 45%),
+    radial-gradient(ellipse at 84% 88%,rgba(178,145,83,.09),transparent 55%),
+    linear-gradient(105deg,#e2d4b5 0,#f3ebd6 2.5%,#faf5e7 46%,#f1e7d0 100%);
+  box-shadow:inset 12px 0 16px -12px #7e6648,inset 0 0 0 8px rgba(255,255,255,.18),
+    0 15px 30px rgba(0,0,0,.21);
+  color:var(--journal-ink);padding:clamp(18px,3vw,37px);
+  min-height:510px
+}
+.gaia-journal-leaf:before{
+  content:"";pointer-events:none;position:absolute;inset:11px;
+  border:1px solid rgba(131,102,65,.28);border-radius:2px 9px 9px 2px
+}
+.gaia-journal-spread{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:clamp(22px,3.7vw,56px);align-items:start;position:relative;z-index:1}
+.gaia-journal-plate{margin:0;min-width:0}
+.gaia-journal-image-frame{
+  position:relative;display:grid;place-items:center;overflow:hidden;
+  aspect-ratio:4/5;max-height:570px;padding:13px;
+  background:linear-gradient(145deg,#d7cbb2,#eee5cf 60%,#c4b292);
+  border:1px solid #ab9875;box-shadow:0 6px 15px rgba(56,42,26,.12)
+}
+.gaia-journal-image-frame:before{
+  content:"";pointer-events:none;position:absolute;inset:8px;border:1px solid rgba(74,90,65,.29);z-index:2
+}
+.gaia-journal-photo{
+  width:100%;height:100%;object-fit:contain;
+  transition:filter .22s ease,opacity .22s ease
+}
+/* Sketch uses a color-dodge overlay of the same photo, a CSS-only
+   pencil-like effect. The original image remains available with Photo mode. */
+.gaia-journal-sketch-layer{
+  display:none;pointer-events:none;position:absolute;inset:13px;
+  width:calc(100% - 26px);height:calc(100% - 26px);object-fit:contain
+}
+#gaia-botanical-journal.gaia-journal-style-photo .gaia-journal-photo{filter:none;mix-blend-mode:normal}
+#gaia-botanical-journal.gaia-journal-style-botanical .gaia-journal-photo{
+  filter:sepia(.28) saturate(.74) contrast(1.08) brightness(1.035);
+  mix-blend-mode:multiply
+}
+#gaia-botanical-journal.gaia-journal-style-sketch .gaia-journal-image-frame{
+  background:#f2eddf
+}
+#gaia-botanical-journal.gaia-journal-style-sketch .gaia-journal-photo{
+  filter:grayscale(1) contrast(1.12) brightness(1.035)
+}
+#gaia-botanical-journal.gaia-journal-style-sketch .gaia-journal-sketch-layer{
+  display:block;filter:grayscale(1) invert(1) blur(6px) contrast(1.25);
+  mix-blend-mode:color-dodge;opacity:.94
+}
+.gaia-journal-photo-placeholder{
+  white-space:pre-line;text-align:center;color:#6f776d;
+  font:italic 18px/1.7 Georgia,serif;max-width:80%
+}
+.gaia-journal-plate-caption{
+  display:flex;justify-content:space-between;align-items:center;gap:6px;padding:11px 2px 0;
+  border-bottom:1px solid #b6a789;padding-bottom:9px;
+  color:#53624e;font:700 9px/1.35 system-ui,sans-serif;letter-spacing:.09em
+}
+.gaia-journal-specimen{min-width:0}
+.gaia-journal-given-name{font:normal clamp(32px,4vw,53px)/1.06 Georgia,serif;color:#253c2e;margin:13px 0 4px;overflow-wrap:anywhere}
+.gaia-journal-common-subtitle{margin:0 0 9px;color:#8b674e;font:italic 20px/1.3 Georgia,serif}
+.gaia-journal-latin{margin:0 0 18px;padding-bottom:15px;border-bottom:1px solid #d5c8aa;color:#536354;font:italic 15px/1.5 Georgia,serif}
+.gaia-journal-taxonomy{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 18px;margin:0 0 20px}
+.gaia-journal-data-pair{min-width:0}
+.gaia-journal-data-pair dt{font:800 9px/1.6 system-ui,sans-serif;letter-spacing:.11em;text-transform:uppercase;color:#8a755b}
+.gaia-journal-data-pair dd{margin:2px 0 0;font:500 12px/1.55 system-ui,sans-serif;color:#34463b;overflow-wrap:anywhere}
+.gaia-journal-observation{
+  margin:0 0 16px;padding:13px 16px 14px;background:#e1e9db;border-left:3px solid #59785a;border-radius:0 6px 6px 0
+}
+.gaia-journal-observation h4,.gaia-journal-species-notes h4{
+  margin:0 0 6px;color:#34513d;font:normal 20px/1.2 Georgia,serif
+}
+.gaia-journal-note-date{display:block;margin-bottom:7px;color:#667a65;font:700 10px/1.4 system-ui,sans-serif}
+.gaia-journal-observation p,.gaia-journal-species-notes p{
+  color:#364d3f;margin:0;font:13px/1.65 system-ui,sans-serif
+}
+.gaia-journal-no-observation{font-style:italic!important;color:#6d796d!important}
+.gaia-journal-species-notes{margin-bottom:19px}
+.gaia-journal-species-notes small{display:block;margin-top:7px;font:italic 12px/1.5 Georgia,serif;color:#677469}
+.gaia-journal-care-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 14px;margin:0 0 18px;padding:13px 0;border-top:1px solid #d4c5a8;border-bottom:1px solid #d4c5a8}
+.gaia-journal-full-record{
+  background:#31533d;color:#f6e9cb;border:1px solid #31533d;border-radius:5px;
+  min-height:41px;padding:10px 15px;cursor:pointer;font:700 12px/1.3 system-ui,sans-serif
+}
+.gaia-journal-full-record:hover{background:#213c2d}
+.gaia-journal-pagination{display:flex;align-items:center;justify-content:space-between;gap:9px;padding:12px 2px 0}
+.gaia-journal-page-marker{color:#e1d6af;font:italic 16px Georgia,serif}
+.gaia-journal-page-button{
+  background:#284237;color:#efe4cc;border:1px solid #a88f69;
+  min-height:44px;border-radius:7px;min-width:110px;
+  padding:9px 15px;font:700 13px system-ui,sans-serif;cursor:pointer
+}
+.gaia-journal-page-button:hover:not(:disabled){border-color:#e3cfa2;background:#3a5946}
+.gaia-journal-page-button:disabled{opacity:.38;cursor:not-allowed}
+#gaia-botanical-journal button:focus-visible,#gaia-botanical-journal select:focus-visible,
+#gaia-journal-leaf:focus-visible{outline:3px solid #be9759;outline-offset:3px}
+#gaia-care-center.gaia-journal-mode .gaia-care-overview-panel,
+#gaia-care-center.gaia-journal-mode #controls,
+#gaia-care-center.gaia-journal-mode #gaia-order-status,
+#gaia-care-center.gaia-journal-mode .gaia-collection-toolbar,
+#gaia-care-center.gaia-journal-mode #grid,
+#gaia-care-center.gaia-journal-mode #empty{display:none!important}
+#gaia-care-center.gaia-journal-card-mode .gaia-journal-style-switch{display:none!important}
+#gaia-care-center.gaia-journal-card-mode .gaia-journal-index-bar,
+#gaia-care-center.gaia-journal-card-mode .gaia-journal-leaf,
+#gaia-care-center.gaia-journal-card-mode .gaia-journal-pagination{display:none!important}
+#gaia-care-center.gaia-journal-card-mode #gaia-botanical-journal{padding:10px 0 1px}
+#gaia-care-center.gaia-journal-card-mode .gaia-journal-intro h2{font-size:25px}
+#gaia-care-center.gaia-journal-card-mode .gaia-journal-intro p{display:none}
+@media(max-width:850px){
+ .gaia-journal-header{align-items:start}
+ .gaia-journal-spread{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:23px}
+ .gaia-journal-given-name{font-size:35px}
+ .gaia-journal-image-frame{aspect-ratio:4/5}
+}
+@media(max-width:700px){
+ .gaia-journal-header{flex-direction:column;align-items:stretch;gap:11px}
+ .gaia-journal-intro{flex:auto}
+ .gaia-journal-header-controls{width:100%;justify-content:flex-start}
+ .gaia-journal-style-button{min-height:42px}
+ .gaia-journal-view-switch{align-self:flex-start}
+ .gaia-journal-intro h2{font-size:34px}
+ .gaia-journal-index-bar{flex-direction:column;align-items:stretch;gap:7px}
+ .gaia-journal-index-label{display:block}
+ .gaia-journal-index{display:block;margin-top:7px;width:100%;max-width:100%}
+ .gaia-journal-filing{font-size:10px}
+ .gaia-journal-leaf{padding:22px 18px;min-height:0}
+ .gaia-journal-spread{grid-template-columns:minmax(0,1fr);gap:19px}
+ .gaia-journal-image-frame{aspect-ratio:5/4;max-height:360px}
+ .gaia-journal-given-name{font-size:37px;margin-top:8px}
+ .gaia-journal-common-subtitle{font-size:19px}
+ .gaia-journal-taxonomy{gap:8px 12px;margin-bottom:15px}
+ .gaia-journal-page-button{min-width:90px;padding:9px}
+ .gaia-journal-page-marker{font-size:13px}
+}
+@media(prefers-reduced-motion:reduce){#gaia-botanical-journal *{scroll-behavior:auto!important;transition:none!important}}
+@media print{
+ #gaia-botanical-journal .gaia-journal-header,#gaia-botanical-journal .gaia-journal-index-bar,
+ #gaia-botanical-journal .gaia-journal-pagination,#gaia-botanical-journal .gaia-journal-full-record{display:none!important}
+ #gaia-botanical-journal .gaia-journal-leaf{box-shadow:none;break-inside:avoid}
+}
