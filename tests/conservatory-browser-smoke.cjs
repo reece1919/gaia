@@ -55,6 +55,10 @@ async function run(){
     await page.waitForFunction(()=>document.querySelectorAll("#gaia-journal-index option").length>0,{timeout:20000});
     const journal=page.locator("#gaia-journal-leaf");
     assert.equal(await journal.isVisible(),true,"Botanical journal must be the opening collection");
+    assert.equal(await journal.locator(".gaia-journal-given-name").count(),1,"Given name should be the only main title");
+    assert.equal(await journal.locator(".gaia-journal-common-subtitle").count(),1,"Common name should appear as the subtitle");
+    assert.equal(await journal.locator(".gaia-journal-kicker").count(),0,"Remove redundant specimen counter above title");
+    assert.doesNotMatch(await journal.innerText(),/PRIVATE COLLECTION · CATALOG SPECIMEN|SPECIMEN \\d+ · \\d+ \\/ \\d+/);
     assert.equal(await page.locator("#grid").isVisible(),false,"The old long card grid must not dominate journal mode");
     const oldCards=await page.locator("#grid > .card[data-plant-id]").count();
     assert.ok(oldCards>0,"Original plant cards must remain intact");
