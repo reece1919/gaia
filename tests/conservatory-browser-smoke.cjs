@@ -71,6 +71,9 @@ async function run(){
     assert.equal(await journal.isVisible(),true,"Journal must be restorable without losing any cards");
     assert.equal(await page.locator("#grid > .card[data-plant-id]").count(),oldCards,
       "Switching presentation must not duplicate or delete plant cards");
+    fs.mkdirSync(path.join(root,"artifacts"),{recursive:true});
+    await journal.scrollIntoViewIfNeeded();
+    await page.screenshot({path:path.join(root,"artifacts/conservatory-journal-mobile.png")});
     const panel=page.locator("#conservatory-dictation-panel");
     assert.equal(await panel.isVisible(),true,"Quick care note is not visible in mobile layout");
     const nav=page.locator('a[href="#conservatory-dictation-panel"]');
@@ -85,6 +88,8 @@ async function run(){
     await page.setViewportSize({width:1440,height:900});
     assert.equal(await panel.isVisible(),true,"Quick care note is not visible on desktop");
     assert.equal(await journal.isVisible(),true,"Desktop journal spread must stay visible");
+    await journal.scrollIntoViewIfNeeded();
+    await page.screenshot({path:path.join(root,"artifacts/conservatory-journal-desktop.png")});
     assert.equal(await page.locator("#gaia-hub-tabs [role=tab]").count(),3,"Desktop must keep three tabs");
     await panel.scrollIntoViewIfNeeded();
     await page.screenshot({path:path.join(root,"artifacts/conservatory-desktop.png")});
