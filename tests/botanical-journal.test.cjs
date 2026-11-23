@@ -90,7 +90,7 @@ test("Journal photographs feather into parchment without modifying images",()=>{
     assert.ok(css.includes(".gaia-journal-style-"+mode+"{--gaia-feather-start:"+strength+"%}"),
       mode+" edge fade missing or not calibrated");
   }
-  assert.ok(html.includes("botanical-journal.css?v=20261123-feather1"),
+  assert.ok(html.includes("botanical-journal.css?v=20261123-unframed1"),
     "Changed styles should use a new cache-busting version");
   // Styling is purely CSS: the original catalog and Supabase photo records
   // stay untouched and can always be viewed in Photo mode.
