@@ -50,6 +50,27 @@ async function run(){
     assert.equal(await page.locator("#gaia-botanical-library").isVisible(),true,"Botany view missing on mobile");
     await page.locator("#gaia-tab-care").click();
     assert.equal(await page.locator("#gaia-care-center").isVisible(),true,"Care view must restore");
+    // The new collection-first journal is the default. It reuses, never clones
+    // the original cards so all private photo/care listeners remain available.
+    await page.waitForFunction(()=>document.querySelectorAll("#gaia-journal-index option").length>0,{timeout:20000});
+    const journal=page.locator("#gaia-journal-leaf");
+    assert.equal(await journal.isVisible(),true,"Botanical journal must be the opening collection");
+    assert.equal(await page.locator("#grid").isVisible(),false,"The old long card grid must not dominate journal mode");
+    const oldCards=await page.locator("#grid > .card[data-plant-id]").count();
+    assert.ok(oldCards>0,"Original plant cards must remain intact");
+    const startingFolio=await page.locator(".gaia-journal-page-marker").innerText();
+    await page.locator(".gaia-journal-page-button").last().click();
+    assert.notEqual(await page.locator(".gaia-journal-page-marker").innerText(),startingFolio,
+      "Next must turn a page in common-name order");
+    await page.locator(".gaia-journal-page-button").first().click();
+    assert.equal(await page.locator(".gaia-journal-page-marker").innerText(),startingFolio,
+      "Previous must restore the earlier page");
+    await page.locator(".gaia-journal-mode-button").last().click();
+    assert.equal(await page.locator("#grid").isVisible(),true,"Full plant-card fallback must remain available");
+    await page.locator(".gaia-journal-mode-button").first().click();
+    assert.equal(await journal.isVisible(),true,"Journal must be restorable without losing any cards");
+    assert.equal(await page.locator("#grid > .card[data-plant-id]").count(),oldCards,
+      "Switching presentation must not duplicate or delete plant cards");
     const panel=page.locator("#conservatory-dictation-panel");
     assert.equal(await panel.isVisible(),true,"Quick care note is not visible in mobile layout");
     const nav=page.locator('a[href="#conservatory-dictation-panel"]');
@@ -63,6 +84,7 @@ async function run(){
     await page.screenshot({path:path.join(root,"artifacts/conservatory-mobile.png")});
     await page.setViewportSize({width:1440,height:900});
     assert.equal(await panel.isVisible(),true,"Quick care note is not visible on desktop");
+    assert.equal(await journal.isVisible(),true,"Desktop journal spread must stay visible");
     assert.equal(await page.locator("#gaia-hub-tabs [role=tab]").count(),3,"Desktop must keep three tabs");
     await panel.scrollIntoViewIfNeeded();
     await page.screenshot({path:path.join(root,"artifacts/conservatory-desktop.png")});
