@@ -58,6 +58,20 @@
     kalanchoe: {taxon:"Kalanchoe (species not confirmed)",family:"Crassulaceae",habit:"Succulent perennial, often grown for flowers",trait:"Fleshy leaves store water; many flowering nursery kalanchoes are cultivated hybrids. The exact identity of Magenta needs confirmation.",propagation:"Stem or leaf cuttings, depending on species"},
     yucca: {taxon:"Yucca (species unconfirmed)",family:"Asparagaceae",habit:"Woody or rosette-forming drought-tolerant perennial",trait:"Yucca have narrow, typically tough leaves; the three cuttings are not species-identified.",propagation:"Stem cuttings, division or offsets, depending on species"},
     basil: {taxon:"Ocimum basilicum",family:"Lamiaceae",habit:"Aromatic culinary herb",trait:"Tender stems carry opposite leaves that are frequently harvested as a kitchen herb.",propagation:"Seed or stem cuttings"},
+    // Added after the November collection expansion. These entries are genus- or
+    // family-level where the existing catalog has not verified a cultivar or species.
+    pileamollis: {taxon:"Pilea mollis (Moon Valley trade form)",family:"Urticaceae",habit:"Low tropical herb with strongly textured leaves",trait:"Quilted, puckered leaves characterize Moon Valley plants; the trade name does not resolve the Pilea mollis/involucrata naming ambiguity.",propagation:"Stem cuttings"},
+    strobilanthes: {taxon:"Strobilanthes (species per catalog)",family:"Acanthaceae",habit:"Tropical foliage herb",trait:"The purple waffle plant and Persian shield are different species and need different care despite sharing a family.",propagation:"Stem cuttings"},
+    sedumgroup: {taxon:"Sedum (species uncertain)",family:"Crassulaceae",habit:"Leaf-succulent rosette or trailing perennial",trait:"Color and shape may vary with light; distinguishing Sedum adolphi from similar species needs confirmation.",propagation:"Leaf or stem cuttings depending on specimen"},
+    begonia: {taxon:"Begonia (rex-type hybrid; cultivar unverified)",family:"Begoniaceae",habit:"Rhizomatous foliage perennial",trait:"Patterned, often asymmetrical leaves are common; hybrid or cultivar identity must not be inferred from color alone.",propagation:"Stem, rhizome or leaf sections depending on type"},
+    stromanthe: {taxon:"Stromanthe / prayer-plant relative (unconfirmed)",family:"Marantaceae",habit:"Clumping tropical foliage perennial",trait:"The plant resembles a variegated Stromanthe but its exact identity is still provisional.",propagation:"Division of rooted clumps"},
+    aroidunresolved: {taxon:"Araceae (genus not verified)",family:"Araceae",habit:"Tropical aroid, growth habit unconfirmed",trait:"An aroid-like leaf cannot establish its genus or guarantee a viable node. Identification remains provisional.",propagation:"Depends on confirmed growth point and genus"},
+    crassula: {taxon:"Crassula ovata (cultivar as labeled in catalog)",family:"Crassulaceae",habit:"Branching succulent shrub",trait:"Fleshy paired leaves store water; Gollum-like tubular leaves are a cultivar characteristic.",propagation:"Leaf or stem cuttings"},
+    hoya: {taxon:"Hoya (species/cultivar uncertain)",family:"Apocynaceae",habit:"Wax-leaved climbing or trailing vine",trait:"Firm opposite leaves and long vining stems are common; species-level identification needs flowering or other evidence.",propagation:"Node-bearing vine cuttings"},
+    portulacaria: {taxon:"Portulacaria afra (provisional)",family:"Didiereaceae",habit:"Small-leaved branching succulent shrub",trait:"Small rounded leaves and red-brown stems are typical, but this specimen's identity remains provisional.",propagation:"Stem cuttings after drying the cut"},
+    peperomia: {taxon:"Peperomia (species unverified)",family:"Piperaceae",habit:"Small tropical herb or trailing vine",trait:"Many species have fleshy leaves; Loops might resemble P. prostrata but that identification is not established.",propagation:"Node-bearing stem cuttings"},
+    episcia: {taxon:"Episcia (species unverified)",family:"Gesneriaceae",habit:"Tropical spreading foliage herb",trait:"Often produces patterned leaves and runners; the cultivar and species need confirmation.",propagation:"Root runner plantlets or cuttings"},
+    orchidunresolved: {taxon:"Orchidaceae (genus not verified)",family:"Orchidaceae",habit:"Sympodial orchid with specialist growth needs",trait:"Growth from successive pseudobulbs suggests a sympodial orchid, not a confirmed Phalaenopsis or Catasetinae species.",propagation:"Division of mature growths only where appropriate"},
     spathacea: {taxon:"Tradescantia spathacea",family:"Commelinaceae",habit:"Rosette-forming tropical perennial",trait:"Sword-like leaves can have purple undersides; Tricolor is grown for green, cream and pink striping.",propagation:"Rooted offsets or stem cuttings"}
   };
   const byPlant = {
@@ -86,7 +100,18 @@
     "66":"yucca","67":"basil",
     "68":"cornplant","69":"orchid","70":"pothos","71":"waxivy",
     "72":"holidaycactus","73":"holidaycactus","74":"kalanchoe",
-    "75":"yucca","76":"yucca"
+    "75":"yucca","76":"yucca",
+    "77":"tradescantiagenus","78":"syngonium","79":"syngonium","80":"pileamollis",
+    "81":"strobilanthes","82":"syngonium","83":"sedumgroup","84":"haworthiopsis",
+    "85":"begonia","86":"stromanthe","87":"aroidunresolved","88":"scindapsus",
+    "89":"strobilanthes","90":"umbrella","91":"crassula",
+    // #92 Puck has only an aroid-like leaf; family is not verified.
+    "93":"begonia","94":"hoya","95":"hoya","96":"hoya","97":"coleus",
+    "98":"portulacaria","99":"spider","100":"crassula","101":"coleus",
+    "102":"peperomia","103":"spider","104":"spider","105":"syngonium",
+    "106":"episcia","107":"aroidunresolved","108":"orchidunresolved",
+    "109":"crassula","110":"aroidunresolved"
+    // #111 Zoidberg is unidentified; a Sedum resemblance does not prove its family.
   };
   window.GAIA_SPECIES_GUIDE = Object.freeze({taxa,byPlant});
 })();

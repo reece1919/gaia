@@ -123,6 +123,36 @@
       conditions:"For Fittonia, favor filtered light, warmth, and an airy medium kept more evenly moist than succulent soil.",
       learn:"A family can contain many different growth habits; this guideline describes the Fittonia in GAIA, not every acanthus-family plant."
     },
+    Apocynaceae: {
+      about:"The dogbane family includes the wax-vine genus Hoya. Its members vary enormously in growth habit, so family membership alone is not a care plan.",
+      recognize:"Hoyas often have opposite, somewhat leathery leaves on long vines; small clustered flowers are helpful in identification.",
+      conditions:"Provide bright filtered light and an airy root medium for most houseplant Hoyas, adjusting moisture to leaf texture and root condition.",
+      learn:"Hoya cultivar labels can be unreliable; a plant resembling wayetii or pubicalyx should retain a provisional identification until verified."
+    },
+    Begoniaceae: {
+      about:"The begonia family includes foliage hybrids cultivated for textured, colorful and often asymmetric leaves.",
+      recognize:"Many rex-type begonias have unequal leaf halves, patterned veins and rhizomatous growth near the substrate.",
+      conditions:"Favor stable warmth, filtered light and a lightly moist but breathable medium. Avoid stagnant water around delicate stems.",
+      learn:"A rex-type appearance cannot establish an exact hybrid name, and not all begonias have the same water or propagation needs."
+    },
+    Didiereaceae: {
+      about:"The Didiereaceae family includes Portulacaria afra, a woody, water-storing shrub often sold as elephant bush.",
+      recognize:"Portulacaria commonly develops small rounded opposite leaves on branching reddish stems.",
+      conditions:"Give bright light with a gradual transition to stronger sun and a very free-draining medium; allow meaningful drying between waterings.",
+      learn:"Portulacaria is not a jade plant (Crassula), even though their succulent foliage can look similar."
+    },
+    Gesneriaceae: {
+      about:"The African violet family also includes Episcia, a creeping tropical plant prized for its patterned foliage.",
+      recognize:"Episcia plants can form soft leaves and spreading runners, often with contrasting veins or silvery patterns.",
+      conditions:"Choose bright indirect light, warm air and an evenly but not constantly wet airy substrate. Avoid cold wet roots.",
+      learn:"A genus identification does not establish the cultivar; several Episcia hybrids can appear similar."
+    },
+    Piperaceae: {
+      about:"The pepper family includes Peperomia, an unusually diverse houseplant genus of small upright and trailing species.",
+      recognize:"Peperomia foliage varies from thin to succulent; flower spikes are generally narrow and lack showy petals.",
+      conditions:"Watering depends heavily on leaf thickness and root structure; many thick-leaved Peperomias prefer the medium to dry somewhat.",
+      learn:"Small round leaves do not prove a string-of-turtles identification. Keep uncertain Peperomia species provisional."
+    },
     Amaranthaceae: {
       about:"The amaranth family contains numerous herbs and shrubs, including Alternanthera, which is often grown for pigmented foliage.",
       recognize:"Many ornamental joyweeds develop red, burgundy, pink, or yellow-green leaves in strong light.",

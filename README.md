@@ -7,13 +7,17 @@ identifiers remain `gaia` where changing them would break working connections.
 **Production status (November 20, 2026):** The Conservatory website,
 reviewed care note, and browser-based ChatGPT MCP bridge are deployed.
 Public plant lookups and authenticated private care-history reads have been
-verified in regular Chat. A new validated owner-only `record_care_event` MCP
-tool is deployed and has passed automated tests; the first real care write is
-still pending verification. Plant-care events no longer require MFA, but remain
+verified in regular Chat. The validated owner-only `record_care_event` MCP
+tool is deployed; the Sovereign (#50) fertilization event was verified
+in the authoritative owner-scoped care history on November 20, 2026. Plant-care events no longer require MFA, but remain
 private to each signed-in account through PostgreSQL row-level security.
 No other tables' MFA settings were changed.
 
 See `docs/conservatory-mcp-setup.md` for architecture and acceptance status.
+
+## Conversational collection maintenance (proposed)
+
+The user-authorized conversational acquisition/edit path reuses the **existing GitHub** connector and permanent `plants.json` catalog. The additional catalog integrity guard and automation are staged for review, not yet deployed. New records are not committed on conversation alone: prepare a feature branch and PR, verify the new/changed public plant fields, and obtain approval before publishing. See `docs/conservatory-catalog-conversation.md`. Unknown botanical identities must remain explicitly unknown.
 
 ## GAIA technical history
 

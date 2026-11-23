@@ -16,18 +16,39 @@ const guide = evaluate("species-guide.js", {}).GAIA_SPECIES_GUIDE;
 const learning = evaluate("group-learning.js", {}).GAIA_GROUP_LEARNING;
 const ids = new Set(plants.map(p=>String(p.id)));
 
-test("Each plant has one stable ID, known family and an educated care type",()=>{
-  assert.ok(plants.length > 0, "Plant catalog must not be empty");
+// Some swap specimens are explicitly unidentified. A guessed family would
+// be a misleading botanical identification, not a regression fix.
+const unresolvedIds=new Set(["92","111"]);
+test("Each plant has a stable 2- or 3-digit ID, honest identity and appropriate learning resources",()=>{
+  assert.ok(plants.length>0,"Plant catalog must not be empty");
   assert.equal(ids.size,plants.length);
+  const mappedIds=new Set(Object.keys(guide.byPlant));
+  for(const id of mappedIds) assert.ok(ids.has(id),"Species reference for nonexistent plant #"+id);
   for(const p of plants) {
-    assert.match(p.id,/^\d\d$/);
-    assert.ok(guide.byPlant[p.id],p.name+" missing species mapping");
-    assert.ok(guide.taxa[guide.byPlant[p.id]]?.family,p.name+" missing family");
-    assert.ok(learning.families[guide.taxa[guide.byPlant[p.id]].family],p.name+" missing family lesson");
-    assert.ok(learning.types[p.cardCare.type],p.name+" missing type lesson");
+    assert.match(p.id,/^\d{2,3}$/);
+    assert.ok(typeof p.species==="string" && p.species.trim(),p.name+" missing identity label");
+    assert.ok(learning.types[p.cardCare?.type],p.name+" missing type lesson");
+    const key=guide.byPlant[p.id];
+    if(unresolvedIds.has(p.id)){
+      assert.equal(key,undefined,p.name+" should remain unidentified until confirmed");
+      assert.match(p.species,/^Unidentified/i,p.name+" lacks an explicit unresolved identity");
+      continue;
+    }
+    assert.ok(key,p.name+" missing botanical reference");
+    const family=guide.taxa[key]?.family;
+    assert.ok(family,p.name+" missing family");
+    assert.ok(learning.families[family],p.name+" missing family lesson for "+family);
   }
   assert.equal(Object.keys(learning.types).length,18);
-  assert.equal(Object.keys(learning.families).length,23);
+  assert.equal(Object.keys(learning.families).length,28);
+});
+
+test("Unidentified specimens never inherit a guessed species guide entry",()=>{
+  for(const id of unresolvedIds){
+    const p=plants.find(x=>x.id===id);
+    assert.ok(p,"unresolved plant #"+id+" missing");
+    assert.equal(guide.byPlant[id],undefined);
+  }
 });
 
 test("Every type and family lesson teaches what, recognition, growing conditions and limits",()=>{
@@ -45,7 +66,7 @@ test("Academy uses valid catalog plant IDs for examples and practice groups",()=
   const list=[...source.matchAll(/(?:practice|ids):\s*\[([^\]]*)\]/g)];
   assert.ok(list.length>=10);
   for(const match of list){
-    const examples=[...match[1].matchAll(/"(\d\d)"/g)];
+    const examples=[...match[1].matchAll(/"(\d{2,3})"/g)];
     assert.ok(examples.length>0);
     for(const id of examples)assert.ok(ids.has(id[1]),"Unknown practice plant "+id[1]);
   }
