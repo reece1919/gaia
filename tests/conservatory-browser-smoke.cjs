@@ -37,6 +37,19 @@ async function run(){
     });
     await page.goto(url,{waitUntil:"domcontentloaded"});
     await page.waitForFunction(()=>Boolean(window.CONSERVATORY_DICTATION&&window.GAIA_CARE),{timeout:20000});
+    // Navigate the real three-tab hub on mobile; learning sections must not
+    // replace or lose the existing care form and plant card DOM nodes.
+    await page.waitForSelector("#gaia-hub-tabs [role=tab]",{timeout:10000});
+    const tabs=page.locator("#gaia-hub-tabs [role=tab]");
+    assert.equal(await tabs.count(),3,"Care, Learn and Botany must be the only tabs");
+    assert.equal(await page.locator("#gaia-propagation-nursery").count(),0,"Retired Nursery should not reappear");
+    await page.locator("#gaia-tab-academy").click();
+    assert.equal(await page.locator("#gaia-care-academy").isVisible(),true,"Learning view missing on mobile");
+    assert.equal(await page.locator("#gaia-care-center").isVisible(),false,"Care view must hide when learning");
+    await page.locator("#gaia-tab-botany").click();
+    assert.equal(await page.locator("#gaia-botanical-library").isVisible(),true,"Botany view missing on mobile");
+    await page.locator("#gaia-tab-care").click();
+    assert.equal(await page.locator("#gaia-care-center").isVisible(),true,"Care view must restore");
     const panel=page.locator("#conservatory-dictation-panel");
     assert.equal(await panel.isVisible(),true,"Quick care note is not visible in mobile layout");
     const nav=page.locator('a[href="#conservatory-dictation-panel"]');
@@ -50,6 +63,7 @@ async function run(){
     await page.screenshot({path:path.join(root,"artifacts/conservatory-mobile.png")});
     await page.setViewportSize({width:1440,height:900});
     assert.equal(await panel.isVisible(),true,"Quick care note is not visible on desktop");
+    assert.equal(await page.locator("#gaia-hub-tabs [role=tab]").count(),3,"Desktop must keep three tabs");
     await panel.scrollIntoViewIfNeeded();
     await page.screenshot({path:path.join(root,"artifacts/conservatory-desktop.png")});
     await page.setViewportSize({width:390,height:844});
