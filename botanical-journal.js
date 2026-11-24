@@ -198,7 +198,7 @@
     profile.appendChild(details);
 
     const recent=node("section","gaia-journal-observation");
-    recent.appendChild(node("h4","","From the field notes"));
+    recent.appendChild(node("h4","","From the catalog field notes"));
     if(observation){
       recent.appendChild(node("small","gaia-journal-note-date","Recorded "+observation.dateLabel));
       recent.appendChild(node("p","",observation.text));
@@ -207,6 +207,25 @@
         "No recent growth milestone has been documented for this specimen. New leaves, blooms, or other discoveries can be recorded in its plant history."));
     }
     profile.appendChild(recent);
+
+    // Reuse the original care journal, including account-scoped and device-only
+    // entries. This is a read-only preview, not a second data store.
+    const carePreview=node("section","gaia-journal-observation");
+    carePreview.appendChild(node("h4","","Recent care journal"));
+    const entries=(window.GAIA_CARE?.events?.()||[])
+      .filter(e=>String(e.plant_id)===currentId).slice(0,3);
+    const actionLabels={water:"Watered",fertilize:"Fertilized",repot:"Repotted",pest:"Pest treatment",bath:"Foliage bath",inspect:"Inspected",prune:"Pruned",note:"Observation"};
+    if(entries.length){
+      for(const entry of entries){
+        const line=node("p","","");
+        line.appendChild(node("strong","",(actionLabels[entry.action_type]||"Care entry")+" · "+entry.happened_on));
+        if(entry.note)line.appendChild(node("span",""," — "+entry.note));
+        carePreview.appendChild(line);
+      }
+    }else{
+      carePreview.appendChild(node("p","gaia-journal-no-observation","No entries currently loaded. Open the complete record to check the care journal or refresh its sync."));
+    }
+    profile.appendChild(carePreview);
 
     const species=node("section","gaia-journal-species-notes");
     species.appendChild(node("h4","","Natural history"));
@@ -281,7 +300,9 @@
     showCards(){setView("cards");},
     showJournal(){setView("journal");}
   });
-  document.addEventListener("gaia:photos-changed",()=>{if(care.classList.contains("gaia-journal-mode"))render();});
+  for(const eventName of ["gaia:photos-changed","gaia:care-synced","gaia:auth"]){
+    document.addEventListener(eventName,()=>{if(care.classList.contains("gaia-journal-mode"))render();});
+  }
   document.addEventListener("gaia:ready",event=>load({plants:event.detail?.plants}));
   if(window.GAIA_DATA?.plants&&grid.querySelector(":scope > .card[data-plant-id]"))load(window.GAIA_DATA);
 })();
