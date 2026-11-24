@@ -102,7 +102,7 @@
       '<option value="' + action + '">' + esc(label) + '</option>').join("");
     return '<section class="care-tracker" data-care-plant="' + esc(p.id) + '">' +
       '<div class="care-tracker-heading"><strong>Care journal</strong><span class="care-latest">Nothing logged yet</span></div>' +
-      '<div class="care-quick-actions">' + quick + '</div>' +
+      '<div class="care-quick-actions">' + quick + '<button type="button" data-care-propagation>Propagation note</button></div>' +
       '<details class="care-more"><summary>Add dated entry or note</summary>' +
       '<form class="care-log-form"><div class="care-fields">' +
       '<label>Date<input name="date" type="date" required value="' + today() + '"></label>' +
@@ -142,6 +142,7 @@
     const sync = document.getElementById("care-sync");
     sync.disabled = busy;
     if (notice) alertNotice(notice, noticeError);
+    document.dispatchEvent(new Event("gaia:care-changed"));
   }
   function mount(plantsArray) {
     if (plants.length) return;
@@ -375,10 +376,22 @@
     }
   });
   document.addEventListener("click", async event => {
-    const button = event.target.closest("[data-care-quick], [data-care-delete]");
+    const button = event.target.closest("[data-care-quick], [data-care-delete], [data-care-propagation]");
     if (!button) return;
     const panel = button.closest(".care-tracker");
     if (!panel) return;
+    if (button.hasAttribute("data-care-propagation")) {
+      const form=panel.querySelector(".care-log-form");
+      const note=form.elements.note;
+      if(note.value.trim()&&!note.value.startsWith("Propagation:")){
+        alertNotice("Save or clear your existing draft before starting a propagation note.",true);return;
+      }
+      form.elements.action.value="note";
+      if(!note.value.trim())note.value="Propagation: ";
+      note.placeholder="Cutting or batch label, medium, root status, and what you observed";
+      form.closest(".care-more").open=true;
+      note.focus();return;
+    }
     if (button.hasAttribute("data-care-quick")) {
       await addEntry(panel.dataset.carePlant, button.dataset.careQuick, today(), "");
     } else {
@@ -390,6 +403,9 @@
       event.preventDefault();
       const form = event.target;
       const panel = form.closest(".care-tracker");
+      if(/^Propagation:\s*$/i.test(form.elements.note.value.trim())){
+        alertNotice("Add an actual propagation observation before saving.",true);return;
+      }
       const ok = await addEntry(panel.dataset.carePlant, form.elements.action.value,
         form.elements.date.value, form.elements.note.value);
       if (ok) {form.elements.note.value = ""; form.closest(".care-more").open = false;}
