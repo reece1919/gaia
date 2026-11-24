@@ -135,3 +135,17 @@ test("Journal is a presentation layer; original care, collection controls and ID
   assert.ok(html.includes('src="photos.js'),"Original private photo journal loader must remain");
   assert.ok(html.includes('src="care.js'),"Original care journal loader must remain");
 });
+
+
+test("Field folio previews the original care journal without duplicating storage",()=>{
+  const js=read("botanical-journal.js");
+  assert.match(js,/window\.GAIA_CARE\?\.events\?\.\(\)/);
+  assert.match(js,/String\(e\.plant_id\)===currentId\)\.slice\(0,3\)/);
+  assert.match(js,/From the catalog field notes/);
+  assert.match(js,/Recent care journal/);
+  assert.match(js,/gaia:care-synced/);
+  assert.match(js,/gaia:auth/);
+  assert.match(js,/node\("span",""," — "\+entry\.note\)/);
+  assert.match(js,/No entries currently loaded/);
+  assert.doesNotMatch(js,/\.from\(|\.insert\(|\.update\(/);
+});
