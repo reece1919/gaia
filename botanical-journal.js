@@ -212,8 +212,8 @@
     // entries. This is a read-only preview, not a second data store.
     const carePreview=node("section","gaia-journal-observation");
     carePreview.appendChild(node("h4","","Recent care journal"));
-    const entries=(window.GAIA_CARE?.events?.()||[])
-      .filter(e=>String(e.plant_id)===currentId).slice(0,3);
+    const plantEntries=(window.GAIA_CARE?.events?.()||[]).filter(e=>String(e.plant_id)===currentId);
+    const entries=plantEntries.slice(0,3);
     const actionLabels={water:"Watered",fertilize:"Fertilized",repot:"Repotted",pest:"Pest treatment",bath:"Foliage bath",inspect:"Inspected",prune:"Pruned",note:"Observation"};
     if(entries.length){
       for(const entry of entries){
@@ -226,6 +226,12 @@
       carePreview.appendChild(node("p","gaia-journal-no-observation","No entries currently loaded. Open the complete record to check the care journal or refresh its sync."));
     }
     profile.appendChild(carePreview);
+    const propagation=plantEntries.find(e=>e.action_type==="note" && /^Propagation:\s*\S/i.test(e.note||""));
+    if(propagation){
+      const panel=node("section","gaia-journal-observation");
+      panel.append(node("h4","","Propagation journal"),node("small","gaia-journal-note-date","Recorded "+propagation.happened_on),node("p","",propagation.note.replace(/^Propagation:\s*/i,"")));
+      profile.appendChild(panel);
+    }
 
     const species=node("section","gaia-journal-species-notes");
     species.appendChild(node("h4","","Natural history"));
@@ -300,7 +306,7 @@
     showCards(){setView("cards");},
     showJournal(){setView("journal");}
   });
-  for(const eventName of ["gaia:photos-changed","gaia:care-synced","gaia:auth"]){
+  for(const eventName of ["gaia:photos-changed","gaia:care-synced","gaia:auth","gaia:care-changed"]){
     document.addEventListener(eventName,()=>{if(care.classList.contains("gaia-journal-mode"))render();});
   }
   document.addEventListener("gaia:ready",event=>load({plants:event.detail?.plants}));
