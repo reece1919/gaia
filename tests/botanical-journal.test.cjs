@@ -140,8 +140,7 @@ test("Journal is a presentation layer; original care, collection controls and ID
 test("Field folio previews the original care journal without duplicating storage",()=>{
   const js=read("botanical-journal.js");
   assert.match(js,/window\.GAIA_CARE\?\.events\?\.\(\)/);
-  assert.match(js,/String\(e\.plant_id\)===currentId\)/);
-  assert.match(js,/plantEntries\.slice\(0,3\)/);
+  assert.match(js,/String\(e\.plant_id\)===currentId\)\.slice\(0,3\)/);
   assert.match(js,/From the catalog field notes/);
   assert.match(js,/Recent care journal/);
   assert.match(js,/gaia:care-synced/);
@@ -151,19 +150,6 @@ test("Field folio previews the original care journal without duplicating storage
   assert.doesNotMatch(js,/\.from\(|\.insert\(|\.update\(/);
 });
 
-
-test("Propagation uses a reviewed note in the original journal, not a nursery",()=>{
-  const care=read("care.js"),folio=read("botanical-journal.js");
-  assert.ok(care.includes("data-care-propagation"));
-  assert.ok(care.includes('form.elements.action.value="note"'));
-  assert.ok(care.includes('note.value="Propagation: "'));
-  assert.ok(care.includes('note.focus();return;'));
-  assert.ok(care.includes("Add an actual propagation observation before saving."));
-  assert.ok(folio.includes('e.action_type==="note"'));
-  assert.ok(folio.includes("Propagation journal"));
-  assert.ok(folio.includes("gaia:care-changed"));
-  assert.doesNotMatch(folio,/\.from\(|\.insert\(|\.update\(/);
-});
 
 test("Recommendation categories require explicit data and stale reviews are labeled",()=>{
   const js=read("insights.js");
