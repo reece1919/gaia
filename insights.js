@@ -13,6 +13,16 @@
   const esc = value => String(value ?? "").replace(/[&<>"']/g, char =>
     ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[char]));
   const MAX_PRIORITIES = 5;
+  const CATEGORY_LABELS=Object.freeze({urgent:"Immediate attention",upcoming:"Upcoming care",monitor:"Monitor",growth:"Noteworthy growth"});
+  function categoryLabel(value){return Object.prototype.hasOwnProperty.call(CATEGORY_LABELS,value)?CATEGORY_LABELS[value]:"Care recommendation";}
+  function reviewAgeLabel(date){
+    if(!/^\d{4}-\d{2}-\d{2}$/.test(date||""))return "Review date unavailable";
+    const n=new Date(), now=Date.UTC(n.getFullYear(),n.getMonth(),n.getDate());
+    const then=Date.parse(date+"T00:00:00Z");
+    if(!Number.isFinite(then)||then>now||new Date(then).toISOString().slice(0,10)!==date)return "Review date unavailable";
+    const age=Math.floor((now-then)/86400000);
+    return age>7?"Older review · recheck conditions before acting":"Saved review · confirm current conditions";
+  }
   let client = null, user = null, latest = null;
   let busy = false, error = "", sequence = 0, lastCheckedAt = 0;
 
@@ -37,14 +47,14 @@
       .map(plant => [String(plant.id), String(plant.name)]));
     return records.slice(0,MAX_PRIORITIES).map(priority => {
       if (typeof priority === "string")
-        return {title:priority.trim().slice(0,300), rationale:"", plant:"", plant_id:null};
+        return {title:priority.trim().slice(0,300), rationale:"", plant:"", plant_id:null,category:""};
       if (!priority || typeof priority !== "object" || Array.isArray(priority))
         return null;
       const title = String(priority.title || priority.action || priority.task || "").trim().slice(0,300);
       const rationale = String(priority.rationale || priority.reason ||
         priority.detail || priority.description || "").trim().slice(0,1200);
       const id = priority.plant_id == null ? "" : String(priority.plant_id);
-      return {title,rationale,plant:names.get(id)||"",plant_id:id||null};
+      return {title,rationale,plant:names.get(id)||"",plant_id:id||null,category:typeof priority.category==="string"?priority.category:""};
     }).filter(p => p && p.title);
   }
 
@@ -71,6 +81,9 @@
     const text=(priority.title+" "+priority.rationale).toLowerCase();
     const now=new Date();
     const addDays=n=>{const d=new Date(now.getFullYear(),now.getMonth(),now.getDate()+n);return [d.getFullYear(),String(d.getMonth()+1).padStart(2,"0"),String(d.getDate()).padStart(2,"0")].join("-");};
+    // Dates are suggestions for checks, not a diagnosis or confirmation that watering is due.
+    if(priority.category==="growth")return {date:addDays(7),reason:"Optional observation"};
+    if(priority.category==="urgent")return {date:addDays(0),reason:"Prompt inspection"};
     // Urgent checks and active pest inspections should be performed promptly.
     if(/post.soak|water quality|moisture|dry|wilting|current activity|mite|pest|quarantine|new arrivals/.test(text))return {date:addDays(0),reason:"Prompt inspection"};
     // Overnight temperature needs a full overnight observation.
@@ -88,12 +101,12 @@
     const now=new Date();
     const today=[now.getFullYear(),String(now.getMonth()+1).padStart(2,"0"),String(now.getDate()).padStart(2,"0")].join("-");
     target.innerHTML=priorities.length?
-      '<p class="gaia-source">From GAIA review · '+esc(dateText(latest.review_date))+'</p><ol>'+
+      '<p class="gaia-source">From GAIA review · '+esc(dateText(latest.review_date))+' · '+esc(reviewAgeLabel(latest.review_date))+'</p><ol>'+
       priorities.map((p,i)=>{
         if(decisions.get(decisionKey(p))==="dismissed")return "";
         const match=matchingTask(p.title);
         const suggested=suggestedDue(p);
-        return '<li><strong>'+esc(p.title)+'</strong>'+
+        return '<li><small class="gaia-source">'+esc(categoryLabel(p.category))+'</small><br><strong>'+esc(p.title)+'</strong>'+
           (p.plant?' <small>· '+esc(p.plant)+'</small>':'')+
           (p.rationale?'<p>'+esc(p.rationale)+'</p>':'')+
           (match?'<p class="gaia-source">Already tracked in '+esc(match.source)+(match.id?' · <a href="https://app.todoist.com/app/task/'+encodeURIComponent(match.id)+'" target="_blank" rel="noopener noreferrer">Open task ↗</a>':'')+'</p>':
@@ -103,7 +116,7 @@
       }).join("")+'</ol>'+
       (priorityMessage?'<p role="status" class="gaia-source">'+esc(priorityMessage)+'</p>':'')+
       '<p class="gaia-source">GAIA suggests a due date based on the action. You can adjust it before adding to Todoist.</p>':
-      '<p>No suggested priorities in the latest review.</p>';
+      '<p>No suggested priorities in the latest review. This does not establish that every plant is healthy.</p>';
   }
   function render() {
     renderUnifiedPriorities();
@@ -143,7 +156,7 @@
       stamp.textContent = busy ? "Checking saved reviews…" : "Awaiting first review";
       body.innerHTML =
         '<p class="gaia-insights-empty">No GAIA review has been saved to this account yet. ' +
-          'The hourly ChatGPT watch is scheduled, but a review appears here only after ' +
+          'A review appears here only after ' +
           'it successfully verifies your account and saves findings.</p>' +
         '<p class="gaia-insights-disclaimer">Nothing is invented to fill this space; ' +
           'your existing plant cards, tasks and journal remain unchanged.</p>';
