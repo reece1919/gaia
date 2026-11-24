@@ -149,3 +149,13 @@ test("Field folio previews the original care journal without duplicating storage
   assert.match(js,/No entries currently loaded/);
   assert.doesNotMatch(js,/\.from\(|\.insert\(|\.update\(/);
 });
+
+
+test("Recommendation categories require explicit data and stale reviews are labeled",()=>{
+  const js=read("insights.js");
+  assert.ok(js.includes("Object.prototype.hasOwnProperty.call(CATEGORY_LABELS,value)"));
+  assert.ok(js.includes("Older review · recheck conditions before acting"));
+  assert.ok(js.includes("This does not establish that every plant is healthy."));
+  assert.ok(js.includes("confirm current conditions"));
+  assert.ok(js.includes("priority.category"));
+});
